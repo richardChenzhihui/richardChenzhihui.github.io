@@ -3,7 +3,11 @@
         <div class="row my-3">
             <div class="col-6">
                 <div class="text-muted">
-                    <i>Last updated: {{ "now" | date: "%b %Y" }}</i>
+                    <i>
+                        <span class="lang-en">Last updated:</span>
+                        <span class="lang-zh d-none">最后更新：</span>
+                        {{ "now" | date: "%b %Y" }}
+                    </i>
                 </div>
             </div>
             <div class="col-6">

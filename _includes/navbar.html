@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top border-bottom">
+    <div class="container-lg">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <span class="lang-en">{{ site.data.profile.navbar_name }}</span>
+            <span class="lang-zh d-none">{{ site.data.profile_zh.navbar_name }}</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mr-auto">
+                {% assign zh_pages = site.data.navigation_zh.pages %}
+                {% for item in site.data.navigation.pages %}
+                {% assign zh_item = zh_pages[forloop.index0] %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ item.url | relative_url }}">
+                        <span class="lang-en">{{ item.name }}</span>
+                        <span class="lang-zh d-none">{{ zh_item.name }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="navbar-nav ml-auto">
+                <a id="lang-toggle" class="nav-item nav-link" role="button" aria-label="Switch language" title="Switch language">
+                    <i class="fas fa-language"></i>
+                    <span class="lang-en">中文</span>
+                    <span class="lang-zh d-none">EN</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
