@@ -12,7 +12,7 @@
                 {% assign zh_pages = site.data.navigation_zh.pages %}
                 {% for item in site.data.navigation.pages %}
                 {% assign zh_item = zh_pages[forloop.index0] %}
-                <li class="nav-item">
+                <li class="nav-item {% if page.navbar_title == item.name %}active{% endif %}">
                     <a class="nav-link" href="{{ item.url | relative_url }}">
                         <span class="lang-en">{{ item.name }}</span>
                         <span class="lang-zh d-none">{{ zh_item.name }}</span>

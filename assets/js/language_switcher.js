@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Switch publication fields
+        // Switch publication titles
         document.querySelectorAll('.publication-title').forEach(function (el) {
             var en = el.getAttribute('data-en');
             var zh = el.getAttribute('data-zh');
@@ -33,15 +33,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 el.textContent = en;
             }
         });
-        document.querySelectorAll('.pub-venue').forEach(function (el) {
-            var en = el.getAttribute('data-en');
-            var zh = el.getAttribute('data-zh');
-            el.innerHTML = (isZh && zh) ? zh : (en || el.innerHTML);
+        // Switch publication venue text
+        document.querySelectorAll('.pub-venue-text').forEach(function (el) {
+            var pre = el.getAttribute('data-pub-pre') || '';
+            var pub = el.getAttribute(isZh ? 'data-pub-zh' : 'data-pub-en') || '';
+            var post = el.getAttribute('data-pub-post') || '';
+            el.innerHTML = pre + (pub ? '<i>' + pub + '</i>' : '') + post;
         });
+        // Switch pub-venue-misc with HTML content support
         document.querySelectorAll('.pub-venue-misc').forEach(function (el) {
             var en = el.getAttribute('data-en');
             var zh = el.getAttribute('data-zh');
-            el.textContent = (isZh && zh) ? zh : (en || el.textContent);
+            el.innerHTML = (isZh && zh) ? zh : (en || '');
         });
         document.querySelectorAll('.pub-abstract').forEach(function (el) {
             var en = el.getAttribute('data-en');
@@ -76,11 +79,16 @@ document.addEventListener('DOMContentLoaded', function () {
     if (toggle) {
         toggle.addEventListener('click', function (e) {
             e.preventDefault();
+            e.stopPropagation();
             var current = localStorage.getItem(STORAGE_KEY) || 'en';
             var next = current === 'en' ? 'zh' : 'en';
             localStorage.setItem(STORAGE_KEY, next);
             applyLanguage(next);
+            console.log('Language switched to:', next);
         });
+        console.log('Language switcher initialized successfully');
+    } else {
+        console.warn('Language toggle button (#lang-toggle) not found');
     }
 });
 
