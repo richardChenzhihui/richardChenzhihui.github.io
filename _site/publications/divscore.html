@@ -322,51 +322,59 @@
     <!-- Method Overview -->
     <div class="content-section">
         <h2><i class="fas fa-cogs"></i> <span class="lang-en">Method Overview</span><span class="lang-zh d-none">方法概览</span></h2>
-        <div class="figure-container">
-            <img src="/assets/images/publications/divscore/method.png" 
-                 alt="DivScore Method"
-                 style="max-width: 800px; width: 100%;">
-            <p class="caption">
-                <span class="lang-en">DivScore method framework: Domain knowledge distillation adapts a general LLM to specialized domains, enabling accurate detection through normalized entropy scoring.</span>
-                <span class="lang-zh d-none">DivScore 方法框架：利用领域知识蒸馏将通用 LLM 适配到专业领域，并通过归一化熵评分实现精确检测。</span>
+        
+        <div class="lang-en">
+            <p style="line-height: 1.8; margin-bottom: 20px;">
+                DivScore addresses the challenge of detecting LLM-generated text in specialized domains through a novel two-stage approach:
+            </p>
+            <ol style="line-height: 1.8; margin-bottom: 25px;">
+                <li><strong>Domain Knowledge Distillation:</strong> We fine-tune a general-purpose LLM (teacher model) on domain-specific texts using knowledge distillation, creating a domain-adapted student model M*.</li>
+                <li><strong>Normalized Entropy Scoring:</strong> For a given text, we compute the KL divergence between the probability distributions of the general model M and the domain-adapted model M*. This divergence, normalized by text entropy, serves as a detection score.</li>
+            </ol>
+            <p style="line-height: 1.8; margin-bottom: 25px;">
+                The key insight is that human-written text shows consistent entropy patterns across both models, while LLM-generated text exhibits significant divergence when evaluated by domain-adapted models.
             </p>
         </div>
         
-        <div style="margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
-            <div class="lang-en">
-                <p><strong>How DivScore Works:</strong></p>
-                <ul style="margin-bottom: 0;">
-                    <li><strong>Step 1 - Domain Adaptation:</strong> A teacher LLM (e.g., DeepSeek) provides domain-specific knowledge, which is distilled into a general LLM to create a domain-adapted model M*.</li>
-                    <li><strong>Step 2 - Entropy Comparison:</strong> For a given text, we compute the entropy difference between the general model M and the domain-adapted model M*. Machine-generated text shows lower entropy difference.</li>
-                    <li><strong>Step 3 - Classification:</strong> If the normalized entropy divergence D<sub>M,M*</sub>(x) ≤ ε (threshold), the text is classified as machine-generated; otherwise, it's human-written.</li>
-                </ul>
-            </div>
-            <div class="lang-zh d-none">
-                <p><strong>DivScore 工作原理：</strong></p>
-                <ul style="margin-bottom: 0;">
-                    <li><strong>步骤 1 - 领域适配：</strong> 教师模型（如 DeepSeek）提供领域专业知识，蒸馏到通用 LLM 中形成领域适配模型 M*。</li>
-                    <li><strong>步骤 2 - 熵值比较：</strong> 对于给定文本，我们计算通用模型 M 与领域模型 M* 的熵差。机器生成文本表现出更低的熵差。</li>
-                    <li><strong>步骤 3 - 分类判定：</strong> 若归一化熵散度 D<sub>M,M*</sub>(x) ≤ ε（阈值），则判定为机器生成；否则为人类撰写。</li>
-                </ul>
-            </div>
+        <div class="lang-zh d-none">
+            <p style="line-height: 1.8; margin-bottom: 20px;">
+                DivScore 通过两阶段方法解决专业领域中大模型生成文本的检测难题：
+            </p>
+            <ol style="line-height: 1.8; margin-bottom: 25px;">
+                <li><strong>领域知识蒸馏：</strong>我们使用领域特定文本对通用 LLM（教师模型）进行知识蒸馏微调，创建领域适配的学生模型 M*。</li>
+                <li><strong>归一化熵评分：</strong>对于给定文本，计算通用模型 M 与领域适配模型 M* 输出概率分布的 KL 散度。该散度经文本熵归一化后作为检测分数。</li>
+            </ol>
+            <p style="line-height: 1.8; margin-bottom: 25px;">
+                核心洞察在于：人类撰写的文本在两个模型下表现出一致的熵模式，而大模型生成的文本在领域适配模型评估时会呈现显著偏差。
+            </p>
         </div>
         
-        <h3><span class="lang-en">Key Components:</span><span class="lang-zh d-none">关键模块：</span></h3>
+        <div class="figure-container">
+            <img src="/assets/images/publications/divscore/method.png" 
+                 alt="DivScore Method"
+                 style="max-width: 65%; margin: 0 auto; display: block;">
+            <p class="caption">
+                <span class="lang-en">Figure: DivScore framework illustration showing domain knowledge distillation and detection scoring process.</span>
+                <span class="lang-zh d-none">图示：DivScore 框架展示领域知识蒸馏和检测评分流程。</span>
+            </p>
+        </div>
+        
+        <h3 style="margin-top: 30px;"><span class="lang-en">Key Advantages:</span><span class="lang-zh d-none">核心优势：</span></h3>
         <ul class="insights-list">
             <li>
-                <strong><span class="lang-en">Domain Knowledge Distillation:</span><span class="lang-zh d-none">领域知识蒸馏：</span></strong>
-                <span class="lang-en">Fine-tunes general LLMs with domain-specific knowledge to create domain-adapted models.</span>
-                <span class="lang-zh d-none">利用领域知识对通用 LLM 进行微调，构建领域适配模型。</span>
-            </li>
-            <li>
-                <strong><span class="lang-en">Normalized Entropy Scoring:</span><span class="lang-zh d-none">归一化熵评分：</span></strong>
-                <span class="lang-en">Compares text entropy between general and domain-adapted models to identify machine-generated content.</span>
-                <span class="lang-zh d-none">比较通用模型与领域模型的熵差，识别机器生成文本。</span>
+                <strong><span class="lang-en">Domain Adaptation:</span><span class="lang-zh d-none">领域自适应：</span></strong>
+                <span class="lang-en">Captures domain-specific language patterns through knowledge distillation, making it robust to distribution shift.</span>
+                <span class="lang-zh d-none">通过知识蒸馏捕获领域特定语言模式，对分布偏移具有鲁棒性。</span>
             </li>
             <li>
                 <strong><span class="lang-en">Zero-Shot Detection:</span><span class="lang-zh d-none">零样本检测：</span></strong>
-                <span class="lang-en">No training data required - works out-of-the-box on specialized domains.</span>
-                <span class="lang-zh d-none">无需额外训练数据，可直接在专业场景部署。</span>
+                <span class="lang-en">No need for labeled detection training data - works directly on new specialized domains.</span>
+                <span class="lang-zh d-none">无需标注检测训练数据，可直接应用于新的专业领域。</span>
+            </li>
+            <li>
+                <strong><span class="lang-en">Theoretical Grounding:</span><span class="lang-zh d-none">理论基础：</span></strong>
+                <span class="lang-en">Based on formal analysis of entropy divergence, providing interpretable detection signals.</span>
+                <span class="lang-zh d-none">基于熵散度的形式化分析，提供可解释的检测信号。</span>
             </li>
         </ul>
     </div>
