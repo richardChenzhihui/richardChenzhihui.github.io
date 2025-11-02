@@ -90,3 +90,12 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
+#lang-toggle {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+#lang-toggle:hover {
+    color: #007bff !important;
+}
+

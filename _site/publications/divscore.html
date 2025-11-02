@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Template: https://github.com/luost26/academic-homepage -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains - Zhihui Chen</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/global.css">
+</head>
+<body class="bg-light" >
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top border-bottom">
+    <div class="container-lg">
+        <a class="navbar-brand" href="/">
+            <span class="lang-en">Zhihui Chen</span>
+            <span class="lang-zh d-none">陈致晖</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mr-auto">
+                
+                
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-zh d-none">首页</span>
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/publications">
+                        <span class="lang-en">Publications</span>
+                        <span class="lang-zh d-none">论文发表</span>
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/showcase">
+                        <span class="lang-en">Showcase</span>
+                        <span class="lang-zh d-none">项目展示</span>
+                    </a>
+                </li>
+                
+            </ul>
+            <div class="navbar-nav ml-auto">
+                <a id="lang-toggle" class="nav-item nav-link" role="button" aria-label="Switch language" title="Switch language">
+                    <i class="fas fa-language"></i>
+                    <span class="lang-en">中文</span>
+                    <span class="lang-zh d-none">EN</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+    <div class="container-fluid">
+        <style>
+.divscore-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section .authors {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.hero-section .conference {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .links a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 25px;
+    background: white;
+    color: #667eea;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.hero-section .links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.content-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+    color: #667eea;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.content-section h3 {
+    color: #764ba2;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.abstract-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.poster-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.poster-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.poster-container img:hover {
+    transform: scale(1.02);
+}
+
+.figure-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.figure-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.figure-container .caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.result-item {
+    text-align: center;
+}
+
+.result-item img,
+.result-item object {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.result-item h4 {
+    margin-top: 15px;
+    color: #764ba2;
+}
+
+.insights-list {
+    list-style: none;
+    padding: 0;
+}
+
+.insights-list li {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+}
+
+.insights-list li strong {
+    color: #667eea;
+}
+
+.citation-box {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+}
+
+.institution-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.institution-logos img {
+    height: 60px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .institution-logos {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+</style>
+
+<div class="divscore-page">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>
+            <span class="lang-en">DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains</span>
+            <span class="lang-zh d-none">DivScore：在专业领域中零样本检测大模型生成文本</span>
+        </h1>
+        <div class="authors">
+            <strong>Zhihui Chen</strong><sup>1</sup>, 
+            <strong>Kai He</strong><sup>1</sup>, 
+            <strong>Yucheng Huang</strong><sup>2</sup>, 
+            <strong>Yunxiao Zhu</strong><sup>3</sup>, 
+            <strong>Mengling Feng</strong><sup>1†</sup>
+        </div>
+        <div class="institution-logos">
+            <img src="/assets/images/badges/NUS.png" alt="NUS">
+            <img src="/assets/images/badges/CU.png" alt="Tencent" style="height: 50px;">
+            <img src="/assets/images/badges/HKU.jpg" alt="HKU">
+        </div>
+        <div class="conference">
+            <i class="fas fa-trophy"></i>
+            <span class="lang-en"> EMNLP 2025 Main Conference</span>
+            <span class="lang-zh d-none"> EMNLP 2025 主会议</span>
+        </div>
+        <div class="links">
+            <a href="https://arxiv.org/abs/2506.06705" target="_blank"><i class="fas fa-file-pdf"></i> <span class="lang-en">Paper</span><span class="lang-zh d-none">论文</span></a>
+            <a href="https://github.com/richardChenzhihui/DivScore" target="_blank"><i class="fab fa-github"></i> <span class="lang-en">Code</span><span class="lang-zh d-none">代码</span></a>
+            <a href="https://arxiv.org/abs/2506.06705" target="_blank"><i class="ai ai-arxiv"></i> <span class="lang-en">arXiv</span><span class="lang-zh d-none">arXiv</span></a>
+        </div>
+    </div>
+
+    <!-- Abstract -->
+    <div class="content-section">
+        <h2><i class="fas fa-align-left"></i> <span class="lang-en">Abstract</span><span class="lang-zh d-none">摘要</span></h2>
+        <p class="abstract-text lang-en">
+            Detecting LLM-generated text in <strong>specialized and high-stakes domains</strong> like medicine and law is crucial for combating misinformation and ensuring authenticity. However, current zero-shot detectors, while effective on general text, often fail when applied to specialized content due to domain shift. To address this, we propose <strong>DivScore</strong>, a zero-shot detection framework using <strong>normalized entropy-based scoring</strong> and <strong>domain knowledge distillation</strong> to robustly identify LLM-generated text in specialized domains. DivScore consistently outperforms state-of-the-art detectors, with <strong>14.4% higher AUROC</strong> and <strong>64.0% higher TPR</strong> at 0.1% FPR threshold.
+        </p>
+        <p class="abstract-text lang-zh d-none">
+            在医学和法律等专业高风险领域检测大语言模型生成的文本对于打击错误信息和确保真实性至关重要。然而，现有的零样本检测器虽然在通用场景表现良好，但在面对专业领域内容时常因领域迁移带来的分布偏移而失效。为此，我们提出 <strong>DivScore</strong>，一个结合<strong>归一化熵评分</strong>与<strong>领域知识蒸馏</strong>的零样本检测框架，能够稳健识别专业领域中的大模型生成文本。DivScore 在多个基准上均显著领先现有方法，<strong>AUROC 提升 14.4%</strong>，在 <strong>0.1% FPR</strong> 阈值下召回率提升 <strong>64.0%</strong>。
+        </p>
+    </div>
+
+    <!-- Full Poster -->
+    <div class="content-section">
+        <h2><i class="fas fa-image"></i> <span class="lang-en">Full Poster</span><span class="lang-zh d-none">完整海报</span></h2>
+        <div class="poster-container">
+            <img src="/assets/images/publications/divscore/poster.jpg" 
+                 alt="DivScore Poster" 
+                 onclick="window.open(this.src, '_blank')">
+            <p style="margin-top: 15px; color: #666; font-style: italic;">
+                <i class="fas fa-mouse-pointer"></i>
+                <span class="lang-en"> Click image to view in full size</span>
+                <span class="lang-zh d-none"> 点击图片查看大图</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Method Overview -->
+    <div class="content-section">
+        <h2><i class="fas fa-cogs"></i> <span class="lang-en">Method Overview</span><span class="lang-zh d-none">方法概览</span></h2>
+        <div class="figure-container">
+            <img src="/assets/images/publications/divscore/method.png" 
+                 alt="DivScore Method">
+            <p class="caption">
+                <span class="lang-en">DivScore method framework: Domain knowledge distillation adapts a general LLM to specialized domains, enabling accurate detection through normalized entropy scoring.</span>
+                <span class="lang-zh d-none">DivScore 方法框架：利用领域知识蒸馏将通用 LLM 适配到专业领域，并通过归一化熵评分实现精确检测。</span>
+            </p>
+        </div>
+        
+        <h3><span class="lang-en">Key Components:</span><span class="lang-zh d-none">关键模块：</span></h3>
+        <ul class="insights-list">
+            <li>
+                <strong><span class="lang-en">Domain Knowledge Distillation:</span><span class="lang-zh d-none">领域知识蒸馏：</span></strong>
+                <span class="lang-en">Fine-tunes general LLMs with domain-specific knowledge to create domain-adapted models.</span>
+                <span class="lang-zh d-none">利用领域知识对通用 LLM 进行微调，构建领域适配模型。</span>
+            </li>
+            <li>
+                <strong><span class="lang-en">Normalized Entropy Scoring:</span><span class="lang-zh d-none">归一化熵评分：</span></strong>
+                <span class="lang-en">Compares text entropy between general and domain-adapted models to identify machine-generated content.</span>
+                <span class="lang-zh d-none">比较通用模型与领域模型的熵差，识别机器生成文本。</span>
+            </li>
+            <li>
+                <strong><span class="lang-en">Zero-Shot Detection:</span><span class="lang-zh d-none">零样本检测：</span></strong>
+                <span class="lang-en">No training data required - works out-of-the-box on specialized domains.</span>
+                <span class="lang-zh d-none">无需额外训练数据，可直接在专业场景部署。</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Results -->
+    <div class="content-section">
+        <h2><i class="fas fa-chart-bar"></i> <span class="lang-en">Main Results</span><span class="lang-zh d-none">主要结果</span></h2>
+        <div class="figure-container">
+            <img src="/assets/images/publications/divscore/table.png" 
+                 alt="Main Results Table">
+            <p class="caption">
+                <span class="lang-en">Main results showing DivScore significantly outperforms baselines across multiple specialized domains.</span>
+                <span class="lang-zh d-none">主要结果表明，DivScore 在多个专业领域显著领先基线方法。</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Ablation Studies -->
+    <div class="content-section">
+        <h2><i class="fas fa-flask"></i> <span class="lang-en">Ablation Studies</span><span class="lang-zh d-none">消融实验</span></h2>
+        
+        <div class="results-grid">
+            <div class="result-item">
+                <object data="/assets/images/publications/divscore/all_auroc_curves.pdf" 
+                        type="application/pdf" 
+                        width="100%" 
+                        height="400">
+                    <img src="/assets/images/publications/divscore/all_auroc_curves.pdf" 
+                         alt="AUROC Curves">
+                </object>
+                <h4>
+                    <span class="lang-en">AUROC Curves Comparison</span>
+                    <span class="lang-zh d-none">AUROC 曲线对比</span>
+                </h4>
+            </div>
+            
+            <div class="result-item">
+                <object data="/assets/images/publications/divscore/entropy_vs_logrank.pdf" 
+                        type="application/pdf" 
+                        width="100%" 
+                        height="400">
+                    <img src="/assets/images/publications/divscore/entropy_vs_logrank.pdf" 
+                         alt="Entropy vs LogRank">
+                </object>
+                <h4>
+                    <span class="lang-en">Entropy vs. LogRank Comparison</span>
+                    <span class="lang-zh d-none">熵与 LogRank 指标比较</span>
+                </h4>
+            </div>
+            
+            <div class="result-item">
+                <object data="/assets/images/publications/divscore/epoch_ablation_auroc.pdf" 
+                        type="application/pdf" 
+                        width="100%" 
+                        height="400">
+                    <img src="/assets/images/publications/divscore/epoch_ablation_auroc.pdf" 
+                         alt="Epoch Ablation">
+                </object>
+                <h4>
+                    <span class="lang-en">Epoch Ablation Study</span>
+                    <span class="lang-zh d-none">训练轮数消融实验</span>
+                </h4>
+            </div>
+            
+            <div class="result-item">
+                <object data="/assets/images/publications/divscore/llm_ablation_auroc.pdf" 
+                        type="application/pdf" 
+                        width="100%" 
+                        height="400">
+                    <img src="/assets/images/publications/divscore/llm_ablation_auroc.pdf" 
+                         alt="LLM Ablation">
+                </object>
+                <h4>
+                    <span class="lang-en">LLM Model Ablation</span>
+                    <span class="lang-zh d-none">生成模型消融实验</span>
+                </h4>
+            </div>
+            
+            <div class="result-item">
+                <object data="/assets/images/publications/divscore/w_wo_distill.pdf" 
+                        type="application/pdf" 
+                        width="100%" 
+                        height="400">
+                    <img src="/assets/images/publications/divscore/w_wo_distill.pdf" 
+                         alt="With/Without Distillation">
+                </object>
+                <h4>
+                    <span class="lang-en">Impact of Knowledge Distillation</span>
+                    <span class="lang-zh d-none">知识蒸馏效果比较</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Insights -->
+    <div class="content-section">
+        <h2><i class="fas fa-lightbulb"></i> <span class="lang-en">Key Insights</span><span class="lang-zh d-none">关键洞察</span></h2>
+        <ul class="insights-list">
+            <li>
+                <strong><span class="lang-en">Domain Shift Challenge:</span><span class="lang-zh d-none">领域分布偏移挑战：</span></strong>
+                <span class="lang-en">Existing zero-shot detectors fail on specialized domains due to distribution mismatch between general and domain-specific text.</span>
+                <span class="lang-zh d-none">通用零样本检测器在专业领域因通用文本与领域文本的分布差异而表现不佳。</span>
+            </li>
+            <li>
+                <strong><span class="lang-en">Normalized Entropy is Key:</span><span class="lang-zh d-none">归一化熵评分是关键：</span></strong>
+                <span class="lang-en">Comparing entropy between general and domain-adapted models provides robust detection signals across different specialized domains.</span>
+                <span class="lang-zh d-none">比较通用模型与领域化模型的熵，可在不同专业场景提供稳健的检测信号。</span>
+            </li>
+            <li>
+                <strong><span class="lang-en">Knowledge Distillation Matters:</span><span class="lang-zh d-none">领域知识蒸馏至关重要：</span></strong>
+                <span class="lang-en">Domain-adapted models significantly improve detection accuracy, with 14.4% higher AUROC compared to baselines.</span>
+                <span class="lang-zh d-none">领域化模型显著提升检测精度，相比基线 AUROC 提升 14.4%。</span>
+            </li>
+            <li>
+                <strong><span class="lang-en">Strong Robustness:</span><span class="lang-zh d-none">鲁棒性强：</span></strong>
+                <span class="lang-en">DivScore maintains high performance under adversarial attacks and across different LLM generators, achieving 64.0% higher TPR at 0.1% FPR.</span>
+                <span class="lang-zh d-none">在对抗环境和不同生成模型下，DivScore 仍能在 0.1% FPR 下实现 64.0% 更高的召回率。</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Citation -->
+    <div class="content-section">
+        <h2><i class="fas fa-quote-left"></i> <span class="lang-en">Citation</span><span class="lang-zh d-none">引用</span></h2>
+        <p>
+            <span class="lang-en">If you find our work useful, please cite:</span>
+            <span class="lang-zh d-none">如果这项工作对您有帮助，请引用：</span>
+        </p>
+        <div class="citation-box">
+@inproceedings{chen2025divscore,
+    title={DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains},
+    author={Chen, Zhihui and He, Kai and Huang, Yucheng and Zhu, Yunxiao and Feng, Mengling},
+    booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+    year={2025}
+}
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; padding: 40px 20px; color: #666;">
+        <p>
+            <i class="fas fa-envelope"></i>
+            <span class="lang-en"> For questions or collaboration, please contact: </span>
+            <span class="lang-zh d-none"> 如需合作或有疑问，请联系： </span>
+            <a href="mailto:zhihui.chen@u.nus.edu">zhihui.chen@u.nus.edu</a>
+        </p>
+    </div>
+</div>
+
+<script>
+// Optional: Add lightbox functionality for images
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});
+</script>
+
+
+    </div>
+    <footer class="footer">
+    <div class="container-fluid">
+        <div class="row my-3">
+            <div class="col-6">
+                <div class="text-muted">
+                    <i>
+                        <span class="lang-en">Last updated:</span>
+                        <span class="lang-zh d-none">最后更新：</span>
+                        Nov 2025
+                    </i>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="text-right text-muted">
+                    <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/github-buttons/2.14.2/buttons.min.js" integrity="sha512-OYwZx04hKFeFNYrWxIyo3atgGpb+cxU0ENWBZs72X7T9U+NoHPM1ftUn/Mfw7dRDXrqWA6M1wBg6z6fGE32aeA==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false}
+              ],
+              throwOnError : false
+            });
+        });
+    </script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/bubble_visual_hash.js"></script>
+    <script src="/assets/js/semantic_scholar_citation_count.js"></script>
+    <script src="/assets/js/language_switcher.js"></script>
+</body>
+</html>
