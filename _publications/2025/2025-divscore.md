@@ -25,10 +25,12 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2506.06705
   Code: https://github.com/richardChenzhihui/DivScore
+  Project Page: /publications/divscore.html
   arXiv: https://arxiv.org/abs/2506.06705
 links_zh:
   论文: https://arxiv.org/abs/2506.06705
   代码: https://github.com/richardChenzhihui/DivScore
+  项目页面: /publications/divscore.html
   arXiv: https://arxiv.org/abs/2506.06705
 ---
 
