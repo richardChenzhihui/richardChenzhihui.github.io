@@ -1,7 +1,7 @@
 ---
 title:          "DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains"
 title_zh:       "DivScore: 专业领域中大语言模型生成文本的零样本检测"
-date:           2025-06-07 00:01:00 +0800
+date:           2025-11-02 00:01:00 +0800
 selected:       true
 pub:            "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
 pub_zh:         "自然语言处理实证方法会议 (EMNLP)"
@@ -23,14 +23,12 @@ authors:
   - Yunxiao Zhu
   - Mengling Feng
 links:
-  Paper: https://arxiv.org/abs/2506.06705
+  Paper: https://aclanthology.org/2025.emnlp-main.971/
   Code: https://github.com/richardChenzhihui/DivScore
   Project Page: /publications/divscore.html
-  arXiv: https://arxiv.org/abs/2506.06705
 links_zh:
-  论文: https://arxiv.org/abs/2506.06705
+  论文: https://aclanthology.org/2025.emnlp-main.971/
   代码: https://github.com/richardChenzhihui/DivScore
   项目页面: /publications/divscore.html
-  arXiv: https://arxiv.org/abs/2506.06705
 ---
 
