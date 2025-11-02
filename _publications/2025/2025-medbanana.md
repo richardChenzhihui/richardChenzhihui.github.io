@@ -17,9 +17,11 @@ authors:
 links:
   Paper: https://arxiv.org/submit/6942444/view
   Code: https://github.com/richardChenzhihui/med-banana-50k/
+  Project Page: /showcase.html#projects
 links_zh:
   论文: https://arxiv.org/submit/6942444/view
   代码: https://github.com/richardChenzhihui/med-banana-50k/
+  项目页面: /showcase.html#projects
 ---
 
 <!-- Note: arXiv link needs to be updated to the official publication link once available -->
