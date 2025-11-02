@@ -2,7 +2,7 @@
 title:          "Production Efficiency Analysis Based on RFID-Collected Manufacturing Big Data"
 title_zh:       "基于RFID采集制造大数据的生产效率分析"
 date:           2024-06-15 00:01:00 +0800
-selected:       false
+selected:       true
 pub:            "52nd NAMRC (North American Manufacturing Research Conference)"
 pub_zh:         "第52届北美制造研究会议 (NAMRC)"
 pub_date:       "2024"
