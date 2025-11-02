@@ -324,11 +324,31 @@
         <h2><i class="fas fa-cogs"></i> <span class="lang-en">Method Overview</span><span class="lang-zh d-none">方法概览</span></h2>
         <div class="figure-container">
             <img src="/assets/images/publications/divscore/method.png" 
-                 alt="DivScore Method">
+                 alt="DivScore Method"
+                 style="max-width: 800px; width: 100%;">
             <p class="caption">
                 <span class="lang-en">DivScore method framework: Domain knowledge distillation adapts a general LLM to specialized domains, enabling accurate detection through normalized entropy scoring.</span>
                 <span class="lang-zh d-none">DivScore 方法框架：利用领域知识蒸馏将通用 LLM 适配到专业领域，并通过归一化熵评分实现精确检测。</span>
             </p>
+        </div>
+        
+        <div style="margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <div class="lang-en">
+                <p><strong>How DivScore Works:</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Step 1 - Domain Adaptation:</strong> A teacher LLM (e.g., DeepSeek) provides domain-specific knowledge, which is distilled into a general LLM to create a domain-adapted model M*.</li>
+                    <li><strong>Step 2 - Entropy Comparison:</strong> For a given text, we compute the entropy difference between the general model M and the domain-adapted model M*. Machine-generated text shows lower entropy difference.</li>
+                    <li><strong>Step 3 - Classification:</strong> If the normalized entropy divergence D<sub>M,M*</sub>(x) ≤ ε (threshold), the text is classified as machine-generated; otherwise, it's human-written.</li>
+                </ul>
+            </div>
+            <div class="lang-zh d-none">
+                <p><strong>DivScore 工作原理：</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>步骤 1 - 领域适配：</strong> 教师模型（如 DeepSeek）提供领域专业知识，蒸馏到通用 LLM 中形成领域适配模型 M*。</li>
+                    <li><strong>步骤 2 - 熵值比较：</strong> 对于给定文本，我们计算通用模型 M 与领域模型 M* 的熵差。机器生成文本表现出更低的熵差。</li>
+                    <li><strong>步骤 3 - 分类判定：</strong> 若归一化熵散度 D<sub>M,M*</sub>(x) ≤ ε（阈值），则判定为机器生成；否则为人类撰写。</li>
+                </ul>
+            </div>
         </div>
         
         <h3><span class="lang-en">Key Components:</span><span class="lang-zh d-none">关键模块：</span></h3>
