@@ -19,7 +19,7 @@ linkedin: richard-chen~
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am currently a first-year PhD student at the National University of Singapore, supervised by 
+    I am currently a second-year PhD student at the National University of Singapore, supervised by 
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>. 
   </p>
   <p>
@@ -42,7 +42,7 @@ hero_proof:
   - "10+ reviews completed"
 
 availability:
-  label: "Incoming TikTok 2026 Multimodal Agentic RL Training Intern"
+  label: "TikTok 2026 Multimodal Agent PhD Intern"
 
 homepage_metrics:
   - value: "2"
@@ -108,7 +108,7 @@ education:
 
 experience:
 - name: TikTok
-  position: Multimodal Agentic RL Training Intern
+  position: Multimodal Agent PhD Intern
   date: Summer 2026
 
 - name: StepFun AI Intelligent Technology
