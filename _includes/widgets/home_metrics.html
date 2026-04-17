@@ -1,0 +1,28 @@
+{% assign metrics_en = site.data.profile.homepage_metrics %}
+{% assign metrics_zh = site.data.profile_zh.homepage_metrics %}
+{% if metrics_en and metrics_en.size > 0 %}
+<section class="home-section">
+    <div class="home-section-heading">
+        <span class="lang-en">Selected Outcomes</span>
+        <span class="lang-zh d-none">代表性成果</span>
+    </div>
+    <div class="row">
+        {% for metric in metrics_en %}
+        {% assign metric_zh = metrics_zh[forloop.index0] %}
+        <div class="col-12 col-md-4 mb-3">
+            <div class="home-metric-card">
+                <div class="home-metric-value">{{ metric.value }}</div>
+                <div class="home-metric-label">
+                    <span class="lang-en">{{ metric.label }}</span>
+                    <span class="lang-zh d-none">{{ metric_zh.label }}</span>
+                </div>
+                <div class="home-metric-note">
+                    <span class="lang-en">{{ metric.note }}</span>
+                    <span class="lang-zh d-none">{{ metric_zh.note }}</span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

@@ -2,12 +2,11 @@
 layout: default
 title : Homepage
 navbar_title: Home
+body_class: home-landing
 ---
 {% include widgets/profile_card.html %}
-
-{% include widgets/debug_repo_name.html %}
-
-{% include widgets/debug_url.html %}
+{% include widgets/home_metrics.html %}
+{% include widgets/home_featured_work.html %}
 
 {% if site.data.display.homepage.show_experience %}
     {% include widgets/experience_card.html %}
@@ -18,6 +17,8 @@ navbar_title: Home
     {% 
         include widgets/publication_card.html 
         publications=pubs
+        limit=3
+        compact=true
         title='<i class="fas fa-star"></i> Selected Publications'
     %}
 {% endif %}
@@ -28,3 +29,7 @@ navbar_title: Home
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
     {% endif %}
 {% endif %}
+
+{% include widgets/debug_repo_name.html %}
+
+{% include widgets/debug_url.html %}

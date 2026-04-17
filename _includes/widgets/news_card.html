@@ -1,6 +1,11 @@
 {% assign news_by_year = site.news | sort: "date" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.date | date: '%Y'" -%}
 
-<div class="my-3 bg-white shadow-sm rounded-xl">
+<section class="home-section home-secondary-section">
+    <div class="home-section-heading">
+        <span class="lang-en">Recent Updates</span>
+        <span class="lang-zh d-none">近期动态</span>
+    </div>
+<div class="bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> <span class="lang-en">News</span><span class="lang-zh d-none">动态</span></h6>
     <div class="px-3 pb-1">
         {% for year in news_by_year %}
@@ -19,3 +24,4 @@
         {% endfor %}
     </div>
 </div>
+</section>

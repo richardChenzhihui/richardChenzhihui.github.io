@@ -1,0 +1,57 @@
+{% assign work_en = site.data.profile.featured_work %}
+{% assign work_zh = site.data.profile_zh.featured_work %}
+{% if work_en and work_en.size > 0 %}
+<section class="home-section">
+    <div class="home-section-heading d-flex align-items-center">
+        <div>
+            <span class="lang-en">Featured Work</span>
+            <span class="lang-zh d-none">代表项目</span>
+        </div>
+        <a class="home-inline-link ml-auto" href="{{ 'showcase' | relative_url }}">
+            <span class="lang-en">View showcase</span>
+            <span class="lang-zh d-none">查看项目展示</span>
+        </a>
+    </div>
+    <div class="row">
+        {% for item in work_en %}
+        {% assign item_zh = work_zh[forloop.index0] %}
+        <div class="col-12 col-lg-6 mb-4">
+            <article class="home-feature-card">
+                <div class="home-feature-image-wrap">
+                    <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="home-feature-image">
+                </div>
+                <div class="home-feature-body">
+                    <div class="home-feature-subtitle">
+                        <span class="lang-en">{{ item.subtitle }}</span>
+                        <span class="lang-zh d-none">{{ item_zh.subtitle }}</span>
+                    </div>
+                    <h3 class="home-feature-title">{{ item.title }}</h3>
+                    <p class="home-feature-description">
+                        <span class="lang-en">{{ item.description }}</span>
+                        <span class="lang-zh d-none">{{ item_zh.description }}</span>
+                    </p>
+                    <div class="home-feature-badges">
+                        {% for badge in item.badges %}
+                        <span class="home-feature-badge">
+                            <span class="lang-en">{{ badge }}</span>
+                            <span class="lang-zh d-none">{{ item_zh.badges[forloop.index0] }}</span>
+                        </span>
+                        {% endfor %}
+                    </div>
+                    <div class="home-feature-actions">
+                        <a class="home-action-link" href="{{ item.primary.url | relative_url }}">
+                            <span class="lang-en">{{ item.primary.label }}</span>
+                            <span class="lang-zh d-none">{{ item_zh.primary.label }}</span>
+                        </a>
+                        <a class="home-action-link secondary" href="{{ item.secondary.url }}" target="_blank" rel="noopener">
+                            <span class="lang-en">{{ item.secondary.label }}</span>
+                            <span class="lang-zh d-none">{{ item_zh.secondary.label }}</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

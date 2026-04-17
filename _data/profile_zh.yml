@@ -28,7 +28,53 @@ short_bio: >-
   <p>
     <strong>研究方向：</strong>可信与智能体大语言模型 • 医疗领域多模态智能
   </p>
-  <p style="border: 2px solid #007bff; border-radius: 10px; padding: 10px; display: inline-block; text-align: center; background-color: #e6f3ff;">期待26年暑期实习机会！！🙏</p>
+
+hero_summary: >-
+  聚焦高风险医疗场景中的可信与多模态人工智能，近期工作覆盖医学深度伪造检测、大模型文本检测与医学图像编辑数据集。
+
+availability:
+  label: "期待 2026 年暑期实习机会"
+
+homepage_metrics:
+  - value: "2"
+    label: "篇代表成果"
+    note: "ACL 2026 与 EMNLP 2025"
+  - value: "50,635"
+    label: "次医学图像编辑"
+    note: "覆盖 3 种模态与 23 类疾病"
+  - value: "+14.4%"
+    label: "AUROC 提升"
+    note: "DivScore 相比既有零样本检测器"
+
+featured_work:
+  - title: "MedForge"
+    subtitle: "可解释医学深度伪造检测"
+    description: "通过 MedForge-90K 基准与先定位再分析的推理式检测器，对医学影像伪造进行定位、判别和解释。"
+    image: /assets/images/publications/medforge/fig1.png
+    badges:
+      - "ACL 2026 主会议"
+      - "19 类病灶"
+      - "10 种伪造模型"
+    primary:
+      label: "项目页面"
+      url: /publications/medforge.html
+    secondary:
+      label: "论文"
+      url: https://arxiv.org/abs/2603.18577
+  - title: "DivScore"
+    subtitle: "专业领域零样本文本检测"
+    description: "面向医疗与法律等高风险领域，在无需新领域训练数据的前提下，稳健检测大模型生成文本。"
+    image: /assets/images/publications/divscore/poster.jpg
+    badges:
+      - "EMNLP 2025 主会议"
+      - "+14.4% AUROC"
+      - "+64.0% 召回"
+    primary:
+      label: "项目页面"
+      url: /publications/divscore.html
+    secondary:
+      label: "代码"
+      url: https://github.com/richardChenzhihui/DivScore
 
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -65,4 +111,3 @@ awards:
   date: 2022
 - name: 香港中文大学（深圳）本科生科研卓越奖
   date: 2021
-
