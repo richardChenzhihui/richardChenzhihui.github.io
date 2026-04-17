@@ -9,8 +9,8 @@
         <div class="col-lg-7">
             <div class="home-hero-copy">
                 <div class="home-hero-kicker">
-                    <span class="lang-en">Trustworthy AI for healthcare</span>
-                    <span class="lang-zh d-none">面向医疗场景的可信人工智能</span>
+                    <span class="lang-en">{{ site.data.profile.hero_kicker }}</span>
+                    <span class="lang-zh d-none">{{ site.data.profile_zh.hero_kicker }}</span>
                 </div>
                 <div class="home-hero-name">
                     <span class="lang-en">{{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small></span>
@@ -39,6 +39,16 @@
                     <span class="lang-en">Multimodal Intelligence in Healthcare</span>
                     <span class="lang-zh d-none">医疗领域多模态智能</span>
                 </div>
+                {% if site.data.profile.hero_proof %}
+                <div class="home-hero-proof">
+                    {% for item in site.data.profile.hero_proof %}
+                    <span class="home-feature-badge">
+                        <span class="lang-en">{{ item }}</span>
+                        <span class="lang-zh d-none">{{ site.data.profile_zh.hero_proof[forloop.index0] }}</span>
+                    </span>
+                    {% endfor %}
+                </div>
+                {% endif %}
                 {% if site.data.profile.availability %}
                 <div class="home-status-pill">
                     <span class="lang-en">{{ site.data.profile.availability.label }}</span>

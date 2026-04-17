@@ -6,11 +6,6 @@ body_class: home-landing
 ---
 {% include widgets/profile_card.html %}
 {% include widgets/home_metrics.html %}
-{% include widgets/home_featured_work.html %}
-
-{% if site.data.display.homepage.show_experience %}
-    {% include widgets/experience_card.html %}
-{% endif %}
 
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
@@ -19,8 +14,14 @@ body_class: home-landing
         publications=pubs
         limit=3
         compact=true
-        title='<i class="fas fa-star"></i> Selected Publications'
+        title='<span class="lang-en"><i class="fas fa-star"></i> 2 Top NLP Conference Papers</span><span class="lang-zh d-none"><i class="fas fa-star"></i> 两篇 TOP NLP 会议论文</span>'
     %}
+{% endif %}
+
+{% include widgets/home_featured_work.html %}
+
+{% if site.data.display.homepage.show_experience %}
+    {% include widgets/experience_card.html %}
 {% endif %}
 
 {% if site.data.display.homepage.show_news %}

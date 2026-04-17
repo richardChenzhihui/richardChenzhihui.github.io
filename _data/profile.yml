@@ -29,22 +29,34 @@ short_bio: >-
     <strong>Research Interests:</strong> Trustworthy and Agentic LLM • Multi-modality Intelligence in Healthcare
   </p>
 
+hero_kicker: >-
+  2 papers at top NLP conferences
+
 hero_summary: >-
-  I build trustworthy and multimodal AI systems for high-stakes healthcare, with recent work on medical deepfake detection, LLM detection, and medical image editing.
+  Published at ACL 2026 and EMNLP 2025, I study trustworthy and multimodal AI for high-stakes healthcare, spanning medical deepfake detection, LLM detection, and medical image editing.
+
+hero_proof:
+  - "ACL 2026 Main"
+  - "EMNLP 2025 Main"
+  - "ACL 2026 Reviewer"
+  - "10+ reviews completed"
 
 availability:
   label: "Open to Summer 2026 internship opportunities"
 
 homepage_metrics:
   - value: "2"
-    label: "featured papers"
-    note: "ACL 2026 and EMNLP 2025"
-  - value: "50,635"
-    label: "medical image edits"
-    note: "across 3 modalities and 23 disease types"
-  - value: "+14.4%"
-    label: "AUROC uplift"
-    note: "DivScore vs. prior zero-shot detectors"
+    label: "top NLP conference papers"
+    note: "published at ACL 2026 and EMNLP 2025"
+  - value: "75k+"
+    label: "Hugging Face downloads"
+    note: "Med-Banana-50K dataset traction"
+  - value: "60+"
+    label: "GitHub stars"
+    note: "across DivScore and Med-Banana repositories"
+  - value: "ACL / NeurIPS / IJCAI"
+    label: "reviewer service"
+    note: "with 10+ papers reviewed"
 
 featured_work:
   - title: "MedForge"
