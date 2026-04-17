@@ -42,7 +42,7 @@ hero_proof:
   - "已审稿 10+ 篇"
 
 availability:
-  label: "期待 2026 年暑期实习机会"
+  label: "2026 年 TikTok 多模态 Agentic RL Training 实习"
 
 homepage_metrics:
   - value: "2"
@@ -107,6 +107,10 @@ education:
   date: 2018年9月 - 2022年5月
 
 experience:
+- name: TikTok
+  position: 多模态 Agentic RL Training 实习生
+  date: 2026 年夏
+
 - name: 阶跃星辰（StepFun）
   logo: /assets/images/badges/StepFun.png
   position: 大模型实习生
