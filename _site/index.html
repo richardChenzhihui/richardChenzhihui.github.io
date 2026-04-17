@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/global.css">
 </head>
-<body class="bg-light" >
+<body class="bg-light home-landing" >
     <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top border-bottom">
     <div class="container-lg">
         <a class="navbar-brand" href="/">
@@ -69,54 +69,90 @@
 
 
     <div class="container-lg">
-        <div class="row">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-5">
-                <div class="row">
-                    <div class="col">
+        <section class="home-hero-card">
+    <div class="row align-items-center">
+        <div class="col-lg-7">
+            <div class="home-hero-copy">
+                <div class="home-hero-kicker">
+                    <span class="lang-en">Trustworthy AI for healthcare</span>
+                    <span class="lang-zh d-none">面向医疗场景的可信人工智能</span>
+                </div>
+                <div class="home-hero-name">
+                    <span class="lang-en">Zhihui Chen <small></small></span>
+                    <span class="lang-zh d-none">陈致晖 <small></small></span>
+                </div>
+                <div class="home-hero-position">
+                    <div class="lang-en">
                         
-                        <!-- When the screen is wider than md, float the portrait on the right -->
-                        <div class="figure float-right ml-4 mb-4 d-none d-md-block">
-                            <img 
-                                src="/assets/images/photos/portrait.jpg" 
-                                class="figure-img img-fluid img-thumbnail" 
-                                style="height: 200px;"
-                                data-toggle="tooltip" 
-                                data-placement="top" 
-                                title="">
-                        </div>
+                        Ph.D. Student in Artificial Intelligence, National University of Singapore
                         
-
-                        <div class="d-flex">
-                            <div class="h1 font-weight-normal">
-                                <span class="lang-en">Zhihui Chen <small></small></span>
-                                <span class="lang-zh d-none">陈致晖 <small></small></span>
-                            </div>
-                            
-                            <div class="ml-auto d-md-none">
-                                <a target="_blank" href="/assets/images/photos/portrait.jpg">
-                                    <img src="/assets/images/photos/portrait.jpg" class="rounded-circle" style="height: 48px;" alt="Portrait">
-                                </a>
-                            </div>
-                            
-                        </div>
-                        <div class="text-profile-position">
-                            <div class="lang-en">
-                                
-                                
-                                Ph.D. Student in Artificial Intelligence, National University of Singapore<br/>
-                                
-                            </div>
-                            <div class="lang-zh d-none">
-                                
-                                
-                                新加坡国立大学人工智能博士生<br/>
-                                
-                            </div>
-                        </div>
-                        <div class="text-profile-bio mt-3" >
-                            <div class="lang-en"><p>
+                    </div>
+                    <div class="lang-zh d-none">
+                        
+                        新加坡国立大学人工智能博士生
+                        
+                    </div>
+                </div>
+                <p class="home-hero-summary">
+                    <span class="lang-en">I build trustworthy and multimodal AI systems for high-stakes healthcare, with recent work on medical deepfake detection, LLM detection, and medical image editing.</span>
+                    <span class="lang-zh d-none">聚焦高风险医疗场景中的可信与多模态人工智能，近期工作覆盖医学深度伪造检测、大模型文本检测与医学图像编辑数据集。</span>
+                </p>
+                <div class="home-hero-focus">
+                    <span class="lang-en">Trustworthy and Agentic LLM</span>
+                    <span class="lang-zh d-none">可信与智能体大语言模型</span>
+                    <span class="home-hero-dot"></span>
+                    <span class="lang-en">Multimodal Intelligence in Healthcare</span>
+                    <span class="lang-zh d-none">医疗领域多模态智能</span>
+                </div>
+                
+                <div class="home-status-pill">
+                    <span class="lang-en">Open to Summer 2026 internship opportunities</span>
+                    <span class="lang-zh d-none">期待 2026 年暑期实习机会</span>
+                </div>
+                
+                <div class="home-hero-actions">
+                    <a class="home-primary-btn" href="/publications">
+                        <span class="lang-en">View Publications</span>
+                        <span class="lang-zh d-none">查看论文</span>
+                    </a>
+                    <a class="home-secondary-btn" href="/showcase">
+                        <span class="lang-en">View Showcase</span>
+                        <span class="lang-zh d-none">查看项目展示</span>
+                    </a>
+                    <a class="home-secondary-btn" href="https://scholar.google.com/citations?user=G_JnDUgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+                </div>
+                <div class="home-hero-links">
+                    <a class="no-break" href="mailto:%7A%68%69%68%75%69.%63%68%65%6E@%75.%6E%75%73.%65%64%75">
+                        <i class="fas fa-at"></i> <span class="email-text">zhihui.chen(at)u.nus.edu</span>
+                    </a>
+                    
+                    <a class="no-break" target="_blank" href="https://github.com/richardChenzhihui">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    
+                    
+                    <a class="no-break" target="_blank" href="https://www.linkedin.com/in/richard-chen~">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="home-hero-visual">
+                
+                <img
+                    src="/assets/images/photos/portrait.jpg"
+                    class="home-hero-portrait"
+                    alt="Portrait"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="">
+                
+                <div class="home-hero-bio">
+                    <div class="lang-en"><p>
   I am currently a first-year PhD student at the National University of Singapore, supervised by 
   <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>. 
 </p> <p>
@@ -124,116 +160,206 @@
 </p> <p>
   <strong>Research Interests:</strong> Trustworthy and Agentic LLM • Multi-modality Intelligence in Healthcare
 </p></div>
-                            <div class="lang-zh d-none"><p>
+                    <div class="lang-zh d-none"><p>
   我目前是新加坡国立大学一年级博士生，导师为
   <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
 </p> <p>
   担任NIPS、IJCAI、ACM TIST等会议和期刊的审稿人，已审稿10余篇。
 </p> <p>
   <strong>研究方向：</strong>可信与智能体大语言模型 • 医疗领域多模态智能
-</p> <p style="border: 2px solid #007bff; border-radius: 10px; padding: 10px; display: inline-block; text-align: center; background-color: #e6f3ff;">期待26年暑期实习机会！！🙏</p></div>
-                        </div>
-                        
-                    </div>
-        
-                </div>
-                <hr />
-                <div class="row">
-                    <div class="col">
-                        <a class="pr-3 no-break" href="mailto:%7A%68%69%68%75%69.%63%68%65%6E@%75.%6E%75%73.%65%64%75">
-                            <i class="fas fa-at"></i> <span class="email-text">zhihui.chen(at)u.nus.edu</span>
-                        </a>
-
-                        <a class="pr-3 no-break" target="_blank" href="https://scholar.google.com/citations?user=G_JnDUgAAAAJ">
-                            <i class="fab fa-google-scholar"></i> Google Scholar
-                        </a>
-                        
-                        
-                        
-                        <a class="pr-3 no-break" target="_blank" href="https://github.com/richardChenzhihui">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        
-
-                        
-
-                        
-
-                        
-                        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/richard-chen~">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        
-
-                        
-                    </div>
+</p></div>
+                    
                 </div>
             </div>
-        </div>        
-    </div>
-</div>
-
-
-
-
-<div id="ghpages-domain-debug-message" class="row mt-3 d-none">
-    <div class="col">
-        <div class="alert alert-warning my-0" role="alert">
-            <h5><i class="fas fa-exclamation-triangle"></i> Warning</h5>
-            <strong>Problem:</strong>
-            The current name of your GitHub Pages repository ("<code class="repo-name-text"></code>") does not match the recommended repository name for your site ("<code class="domain-name-text"></code>").
-            <br>
-            <strong>Solution:</strong> Please consider renaming the repository to "<code class="domain-name-text"></code>", so that your site can be accessed directly at "<code>http://<span class="domain-name-text"></span></code>".
-            However, if the current repository name is intended, you can ignore this message by removing "<code>{% include widgets/debug_repo_name.html %}</code>" in <code>index.html</code>.
         </div>
     </div>
-</div>
-
-<script>
-striped_pathname = location.pathname.replace(/\/+$/, "");
-document.querySelectorAll(".repo-name-text").forEach(function(element){
-    element.textContent = striped_pathname.replace("/", "");
-});
-document.querySelectorAll(".domain-name-text").forEach(function(element){
-    element.textContent = location.hostname;
-});
-
-if (location.hostname.search("github.io") != -1 && striped_pathname != ""){
-    document.getElementById("ghpages-domain-debug-message").classList.remove('d-none');
-}
-</script>
+</section>
 
 
-<div id="url-debug-message" class="row mt-3 d-none">
-    <div class="col">
-        <div class="alert alert-warning my-0" role="alert">
-            <h5><i class="fas fa-exclamation-triangle"></i> Action required</h5>
-            <strong>Problem:</strong>
-            The current root path of this site is "<code class="root-path-text"></code>",
-            which does not match the <code>baseurl</code> ("<code></code>") configured in <code>_config.yml</code>.
-            <br>
 
-            <strong>Solution:</strong>
-            Please set the <code>baseurl</code> in <code>_config.yml</code> to "<code class="root-path-text"></code>".
-        </div>
+
+
+
+<section class="home-section">
+    <div class="home-section-heading">
+        <span class="lang-en">Selected Outcomes</span>
+        <span class="lang-zh d-none">代表性成果</span>
     </div>
-</div>
+    <div class="row">
+        
+        
+        <div class="col-12 col-md-4 mb-3">
+            <div class="home-metric-card">
+                <div class="home-metric-value">2</div>
+                <div class="home-metric-label">
+                    <span class="lang-en">featured papers</span>
+                    <span class="lang-zh d-none">篇代表成果</span>
+                </div>
+                <div class="home-metric-note">
+                    <span class="lang-en">ACL 2026 and EMNLP 2025</span>
+                    <span class="lang-zh d-none">ACL 2026 与 EMNLP 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col-12 col-md-4 mb-3">
+            <div class="home-metric-card">
+                <div class="home-metric-value">50,635</div>
+                <div class="home-metric-label">
+                    <span class="lang-en">medical image edits</span>
+                    <span class="lang-zh d-none">次医学图像编辑</span>
+                </div>
+                <div class="home-metric-note">
+                    <span class="lang-en">across 3 modalities and 23 disease types</span>
+                    <span class="lang-zh d-none">覆盖 3 种模态与 23 类疾病</span>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col-12 col-md-4 mb-3">
+            <div class="home-metric-card">
+                <div class="home-metric-value">+14.4%</div>
+                <div class="home-metric-label">
+                    <span class="lang-en">AUROC uplift</span>
+                    <span class="lang-zh d-none">AUROC 提升</span>
+                </div>
+                <div class="home-metric-note">
+                    <span class="lang-en">DivScore vs. prior zero-shot detectors</span>
+                    <span class="lang-zh d-none">DivScore 相比既有零样本检测器</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
-<script>
-striped_pathname = location.pathname.replace(/\/+$/, "");
-if(striped_pathname != ""){
-    document.getElementById("url-debug-message").classList.remove('d-none');
-}
-document.querySelectorAll(".root-path-text").forEach(function(element){
-    element.textContent = striped_pathname;
-});
-</script>
 
 
 
-    <div class="row mt-3">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
+
+<section class="home-section">
+    <div class="home-section-heading d-flex align-items-center">
+        <div>
+            <span class="lang-en">Featured Work</span>
+            <span class="lang-zh d-none">代表项目</span>
+        </div>
+        <a class="home-inline-link ml-auto" href="/showcase">
+            <span class="lang-en">View showcase</span>
+            <span class="lang-zh d-none">查看项目展示</span>
+        </a>
+    </div>
+    <div class="row">
+        
+        
+        <div class="col-12 col-lg-6 mb-4">
+            <article class="home-feature-card">
+                <div class="home-feature-image-wrap">
+                    <img src="/assets/images/publications/medforge/fig1.png" alt="MedForge" class="home-feature-image">
+                </div>
+                <div class="home-feature-body">
+                    <div class="home-feature-subtitle">
+                        <span class="lang-en">Interpretable medical deepfake detection</span>
+                        <span class="lang-zh d-none">可解释医学深度伪造检测</span>
+                    </div>
+                    <h3 class="home-feature-title">MedForge</h3>
+                    <p class="home-feature-description">
+                        <span class="lang-en">Detects medically plausible image forgeries with localized reasoning, using the MedForge-90K benchmark and a Localize-then-Analyze detector.</span>
+                        <span class="lang-zh d-none">通过 MedForge-90K 基准与先定位再分析的推理式检测器，对医学影像伪造进行定位、判别和解释。</span>
+                    </p>
+                    <div class="home-feature-badges">
+                        
+                        <span class="home-feature-badge">
+                            <span class="lang-en">ACL 2026 Main</span>
+                            <span class="lang-zh d-none">ACL 2026 主会议</span>
+                        </span>
+                        
+                        <span class="home-feature-badge">
+                            <span class="lang-en">19 lesion types</span>
+                            <span class="lang-zh d-none">19 类病灶</span>
+                        </span>
+                        
+                        <span class="home-feature-badge">
+                            <span class="lang-en">10 deepfake models</span>
+                            <span class="lang-zh d-none">10 种伪造模型</span>
+                        </span>
+                        
+                    </div>
+                    <div class="home-feature-actions">
+                        <a class="home-action-link" href="/publications/medforge.html">
+                            <span class="lang-en">Project Page</span>
+                            <span class="lang-zh d-none">项目页面</span>
+                        </a>
+                        <a class="home-action-link secondary" href="https://arxiv.org/abs/2603.18577" target="_blank" rel="noopener">
+                            <span class="lang-en">Paper</span>
+                            <span class="lang-zh d-none">论文</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        
+        <div class="col-12 col-lg-6 mb-4">
+            <article class="home-feature-card">
+                <div class="home-feature-image-wrap">
+                    <img src="/assets/images/publications/divscore/poster.jpg" alt="DivScore" class="home-feature-image">
+                </div>
+                <div class="home-feature-body">
+                    <div class="home-feature-subtitle">
+                        <span class="lang-en">Zero-shot LLM detection in specialized domains</span>
+                        <span class="lang-zh d-none">专业领域零样本文本检测</span>
+                    </div>
+                    <h3 class="home-feature-title">DivScore</h3>
+                    <p class="home-feature-description">
+                        <span class="lang-en">A robust detector for medicine and law that uses normalized entropy scoring and domain knowledge distillation without retraining on new domains.</span>
+                        <span class="lang-zh d-none">面向医疗与法律等高风险领域，在无需新领域训练数据的前提下，稳健检测大模型生成文本。</span>
+                    </p>
+                    <div class="home-feature-badges">
+                        
+                        <span class="home-feature-badge">
+                            <span class="lang-en">EMNLP 2025 Main</span>
+                            <span class="lang-zh d-none">EMNLP 2025 主会议</span>
+                        </span>
+                        
+                        <span class="home-feature-badge">
+                            <span class="lang-en">+14.4% AUROC</span>
+                            <span class="lang-zh d-none">+14.4% AUROC</span>
+                        </span>
+                        
+                        <span class="home-feature-badge">
+                            <span class="lang-en">+64.0% recall</span>
+                            <span class="lang-zh d-none">+64.0% 召回</span>
+                        </span>
+                        
+                    </div>
+                    <div class="home-feature-actions">
+                        <a class="home-action-link" href="/publications/divscore.html">
+                            <span class="lang-en">Project Page</span>
+                            <span class="lang-zh d-none">项目页面</span>
+                        </a>
+                        <a class="home-action-link secondary" href="https://github.com/richardChenzhihui/DivScore" target="_blank" rel="noopener">
+                            <span class="lang-en">Code</span>
+                            <span class="lang-zh d-none">代码</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+    <section class="home-section home-secondary-section">
+    <div class="home-section-heading">
+        <span class="lang-en">Background</span>
+        <span class="lang-zh d-none">教育与经历</span>
+    </div>
+    <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
                 <div class="row" data-masonry='{"percentPosition": true }'>
                     
@@ -464,9 +590,8 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
                 </div>
 
             </div>
-        </div>
     </div>
-</div>
+</section>
 
 
 
@@ -485,13 +610,14 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
     </h6>
     
         
+
 <div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3"><img data-src="/assets/images/publications/medforge/fig1.png" alt="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
-        <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+    <div class="row no-gutters border-bottom border-gray home-publication-item">
+        <div class="col-md-4 col-xl-3 mb-md-0 p-md-3"><img data-src="/assets/images/publications/medforge/fig1.png" alt="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
+        <div class="col-md-8 col-xl-9 p-3 pl-md-0">
             
             
-            <h5 class="mt-0 mb-1 font-weight-normal publication-title">
+            <h5 class="mt-0 mb-1 font-weight-normal publication-title publication-title-compact">
                 <a href="https://arxiv.org/abs/2603.18577" target="_blank" class="publication-title-link" data-en="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" data-zh="MedForge：基于伪造感知推理的可解释医学深度伪造检测" style="text-decoration: underline; text-decoration-color: rgba(0,0,0,0.2); transition: all 0.3s ease;">
                     <span class="title-text">MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</span> 🔗
                 </a>
@@ -505,9 +631,9 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
             Yuling Xu, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng<sup>#</sup></a>
 <mark>(<sup>#</sup> <i> corresponding author</i>)</mark></p>
             <p class="mt-0 mb-0 small pub-venue" data-en="<i>Annual Meeting of the Association for Computational Linguistics (ACL)</i>" data-zh="<i>计算语言学协会年会 (ACL)</i>"><i>Annual Meeting of the Association for Computational Linguistics (ACL)</i> 2026 <span class="pub-venue-misc" data-en=" <span class="badge badge-pill badge-publication badge-success">Main Conference</span>" data-zh=" <span class="badge badge-pill badge-publication badge-success">主会议</span>"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span> <span data-semantic-scholar-id=""></span></p>
-            <p class="mt-0 mb-0 small text-muted pub-abstract" data-en="As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales." data-zh="随着生成模型能力提升，可在影像中植入或移除病灶且仍看似合理的医学深度伪造，对临床安全与医学证据可信性带来新风险。既有方法多将任务简化为真伪二分类，却难以说明伪造位置与判据。本文提出 MedForge：推出 MedForge-90K——首个大规模可解释医学深度伪造数据集，覆盖 CT、MRI 与 X 线，含 19 类病灶、由 10 种前沿深度伪造模型生成伪造样本，并提供专家引导的定位与临床级解释；以及 MedForge-Reasoner，采用「先定位再分析」思维链与 Forgery-aware GSPO 强化学习训练。实验表明该检测器达到领先检测性能，并能给出可对照影像验证的本地化医学解释。">As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales.</p>
+            <p class="mt-0 mb-0 small text-muted pub-abstract pub-abstract-compact" data-en="As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales." data-zh="随着生成模型能力提升，可在影像中植入或移除病灶且仍看似合理的医学深度伪造，对临床安全与医学证据可信性带来新风险。既有方法多将任务简化为真伪二分类，却难以说明伪造位置与判据。本文提出 MedForge：推出 MedForge-90K——首个大规模可解释医学深度伪造数据集，覆盖 CT、MRI 与 X 线，含 19 类病灶、由 10 种前沿深度伪造模型生成伪造样本，并提供专家引导的定位与临床级解释；以及 MedForge-Reasoner，采用「先定位再分析」思维链与 Forgery-aware GSPO 强化学习训练。实验表明该检测器达到领先检测性能，并能给出可对照影像验证的本地化医学解释。">As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales.</p>
             
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2603.18577","Project Page":"/publications/medforge.html","Resources":"https://lnkd.in/gYmJNaX4"}' data-links-zh='{"论文":"https://arxiv.org/abs/2603.18577","项目页面":"/publications/medforge.html","资源":"https://lnkd.in/gYmJNaX4"}'>
+            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links abstract-links-compact" data-links-en='{"Paper":"https://arxiv.org/abs/2603.18577","Project Page":"/publications/medforge.html","Resources":"https://lnkd.in/gYmJNaX4"}' data-links-zh='{"论文":"https://arxiv.org/abs/2603.18577","项目页面":"/publications/medforge.html","资源":"https://lnkd.in/gYmJNaX4"}'>
                 
                 
                 <a target="_blank" href="https://arxiv.org/abs/2603.18577">[Paper]</a>
@@ -527,14 +653,14 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
     </div>
 </div>
 
-<div class="row no-gutters d-md-none border-bottom border-gray   lazy" data-src="/assets/images/publications/medforge/fig1.png">
+<div class="row no-gutters d-md-none border-bottom border-gray   lazy home-publication-item" data-src="/assets/images/publications/medforge/fig1.png">
     <div class="w-100  " style="background-color: rgba(255,255,255,0.9);">
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>
             <div>
                 
                 
-                <h5 class="mt-0 mb-1 font-weight-normal publication-title">
+                <h5 class="mt-0 mb-1 font-weight-normal publication-title publication-title-compact">
                     <a href="https://arxiv.org/abs/2603.18577" target="_blank" class="publication-title-link" data-en="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" data-zh="MedForge：基于伪造感知推理的可解释医学深度伪造检测" style="text-decoration: underline; text-decoration-color: rgba(0,0,0,0.2); transition: all 0.3s ease;">
                         <span class="title-text">MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</span> 🔗
                     </a>
@@ -548,9 +674,9 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
             Yuling Xu, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng<sup>#</sup></a>
 <mark>(<sup>#</sup> <i> corresponding author</i>)</mark></p>
                 <p class="mt-0 mb-0 small pub-venue" data-en="<i>Annual Meeting of the Association for Computational Linguistics (ACL)</i>" data-zh="<i>计算语言学协会年会 (ACL)</i>"><i>Annual Meeting of the Association for Computational Linguistics (ACL)</i> 2026 <span class="pub-venue-misc" data-en=" <span class="badge badge-pill badge-publication badge-success">Main Conference</span>" data-zh=" <span class="badge badge-pill badge-publication badge-success">主会议</span>"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span> <span data-semantic-scholar-id=""></span></p>
-                <p class="mt-0 mb-0 small text-muted pub-abstract" data-en="As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales." data-zh="随着生成模型能力提升，可在影像中植入或移除病灶且仍看似合理的医学深度伪造，对临床安全与医学证据可信性带来新风险。既有方法多将任务简化为真伪二分类，却难以说明伪造位置与判据。本文提出 MedForge：推出 MedForge-90K——首个大规模可解释医学深度伪造数据集，覆盖 CT、MRI 与 X 线，含 19 类病灶、由 10 种前沿深度伪造模型生成伪造样本，并提供专家引导的定位与临床级解释；以及 MedForge-Reasoner，采用「先定位再分析」思维链与 Forgery-aware GSPO 强化学习训练。实验表明该检测器达到领先检测性能，并能给出可对照影像验证的本地化医学解释。">As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales.</p>
+                <p class="mt-0 mb-0 small text-muted pub-abstract pub-abstract-compact" data-en="As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales." data-zh="随着生成模型能力提升，可在影像中植入或移除病灶且仍看似合理的医学深度伪造，对临床安全与医学证据可信性带来新风险。既有方法多将任务简化为真伪二分类，却难以说明伪造位置与判据。本文提出 MedForge：推出 MedForge-90K——首个大规模可解释医学深度伪造数据集，覆盖 CT、MRI 与 X 线，含 19 类病灶、由 10 种前沿深度伪造模型生成伪造样本，并提供专家引导的定位与临床级解释；以及 MedForge-Reasoner，采用「先定位再分析」思维链与 Forgery-aware GSPO 强化学习训练。实验表明该检测器达到领先检测性能，并能给出可对照影像验证的本地化医学解释。">As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales.</p>
                 
-                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2603.18577","Project Page":"/publications/medforge.html","Resources":"https://lnkd.in/gYmJNaX4"}' data-links-zh='{"论文":"https://arxiv.org/abs/2603.18577","项目页面":"/publications/medforge.html","资源":"https://lnkd.in/gYmJNaX4"}'>
+                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links abstract-links-compact" data-links-en='{"Paper":"https://arxiv.org/abs/2603.18577","Project Page":"/publications/medforge.html","Resources":"https://lnkd.in/gYmJNaX4"}' data-links-zh='{"论文":"https://arxiv.org/abs/2603.18577","项目页面":"/publications/medforge.html","资源":"https://lnkd.in/gYmJNaX4"}'>
                     
                     
                     <a target="_blank" href="https://arxiv.org/abs/2603.18577">[Paper]</a>
@@ -569,16 +695,18 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
         </div>
     </div>
 
-</div>    
+</div>
+
     
         
+
 <div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3"><img data-src="/assets/images/publications/divscore/poster.jpg" alt="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
-        <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+    <div class="row no-gutters border-bottom border-gray home-publication-item">
+        <div class="col-md-4 col-xl-3 mb-md-0 p-md-3"><img data-src="/assets/images/publications/divscore/poster.jpg" alt="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
+        <div class="col-md-8 col-xl-9 p-3 pl-md-0">
             
             
-            <h5 class="mt-0 mb-1 font-weight-normal publication-title">
+            <h5 class="mt-0 mb-1 font-weight-normal publication-title publication-title-compact">
                 <a href="https://aclanthology.org/2025.emnlp-main.971/" target="_blank" class="publication-title-link" data-en="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" data-zh="DivScore: 专业领域中大语言模型生成文本的零样本检测" style="text-decoration: underline; text-decoration-color: rgba(0,0,0,0.2); transition: all 0.3s ease;">
                     <span class="title-text">DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains</span> 🔗
                 </a>
@@ -587,9 +715,9 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
             <p class="mt-0 mb-0 small"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Kai He</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yucheng Huang</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yunxiao Zhu</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng</a></p>
             <p class="mt-0 mb-0 small pub-venue" data-en="<i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>" data-zh="<i>自然语言处理实证方法会议 (EMNLP)</i>"><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i> 2025 <span class="pub-venue-misc" data-en=" <span class="badge badge-pill badge-publication badge-success">Main Conference</span>" data-zh=" <span class="badge badge-pill badge-publication badge-success">主会议</span>"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span> <span data-semantic-scholar-id=""></span></p>
-            <p class="mt-0 mb-0 small text-muted pub-abstract" data-en="Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold." data-zh="在医学和法律等专业高风险领域检测大语言模型生成的文本对于打击错误信息和确保真实性至关重要。我们提出了DivScore，一个使用归一化熵评分和领域知识蒸馏的零样本检测框架，能够稳健地识别专业领域中的大语言模型生成文本。实验表明，DivScore始终优于最先进的检测器，AUROC提高14.4%，在0.1%误报率阈值下召回率提高64.0%。">Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold.</p>
+            <p class="mt-0 mb-0 small text-muted pub-abstract pub-abstract-compact" data-en="Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold." data-zh="在医学和法律等专业高风险领域检测大语言模型生成的文本对于打击错误信息和确保真实性至关重要。我们提出了DivScore，一个使用归一化熵评分和领域知识蒸馏的零样本检测框架，能够稳健地识别专业领域中的大语言模型生成文本。实验表明，DivScore始终优于最先进的检测器，AUROC提高14.4%，在0.1%误报率阈值下召回率提高64.0%。">Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold.</p>
             
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links" data-links-en='{"Paper":"https://aclanthology.org/2025.emnlp-main.971/","Code":"https://github.com/richardChenzhihui/DivScore","Project Page":"/publications/divscore.html"}' data-links-zh='{"论文":"https://aclanthology.org/2025.emnlp-main.971/","代码":"https://github.com/richardChenzhihui/DivScore","项目页面":"/publications/divscore.html"}'>
+            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links abstract-links-compact" data-links-en='{"Paper":"https://aclanthology.org/2025.emnlp-main.971/","Code":"https://github.com/richardChenzhihui/DivScore","Project Page":"/publications/divscore.html"}' data-links-zh='{"论文":"https://aclanthology.org/2025.emnlp-main.971/","代码":"https://github.com/richardChenzhihui/DivScore","项目页面":"/publications/divscore.html"}'>
                 
                 
                 <a target="_blank" href="https://aclanthology.org/2025.emnlp-main.971/">[Paper]</a>
@@ -609,14 +737,14 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
     </div>
 </div>
 
-<div class="row no-gutters d-md-none border-bottom border-gray   lazy" data-src="/assets/images/publications/divscore/poster.jpg">
+<div class="row no-gutters d-md-none border-bottom border-gray   lazy home-publication-item" data-src="/assets/images/publications/divscore/poster.jpg">
     <div class="w-100  " style="background-color: rgba(255,255,255,0.9);">
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>
             <div>
                 
                 
-                <h5 class="mt-0 mb-1 font-weight-normal publication-title">
+                <h5 class="mt-0 mb-1 font-weight-normal publication-title publication-title-compact">
                     <a href="https://aclanthology.org/2025.emnlp-main.971/" target="_blank" class="publication-title-link" data-en="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" data-zh="DivScore: 专业领域中大语言模型生成文本的零样本检测" style="text-decoration: underline; text-decoration-color: rgba(0,0,0,0.2); transition: all 0.3s ease;">
                         <span class="title-text">DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains</span> 🔗
                     </a>
@@ -625,9 +753,9 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
                 <p class="mt-0 mb-0 small"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Kai He</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yucheng Huang</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yunxiao Zhu</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng</a></p>
                 <p class="mt-0 mb-0 small pub-venue" data-en="<i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>" data-zh="<i>自然语言处理实证方法会议 (EMNLP)</i>"><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i> 2025 <span class="pub-venue-misc" data-en=" <span class="badge badge-pill badge-publication badge-success">Main Conference</span>" data-zh=" <span class="badge badge-pill badge-publication badge-success">主会议</span>"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span> <span data-semantic-scholar-id=""></span></p>
-                <p class="mt-0 mb-0 small text-muted pub-abstract" data-en="Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold." data-zh="在医学和法律等专业高风险领域检测大语言模型生成的文本对于打击错误信息和确保真实性至关重要。我们提出了DivScore，一个使用归一化熵评分和领域知识蒸馏的零样本检测框架，能够稳健地识别专业领域中的大语言模型生成文本。实验表明，DivScore始终优于最先进的检测器，AUROC提高14.4%，在0.1%误报率阈值下召回率提高64.0%。">Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold.</p>
+                <p class="mt-0 mb-0 small text-muted pub-abstract pub-abstract-compact" data-en="Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold." data-zh="在医学和法律等专业高风险领域检测大语言模型生成的文本对于打击错误信息和确保真实性至关重要。我们提出了DivScore，一个使用归一化熵评分和领域知识蒸馏的零样本检测框架，能够稳健地识别专业领域中的大语言模型生成文本。实验表明，DivScore始终优于最先进的检测器，AUROC提高14.4%，在0.1%误报率阈值下召回率提高64.0%。">Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold.</p>
                 
-                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links" data-links-en='{"Paper":"https://aclanthology.org/2025.emnlp-main.971/","Code":"https://github.com/richardChenzhihui/DivScore","Project Page":"/publications/divscore.html"}' data-links-zh='{"论文":"https://aclanthology.org/2025.emnlp-main.971/","代码":"https://github.com/richardChenzhihui/DivScore","项目页面":"/publications/divscore.html"}'>
+                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links abstract-links-compact" data-links-en='{"Paper":"https://aclanthology.org/2025.emnlp-main.971/","Code":"https://github.com/richardChenzhihui/DivScore","Project Page":"/publications/divscore.html"}' data-links-zh='{"论文":"https://aclanthology.org/2025.emnlp-main.971/","代码":"https://github.com/richardChenzhihui/DivScore","项目页面":"/publications/divscore.html"}'>
                     
                     
                     <a target="_blank" href="https://aclanthology.org/2025.emnlp-main.971/">[Paper]</a>
@@ -646,16 +774,18 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
         </div>
     </div>
 
-</div>    
+</div>
+
     
         
+
 <div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3"><img data-src="/assets/images/covers/medbanana_cover.jpg" alt="Med-Banana-50K: A Large-Scale Cross-Modality Dataset for Medical Image Editing" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
-        <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+    <div class="row no-gutters border-bottom border-gray home-publication-item">
+        <div class="col-md-4 col-xl-3 mb-md-0 p-md-3"><img data-src="/assets/images/covers/medbanana_cover.jpg" alt="Med-Banana-50K: A Large-Scale Cross-Modality Dataset for Medical Image Editing" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
+        <div class="col-md-8 col-xl-9 p-3 pl-md-0">
             
             
-            <h5 class="mt-0 mb-1 font-weight-normal publication-title">
+            <h5 class="mt-0 mb-1 font-weight-normal publication-title publication-title-compact">
                 <a href="https://arxiv.org/submit/6942444/view" target="_blank" class="publication-title-link" data-en="Med-Banana-50K: A Large-Scale Cross-Modality Dataset for Medical Image Editing" data-zh="Med-Banana-50K: 大规模跨模态医学图像编辑数据集" style="text-decoration: underline; text-decoration-color: rgba(0,0,0,0.2); transition: all 0.3s ease;">
                     <span class="title-text">Med-Banana-50K: A Large-Scale Cross-Modality Dataset for Medical Image Editing</span> 🔗
                 </a>
@@ -665,9 +795,9 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
             <strong>Zhihui Chen</strong>, </span><span class="text-body">
             et al.</span></p>
             <p class="mt-0 mb-0 small pub-venue" data-en="<i>arXiv preprint</i>" data-zh="<i>arXiv 预印本</i>"><i>arXiv preprint</i> 2025 <span class="pub-venue-misc" data-en="" data-zh=""></span> <span data-semantic-scholar-id=""></span></p>
-            <p class="mt-0 mb-0 small text-muted pub-abstract" data-en="Recent advances in multimodal large language models have enabled remarkable medical image editing capabilities. However, the research community's progress remains constrained by the absence of large-scale, high-quality, and openly accessible datasets built specifically for medical image editing with strict anatomical and clinical constraints. We introduce Med-Banana-50K, a comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities (chest X-ray, brain MRI, fundus photography) and 23 disease types. Our dataset is constructed by leveraging Gemini-2.5-Flash-Image to generate bidirectional edits (lesion addition and removal) from real medical images. What distinguishes Med-Banana-50K from general-domain editing datasets is our systematic approach to medical quality control: we employ LLM-as-Judge with a medically grounded rubric and history-aware iterative refinement up to five rounds." data-zh="近年来，多模态大语言模型的进步使医学图像编辑能力显著提升。然而，研究界的进展仍受限于缺乏专门为医学图像编辑构建的大规模、高质量且开放可访问的数据集，这些数据集需满足严格的解剖和临床约束。我们推出了 Med-Banana-50K，一个包含 50K 张图像的综合数据集，用于基于指令的医学图像编辑，涵盖三种模态（胸部 X 光、脑部 MRI、眼底照相）和 23 种疾病类型。我们的数据集通过利用 Gemini-2.5-Flash-Image 从真实医学图像生成双向编辑（病变添加和移除）来构建。Med-Banana-50K 的独特之处在于我们系统化的医学质量控制方法：采用基于医学评分准则的 LLM-as-Judge 和历史感知迭代优化（最多五轮）。">Recent advances in multimodal large language models have enabled remarkable medical image editing capabilities. However, the research community's progress remains constrained by the absence of large-scale, high-quality, and openly accessible datasets built specifically for medical image editing with strict anatomical and clinical constraints. We introduce Med-Banana-50K, a comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities (chest X-ray, brain MRI, fundus photography) and 23 disease types. Our dataset is constructed by leveraging Gemini-2.5-Flash-Image to generate bidirectional edits (lesion addition and removal) from real medical images. What distinguishes Med-Banana-50K from general-domain editing datasets is our systematic approach to medical quality control: we employ LLM-as-Judge with a medically grounded rubric and history-aware iterative refinement up to five rounds.</p>
+            <p class="mt-0 mb-0 small text-muted pub-abstract pub-abstract-compact" data-en="Recent advances in multimodal large language models have enabled remarkable medical image editing capabilities. However, the research community's progress remains constrained by the absence of large-scale, high-quality, and openly accessible datasets built specifically for medical image editing with strict anatomical and clinical constraints. We introduce Med-Banana-50K, a comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities (chest X-ray, brain MRI, fundus photography) and 23 disease types. Our dataset is constructed by leveraging Gemini-2.5-Flash-Image to generate bidirectional edits (lesion addition and removal) from real medical images. What distinguishes Med-Banana-50K from general-domain editing datasets is our systematic approach to medical quality control: we employ LLM-as-Judge with a medically grounded rubric and history-aware iterative refinement up to five rounds." data-zh="近年来，多模态大语言模型的进步使医学图像编辑能力显著提升。然而，研究界的进展仍受限于缺乏专门为医学图像编辑构建的大规模、高质量且开放可访问的数据集，这些数据集需满足严格的解剖和临床约束。我们推出了 Med-Banana-50K，一个包含 50K 张图像的综合数据集，用于基于指令的医学图像编辑，涵盖三种模态（胸部 X 光、脑部 MRI、眼底照相）和 23 种疾病类型。我们的数据集通过利用 Gemini-2.5-Flash-Image 从真实医学图像生成双向编辑（病变添加和移除）来构建。Med-Banana-50K 的独特之处在于我们系统化的医学质量控制方法：采用基于医学评分准则的 LLM-as-Judge 和历史感知迭代优化（最多五轮）。">Recent advances in multimodal large language models have enabled remarkable medical image editing capabilities. However, the research community's progress remains constrained by the absence of large-scale, high-quality, and openly accessible datasets built specifically for medical image editing with strict anatomical and clinical constraints. We introduce Med-Banana-50K, a comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities (chest X-ray, brain MRI, fundus photography) and 23 disease types. Our dataset is constructed by leveraging Gemini-2.5-Flash-Image to generate bidirectional edits (lesion addition and removal) from real medical images. What distinguishes Med-Banana-50K from general-domain editing datasets is our systematic approach to medical quality control: we employ LLM-as-Judge with a medically grounded rubric and history-aware iterative refinement up to five rounds.</p>
             
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links" data-links-en='{"Paper":"https://arxiv.org/submit/6942444/view","Code":"https://github.com/richardChenzhihui/med-banana-50k/","Project Page":"/showcase.html#projects"}' data-links-zh='{"论文":"https://arxiv.org/submit/6942444/view","代码":"https://github.com/richardChenzhihui/med-banana-50k/","项目页面":"/showcase.html#projects"}'>
+            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links abstract-links-compact" data-links-en='{"Paper":"https://arxiv.org/submit/6942444/view","Code":"https://github.com/richardChenzhihui/med-banana-50k/","Project Page":"/showcase.html#projects"}' data-links-zh='{"论文":"https://arxiv.org/submit/6942444/view","代码":"https://github.com/richardChenzhihui/med-banana-50k/","项目页面":"/showcase.html#projects"}'>
                 
                 
                 <a target="_blank" href="https://arxiv.org/submit/6942444/view">[Paper]</a>
@@ -687,14 +817,14 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
     </div>
 </div>
 
-<div class="row no-gutters d-md-none border-bottom border-gray   lazy" data-src="/assets/images/covers/medbanana_cover.jpg">
+<div class="row no-gutters d-md-none border-bottom border-gray   lazy home-publication-item" data-src="/assets/images/covers/medbanana_cover.jpg">
     <div class="w-100  " style="background-color: rgba(255,255,255,0.9);">
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>
             <div>
                 
                 
-                <h5 class="mt-0 mb-1 font-weight-normal publication-title">
+                <h5 class="mt-0 mb-1 font-weight-normal publication-title publication-title-compact">
                     <a href="https://arxiv.org/submit/6942444/view" target="_blank" class="publication-title-link" data-en="Med-Banana-50K: A Large-Scale Cross-Modality Dataset for Medical Image Editing" data-zh="Med-Banana-50K: 大规模跨模态医学图像编辑数据集" style="text-decoration: underline; text-decoration-color: rgba(0,0,0,0.2); transition: all 0.3s ease;">
                         <span class="title-text">Med-Banana-50K: A Large-Scale Cross-Modality Dataset for Medical Image Editing</span> 🔗
                     </a>
@@ -704,9 +834,9 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
             <strong>Zhihui Chen</strong>, </span><span class="text-body">
             et al.</span></p>
                 <p class="mt-0 mb-0 small pub-venue" data-en="<i>arXiv preprint</i>" data-zh="<i>arXiv 预印本</i>"><i>arXiv preprint</i> 2025 <span class="pub-venue-misc" data-en="" data-zh=""></span> <span data-semantic-scholar-id=""></span></p>
-                <p class="mt-0 mb-0 small text-muted pub-abstract" data-en="Recent advances in multimodal large language models have enabled remarkable medical image editing capabilities. However, the research community's progress remains constrained by the absence of large-scale, high-quality, and openly accessible datasets built specifically for medical image editing with strict anatomical and clinical constraints. We introduce Med-Banana-50K, a comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities (chest X-ray, brain MRI, fundus photography) and 23 disease types. Our dataset is constructed by leveraging Gemini-2.5-Flash-Image to generate bidirectional edits (lesion addition and removal) from real medical images. What distinguishes Med-Banana-50K from general-domain editing datasets is our systematic approach to medical quality control: we employ LLM-as-Judge with a medically grounded rubric and history-aware iterative refinement up to five rounds." data-zh="近年来，多模态大语言模型的进步使医学图像编辑能力显著提升。然而，研究界的进展仍受限于缺乏专门为医学图像编辑构建的大规模、高质量且开放可访问的数据集，这些数据集需满足严格的解剖和临床约束。我们推出了 Med-Banana-50K，一个包含 50K 张图像的综合数据集，用于基于指令的医学图像编辑，涵盖三种模态（胸部 X 光、脑部 MRI、眼底照相）和 23 种疾病类型。我们的数据集通过利用 Gemini-2.5-Flash-Image 从真实医学图像生成双向编辑（病变添加和移除）来构建。Med-Banana-50K 的独特之处在于我们系统化的医学质量控制方法：采用基于医学评分准则的 LLM-as-Judge 和历史感知迭代优化（最多五轮）。">Recent advances in multimodal large language models have enabled remarkable medical image editing capabilities. However, the research community's progress remains constrained by the absence of large-scale, high-quality, and openly accessible datasets built specifically for medical image editing with strict anatomical and clinical constraints. We introduce Med-Banana-50K, a comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities (chest X-ray, brain MRI, fundus photography) and 23 disease types. Our dataset is constructed by leveraging Gemini-2.5-Flash-Image to generate bidirectional edits (lesion addition and removal) from real medical images. What distinguishes Med-Banana-50K from general-domain editing datasets is our systematic approach to medical quality control: we employ LLM-as-Judge with a medically grounded rubric and history-aware iterative refinement up to five rounds.</p>
+                <p class="mt-0 mb-0 small text-muted pub-abstract pub-abstract-compact" data-en="Recent advances in multimodal large language models have enabled remarkable medical image editing capabilities. However, the research community's progress remains constrained by the absence of large-scale, high-quality, and openly accessible datasets built specifically for medical image editing with strict anatomical and clinical constraints. We introduce Med-Banana-50K, a comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities (chest X-ray, brain MRI, fundus photography) and 23 disease types. Our dataset is constructed by leveraging Gemini-2.5-Flash-Image to generate bidirectional edits (lesion addition and removal) from real medical images. What distinguishes Med-Banana-50K from general-domain editing datasets is our systematic approach to medical quality control: we employ LLM-as-Judge with a medically grounded rubric and history-aware iterative refinement up to five rounds." data-zh="近年来，多模态大语言模型的进步使医学图像编辑能力显著提升。然而，研究界的进展仍受限于缺乏专门为医学图像编辑构建的大规模、高质量且开放可访问的数据集，这些数据集需满足严格的解剖和临床约束。我们推出了 Med-Banana-50K，一个包含 50K 张图像的综合数据集，用于基于指令的医学图像编辑，涵盖三种模态（胸部 X 光、脑部 MRI、眼底照相）和 23 种疾病类型。我们的数据集通过利用 Gemini-2.5-Flash-Image 从真实医学图像生成双向编辑（病变添加和移除）来构建。Med-Banana-50K 的独特之处在于我们系统化的医学质量控制方法：采用基于医学评分准则的 LLM-as-Judge 和历史感知迭代优化（最多五轮）。">Recent advances in multimodal large language models have enabled remarkable medical image editing capabilities. However, the research community's progress remains constrained by the absence of large-scale, high-quality, and openly accessible datasets built specifically for medical image editing with strict anatomical and clinical constraints. We introduce Med-Banana-50K, a comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities (chest X-ray, brain MRI, fundus photography) and 23 disease types. Our dataset is constructed by leveraging Gemini-2.5-Flash-Image to generate bidirectional edits (lesion addition and removal) from real medical images. What distinguishes Med-Banana-50K from general-domain editing datasets is our systematic approach to medical quality control: we employ LLM-as-Judge with a medically grounded rubric and history-aware iterative refinement up to five rounds.</p>
                 
-                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links" data-links-en='{"Paper":"https://arxiv.org/submit/6942444/view","Code":"https://github.com/richardChenzhihui/med-banana-50k/","Project Page":"/showcase.html#projects"}' data-links-zh='{"论文":"https://arxiv.org/submit/6942444/view","代码":"https://github.com/richardChenzhihui/med-banana-50k/","项目页面":"/showcase.html#projects"}'>
+                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links abstract-links-compact" data-links-en='{"Paper":"https://arxiv.org/submit/6942444/view","Code":"https://github.com/richardChenzhihui/med-banana-50k/","Project Page":"/showcase.html#projects"}' data-links-zh='{"论文":"https://arxiv.org/submit/6942444/view","代码":"https://github.com/richardChenzhihui/med-banana-50k/","项目页面":"/showcase.html#projects"}'>
                     
                     
                     <a target="_blank" href="https://arxiv.org/submit/6942444/view">[Paper]</a>
@@ -725,7 +855,8 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
         </div>
     </div>
 
-</div>    
+</div>
+
     
     <h6 class="d-block p-3 mt-0 text-right">
         <a href="/publications">
@@ -738,10 +869,14 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
 
 
 
-
     
     
-        <div class="my-3 bg-white shadow-sm rounded-xl">
+        <section class="home-section home-secondary-section">
+    <div class="home-section-heading">
+        <span class="lang-en">Recent Updates</span>
+        <span class="lang-zh d-none">近期动态</span>
+    </div>
+<div class="bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> <span class="lang-en">News</span><span class="lang-zh d-none">动态</span></h6>
     <div class="px-3 pb-1">
         
@@ -773,23 +908,68 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
                     <div class="ml-auto mt-auto text-muted no-break"><i>Nov 01</i></div>
                 </div>
                 
-                <div class="my-1 d-flex">
-                    <div class="news-title" data-en="[EMNLP] One first-author paper accepted to EMNLP 2025. Finally! 🎉" data-zh="[EMNLP] 一篇第一作者论文被EMNLP 2025接收。终于！🎉">[EMNLP] One first-author paper accepted to EMNLP 2025. Finally! 🎉</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Aug 20</i></div>
-                </div>
-                
-                <div class="my-1 d-flex">
-                    <div class="news-title" data-en="[NUS] Started my PhD journey at NUS! Ready to debug my life and my code simultaneously 🐛" data-zh="[新国大] 开启NUS博士之旅！准备同时调试我的人生和代码 🐛">[NUS] Started my PhD journey at NUS! Ready to debug my life and my code simultaneously 🐛</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Jan 15</i></div>
-                </div>
-                
             </div>
         </div>
         
     </div>
 </div>
+</section>
 
     
+
+
+<div id="ghpages-domain-debug-message" class="row mt-3 d-none">
+    <div class="col">
+        <div class="alert alert-warning my-0" role="alert">
+            <h5><i class="fas fa-exclamation-triangle"></i> Warning</h5>
+            <strong>Problem:</strong>
+            The current name of your GitHub Pages repository ("<code class="repo-name-text"></code>") does not match the recommended repository name for your site ("<code class="domain-name-text"></code>").
+            <br>
+            <strong>Solution:</strong> Please consider renaming the repository to "<code class="domain-name-text"></code>", so that your site can be accessed directly at "<code>http://<span class="domain-name-text"></span></code>".
+            However, if the current repository name is intended, you can ignore this message by removing "<code>{% include widgets/debug_repo_name.html %}</code>" in <code>index.html</code>.
+        </div>
+    </div>
+</div>
+
+<script>
+striped_pathname = location.pathname.replace(/\/+$/, "");
+document.querySelectorAll(".repo-name-text").forEach(function(element){
+    element.textContent = striped_pathname.replace("/", "");
+});
+document.querySelectorAll(".domain-name-text").forEach(function(element){
+    element.textContent = location.hostname;
+});
+
+if (location.hostname.search("github.io") != -1 && striped_pathname != ""){
+    document.getElementById("ghpages-domain-debug-message").classList.remove('d-none');
+}
+</script>
+
+
+<div id="url-debug-message" class="row mt-3 d-none">
+    <div class="col">
+        <div class="alert alert-warning my-0" role="alert">
+            <h5><i class="fas fa-exclamation-triangle"></i> Action required</h5>
+            <strong>Problem:</strong>
+            The current root path of this site is "<code class="root-path-text"></code>",
+            which does not match the <code>baseurl</code> ("<code></code>") configured in <code>_config.yml</code>.
+            <br>
+
+            <strong>Solution:</strong>
+            Please set the <code>baseurl</code> in <code>_config.yml</code> to "<code class="root-path-text"></code>".
+        </div>
+    </div>
+</div>
+
+<script>
+striped_pathname = location.pathname.replace(/\/+$/, "");
+if(striped_pathname != ""){
+    document.getElementById("url-debug-message").classList.remove('d-none');
+}
+document.querySelectorAll(".root-path-text").forEach(function(element){
+    element.textContent = striped_pathname;
+});
+</script>
 
 
     </div>
