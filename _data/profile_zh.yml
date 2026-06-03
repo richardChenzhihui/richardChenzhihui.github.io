@@ -23,7 +23,7 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    担任NIPS、IJCAI、ACM TIST等会议和期刊的审稿人，已审稿10余篇。
+    担任NeurIPS 2026、ACL 2026、EMNLP 2026、IJCAI、ACM TIST等会议和期刊的审稿人，已审稿10余篇。
   </p>
   <p>
     <strong>研究方向：</strong>可信与智能体大语言模型 • 医疗领域多模态智能
@@ -39,6 +39,8 @@ hero_proof:
   - "ACL 2026 主会议"
   - "EMNLP 2025 主会议"
   - "ACL 2026 审稿人"
+  - "NeurIPS 2026 审稿人"
+  - "EMNLP 2026 审稿人"
   - "已审稿 10+ 篇"
 
 availability:
@@ -54,7 +56,7 @@ homepage_metrics:
   - value: "100+"
     label: "GitHub Stars"
     note: "DivScore 与 Med-Banana 仓库合计"
-  - value: "ACL / NeurIPS / IJCAI"
+  - value: "ACL / NeurIPS / EMNLP / IJCAI"
     label: "学术审稿服务"
     note: "累计审稿 10+ 篇"
 

@@ -23,7 +23,7 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>. 
   </p>
   <p>
-    <strong>Academic Service:</strong> Reviewer for ACL 2026, NeurIPS, IJCAI, and ACM TIST, with 10+ papers reviewed.
+    <strong>Academic Service:</strong> Reviewer for NeurIPS 2026, ACL 2026, EMNLP 2026, IJCAI, and ACM TIST, with 10+ papers reviewed.
   </p>
   <p>
     <strong>Research Interests:</strong> Trustworthy and Agentic LLM • Multi-modality Intelligence in Healthcare
@@ -39,6 +39,8 @@ hero_proof:
   - "ACL 2026 Main"
   - "EMNLP 2025 Main"
   - "ACL 2026 Reviewer"
+  - "NeurIPS 2026 Reviewer"
+  - "EMNLP 2026 Reviewer"
   - "10+ reviews completed"
 
 availability:
@@ -54,7 +56,7 @@ homepage_metrics:
   - value: "100+"
     label: "GitHub stars"
     note: "across DivScore and Med-Banana repositories"
-  - value: "ACL / NeurIPS / IJCAI"
+  - value: "ACL / NeurIPS / EMNLP / IJCAI"
     label: "reviewer service"
     note: "with 10+ papers reviewed"
 
