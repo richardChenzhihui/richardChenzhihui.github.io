@@ -19,21 +19,22 @@ linkedin: richard-chen~
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am currently a second-year PhD student at the National University of Singapore, supervised by 
+    I am a PhD student in Artificial Intelligence at the National University of Singapore, supervised by
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>. 
+    My work builds trustworthy multimodal and agentic AI systems for high-stakes healthcare, connecting publishable research artifacts with deployable evaluation and post-training workflows.
   </p>
   <p>
-    <strong>Academic Service:</strong> Reviewer for NeurIPS 2026, ACL 2026, EMNLP 2026, IJCAI, and ACM TIST, with 10+ papers reviewed.
+    <strong>Academic Output:</strong> ACL 2026 Main and EMNLP 2025 Main, with open datasets, models, demos, and code around medical deepfake detection, medical image editing, and specialized-domain LLM detection.
   </p>
   <p>
-    <strong>Research Interests:</strong> Trustworthy and Agentic LLM • Multi-modality Intelligence in Healthcare
+    <strong>Industry Connection:</strong> TikTok multimodal Agent post-training and MiniMax-supported healthcare AI safety evaluation.
   </p>
 
 hero_kicker: >-
-  2 papers at top NLP conferences
+  Trustworthy multimodal AI for healthcare
 
 hero_summary: >-
-  Published at ACL 2026 and EMNLP 2025, I build trustworthy multimodal AI systems for high-stakes healthcare, with recent work spanning interpretable medical deepfake detection, specialized-domain LLM detection, and clinically grounded AI safety evaluation.
+  I build evidence-grounded AI systems for clinical and other high-stakes settings, spanning interpretable medical deepfake detection, medical image editing data infrastructure, specialized-domain LLM detection, and multimodal Agent post-training.
 
 hero_proof:
   - "ByteDance / TikTok Multimodal Agent Post-Training"
@@ -44,36 +45,36 @@ availability:
 
 homepage_metrics:
   - value: "2"
-    label: "top NLP conference papers"
-    note: "published at ACL 2026 and EMNLP 2025"
-  - value: "100k+"
-    label: "Hugging Face downloads"
-    note: "Med-Banana-50K dataset traction"
-  - value: "100+"
-    label: "GitHub stars"
-    note: "across DivScore and Med-Banana repositories"
+    label: "top-tier NLP main conference papers"
+    note: "ACL 2026 and EMNLP 2025"
+  - value: "90K"
+    label: "medical deepfake benchmark"
+    note: "MedForge: real, lesion-implant, and lesion-removal images"
+  - value: "50K+"
+    label: "medical image editing dataset"
+    note: "Med-Banana: successful edits across CXR, MRI, and fundus"
   - value: "ByteDance + MiniMax"
-    label: "industry-backed AI systems"
+    label: "industry-connected AI systems"
     note: "Agent post-training and compute-supported healthcare AI safety"
 
 impact_areas:
   - label: "Clinical AI Safety"
-    title: "Evidence-grounded safety evaluation for medical AI"
-    description: "MedForge and the MiniMax fellowship form a safety track from forgery-aware benchmarks to clinically verifiable Agent workflows."
-    proof: "ACL 2026 Main · MiniMax compute support"
+    title: "Evidence-grounded medical AI evaluation"
+    description: "MedForge turns realistic medical image tampering into localized, inspectable reasoning; the MiniMax fellowship extends this safety lens toward clinically verifiable Agent workflows."
+    proof: "ACL 2026 Main · MiniMax 10x Team Fellowship"
   - label: "Specialized-domain Governance"
     title: "Robust detection for high-stakes generated content"
-    description: "DivScore targets medicine and law, where zero-shot LLM detectors must handle domain shift without relying on new-domain retraining."
+    description: "DivScore targets medicine and law, where zero-shot LLM detectors must remain reliable under domain shift without new-domain detection labels."
     proof: "EMNLP 2025 Main · +14.4% AUROC"
   - label: "Open Medical Data Infrastructure"
-    title: "Multimodal assets for medical image editing"
-    description: "Med-Banana contributes an open, medically controlled data pipeline across chest X-ray, brain MRI, and fundus photography."
-    proof: "3 modalities · 23 disease types"
+    title: "Reusable assets for multimodal medical AI"
+    description: "Med-Banana contributes open, medically controlled editing data and failure logs for training, evaluation, and preference-alignment research."
+    proof: "50,635 successful edits · 37,822 failed attempts"
 
 featured_work:
   - title: "MedForge"
     subtitle: "Interpretable medical deepfake detection"
-    description: "Detects medically plausible image forgeries with localized reasoning, using the MedForge-90K benchmark and a Localize-then-Analyze detector."
+    description: "A data-and-model framework that detects medically plausible image forgeries through localized evidence, expert-aligned reasoning, and a Localize-then-Analyze detector."
     image: /assets/images/publications/medforge/fig1.png
     badges:
       - "ACL 2026 Main"
@@ -100,8 +101,8 @@ featured_work:
       label: "Code"
       url: https://github.com/richardChenzhihui/DivScore
   - title: "MiniMax 10x Team Fellowship"
-    subtitle: "Safety evaluation, data flywheel, and clinically verifiable Agent workflows for healthcare"
-    description: "Building a healthcare AI safety evaluation system, data flywheel, and clinically verifiable workflows powered by MiniMax long-context, multimodal, and Agent capabilities."
+    subtitle: "Healthcare AI safety evaluation and clinically verifiable Agent workflows"
+    description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with healthcare safety evaluation, data flywheels, and verifiable decision paths."
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
     badges:
       - "MiniMax 10x Team"

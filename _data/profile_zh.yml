@@ -19,21 +19,22 @@ linkedin: richard-chen~
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    我目前是新加坡国立大学二年级博士生，导师为
+    我目前是新加坡国立大学人工智能博士生，导师为
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
+    我的研究聚焦高风险医疗场景中的可信多模态与 Agentic AI，将可发表的研究资产与可落地的评测、数据和 post-training 工作流连接起来。
   </p>
   <p>
-    <strong>学术服务：</strong>担任 NeurIPS 2026、ACL 2026、EMNLP 2026、IJCAI、ACM TIST 等会议和期刊审稿人，累计审稿 10 余篇。
+    <strong>学术成果：</strong>ACL 2026 主会议与 EMNLP 2025 主会议论文，围绕医学深度伪造检测、医学图像编辑和专业领域大模型文本检测发布数据、模型、Demo 与代码。
   </p>
   <p>
-    <strong>研究方向：</strong>可信与智能体大语言模型 • 医疗领域多模态智能
+    <strong>产业连接：</strong>TikTok 多模态 Agent Post-Training 与 MiniMax 支持的医疗 AI 安全评测。
   </p>
 
 hero_kicker: >-
-  两篇 TOP NLP 会议论文
+  面向医疗场景的可信多模态 AI
 
 hero_summary: >-
-  已发表 ACL 2026 与 EMNLP 2025 主会议论文，聚焦高风险医疗场景中的可信多模态 AI，近期工作覆盖可解释医学深度伪造检测、专业领域大模型文本检测与临床可验证 AI 安全评测。
+  我构建面向临床和高风险场景的证据驱动 AI 系统，近期工作覆盖可解释医学深度伪造检测、医学图像编辑数据基础设施、专业领域大模型文本检测与多模态 Agent Post-Training。
 
 hero_proof:
   - "字节 / TikTok 多模态 Agent Post-Training"
@@ -44,36 +45,36 @@ availability:
 
 homepage_metrics:
   - value: "2"
-    label: "篇 TOP NLP 论文"
-    note: "发表于 ACL 2026 与 EMNLP 2025"
-  - value: "100k+"
-    label: "Hugging Face 下载"
-    note: "Med-Banana-50K 数据集关注度"
-  - value: "100+"
-    label: "GitHub Stars"
-    note: "DivScore 与 Med-Banana 仓库合计"
+    label: "篇顶级 NLP 主会议论文"
+    note: "ACL 2026 与 EMNLP 2025"
+  - value: "90K"
+    label: "医学深度伪造基准"
+    note: "MedForge 覆盖真实、病灶植入与病灶移除图像"
+  - value: "50K+"
+    label: "医学图像编辑数据集"
+    note: "Med-Banana 覆盖 CXR、MRI 与眼底图像"
   - value: "字节 + MiniMax"
-    label: "产业支持的 AI 系统研究"
-    note: "Agent Post-Training 与医疗 AI 安全评测算力资助"
+    label: "产业连接的 AI 系统研究"
+    note: "Agent Post-Training 与医疗 AI 安全评测算力支持"
 
 impact_areas:
   - label: "临床 AI 安全"
-    title: "面向医疗 AI 的证据驱动安全评测"
-    description: "MedForge 与 MiniMax Fellowship 形成一条安全研究主线：从伪造感知基准到临床可验证 Agent 工作流。"
-    proof: "ACL 2026 主会议 · MiniMax 算力支持"
+    title: "面向医疗 AI 的证据驱动评测"
+    description: "MedForge 将真实医学影像篡改转化为可定位、可检查的推理任务；MiniMax Fellowship 将这条安全主线延伸到临床可验证 Agent 工作流。"
+    proof: "ACL 2026 主会议 · MiniMax 10x Team Fellowship"
   - label: "专业领域治理"
     title: "高风险生成内容的稳健检测"
-    description: "DivScore 面向医疗与法律场景，解决零样本检测器在专业文本上因领域偏移而失效的问题。"
+    description: "DivScore 面向医疗与法律场景，让零样本大模型文本检测器在没有新领域检测标注的情况下仍能应对领域偏移。"
     proof: "EMNLP 2025 主会议 · +14.4% AUROC"
   - label: "开放医疗数据基础设施"
-    title: "医学图像编辑的多模态数据资产"
-    description: "Med-Banana 提供覆盖胸部 X 光、脑部 MRI 与眼底图像的开放医学质量控制数据管线。"
-    proof: "3 种模态 · 23 类疾病"
+    title: "可复用的多模态医疗 AI 资产"
+    description: "Med-Banana 提供开放、医学约束下的编辑数据与失败日志，服务训练、评测和偏好对齐研究。"
+    proof: "50,635 次成功编辑 · 37,822 次失败尝试"
 
 featured_work:
   - title: "MedForge"
     subtitle: "可解释医学深度伪造检测"
-    description: "通过 MedForge-90K 基准与先定位再分析的推理式检测器，对医学影像伪造进行定位、判别和解释。"
+    description: "通过 MedForge-90K 基准、专家对齐推理和先定位再分析检测器，对医学影像伪造进行定位、判别和解释。"
     image: /assets/images/publications/medforge/fig1.png
     badges:
       - "ACL 2026 主会议"
@@ -100,8 +101,8 @@ featured_work:
       label: "代码"
       url: https://github.com/richardChenzhihui/DivScore
   - title: "MiniMax 10x Team Fellowship"
-    subtitle: "面向医疗场景的安全评测、数据飞轮与临床可验证 Agent 工作流"
-    description: "依托 MiniMax 长上下文、多模态与 Agent 能力，构建医疗 AI 安全评测体系、数据飞轮和临床可验证工作流。"
+    subtitle: "医疗 AI 安全评测与临床可验证 Agent 工作流"
+    description: "将 MiniMax 长上下文、多模态与 Agent 能力连接到医疗 AI 安全评测、数据飞轮和可验证决策路径。"
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
     badges:
       - "MiniMax 10x Team"

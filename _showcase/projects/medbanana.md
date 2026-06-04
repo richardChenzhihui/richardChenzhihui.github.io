@@ -11,8 +11,8 @@ date: 2025-11-01 00:01:00 +0800
     
     <div class="row">
         <div class="col-md-8">
-            <p data-en="A comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities and 23 disease types." data-zh="一个包含 5 万张图像的综合数据集，用于基于指令的医学图像编辑，涵盖三种模态和 23 种疾病类型。">
-                A comprehensive 50K-image dataset for instruction-based medical image editing spanning three modalities and 23 disease types.
+            <p data-en="An open medical image editing dataset with 50,635 successful edits and 37,822 failed attempts across three modalities and 23 disease types." data-zh="一个开放医学图像编辑数据集，覆盖三种模态和 23 种疾病类型，包含 50,635 次成功编辑与 37,822 次失败尝试。">
+                An open medical image editing dataset with 50,635 successful edits and 37,822 failed attempts across three modalities and 23 disease types.
             </p>
             
             <h4 data-en="Key Features" data-zh="主要特性">Key Features</h4>
@@ -35,8 +35,8 @@ date: 2025-11-01 00:01:00 +0800
                 <li data-en="<strong>LLM-as-Judge</strong> quality control with medically grounded rubric" data-zh="<strong>LLM-as-Judge</strong> 质量控制与医学评分准则">
                     <strong>LLM-as-Judge</strong> quality control with medically grounded rubric
                 </li>
-                <li data-en="<strong>37K failed attempts</strong> with full conversation logs for preference learning" data-zh="<strong>37K 失败尝试</strong>，包含完整对话记录用于偏好学习">
-                    <strong>37K failed attempts</strong> with full conversation logs for preference learning
+                <li data-en="<strong>37,822 failed attempts</strong> with full conversation logs for preference learning and alignment research" data-zh="<strong>37,822 次失败尝试</strong>，包含完整对话记录，可用于偏好学习与对齐研究">
+                    <strong>37,822 failed attempts</strong> with full conversation logs for preference learning and alignment research
                 </li>
             </ul>
 
@@ -108,22 +108,22 @@ date: 2025-11-01 00:01:00 +0800
             <img src="/assets/images/covers/medbanana_cover.png" alt="Med-Banana-50K samples" class="img-fluid rounded shadow-sm mb-3">
             
             <div class="d-grid gap-2">
-                <a href="https://arxiv.org/submit/6942444/view" target="_blank" class="btn btn-primary btn-sm">
+                <a href="https://arxiv.org/abs/2511.00801" target="_blank" class="btn btn-primary btn-sm">
                     📄 <span data-en="Read Paper" data-zh="阅读论文">Read Paper</span>
                 </a>
                 <a href="https://github.com/richardChenzhihui/med-banana-50k/" target="_blank" class="btn btn-secondary btn-sm">
                     💻 <span data-en="View Code" data-zh="查看代码">View Code</span>
                 </a>
-                <a href="https://github.com/richardChenzhihui/med-banana-50k/" target="_blank" class="btn btn-info btn-sm">
-                    📦 <span data-en="Dataset (Coming Soon)" data-zh="数据集（即将发布）">Dataset (Coming Soon)</span>
+                <a href="https://huggingface.co/datasets/RichardChenZH/Med-Banana-50K" target="_blank" class="btn btn-info btn-sm">
+                    📦 <span data-en="Dataset on Hugging Face" data-zh="Hugging Face 数据集">Dataset on Hugging Face</span>
                 </a>
             </div>
         </div>
     </div>
     
     <div class="mt-3">
-        <p class="small text-muted" data-en="<strong>Note:</strong> Full dataset will be released on Hugging Face upon paper acceptance." data-zh="<strong>注意：</strong>完整数据集将在论文接收后在 Hugging Face 上发布。">
-            <strong>Note:</strong> Full dataset will be released on Hugging Face upon paper acceptance.
+        <p class="small text-muted" data-en="<strong>Open asset:</strong> Dataset, code, and paper are publicly available for medically grounded image editing research." data-zh="<strong>开放资产：</strong>数据集、代码与论文已公开，可用于医学约束下的图像编辑研究。">
+            <strong>Open asset:</strong> Dataset, code, and paper are publicly available for medically grounded image editing research.
         </p>
     </div>
 </div>

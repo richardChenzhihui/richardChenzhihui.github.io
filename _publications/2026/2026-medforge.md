@@ -24,9 +24,11 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2603.18577
   Project Page: /publications/medforge.html
-  Resources: https://lnkd.in/gYmJNaX4
+  Model: https://huggingface.co/RichardChenZH/MedForge-Reasoner
+  Dataset: https://huggingface.co/datasets/RichardChenZH/MedForge-90K
 links_zh:
   论文: https://arxiv.org/abs/2603.18577
   项目页面: /publications/medforge.html
-  资源: https://lnkd.in/gYmJNaX4
+  模型: https://huggingface.co/RichardChenZH/MedForge-Reasoner
+  数据集: https://huggingface.co/datasets/RichardChenZH/MedForge-90K
 ---
