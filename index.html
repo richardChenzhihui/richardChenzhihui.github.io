@@ -7,6 +7,8 @@ body_class: home-landing
 {% include widgets/profile_card.html %}
 {% include widgets/home_metrics.html %}
 
+{% include widgets/home_featured_work.html %}
+
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
     {% 
@@ -18,8 +20,6 @@ body_class: home-landing
     %}
 {% endif %}
 
-{% include widgets/home_featured_work.html %}
-
 {% if site.data.display.homepage.show_experience %}
     {% include widgets/experience_card.html %}
 {% endif %}
@@ -30,7 +30,3 @@ body_class: home-landing
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
     {% endif %}
 {% endif %}
-
-{% include widgets/debug_repo_name.html %}
-
-{% include widgets/debug_url.html %}

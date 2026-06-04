@@ -33,18 +33,14 @@ hero_kicker: >-
   2 papers at top NLP conferences
 
 hero_summary: >-
-  Published at ACL 2026 and EMNLP 2025, I study trustworthy and multimodal AI for high-stakes healthcare, spanning medical deepfake detection, LLM detection, and medical image editing.
+  Published at ACL 2026 and EMNLP 2025, I build trustworthy multimodal AI systems for high-stakes healthcare, with recent work spanning interpretable medical deepfake detection, specialized-domain LLM detection, and clinically grounded AI safety evaluation.
 
 hero_proof:
-  - "ACL 2026 Main"
-  - "EMNLP 2025 Main"
-  - "ACL 2026 Reviewer"
-  - "NeurIPS 2026 Reviewer"
-  - "EMNLP 2026 Reviewer"
-  - "10+ reviews completed"
+  - "ByteDance / TikTok Multimodal Agent Post-Training"
+  - "MiniMax 10x Team Fellowship"
 
 availability:
-  label: "TikTok 2026 Multimodal Agent PhD Intern"
+  label: "2026 PhD Intern: Multimodal Agent Post-Training, TikTok"
 
 homepage_metrics:
   - value: "2"
@@ -56,9 +52,9 @@ homepage_metrics:
   - value: "100+"
     label: "GitHub stars"
     note: "across DivScore and Med-Banana repositories"
-  - value: "ACL / NeurIPS / EMNLP / IJCAI"
-    label: "reviewer service"
-    note: "with 10+ papers reviewed"
+  - value: "ByteDance + MiniMax"
+    label: "industry-backed AI systems"
+    note: "Agent post-training and compute-supported healthcare AI safety"
 
 featured_work:
   - title: "MedForge"
@@ -124,7 +120,7 @@ education:
 
 experience:
 - name: TikTok
-  position: Multimodal Agent PhD Intern
+  position: Multimodal Agent Post-Training PhD Intern
   date: Summer 2026
 
 - name: StepFun AI Intelligent Technology

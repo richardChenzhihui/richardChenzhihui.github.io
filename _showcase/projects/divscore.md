@@ -73,7 +73,7 @@ date: 2025-08-20 00:01:00 +0800
         </div>
         
         <div class="col-md-4">
-            <img src="/assets/images/covers/divscore_cover.png" alt="DivScore framework" class="img-fluid rounded shadow-sm mb-3">
+            <img src="/assets/images/publications/divscore/poster-web.jpg" alt="DivScore framework" class="img-fluid rounded shadow-sm mb-3">
             
             <div class="d-grid gap-2">
                 <a href="https://arxiv.org/abs/2506.06705" target="_blank" class="btn btn-primary btn-sm">
@@ -94,4 +94,3 @@ date: 2025-08-20 00:01:00 +0800
         </div>
     </div>
 </div>
-

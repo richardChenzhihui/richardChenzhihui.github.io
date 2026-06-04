@@ -33,18 +33,14 @@ hero_kicker: >-
   两篇 TOP NLP 会议论文
 
 hero_summary: >-
-  已发表 ACL 2026 与 EMNLP 2025 主会议论文，研究方向聚焦高风险医疗场景中的可信与多模态人工智能，覆盖医学深度伪造检测、大模型文本检测与医学图像编辑。
+  已发表 ACL 2026 与 EMNLP 2025 主会议论文，聚焦高风险医疗场景中的可信多模态 AI，近期工作覆盖可解释医学深度伪造检测、专业领域大模型文本检测与临床可验证 AI 安全评测。
 
 hero_proof:
-  - "ACL 2026 主会议"
-  - "EMNLP 2025 主会议"
-  - "ACL 2026 审稿人"
-  - "NeurIPS 2026 审稿人"
-  - "EMNLP 2026 审稿人"
-  - "已审稿 10+ 篇"
+  - "字节 / TikTok 多模态 Agent Post-Training"
+  - "MiniMax 10x Team Fellowship"
 
 availability:
-  label: "TikTok 2026 多模态 Agent 博士实习生"
+  label: "2026 博士实习：TikTok 多模态 Agent Post-Training"
 
 homepage_metrics:
   - value: "2"
@@ -56,9 +52,9 @@ homepage_metrics:
   - value: "100+"
     label: "GitHub Stars"
     note: "DivScore 与 Med-Banana 仓库合计"
-  - value: "ACL / NeurIPS / EMNLP / IJCAI"
-    label: "学术审稿服务"
-    note: "累计审稿 10+ 篇"
+  - value: "字节 + MiniMax"
+    label: "产业支持的 AI 系统研究"
+    note: "Agent Post-Training 与医疗 AI 安全评测算力资助"
 
 featured_work:
   - title: "MedForge"
@@ -124,7 +120,7 @@ education:
 
 experience:
 - name: TikTok
-  position: 多模态 Agent 博士实习生
+  position: 多模态 Agent Post-Training 博士实习生
   date: 2026 年夏
 
 - name: 阶跃星辰（StepFun）

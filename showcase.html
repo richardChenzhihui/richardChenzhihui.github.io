@@ -8,7 +8,7 @@ container_class: container-xl
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
 {% for group in cards_by_group %}
-<h1>
+<h1{% if group.name == 'projects' %} id="projects"{% endif %}>
     {% if group.name == 'projects' %}
     <span class="lang-en">Projects</span>
     <span class="lang-zh d-none">项目展示</span>

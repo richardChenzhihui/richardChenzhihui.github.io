@@ -134,7 +134,7 @@ div.lazy {
 }
 
 .home-section {
-    margin-top: 1.5rem;
+    margin-top: 1.35rem;
 }
 
 .home-section-heading {
@@ -405,10 +405,17 @@ div.lazy {
     border-radius: 1.4rem;
     background: var(--home-surface);
     box-shadow: var(--home-shadow);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.home-feature-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(15, 118, 110, 0.26);
+    box-shadow: 0 22px 42px rgba(18, 41, 41, 0.11);
 }
 
 .home-feature-image-wrap {
-    aspect-ratio: 16 / 8.6;
+    aspect-ratio: 16 / 7.6;
     overflow: hidden;
     background: linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(255, 255, 255, 0.3));
 }
@@ -417,13 +424,14 @@ div.lazy {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .home-feature-body {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    padding: 1.2rem;
+    padding: 1.05rem;
 }
 
 .home-feature-subtitle {
@@ -435,14 +443,15 @@ div.lazy {
 }
 
 .home-feature-title {
-    margin: 0.35rem 0 0.6rem;
+    margin: 0.3rem 0 0.5rem;
     font-family: "Raleway", sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.22rem;
+    line-height: 1.25;
 }
 
 .home-feature-description {
     color: var(--home-muted);
-    line-height: 1.65;
+    line-height: 1.55;
 }
 
 .home-feature-badges {
@@ -454,11 +463,11 @@ div.lazy {
 }
 
 .home-feature-badge {
-    padding: 0.35rem 0.6rem;
+    padding: 0.3rem 0.55rem;
     border-radius: 999px;
     background: rgba(15, 118, 110, 0.1);
     color: var(--home-accent-strong);
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: 700;
 }
 
@@ -466,8 +475,8 @@ div.lazy {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 2.7rem;
-    padding: 0.7rem 1rem;
+    min-height: 2.45rem;
+    padding: 0.6rem 0.9rem;
     border-radius: 999px;
     background: var(--home-accent);
     color: #fff !important;
@@ -487,6 +496,16 @@ div.lazy {
 
 .home-publication-item {
     background: rgba(255, 253, 248, 0.72);
+}
+
+.home-landing .my-3.bg-white {
+    border: 1px solid var(--home-border);
+    background: rgba(255, 253, 248, 0.9) !important;
+    box-shadow: 0 12px 28px rgba(18, 41, 41, 0.06) !important;
+}
+
+.home-landing .my-3.bg-white > h6:first-child {
+    background: rgba(15, 118, 110, 0.05);
 }
 
 .publication-title-compact {
