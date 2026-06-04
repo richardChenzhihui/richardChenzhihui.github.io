@@ -37,11 +37,8 @@ hero_summary: >-
   I build evidence-grounded AI systems for clinical and other high-stakes settings, spanning interpretable medical deepfake detection, medical image editing data infrastructure, specialized-domain LLM detection, and multimodal Agent post-training.
 
 hero_proof:
-  - "ByteDance / TikTok Multimodal Agent Post-Training"
+  - "TikTok Research Intern: Multimodal Agent Post-Training"
   - "MiniMax 10x Team Fellowship"
-
-availability:
-  label: "2026 PhD Intern: Multimodal Agent Post-Training, TikTok"
 
 homepage_metrics:
   - value: "2"
@@ -86,6 +83,21 @@ featured_work:
     secondary:
       label: "Paper"
       url: https://arxiv.org/abs/2603.18577
+  - title: "MiniMax 10x Team Fellowship"
+    featured_center: true
+    subtitle: "Healthcare AI safety evaluation and clinically verifiable Agent workflows"
+    description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with healthcare safety evaluation, data flywheels, and verifiable decision paths."
+    image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
+    badges:
+      - "MiniMax 10x Team"
+      - "USD 2,000 compute grant"
+      - "Healthcare AI Safety"
+    primary:
+      label: "Showcase"
+      url: /showcase.html#projects
+    secondary:
+      label: "MiniMax"
+      url: https://www.minimaxi.com/
   - title: "DivScore"
     subtitle: "Zero-shot LLM detection in specialized domains"
     description: "A robust detector for medicine and law that uses normalized entropy scoring and domain knowledge distillation without retraining on new domains."
@@ -100,20 +112,6 @@ featured_work:
     secondary:
       label: "Code"
       url: https://github.com/richardChenzhihui/DivScore
-  - title: "MiniMax 10x Team Fellowship"
-    subtitle: "Healthcare AI safety evaluation and clinically verifiable Agent workflows"
-    description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with healthcare safety evaluation, data flywheels, and verifiable decision paths."
-    image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
-    badges:
-      - "MiniMax 10x Team"
-      - "USD 2,000 compute grant"
-      - "Healthcare AI Safety"
-    primary:
-      label: "Showcase"
-      url: /showcase.html#projects
-    secondary:
-      label: "MiniMax"
-      url: https://www.minimaxi.com/
 
 
 portrait_url: /assets/images/photos/portrait.jpg

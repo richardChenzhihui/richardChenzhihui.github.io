@@ -42,17 +42,11 @@
                 {% if site.data.profile.hero_proof %}
                 <div class="home-hero-proof">
                     {% for item in site.data.profile.hero_proof %}
-                    <span class="home-feature-badge">
+                    <div class="home-hero-highlight">
                         <span class="lang-en">{{ item }}</span>
                         <span class="lang-zh d-none">{{ site.data.profile_zh.hero_proof[forloop.index0] }}</span>
-                    </span>
+                    </div>
                     {% endfor %}
-                </div>
-                {% endif %}
-                {% if site.data.profile.availability %}
-                <div class="home-status-pill">
-                    <span class="lang-en">{{ site.data.profile.availability.label }}</span>
-                    <span class="lang-zh d-none">{{ site.data.profile_zh.availability.label }}</span>
                 </div>
                 {% endif %}
                 <div class="home-hero-actions">

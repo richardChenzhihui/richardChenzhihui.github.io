@@ -12,11 +12,11 @@
             <span class="lang-zh d-none">查看项目展示</span>
         </a>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
         {% for item in work_en %}
         {% assign item_zh = work_zh[forloop.index0] %}
         <div class="col-12 col-lg-4 mb-4">
-            <article class="home-feature-card">
+            <article class="home-feature-card{% if item.featured_center %} home-feature-card--spotlight{% endif %}">
                 <div class="home-feature-image-wrap">
                     <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="home-feature-image">
                 </div>

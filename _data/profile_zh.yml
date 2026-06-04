@@ -37,11 +37,8 @@ hero_summary: >-
   我构建面向临床和高风险场景的证据驱动 AI 系统，近期工作覆盖可解释医学深度伪造检测、医学图像编辑数据基础设施、专业领域大模型文本检测与多模态 Agent Post-Training。
 
 hero_proof:
-  - "字节 / TikTok 多模态 Agent Post-Training"
+  - "TikTok Research Intern：多模态 Agent Post-Training"
   - "MiniMax 10x Team Fellowship"
-
-availability:
-  label: "2026 博士实习：TikTok 多模态 Agent Post-Training"
 
 homepage_metrics:
   - value: "2"
@@ -86,6 +83,21 @@ featured_work:
     secondary:
       label: "论文"
       url: https://arxiv.org/abs/2603.18577
+  - title: "MiniMax 10x Team Fellowship"
+    featured_center: true
+    subtitle: "医疗 AI 安全评测与临床可验证 Agent 工作流"
+    description: "将 MiniMax 长上下文、多模态与 Agent 能力连接到医疗 AI 安全评测、数据飞轮和可验证决策路径。"
+    image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
+    badges:
+      - "MiniMax 10x Team"
+      - "1.5 万元算力资助"
+      - "医疗 AI 安全评测"
+    primary:
+      label: "项目展示"
+      url: /showcase.html#projects
+    secondary:
+      label: "MiniMax"
+      url: https://www.minimaxi.com/
   - title: "DivScore"
     subtitle: "专业领域零样本文本检测"
     description: "面向医疗与法律等高风险领域，在无需新领域训练数据的前提下，稳健检测大模型生成文本。"
@@ -100,20 +112,6 @@ featured_work:
     secondary:
       label: "代码"
       url: https://github.com/richardChenzhihui/DivScore
-  - title: "MiniMax 10x Team Fellowship"
-    subtitle: "医疗 AI 安全评测与临床可验证 Agent 工作流"
-    description: "将 MiniMax 长上下文、多模态与 Agent 能力连接到医疗 AI 安全评测、数据飞轮和可验证决策路径。"
-    image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
-    badges:
-      - "MiniMax 10x Team"
-      - "1.5 万元算力资助"
-      - "医疗 AI 安全评测"
-    primary:
-      label: "项目展示"
-      url: /showcase.html#projects
-    secondary:
-      label: "MiniMax"
-      url: https://www.minimaxi.com/
 
 
 portrait_url: /assets/images/photos/portrait.jpg
