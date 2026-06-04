@@ -37,8 +37,8 @@ hero_summary: >-
   我构建面向临床和高风险场景的证据驱动 AI 系统，近期工作覆盖可解释医学深度伪造检测、医学图像编辑数据基础设施、专业领域大模型文本检测与多模态 Agent Post-Training。
 
 hero_proof:
-  - "TikTok Research Intern：多模态 Agent Post-Training"
-  - "MiniMax 10x Team Fellowship"
+  - "字节跳动研究实习：多模态智能体后训练"
+  - "MiniMax \"10x Team\" 合作计划"
 
 homepage_metrics:
   - value: "2"

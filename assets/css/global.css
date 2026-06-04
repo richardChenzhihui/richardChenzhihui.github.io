@@ -156,6 +156,11 @@ div.lazy {
     background: linear-gradient(90deg, rgba(15, 118, 110, 0.3), transparent);
 }
 
+.home-section-heading--with-link .home-inline-link {
+    margin-left: 1.5rem;
+    flex-shrink: 0;
+}
+
 .home-hero-card {
     position: relative;
     overflow: hidden;
@@ -247,16 +252,25 @@ div.lazy {
 }
 
 .home-hero-highlight {
-    padding: 0.9rem 1.2rem;
-    border: 1px solid rgba(15, 118, 110, 0.24);
-    border-radius: 1rem;
-    background: linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(255, 253, 248, 0.98));
-    box-shadow: 0 10px 24px rgba(15, 118, 110, 0.12);
+    padding: 0.95rem 1.25rem 0.95rem 1.1rem;
+    border: 1.5px solid rgba(15, 118, 110, 0.32);
+    border-left: 4px solid var(--home-accent);
+    border-radius: 0.85rem;
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.16), rgba(255, 253, 248, 0.98));
+    box-shadow: 0 12px 28px rgba(15, 118, 110, 0.14);
     color: var(--home-accent-strong);
     font-size: clamp(1.02rem, 2.2vw, 1.22rem);
     font-weight: 800;
     line-height: 1.45;
     letter-spacing: 0.01em;
+}
+
+.home-hero-highlight:nth-child(2) {
+    border-left-color: #b45309;
+    border-color: rgba(180, 83, 9, 0.28);
+    background: linear-gradient(135deg, rgba(180, 83, 9, 0.12), rgba(255, 253, 248, 0.98));
+    box-shadow: 0 12px 28px rgba(180, 83, 9, 0.1);
+    color: #92400e;
 }
 
 .home-hero-dot {

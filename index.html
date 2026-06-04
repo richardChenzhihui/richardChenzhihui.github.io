@@ -5,9 +5,8 @@ navbar_title: Home
 body_class: home-landing
 ---
 {% include widgets/profile_card.html %}
-{% include widgets/home_impact_areas.html %}
-
 {% include widgets/home_featured_work.html %}
+{% include widgets/home_impact_areas.html %}
 
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
