@@ -56,6 +56,20 @@ homepage_metrics:
     label: "产业支持的 AI 系统研究"
     note: "Agent Post-Training 与医疗 AI 安全评测算力资助"
 
+impact_areas:
+  - label: "临床 AI 安全"
+    title: "面向医疗 AI 的证据驱动安全评测"
+    description: "MedForge 与 MiniMax Fellowship 形成一条安全研究主线：从伪造感知基准到临床可验证 Agent 工作流。"
+    proof: "ACL 2026 主会议 · MiniMax 算力支持"
+  - label: "专业领域治理"
+    title: "高风险生成内容的稳健检测"
+    description: "DivScore 面向医疗与法律场景，解决零样本检测器在专业文本上因领域偏移而失效的问题。"
+    proof: "EMNLP 2025 主会议 · +14.4% AUROC"
+  - label: "开放医疗数据基础设施"
+    title: "医学图像编辑的多模态数据资产"
+    description: "Med-Banana 提供覆盖胸部 X 光、脑部 MRI 与眼底图像的开放医学质量控制数据管线。"
+    proof: "3 种模态 · 23 类疾病"
+
 featured_work:
   - title: "MedForge"
     subtitle: "可解释医学深度伪造检测"

@@ -56,6 +56,20 @@ homepage_metrics:
     label: "industry-backed AI systems"
     note: "Agent post-training and compute-supported healthcare AI safety"
 
+impact_areas:
+  - label: "Clinical AI Safety"
+    title: "Evidence-grounded safety evaluation for medical AI"
+    description: "MedForge and the MiniMax fellowship form a safety track from forgery-aware benchmarks to clinically verifiable Agent workflows."
+    proof: "ACL 2026 Main · MiniMax compute support"
+  - label: "Specialized-domain Governance"
+    title: "Robust detection for high-stakes generated content"
+    description: "DivScore targets medicine and law, where zero-shot LLM detectors must handle domain shift without relying on new-domain retraining."
+    proof: "EMNLP 2025 Main · +14.4% AUROC"
+  - label: "Open Medical Data Infrastructure"
+    title: "Multimodal assets for medical image editing"
+    description: "Med-Banana contributes an open, medically controlled data pipeline across chest X-ray, brain MRI, and fundus photography."
+    proof: "3 modalities · 23 disease types"
+
 featured_work:
   - title: "MedForge"
     subtitle: "Interpretable medical deepfake detection"

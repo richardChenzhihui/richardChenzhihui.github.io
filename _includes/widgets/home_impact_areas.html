@@ -1,0 +1,33 @@
+{% assign impact_en = site.data.profile.impact_areas %}
+{% assign impact_zh = site.data.profile_zh.impact_areas %}
+{% if impact_en and impact_en.size > 0 %}
+<section class="home-section">
+    <div class="home-section-heading">
+        <span class="lang-en">Research Value</span>
+        <span class="lang-zh d-none">研究价值</span>
+    </div>
+    <div class="home-impact-strip">
+        {% for item in impact_en %}
+        {% assign item_zh = impact_zh[forloop.index0] %}
+        <article class="home-impact-card">
+            <div class="home-impact-label">
+                <span class="lang-en">{{ item.label }}</span>
+                <span class="lang-zh d-none">{{ item_zh.label }}</span>
+            </div>
+            <h3 class="home-impact-title">
+                <span class="lang-en">{{ item.title }}</span>
+                <span class="lang-zh d-none">{{ item_zh.title }}</span>
+            </h3>
+            <p class="home-impact-description">
+                <span class="lang-en">{{ item.description }}</span>
+                <span class="lang-zh d-none">{{ item_zh.description }}</span>
+            </p>
+            <div class="home-impact-proof">
+                <span class="lang-en">{{ item.proof }}</span>
+                <span class="lang-zh d-none">{{ item_zh.proof }}</span>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

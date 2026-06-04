@@ -396,6 +396,52 @@ div.lazy {
     line-height: 1.6;
 }
 
+.home-impact-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
+}
+
+.home-impact-card {
+    height: 100%;
+    padding: 1.15rem 1.2rem;
+    border: 1px solid rgba(18, 58, 56, 0.13);
+    border-radius: 1.1rem;
+    background: rgba(255, 253, 248, 0.78);
+    box-shadow: 0 10px 24px rgba(18, 41, 41, 0.05);
+}
+
+.home-impact-label {
+    color: var(--home-accent);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.home-impact-title {
+    margin: 0.35rem 0 0.5rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.35;
+}
+
+.home-impact-description {
+    margin-bottom: 0.8rem;
+    color: var(--home-muted);
+    line-height: 1.6;
+}
+
+.home-impact-proof {
+    display: inline-flex;
+    padding: 0.28rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(15, 118, 110, 0.09);
+    color: var(--home-accent-strong);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
 .home-feature-card {
     display: flex;
     flex-direction: column;
@@ -574,6 +620,10 @@ div.lazy {
     .home-hero-visual {
         margin-top: 1.5rem;
     }
+
+    .home-impact-strip {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -599,7 +649,8 @@ div.lazy {
     }
 
     .home-metric-card,
-    .home-feature-body {
+    .home-feature-body,
+    .home-impact-card {
         padding: 1.1rem;
     }
 }
