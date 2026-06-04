@@ -23,7 +23,7 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    担任NeurIPS 2026、ACL 2026、EMNLP 2026、IJCAI、ACM TIST等会议和期刊的审稿人，已审稿10余篇。
+    <strong>学术服务：</strong>担任 NeurIPS 2026、ACL 2026、EMNLP 2026、IJCAI、ACM TIST 等会议和期刊审稿人，累计审稿 10 余篇。
   </p>
   <p>
     <strong>研究方向：</strong>可信与智能体大语言模型 • 医疗领域多模态智能
@@ -89,6 +89,20 @@ featured_work:
     secondary:
       label: "代码"
       url: https://github.com/richardChenzhihui/DivScore
+  - title: "MiniMax 10x Team Fellowship"
+    subtitle: "面向医疗场景的安全评测、数据飞轮与临床可验证 Agent 工作流"
+    description: "依托 MiniMax 长上下文、多模态与 Agent 能力，构建医疗 AI 安全评测体系、数据飞轮和临床可验证工作流。"
+    image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
+    badges:
+      - "MiniMax 10x Team"
+      - "1.5 万元算力资助"
+      - "医疗 AI 安全评测"
+    primary:
+      label: "项目展示"
+      url: /showcase.html#projects
+    secondary:
+      label: "MiniMax"
+      url: https://www.minimaxi.com/
 
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -123,6 +137,8 @@ experience:
   date: 2024年9月 - 2025年1月
 
 awards:
+- name: MiniMax 10x Team Fellowship 专家资助计划，1.5 万元算力资助
+  date: 2026
 - name: 新加坡国立大学全额博士奖学金
   date: 2025
 - name: 香港中文大学（深圳）祥波书院优秀毕业生

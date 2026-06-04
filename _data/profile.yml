@@ -89,6 +89,20 @@ featured_work:
     secondary:
       label: "Code"
       url: https://github.com/richardChenzhihui/DivScore
+  - title: "MiniMax 10x Team Fellowship"
+    subtitle: "Safety evaluation, data flywheel, and clinically verifiable Agent workflows for healthcare"
+    description: "Building a healthcare AI safety evaluation system, data flywheel, and clinically verifiable workflows powered by MiniMax long-context, multimodal, and Agent capabilities."
+    image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
+    badges:
+      - "MiniMax 10x Team"
+      - "USD 2,000 compute grant"
+      - "Healthcare AI Safety"
+    primary:
+      label: "Showcase"
+      url: /showcase.html#projects
+    secondary:
+      label: "MiniMax"
+      url: https://www.minimaxi.com/
 
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -124,6 +138,8 @@ experience:
   date: Sep. 2024 - Jan. 2025
 
 awards:
+- name: MiniMax 10x Team Fellowship Expert Grant, USD 2,000 compute support
+  date: 2026
 - name: Full Ph.D. Scholarship, National University of Singapore
   date: 2025
 - name: Outstanding College Graduate, CUHK-Shenzhen Harmonia College

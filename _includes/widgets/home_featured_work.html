@@ -15,7 +15,7 @@
     <div class="row">
         {% for item in work_en %}
         {% assign item_zh = work_zh[forloop.index0] %}
-        <div class="col-12 col-lg-6 mb-4">
+        <div class="col-12 col-lg-4 mb-4">
             <article class="home-feature-card">
                 <div class="home-feature-image-wrap">
                     <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="home-feature-image">
