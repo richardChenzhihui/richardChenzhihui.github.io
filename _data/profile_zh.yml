@@ -78,7 +78,7 @@ featured_work:
   - title: "DivScore"
     subtitle: "专业领域零样本文本检测"
     description: "面向医疗与法律等高风险领域，在无需新领域训练数据的前提下，稳健检测大模型生成文本。"
-    image: /assets/images/publications/divscore/poster.jpg
+    image: /assets/images/publications/divscore/poster-web.jpg
     badges:
       - "EMNLP 2025 主会议"
       - "+14.4% AUROC"

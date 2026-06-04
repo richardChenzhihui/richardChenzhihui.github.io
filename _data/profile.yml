@@ -78,7 +78,7 @@ featured_work:
   - title: "DivScore"
     subtitle: "Zero-shot LLM detection in specialized domains"
     description: "A robust detector for medicine and law that uses normalized entropy scoring and domain knowledge distillation without retraining on new domains."
-    image: /assets/images/publications/divscore/poster.jpg
+    image: /assets/images/publications/divscore/poster-web.jpg
     badges:
       - "EMNLP 2025 Main"
       - "+14.4% AUROC"
