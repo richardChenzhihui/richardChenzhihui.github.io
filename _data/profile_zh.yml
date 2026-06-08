@@ -24,10 +24,10 @@ short_bio: >-
     我的研究聚焦高风险医疗场景中的可信多模态与 Agentic AI，将可发表的研究资产与可落地的评测、数据和 post-training 工作流连接起来。
   </p>
   <p>
-    <strong>学术成果：</strong>ACL 2026 主会议与 EMNLP 2025 主会议论文，围绕医学深度伪造检测、医学图像编辑和专业领域大模型文本检测发布数据、模型、Demo 与代码。
+    <strong>学术成果：</strong>ACL 2026 与 EMNLP 2025 主会议；3 个开放医疗 AI 数据集，HuggingFace 累计 10 万+ 下载。
   </p>
   <p>
-    <strong>学术服务：</strong>ACL 2026 主会议审稿人与 Session Chair，持续为可信 AI、医疗 AI 与多模态安全社区贡献同行评议。
+    <strong>学术服务：</strong>NeurIPS 2026、IJCAI 2026、IEEE Affective Computing、IEEE Transactions on Consumer Electronics 审稿人；ACL 2026 主会议 Session Chair。
   </p>
   <p>
     <strong>产业连接：</strong>字节跳动多模态智能体后训练与 MiniMax 支持的医疗 AI 安全评测。
@@ -159,5 +159,15 @@ awards:
   date: 2021
 
 academic_service:
-- name: ACL 2026 Session Chair
+- name: ACL 2026 主会议 Session Chair
+  date: 2026
+- name: NeurIPS 2026 审稿人
+  date: 2026
+- name: IJCAI 2026 审稿人
+  date: 2026
+- name: IEEE Transactions on Affective Computing 审稿人
+  date: 2026
+- name: IEEE Transactions on Consumer Electronics 审稿人
+  date: 2026
+- name: ACL 2026 审稿人
   date: 2026

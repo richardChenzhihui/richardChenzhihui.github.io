@@ -24,10 +24,10 @@ short_bio: >-
     My work builds trustworthy multimodal and agentic AI systems for high-stakes healthcare, connecting publishable research artifacts with deployable evaluation and post-training workflows.
   </p>
   <p>
-    <strong>Academic Output:</strong> ACL 2026 Main and EMNLP 2025 Main, with open datasets, models, demos, and code around medical deepfake detection, medical image editing, and specialized-domain LLM detection.
+    <strong>Academic Output:</strong> ACL 2026 & EMNLP 2025 Main; 3 open medical AI datasets with 100K+ HuggingFace downloads.
   </p>
   <p>
-    <strong>Academic Service:</strong> Reviewer and Session Chair for ACL 2026 Main, with ongoing peer review across the trustworthy AI, medical AI, and multimodal safety communities.
+    <strong>Academic Service:</strong> Reviewer for NeurIPS 2026, IJCAI 2026, IEEE Affective Computing & T-CE; ACL 2026 Main Session Chair.
   </p>
   <p>
     <strong>Industry Connection:</strong> TikTok multimodal Agent post-training and MiniMax-supported healthcare AI safety evaluation.
@@ -160,5 +160,15 @@ awards:
   date: 2021
 
 academic_service:
-- name: Session Chair, ACL 2026
+- name: Session Chair, ACL 2026 Main
+  date: 2026
+- name: Reviewer, NeurIPS 2026
+  date: 2026
+- name: Reviewer, IJCAI 2026
+  date: 2026
+- name: Reviewer, IEEE Transactions on Affective Computing
+  date: 2026
+- name: Reviewer, IEEE Transactions on Consumer Electronics
+  date: 2026
+- name: Reviewer, ACL 2026
   date: 2026
