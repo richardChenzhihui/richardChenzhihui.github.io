@@ -6,7 +6,7 @@ date: 2026-04-18 00:01:00 +0800
 ---
 
 <div class="p-4">
-    <h2 data-en="MiniMax 10x Team Fellowship: Healthcare AI Safety Evaluation and Agent Workflows" data-zh="MiniMax 10x Team Fellowship：医疗 AI 安全评测与 Agent 工作流">
+    <h2 data-en="MiniMax 10x Team Fellowship: Healthcare AI Safety Evaluation and Agent Workflows" data-zh="10x Team 合作计划资助：医疗 AI 安全评测与 Agent 工作流">
         MiniMax 10x Team Fellowship: Healthcare AI Safety Evaluation and Agent Workflows
     </h2>
     <hr />
@@ -55,7 +55,7 @@ date: 2026-04-18 00:01:00 +0800
             <div class="mt-3 p-2 bg-light rounded">
                 <p class="small mb-1"><strong data-en="Highlights" data-zh="亮点">Highlights</strong></p>
                 <p class="small mb-0">
-                    <span class="badge badge-success" data-en="MiniMax 10x Team" data-zh="MiniMax 10x Team">MiniMax 10x Team</span>
+                    <span class="badge badge-success" data-en="MiniMax 10x Team" data-zh="10x Team">MiniMax 10x Team</span>
                     <span class="badge badge-info" data-en="Compute Grant" data-zh="算力资助">Compute Grant</span>
                     <span class="badge badge-primary" data-en="Healthcare AI Safety" data-zh="医疗 AI 安全">Healthcare AI Safety</span>
                 </p>

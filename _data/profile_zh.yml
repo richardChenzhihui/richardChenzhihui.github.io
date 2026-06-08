@@ -27,18 +27,18 @@ short_bio: >-
     <strong>学术成果：</strong>ACL 2026 主会议与 EMNLP 2025 主会议论文，围绕医学深度伪造检测、医学图像编辑和专业领域大模型文本检测发布数据、模型、Demo 与代码。
   </p>
   <p>
-    <strong>产业连接：</strong>TikTok 多模态 Agent Post-Training 与 MiniMax 支持的医疗 AI 安全评测。
+    <strong>产业连接：</strong>字节跳动多模态智能体后训练与 MiniMax 支持的医疗 AI 安全评测。
   </p>
 
 hero_kicker: >-
   面向医疗场景的可信多模态 AI
 
 hero_summary: >-
-  我构建面向临床和高风险场景的证据驱动 AI 系统，近期工作覆盖可解释医学深度伪造检测、医学图像编辑数据基础设施、专业领域大模型文本检测与多模态 Agent Post-Training。
+  我构建面向临床和高风险场景的证据驱动 AI 系统，近期工作覆盖可解释医学深度伪造检测、医学图像编辑数据基础设施、专业领域大模型文本检测与多模态智能体后训练。
 
 hero_proof:
   - "字节跳动研究实习：多模态智能体后训练"
-  - "MiniMax \"10x Team\" 合作计划"
+  - "10x Team 合作计划资助"
 
 homepage_metrics:
   - value: "2"
@@ -52,13 +52,13 @@ homepage_metrics:
     note: "Med-Banana 覆盖 CXR、MRI 与眼底图像"
   - value: "字节 + MiniMax"
     label: "产业连接的 AI 系统研究"
-    note: "Agent Post-Training 与医疗 AI 安全评测算力支持"
+    note: "多模态智能体后训练与医疗 AI 安全评测算力支持"
 
 impact_areas:
   - label: "临床 AI 安全"
     title: "面向医疗 AI 的证据驱动评测"
-    description: "MedForge 将真实医学影像篡改转化为可定位、可检查的推理任务；MiniMax Fellowship 将这条安全主线延伸到临床可验证 Agent 工作流。"
-    proof: "ACL 2026 主会议 · MiniMax 10x Team Fellowship"
+    description: "MedForge 将真实医学影像篡改转化为可定位、可检查的推理任务；10x Team 合作计划资助将这条安全主线延伸到临床可验证 Agent 工作流。"
+    proof: "ACL 2026 主会议 · 10x Team 合作计划资助"
   - label: "专业领域治理"
     title: "高风险生成内容的稳健检测"
     description: "DivScore 面向医疗与法律场景，让零样本大模型文本检测器在没有新领域检测标注的情况下仍能应对领域偏移。"
@@ -83,13 +83,13 @@ featured_work:
     secondary:
       label: "论文"
       url: https://arxiv.org/abs/2603.18577
-  - title: "MiniMax 10x Team Fellowship"
+  - title: "10x Team 合作计划资助"
     featured_center: true
     subtitle: "医疗 AI 安全评测与临床可验证 Agent 工作流"
     description: "将 MiniMax 长上下文、多模态与 Agent 能力连接到医疗 AI 安全评测、数据飞轮和可验证决策路径。"
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
     badges:
-      - "MiniMax 10x Team"
+      - "10x Team"
       - "1.5 万元算力资助"
       - "医疗 AI 安全评测"
     primary:
@@ -133,7 +133,7 @@ education:
 
 experience:
 - name: TikTok
-  position: 多模态 Agent Post-Training 博士实习生
+  position: 多模态智能体后训练 博士实习生
   date: 2026 年夏
 
 - name: 阶跃星辰（StepFun）
@@ -146,7 +146,7 @@ experience:
   date: 2024年9月 - 2025年1月
 
 awards:
-- name: MiniMax 10x Team Fellowship 专家资助计划，1.5 万元算力资助
+- name: 10x Team 合作计划资助，1.5 万元算力资助
   date: 2026
 - name: 新加坡国立大学全额博士奖学金
   date: 2025
