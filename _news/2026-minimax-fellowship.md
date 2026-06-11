@@ -1,7 +1,7 @@
 ---
 title: >-
-    [MiniMax] Selected for the MiniMax 10x Team Fellowship Expert Grant to build healthcare AI safety evaluation and clinically verifiable Agent workflows.
+    [MiniMax] Selected for the MiniMax Cowork Team Fellowship to support medical foundation model development and clinically verifiable Agent workflows.
 title_zh: >-
-    [MiniMax] 入选 10x Team 合作计划资助，围绕医疗 AI 安全评测与临床可验证 Agent 工作流开展研究。
+    [MiniMax] 入选 MiniMax Cowork Team Fellowship，围绕医疗大模型开发与临床可验证 Agent 工作流开展研究。
 date: 2026-04-18 10:00:00 +0800
 ---

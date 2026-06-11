@@ -1,7 +1,7 @@
 ---
 title: >-
-    [Award] Received full PhD scholarship from NUS. Time to invest in more coffee ☕
+    [Award] Received a full PhD scholarship from the National University of Singapore.
 title_zh: >-
-    [奖项] 获得新国大全额博士奖学金。是时候多喝咖啡了 ☕
+    [奖项] 获得新加坡国立大学全额博士奖学金。
 date: 2025-01-01 10:00:00 +0800
 ---

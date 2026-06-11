@@ -24,13 +24,13 @@ short_bio: >-
     我的研究聚焦高风险医疗场景中的可信多模态与 Agentic AI，将可发表的研究资产与可落地的评测、数据和 post-training 工作流连接起来。
   </p>
   <p>
-    <strong>学术成果：</strong>ACL 2026 与 EMNLP 2025 主会议；3 个开放医疗 AI 数据集，HuggingFace 累计 10 万+ 下载。
+    <strong>学术成果：</strong>ACL 2026 与 EMNLP 2025 主会议；3 个开放医疗 AI 数据集，Hugging Face 累计 10 万+ 下载。
   </p>
   <p>
     <strong>学术服务：</strong>NeurIPS 2026、IJCAI 2026、IEEE Affective Computing、IEEE Transactions on Consumer Electronics 审稿人；ACL 2026 主会议 Session Chair。
   </p>
   <p>
-    <strong>产业连接：</strong>字节跳动多模态智能体后训练与 MiniMax 支持的医疗 AI 安全评测。
+    <strong>产业连接：</strong>字节跳动多模态智能体后训练与 MiniMax 支持的医疗大模型开发与临床可验证 Agent 工作流。
   </p>
 
 hero_kicker: >-
@@ -41,7 +41,7 @@ hero_summary: >-
 
 hero_proof:
   - "字节跳动研究实习：多模态智能体后训练"
-  - "10x Team 合作计划资助"
+  - "MiniMax Cowork Team Fellowship"
 
 homepage_metrics:
   - value: "2"
@@ -55,13 +55,13 @@ homepage_metrics:
     note: "Med-Banana 覆盖 CXR、MRI 与眼底图像"
   - value: "字节 + MiniMax"
     label: "产业连接的 AI 系统研究"
-    note: "多模态智能体后训练与医疗 AI 安全评测算力支持"
+    note: "多模态智能体后训练与 MiniMax 支持的医疗大模型开发"
 
 impact_areas:
   - label: "临床 AI 安全"
     title: "面向医疗 AI 的证据驱动评测"
-    description: "MedForge 将真实医学影像篡改转化为可定位、可检查的推理任务；10x Team 合作计划资助将这条安全主线延伸到临床可验证 Agent 工作流。"
-    proof: "ACL 2026 主会议 · 10x Team 合作计划资助"
+    description: "MedForge 将真实医学影像篡改转化为可定位、可检查的推理任务；MiniMax Cowork Team Fellowship 支持医疗大模型开发与临床可验证 Agent 工作流。"
+    proof: "ACL 2026 主会议 · MiniMax Cowork Team Fellowship"
   - label: "专业领域治理"
     title: "高风险生成内容的稳健检测"
     description: "DivScore 面向医疗与法律场景，让零样本大模型文本检测器在没有新领域检测标注的情况下仍能应对领域偏移。"
@@ -86,15 +86,15 @@ featured_work:
     secondary:
       label: "论文"
       url: https://arxiv.org/abs/2603.18577
-  - title: "10x Team 合作计划资助"
+  - title: "MiniMax Cowork Team Fellowship"
     featured_center: true
-    subtitle: "医疗 AI 安全评测与临床可验证 Agent 工作流"
-    description: "将 MiniMax 长上下文、多模态与 Agent 能力连接到医疗 AI 安全评测、数据飞轮和可验证决策路径。"
+    subtitle: "医疗大模型开发与临床可验证 Agent 工作流"
+    description: "将 MiniMax 长上下文、多模态与 Agent 能力连接到医疗大模型开发、数据飞轮和可验证决策路径。"
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
     badges:
-      - "10x Team"
-      - "1.5 万元算力资助"
-      - "医疗 AI 安全评测"
+      - "MiniMax Cowork Team"
+      - "4500 美金算力支持"
+      - "医疗大模型开发"
     primary:
       label: "项目展示"
       url: /showcase.html#projects
@@ -149,7 +149,7 @@ experience:
   date: 2024年9月 - 2025年1月
 
 awards:
-- name: 10x Team 合作计划资助，1.5 万元算力资助
+- name: MiniMax Cowork Team Fellowship，4500 美金算力支持
   date: 2026
 - name: 新加坡国立大学全额博士奖学金
   date: 2025
