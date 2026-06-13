@@ -33,11 +33,11 @@
                     <span class="lang-zh d-none">{{ site.data.profile_zh.hero_summary }}</span>
                 </p>
                 <div class="home-hero-focus">
-                    <span class="lang-en">Trustworthy and Agentic LLM</span>
-                    <span class="lang-zh d-none">可信与智能体大语言模型</span>
+                    <span class="lang-en">Post-Training & Alignment Research</span>
+                    <span class="lang-zh d-none">后训练与对齐研究</span>
                     <span class="home-hero-dot"></span>
-                    <span class="lang-en">Multimodal Intelligence in Healthcare</span>
-                    <span class="lang-zh d-none">医疗领域多模态智能</span>
+                    <span class="lang-en">Multimodal Agents · Clinical AI Applications</span>
+                    <span class="lang-zh d-none">多模态 Agent · 临床 AI 应用</span>
                 </div>
                 {% if site.data.profile.hero_proof %}
                 <div class="home-hero-proof">
@@ -59,6 +59,14 @@
                         <span class="lang-zh d-none">查看项目展示</span>
                     </a>
                     <a class="home-secondary-btn" href="{{ gscholar_url }}" target="_blank" rel="noopener">Google Scholar</a>
+                    {% if site.data.profile.cv_link %}
+                    <a class="home-secondary-btn lang-en" href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" rel="noopener">
+                        <i class="fas fa-file-alt"></i> Download CV
+                    </a>
+                    <a class="home-secondary-btn lang-zh d-none" href="{{ site.data.profile_zh.cv_link | default: site.data.profile.cv_link | relative_url }}" target="_blank" rel="noopener">
+                        <i class="fas fa-file-alt"></i> 下载简历
+                    </a>
+                    {% endif %}
                 </div>
                 <div class="home-hero-links">
                     <a class="no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
@@ -102,8 +110,11 @@
                     <div class="lang-en">{{ site.data.profile.short_bio }}</div>
                     <div class="lang-zh d-none">{{ site.data.profile_zh.short_bio }}</div>
                     {% if site.data.profile.cv_link %}
-                    <a class="home-inline-link" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}">
-                        <i class="fas fa-file-alt"></i> <span class="lang-en">Curriculum Vitae</span><span class="lang-zh d-none">个人简历</span>
+                    <a class="home-inline-link lang-en" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}">
+                        <i class="fas fa-file-alt"></i> Curriculum Vitae
+                    </a>
+                    <a class="home-inline-link lang-zh d-none" target="_blank" href="{{ site.data.profile_zh.cv_link | default: site.data.profile.cv_link | relative_url }}">
+                        <i class="fas fa-file-alt"></i> 个人简历
                     </a>
                     {% endif %}
                 </div>

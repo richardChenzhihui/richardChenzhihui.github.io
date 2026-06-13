@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="'Raleway','Lato','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#0b3d39"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <g opacity="0.10" stroke="#ffffff" stroke-width="2" fill="none">
+    <circle cx="500" cy="70" r="120"/>
+    <circle cx="500" cy="70" r="80"/>
+  </g>
+  <text x="48" y="120" fill="#9fe8df" font-size="22" font-weight="700" letter-spacing="2">REACT AGENT HARNESS</text>
+  <text x="48" y="190" fill="#ffffff" font-size="46" font-weight="800">Smart Word Agent</text>
+  <text x="48" y="232" fill="#d7efec" font-size="22" font-weight="500">Document workflows · Kimi-K2 core LLM</text>
+  <g font-size="18" font-weight="700">
+    <rect x="48" y="284" width="160" height="40" rx="20" fill="#ffffff" opacity="0.16"/>
+    <text x="128" y="310" fill="#ffffff" text-anchor="middle">Tool-calling</text>
+    <rect x="222" y="284" width="190" height="40" rx="20" fill="#ffffff" opacity="0.16"/>
+    <text x="317" y="310" fill="#ffffff" text-anchor="middle">1K downloads / wk1</text>
+    <rect x="426" y="284" width="126" height="40" rx="20" fill="#ffffff" opacity="0.16"/>
+    <text x="489" y="310" fill="#ffffff" text-anchor="middle">100+ stars</text>
+  </g>
+</svg>

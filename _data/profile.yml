@@ -6,7 +6,7 @@ positions:
 - name: Ph.D. Student in Artificial Intelligence, National University of Singapore
 
 email: "zhihui.chen@u.nus.edu"
-# cv_link: link-to-your-cv-file
+cv_link: /assets/files/Zhihui-Chen-CV-EN.pdf
 gscholar: G_JnDUgAAAAJ
 github: richardChenzhihui
 # twitter: your_twitter_id
@@ -20,56 +20,56 @@ short_bio_text_justify: false
 short_bio: >-
   <p>
     I am a PhD student in Artificial Intelligence at the National University of Singapore, supervised by
-    <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>. 
-    My work builds trustworthy multimodal and agentic AI systems for high-stakes healthcare, connecting publishable research artifacts with deployable evaluation and post-training workflows.
+    <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
+    My research centers on post-training methods for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation, and agent harness design. Healthcare is my primary application domain, not the boundary of my research.
   </p>
   <p>
-    <strong>Academic Output:</strong> ACL 2026 & EMNLP 2025 Main; 3 open medical AI datasets with 100K+ Hugging Face downloads.
+    <strong>Research Output:</strong> ACL 2026 & EMNLP 2025 Main; 3 open datasets with 100K+ Hugging Face downloads; preference-alignment data flywheels linking annotation, reward signals, and iterative post-training loops.
   </p>
   <p>
-    <strong>Academic Service:</strong> Reviewer for NeurIPS 2026, IJCAI 2026, IEEE Affective Computing & T-CE; ACL 2026 Main Session Chair.
+    <strong>Industry:</strong> ByteDance (Singapore) Multimodal Agent RL Research Intern (2026); StepFun Speech-LLM Research Intern (2025); MiniMax Cowork Team Fellowship.
   </p>
   <p>
-    <strong>Industry Connection:</strong> TikTok multimodal Agent post-training and MiniMax-supported medical foundation model development and clinically verifiable Agent workflows.
+    <strong>Academic Service:</strong> Reviewer for NeurIPS 2026, IJCAI, IEEE Affective Computing, ACM TIST; ACL 2026 Main Session Chair.
   </p>
 
 hero_kicker: >-
-  Trustworthy multimodal AI for healthcare
+  LLM Post-Training & Agentic AI Research
 
 hero_summary: >-
-  I build evidence-grounded AI systems for clinical and other high-stakes settings, spanning interpretable medical deepfake detection, medical image editing data infrastructure, specialized-domain LLM detection, and multimodal Agent post-training.
+  I research post-training for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), and verifier-in-the-loop evaluation &mdash; together with multimodal agent harnesses. My work spans RL post-training pipelines, agent trajectory and preference data, and open data infrastructure for alignment research, with high-stakes clinical AI as the primary application domain.
 
 hero_proof:
-  - "TikTok Research Intern: Multimodal Agent Post-Training"
-  - "MiniMax Cowork Team Fellowship"
+  - "ByteDance (Singapore): Multimodal Agent RL Research Intern — 2026"
+  - "StepFun: Speech-LLM Research Intern — 2025 · MiniMax Cowork Team Fellowship"
 
 homepage_metrics:
   - value: "2"
     label: "top-tier NLP main conference papers"
-    note: "ACL 2026 and EMNLP 2025"
-  - value: "90K"
-    label: "medical deepfake benchmark"
-    note: "MedForge: real, lesion-implant, and lesion-removal images"
-  - value: "50K+"
-    label: "medical image editing dataset"
-    note: "Med-Banana: successful edits across CXR, MRI, and fundus"
-  - value: "ByteDance + MiniMax"
-    label: "industry-connected AI systems"
-    note: "Agent post-training and MiniMax-supported medical foundation model development"
+    note: "ACL 2026 and EMNLP 2025 Main"
+  - value: "88K+"
+    label: "preference-alignment training pairs"
+    note: "DPO/RLHF-ready data across MedForge and Med-Banana pipelines"
+  - value: "1K+"
+    label: "agent downloads in week 1"
+    note: "Smart Word Agent: ReAct harness, Kimi-K2 core, single-file deployment"
+  - value: "ByteDance + StepFun"
+    label: "LLM lab research internships"
+    note: "Multimodal Agent RL (ByteDance) and Speech-LLM data (StepFun)"
 
 impact_areas:
-  - label: "Clinical AI Safety"
-    title: "Evidence-grounded medical AI evaluation"
-    description: "MedForge turns realistic medical image tampering into localized, inspectable reasoning; the MiniMax fellowship supports medical foundation model development and clinically verifiable Agent workflows."
-    proof: "ACL 2026 Main · MiniMax Cowork Team Fellowship"
-  - label: "Specialized-domain Governance"
-    title: "Robust detection for high-stakes generated content"
-    description: "DivScore targets medicine and law, where zero-shot LLM detectors must remain reliable under domain shift without new-domain detection labels."
-    proof: "EMNLP 2025 Main · +14.4% AUROC"
-  - label: "Open Medical Data Infrastructure"
-    title: "Reusable assets for multimodal medical AI"
-    description: "Med-Banana contributes open, medically controlled editing data and failure logs for training, evaluation, and preference-alignment research."
-    proof: "50,635 successful edits · 37,822 failed attempts"
+  - label: "Post-Training & Alignment"
+    title: "Preference data and RL loops for multimodal LLMs"
+    description: "MedForge and Med-Banana produce structured preference pairs and failure logs that feed DPO/RLHF post-training pipelines, with Forgery-aware GSPO grounding model reasoning on visual evidence. The data flywheel turns evaluation findings into targeted training signal."
+    proof: "ACL 2026 Main · GSPO · 88K alignment-ready pairs"
+  - label: "Verifier & Eval Design"
+    title: "Evidence-grounded evaluation under domain shift"
+    description: "DivScore demonstrates zero-shot verifier design: a normalized-entropy scorer with theoretical guarantees that generalizes across medical and legal domains without domain-specific labels."
+    proof: "EMNLP 2025 Main · +14.4% AUROC · +64.0% recall"
+  - label: "Agents & Systems"
+    title: "Agent harness engineering and serving"
+    description: "Smart Word Agent (ReAct, Kimi-K2 core) and an autonomous LangChain trading agent demonstrate end-to-end harness design, tool-calling, and orchestration; quantized serving work targets inference efficiency."
+    proof: "1K+ downloads / week 1 · 100+ GitHub stars"
 
 featured_work:
   - title: "MedForge"
@@ -101,20 +101,21 @@ featured_work:
     secondary:
       label: "MiniMax"
       url: https://www.minimaxi.com/
-  - title: "DivScore"
-    subtitle: "Zero-shot LLM detection in specialized domains"
-    description: "A robust detector for medicine and law that uses normalized entropy scoring and domain knowledge distillation without retraining on new domains."
-    image: /assets/images/publications/divscore/poster-web.jpg
+  - title: "Smart Word Agent"
+    subtitle: "ReAct agent harness for document workflows"
+    description: "A production ReAct pipeline with Kimi-K2 as core LLM: multi-document context, tool-calling over document APIs, and zero-dependency single-file deployment. 1,000 downloads in week one."
+    image: /assets/images/projects/smart-word-agent.svg
     badges:
-      - "EMNLP 2025 Main"
-      - "+14.4% AUROC"
-      - "+64.0% recall"
+      - "ReAct Harness"
+      - "Kimi-K2 Core LLM"
+      - "1K downloads / week 1"
+      - "100+ GitHub stars"
     primary:
-      label: "Project Page"
-      url: /publications/divscore.html
+      label: "Showcase"
+      url: /showcase.html#projects
     secondary:
-      label: "Code"
-      url: https://github.com/richardChenzhihui/DivScore
+      label: "GitHub"
+      url: https://github.com/richardChenzhihui
 
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -135,19 +136,28 @@ education:
   date: Sep. 2018 - May. 2022
 
 experience:
-- name: TikTok
-  position: Multimodal Agent Post-Training PhD Intern
-  date: Summer 2026
+- name: ByteDance (Singapore)
+  logo: /assets/images/badges/ByteDance.svg
+  position: Multimodal Agent RL Research Intern
+  dept: "Reward design, eval loops, trajectory & preference data for online/offline RL"
+  date: Jun. 2026 - Nov. 2026
 
-- name: StepFun AI Intelligent Technology
+- name: StepFun (阶跃星辰)
   logo: /assets/images/badges/StepFun.png
-  position: LLM Research Intern
-  date: Jan. 2025 - June. 2025
+  position: Speech-LLM Research Intern
+  dept: "Pre-training data system & governance for ASR/TTS/real-time speech; metadata schema"
+  date: Jan. 2025 - May. 2025
 
-- name: The Chinese University of Hong Kong
-  logo: /assets/images/badges/CU.png
-  position: Research Staff
-  date: Sep. 2024 - Jan. 2025
+- name: AQUMON (Hong Kong)
+  position: Quant Trading Agent Intern
+  dept: "LangChain agent orchestration; Futu OpenAPI real-time data & automated execution"
+  date: May. 2024 - Jul. 2024
+
+- name: NUS Business School
+  logo: /assets/images/badges/NUS.png
+  position: Teaching Assistant — "Generative AI and LLM"
+  dept: "Curriculum design; tutorials on PyTorch, HuggingFace, pre-training, SFT, RLHF"
+  date: Feb. 2024 - Apr. 2024
 
 awards:
 - name: MiniMax Cowork Team Fellowship, USD 4,500 compute grant
@@ -170,5 +180,34 @@ academic_service:
   date: 2026
 - name: Reviewer, IEEE Transactions on Consumer Electronics
   date: 2026
+- name: Reviewer, ACM TIST
+  date: 2026
 - name: Reviewer, ACL 2026
   date: 2026
+
+skills:
+  - group: "Post-Training & Alignment"
+    items:
+      - "RLHF / RLVR pipeline design"
+      - "DPO and reward modeling / reward design"
+      - "Preference & trajectory data, data flywheels"
+      - "Verifier and eval-loop design"
+      - "SFT curriculum (PyTorch / HuggingFace)"
+  - group: "Agents & Orchestration"
+    items:
+      - "ReAct agent harness (multi-step, multi-doc)"
+      - "LangChain orchestration & tool-calling"
+      - "Structured output & failure attribution"
+      - "Kimi-K2 / Qwen3-VL / GPT integration"
+  - group: "Serving & Systems"
+    items:
+      - "llama.cpp · GGUF quantization"
+      - "vLLM / SGLang"
+      - "Docker · FastAPI serving"
+      - "Whisper deployment (Large-v2)"
+  - group: "Foundations"
+    items:
+      - "Python · PyTorch · HuggingFace Transformers"
+      - "R · C++ · MATLAB · MySQL"
+      - "Linux · Git"
+      - "English (TOEFL 106, GRE 320) · Mandarin · Cantonese"

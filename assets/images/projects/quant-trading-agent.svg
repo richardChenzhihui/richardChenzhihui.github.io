@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="'Raleway','Lato','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#155e54"/>
+      <stop offset="1" stop-color="#0b3d39"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg2)"/>
+  <polyline points="40,300 120,250 200,270 280,200 360,220 440,150 520,170 560,120"
+            fill="none" stroke="#9fe8df" stroke-width="4" opacity="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="48" y="120" fill="#9fe8df" font-size="22" font-weight="700" letter-spacing="2">LANGCHAIN AGENT</text>
+  <text x="48" y="190" fill="#ffffff" font-size="44" font-weight="800">Quant Trading Agent</text>
+  <text x="48" y="232" fill="#d7efec" font-size="22" font-weight="500">Perception → decision → execution loop</text>
+  <g font-size="18" font-weight="700">
+    <rect x="48" y="296" width="170" height="40" rx="20" fill="#ffffff" opacity="0.16"/>
+    <text x="133" y="322" fill="#ffffff" text-anchor="middle">Futu OpenAPI</text>
+    <rect x="232" y="296" width="170" height="40" rx="20" fill="#ffffff" opacity="0.16"/>
+    <text x="317" y="322" fill="#ffffff" text-anchor="middle">Orchestration</text>
+    <rect x="416" y="296" width="136" height="40" rx="20" fill="#ffffff" opacity="0.16"/>
+    <text x="484" y="322" fill="#ffffff" text-anchor="middle">AQUMON</text>
+  </g>
+</svg>

@@ -6,7 +6,7 @@ positions:
 - name: 新加坡国立大学人工智能博士生
 
 email: "zhihui.chen@u.nus.edu"
-# cv_link: link-to-your-cv-file
+cv_link: /assets/files/Zhihui-Chen-CV-ZH.pdf
 gscholar: G_JnDUgAAAAJ
 github: richardChenzhihui
 # twitter: your_twitter_id
@@ -21,55 +21,55 @@ short_bio: >-
   <p>
     我目前是新加坡国立大学人工智能博士生，导师为
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
-    我的研究聚焦高风险医疗场景中的可信多模态与 Agentic AI，将可发表的研究资产与可落地的评测、数据和 post-training 工作流连接起来。
+    我的研究聚焦大模型后训练方法：奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测与 Agent 工程设计。医疗是我的主要应用场景，而非研究边界。
   </p>
   <p>
-    <strong>学术成果：</strong>ACL 2026 与 EMNLP 2025 主会议；3 个开放医疗 AI 数据集，Hugging Face 累计 10 万+ 下载。
+    <strong>研究成果：</strong>ACL 2026 与 EMNLP 2025 主会议；3 个开放数据集，Hugging Face 累计 10 万+ 下载；打通标注、奖励信号与迭代后训练闭环的偏好对齐数据飞轮。
   </p>
   <p>
-    <strong>学术服务：</strong>NeurIPS 2026、IJCAI 2026、IEEE Affective Computing、IEEE Transactions on Consumer Electronics 审稿人；ACL 2026 主会议 Session Chair。
+    <strong>产业经历：</strong>字节跳动（新加坡）多模态 Agent 强化学习研发实习（2026）；阶跃星辰语音大模型研发实习（2025）；MiniMax Cowork Team Fellowship。
   </p>
   <p>
-    <strong>产业连接：</strong>字节跳动多模态智能体后训练与 MiniMax 支持的医疗大模型开发与临床可验证 Agent 工作流。
+    <strong>学术服务：</strong>NeurIPS 2026、IJCAI、IEEE Affective Computing、ACM TIST 审稿人；ACL 2026 主会议 Session Chair。
   </p>
 
 hero_kicker: >-
-  面向医疗场景的可信多模态 AI
+  大模型后训练与 Agentic AI 研究
 
 hero_summary: >-
-  我构建面向临床和高风险场景的证据驱动 AI 系统，近期工作覆盖可解释医学深度伪造检测、医学图像编辑数据基础设施、专业领域大模型文本检测与多模态智能体后训练。
+  我从事大模型后训练研究——奖励设计、偏好对齐（DPO/RLHF/RLVR）与验证器闭环评测，以及多模态 Agent 工程。研究工作涵盖强化学习后训练流程、Agent 轨迹与偏好数据，以及服务于对齐研究的开放数据基础设施，主要应用场景为高风险临床 AI。
 
 hero_proof:
-  - "字节跳动研究实习：多模态智能体后训练"
-  - "MiniMax Cowork Team Fellowship"
+  - "字节跳动（新加坡）：多模态 Agent 强化学习研发实习 — 2026"
+  - "阶跃星辰：语音大模型研发实习 — 2025 · MiniMax Cowork Team Fellowship"
 
 homepage_metrics:
   - value: "2"
     label: "篇顶级 NLP 主会议论文"
-    note: "ACL 2026 与 EMNLP 2025"
-  - value: "90K"
-    label: "医学深度伪造基准"
-    note: "MedForge 覆盖真实、病灶植入与病灶移除图像"
-  - value: "50K+"
-    label: "医学图像编辑数据集"
-    note: "Med-Banana 覆盖 CXR、MRI 与眼底图像"
-  - value: "字节 + MiniMax"
-    label: "产业连接的 AI 系统研究"
-    note: "多模态智能体后训练与 MiniMax 支持的医疗大模型开发"
+    note: "ACL 2026 与 EMNLP 2025 主会议"
+  - value: "88K+"
+    label: "偏好对齐训练数据对"
+    note: "MedForge 与 Med-Banana 流程产出的 DPO/RLHF 就绪数据"
+  - value: "1K+"
+    label: "Agent 首周下载量"
+    note: "Smart Word Agent：ReAct 框架、Kimi-K2 核心、单文件部署"
+  - value: "字节 + 阶跃"
+    label: "大模型实验室研发实习"
+    note: "多模态 Agent 强化学习（字节）与语音大模型数据（阶跃）"
 
 impact_areas:
-  - label: "临床 AI 安全"
-    title: "面向医疗 AI 的证据驱动评测"
-    description: "MedForge 将真实医学影像篡改转化为可定位、可检查的推理任务；MiniMax Cowork Team Fellowship 支持医疗大模型开发与临床可验证 Agent 工作流。"
-    proof: "ACL 2026 主会议 · MiniMax Cowork Team Fellowship"
-  - label: "专业领域治理"
-    title: "高风险生成内容的稳健检测"
-    description: "DivScore 面向医疗与法律场景，让零样本大模型文本检测器在没有新领域检测标注的情况下仍能应对领域偏移。"
-    proof: "EMNLP 2025 主会议 · +14.4% AUROC"
-  - label: "开放医疗数据基础设施"
-    title: "可复用的多模态医疗 AI 资产"
-    description: "Med-Banana 提供开放、医学约束下的编辑数据与失败日志，服务训练、评测和偏好对齐研究。"
-    proof: "50,635 次成功编辑 · 37,822 次失败尝试"
+  - label: "后训练与对齐"
+    title: "多模态大模型的偏好数据与 RL 闭环"
+    description: "MedForge 与 Med-Banana 产出结构化偏好对和失败日志，直接用于 DPO/RLHF 后训练流程；Forgery-aware GSPO 以视觉证据约束模型推理。数据飞轮将评测发现转化为定向训练信号。"
+    proof: "ACL 2026 主会议 · GSPO · 88K 对齐就绪数据对"
+  - label: "验证器与评测设计"
+    title: "领域偏移下的证据驱动评测"
+    description: "DivScore 展示零样本验证器设计：一种带理论保证的归一化熵评分器，无需领域特定标注即可泛化至医疗与法律领域。"
+    proof: "EMNLP 2025 主会议 · +14.4% AUROC · +64.0% 召回"
+  - label: "Agent 与系统"
+    title: "Agent 工程与推理服务"
+    description: "Smart Word Agent（ReAct、Kimi-K2 核心）与基于 LangChain 的自动化交易 Agent 展示端到端框架设计、工具调用与编排能力；量化部署工作聚焦推理效率。"
+    proof: "首周 1K+ 下载 · GitHub 100+ Stars"
 
 featured_work:
   - title: "MedForge"
@@ -101,20 +101,21 @@ featured_work:
     secondary:
       label: "MiniMax"
       url: https://www.minimaxi.com/
-  - title: "DivScore"
-    subtitle: "专业领域零样本文本检测"
-    description: "面向医疗与法律等高风险领域，在无需新领域训练数据的前提下，稳健检测大模型生成文本。"
-    image: /assets/images/publications/divscore/poster-web.jpg
+  - title: "Smart Word Agent"
+    subtitle: "面向文档工作流的 ReAct Agent 框架"
+    description: "以 Kimi-K2 为核心大模型的 ReAct 流水线：多文档上下文、面向文档 API 的工具调用、零依赖单文件部署，上线首周下载量超 1000。"
+    image: /assets/images/projects/smart-word-agent.svg
     badges:
-      - "EMNLP 2025 主会议"
-      - "+14.4% AUROC"
-      - "+64.0% 召回"
+      - "ReAct 框架"
+      - "Kimi-K2 核心大模型"
+      - "首周 1K 下载"
+      - "GitHub 100+ Stars"
     primary:
-      label: "项目页面"
-      url: /publications/divscore.html
+      label: "项目展示"
+      url: /showcase.html#projects
     secondary:
-      label: "代码"
-      url: https://github.com/richardChenzhihui/DivScore
+      label: "GitHub"
+      url: https://github.com/richardChenzhihui
 
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -135,18 +136,28 @@ education:
   date: 2018年9月 - 2022年5月
 
 experience:
-- name: TikTok
-  position: 多模态智能体后训练 博士实习生
-  date: 2026 年夏
+- name: 字节跳动（新加坡）
+  logo: /assets/images/badges/ByteDance.svg
+  position: 多模态 Agent 强化学习 研发实习生
+  dept: "奖励设计、评测闭环、轨迹与偏好数据，支持在线/离线 RL 迭代"
+  date: 2026年6月 - 2026年11月
 
 - name: 阶跃星辰（StepFun）
   logo: /assets/images/badges/StepFun.png
-  position: 大模型实习生
-  date: 2025年1月 - 2025年6月
-- name: 香港中文大学
-  logo: /assets/images/badges/CU.png
-  position: 科研助理
-  date: 2024年9月 - 2025年1月
+  position: 语音大模型 研发实习生
+  dept: "ASR/TTS/实时语音预训练数据体系与治理；元数据 schema 设计"
+  date: 2025年1月 - 2025年5月
+
+- name: AQUMON（香港）
+  position: 量化交易 Agent 研发实习生
+  dept: "LangChain Agent 编排；对接 Futu OpenAPI 实时行情与自动下单"
+  date: 2024年5月 - 2024年7月
+
+- name: NUS 商学院
+  logo: /assets/images/badges/NUS.png
+  position: 教学助理 —《Generative AI and LLM》
+  dept: "课程设计；PyTorch、HuggingFace、预训练、SFT、RLHF 教学"
+  date: 2024年2月 - 2024年4月
 
 awards:
 - name: MiniMax Cowork Team Fellowship，4500 美金算力支持
@@ -169,5 +180,34 @@ academic_service:
   date: 2026
 - name: IEEE Transactions on Consumer Electronics 审稿人
   date: 2026
+- name: ACM TIST 审稿人
+  date: 2026
 - name: ACL 2026 审稿人
   date: 2026
+
+skills:
+  - group: "后训练与对齐"
+    items:
+      - "RLHF / RLVR 流程设计"
+      - "DPO 与奖励建模 / 奖励设计"
+      - "偏好与轨迹数据、数据飞轮"
+      - "验证器与评测闭环设计"
+      - "SFT 课程（PyTorch / HuggingFace）"
+  - group: "Agent 与编排"
+    items:
+      - "ReAct Agent 框架（多步、多文档）"
+      - "LangChain 编排与工具调用"
+      - "结构化输出与失败归因"
+      - "Kimi-K2 / Qwen3-VL / GPT 接入"
+  - group: "推理服务与系统"
+    items:
+      - "llama.cpp · GGUF 量化"
+      - "vLLM / SGLang"
+      - "Docker · FastAPI 部署"
+      - "Whisper 部署（Large-v2）"
+  - group: "基础工具链"
+    items:
+      - "Python · PyTorch · HuggingFace Transformers"
+      - "R · C++ · MATLAB · MySQL"
+      - "Linux · Git"
+      - "英语（TOEFL 106, GRE 320）· 普通话 · 粤语"
