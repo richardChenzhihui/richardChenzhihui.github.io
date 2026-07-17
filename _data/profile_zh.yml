@@ -21,55 +21,56 @@ short_bio: >-
   <p>
     我目前是新加坡国立大学人工智能博士生，导师为
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
-    我的研究聚焦大模型后训练方法：奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测与 Agent 工程设计。医疗是我的主要应用场景，而非研究边界。
+    我的研究聚焦（多模态）大模型后训练：奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测，以及能在真实场景落地的 Agent 工程。医疗是我的主要应用场景，而非研究边界。
   </p>
   <p>
-    <strong>研究成果：</strong>ACL 2026 与 EMNLP 2025 主会议；3 个开放数据集，Hugging Face 累计 10 万+ 下载；打通标注、奖励信号与迭代后训练闭环的偏好对齐数据飞轮。
+    <strong>研究：</strong>ACL 2026 与 EMNLP 2025 主会议论文，另有 2 篇一作论文在投（ICLR 与 EMNLP 2026）；在 Hugging Face 开源数据集与模型，累计 6K+ 下载。
   </p>
   <p>
-    <strong>产业经历：</strong>字节跳动（新加坡）多模态 Agent 强化学习研发实习（2026）；阶跃星辰语音大模型研发实习（2025）；MiniMax Cowork Team Fellowship。
+    <strong>开源：</strong>smart-word-agent → Office Agent 文档 Agent 系列作者：ReAct 工具调用框架 + 渲染截图验证闭环，发布首周 1K+ 下载。
   </p>
   <p>
-    <strong>学术服务：</strong>NeurIPS 2026、IJCAI、IEEE Affective Computing、ACM TIST 审稿人；ACL 2026 主会议 Session Chair。
+    <strong>学术服务：</strong>为 ACL、NeurIPS、IJCAI、IEEE Affective Computing、ACM TIST 完成 40+ 篇审稿；ACL 2026 主会议 Session Chair。
   </p>
 
 hero_kicker: >-
   大模型后训练与 Agentic AI 研究
 
 hero_summary: >-
-  我从事大模型后训练研究——奖励设计、偏好对齐（DPO/RLHF/RLVR）与验证器闭环评测，以及多模态 Agent 工程。研究工作涵盖强化学习后训练流程、Agent 轨迹与偏好数据，以及服务于对齐研究的开放数据基础设施，主要应用场景为高风险临床 AI。
+  我从事大模型后训练研究——奖励设计、偏好对齐（DPO/RLHF/RLVR）与验证器闭环评测——并端到端构建多模态 Agent 系统：强化学习后训练流程、轨迹与偏好数据引擎，以及带验证闭环的开源 Agent 框架。目前在字节跳动（新加坡）任多模态 Agent 强化学习研发实习生；目标岗位：大模型研发实习。
 
 hero_proof:
-  - "字节跳动（新加坡）：多模态 Agent 强化学习研发实习 — 2026"
-  - "阶跃星辰：语音大模型研发实习 — 2025 · MiniMax Cowork Team Fellowship"
+  - "字节跳动（新加坡）· 在职：多模态 Agent 强化学习 — V-FIPO，一作 ICLR 2026 在投"
+  - "阶跃星辰：StepAudio2.5 语音基座预训练数据体系 — 语音大模型研发实习，2025"
+  - "MiniMax Cowork Team Fellowship — 4500 美金算力支持，医疗基座模型 Agent"
 
 homepage_metrics:
   - value: "2"
     label: "篇顶级 NLP 主会议论文"
-    note: "ACL 2026 与 EMNLP 2025 主会议"
+    note: "ACL 2026 与 EMNLP 2025 主会议 · 另有 2 篇一作在投（ICLR / EMNLP 2026）"
   - value: "88K+"
-    label: "偏好对齐训练数据对"
-    note: "MedForge 与 Med-Banana 流程产出的 DPO/RLHF 就绪数据"
+    label: "带偏好标注的 Agent 编辑轨迹"
+    note: "Med-Banana 流程：50,635 条成功 + 37,822 条失败轨迹，可直接用于 DPO"
   - value: "1K+"
     label: "Agent 首周下载量"
-    note: "Smart Word Agent：ReAct 框架、Kimi-K2 核心、单文件部署"
+    note: "smart-word-agent：开源 ReAct 文档 Agent，正演进为 Office Agent"
   - value: "字节 + 阶跃"
     label: "大模型实验室研发实习"
-    note: "多模态 Agent 强化学习（字节）与语音大模型数据（阶跃）"
+    note: "多模态 Agent 强化学习（字节，在职）· StepAudio2.5 语音数据（阶跃）"
 
 impact_areas:
   - label: "后训练与对齐"
-    title: "多模态大模型的偏好数据与 RL 闭环"
-    description: "MedForge 与 Med-Banana 产出结构化偏好对和失败日志，直接用于 DPO/RLHF 后训练流程；Forgery-aware GSPO 以视觉证据约束模型推理。数据飞轮将评测发现转化为定向训练信号。"
-    proof: "ACL 2026 主会议 · GSPO · 88K 对齐就绪数据对"
+    title: "多模态大模型的奖励设计与 RL 闭环"
+    description: "V-FIPO 将 RLVR 的 token 级信用分配从「即时视觉依赖」扩展到「未来折扣视觉锚定」；Forgery-aware GSPO 以视觉证据约束模型推理；Med-Banana 的编辑-验证-精炼流程将成功/失败轨迹转化为可直接用于 DPO 的训练信号。"
+    proof: "ACL 2026 主会议 · GSPO · V-FIPO（ICLR 2026 在投）"
   - label: "验证器与评测设计"
     title: "领域偏移下的证据驱动评测"
-    description: "DivScore 展示零样本验证器设计：一种带理论保证的归一化熵评分器，无需领域特定标注即可泛化至医疗与法律领域。"
+    description: "DivScore 展示零样本验证器设计：一种带理论保证的归一化熵评分器，无需领域特定标注即可泛化至医疗与法律领域。LLM-as-Judge 评分准则驱动 Med-Banana 的质量控制。"
     proof: "EMNLP 2025 主会议 · +14.4% AUROC · +64.0% 召回"
   - label: "Agent 与系统"
-    title: "Agent 工程与推理服务"
-    description: "Smart Word Agent（ReAct、Kimi-K2 核心）与基于 LangChain 的自动化交易 Agent 展示端到端框架设计、工具调用与编排能力；量化部署工作聚焦推理效率。"
-    proof: "首周 1K+ 下载 · GitHub 100+ Stars"
+    title: "带验证闭环的 Agent 框架"
+    description: "Office Agent 打通文档编辑的完整闭环：计划 → 执行 → 真实 Word/Excel 渲染 → 独立视觉验证器 → 定向修复，并内置预算化重试、快照/撤销与提示注入防御；另有 LangChain 交易 Agent 与量化推理部署工作。"
+    proof: "首周 1K+ 下载 · 渲染-验证-修复闭环"
 
 featured_work:
   - title: "MedForge"
@@ -101,21 +102,20 @@ featured_work:
     secondary:
       label: "MiniMax"
       url: https://www.minimaxi.com/
-  - title: "Smart Word Agent"
-    subtitle: "面向文档工作流的 ReAct Agent 框架"
-    description: "以 Kimi-K2 为核心大模型的 ReAct 流水线：多文档上下文、面向文档 API 的工具调用、零依赖单文件部署，上线首周下载量超 1000。"
+  - title: "Office Agent"
+    subtitle: "带渲染验证闭环的文档 Agent"
+    description: "从 smart-word-agent（ReAct 框架，首周 1K 下载）到 Office Agent：每步编辑由真实 Word/Excel 重新渲染，交给独立多模态验证器审查，配合先计划后执行、预算化重试、快照/撤销与提示注入防御。"
     image: /assets/images/projects/smart-word-agent.svg
     badges:
-      - "ReAct 框架"
-      - "Kimi-K2 核心大模型"
+      - "渲染-验证-修复闭环"
+      - "模型无关（Kimi-K2 / MiniMax-M3）"
       - "首周 1K 下载"
-      - "GitHub 100+ Stars"
     primary:
+      label: "GitHub"
+      url: https://github.com/richardChenzhihui/smart-word-agent
+    secondary:
       label: "项目展示"
       url: /showcase.html#projects
-    secondary:
-      label: "GitHub"
-      url: https://github.com/richardChenzhihui
 
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -139,19 +139,19 @@ experience:
 - name: 字节跳动（新加坡）
   logo: /assets/images/badges/ByteDance.svg
   position: 多模态 Agent 强化学习 研发实习生
-  dept: "奖励设计、评测闭环、轨迹与偏好数据，支持在线/离线 RL 迭代"
+  dept: "V-FIPO：面向 RLVR 的未来折扣视觉信用分配（一作 ICLR 2026 在投）；直播审核多模态 Agent；轨迹与偏好数据体系"
   date: 2026年6月 - 2026年11月
 
 - name: 阶跃星辰（StepFun）
   logo: /assets/images/badges/StepFun.png
   position: 语音大模型 研发实习生
-  dept: "ASR/TTS/实时语音预训练数据体系与治理；元数据 schema 设计"
-  date: 2025年1月 - 2025年5月
+  dept: "StepAudio2.5 语音基座：预训练数据治理、方言/情感标签规范化、ASR/TTS/实时语音元数据 schema"
+  date: 2025年3月 - 2025年7月
 
 - name: AQUMON（香港）
   position: 量化交易 Agent 研发实习生
   dept: "LangChain Agent 编排；对接 Futu OpenAPI 实时行情与自动下单"
-  date: 2024年5月 - 2024年7月
+  date: 2025年1月 - 2025年3月
 
 - name: NUS 商学院
   logo: /assets/images/badges/NUS.png
@@ -196,9 +196,10 @@ skills:
   - group: "Agent 与编排"
     items:
       - "ReAct Agent 框架（多步、多文档）"
+      - "渲染 → 验证 → 修复闭环（独立视觉验证器）"
       - "LangChain 编排与工具调用"
-      - "结构化输出与失败归因"
-      - "Kimi-K2 / Qwen3-VL / GPT 接入"
+      - "结构化输出、预算化重试与失败归因"
+      - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT 接入"
   - group: "推理服务与系统"
     items:
       - "llama.cpp · GGUF 量化"
@@ -211,3 +212,42 @@ skills:
       - "R · C++ · MATLAB · MySQL"
       - "Linux · Git"
       - "英语（TOEFL 106, GRE 320）· 普通话 · 粤语"
+
+github_username: richardChenzhihui
+github_projects:
+  - name: smart-word-agent
+    url: https://github.com/richardChenzhihui/smart-word-agent
+    stars: "9"
+    lang: Python
+    tag: "Agent 框架"
+    desc: "ReAct 文档编辑 Agent——自然语言编辑 Word，首周 1K+ 下载；正演进为带渲染截图验证闭环的 Office Agent。"
+  - name: ACL2026-MedForge
+    url: https://github.com/richardChenzhihui/ACL2026-MedForge
+    stars: "10"
+    lang: Python
+    tag: "ACL 2026"
+    desc: "ACL 2026 主会议论文的代码与数据集——先定位再分析推理 + Forgery-aware GSPO 的可解释医学深度伪造检测。"
+  - name: med-banana-50k
+    url: https://github.com/richardChenzhihui/med-banana-50k
+    stars: "71"
+    lang: Python
+    tag: "数据集"
+    desc: "大规模指令式医学图像编辑数据集，配套编辑-验证-精炼 Agent 流程与 LLM-as-Judge 质量控制。"
+  - name: DivScore
+    url: https://github.com/richardChenzhihui/DivScore
+    stars: "9"
+    lang: Python
+    tag: "EMNLP 2025"
+    desc: "基于归一化熵评分与领域知识蒸馏的专业领域大模型生成文本零样本检测。"
+  - name: ai-top-conf-2026-survey
+    url: https://github.com/richardChenzhihui/ai-top-conf-2026-survey
+    stars: "—"
+    lang: Python
+    tag: "科研工具"
+    desc: "CVPR / ICLR / NeurIPS 共 15,800 篇论文的自动主题分类、交互可视化与自动化综述表格。"
+  - name: ShieldDocs
+    url: https://github.com/richardChenzhihui/ShieldDocs
+    stars: "1"
+    lang: Python
+    tag: "法律 AI"
+    desc: "本地化 LLM 驱动的文档匿名化，面向隐私敏感的法律工作流。"

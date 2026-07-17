@@ -4,9 +4,8 @@
             <div class="col-6">
                 <div class="text-muted">
                     <i>
-                        <span class="lang-en">Last updated:</span>
-                        <span class="lang-zh d-none">最后更新：</span>
-                        {{ "now" | date: "%b %Y" }}
+                        <span class="lang-en">Last updated: {{ "now" | date: "%b %Y" }}</span>
+                        <span class="lang-zh d-none">最后更新：{{ "now" | date: "%Y 年 %-m 月" }}</span>
                     </i>
                 </div>
             </div>

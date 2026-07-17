@@ -6,6 +6,8 @@ selected:       true
 pub:            "arXiv preprint"
 pub_zh:         "arXiv 预印本"
 pub_date:       "2025"
+pub_last:       ' <span class="badge badge-pill badge-publication badge-warning">EMNLP 2026 Submission &middot; OpenReview Top 10%</span>'
+pub_last_zh:    ' <span class="badge badge-pill badge-publication badge-warning">EMNLP 2026 在投 &middot; OpenReview Top 10%</span>'
 abstract: >-
   Recent advances in multimodal large language models have enabled remarkable medical image editing capabilities. However, the research community's progress remains constrained by the absence of large-scale, high-quality, and openly accessible datasets built specifically for medical image editing with strict anatomical and clinical constraints. We introduce Med-Banana-50K, a comprehensive dataset for instruction-based medical image editing spanning chest X-ray, brain MRI, and fundus photography across 23 disease types. The public release includes 50,635 successful bidirectional edits and 37,822 failed attempts with full conversation logs, enabling evaluation, preference learning, and alignment research for medically grounded image editing systems.
 abstract_zh: >-

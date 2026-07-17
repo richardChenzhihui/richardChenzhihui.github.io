@@ -11,7 +11,7 @@
         {% assign metric_zh = metrics_zh[forloop.index0] %}
         <div class="col-12 col-md-6 col-xl-3 mb-3">
             <div class="home-metric-card">
-                <div class="home-metric-value">{{ metric.value }}</div>
+                <div class="home-metric-value"><span class="lang-en">{{ metric.value }}</span><span class="lang-zh d-none">{{ metric_zh.value | default: metric.value }}</span></div>
                 <div class="home-metric-label">
                     <span class="lang-en">{{ metric.label }}</span>
                     <span class="lang-zh d-none">{{ metric_zh.label }}</span>

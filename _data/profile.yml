@@ -21,55 +21,60 @@ short_bio: >-
   <p>
     I am a PhD student in Artificial Intelligence at the National University of Singapore, supervised by
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
-    My research centers on post-training methods for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation, and agent harness design. Healthcare is my primary application domain, not the boundary of my research.
+    My research centers on post-training for large (multimodal) language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; and agent harnesses that hold up outside the lab. Healthcare is my primary application domain, not the boundary of my research.
   </p>
   <p>
-    <strong>Research Output:</strong> ACL 2026 & EMNLP 2025 Main; 3 open datasets with 100K+ Hugging Face downloads; preference-alignment data flywheels linking annotation, reward signals, and iterative post-training loops.
+    <strong>Research:</strong> ACL 2026 & EMNLP 2025 main-conference papers, plus two first-author papers under review (ICLR & EMNLP 2026); open datasets and models on Hugging Face with 6K+ downloads.
   </p>
   <p>
-    <strong>Industry:</strong> ByteDance (Singapore) Multimodal Agent RL Research Intern (2026); StepFun Speech-LLM Research Intern (2025); MiniMax Cowork Team Fellowship.
+    <strong>Open source:</strong> Author of the smart-word-agent &rarr; Office Agent document-agent line: a ReAct tool-calling harness with a rendered-screenshot verification loop; 1K+ downloads in the first week.
   </p>
   <p>
-    <strong>Academic Service:</strong> Reviewer for NeurIPS 2026, IJCAI, IEEE Affective Computing, ACM TIST; ACL 2026 Main Session Chair.
+    <strong>Academic Service:</strong> 40+ completed reviews for ACL, NeurIPS, IJCAI, IEEE Affective Computing, ACM TIST; ACL 2026 Main Session Chair.
   </p>
 
 hero_kicker: >-
   LLM Post-Training & Agentic AI Research
 
 hero_summary: >-
-  I research post-training for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), and verifier-in-the-loop evaluation &mdash; together with multimodal agent harnesses. My work spans RL post-training pipelines, agent trajectory and preference data, and open data infrastructure for alignment research, with high-stakes clinical AI as the primary application domain.
+  I research post-training for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), and verifier-in-the-loop evaluation &mdash; and build multimodal agent systems end to end: RL post-training pipelines, trajectory & preference data engines, and open-source agent harnesses with verification loops. Currently a Multimodal Agent RL research intern at ByteDance (Singapore); target role: LLM research intern.
 
 hero_proof:
-  - "ByteDance (Singapore): Multimodal Agent RL Research Intern — 2026"
-  - "StepFun: Speech-LLM Research Intern — 2025 · MiniMax Cowork Team Fellowship"
+  - "ByteDance (Singapore), now: Multimodal Agent RL — V-FIPO, first-author ICLR 2026 submission"
+  - "StepFun: StepAudio2.5 ASR pre-training data system — Speech-LLM Research Intern, 2025"
+  - "MiniMax Cowork Team Fellowship — USD 4,500 compute grant for medical foundation-model agents"
 
 homepage_metrics:
   - value: "2"
+    value_zh: "2"
     label: "top-tier NLP main conference papers"
-    note: "ACL 2026 and EMNLP 2025 Main"
+    note: "ACL 2026 & EMNLP 2025 Main · 2 more first-author papers under review (ICLR / EMNLP 2026)"
   - value: "88K+"
-    label: "preference-alignment training pairs"
-    note: "DPO/RLHF-ready data across MedForge and Med-Banana pipelines"
+    value_zh: "88K+"
+    label: "agentic editing trajectories with preference labels"
+    note: "Med-Banana pipeline: 50,635 accepted + 37,822 rejected trajectories, DPO-ready"
   - value: "1K+"
+    value_zh: "1K+"
     label: "agent downloads in week 1"
-    note: "Smart Word Agent: ReAct harness, Kimi-K2 core, single-file deployment"
+    note: "smart-word-agent: open-source ReAct document agent, now evolving into Office Agent"
   - value: "ByteDance + StepFun"
+    value_zh: "字节 + 阶跃"
     label: "LLM lab research internships"
-    note: "Multimodal Agent RL (ByteDance) and Speech-LLM data (StepFun)"
+    note: "Multimodal Agent RL (ByteDance, ongoing) · StepAudio2.5 speech data (StepFun)"
 
 impact_areas:
   - label: "Post-Training & Alignment"
-    title: "Preference data and RL loops for multimodal LLMs"
-    description: "MedForge and Med-Banana produce structured preference pairs and failure logs that feed DPO/RLHF post-training pipelines, with Forgery-aware GSPO grounding model reasoning on visual evidence. The data flywheel turns evaluation findings into targeted training signal."
-    proof: "ACL 2026 Main · GSPO · 88K alignment-ready pairs"
+    title: "Reward design and RL loops for multimodal LLMs"
+    description: "V-FIPO extends token-level credit assignment in RLVR from instant visual dependence to future-discounted visual grounding; Forgery-aware GSPO grounds reasoning on visual evidence. Med-Banana's editor–verifier–refiner pipeline turns accepted/rejected trajectories into DPO-ready training signal."
+    proof: "ACL 2026 Main · GSPO · V-FIPO (ICLR 2026 sub)"
   - label: "Verifier & Eval Design"
     title: "Evidence-grounded evaluation under domain shift"
-    description: "DivScore demonstrates zero-shot verifier design: a normalized-entropy scorer with theoretical guarantees that generalizes across medical and legal domains without domain-specific labels."
+    description: "DivScore demonstrates zero-shot verifier design: a normalized-entropy scorer with theoretical guarantees that generalizes across medical and legal domains without domain-specific labels. LLM-as-Judge rubrics drive Med-Banana's quality control."
     proof: "EMNLP 2025 Main · +14.4% AUROC · +64.0% recall"
   - label: "Agents & Systems"
-    title: "Agent harness engineering and serving"
-    description: "Smart Word Agent (ReAct, Kimi-K2 core) and an autonomous LangChain trading agent demonstrate end-to-end harness design, tool-calling, and orchestration; quantized serving work targets inference efficiency."
-    proof: "1K+ downloads / week 1 · 100+ GitHub stars"
+    title: "Agent harnesses with verification loops"
+    description: "Office Agent closes the loop on document editing: plan → act → real Word/Excel render → independent visual verifier → targeted repair, with budgeted retries, snapshots/undo, and prompt-injection defense. Plus a LangChain trading agent and quantized serving work."
+    proof: "1K+ downloads / week 1 · render-verify-repair loop"
 
 featured_work:
   - title: "MedForge"
@@ -101,21 +106,20 @@ featured_work:
     secondary:
       label: "MiniMax"
       url: https://www.minimaxi.com/
-  - title: "Smart Word Agent"
-    subtitle: "ReAct agent harness for document workflows"
-    description: "A production ReAct pipeline with Kimi-K2 as core LLM: multi-document context, tool-calling over document APIs, and zero-dependency single-file deployment. 1,000 downloads in week one."
+  - title: "Office Agent"
+    subtitle: "Document agent with a rendered-verification loop"
+    description: "From smart-word-agent (ReAct harness, 1K downloads in week one) to Office Agent: every edit is re-rendered by real Word/Excel and audited by an independent multimodal verifier, with plan-first execution, budgeted retries, snapshots/undo, and prompt-injection defense."
     image: /assets/images/projects/smart-word-agent.svg
     badges:
-      - "ReAct Harness"
-      - "Kimi-K2 Core LLM"
+      - "Render-Verify-Repair Loop"
+      - "Model-agnostic (Kimi-K2 / MiniMax-M3)"
       - "1K downloads / week 1"
-      - "100+ GitHub stars"
     primary:
+      label: "GitHub"
+      url: https://github.com/richardChenzhihui/smart-word-agent
+    secondary:
       label: "Showcase"
       url: /showcase.html#projects
-    secondary:
-      label: "GitHub"
-      url: https://github.com/richardChenzhihui
 
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -139,19 +143,19 @@ experience:
 - name: ByteDance (Singapore)
   logo: /assets/images/badges/ByteDance.svg
   position: Multimodal Agent RL Research Intern
-  dept: "Reward design, eval loops, trajectory & preference data for online/offline RL"
+  dept: "V-FIPO: future-discounted visual credit assignment for RLVR (first-author ICLR 2026 submission); livestream-moderation multimodal agent; trajectory & preference data systems"
   date: Jun. 2026 - Nov. 2026
 
 - name: StepFun (阶跃星辰)
   logo: /assets/images/badges/StepFun.png
   position: Speech-LLM Research Intern
-  dept: "Pre-training data system & governance for ASR/TTS/real-time speech; metadata schema"
-  date: Jan. 2025 - May. 2025
+  dept: "StepAudio2.5 ASR foundation model: pre-training data governance, dialect/emotion label normalization, metadata schema for ASR/TTS/real-time speech"
+  date: Mar. 2025 - Jul. 2025
 
 - name: AQUMON (Hong Kong)
   position: Quant Trading Agent Intern
   dept: "LangChain agent orchestration; Futu OpenAPI real-time data & automated execution"
-  date: May. 2024 - Jul. 2024
+  date: Jan. 2025 - Mar. 2025
 
 - name: NUS Business School
   logo: /assets/images/badges/NUS.png
@@ -196,9 +200,10 @@ skills:
   - group: "Agents & Orchestration"
     items:
       - "ReAct agent harness (multi-step, multi-doc)"
+      - "Render → verify → repair loops (independent visual verifier)"
       - "LangChain orchestration & tool-calling"
-      - "Structured output & failure attribution"
-      - "Kimi-K2 / Qwen3-VL / GPT integration"
+      - "Structured output, budgeted retries & failure attribution"
+      - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT integration"
   - group: "Serving & Systems"
     items:
       - "llama.cpp · GGUF quantization"
@@ -211,3 +216,42 @@ skills:
       - "R · C++ · MATLAB · MySQL"
       - "Linux · Git"
       - "English (TOEFL 106, GRE 320) · Mandarin · Cantonese"
+
+github_username: richardChenzhihui
+github_projects:
+  - name: smart-word-agent
+    url: https://github.com/richardChenzhihui/smart-word-agent
+    stars: "9"
+    lang: Python
+    tag: "Agent Harness"
+    desc: "ReAct document-editing agent — natural-language Word editing, 1K+ downloads in week one; evolving into Office Agent with a rendered-screenshot verification loop."
+  - name: ACL2026-MedForge
+    url: https://github.com/richardChenzhihui/ACL2026-MedForge
+    stars: "10"
+    lang: Python
+    tag: "ACL 2026"
+    desc: "Code and dataset of the ACL 2026 main-conference paper — interpretable medical deepfake detection with Localize-then-Analyze reasoning and Forgery-aware GSPO."
+  - name: med-banana-50k
+    url: https://github.com/richardChenzhihui/med-banana-50k
+    stars: "71"
+    lang: Python
+    tag: "Dataset"
+    desc: "Large-scale instruction-based medical image editing dataset with an editor–verifier–refiner agentic pipeline and LLM-as-Judge quality control."
+  - name: DivScore
+    url: https://github.com/richardChenzhihui/DivScore
+    stars: "9"
+    lang: Python
+    tag: "EMNLP 2025"
+    desc: "Zero-shot LLM-generated-text detection in specialized domains via normalized entropy scoring and domain knowledge distillation."
+  - name: ai-top-conf-2026-survey
+    url: https://github.com/richardChenzhihui/ai-top-conf-2026-survey
+    stars: "—"
+    lang: Python
+    tag: "Research Tooling"
+    desc: "15,800 papers from CVPR / ICLR / NeurIPS auto-classified by topic with interactive visualization and automated survey tables."
+  - name: ShieldDocs
+    url: https://github.com/richardChenzhihui/ShieldDocs
+    stars: "1"
+    lang: Python
+    tag: "Legal AI"
+    desc: "Localized LLM-driven document anonymization for privacy-sensitive legal workflows."

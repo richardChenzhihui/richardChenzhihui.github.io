@@ -1,0 +1,42 @@
+{% assign repos_en = site.data.profile.github_projects %}
+{% assign repos_zh = site.data.profile_zh.github_projects %}
+{% if repos_en and repos_en.size > 0 %}
+<section class="home-section">
+    <div class="home-section-heading home-section-heading--with-link d-flex align-items-center">
+        <div>
+            <span class="lang-en">Open Source · GitHub</span>
+            <span class="lang-zh d-none">开源项目 · GitHub</span>
+        </div>
+        <a class="home-inline-link ml-auto" href="https://github.com/{{ site.data.profile.github_username }}" target="_blank" rel="noopener">
+            <span class="lang-en"><i class="fab fa-github"></i> github.com/{{ site.data.profile.github_username }}</span>
+            <span class="lang-zh d-none"><i class="fab fa-github"></i> github.com/{{ site.data.profile.github_username }}</span>
+        </a>
+    </div>
+    <div class="row">
+        {% for repo in repos_en %}
+        {% assign repo_zh = repos_zh[forloop.index0] %}
+        <div class="col-12 col-md-6 col-xl-4 mb-3">
+            <a class="home-repo-card" href="{{ repo.url }}" target="_blank" rel="noopener">
+                <div class="home-repo-head">
+                    <span class="home-repo-name"><i class="fab fa-github"></i> {{ repo.name }}</span>
+                    <span class="home-repo-tag">
+                        <span class="lang-en">{{ repo.tag }}</span>
+                        <span class="lang-zh d-none">{{ repo_zh.tag | default: repo.tag }}</span>
+                    </span>
+                </div>
+                <p class="home-repo-desc">
+                    <span class="lang-en">{{ repo.desc }}</span>
+                    <span class="lang-zh d-none">{{ repo_zh.desc | default: repo.desc }}</span>
+                </p>
+                <div class="home-repo-meta">
+                    <span class="home-repo-lang"><span class="home-repo-lang-dot"></span>{{ repo.lang }}</span>
+                    {% if repo.stars and repo.stars != "—" %}
+                    <span class="home-repo-stars"><i class="fas fa-star"></i> {{ repo.stars }}</span>
+                    {% endif %}
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
