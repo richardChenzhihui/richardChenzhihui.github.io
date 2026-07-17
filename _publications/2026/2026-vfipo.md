@@ -5,7 +5,7 @@ date:           2026-06-20 00:01:00 +0800
 selected:       true
 pub:            "ICLR 2026 submission"
 pub_zh:         "ICLR 2026 在投"
-pub_date:       "2026"
+pub_date:       ""
 pub_last:       ' <span class="badge badge-pill badge-publication badge-warning">Under Review</span> <span class="badge badge-pill badge-publication badge-info">First Author</span>'
 pub_last_zh:    ' <span class="badge badge-pill badge-publication badge-warning">在投</span> <span class="badge badge-pill badge-publication badge-info">一作</span>'
 abstract: >-
