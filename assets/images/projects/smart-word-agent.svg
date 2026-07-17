@@ -1,24 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="'Raleway','Lato','Helvetica Neue',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="'Space Grotesk','Inter','Helvetica Neue',Arial,sans-serif">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f766e"/>
-      <stop offset="1" stop-color="#0b3d39"/>
+      <stop offset="0" stop-color="#0b1224"/>
+      <stop offset="1" stop-color="#060a13"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.55" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#c084fc"/>
     </linearGradient>
   </defs>
   <rect width="600" height="400" fill="url(#bg)"/>
-  <g opacity="0.10" stroke="#ffffff" stroke-width="2" fill="none">
-    <circle cx="500" cy="70" r="120"/>
-    <circle cx="500" cy="70" r="80"/>
+  <g opacity="0.08" stroke="#94a3b8" stroke-width="1" fill="none">
+    <path d="M0 44H600M0 88H600M0 132H600M0 176H600M0 220H600M0 264H600M0 308H600M0 352H600"/>
+    <path d="M44 0V400M88 0V400M132 0V400M176 0V400M220 0V400M264 0V400M308 0V400M352 0V400M396 0V400M440 0V400M484 0V400M528 0V400M572 0V400"/>
   </g>
-  <text x="48" y="120" fill="#9fe8df" font-size="22" font-weight="700" letter-spacing="2">REACT AGENT HARNESS</text>
-  <text x="48" y="190" fill="#ffffff" font-size="46" font-weight="800">Smart Word Agent</text>
-  <text x="48" y="232" fill="#d7efec" font-size="22" font-weight="500">Document workflows · Kimi-K2 core LLM</text>
-  <g font-size="18" font-weight="700">
-    <rect x="48" y="284" width="160" height="40" rx="20" fill="#ffffff" opacity="0.16"/>
-    <text x="128" y="310" fill="#ffffff" text-anchor="middle">Tool-calling</text>
-    <rect x="222" y="284" width="190" height="40" rx="20" fill="#ffffff" opacity="0.16"/>
-    <text x="317" y="310" fill="#ffffff" text-anchor="middle">1K downloads / wk1</text>
-    <rect x="426" y="284" width="126" height="40" rx="20" fill="#ffffff" opacity="0.16"/>
-    <text x="489" y="310" fill="#ffffff" text-anchor="middle">100+ stars</text>
+  <g opacity="0.14" stroke="url(#accent)" stroke-width="2" fill="none">
+    <circle cx="505" cy="72" r="118"/>
+    <circle cx="505" cy="72" r="78"/>
+  </g>
+  <rect x="0" y="0" width="600" height="3" fill="url(#accent)" opacity="0.85"/>
+  <text x="48" y="112" fill="#7dd3fc" font-size="20" font-weight="700" letter-spacing="3" font-family="'JetBrains Mono',Menlo,monospace">VERIFIER-IN-THE-LOOP</text>
+  <text x="48" y="180" fill="#f6f9fe" font-size="52" font-weight="700">Office Agent</text>
+  <text x="48" y="222" fill="#94a3b8" font-size="21" font-weight="500">smart-word-agent &#8594; render &#183; verify &#183; repair</text>
+  <g font-size="17" font-weight="600" font-family="'JetBrains Mono',Menlo,monospace">
+    <rect x="48" y="282" width="196" height="40" rx="20" fill="#38bdf8" opacity="0.13"/>
+    <rect x="48" y="282" width="196" height="40" rx="20" fill="none" stroke="#38bdf8" opacity="0.45"/>
+    <text x="146" y="308" fill="#7dd3fc" text-anchor="middle">Render-Verify</text>
+    <rect x="258" y="282" width="196" height="40" rx="20" fill="#818cf8" opacity="0.13"/>
+    <rect x="258" y="282" width="196" height="40" rx="20" fill="none" stroke="#818cf8" opacity="0.45"/>
+    <text x="356" y="308" fill="#a5b4fc" text-anchor="middle">Model-agnostic</text>
+    <rect x="468" y="282" width="104" height="40" rx="20" fill="#34d399" opacity="0.13"/>
+    <rect x="468" y="282" width="104" height="40" rx="20" fill="none" stroke="#34d399" opacity="0.45"/>
+    <text x="520" y="308" fill="#6ee7b7" text-anchor="middle">1K+ wk1</text>
   </g>
 </svg>
