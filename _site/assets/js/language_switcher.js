@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Switch publication titles
+        // Switch publication titles (plain h5 variant: data attrs on the title element)
         document.querySelectorAll('.publication-title').forEach(function (el) {
             var en = el.getAttribute('data-en');
             var zh = el.getAttribute('data-zh');
@@ -31,6 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 el.textContent = zh;
             } else if (en) {
                 el.textContent = en;
+            }
+        });
+        // Linked variant: data attrs live on the anchor; swap only the inner text node
+        document.querySelectorAll('.publication-title-link').forEach(function (el) {
+            var en = el.getAttribute('data-en');
+            var zh = el.getAttribute('data-zh');
+            var val = (isZh && zh) ? zh : en;
+            var target = el.querySelector('.title-text');
+            if (val && target) {
+                target.textContent = val;
             }
         });
         // Switch publication venue text
@@ -51,6 +61,17 @@ document.addEventListener('DOMContentLoaded', function () {
             var zh = el.getAttribute('data-zh');
             el.textContent = (isZh && zh) ? zh : (en || el.textContent);
         });
+        // Generic pass: any element carrying data-en/data-zh that is not one of the
+        // specially-handled classes above (showcase cards, buttons, badges, table cells).
+        // Values may contain inline HTML (<strong>, <em>), so innerHTML is intentional —
+        // all values are authored in this repo, not user input.
+        var SPECIAL = '.news-title, .publication-title, .publication-title-link, .pub-venue-text, .pub-venue-misc, .pub-abstract, .abstract-links';
+        document.querySelectorAll('[data-en][data-zh]').forEach(function (el) {
+            if (el.matches(SPECIAL)) return;
+            var val = isZh ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+            if (val) el.innerHTML = val;
+        });
+
         // Switch publication links text using data-links-en/zh; fallback to existing HTML
         document.querySelectorAll('.abstract-links').forEach(function (el) {
             try {
