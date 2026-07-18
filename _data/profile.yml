@@ -37,7 +37,7 @@ hero_kicker: >-
   LLM Post-Training & Agentic AI Research
 
 hero_summary: >-
-  I research post-training for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), and verifier-in-the-loop evaluation &mdash; and build multimodal agent systems end to end: RL post-training pipelines, trajectory & preference data engines, and open-source agent harnesses with verification loops. Currently a Multimodal Agent RL research intern at ByteDance (Singapore); target role: LLM research intern.
+  I work on post-training for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; and build multimodal agent systems end to end, from RL data engines to open-source agent harnesses. Now a Multimodal Agent RL research intern at ByteDance (Singapore); open to LLM research internship opportunities.
 
 hero_proof:
   - "ByteDance (Singapore), now: Multimodal Agent RL — V-FIPO, first-author ICLR 2026 submission"
@@ -129,6 +129,7 @@ education:
 - name: National University of Singapore
   logo: /assets/images/badges/NUS.png
   position: Ph.D. in Artificial Intelligence
+  dept: "Research focus: multimodal LLM post-training, medical AI, trustworthy & responsible AI"
   date: Jan. 2025 - present
 - name: The University of Hong Kong
   logo: /assets/images/badges/HKU.jpg
@@ -168,18 +169,20 @@ awards:
   date: 2026
 - name: Full Ph.D. Scholarship, National University of Singapore
   date: 2025
-- name: Outstanding College Graduate, CUHK-Shenzhen Harmonia College
+- name: Outstanding College Graduate (Top 5%), CUHK-Shenzhen Harmonia College
   date: 2022
 - name: Undergraduate Research Excellence Award, CUHK-Shenzhen
   date: 2021
 
 academic_service:
+- name: "40+ completed reviews across top AI/NLP conferences & journals"
+  date: 2024 - 2026
 - name: Session Chair, ACL 2026 Main
   date: 2026
 - name: Reviewer, NeurIPS 2026
   date: 2026
-- name: Reviewer, IJCAI 2026
-  date: 2026
+- name: Reviewer, IJCAI 2025
+  date: 2025
 - name: Reviewer, IEEE Transactions on Affective Computing
   date: 2026
 - name: Reviewer, IEEE Transactions on Consumer Electronics

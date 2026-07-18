@@ -37,7 +37,7 @@ hero_kicker: >-
   大模型后训练与 Agentic AI 研究
 
 hero_summary: >-
-  我从事大模型后训练研究——奖励设计、偏好对齐（DPO/RLHF/RLVR）与验证器闭环评测——并端到端构建多模态 Agent 系统：强化学习后训练流程、轨迹与偏好数据引擎，以及带验证闭环的开源 Agent 框架。目前在字节跳动（新加坡）任多模态 Agent 强化学习研发实习生；目标岗位：大模型研发实习。
+  我从事大模型后训练研究——奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测——并端到端构建多模态 Agent 系统：从强化学习数据引擎到开源 Agent 框架。现于字节跳动（新加坡）任多模态 Agent 强化学习研发实习生；欢迎大模型研发实习机会。
 
 hero_proof:
   - "字节跳动（新加坡）· 在职：多模态 Agent 强化学习 — V-FIPO，一作 ICLR 2026 在投"
@@ -125,6 +125,7 @@ education:
 - name: 新加坡国立大学
   logo: /assets/images/badges/NUS.png
   position: 人工智能博士
+  dept: "研究方向：多模态大模型后训练、医疗 AI、可信与负责任 AI"
   date: 2025年1月 - 至今
 - name: 香港大学
   logo: /assets/images/badges/HKU.jpg
@@ -164,18 +165,20 @@ awards:
   date: 2026
 - name: 新加坡国立大学全额博士奖学金
   date: 2025
-- name: 香港中文大学（深圳）祥波书院优秀毕业生
+- name: 香港中文大学（深圳）祥波书院优秀毕业生（前 5%）
   date: 2022
 - name: 香港中文大学（深圳）本科生科研卓越奖
   date: 2021
 
 academic_service:
+- name: "累计完成 40+ 篇顶会顶刊审稿"
+  date: 2024 - 2026
 - name: ACL 2026 主会议 Session Chair
   date: 2026
 - name: NeurIPS 2026 审稿人
   date: 2026
-- name: IJCAI 2026 审稿人
-  date: 2026
+- name: IJCAI 2025 审稿人
+  date: 2025
 - name: IEEE Transactions on Affective Computing 审稿人
   date: 2026
 - name: IEEE Transactions on Consumer Electronics 审稿人
