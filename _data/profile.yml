@@ -30,7 +30,7 @@ short_bio: >-
     <strong>Open source:</strong> Author of the smart-word-agent &rarr; Office Agent document-agent line: a ReAct tool-calling harness with a rendered-screenshot verification loop; 1K+ downloads in the first week.
   </p>
   <p>
-    <strong>Academic Service:</strong> 40+ completed reviews for ACL, NeurIPS, IJCAI, IEEE Affective Computing, ACM TIST; ACL 2026 Main Session Chair.
+    <strong>Academic Service:</strong> 40+ completed reviews for ACL, NeurIPS, IJCAI, IEEE Affective Computing, ACM TIST; ACL 2026 Main Session Chair; Program Committee, LASS 2026 Workshop @ <strong>ACM CIKM 2026</strong> (Rome).
   </p>
 
 hero_kicker: >-
@@ -177,6 +177,8 @@ awards:
 academic_service:
 - name: "40+ completed reviews across top AI/NLP conferences & journals"
   date: 2024 - 2026
+- name: "Program Committee, LASS 2026 Workshop @ ACM CIKM 2026 (Rome)"
+  date: 2026
 - name: Session Chair, ACL 2026 Main
   date: 2026
 - name: Reviewer, NeurIPS 2026
