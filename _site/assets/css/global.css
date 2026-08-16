@@ -629,7 +629,7 @@ div.lazy {
 }
 
 .home-section {
-    margin-top: 2.2rem;
+    margin-top: 1.9rem;
 }
 
 .home-section-heading {
@@ -679,7 +679,7 @@ div.lazy {
     position: relative;
     overflow: hidden;
     margin-top: 1rem;
-    padding: 2.75rem;
+    padding: 2.25rem;
     border: 1px solid var(--border);
     border-radius: 1.5rem;
     background:
@@ -761,7 +761,7 @@ div.lazy {
     max-width: 42rem;
     margin-bottom: 1.1rem;
     font-size: 1.02rem;
-    line-height: 1.85;
+    line-height: 1.75;
     color: #475569;
 }
 

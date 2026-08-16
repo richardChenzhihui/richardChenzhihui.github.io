@@ -90,70 +90,70 @@
     <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
         <div class="card border-0 shadow-sm bg-white">
             <div class="p-4">
-    <h2 data-en="Office Agent: Document-Editing Agent with a Rendered-Verification Loop" data-zh="Office Agent：带渲染验证闭环的文档编辑 Agent">Office Agent: Document-Editing Agent with a Rendered-Verification Loop</h2>
+    <h2 data-en="OfficeBuddy: Vision-in-the-Loop Open-Source Office Agent (53★ on GitHub)" data-zh="OfficeBuddy：Vision-in-the-Loop 开源办公 Agent（GitHub 53★ 开源项目）">OfficeBuddy: Vision-in-the-Loop Open-Source Office Agent (53★ on GitHub)</h2>
     <hr />
 
     <div class="row">
         <div class="col-md-8">
-            <p data-en="An open-source document-agent line: &lt;strong&gt;smart-word-agent&lt;/strong&gt; (ReAct harness, Kimi-K2 core, 1K+ downloads in week one) evolved into &lt;strong&gt;Office Agent&lt;/strong&gt; — an agent that edits Word/Excel from natural language and then &lt;em&gt;proves&lt;/em&gt; each edit: the real application re-renders the document, and an independent multimodal verifier audits the rendered pages before the loop moves on." data-zh="一个开源文档 Agent 系列：从 &lt;strong&gt;smart-word-agent&lt;/strong&gt;（ReAct 框架、Kimi-K2 核心、首周 1K+ 下载）演进为 &lt;strong&gt;Office Agent&lt;/strong&gt;——用自然语言编辑 Word/Excel，并对每步编辑进行&lt;em&gt;验证&lt;/em&gt;：由真实 Office 应用重新渲染文档，交给独立的多模态验证器审查渲染页面后，闭环才继续。">
-                An open-source document-agent line: <strong>smart-word-agent</strong> (ReAct harness, Kimi-K2 core, 1K+ downloads in week one) evolved into <strong>Office Agent</strong> — an agent that edits Word/Excel from natural language and then <em>proves</em> each edit: the real application re-renders the document, and an independent multimodal verifier audits the rendered pages before the loop moves on.
+            <p data-en="An open-source project on &lt;strong&gt;GitHub&lt;/strong&gt; (&lt;a href='https://github.com/richardChenzhihui/OfficeBuddy' target='_blank'&gt;richardChenzhihui/OfficeBuddy&lt;/a&gt;, &lt;strong&gt;53★ · 6 forks&lt;/strong&gt;): an agent that edits Word/Excel files from natural language and then &lt;em&gt;proves&lt;/em&gt; each edit — the real Microsoft Office application re-renders the document, and an independent multimodal verifier audits the rendered pages before the loop moves on. Vision in the loop, not blind file writes." data-zh="一个 &lt;strong&gt;GitHub 开源项目&lt;/strong&gt;（&lt;a href='https://github.com/richardChenzhihui/OfficeBuddy' target='_blank'&gt;richardChenzhihui/OfficeBuddy&lt;/a&gt;，&lt;strong&gt;53★ · 6 forks&lt;/strong&gt;）：用自然语言编辑 Word/Excel，并对每步编辑进行&lt;em&gt;验证&lt;/em&gt;——由真实 Microsoft Office 应用重新渲染文档，交给独立的多模态验证器审查渲染页面后，闭环才继续。视觉在环（Vision-in-the-Loop），而非盲目写入文件。">
+                An open-source project on <strong>GitHub</strong> (<a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank">richardChenzhihui/OfficeBuddy</a>, <strong>53★ · 6 forks</strong>): an agent that edits Word/Excel files from natural language and then <em>proves</em> each edit — the real Microsoft Office application re-renders the document, and an independent multimodal verifier audits the rendered pages before the loop moves on. Vision in the loop, not blind file writes.
             </p>
 
-            <h4 data-en="Why it maps to RL post-training" data-zh="为什么与 RL 后训练同构">Why it maps to RL post-training</h4>
+            <h4 data-en="Why it maps to agentic post-training" data-zh="为什么与 Agentic 后训练同构">Why it maps to agentic post-training</h4>
             <ul>
-                <li data-en="The harness is a &lt;strong&gt;verifier-in-the-loop system&lt;/strong&gt;: plan &rarr; act &rarr; render &rarr; independent structured verdict &rarr; targeted repair — the same shape as reward design and eval loops in agent RL" data-zh="框架本质是&lt;strong&gt;验证器闭环系统&lt;/strong&gt;：计划 &rarr; 执行 &rarr; 渲染 &rarr; 独立结构化裁决 &rarr; 定向修复——与 Agent RL 中的奖励设计和评测闭环同构">
-                    The harness is a <strong>verifier-in-the-loop system</strong>: plan &rarr; act &rarr; render &rarr; independent structured verdict &rarr; targeted repair — the same shape as reward design and eval loops in agent RL
+                <li data-en="The harness is a &lt;strong&gt;verifier-in-the-loop system&lt;/strong&gt;: plan &rarr; act &rarr; render &rarr; independent structured verdict &rarr; targeted repair — the same shape as reward design and eval loops in agent RL post-training" data-zh="框架本质是&lt;strong&gt;验证器闭环系统&lt;/strong&gt;：计划 &rarr; 执行 &rarr; 渲染 &rarr; 独立结构化裁决 &rarr; 定向修复——与 Agent RL 后训练中的奖励设计和评测闭环同构">
+                    The harness is a <strong>verifier-in-the-loop system</strong>: plan &rarr; act &rarr; render &rarr; independent structured verdict &rarr; targeted repair — the same shape as reward design and eval loops in agent RL post-training
                 </li>
                 <li data-en="&lt;strong&gt;Failure-mode engineering&lt;/strong&gt;: normalized error signatures, forced strategy switch after repeated same-class failures, hard per-step / per-task budgets" data-zh="&lt;strong&gt;失效模式工程&lt;/strong&gt;：错误签名归一化、同类失败两次强制换策略、每步/每任务硬预算上限">
                     <strong>Failure-mode engineering</strong>: normalized error signatures, forced strategy switch after repeated same-class failures, hard per-step / per-task budgets
                 </li>
-                <li data-en="&lt;strong&gt;Safety by construction&lt;/strong&gt;: original files never written before explicit confirmation, per-step snapshots with undo, document content treated as data (prompt-injection defense)" data-zh="&lt;strong&gt;设计即安全&lt;/strong&gt;：显式确认前永不写入原文件、每步快照可撤销、文档内容视为数据而非指令（提示注入防御）">
-                    <strong>Safety by construction</strong>: original files never written before explicit confirmation, per-step snapshots with undo, document content treated as data (prompt-injection defense)
+                <li data-en="&lt;strong&gt;Safety by construction&lt;/strong&gt;: works on isolated copies only, byte-level snapshots with undo before any write, document content treated as data (prompt-injection defense)" data-zh="&lt;strong&gt;设计即安全&lt;/strong&gt;：只在隔离副本上操作、任何写入前有字节级快照可撤销、文档内容视为数据而非指令（提示注入防御）">
+                    <strong>Safety by construction</strong>: works on isolated copies only, byte-level snapshots with undo before any write, document content treated as data (prompt-injection defense)
                 </li>
             </ul>
 
             <h4 data-en="Engineering highlights" data-zh="工程亮点">Engineering highlights</h4>
             <ul>
-                <li data-en="&lt;strong&gt;Rendered-screenshot verification&lt;/strong&gt;: AppleScript drives Word/Excel to export PDF &rarr; PyMuPDF page images &rarr; pixel-level diff marks changed regions &rarr; stateless visual verifier returns a structured verdict" data-zh="&lt;strong&gt;渲染截图验证&lt;/strong&gt;：AppleScript 驱动 Word/Excel 导出 PDF &rarr; PyMuPDF 转页面图 &rarr; 像素级 diff 标注变更区域 &rarr; 无状态视觉验证器给出结构化裁决">
-                    <strong>Rendered-screenshot verification</strong>: AppleScript drives Word/Excel to export PDF &rarr; PyMuPDF page images &rarr; pixel-level diff marks changed regions &rarr; stateless visual verifier returns a structured verdict
+                <li data-en="&lt;strong&gt;Rendered-screenshot verification&lt;/strong&gt;: AppleScript drives Word/Excel to export PDF &rarr; page images &rarr; pixel-level diff with red-box annotations marks exactly what changed &rarr; a &lt;em&gt;stateless&lt;/em&gt; visual verifier returns a structured verdict (no access to edit history, so it cannot rationalize failures)" data-zh="&lt;strong&gt;渲染截图验证&lt;/strong&gt;：AppleScript 驱动 Word/Excel 导出 PDF &rarr; 转页面图 &rarr; 像素级 diff 红框标注变更区域 &rarr; &lt;em&gt;无状态&lt;/em&gt;视觉验证器给出结构化裁决（看不到编辑历史，无法为失败自圆其说）">
+                    <strong>Rendered-screenshot verification</strong>: AppleScript drives Word/Excel to export PDF &rarr; page images &rarr; pixel-level diff with red-box annotations marks exactly what changed &rarr; a <em>stateless</em> visual verifier returns a structured verdict (no access to edit history, so it cannot rationalize failures)
                 </li>
-                <li data-en="&lt;strong&gt;Plan-first execution with clarifying questions&lt;/strong&gt;: multi-step tasks emit a live checklist; ambiguous instructions trigger interactive clarification instead of guessing" data-zh="&lt;strong&gt;先计划后执行 + 主动反问&lt;/strong&gt;：多步任务实时输出清单；指令模糊时交互澄清而非盲猜">
-                    <strong>Plan-first execution with clarifying questions</strong>: multi-step tasks emit a live checklist; ambiguous instructions trigger interactive clarification instead of guessing
+                <li data-en="&lt;strong&gt;Verified-baseline ratchet&lt;/strong&gt;: diffs are taken against the last &lt;em&gt;passed&lt;/em&gt; render, so regressions cannot silently become the new normal" data-zh="&lt;strong&gt;已验证基线棘轮&lt;/strong&gt;：diff 始终对照上一次&lt;em&gt;通过&lt;/em&gt;的渲染，回归无法悄悄变成新常态">
+                    <strong>Verified-baseline ratchet</strong>: diffs are taken against the last <em>passed</em> render, so regressions cannot silently become the new normal
+                </li>
+                <li data-en="&lt;strong&gt;Error-escalation ladder&lt;/strong&gt;: retry &rarr; switch strategy &rarr; ask the user, under hard budget ceilings" data-zh="&lt;strong&gt;错误升级阶梯&lt;/strong&gt;：重试 &rarr; 更换策略 &rarr; 求助用户，且受硬预算上限约束">
+                    <strong>Error-escalation ladder</strong>: retry &rarr; switch strategy &rarr; ask the user, under hard budget ceilings
                 </li>
                 <li data-en="&lt;strong&gt;Model-agnostic core&lt;/strong&gt;: hot-swappable backends (Kimi-K2, MiniMax-M3, OpenAI/OpenRouter-compatible endpoints)" data-zh="&lt;strong&gt;模型无关内核&lt;/strong&gt;：可热切换后端（Kimi-K2、MiniMax-M3、OpenAI/OpenRouter 兼容端点）">
                     <strong>Model-agnostic core</strong>: hot-swappable backends (Kimi-K2, MiniMax-M3, OpenAI/OpenRouter-compatible endpoints)
                 </li>
-                <li data-en="&lt;strong&gt;Shippable, tested software&lt;/strong&gt;: single-file distribution for end users; offline unit / FakeLLM loop tests plus live integration tests" data-zh="&lt;strong&gt;可分发、有测试的软件&lt;/strong&gt;：面向终端用户的单文件分发；离线单元 / FakeLLM 循环测试与真实集成测试">
-                    <strong>Shippable, tested software</strong>: single-file distribution for end users; offline unit / FakeLLM loop tests plus live integration tests
+                <li data-en="&lt;strong&gt;Benchmarked&lt;/strong&gt;: a 9-task Render-Truth Bench (108 runs) shows substantially higher defect-awareness than an OfficeCLI baseline" data-zh="&lt;strong&gt;有基准评测&lt;/strong&gt;：9 任务 Render-Truth Bench（108 次运行）显示其缺陷感知能力显著高于 OfficeCLI 基线">
+                    <strong>Benchmarked</strong>: a 9-task Render-Truth Bench (108 runs) shows substantially higher defect-awareness than an OfficeCLI baseline
                 </li>
             </ul>
 
             <h4 data-en="Traction" data-zh="实际反响">Traction</h4>
             <ul>
-                <li data-en="&lt;strong&gt;1,000+ downloads in the first week&lt;/strong&gt; after the smart-word-agent release" data-zh="smart-word-agent &lt;strong&gt;发布首周下载量超过 1,000&lt;/strong&gt;">
-                    <strong>1,000+ downloads in the first week</strong> after the smart-word-agent release
-                </li>
-                <li data-en="Open-sourced on GitHub with an active issue/feedback loop from real users" data-zh="GitHub 开源，来自真实用户的 issue/反馈持续迭代">
-                    Open-sourced on GitHub with an active issue/feedback loop from real users
+                <li data-en="&lt;strong&gt;53★ and 6 forks on GitHub&lt;/strong&gt; — an actively used open-source project with an active issue/feedback loop from real users" data-zh="GitHub 上 &lt;strong&gt;53★、6 forks&lt;/strong&gt;——持续被真实使用的开源项目，来自真实用户的 issue/反馈持续迭代">
+                    <strong>53★ and 6 forks on GitHub</strong> — an actively used open-source project with an active issue/feedback loop from real users
                 </li>
             </ul>
         </div>
 
         <div class="col-md-4">
-            <img src="/assets/images/projects/smart-word-agent.svg" alt="Office Agent" class="img-fluid rounded shadow-sm mb-3" />
+            <img src="/assets/images/projects/officebuddy.svg" alt="OfficeBuddy" class="img-fluid rounded shadow-sm mb-3" />
 
             <div class="d-grid gap-2">
-                <a href="https://github.com/richardChenzhihui/smart-word-agent" target="_blank" class="btn btn-primary btn-sm">
-                    <span data-en="GitHub Repository" data-zh="GitHub 仓库">GitHub Repository</span>
+                <a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank" class="btn btn-primary btn-sm">
+                    <span data-en="GitHub Repository · 53★" data-zh="GitHub 仓库 · 53★">GitHub Repository · 53★</span>
                 </a>
             </div>
 
             <div class="mt-3 p-2 bg-light rounded">
                 <p class="small mb-1"><strong data-en="Highlights" data-zh="亮点">Highlights</strong></p>
                 <p class="small mb-0">
-                    <span class="badge badge-success" data-en="Render-Verify-Repair" data-zh="渲染-验证-修复">Render-Verify-Repair</span>
-                    <span class="badge badge-info" data-en="Model-agnostic" data-zh="模型无关">Model-agnostic</span>
-                    <span class="badge badge-secondary" data-en="1K+ downloads / week 1" data-zh="首周 1K+ 下载">1K+ downloads / week 1</span>
+                    <span class="badge badge-success" data-en="53★ open source · GitHub" data-zh="GitHub 53★ 开源项目">53★ open source · GitHub</span>
+                    <span class="badge badge-info" data-en="Vision-in-the-Loop" data-zh="Vision-in-the-Loop">Vision-in-the-Loop</span>
+                    <span class="badge badge-secondary" data-en="Stateless verifier" data-zh="无状态验证器">Stateless verifier</span>
                     <span class="badge badge-primary" data-en="Snapshot / Undo Safety" data-zh="快照 / 撤销安全">Snapshot / Undo Safety</span>
                 </p>
             </div>
@@ -220,7 +220,7 @@
                     </tr>
                     <tr>
                         <td data-en="Dataset" data-zh="数据集">Dataset</td>
-                        <td data-en="MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types" data-zh="MedForge-90K，覆盖 CT、MRI、X 光，共 19 类病灶">MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types</td>
+                        <td data-en="MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types (50K+ Hugging Face downloads)" data-zh="MedForge-90K，覆盖 CT、MRI、X 光，共 19 类病灶（Hugging Face 50K+ 下载）">MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types (50K+ Hugging Face downloads)</td>
                     </tr>
                     <tr>
                         <td data-en="Model" data-zh="模型">Model</td>
@@ -272,13 +272,13 @@
     <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
         <div class="card border-0 shadow-sm bg-white">
             <div class="p-4">
-    <h2 data-en="Med-Banana-50K: Large-Scale Medical Image Editing Dataset" data-zh="Med-Banana-50K: 大规模医学图像编辑数据集">Med-Banana-50K: Large-Scale Medical Image Editing Dataset</h2>
+    <h2 data-en="Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026 Main)" data-zh="Med-Banana-80K：面向医学图像编辑的 Agentic 后训练数据（EMNLP 2026 主会议）">Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026 Main)</h2>
     <hr />
-    
+
     <div class="row">
         <div class="col-md-8">
-            <p data-en="An open medical image editing dataset with 50,635 successful edits and 37,822 failed attempts across three modalities and 23 disease types." data-zh="一个开放医学图像编辑数据集，覆盖三种模态和 23 种疾病类型，包含 50,635 次成功编辑与 37,822 次失败尝试。">
-                An open medical image editing dataset with 50,635 successful edits and 37,822 failed attempts across three modalities and 23 disease types.
+            <p data-en="The dataset behind the &lt;strong&gt;EMNLP 2026 Main Conference&lt;/strong&gt; paper &lt;em&gt;Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories&lt;/em&gt;: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face." data-zh="&lt;strong&gt;EMNLP 2026 主会议&lt;/strong&gt;论文《Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories》配套数据集：覆盖三种模态和 23 种疾病类型，包含 50,635 次成功编辑与 37,822 次带完整日志的失败尝试——以失败轨迹作为 Agentic 后训练监督信号；Hugging Face 下载量已超 100K。">
+                The dataset behind the <strong>EMNLP 2026 Main Conference</strong> paper <em>Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</em>: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face.
             </p>
             
             <h4 data-en="Key Features" data-zh="主要特性">Key Features</h4>
@@ -371,7 +371,7 @@
         </div>
         
         <div class="col-md-4">
-            <img src="/assets/images/covers/medbanana_cover.png" alt="Med-Banana-50K samples" class="img-fluid rounded shadow-sm mb-3" />
+            <img src="/assets/images/covers/medbanana_cover.png" alt="Med-Banana-80K samples" class="img-fluid rounded shadow-sm mb-3" />
             
             <div class="d-grid gap-2">
                 <a href="https://arxiv.org/abs/2511.00801" target="_blank" class="btn btn-primary btn-sm">
@@ -380,8 +380,8 @@
                 <a href="https://github.com/richardChenzhihui/med-banana-50k/" target="_blank" class="btn btn-secondary btn-sm">
                     💻 <span data-en="View Code" data-zh="查看代码">View Code</span>
                 </a>
-                <a href="https://huggingface.co/datasets/RichardChenZH/Med-Banana-50K" target="_blank" class="btn btn-info btn-sm">
-                    📦 <span data-en="Dataset on Hugging Face" data-zh="Hugging Face 数据集">Dataset on Hugging Face</span>
+                <a href="https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K" target="_blank" class="btn btn-info btn-sm">
+                    📦 <span data-en="Dataset on Hugging Face (100K+ downloads)" data-zh="Hugging Face 数据集（100K+ 下载）">Dataset on Hugging Face (100K+ downloads)</span>
                 </a>
             </div>
         </div>
