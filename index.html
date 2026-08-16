@@ -6,9 +6,6 @@ body_class: home-landing
 ---
 {% include widgets/profile_card.html %}
 {% include widgets/home_metrics.html %}
-{% include widgets/home_featured_work.html %}
-{% include widgets/home_github_projects.html %}
-{% include widgets/home_impact_areas.html %}
 
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
@@ -17,9 +14,13 @@ body_class: home-landing
         publications=pubs
         limit=4
         compact=true
-        title='<span class="lang-en"><i class="fas fa-star"></i> Selected Papers & Open Research Assets</span><span class="lang-zh d-none"><i class="fas fa-star"></i> 精选论文与开放研究资产</span>'
+        title='<span class="lang-en"><i class="fas fa-star"></i> Selected Papers</span><span class="lang-zh d-none"><i class="fas fa-star"></i> 精选论文</span>'
     %}
 {% endif %}
+
+{% include widgets/home_impact_areas.html %}
+{% include widgets/home_featured_work.html %}
+{% include widgets/home_github_projects.html %}
 
 {% if site.data.display.homepage.show_experience %}
     {% include widgets/experience_card.html %}

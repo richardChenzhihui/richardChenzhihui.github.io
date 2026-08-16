@@ -24,13 +24,13 @@ short_bio: >-
     My research centers on post-training for large (multimodal) language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; and agent harnesses that hold up outside the lab. Healthcare is my primary application domain, not the boundary of my research.
   </p>
   <p>
-    <strong>Research:</strong> ACL 2026 & EMNLP 2025 main-conference papers, plus two first-author papers under review (ICLR & EMNLP 2026); open datasets and models on Hugging Face with 6K+ downloads.
+    <strong>Research:</strong> ACL 2026, EMNLP 2026 &amp; EMNLP 2025 main-conference papers; ICLR 2026 first-author under review; 150K+ Hugging Face downloads (Med-Banana-80K 100K+, MedForge-90K 50K+).
   </p>
   <p>
-    <strong>Open source:</strong> Author of the smart-word-agent &rarr; Office Agent document-agent line: a ReAct tool-calling harness with a rendered-screenshot verification loop; 1K+ downloads in the first week.
+    <strong>Open source:</strong> <a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank">OfficeBuddy</a> &mdash; a 53&#9733; open-source Word/Excel agent that re-renders every edit through real Microsoft Office and audits it with an independent visual verifier.
   </p>
   <p>
-    <strong>Academic Service:</strong> 40+ completed reviews for ACL, NeurIPS, IJCAI, IEEE Affective Computing, ACM TIST; ACL 2026 Main Session Chair; Program Committee, LASS 2026 Workshop @ <strong>ACM CIKM 2026</strong> (Rome).
+    <strong>Academic service:</strong> 40+ reviews (ACL, NeurIPS, IJCAI, IEEE AC, ACM TIST); ACL 2026 Session Chair; PC, LASS 2026 @ ACM CIKM 2026.
   </p>
 
 hero_kicker: >-
@@ -39,42 +39,37 @@ hero_kicker: >-
 hero_summary: >-
   I work on post-training for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; and build multimodal agent systems end to end, from RL data engines to open-source agent harnesses. Now a Multimodal Agent RL research intern at ByteDance (Singapore); open to LLM research internship opportunities.
 
-hero_proof:
-  - "ByteDance (Singapore), now: Multimodal Agent RL — V-FIPO, first-author ICLR 2026 submission"
-  - "StepFun: StepAudio2.5 ASR pre-training data system — Speech-LLM Research Intern, 2025"
-  - "MiniMax Cowork Team Fellowship — USD 4,500 compute grant for medical foundation-model agents"
-
 homepage_metrics:
-  - value: "2"
-    value_zh: "2"
+  - value: "3"
+    value_zh: "3"
     label: "top-tier NLP main conference papers"
-    note: "ACL 2026 & EMNLP 2025 Main · 2 more first-author papers under review (ICLR / EMNLP 2026)"
+    note: "ACL 2026, EMNLP 2026 & EMNLP 2025 Main · 1 more first-author paper under review (ICLR 2026)"
   - value: "88K+"
     value_zh: "88K+"
     label: "agentic editing trajectories with preference labels"
-    note: "Med-Banana pipeline: 50,635 accepted + 37,822 rejected trajectories, DPO-ready"
-  - value: "1K+"
-    value_zh: "1K+"
-    label: "agent downloads in week 1"
-    note: "smart-word-agent: open-source ReAct document agent, now evolving into Office Agent"
-  - value: "ByteDance + StepFun"
-    value_zh: "字节 + 阶跃"
-    label: "LLM lab research internships"
-    note: "Multimodal Agent RL (ByteDance, ongoing) · StepAudio2.5 speech data (StepFun)"
+    note: "Med-Banana (EMNLP 2026 Main): agentic post-training signal from success & failure trajectories, DPO-ready · dataset 100K+ HF downloads"
+  - value: "53★"
+    value_zh: "53★"
+    label: "GitHub stars — open-source office agent"
+    note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent · github.com/richardChenzhihui/OfficeBuddy"
+  - value: "ByteDance + Tencent + StepFun"
+    value_zh: "字节 + 腾讯 + 阶跃"
+    label: "research internships & elite talent programs"
+    note: "Multimodal Agent RL (ByteDance, ongoing) · Qingyun Program, Tencent Photon (青云计划) · StepAudio2.5 speech data (StepFun)"
 
 impact_areas:
   - label: "Post-Training & Alignment"
     title: "Reward design and RL loops for multimodal LLMs"
-    description: "V-FIPO extends token-level credit assignment in RLVR from instant visual dependence to future-discounted visual grounding; Forgery-aware GSPO grounds reasoning on visual evidence. Med-Banana's editor–verifier–refiner pipeline turns accepted/rejected trajectories into DPO-ready training signal."
-    proof: "ACL 2026 Main · GSPO · V-FIPO (ICLR 2026 sub)"
+    description: "V-FIPO extends token-level credit assignment in RLVR from instant visual dependence to future-discounted visual grounding; Forgery-aware GSPO grounds reasoning on visual evidence. Med-Banana (EMNLP 2026 Main) turns success-and-failure editing trajectories into DPO-ready agentic post-training signal."
+    proof: "ACL 2026 Main · EMNLP 2026 Main · V-FIPO (ICLR 2026 sub)"
   - label: "Verifier & Eval Design"
     title: "Evidence-grounded evaluation under domain shift"
     description: "DivScore demonstrates zero-shot verifier design: a normalized-entropy scorer with theoretical guarantees that generalizes across medical and legal domains without domain-specific labels. LLM-as-Judge rubrics drive Med-Banana's quality control."
     proof: "EMNLP 2025 Main · +14.4% AUROC · +64.0% recall"
   - label: "Agents & Systems"
-    title: "Agent harnesses with verification loops"
-    description: "Office Agent closes the loop on document editing: plan → act → real Word/Excel render → independent visual verifier → targeted repair, with budgeted retries, snapshots/undo, and prompt-injection defense. Plus a LangChain trading agent and quantized serving work."
-    proof: "1K+ downloads / week 1 · render-verify-repair loop"
+    title: "Agent harnesses with vision in the loop"
+    description: "OfficeBuddy puts vision in the loop for document editing: plan → act → real Word/Excel render → independent visual verifier → targeted repair, with budgeted retries, snapshots/undo, and prompt-injection defense. Plus a LangChain trading agent and quantized serving work."
+    proof: "53★ on GitHub · Vision-in-the-Loop"
 
 featured_work:
   - title: "MedForge"
@@ -106,17 +101,17 @@ featured_work:
     secondary:
       label: "MiniMax"
       url: https://www.minimaxi.com/
-  - title: "Office Agent"
-    subtitle: "Document agent with a rendered-verification loop"
-    description: "From smart-word-agent (ReAct harness, 1K downloads in week one) to Office Agent: every edit is re-rendered by real Word/Excel and audited by an independent multimodal verifier, with plan-first execution, budgeted retries, snapshots/undo, and prompt-injection defense."
-    image: /assets/images/projects/smart-word-agent.svg
+  - title: "OfficeBuddy"
+    subtitle: "Vision-in-the-Loop open-source office agent"
+    description: "An open-source project on GitHub (53★): the agent edits Word/Excel from natural language, re-renders every edit through real Microsoft Office, and lets an independent multimodal verifier audit the pages before the loop moves on — with plan-first execution, budgeted retries, snapshots/undo, and prompt-injection defense."
+    image: /assets/images/projects/officebuddy.svg
     badges:
-      - "Render-Verify-Repair Loop"
+      - "53★ open source · GitHub"
+      - "Vision-in-the-Loop"
       - "Model-agnostic (Kimi-K2 / MiniMax-M3)"
-      - "1K downloads / week 1"
     primary:
       label: "GitHub"
-      url: https://github.com/richardChenzhihui/smart-word-agent
+      url: https://github.com/richardChenzhihui/OfficeBuddy
     secondary:
       label: "Showcase"
       url: /showcase.html#projects
@@ -147,6 +142,11 @@ experience:
   dept: "V-FIPO: future-discounted visual credit assignment for RLVR (first-author ICLR 2026 submission); livestream-moderation multimodal agent; trajectory & preference data systems"
   date: Jun. 2026 - Nov. 2026
 
+- name: Tencent · LightSpeed Studios (Photon, 光子)
+  position: "Qingyun Program (青云计划) — Elite Research Talent, selected"
+  dept: "Selected for Tencent Photon Studio Group's Qingyun Program elite talent track; game-AI × LLM agent research"
+  date: 2026
+
 - name: StepFun (阶跃星辰)
   logo: /assets/images/badges/StepFun.png
   position: Speech-LLM Research Intern
@@ -165,6 +165,8 @@ experience:
   date: Feb. 2024 - Apr. 2024
 
 awards:
+- name: "Qingyun Program (青云计划) — Tencent LightSpeed Studios (Photon), elite research talent selection"
+  date: 2026
 - name: MiniMax Cowork Team Fellowship, USD 4,500 compute grant
   date: 2026
 - name: Full Ph.D. Scholarship, National University of Singapore
@@ -205,7 +207,7 @@ skills:
   - group: "Agents & Orchestration"
     items:
       - "ReAct agent harness (multi-step, multi-doc)"
-      - "Render → verify → repair loops (independent visual verifier)"
+      - "Vision-in-the-Loop verification (independent visual verifier)"
       - "LangChain orchestration & tool-calling"
       - "Structured output, budgeted retries & failure attribution"
       - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT integration"
@@ -224,12 +226,12 @@ skills:
 
 github_username: richardChenzhihui
 github_projects:
-  - name: smart-word-agent
-    url: https://github.com/richardChenzhihui/smart-word-agent
-    stars: "9"
+  - name: OfficeBuddy
+    url: https://github.com/richardChenzhihui/OfficeBuddy
+    stars: "53"
     lang: Python
-    tag: "Agent Harness"
-    desc: "ReAct document-editing agent — natural-language Word editing, 1K+ downloads in week one; evolving into Office Agent with a rendered-screenshot verification loop."
+    tag: "Vision-in-the-Loop"
+    desc: "Open-source office agent (53★): edits Word/Excel from natural language, re-renders every edit through real Microsoft Office, and audits it with an independent visual verifier — vision in the loop."
   - name: ACL2026-MedForge
     url: https://github.com/richardChenzhihui/ACL2026-MedForge
     stars: "10"
@@ -240,8 +242,8 @@ github_projects:
     url: https://github.com/richardChenzhihui/med-banana-50k
     stars: "71"
     lang: Python
-    tag: "Dataset"
-    desc: "Large-scale instruction-based medical image editing dataset with an editor–verifier–refiner agentic pipeline and LLM-as-Judge quality control."
+    tag: "EMNLP 2026"
+    desc: "Code and data for Med-Banana (EMNLP 2026 Main) — agentic post-training for medical image editing from success-and-failure trajectories, with an editor–verifier–refiner pipeline and LLM-as-Judge quality control."
   - name: DivScore
     url: https://github.com/richardChenzhihui/DivScore
     stars: "9"

@@ -6,13 +6,13 @@ date: 2026-06-29 00:01:00 +0800
 ---
 
 <div class="p-4">
-    <h2 data-en="Med-Banana-50K: Large-Scale Medical Image Editing Dataset" data-zh="Med-Banana-50K: 大规模医学图像编辑数据集">Med-Banana-50K: Large-Scale Medical Image Editing Dataset</h2>
+    <h2 data-en="Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026 Main)" data-zh="Med-Banana-80K：面向医学图像编辑的 Agentic 后训练数据（EMNLP 2026 主会议）">Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026 Main)</h2>
     <hr />
-    
+
     <div class="row">
         <div class="col-md-8">
-            <p data-en="An open medical image editing dataset with 50,635 successful edits and 37,822 failed attempts across three modalities and 23 disease types." data-zh="一个开放医学图像编辑数据集，覆盖三种模态和 23 种疾病类型，包含 50,635 次成功编辑与 37,822 次失败尝试。">
-                An open medical image editing dataset with 50,635 successful edits and 37,822 failed attempts across three modalities and 23 disease types.
+            <p data-en="The dataset behind the <strong>EMNLP 2026 Main Conference</strong> paper <em>Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</em>: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face." data-zh="<strong>EMNLP 2026 主会议</strong>论文《Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories》配套数据集：覆盖三种模态和 23 种疾病类型，包含 50,635 次成功编辑与 37,822 次带完整日志的失败尝试——以失败轨迹作为 Agentic 后训练监督信号；Hugging Face 下载量已超 100K。">
+                The dataset behind the <strong>EMNLP 2026 Main Conference</strong> paper <em>Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</em>: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face.
             </p>
             
             <h4 data-en="Key Features" data-zh="主要特性">Key Features</h4>
@@ -105,7 +105,7 @@ date: 2026-06-29 00:01:00 +0800
         </div>
         
         <div class="col-md-4">
-            <img src="/assets/images/covers/medbanana_cover.png" alt="Med-Banana-50K samples" class="img-fluid rounded shadow-sm mb-3">
+            <img src="/assets/images/covers/medbanana_cover.png" alt="Med-Banana-80K samples" class="img-fluid rounded shadow-sm mb-3">
             
             <div class="d-grid gap-2">
                 <a href="https://arxiv.org/abs/2511.00801" target="_blank" class="btn btn-primary btn-sm">
@@ -114,8 +114,8 @@ date: 2026-06-29 00:01:00 +0800
                 <a href="https://github.com/richardChenzhihui/med-banana-50k/" target="_blank" class="btn btn-secondary btn-sm">
                     💻 <span data-en="View Code" data-zh="查看代码">View Code</span>
                 </a>
-                <a href="https://huggingface.co/datasets/RichardChenZH/Med-Banana-50K" target="_blank" class="btn btn-info btn-sm">
-                    📦 <span data-en="Dataset on Hugging Face" data-zh="Hugging Face 数据集">Dataset on Hugging Face</span>
+                <a href="https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K" target="_blank" class="btn btn-info btn-sm">
+                    📦 <span data-en="Dataset on Hugging Face (100K+ downloads)" data-zh="Hugging Face 数据集（100K+ 下载）">Dataset on Hugging Face (100K+ downloads)</span>
                 </a>
             </div>
         </div>

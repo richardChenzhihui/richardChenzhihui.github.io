@@ -24,13 +24,13 @@ short_bio: >-
     我的研究聚焦（多模态）大模型后训练：奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测，以及能在真实场景落地的 Agent 工程。医疗是我的主要应用场景，而非研究边界。
   </p>
   <p>
-    <strong>研究：</strong>ACL 2026 与 EMNLP 2025 主会议论文，另有 2 篇一作论文在投（ICLR 与 EMNLP 2026）；在 Hugging Face 开源数据集与模型，累计 6K+ 下载。
+    <strong>研究：</strong>ACL 2026、EMNLP 2026 与 EMNLP 2025 主会议论文；ICLR 2026 一作在投；Hugging Face 累计 150K+ 下载（Med-Banana-80K 100K+，MedForge-90K 50K+）。
   </p>
   <p>
-    <strong>开源：</strong>smart-word-agent → Office Agent 文档 Agent 系列作者：ReAct 工具调用框架 + 渲染截图验证闭环，发布首周 1K+ 下载。
+    <strong>开源：</strong><a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank">OfficeBuddy</a>——GitHub 53★ 开源 Word/Excel Agent：每步编辑经真实 Microsoft Office 渲染，并由独立视觉验证器审查。
   </p>
   <p>
-    <strong>学术服务：</strong>为 ACL、NeurIPS、IJCAI、IEEE Affective Computing、ACM TIST 完成 40+ 篇审稿；ACL 2026 主会议 Session Chair；<strong>ACM CIKM 2026</strong> · LASS 2026 研讨会程序委员会（PC）委员（罗马）。
+    <strong>学术服务：</strong>40+ 篇审稿（ACL、NeurIPS、IJCAI、IEEE AC、ACM TIST）；ACL 2026 Session Chair；ACM CIKM 2026 · LASS 2026 程序委员会（PC）。
   </p>
 
 hero_kicker: >-
@@ -39,38 +39,33 @@ hero_kicker: >-
 hero_summary: >-
   我从事大模型后训练研究——奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测——并端到端构建多模态 Agent 系统：从强化学习数据引擎到开源 Agent 框架。现于字节跳动（新加坡）任多模态 Agent 强化学习研发实习生；欢迎大模型研发实习机会。
 
-hero_proof:
-  - "字节跳动（新加坡）· 在职：多模态 Agent 强化学习 — V-FIPO，一作 ICLR 2026 在投"
-  - "阶跃星辰：StepAudio2.5 语音基座预训练数据体系 — 语音大模型研发实习，2025"
-  - "MiniMax Cowork Team Fellowship — 4500 美金算力支持，医疗基座模型 Agent"
-
 homepage_metrics:
-  - value: "2"
+  - value: "3"
     label: "篇顶级 NLP 主会议论文"
-    note: "ACL 2026 与 EMNLP 2025 主会议 · 另有 2 篇一作在投（ICLR / EMNLP 2026）"
+    note: "ACL 2026、EMNLP 2026 与 EMNLP 2025 主会议 · 另有 1 篇一作在投（ICLR 2026）"
   - value: "88K+"
     label: "带偏好标注的 Agent 编辑轨迹"
-    note: "Med-Banana 流程：50,635 条成功 + 37,822 条失败轨迹，可直接用于 DPO"
-  - value: "1K+"
-    label: "Agent 首周下载量"
-    note: "smart-word-agent：开源 ReAct 文档 Agent，正演进为 Office Agent"
-  - value: "字节 + 阶跃"
-    label: "大模型实验室研发实习"
-    note: "多模态 Agent 强化学习（字节，在职）· StepAudio2.5 语音数据（阶跃）"
+    note: "Med-Banana（EMNLP 2026 主会议）：从成败轨迹构建 Agentic 后训练信号，可直接用于 DPO · 数据集 HF 100K+ 下载"
+  - value: "53★"
+    label: "GitHub 星标 — 开源办公 Agent"
+    note: "OfficeBuddy：Vision-in-the-Loop 开源 Word/Excel Agent · github.com/richardChenzhihui/OfficeBuddy"
+  - value: "字节 + 腾讯 + 阶跃"
+    label: "研发实习与顶尖人才计划"
+    note: "多模态 Agent 强化学习（字节，在职）· 腾讯光子「青云计划」 · StepAudio2.5 语音数据（阶跃）"
 
 impact_areas:
   - label: "后训练与对齐"
     title: "多模态大模型的奖励设计与 RL 闭环"
-    description: "V-FIPO 将 RLVR 的 token 级信用分配从「即时视觉依赖」扩展到「未来折扣视觉锚定」；Forgery-aware GSPO 以视觉证据约束模型推理；Med-Banana 的编辑-验证-精炼流程将成功/失败轨迹转化为可直接用于 DPO 的训练信号。"
-    proof: "ACL 2026 主会议 · GSPO · V-FIPO（ICLR 2026 在投）"
+    description: "V-FIPO 将 RLVR 的 token 级信用分配从「即时视觉依赖」扩展到「未来折扣视觉锚定」；Forgery-aware GSPO 以视觉证据约束模型推理；Med-Banana（EMNLP 2026 主会议）将成败编辑轨迹转化为可直接用于 DPO 的 Agentic 后训练信号。"
+    proof: "ACL 2026 主会议 · EMNLP 2026 主会议 · V-FIPO（ICLR 2026 在投）"
   - label: "验证器与评测设计"
     title: "领域偏移下的证据驱动评测"
     description: "DivScore 展示零样本验证器设计：一种带理论保证的归一化熵评分器，无需领域特定标注即可泛化至医疗与法律领域。LLM-as-Judge 评分准则驱动 Med-Banana 的质量控制。"
     proof: "EMNLP 2025 主会议 · +14.4% AUROC · +64.0% 召回"
   - label: "Agent 与系统"
-    title: "带验证闭环的 Agent 框架"
-    description: "Office Agent 打通文档编辑的完整闭环：计划 → 执行 → 真实 Word/Excel 渲染 → 独立视觉验证器 → 定向修复，并内置预算化重试、快照/撤销与提示注入防御；另有 LangChain 交易 Agent 与量化推理部署工作。"
-    proof: "首周 1K+ 下载 · 渲染-验证-修复闭环"
+    title: "Vision-in-the-Loop 的 Agent 框架"
+    description: "OfficeBuddy 将视觉引入文档编辑闭环：计划 → 执行 → 真实 Word/Excel 渲染 → 独立视觉验证器 → 定向修复，并内置预算化重试、快照/撤销与提示注入防御；另有 LangChain 交易 Agent 与量化推理部署工作。"
+    proof: "GitHub 53★ · Vision-in-the-Loop"
 
 featured_work:
   - title: "MedForge"
@@ -102,17 +97,17 @@ featured_work:
     secondary:
       label: "MiniMax"
       url: https://www.minimaxi.com/
-  - title: "Office Agent"
-    subtitle: "带渲染验证闭环的文档 Agent"
-    description: "从 smart-word-agent（ReAct 框架，首周 1K 下载）到 Office Agent：每步编辑由真实 Word/Excel 重新渲染，交给独立多模态验证器审查，配合先计划后执行、预算化重试、快照/撤销与提示注入防御。"
-    image: /assets/images/projects/smart-word-agent.svg
+  - title: "OfficeBuddy"
+    subtitle: "Vision-in-the-Loop 开源办公 Agent"
+    description: "GitHub 开源项目（53★）：用自然语言编辑 Word/Excel，每步编辑经真实 Microsoft Office 重新渲染，交给独立多模态验证器审查后才继续，配合先计划后执行、预算化重试、快照/撤销与提示注入防御。"
+    image: /assets/images/projects/officebuddy.svg
     badges:
-      - "渲染-验证-修复闭环"
+      - "GitHub 53★ 开源项目"
+      - "Vision-in-the-Loop"
       - "模型无关（Kimi-K2 / MiniMax-M3）"
-      - "首周 1K 下载"
     primary:
       label: "GitHub"
-      url: https://github.com/richardChenzhihui/smart-word-agent
+      url: https://github.com/richardChenzhihui/OfficeBuddy
     secondary:
       label: "项目展示"
       url: /showcase.html#projects
@@ -143,6 +138,11 @@ experience:
   dept: "V-FIPO：面向 RLVR 的未来折扣视觉信用分配（一作 ICLR 2026 在投）；直播审核多模态 Agent；轨迹与偏好数据体系"
   date: 2026年6月 - 2026年11月
 
+- name: 腾讯 · 光子工作室群
+  position: "「青云计划」精英科研人才 入选"
+  dept: "入选腾讯光子工作室群「青云计划」精英人才计划；游戏 AI × 大模型 Agent 方向研究"
+  date: 2026
+
 - name: 阶跃星辰（StepFun）
   logo: /assets/images/badges/StepFun.png
   position: 语音大模型 研发实习生
@@ -161,6 +161,8 @@ experience:
   date: 2024年2月 - 2024年4月
 
 awards:
+- name: "腾讯光子工作室群「青云计划」入选（精英科研人才计划）"
+  date: 2026
 - name: MiniMax Cowork Team Fellowship，4500 美金算力支持
   date: 2026
 - name: 新加坡国立大学全额博士奖学金
@@ -201,7 +203,7 @@ skills:
   - group: "Agent 与编排"
     items:
       - "ReAct Agent 框架（多步、多文档）"
-      - "渲染 → 验证 → 修复闭环（独立视觉验证器）"
+      - "Vision-in-the-Loop 视觉验证（独立视觉验证器）"
       - "LangChain 编排与工具调用"
       - "结构化输出、预算化重试与失败归因"
       - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT 接入"
@@ -220,12 +222,12 @@ skills:
 
 github_username: richardChenzhihui
 github_projects:
-  - name: smart-word-agent
-    url: https://github.com/richardChenzhihui/smart-word-agent
-    stars: "9"
+  - name: OfficeBuddy
+    url: https://github.com/richardChenzhihui/OfficeBuddy
+    stars: "53"
     lang: Python
-    tag: "Agent 框架"
-    desc: "ReAct 文档编辑 Agent——自然语言编辑 Word，首周 1K+ 下载；正演进为带渲染截图验证闭环的 Office Agent。"
+    tag: "Vision-in-the-Loop"
+    desc: "开源办公 Agent（GitHub 53★ 开源项目）：自然语言编辑 Word/Excel，每步编辑经真实 Microsoft Office 重新渲染，并由独立视觉验证器审查——Vision-in-the-Loop。"
   - name: ACL2026-MedForge
     url: https://github.com/richardChenzhihui/ACL2026-MedForge
     stars: "10"
@@ -236,8 +238,8 @@ github_projects:
     url: https://github.com/richardChenzhihui/med-banana-50k
     stars: "71"
     lang: Python
-    tag: "数据集"
-    desc: "大规模指令式医学图像编辑数据集，配套编辑-验证-精炼 Agent 流程与 LLM-as-Judge 质量控制。"
+    tag: "EMNLP 2026"
+    desc: "Med-Banana（EMNLP 2026 主会议）代码与数据——从成败轨迹进行 Agentic 后训练的医学图像编辑，配套编辑-验证-精炼流程与 LLM-as-Judge 质量控制。"
   - name: DivScore
     url: https://github.com/richardChenzhihui/DivScore
     stars: "9"

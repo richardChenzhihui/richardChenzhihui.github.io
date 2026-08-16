@@ -59,7 +59,7 @@ date: 2026-06-30 00:01:00 +0800
                     </tr>
                     <tr>
                         <td data-en="Dataset" data-zh="数据集">Dataset</td>
-                        <td data-en="MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types" data-zh="MedForge-90K，覆盖 CT、MRI、X 光，共 19 类病灶">MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types</td>
+                        <td data-en="MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types (50K+ Hugging Face downloads)" data-zh="MedForge-90K，覆盖 CT、MRI、X 光，共 19 类病灶（Hugging Face 50K+ 下载）">MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types (50K+ Hugging Face downloads)</td>
                     </tr>
                     <tr>
                         <td data-en="Model" data-zh="模型">Model</td>
