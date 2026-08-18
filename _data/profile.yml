@@ -34,9 +34,9 @@ hero_summary: >-
 
 hero_proof:
   - logo: /assets/images/badges/ByteDance.svg
-    text: "Agentic Post-Training @ ByteDance (Singapore) — V-FIPO future-discounted visual credit assignment, first-author ICLR 2026 under review"
+    text: "Agentic Post-Training @ ByteDance — Farsight, first-author ICLR 2026 under review"
   - logo: /assets/images/badges/StepFun.png
-    text: "Speech Foundation Model @ StepFun (阶跃星辰) — StepAudio2.5 pre-training data governance for the ASR/TTS base model"
+    text: "Speech Foundation Model @ StepFun — StepAudio2.5 pre-training data governance"
 
 homepage_metrics:
   - value: "ByteDance · StepFun · Tencent"
@@ -60,8 +60,8 @@ homepage_metrics:
 impact_areas:
   - label: "Post-Training & Alignment"
     title: "Reward design and RL loops for multimodal LLMs"
-    description: "V-FIPO extends RLVR credit assignment from instant visual dependence to future-discounted visual grounding; Med-Banana turns success-and-failure trajectories into DPO-ready post-training signal."
-    proof: "ACL 2026 Main · EMNLP 2026 Main · V-FIPO (ICLR 2026 sub)"
+    description: "Farsight extends RLVR credit assignment from instant visual dependence to future-discounted visual grounding; Med-Banana turns success-and-failure trajectories into DPO-ready post-training signal."
+    proof: "ACL 2026 Main · EMNLP 2026 Main · Farsight (ICLR 2026 sub)"
   - label: "Verifier & Eval Design"
     title: "Evidence-grounded evaluation under domain shift"
     description: "DivScore is a zero-shot verifier: a normalized-entropy scorer with theoretical guarantees that generalizes across medical and legal domains without domain-specific labels."
@@ -140,7 +140,7 @@ education:
 - name: National University of Singapore
   logo: /assets/images/badges/NUS.png
   position: Ph.D. in Artificial Intelligence
-  dept: "Research focus: multimodal LLM post-training, medical AI, trustworthy & responsible AI"
+  dept: "Multimodal LLM post-training · medical AI · trustworthy AI"
   date: Jan. 2025 - present
 - name: The University of Hong Kong
   logo: /assets/images/badges/HKU.jpg
@@ -155,29 +155,29 @@ experience:
 - name: ByteDance (Singapore)
   logo: /assets/images/badges/ByteDance.svg
   position: Agentic Post-Training Research Intern
-  dept: "V-FIPO: future-discounted visual credit assignment for RLVR (first-author ICLR 2026 submission); livestream-moderation multimodal agent; trajectory & preference data systems"
+  dept: "Farsight — future-discounted visual credit assignment for RLVR · trajectory & preference data"
   date: Jun. 2026 - Nov. 2026
 
 - name: Tencent · LightSpeed Studios (Photon, 光子)
   position: "Qingyun Program (青云计划) — Elite Research Talent, selected"
-  dept: "Selected for Tencent Photon Studio Group's Qingyun Program elite talent track; game-AI × LLM agent research"
+  dept: "Elite research talent track · game-AI × LLM agent research"
   date: 2026
 
 - name: StepFun (阶跃星辰)
   logo: /assets/images/badges/StepFun.png
   position: Speech-LLM Research Intern
-  dept: "StepAudio2.5 ASR foundation model: pre-training data governance, dialect/emotion label normalization, metadata schema for ASR/TTS/real-time speech"
+  dept: "StepAudio2.5 foundation model — pre-training data governance · ASR/TTS metadata schema"
   date: Mar. 2025 - Jul. 2025
 
 - name: AQUMON (Hong Kong)
   position: Quant Trading Agent Intern
-  dept: "LangChain agent orchestration; Futu OpenAPI real-time data & automated execution"
+  dept: "LangChain orchestration over Futu OpenAPI real-time data & execution"
   date: Jan. 2025 - Mar. 2025
 
 - name: NUS Business School
   logo: /assets/images/badges/NUS.png
   position: Teaching Assistant — "Generative AI and LLM"
-  dept: "Curriculum design; tutorials on PyTorch, HuggingFace, pre-training, SFT, RLHF"
+  dept: "Curriculum design · tutorials on pre-training, SFT and RLHF"
   date: Feb. 2024 - Apr. 2024
 
 awards:
@@ -226,31 +226,31 @@ github_projects:
     stars: "53"
     lang: Python
     tag: "Vision-in-the-Loop"
-    desc: "Open-source office agent (53★): edits Word/Excel from natural language, re-renders every edit through real Microsoft Office, and audits it with an independent visual verifier — vision in the loop."
+    desc: "Edits Word/Excel from natural language, then audits every real-Office render with an independent visual verifier."
   - name: ACL2026-MedForge
     url: https://github.com/richardChenzhihui/ACL2026-MedForge
     stars: "10"
     lang: Python
     tag: "ACL 2026"
-    desc: "Code and dataset of the ACL 2026 main-conference paper — interpretable medical deepfake detection with Localize-then-Analyze reasoning and Forgery-aware GSPO."
+    desc: "Interpretable medical deepfake detection — Localize-then-Analyze reasoning + Forgery-aware GSPO."
   - name: med-banana-50k
     url: https://github.com/richardChenzhihui/med-banana-50k
     stars: "71"
     lang: Python
     tag: "EMNLP 2026"
-    desc: "Code and data for Med-Banana (EMNLP 2026 Main) — agentic post-training for medical image editing from success-and-failure trajectories, with an editor–verifier–refiner pipeline and LLM-as-Judge quality control."
+    desc: "Agentic post-training for medical image editing from success-and-failure trajectories."
   - name: DivScore
     url: https://github.com/richardChenzhihui/DivScore
     stars: "9"
     lang: Python
     tag: "EMNLP 2025"
-    desc: "Zero-shot LLM-generated-text detection in specialized domains via normalized entropy scoring and domain knowledge distillation."
+    desc: "Zero-shot LLM-text detection via normalized entropy scoring and knowledge distillation."
   - name: ai-top-conf-2026-survey
     url: https://github.com/richardChenzhihui/ai-top-conf-2026-survey
     stars: "—"
     lang: Python
     tag: "Research Tooling"
-    desc: "15,800 papers from CVPR / ICLR / NeurIPS auto-classified by topic with interactive visualization and automated survey tables."
+    desc: "15,800 CVPR / ICLR / NeurIPS papers auto-classified by topic, with survey tables."
   - name: ShieldDocs
     url: https://github.com/richardChenzhihui/ShieldDocs
     stars: "1"

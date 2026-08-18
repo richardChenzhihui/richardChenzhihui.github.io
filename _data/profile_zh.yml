@@ -34,9 +34,9 @@ hero_summary: >-
 
 hero_proof:
   - logo: /assets/images/badges/ByteDance.svg
-    text: "字节跳动（新加坡）· Agentic 后训练 —— V-FIPO 未来折扣视觉信用分配，一作 ICLR 2026 在投"
+    text: "字节跳动 · Agentic 后训练 —— Farsight，一作 ICLR 2026 在投"
   - logo: /assets/images/badges/StepFun.png
-    text: "阶跃星辰 · 语音基座模型 —— StepAudio2.5 基座预训练数据治理（ASR/TTS）"
+    text: "阶跃星辰 · 语音基座模型 —— StepAudio2.5 预训练数据治理"
 
 homepage_metrics:
   - value: "字节 · 阶跃 · 腾讯"
@@ -56,8 +56,8 @@ homepage_metrics:
 impact_areas:
   - label: "后训练与对齐"
     title: "多模态大模型的奖励设计与 RL 闭环"
-    description: "V-FIPO 将 RLVR 信用分配从「即时视觉依赖」扩展到「未来折扣视觉锚定」；Med-Banana 将成败轨迹转化为可直接用于 DPO 的后训练信号。"
-    proof: "ACL 2026 主会议 · EMNLP 2026 主会议 · V-FIPO（ICLR 2026 在投）"
+    description: "Farsight 将 RLVR 信用分配从「即时视觉依赖」扩展到「未来折扣视觉锚定」；Med-Banana 将成败轨迹转化为可直接用于 DPO 的后训练信号。"
+    proof: "ACL 2026 主会议 · EMNLP 2026 主会议 · Farsight（ICLR 2026 在投）"
   - label: "验证器与评测设计"
     title: "领域偏移下的证据驱动评测"
     description: "DivScore 是一个零样本验证器：带理论保证的归一化熵评分器，无需领域特定标注即可泛化至医疗与法律领域。"
@@ -136,7 +136,7 @@ education:
 - name: 新加坡国立大学
   logo: /assets/images/badges/NUS.png
   position: 人工智能博士
-  dept: "研究方向：多模态大模型后训练、医疗 AI、可信与负责任 AI"
+  dept: "多模态大模型后训练 · 医疗 AI · 可信 AI"
   date: 2025年1月 - 至今
 - name: 香港大学
   logo: /assets/images/badges/HKU.jpg
@@ -151,29 +151,29 @@ experience:
 - name: 字节跳动（新加坡）
   logo: /assets/images/badges/ByteDance.svg
   position: Agentic 后训练 研发实习生
-  dept: "V-FIPO：面向 RLVR 的未来折扣视觉信用分配（一作 ICLR 2026 在投）；直播审核多模态 Agent；轨迹与偏好数据体系"
+  dept: "Farsight —— 面向 RLVR 的未来折扣视觉信用分配 · 轨迹与偏好数据体系"
   date: 2026年6月 - 2026年11月
 
 - name: 腾讯 · 光子工作室群
   position: "「青云计划」精英科研人才 入选"
-  dept: "入选腾讯光子工作室群「青云计划」精英人才计划；游戏 AI × 大模型 Agent 方向研究"
+  dept: "精英科研人才计划 · 游戏 AI × 大模型 Agent 方向"
   date: 2026
 
 - name: 阶跃星辰（StepFun）
   logo: /assets/images/badges/StepFun.png
   position: 语音大模型 研发实习生
-  dept: "StepAudio2.5 语音基座：预训练数据治理、方言/情感标签规范化、ASR/TTS/实时语音元数据 schema"
+  dept: "StepAudio2.5 语音基座 —— 预训练数据治理 · ASR/TTS 元数据 schema"
   date: 2025年3月 - 2025年7月
 
 - name: AQUMON（香港）
   position: 量化交易 Agent 研发实习生
-  dept: "LangChain Agent 编排；对接 Futu OpenAPI 实时行情与自动下单"
+  dept: "LangChain Agent 编排 · 对接 Futu OpenAPI 实时行情与自动下单"
   date: 2025年1月 - 2025年3月
 
 - name: NUS 商学院
   logo: /assets/images/badges/NUS.png
   position: 教学助理 —《Generative AI and LLM》
-  dept: "课程设计；PyTorch、HuggingFace、预训练、SFT、RLHF 教学"
+  dept: "课程设计 · 预训练、SFT 与 RLHF 教学"
   date: 2024年2月 - 2024年4月
 
 awards:
@@ -222,31 +222,31 @@ github_projects:
     stars: "53"
     lang: Python
     tag: "Vision-in-the-Loop"
-    desc: "开源办公 Agent（GitHub 53★ 开源项目）：自然语言编辑 Word/Excel，每步编辑经真实 Microsoft Office 重新渲染，并由独立视觉验证器审查——Vision-in-the-Loop。"
+    desc: "自然语言编辑 Word/Excel，每步真实 Office 渲染均由独立视觉验证器审查。"
   - name: ACL2026-MedForge
     url: https://github.com/richardChenzhihui/ACL2026-MedForge
     stars: "10"
     lang: Python
     tag: "ACL 2026"
-    desc: "ACL 2026 主会议论文的代码与数据集——先定位再分析推理 + Forgery-aware GSPO 的可解释医学深度伪造检测。"
+    desc: "可解释医学深度伪造检测 —— 先定位再分析推理 + Forgery-aware GSPO。"
   - name: med-banana-50k
     url: https://github.com/richardChenzhihui/med-banana-50k
     stars: "71"
     lang: Python
     tag: "EMNLP 2026"
-    desc: "Med-Banana（EMNLP 2026 主会议）代码与数据——从成败轨迹进行 Agentic 后训练的医学图像编辑，配套编辑-验证-精炼流程与 LLM-as-Judge 质量控制。"
+    desc: "从成败轨迹进行 Agentic 后训练的医学图像编辑。"
   - name: DivScore
     url: https://github.com/richardChenzhihui/DivScore
     stars: "9"
     lang: Python
     tag: "EMNLP 2025"
-    desc: "基于归一化熵评分与领域知识蒸馏的专业领域大模型生成文本零样本检测。"
+    desc: "基于归一化熵评分与知识蒸馏的大模型生成文本零样本检测。"
   - name: ai-top-conf-2026-survey
     url: https://github.com/richardChenzhihui/ai-top-conf-2026-survey
     stars: "—"
     lang: Python
     tag: "科研工具"
-    desc: "CVPR / ICLR / NeurIPS 共 15,800 篇论文的自动主题分类、交互可视化与自动化综述表格。"
+    desc: "15,800 篇 CVPR / ICLR / NeurIPS 论文自动主题分类与综述表格。"
   - name: ShieldDocs
     url: https://github.com/richardChenzhihui/ShieldDocs
     stars: "1"
