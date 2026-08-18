@@ -37,9 +37,18 @@ hero_kicker: >-
   大模型后训练与 Agentic AI 研究
 
 hero_summary: >-
-  我从事大模型后训练研究——奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测——并端到端构建多模态 Agent 系统：从强化学习数据引擎到开源 Agent 框架。现于字节跳动（新加坡）任多模态 Agent 强化学习研发实习生；欢迎大模型研发实习机会。
+  我从事大模型后训练研究——奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测——并端到端构建多模态 Agent 系统：从强化学习数据引擎到开源 Agent 框架。现于字节跳动（新加坡）任 Agentic 后训练研发实习生，此前在阶跃星辰负责 StepAudio2.5 语音基座模型的预训练数据治理；欢迎大模型研发实习机会。
+
+hero_proof:
+  - logo: /assets/images/badges/ByteDance.svg
+    text: "字节跳动（新加坡）· Agentic 后训练 —— V-FIPO 未来折扣视觉信用分配，一作 ICLR 2026 在投"
+  - logo: /assets/images/badges/StepFun.png
+    text: "阶跃星辰 · 语音基座模型 —— StepAudio2.5 基座预训练数据治理（ASR/TTS）"
 
 homepage_metrics:
+  - value: "字节 + 阶跃 + 腾讯"
+    label: "研发实习与顶尖人才计划"
+    note: "Agentic 后训练（字节，在职）· 语音基座模型 StepAudio2.5（阶跃）· 腾讯青云计划与量化基础设施资助"
   - value: "3"
     label: "篇顶级 NLP 主会议论文"
     note: "ACL 2026、EMNLP 2026 与 EMNLP 2025 主会议 · 另有 1 篇一作在投（ICLR 2026）"
@@ -49,9 +58,6 @@ homepage_metrics:
   - value: "53★"
     label: "GitHub 星标 — 开源办公 Agent"
     note: "OfficeBuddy：Vision-in-the-Loop 开源 Word/Excel Agent · github.com/richardChenzhihui/OfficeBuddy"
-  - value: "字节 + 腾讯 + 阶跃"
-    label: "研发实习与顶尖人才计划"
-    note: "多模态 Agent 强化学习（字节，在职）· 腾讯光子「青云计划」 · StepAudio2.5 语音数据（阶跃）"
 
 impact_areas:
   - label: "后训练与对齐"
@@ -82,8 +88,24 @@ featured_work:
     secondary:
       label: "论文"
       url: https://arxiv.org/abs/2603.18577
-  - title: "MiniMax Cowork Team Fellowship"
+  - title: "腾讯云量化基础设施资助"
     featured_center: true
+    dark_art: true
+    subtitle: "低延迟亚太交易骨干网"
+    description: "一项支撑延迟敏感的量化交易与 Agent 工作负载的云基础设施资助——香港 / 新加坡低延迟节点，经腾讯 CCN 私有骨干网而非公网互联。"
+    image: /assets/images/projects/tencent-cloud-quant.svg
+    badges:
+      - "腾讯云国际"
+      - "1000 美金云算力额度"
+      - "低延迟亚太 · CCN 骨干网"
+    primary:
+      label: "项目展示"
+      url: /showcase.html#projects
+    secondary:
+      label: "腾讯云"
+      url: https://www.tencentcloud.com/
+  - title: "MiniMax Cowork Team Fellowship"
+    dark_art: true
     subtitle: "医疗大模型开发与临床可验证 Agent 工作流"
     description: "将 MiniMax 长上下文、多模态与 Agent 能力连接到医疗大模型开发、数据飞轮和可验证决策路径。"
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
@@ -134,7 +156,7 @@ education:
 experience:
 - name: 字节跳动（新加坡）
   logo: /assets/images/badges/ByteDance.svg
-  position: 多模态 Agent 强化学习 研发实习生
+  position: Agentic 后训练 研发实习生
   dept: "V-FIPO：面向 RLVR 的未来折扣视觉信用分配（一作 ICLR 2026 在投）；直播审核多模态 Agent；轨迹与偏好数据体系"
   date: 2026年6月 - 2026年11月
 
@@ -162,6 +184,8 @@ experience:
 
 awards:
 - name: "腾讯光子工作室群「青云计划」入选（精英科研人才计划）"
+  date: 2026
+- name: "腾讯云量化基础设施资助 —— 1000 美金云算力额度，用于低延迟量化交易基础设施"
   date: 2026
 - name: MiniMax Cowork Team Fellowship，4500 美金算力支持
   date: 2026

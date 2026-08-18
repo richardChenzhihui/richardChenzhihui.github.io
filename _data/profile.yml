@@ -37,9 +37,19 @@ hero_kicker: >-
   LLM Post-Training & Agentic AI Research
 
 hero_summary: >-
-  I work on post-training for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; and build multimodal agent systems end to end, from RL data engines to open-source agent harnesses. Now a Multimodal Agent RL research intern at ByteDance (Singapore); open to LLM research internship opportunities.
+  I work on post-training for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; and build multimodal agent systems end to end, from RL data engines to open-source agent harnesses. Currently an Agentic Post-Training research intern at ByteDance (Singapore), after building speech foundation-model pre-training data for StepAudio2.5 at StepFun; open to LLM research internship opportunities.
+
+hero_proof:
+  - logo: /assets/images/badges/ByteDance.svg
+    text: "Agentic Post-Training @ ByteDance (Singapore) — V-FIPO future-discounted visual credit assignment, first-author ICLR 2026 under review"
+  - logo: /assets/images/badges/StepFun.png
+    text: "Speech Foundation Model @ StepFun (阶跃星辰) — StepAudio2.5 pre-training data governance for the ASR/TTS base model"
 
 homepage_metrics:
+  - value: "ByteDance + StepFun + Tencent"
+    value_zh: "字节 + 阶跃 + 腾讯"
+    label: "research internships & elite talent programs"
+    note: "Agentic Post-Training (ByteDance, ongoing) · Speech foundation model, StepAudio2.5 (StepFun) · Qingyun Program & Quant Infra Grant (Tencent)"
   - value: "3"
     value_zh: "3"
     label: "top-tier NLP main conference papers"
@@ -52,10 +62,6 @@ homepage_metrics:
     value_zh: "53★"
     label: "GitHub stars — open-source office agent"
     note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent · github.com/richardChenzhihui/OfficeBuddy"
-  - value: "ByteDance + Tencent + StepFun"
-    value_zh: "字节 + 腾讯 + 阶跃"
-    label: "research internships & elite talent programs"
-    note: "Multimodal Agent RL (ByteDance, ongoing) · Qingyun Program, Tencent Photon (青云计划) · StepAudio2.5 speech data (StepFun)"
 
 impact_areas:
   - label: "Post-Training & Alignment"
@@ -86,8 +92,24 @@ featured_work:
     secondary:
       label: "Paper"
       url: https://arxiv.org/abs/2603.18577
-  - title: "MiniMax Cowork Team Fellowship"
+  - title: "Tencent Cloud Quant Infrastructure Grant"
     featured_center: true
+    dark_art: true
+    subtitle: "Low-latency APAC trading backbone"
+    description: "A cloud infrastructure grant supporting latency-sensitive quantitative trading and agent workloads — low-latency Hong Kong / Singapore nodes interconnected over Tencent's CCN private backbone instead of the public internet."
+    image: /assets/images/projects/tencent-cloud-quant.svg
+    badges:
+      - "Tencent Cloud International"
+      - "USD 1,000 cloud credits"
+      - "Low-Latency APAC · CCN Backbone"
+    primary:
+      label: "Showcase"
+      url: /showcase.html#projects
+    secondary:
+      label: "Tencent Cloud"
+      url: https://www.tencentcloud.com/
+  - title: "MiniMax Cowork Team Fellowship"
+    dark_art: true
     subtitle: "Medical foundation model development and clinically verifiable Agent workflows"
     description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with medical foundation model development, data flywheels, and verifiable decision paths."
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
@@ -138,7 +160,7 @@ education:
 experience:
 - name: ByteDance (Singapore)
   logo: /assets/images/badges/ByteDance.svg
-  position: Multimodal Agent RL Research Intern
+  position: Agentic Post-Training Research Intern
   dept: "V-FIPO: future-discounted visual credit assignment for RLVR (first-author ICLR 2026 submission); livestream-moderation multimodal agent; trajectory & preference data systems"
   date: Jun. 2026 - Nov. 2026
 
@@ -166,6 +188,8 @@ experience:
 
 awards:
 - name: "Qingyun Program (青云计划) — Tencent LightSpeed Studios (Photon), elite research talent selection"
+  date: 2026
+- name: "Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits for low-latency quantitative trading infrastructure"
   date: 2026
 - name: MiniMax Cowork Team Fellowship, USD 4,500 compute grant
   date: 2026

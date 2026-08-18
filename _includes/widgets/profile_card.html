@@ -42,9 +42,11 @@
                 {% if site.data.profile.hero_proof %}
                 <div class="home-hero-proof">
                     {% for item in site.data.profile.hero_proof %}
+                    {% assign item_zh = site.data.profile_zh.hero_proof[forloop.index0] %}
                     <div class="home-hero-highlight">
-                        <span class="lang-en">{{ item }}</span>
-                        <span class="lang-zh d-none">{{ site.data.profile_zh.hero_proof[forloop.index0] }}</span>
+                        {% if item.logo %}<img class="home-hero-highlight-logo" src="{{ item.logo | relative_url }}" alt="" aria-hidden="true">{% endif %}
+                        <span class="lang-en">{{ item.text }}</span>
+                        <span class="lang-zh d-none">{{ item_zh.text }}</span>
                     </div>
                     {% endfor %}
                 </div>

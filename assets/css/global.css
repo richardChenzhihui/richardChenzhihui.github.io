@@ -785,6 +785,8 @@ div.lazy {
 
 .home-hero-highlight {
     position: relative;
+    display: flex;
+    align-items: center;
     padding: 0.95rem 1.2rem 0.95rem 1.15rem;
     border: 1px solid #bae6fd;
     border-left: 3px solid #0ea5e9;
@@ -796,6 +798,15 @@ div.lazy {
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.01em;
+}
+
+.home-hero-highlight-logo {
+    flex-shrink: 0;
+    height: 1.45em;
+    width: auto;
+    max-width: 3.4rem;
+    margin-right: 0.7rem;
+    object-fit: contain;
 }
 
 .home-hero-highlight:nth-child(2) {
@@ -1108,8 +1119,8 @@ div.lazy {
     font-size: 1.32rem;
 }
 
-/* Wide text-heavy artwork (e.g. the MiniMax banner) must not be cover-cropped */
-.home-feature-card--spotlight .home-feature-image {
+/* Wide text-heavy artwork (e.g. the MiniMax / Tencent Cloud banners) must not be cover-cropped */
+.home-feature-card--dark-art .home-feature-image {
     object-fit: contain;
     background: #10131c;
 }
