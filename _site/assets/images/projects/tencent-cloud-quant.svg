@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="'Space Grotesk','Inter','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1224"/>
+      <stop offset="1" stop-color="#060a13"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.55" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <g opacity="0.08" stroke="#94a3b8" stroke-width="1" fill="none">
+    <path d="M0 44H600M0 88H600M0 132H600M0 176H600M0 220H600M0 264H600M0 308H600M0 352H600"/>
+    <path d="M44 0V400M88 0V400M132 0V400M176 0V400M220 0V400M264 0V400M308 0V400M352 0V400M396 0V400M440 0V400M484 0V400M528 0V400M572 0V400"/>
+  </g>
+  <g opacity="0.16" fill="none">
+    <path d="M356 150 L392 118 L428 138 L464 92 L500 106 L536 62" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="392" cy="118" r="4" fill="#38bdf8"/>
+    <circle cx="464" cy="92" r="4" fill="#818cf8"/>
+    <circle cx="536" cy="62" r="4" fill="#c084fc"/>
+  </g>
+  <g opacity="0.13" stroke="url(#accent)" stroke-width="2" fill="none">
+    <circle cx="505" cy="72" r="118"/>
+    <circle cx="505" cy="72" r="78"/>
+  </g>
+  <rect x="0" y="0" width="600" height="3" fill="url(#accent)" opacity="0.85"/>
+  <text x="48" y="112" fill="#7dd3fc" font-size="19" font-weight="700" letter-spacing="2.6" font-family="'JetBrains Mono',Menlo,monospace">LOW-LATENCY &#183; APAC BACKBONE</text>
+  <text x="48" y="180" fill="#f6f9fe" font-size="50" font-weight="700">Quant Infra Grant</text>
+  <text x="48" y="222" fill="#94a3b8" font-size="20" font-weight="500">Tencent Cloud &#183; HK / SG nodes &#183; CCN private backbone</text>
+  <g font-size="17" font-weight="600" font-family="'JetBrains Mono',Menlo,monospace">
+    <rect x="48" y="282" width="150" height="40" rx="20" fill="#38bdf8" opacity="0.13"/>
+    <rect x="48" y="282" width="150" height="40" rx="20" fill="none" stroke="#38bdf8" opacity="0.45"/>
+    <text x="123" y="308" fill="#7dd3fc" text-anchor="middle">USD 1,000</text>
+    <rect x="212" y="282" width="168" height="40" rx="20" fill="#818cf8" opacity="0.13"/>
+    <rect x="212" y="282" width="168" height="40" rx="20" fill="none" stroke="#818cf8" opacity="0.45"/>
+    <text x="296" y="308" fill="#a5b4fc" text-anchor="middle">CCN Backbone</text>
+    <rect x="394" y="282" width="178" height="40" rx="20" fill="#34d399" opacity="0.13"/>
+    <rect x="394" y="282" width="178" height="40" rx="20" fill="none" stroke="#34d399" opacity="0.45"/>
+    <text x="483" y="308" fill="#6ee7b7" text-anchor="middle">SOC 2 &#183; ISO 27001</text>
+  </g>
+</svg>
