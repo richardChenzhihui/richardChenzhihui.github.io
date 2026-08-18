@@ -1002,6 +1002,11 @@ div.lazy {
     -webkit-text-fill-color: transparent;
 }
 
+.home-metric-value--compact {
+    font-size: clamp(1.15rem, 1.7vw, 1.42rem);
+    line-height: 1.35;
+}
+
 .home-metric-label {
     margin-top: 0.65rem;
     font-size: 0.96rem;
@@ -1012,6 +1017,7 @@ div.lazy {
 
 .home-metric-note {
     margin-top: 0.4rem;
+    overflow-wrap: anywhere;
     font-size: 0.86rem;
     color: var(--muted);
     line-height: 1.6;

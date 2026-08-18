@@ -19,25 +19,18 @@ linkedin: richard-chen~
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    我目前是新加坡国立大学人工智能博士生，导师为
+    新加坡国立大学人工智能博士生，导师为
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
-    我的研究聚焦（多模态）大模型后训练：奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测，以及能在真实场景落地的 Agent 工程。医疗是我的主要应用场景，而非研究边界。
   </p>
   <p>
-    <strong>研究：</strong>ACL 2026、EMNLP 2026 与 EMNLP 2025 主会议论文；ICLR 2026 一作在投；Hugging Face 累计 150K+ 下载（Med-Banana-80K 100K+，MedForge-90K 50K+）。
-  </p>
-  <p>
-    <strong>开源：</strong><a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank">OfficeBuddy</a>——GitHub 53★ 开源 Word/Excel Agent：每步编辑经真实 Microsoft Office 渲染，并由独立视觉验证器审查。
-  </p>
-  <p>
-    <strong>学术服务：</strong>ACL / NeurIPS / IJCAI 等顶会审稿人，累计 40+ 篇；ACL 2026 Session Chair。
+    研究聚焦（多模态）大模型后训练，以及能在真实场景落地的 Agent 工程。医疗是我的主要应用场景，而非研究边界。
   </p>
 
 hero_kicker: >-
   大模型后训练与 Agentic AI 研究
 
 hero_summary: >-
-  我从事大模型后训练研究——奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测——并端到端构建多模态 Agent 系统：从强化学习数据引擎到开源 Agent 框架。现于字节跳动（新加坡）任 Agentic 后训练研发实习生，此前在阶跃星辰负责 StepAudio2.5 语音基座模型的预训练数据治理；欢迎大模型研发实习机会。
+  多模态大模型后训练——奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测——并端到端构建 Agent 系统。欢迎大模型研发实习机会。
 
 hero_proof:
   - logo: /assets/images/badges/ByteDance.svg
@@ -46,37 +39,38 @@ hero_proof:
     text: "阶跃星辰 · 语音基座模型 —— StepAudio2.5 基座预训练数据治理（ASR/TTS）"
 
 homepage_metrics:
-  - value: "字节 + 阶跃 + 腾讯"
+  - value: "字节 · 阶跃 · 腾讯"
+    compact: true
     label: "研发实习与顶尖人才计划"
-    note: "Agentic 后训练（字节，在职）· 语音基座模型 StepAudio2.5（阶跃）· 腾讯青云计划与量化基础设施资助"
+    note: "Agentic 后训练（字节）· 语音基座模型 StepAudio2.5（阶跃）· 腾讯青云计划与量化基础设施资助"
   - value: "3"
     label: "篇顶级 NLP 主会议论文"
-    note: "ACL 2026、EMNLP 2026 与 EMNLP 2025 主会议 · 另有 1 篇一作在投（ICLR 2026）"
+    note: "ACL 2026、EMNLP 2026 与 EMNLP 2025 主会议 · ICLR 2026 一作在投"
   - value: "88K+"
     label: "带偏好标注的 Agent 编辑轨迹"
-    note: "Med-Banana（EMNLP 2026 主会议）：从成败轨迹构建 Agentic 后训练信号，可直接用于 DPO · 数据集 HF 100K+ 下载"
+    note: "Med-Banana（EMNLP 2026 主会议）：从成败轨迹构建可直接用于 DPO 的信号 · HF 100K+ 下载"
   - value: "53★"
     label: "GitHub 星标 — 开源办公 Agent"
-    note: "OfficeBuddy：Vision-in-the-Loop 开源 Word/Excel Agent · github.com/richardChenzhihui/OfficeBuddy"
+    note: "OfficeBuddy：Vision-in-the-Loop 开源 Word/Excel Agent"
 
 impact_areas:
   - label: "后训练与对齐"
     title: "多模态大模型的奖励设计与 RL 闭环"
-    description: "V-FIPO 将 RLVR 的 token 级信用分配从「即时视觉依赖」扩展到「未来折扣视觉锚定」；Forgery-aware GSPO 以视觉证据约束模型推理；Med-Banana（EMNLP 2026 主会议）将成败编辑轨迹转化为可直接用于 DPO 的 Agentic 后训练信号。"
+    description: "V-FIPO 将 RLVR 信用分配从「即时视觉依赖」扩展到「未来折扣视觉锚定」；Med-Banana 将成败轨迹转化为可直接用于 DPO 的后训练信号。"
     proof: "ACL 2026 主会议 · EMNLP 2026 主会议 · V-FIPO（ICLR 2026 在投）"
   - label: "验证器与评测设计"
     title: "领域偏移下的证据驱动评测"
-    description: "DivScore 展示零样本验证器设计：一种带理论保证的归一化熵评分器，无需领域特定标注即可泛化至医疗与法律领域。LLM-as-Judge 评分准则驱动 Med-Banana 的质量控制。"
+    description: "DivScore 是一个零样本验证器：带理论保证的归一化熵评分器，无需领域特定标注即可泛化至医疗与法律领域。"
     proof: "EMNLP 2025 主会议 · +14.4% AUROC · +64.0% 召回"
   - label: "Agent 与系统"
     title: "Vision-in-the-Loop 的 Agent 框架"
-    description: "OfficeBuddy 将视觉引入文档编辑闭环：计划 → 执行 → 真实 Word/Excel 渲染 → 独立视觉验证器 → 定向修复，并内置预算化重试、快照/撤销与提示注入防御；另有 LangChain 交易 Agent 与量化推理部署工作。"
+    description: "OfficeBuddy 将视觉引入编辑闭环：计划 → 执行 → 真实 Word/Excel 渲染 → 独立视觉验证器 → 定向修复，内置预算化重试与提示注入防御。"
     proof: "GitHub 53★ · Vision-in-the-Loop"
 
 featured_work:
   - title: "MedForge"
     subtitle: "可解释医学深度伪造检测"
-    description: "通过 MedForge-90K 基准、专家对齐推理和先定位再分析检测器，对医学影像伪造进行定位、判别和解释。"
+    description: "通过定位证据、专家对齐推理与先定位再分析检测器，识别医学上看似合理的影像伪造。"
     image: /assets/images/publications/medforge/fig1.png
     badges:
       - "ACL 2026 主会议"
@@ -92,7 +86,7 @@ featured_work:
     featured_center: true
     dark_art: true
     subtitle: "低延迟亚太交易骨干网"
-    description: "一项支撑延迟敏感的量化交易与 Agent 工作负载的云基础设施资助——香港 / 新加坡低延迟节点，经腾讯 CCN 私有骨干网而非公网互联。"
+    description: "香港 / 新加坡低延迟节点，经腾讯 CCN 私有骨干网而非公网互联——支撑延迟敏感的交易与 Agent 工作负载。"
     image: /assets/images/projects/tencent-cloud-quant.svg
     badges:
       - "腾讯云国际"
@@ -107,7 +101,7 @@ featured_work:
   - title: "MiniMax Cowork Team Fellowship"
     dark_art: true
     subtitle: "医疗大模型开发与临床可验证 Agent 工作流"
-    description: "将 MiniMax 长上下文、多模态与 Agent 能力连接到医疗大模型开发、数据飞轮和可验证决策路径。"
+    description: "将长上下文、多模态与 Agent 能力连接到医疗大模型开发与可验证决策路径的算力支持项目。"
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
     badges:
       - "MiniMax Cowork Team"
@@ -121,7 +115,7 @@ featured_work:
       url: https://www.minimaxi.com/
   - title: "OfficeBuddy"
     subtitle: "Vision-in-the-Loop 开源办公 Agent"
-    description: "GitHub 开源项目（53★）：用自然语言编辑 Word/Excel，每步编辑经真实 Microsoft Office 重新渲染，交给独立多模态验证器审查后才继续，配合先计划后执行、预算化重试、快照/撤销与提示注入防御。"
+    description: "开源 Word/Excel Agent（53★）：每步编辑经真实 Microsoft Office 重新渲染，并由独立视觉验证器审查后才继续。"
     image: /assets/images/projects/officebuddy.svg
     badges:
       - "GitHub 53★ 开源项目"
@@ -197,51 +191,28 @@ awards:
   date: 2021
 
 academic_service:
-- name: "累计完成 40+ 篇顶会顶刊审稿"
+- name: "累计 40+ 篇审稿 —— ACL、NeurIPS、IJCAI · IEEE TAFFC 与 TCE · ACM TIST"
   date: 2024 - 2026
 - name: "ACM CIKM 2026 · LASS 2026 研讨会 程序委员会（PC）委员（罗马）"
   date: 2026
 - name: ACL 2026 主会议 Session Chair
   date: 2026
-- name: NeurIPS 2026 审稿人
-  date: 2026
-- name: IJCAI 2025 审稿人
-  date: 2025
-- name: IEEE Transactions on Affective Computing 审稿人
-  date: 2026
-- name: IEEE Transactions on Consumer Electronics 审稿人
-  date: 2026
-- name: ACM TIST 审稿人
-  date: 2026
-- name: ACL 2026 审稿人
-  date: 2026
 
 skills:
   - group: "后训练与对齐"
     items:
-      - "RLHF / RLVR 流程设计"
-      - "DPO 与奖励建模 / 奖励设计"
+      - "RLHF / RLVR 流程设计 · DPO 与奖励建模"
       - "偏好与轨迹数据、数据飞轮"
-      - "验证器与评测闭环设计"
-      - "SFT 课程（PyTorch / HuggingFace）"
+      - "验证器与评测闭环设计 · SFT 课程"
   - group: "Agent 与编排"
     items:
-      - "ReAct Agent 框架（多步、多文档）"
-      - "Vision-in-the-Loop 视觉验证（独立视觉验证器）"
-      - "LangChain 编排与工具调用"
-      - "结构化输出、预算化重试与失败归因"
+      - "ReAct Agent 框架 · LangChain 编排与工具调用"
+      - "Vision-in-the-Loop 视觉验证、预算化重试与失败归因"
       - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT 接入"
-  - group: "推理服务与系统"
+  - group: "推理服务与基础工具链"
     items:
-      - "llama.cpp · GGUF 量化"
-      - "vLLM / SGLang"
-      - "Docker · FastAPI 部署"
-      - "Whisper 部署（Large-v2）"
-  - group: "基础工具链"
-    items:
-      - "Python · PyTorch · HuggingFace Transformers"
-      - "R · C++ · MATLAB · MySQL"
-      - "Linux · Git"
+      - "vLLM / SGLang · llama.cpp GGUF 量化 · Docker / FastAPI"
+      - "Python · PyTorch · HuggingFace Transformers · Linux · Git"
       - "英语（TOEFL 106, GRE 320）· 普通话 · 粤语"
 
 github_username: richardChenzhihui

@@ -19,25 +19,18 @@ linkedin: richard-chen~
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a PhD student in Artificial Intelligence at the National University of Singapore, supervised by
+    PhD student in Artificial Intelligence at the National University of Singapore, supervised by
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
-    My research centers on post-training for large (multimodal) language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; and agent harnesses that hold up outside the lab. Healthcare is my primary application domain, not the boundary of my research.
   </p>
   <p>
-    <strong>Research:</strong> ACL 2026, EMNLP 2026 &amp; EMNLP 2025 main-conference papers; ICLR 2026 first-author under review; 150K+ Hugging Face downloads (Med-Banana-80K 100K+, MedForge-90K 50K+).
-  </p>
-  <p>
-    <strong>Open source:</strong> <a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank">OfficeBuddy</a> &mdash; a 53&#9733; open-source Word/Excel agent that re-renders every edit through real Microsoft Office and audits it with an independent visual verifier.
-  </p>
-  <p>
-    <strong>Academic service:</strong> Reviewer for top conferences (ACL / NeurIPS / IJCAI, 40+ reviews); ACL 2026 Session Chair.
+    I work on post-training for large (multimodal) language models and on agent harnesses that hold up outside the lab. Healthcare is my primary application domain, not the boundary of my research.
   </p>
 
 hero_kicker: >-
   LLM Post-Training & Agentic AI Research
 
 hero_summary: >-
-  I work on post-training for large language models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; and build multimodal agent systems end to end, from RL data engines to open-source agent harnesses. Currently an Agentic Post-Training research intern at ByteDance (Singapore), after building speech foundation-model pre-training data for StepAudio2.5 at StepFun; open to LLM research internship opportunities.
+  Post-training for large multimodal models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; plus agent systems built end to end. Open to LLM research internship opportunities.
 
 hero_proof:
   - logo: /assets/images/badges/ByteDance.svg
@@ -46,41 +39,42 @@ hero_proof:
     text: "Speech Foundation Model @ StepFun (阶跃星辰) — StepAudio2.5 pre-training data governance for the ASR/TTS base model"
 
 homepage_metrics:
-  - value: "ByteDance + StepFun + Tencent"
-    value_zh: "字节 + 阶跃 + 腾讯"
+  - value: "ByteDance · StepFun · Tencent"
+    value_zh: "字节 · 阶跃 · 腾讯"
+    compact: true
     label: "research internships & elite talent programs"
-    note: "Agentic Post-Training (ByteDance, ongoing) · Speech foundation model, StepAudio2.5 (StepFun) · Qingyun Program & Quant Infra Grant (Tencent)"
+    note: "Agentic Post-Training (ByteDance) · StepAudio2.5 (StepFun) · Qingyun Program & Quant Infra Grant (Tencent)"
   - value: "3"
     value_zh: "3"
     label: "top-tier NLP main conference papers"
-    note: "ACL 2026, EMNLP 2026 & EMNLP 2025 Main · 1 more first-author paper under review (ICLR 2026)"
+    note: "ACL 2026, EMNLP 2026 & EMNLP 2025 Main · ICLR 2026 first-author under review"
   - value: "88K+"
     value_zh: "88K+"
     label: "agentic editing trajectories with preference labels"
-    note: "Med-Banana (EMNLP 2026 Main): agentic post-training signal from success & failure trajectories, DPO-ready · dataset 100K+ HF downloads"
+    note: "Med-Banana (EMNLP 2026 Main): DPO-ready signal from success & failure trajectories · 100K+ HF downloads"
   - value: "53★"
     value_zh: "53★"
     label: "GitHub stars — open-source office agent"
-    note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent · github.com/richardChenzhihui/OfficeBuddy"
+    note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent"
 
 impact_areas:
   - label: "Post-Training & Alignment"
     title: "Reward design and RL loops for multimodal LLMs"
-    description: "V-FIPO extends token-level credit assignment in RLVR from instant visual dependence to future-discounted visual grounding; Forgery-aware GSPO grounds reasoning on visual evidence. Med-Banana (EMNLP 2026 Main) turns success-and-failure editing trajectories into DPO-ready agentic post-training signal."
+    description: "V-FIPO extends RLVR credit assignment from instant visual dependence to future-discounted visual grounding; Med-Banana turns success-and-failure trajectories into DPO-ready post-training signal."
     proof: "ACL 2026 Main · EMNLP 2026 Main · V-FIPO (ICLR 2026 sub)"
   - label: "Verifier & Eval Design"
     title: "Evidence-grounded evaluation under domain shift"
-    description: "DivScore demonstrates zero-shot verifier design: a normalized-entropy scorer with theoretical guarantees that generalizes across medical and legal domains without domain-specific labels. LLM-as-Judge rubrics drive Med-Banana's quality control."
+    description: "DivScore is a zero-shot verifier: a normalized-entropy scorer with theoretical guarantees that generalizes across medical and legal domains without domain-specific labels."
     proof: "EMNLP 2025 Main · +14.4% AUROC · +64.0% recall"
   - label: "Agents & Systems"
     title: "Agent harnesses with vision in the loop"
-    description: "OfficeBuddy puts vision in the loop for document editing: plan → act → real Word/Excel render → independent visual verifier → targeted repair, with budgeted retries, snapshots/undo, and prompt-injection defense. Plus a LangChain trading agent and quantized serving work."
+    description: "OfficeBuddy puts vision in the loop: plan → act → real Word/Excel render → independent visual verifier → targeted repair, with budgeted retries and prompt-injection defense."
     proof: "53★ on GitHub · Vision-in-the-Loop"
 
 featured_work:
   - title: "MedForge"
     subtitle: "Interpretable medical deepfake detection"
-    description: "A data-and-model framework that detects medically plausible image forgeries through localized evidence, expert-aligned reasoning, and a Localize-then-Analyze detector."
+    description: "Detects medically plausible image forgeries through localized evidence, expert-aligned reasoning, and a Localize-then-Analyze detector."
     image: /assets/images/publications/medforge/fig1.png
     badges:
       - "ACL 2026 Main"
@@ -96,7 +90,7 @@ featured_work:
     featured_center: true
     dark_art: true
     subtitle: "Low-latency APAC trading backbone"
-    description: "A cloud infrastructure grant supporting latency-sensitive quantitative trading and agent workloads — low-latency Hong Kong / Singapore nodes interconnected over Tencent's CCN private backbone instead of the public internet."
+    description: "Low-latency Hong Kong / Singapore nodes interconnected over Tencent's CCN private backbone instead of the public internet — for latency-sensitive trading and agent workloads."
     image: /assets/images/projects/tencent-cloud-quant.svg
     badges:
       - "Tencent Cloud International"
@@ -111,7 +105,7 @@ featured_work:
   - title: "MiniMax Cowork Team Fellowship"
     dark_art: true
     subtitle: "Medical foundation model development and clinically verifiable Agent workflows"
-    description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with medical foundation model development, data flywheels, and verifiable decision paths."
+    description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with medical foundation model development and verifiable decision paths."
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
     badges:
       - "MiniMax Cowork Team"
@@ -125,7 +119,7 @@ featured_work:
       url: https://www.minimaxi.com/
   - title: "OfficeBuddy"
     subtitle: "Vision-in-the-Loop open-source office agent"
-    description: "An open-source project on GitHub (53★): the agent edits Word/Excel from natural language, re-renders every edit through real Microsoft Office, and lets an independent multimodal verifier audit the pages before the loop moves on — with plan-first execution, budgeted retries, snapshots/undo, and prompt-injection defense."
+    description: "Open-source Word/Excel agent (53★): every edit is re-rendered through real Microsoft Office and audited by an independent visual verifier before the loop moves on."
     image: /assets/images/projects/officebuddy.svg
     badges:
       - "53★ open source · GitHub"
@@ -201,51 +195,28 @@ awards:
   date: 2021
 
 academic_service:
-- name: "40+ completed reviews across top AI/NLP conferences & journals"
+- name: "40+ reviews — ACL, NeurIPS, IJCAI · IEEE TAFFC & TCE · ACM TIST"
   date: 2024 - 2026
 - name: "Program Committee, LASS 2026 Workshop @ ACM CIKM 2026 (Rome)"
   date: 2026
 - name: Session Chair, ACL 2026 Main
   date: 2026
-- name: Reviewer, NeurIPS 2026
-  date: 2026
-- name: Reviewer, IJCAI 2025
-  date: 2025
-- name: Reviewer, IEEE Transactions on Affective Computing
-  date: 2026
-- name: Reviewer, IEEE Transactions on Consumer Electronics
-  date: 2026
-- name: Reviewer, ACM TIST
-  date: 2026
-- name: Reviewer, ACL 2026
-  date: 2026
 
 skills:
   - group: "Post-Training & Alignment"
     items:
-      - "RLHF / RLVR pipeline design"
-      - "DPO and reward modeling / reward design"
+      - "RLHF / RLVR pipeline design · DPO & reward modeling"
       - "Preference & trajectory data, data flywheels"
-      - "Verifier and eval-loop design"
-      - "SFT curriculum (PyTorch / HuggingFace)"
+      - "Verifier and eval-loop design · SFT curriculum"
   - group: "Agents & Orchestration"
     items:
-      - "ReAct agent harness (multi-step, multi-doc)"
-      - "Vision-in-the-Loop verification (independent visual verifier)"
-      - "LangChain orchestration & tool-calling"
-      - "Structured output, budgeted retries & failure attribution"
+      - "ReAct agent harness · LangChain orchestration & tool-calling"
+      - "Vision-in-the-Loop verification, budgeted retries & failure attribution"
       - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT integration"
-  - group: "Serving & Systems"
+  - group: "Serving & Foundations"
     items:
-      - "llama.cpp · GGUF quantization"
-      - "vLLM / SGLang"
-      - "Docker · FastAPI serving"
-      - "Whisper deployment (Large-v2)"
-  - group: "Foundations"
-    items:
-      - "Python · PyTorch · HuggingFace Transformers"
-      - "R · C++ · MATLAB · MySQL"
-      - "Linux · Git"
+      - "vLLM / SGLang · llama.cpp GGUF quantization · Docker / FastAPI"
+      - "Python · PyTorch · HuggingFace Transformers · Linux · Git"
       - "English (TOEFL 106, GRE 320) · Mandarin · Cantonese"
 
 github_username: richardChenzhihui
