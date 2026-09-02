@@ -23,26 +23,30 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    研究聚焦（多模态）大模型后训练，以及能在真实场景落地的 Agent 工程。医疗是我的主要应用场景，而非研究边界。
+    研究聚焦 Coding Agent 与大模型的自进化（RSI, recursive self-improvement）：通过 Agentic 中期训练（mid-training）与后训练闭环，让模型从自己生成、并经真实执行验证的轨迹中持续改进，而不依赖持续的人工标注。
+  </p>
+  <p>
+    现于智谱（Z.ai）基础模型后训练团队实习，方向为 Coding Agent RSI 自进化；同时已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
   </p>
 
 hero_kicker: >-
-  大模型后训练与 Agentic AI 研究
+  Coding Agent · 模型自进化（RSI）· Agentic 中期训练与后训练
 
 hero_summary: >-
-  多模态大模型后训练——奖励设计、偏好对齐（DPO/RLHF/RLVR）、验证器闭环评测——并端到端构建 Agent 系统。欢迎大模型研发实习机会。
+  Coding Agent 与基座模型自进化——Agentic 中期训练（mid-training）与后训练、奖励与验证器设计、在自生成执行轨迹上做强化学习。现于智谱（Z.ai）基础模型后训练团队实习，方向为 Coding Agent RSI 自进化；并已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
 
 hero_proof:
+  - text: "智谱（Z.ai）· 基础模型后训练 —— Coding Agent RSI 自进化 · 在职"
+  - text: "阿里通义 Qwen 基座模型实习 —— 已获录用"
+  - text: "腾讯「青云计划」精英科研人才 —— 入选"
   - logo: /assets/images/badges/ByteDance.svg
     text: "字节跳动 · Agentic 后训练 —— Farsight，一作 ICLR 2026 在投"
-  - logo: /assets/images/badges/StepFun.png
-    text: "阶跃星辰 · 语音基座模型 —— StepAudio2.5 预训练数据治理"
 
 homepage_metrics:
-  - value: "字节 · 阶跃 · 腾讯"
+  - value: "智谱 · Qwen · 字节"
     compact: true
-    label: "研发实习与顶尖人才计划"
-    note: "Agentic 后训练（字节）· 语音基座模型 StepAudio2.5（阶跃）· 腾讯青云计划与量化基础设施资助"
+    label: "基座模型研发实习与顶尖人才计划"
+    note: "Coding Agent RSI 自进化（智谱，在职）· 阿里通义 Qwen 基座模型实习 · Agentic 后训练（字节）· 腾讯「青云计划」精英科研人才"
   - value: "3"
     label: "篇顶级 NLP 主会议论文"
     note: "ACL 2026、EMNLP 2026 与 EMNLP 2025 主会议 · ICLR 2026 一作在投"
@@ -54,18 +58,18 @@ homepage_metrics:
     note: "OfficeBuddy：Vision-in-the-Loop 开源 Word/Excel Agent"
 
 impact_areas:
-  - label: "后训练与对齐"
-    title: "多模态大模型的奖励设计与 RL 闭环"
-    description: "Farsight 将 RLVR 信用分配从「即时视觉依赖」扩展到「未来折扣视觉锚定」；Med-Banana 将成败轨迹转化为可直接用于 DPO 的后训练信号。"
-    proof: "ACL 2026 主会议 · EMNLP 2026 主会议 · Farsight（ICLR 2026 在投）"
-  - label: "验证器与评测设计"
-    title: "领域偏移下的证据驱动评测"
-    description: "DivScore 是一个零样本验证器：带理论保证的归一化熵评分器，无需领域特定标注即可泛化至医疗与法律领域。"
-    proof: "EMNLP 2025 主会议 · +14.4% AUROC · +64.0% 召回"
-  - label: "Agent 与系统"
-    title: "Vision-in-the-Loop 的 Agent 框架"
-    description: "OfficeBuddy 将视觉引入编辑闭环：计划 → 执行 → 真实 Word/Excel 渲染 → 独立视觉验证器 → 定向修复，内置预算化重试与提示注入防御。"
-    proof: "GitHub 53★ · Vision-in-the-Loop"
+  - label: "Coding Agent 与自进化"
+    title: "面向 Coding Agent 的模型自进化（RSI）"
+    description: "基础模型后训练的自进化闭环：Agent 自行提出、执行并验证候选方案，经真实执行校验的轨迹成为下一轮训练信号——模型的提升不再等待新的人工标注。"
+    proof: "智谱（Z.ai）—— Coding Agent RSI · 在职"
+  - label: "Agentic 中期训练与后训练"
+    title: "从 mid-training 到轨迹上的强化学习"
+    description: "Agentic 中期训练先注入工具调用与长程执行能力，后训练再以奖励设计、偏好对齐（DPO/RLHF）与 RLVR 加以塑形。Farsight 将 RLVR 的信用分配从即时依赖扩展到未来折扣锚定。"
+    proof: "Farsight（ICLR 2026 在投）· ACL 2026 主会议 · EMNLP 2026 主会议"
+  - label: "验证器与 Agent 系统"
+    title: "自进化的上限由验证器决定"
+    description: "自进化 Agent 的质量取决于给它打分的验证器。DivScore 是带理论保证的零样本验证器；OfficeBuddy 将独立验证器放进闭环：计划 → 执行 → 真实渲染 → 审查 → 定向修复。"
+    proof: "EMNLP 2025 主会议 · +14.4% AUROC · GitHub 53★"
 
 featured_work:
   - title: "MedForge"
@@ -136,7 +140,7 @@ education:
 - name: 新加坡国立大学
   logo: /assets/images/badges/NUS.png
   position: 人工智能博士
-  dept: "多模态大模型后训练 · 医疗 AI · 可信 AI"
+  dept: "Coding Agent 与模型自进化（RSI）· Agentic 中期训练与后训练"
   date: 2025年1月 - 至今
 - name: 香港大学
   logo: /assets/images/badges/HKU.jpg
@@ -148,16 +152,26 @@ education:
   date: 2018年9月 - 2022年5月
 
 experience:
-- name: 字节跳动（新加坡）
-  logo: /assets/images/badges/ByteDance.svg
-  position: Agentic 后训练 研发实习生
-  dept: "Farsight —— 面向 RLVR 的未来折扣视觉信用分配 · 轨迹与偏好数据体系"
-  date: 2026年6月 - 2026年11月
+- name: 智谱（Z.ai）
+  position: 基础模型后训练 研发实习生
+  dept: "Coding Agent RSI 自进化 —— 从自生成、经执行验证的轨迹中持续改进 · Agentic 中期训练与后训练"
+  date: 2026年9月 - 至今
+
+- name: 阿里通义实验室 · Qwen
+  position: "Qwen 基座模型 研发实习生 —— 已获录用"
+  dept: "Qwen 基座模型团队 · Agentic 中期训练与后训练"
+  date: 2026
 
 - name: 腾讯 · 光子工作室群
   position: "「青云计划」精英科研人才 入选"
   dept: "精英科研人才计划 · 游戏 AI × 大模型 Agent 方向"
   date: 2026
+
+- name: 字节跳动（新加坡）
+  logo: /assets/images/badges/ByteDance.svg
+  position: Agentic 后训练 研发实习生
+  dept: "Farsight —— 面向 RLVR 的未来折扣视觉信用分配 · 轨迹与偏好数据体系"
+  date: 2026年4月 - 2026年8月
 
 - name: 阶跃星辰（StepFun）
   logo: /assets/images/badges/StepFun.png
@@ -177,6 +191,8 @@ experience:
   date: 2024年2月 - 2024年4月
 
 awards:
+- name: "阿里通义实验室 Qwen 基座模型研发实习 已获录用"
+  date: 2026
 - name: "腾讯光子「青云计划」精英科研人才 入选"
   date: 2026
 - name: "腾讯云量化基础设施资助 —— 1000 美金云算力额度"
@@ -199,13 +215,15 @@ academic_service:
   date: 2026
 
 skills:
-  - group: "后训练与对齐"
+  - group: "Agentic 中期训练与后训练"
     items:
-      - "RLHF / RLVR 流程设计 · DPO 与奖励建模"
-      - "偏好与轨迹数据、数据飞轮"
+      - "Agentic mid-training · RLHF / RLVR 流程设计 · DPO 与奖励建模"
+      - "自生成轨迹数据、执行验证过滤、数据飞轮"
       - "验证器与评测闭环设计 · SFT 课程"
-  - group: "Agent 与编排"
+  - group: "Coding Agent 与自进化"
     items:
+      - "Coding Agent 框架 · 沙箱执行、单元测试与编译反馈作为奖励信号"
+      - "自进化闭环：提出 → 执行 → 验证 → 再训练"
       - "ReAct Agent 框架 · LangChain 编排与工具调用"
       - "Vision-in-the-Loop 视觉验证、预算化重试与失败归因"
       - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT 接入"

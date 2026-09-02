@@ -23,27 +23,31 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
   </p>
   <p>
-    I work on post-training for large (multimodal) language models and on agent harnesses that hold up outside the lab. Healthcare is my primary application domain, not the boundary of my research.
+    My research is on coding agents and on recursive self-improvement (RSI) for large language models: agentic mid-training and post-training loops in which a model generates, verifies and learns from its own execution trajectories instead of waiting for fresh human labels.
+  </p>
+  <p>
+    I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), working on Coding Agent RSI. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
   </p>
 
 hero_kicker: >-
-  LLM Post-Training & Agentic AI Research
+  Coding Agents &middot; Model Self-Improvement (RSI) &middot; Agentic Mid- & Post-Training
 
 hero_summary: >-
-  Post-training for large multimodal models &mdash; reward design, preference alignment (DPO/RLHF/RLVR), verifier-in-the-loop evaluation &mdash; plus agent systems built end to end. Open to LLM research internship opportunities.
+  Coding agents and recursive self-improvement for foundation models &mdash; agentic mid-training and post-training, reward and verifier design, RL on self-generated execution trajectories. Currently a foundation-model post-training research intern at Zhipu AI (Z.ai) on Coding Agent RSI; also selected for the Qwen foundation-model internship and Tencent's Qingyun Elite Research Talent Program.
 
 hero_proof:
+  - text: "Foundation-Model Post-Training @ Zhipu AI (Z.ai) — Coding Agent RSI self-improvement · current"
+  - text: "Qwen Foundation Model Internship (Alibaba Tongyi) — selected"
+  - text: "Qingyun Elite Research Talent Program (青云计划) @ Tencent — selected"
   - logo: /assets/images/badges/ByteDance.svg
     text: "Agentic Post-Training @ ByteDance — Farsight, first-author ICLR 2026 under review"
-  - logo: /assets/images/badges/StepFun.png
-    text: "Speech Foundation Model @ StepFun — StepAudio2.5 pre-training data governance"
 
 homepage_metrics:
-  - value: "ByteDance · StepFun · Tencent"
-    value_zh: "字节 · 阶跃 · 腾讯"
+  - value: "Zhipu · Qwen · ByteDance"
+    value_zh: "智谱 · Qwen · 字节"
     compact: true
-    label: "research internships & elite talent programs"
-    note: "Agentic Post-Training (ByteDance) · StepAudio2.5 (StepFun) · Qingyun Program & Quant Infra Grant (Tencent)"
+    label: "foundation-model internships & elite talent programs"
+    note: "Coding Agent RSI @ Zhipu AI (current) · Qwen foundation-model internship (Alibaba Tongyi) · Agentic post-training @ ByteDance · Tencent Qingyun Elite Research Talent Program"
   - value: "3"
     value_zh: "3"
     label: "top-tier NLP main conference papers"
@@ -58,18 +62,18 @@ homepage_metrics:
     note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent"
 
 impact_areas:
-  - label: "Post-Training & Alignment"
-    title: "Reward design and RL loops for multimodal LLMs"
-    description: "Farsight extends RLVR credit assignment from instant visual dependence to future-discounted visual grounding; Med-Banana turns success-and-failure trajectories into DPO-ready post-training signal."
-    proof: "ACL 2026 Main · EMNLP 2026 Main · Farsight (ICLR 2026 sub)"
-  - label: "Verifier & Eval Design"
-    title: "Evidence-grounded evaluation under domain shift"
-    description: "DivScore is a zero-shot verifier: a normalized-entropy scorer with theoretical guarantees that generalizes across medical and legal domains without domain-specific labels."
-    proof: "EMNLP 2025 Main · +14.4% AUROC · +64.0% recall"
-  - label: "Agents & Systems"
-    title: "Agent harnesses with vision in the loop"
-    description: "OfficeBuddy puts vision in the loop: plan → act → real Word/Excel render → independent visual verifier → targeted repair, with budgeted retries and prompt-injection defense."
-    proof: "53★ on GitHub · Vision-in-the-Loop"
+  - label: "Coding Agents & RSI"
+    title: "Recursive self-improvement for coding agents"
+    description: "Foundation-model post-training in which the coding agent improves from its own execution: it proposes, runs and verifies candidate solutions, and the resulting execution-grounded trajectories become the next round of training signal — improvement without waiting for fresh human labels."
+    proof: "Zhipu AI (Z.ai) — Coding Agent RSI · current"
+  - label: "Agentic Mid- & Post-Training"
+    title: "From mid-training to RL on agent trajectories"
+    description: "Agentic mid-training injects tool-use and long-horizon execution behavior before alignment; post-training then shapes it with reward design, preference alignment (DPO/RLHF) and RLVR. Farsight extends RLVR credit assignment from instant to future-discounted grounding."
+    proof: "Farsight (ICLR 2026 sub) · ACL 2026 Main · EMNLP 2026 Main"
+  - label: "Verifiers & Agent Systems"
+    title: "Verification is what makes self-improvement possible"
+    description: "A self-improving agent is only as good as the verifier that scores it. DivScore is a zero-shot verifier with theoretical guarantees; OfficeBuddy puts an independent verifier in the loop — plan → act → real render → audit → targeted repair."
+    proof: "EMNLP 2025 Main · +14.4% AUROC · 53★ on GitHub"
 
 featured_work:
   - title: "MedForge"
@@ -140,7 +144,7 @@ education:
 - name: National University of Singapore
   logo: /assets/images/badges/NUS.png
   position: Ph.D. in Artificial Intelligence
-  dept: "Multimodal LLM post-training · medical AI · trustworthy AI"
+  dept: "Coding agents & model self-improvement (RSI) · agentic mid- & post-training"
   date: Jan. 2025 - present
 - name: The University of Hong Kong
   logo: /assets/images/badges/HKU.jpg
@@ -152,16 +156,26 @@ education:
   date: Sep. 2018 - May. 2022
 
 experience:
-- name: ByteDance (Singapore)
-  logo: /assets/images/badges/ByteDance.svg
-  position: Agentic Post-Training Research Intern
-  dept: "Farsight — future-discounted visual credit assignment for RLVR · trajectory & preference data"
-  date: Jun. 2026 - Nov. 2026
+- name: Zhipu AI (Z.ai, 智谱)
+  position: Foundation Model Post-Training Research Intern
+  dept: "Coding Agent RSI — recursive self-improvement from self-generated, execution-verified trajectories · agentic mid-training & post-training"
+  date: Sep. 2026 - present
+
+- name: Alibaba Tongyi Lab · Qwen
+  position: "Qwen Foundation Model Research Intern — selected"
+  dept: "Qwen foundation model team · agentic mid-training & post-training"
+  date: 2026
 
 - name: Tencent · LightSpeed Studios (Photon, 光子)
   position: "Qingyun Program (青云计划) — Elite Research Talent, selected"
   dept: "Elite research talent track · game-AI × LLM agent research"
   date: 2026
+
+- name: ByteDance (Singapore)
+  logo: /assets/images/badges/ByteDance.svg
+  position: Agentic Post-Training Research Intern
+  dept: "Farsight — future-discounted visual credit assignment for RLVR · trajectory & preference data"
+  date: Apr. 2026 - Aug. 2026
 
 - name: StepFun (阶跃星辰)
   logo: /assets/images/badges/StepFun.png
@@ -181,6 +195,8 @@ experience:
   date: Feb. 2024 - Apr. 2024
 
 awards:
+- name: "Qwen Foundation Model Research Internship (Alibaba Tongyi Lab) — selected"
+  date: 2026
 - name: "Qingyun Program (青云计划) — Tencent LightSpeed Studios, elite research talent"
   date: 2026
 - name: "Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits"
@@ -203,13 +219,15 @@ academic_service:
   date: 2026
 
 skills:
-  - group: "Post-Training & Alignment"
+  - group: "Agentic Mid- & Post-Training"
     items:
-      - "RLHF / RLVR pipeline design · DPO & reward modeling"
-      - "Preference & trajectory data, data flywheels"
+      - "Agentic mid-training · RLHF / RLVR pipeline design · DPO & reward modeling"
+      - "Self-generated trajectory data, execution-verified filtering, data flywheels"
       - "Verifier and eval-loop design · SFT curriculum"
-  - group: "Agents & Orchestration"
+  - group: "Coding Agents & Self-Improvement"
     items:
+      - "Coding agent harness · sandboxed execution, unit-test & compiler feedback as reward"
+      - "Recursive self-improvement loops: propose → execute → verify → retrain"
       - "ReAct agent harness · LangChain orchestration & tool-calling"
       - "Vision-in-the-Loop verification, budgeted retries & failure attribution"
       - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT integration"
