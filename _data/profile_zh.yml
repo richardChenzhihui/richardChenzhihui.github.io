@@ -23,7 +23,7 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    研究聚焦 Coding Agent 与大模型的自进化（RSI, recursive self-improvement）：通过 Agentic 中期训练（mid-training）与后训练闭环，让模型从自己生成、并经真实执行验证的轨迹中持续改进，而不依赖持续的人工标注。
+    研究聚焦 Coding Agent 与大模型的自进化（RSI, recursive self-improvement）：通过 Agentic 中期训练（mid-training）与后训练的迭代流程，让模型从自己生成、并经真实执行验证的轨迹中持续改进，而不依赖持续的人工标注。
   </p>
   <p>
     现于智谱（Z.ai）基础模型后训练团队实习，方向为 Coding Agent RSI 自进化；同时已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
@@ -81,7 +81,7 @@ homepage_metrics:
 impact_areas:
   - label: "Coding Agent 与自进化"
     title: "面向 Coding Agent 的模型自进化（RSI）"
-    description: "基础模型后训练的自进化闭环：Agent 自行提出、执行并验证候选方案，经真实执行校验的轨迹成为下一轮训练信号——模型的提升不再等待新的人工标注。"
+    description: "基础模型后训练中的自进化流程：Agent 自行提出、执行并验证候选方案，经真实执行校验的轨迹成为下一轮训练信号——模型的提升不再等待新的人工标注。"
     proof: "智谱（Z.ai）—— Coding Agent RSI · 在职"
   - label: "Agentic 中期训练与后训练"
     title: "从 mid-training 到轨迹上的强化学习"
@@ -89,7 +89,7 @@ impact_areas:
     proof: "Farsight（ICLR 2026 在投）· ACL 2026 主会议 · EMNLP 2026 主会议"
   - label: "验证器与 Agent 系统"
     title: "自进化的上限由验证器决定"
-    description: "自进化 Agent 的质量取决于给它打分的验证器。DivScore 是带理论保证的零样本验证器；OfficeBuddy 将独立验证器放进闭环：计划 → 执行 → 真实渲染 → 审查 → 定向修复。"
+    description: "自进化 Agent 的质量取决于给它打分的验证器。DivScore 是带理论保证的零样本验证器；OfficeBuddy 将独立验证器嵌入执行流程：计划 → 执行 → 真实渲染 → 审查 → 定向修复。"
     proof: "EMNLP 2025 主会议 · +14.4% AUROC · GitHub 53★"
 
 featured_work:
@@ -240,11 +240,11 @@ skills:
     items:
       - "Agentic mid-training · RLHF / RLVR 流程设计 · DPO 与奖励建模"
       - "自生成轨迹数据、执行验证过滤、数据飞轮"
-      - "验证器与评测闭环设计 · SFT 课程"
+      - "验证器与评测流程设计 · SFT 课程"
   - group: "Coding Agent 与自进化"
     items:
       - "Coding Agent 框架 · 沙箱执行、单元测试与编译反馈作为奖励信号"
-      - "自进化闭环：提出 → 执行 → 验证 → 再训练"
+      - "自进化流程：提出 → 执行 → 验证 → 再训练"
       - "ReAct Agent 框架 · LangChain 编排与工具调用"
       - "Vision-in-the-Loop 视觉验证、预算化重试与失败归因"
       - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT 接入"
