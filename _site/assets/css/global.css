@@ -551,6 +551,10 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
     .pub-badge { padding-top: 0; }
 }
 
+.pub-anchor { display: block; height: 0; scroll-margin-top: 110px; }
+.pub-list--page { border-top: 1px solid var(--rule); margin-top: 2.6rem; }
+.pub-list--page .pub-row { padding: 1.9rem 0; }
+
 /* Publications page year headings + sticky year nav */
 .pub-year {
     font-family: var(--font-mono);
@@ -730,6 +734,77 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 }
 .grid-item img { border-radius: 2px; }
 
+
+/* Showcase cards: flatten the template's Bootstrap chrome */
+.grid-item .card,
+.grid-item > div { padding: 0; }
+.grid-item h2 {
+    font-size: 1.65rem;
+    font-weight: 450;
+    letter-spacing: -0.022em;
+    margin: 0 0 1.1rem;
+}
+.grid-item h3 { font-size: 1.25rem; margin: 2rem 0 .7rem; }
+.grid-item h4 {
+    font-family: var(--font-mono);
+    font-size: .68rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-4);
+    margin: 2rem 0 .8rem;
+    padding-bottom: .55rem;
+    border-bottom: 1px solid var(--rule-soft);
+}
+.grid-item h5, .grid-item h6 { font-size: 1rem; margin: 1.4rem 0 .5rem; }
+.grid-item p, .grid-item li { font-size: .92rem; line-height: 1.75; color: var(--ink-2); }
+.grid-item ul { padding-left: 1.1rem; }
+.grid-item li { margin-bottom: .45rem; }
+.grid-item li::marker { color: var(--ink-4); }
+.grid-item hr { margin: 1.3rem 0 1.6rem; border-top-color: var(--rule); }
+.grid-item strong { color: var(--ink); font-weight: 600; }
+
+.grid-item .table,
+.grid-item table {
+    font-size: .86rem;
+    color: var(--ink-2);
+    border-collapse: collapse;
+    width: 100%;
+}
+.grid-item table td, .grid-item table th {
+    border: 0 !important;
+    border-bottom: 1px solid var(--rule-soft) !important;
+    padding: .55rem .2rem !important;
+    vertical-align: top;
+}
+.grid-item table tr td:first-child {
+    font-family: var(--font-mono);
+    font-size: .68rem;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--ink-4);
+    white-space: nowrap;
+    width: 1%;
+    padding-right: 1.6rem !important;
+}
+
+/* Every Bootstrap badge on the site becomes a quiet hairline chip */
+.badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: .655rem !important;
+    font-weight: 400 !important;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    padding: .2rem .5rem !important;
+    border-radius: 2px !important;
+    border: 1px solid var(--rule);
+    background: transparent !important;
+    color: var(--ink-3) !important;
+    margin: 0 .3rem .35rem 0;
+    white-space: normal;
+    text-align: left;
+}
+
 /* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */
@@ -779,3 +854,14 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 
 .no-break { white-space: nowrap; }
 .lh-125 { line-height: 1.25; }
+
+/* Publication venue badges stay inline metadata, not chips */
+.pub-venue .badge,
+.badge-publication {
+    display: inline !important;
+    border: 0 !important;
+    padding: 0 0 0 .5rem !important;
+    margin: 0 !important;
+    color: var(--marker) !important;
+    background: transparent !important;
+}
