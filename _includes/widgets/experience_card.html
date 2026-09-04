@@ -16,7 +16,7 @@
             <div class="lang-en">
                 {% for item in p_en.experience %}
                 <div class="cv-row">
-                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% endif %}
+                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% else %}<span class="cv-logo"></span>{% endif %}
                     <div class="cv-body">
                         <div class="cv-org">{{ item.name }}</div>
                         <div class="cv-role">{{ item.position }}</div>
@@ -29,7 +29,7 @@
             <div class="lang-zh d-none">
                 {% for item in p_zh.experience %}
                 <div class="cv-row">
-                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% endif %}
+                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% else %}<span class="cv-logo"></span>{% endif %}
                     <div class="cv-body">
                         <div class="cv-org">{{ item.name }}</div>
                         <div class="cv-role">{{ item.position }}</div>
@@ -51,7 +51,7 @@
             <div class="lang-en">
                 {% for item in p_en.education %}
                 <div class="cv-row">
-                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% endif %}
+                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% else %}<span class="cv-logo"></span>{% endif %}
                     <div class="cv-body">
                         <div class="cv-org">{{ item.name }}</div>
                         <div class="cv-role">{{ item.position }}</div>
@@ -64,7 +64,7 @@
             <div class="lang-zh d-none">
                 {% for item in p_zh.education %}
                 <div class="cv-row">
-                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% endif %}
+                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% else %}<span class="cv-logo"></span>{% endif %}
                     <div class="cv-body">
                         <div class="cv-org">{{ item.name }}</div>
                         <div class="cv-role">{{ item.position }}</div>

@@ -651,7 +651,8 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
     padding-top: .22rem;
 }
 .cv-logo {
-    flex: 0 0 auto;
+    flex: 0 0 17px;
+    display: block;
     width: 17px; height: 17px;
     object-fit: contain;
     margin-top: .35rem;
