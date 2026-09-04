@@ -3,8 +3,8 @@
   <g fill="none" stroke="#d9d5ca" stroke-width="1">
     <path d="M0 60H640M0 300H640"/>
   </g>
-  <text x="40" y="42" fill="#9a7a3f" font-size="10.5" letter-spacing="2.2" font-family="'JetBrains Mono',monospace">PRIVATE BACKBONE · APAC</text>
-  <text x="40" y="106" fill="#15171b" font-size="30" font-family="Newsreader,Georgia,serif">Quant Infrastructure Grant</text>
+  <text x="40" y="42" fill="#9a7a3f" font-size="12" letter-spacing="2.2" font-family="'JetBrains Mono',monospace">PRIVATE BACKBONE · APAC</text>
+  <text x="40" y="106" fill="#15171b" font-size="33" font-family="Newsreader,Georgia,serif">Quant Infrastructure Grant</text>
 
   <g stroke="#b9b4a6" stroke-width="1" fill="none">
     <path d="M168 196h112M360 196h112"/>
@@ -15,14 +15,14 @@
     <rect x="280" y="176" width="80" height="40" rx="3"/>
     <rect x="472" y="176" width="96" height="40" rx="3"/>
   </g>
-  <g font-size="12.5" fill="#41464f" text-anchor="middle">
+  <g font-size="14.5" fill="#41464f" text-anchor="middle">
     <text x="120" y="201">Hong Kong</text>
     <text x="320" y="201">CCN</text>
     <text x="520" y="201">Singapore</text>
   </g>
   <circle cx="320" cy="152" r="3" fill="#1f3f6b"/>
-  <text x="320" y="140" fill="#767b85" font-size="11" text-anchor="middle" font-family="'JetBrains Mono',monospace">private path, not the public internet</text>
+  <text x="320" y="140" fill="#767b85" font-size="12.5" text-anchor="middle" font-family="'JetBrains Mono',monospace">private path, not the public internet</text>
 
-  <text x="320" y="288" fill="#767b85" font-size="11.5" text-anchor="middle" font-family="'JetBrains Mono',monospace" letter-spacing="0.6">low-latency nodes for trading and agent workloads</text>
-  <text x="40" y="332" fill="#9ca1aa" font-size="11" font-family="'JetBrains Mono',monospace" letter-spacing="1.4">TENCENT CLOUD INTERNATIONAL  ·  USD 1,000 CREDITS</text>
+  <text x="320" y="288" fill="#767b85" font-size="13" text-anchor="middle" font-family="'JetBrains Mono',monospace" letter-spacing="0.6">low-latency nodes for trading and agent workloads</text>
+  <text x="40" y="332" fill="#9ca1aa" font-size="12.5" font-family="'JetBrains Mono',monospace" letter-spacing="1.4">TENCENT CLOUD INTERNATIONAL  ·  USD 1,000 CREDITS</text>
 </svg>
