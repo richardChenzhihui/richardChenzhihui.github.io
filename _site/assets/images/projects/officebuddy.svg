@@ -1,37 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="'Space Grotesk','Inter','Helvetica Neue',Arial,sans-serif">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1224"/>
-      <stop offset="1" stop-color="#060a13"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset="0.55" stop-color="#818cf8"/>
-      <stop offset="1" stop-color="#c084fc"/>
-    </linearGradient>
-  </defs>
-  <rect width="600" height="400" fill="url(#bg)"/>
-  <g opacity="0.08" stroke="#94a3b8" stroke-width="1" fill="none">
-    <path d="M0 44H600M0 88H600M0 132H600M0 176H600M0 220H600M0 264H600M0 308H600M0 352H600"/>
-    <path d="M44 0V400M88 0V400M132 0V400M176 0V400M220 0V400M264 0V400M308 0V400M352 0V400M396 0V400M440 0V400M484 0V400M528 0V400M572 0V400"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="Inter,'Helvetica Neue',Arial,sans-serif">
+  <rect width="640" height="360" fill="#f5f3ee"/>
+  <g fill="none" stroke="#d9d5ca" stroke-width="1">
+    <path d="M0 60H640M0 300H640"/>
   </g>
-  <g opacity="0.14" stroke="url(#accent)" stroke-width="2" fill="none">
-    <circle cx="505" cy="72" r="118"/>
-    <circle cx="505" cy="72" r="78"/>
+  <text x="40" y="42" fill="#9a7a3f" font-size="10.5" letter-spacing="2.2" font-family="'JetBrains Mono',monospace">VERIFIER IN THE LOOP</text>
+  <text x="40" y="106" fill="#15171b" font-size="30" font-family="Newsreader,Georgia,serif">OfficeBuddy</text>
+
+  <g stroke="#b9b4a6" stroke-width="1" fill="none">
+    <path d="M96 196h72M256 196h72M416 196h72"/>
+    <path d="M168 192l8 4-8 4M328 192l8 4-8 4M488 192l8 4-8 4" stroke="#8f8a7c"/>
+    <path d="M556 196h20a12 12 0 0 1 12 12v46a12 12 0 0 1-12 12H76a12 12 0 0 1-12-12v-46a12 12 0 0 1 12-12h4" stroke-dasharray="3 4"/>
+    <path d="M84 200l-8-4 8-4" stroke="#8f8a7c" stroke-dasharray="0"/>
   </g>
-  <rect x="0" y="0" width="600" height="3" fill="url(#accent)" opacity="0.85"/>
-  <text x="48" y="112" fill="#7dd3fc" font-size="20" font-weight="700" letter-spacing="3" font-family="'JetBrains Mono',Menlo,monospace">VERIFIER-IN-THE-LOOP</text>
-  <text x="48" y="180" fill="#f6f9fe" font-size="52" font-weight="700">Office Agent</text>
-  <text x="48" y="222" fill="#94a3b8" font-size="21" font-weight="500">smart-word-agent &#8594; render &#183; verify &#183; repair</text>
-  <g font-size="17" font-weight="600" font-family="'JetBrains Mono',Menlo,monospace">
-    <rect x="48" y="282" width="196" height="40" rx="20" fill="#38bdf8" opacity="0.13"/>
-    <rect x="48" y="282" width="196" height="40" rx="20" fill="none" stroke="#38bdf8" opacity="0.45"/>
-    <text x="146" y="308" fill="#7dd3fc" text-anchor="middle">Render-Verify</text>
-    <rect x="258" y="282" width="196" height="40" rx="20" fill="#818cf8" opacity="0.13"/>
-    <rect x="258" y="282" width="196" height="40" rx="20" fill="none" stroke="#818cf8" opacity="0.45"/>
-    <text x="356" y="308" fill="#a5b4fc" text-anchor="middle">Model-agnostic</text>
-    <rect x="468" y="282" width="104" height="40" rx="20" fill="#34d399" opacity="0.13"/>
-    <rect x="468" y="282" width="104" height="40" rx="20" fill="none" stroke="#34d399" opacity="0.45"/>
-    <text x="520" y="308" fill="#6ee7b7" text-anchor="middle">1K+ wk1</text>
+
+  <g font-size="12.5" fill="#41464f" text-anchor="middle">
+    <g stroke="#c9c4b6" fill="#ffffff">
+      <rect x="40" y="176" width="56" height="40" rx="3"/>
+      <rect x="200" y="176" width="56" height="40" rx="3"/>
+      <rect x="360" y="176" width="56" height="40" rx="3"/>
+      <rect x="520" y="176" width="80" height="40" rx="3"/>
+    </g>
+    <text x="68" y="201">Plan</text>
+    <text x="228" y="201">Act</text>
+    <text x="388" y="201">Render</text>
+    <text x="560" y="201">Verify</text>
   </g>
+
+  <text x="320" y="288" fill="#767b85" font-size="11.5" text-anchor="middle" font-family="'JetBrains Mono',monospace" letter-spacing="0.6">repair and retry until the render passes audit</text>
+  <text x="40" y="332" fill="#9ca1aa" font-size="11" font-family="'JetBrains Mono',monospace" letter-spacing="1.4">OPEN SOURCE  ·  WORD &amp; EXCEL  ·  MODEL AGNOSTIC</text>
 </svg>
