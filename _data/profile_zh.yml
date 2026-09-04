@@ -96,7 +96,7 @@ featured_work:
   - title: "MedForge"
     subtitle: "可解释医学深度伪造检测"
     description: "通过定位证据、专家对齐推理与先定位再分析检测器，识别医学上看似合理的影像伪造。"
-    image: /assets/images/publications/medforge/fig1.png
+    image: /assets/images/projects/medforge.svg
     badges:
       - "ACL 2026 主会议"
       - "19 类病灶"
@@ -128,6 +128,7 @@ featured_work:
     subtitle: "医疗大模型开发与临床可验证 Agent 工作流"
     description: "将长上下文、多模态与 Agent 能力连接到医疗大模型开发与可验证决策路径的算力支持项目。"
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
+    fit: contain
     badges:
       - "MiniMax Cowork Team"
       - "4500 美金算力支持"
@@ -154,7 +155,7 @@ featured_work:
       url: /showcase.html#projects
 
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-
 
 education:

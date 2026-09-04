@@ -100,7 +100,7 @@ featured_work:
   - title: "MedForge"
     subtitle: "Interpretable medical deepfake detection"
     description: "Detects medically plausible image forgeries through localized evidence, expert-aligned reasoning, and a Localize-then-Analyze detector."
-    image: /assets/images/publications/medforge/fig1.png
+    image: /assets/images/projects/medforge.svg
     badges:
       - "ACL 2026 Main"
       - "19 lesion types"
@@ -132,6 +132,7 @@ featured_work:
     subtitle: "Medical foundation model development and clinically verifiable Agent workflows"
     description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with medical foundation model development and verifiable decision paths."
     image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
+    fit: contain
     badges:
       - "MiniMax Cowork Team"
       - "USD 4,500 compute grant"
@@ -158,7 +159,7 @@ featured_work:
       url: /showcase.html#projects
 
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-
 
 education:
