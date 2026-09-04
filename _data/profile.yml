@@ -131,8 +131,7 @@ featured_work:
     dark_art: true
     subtitle: "Medical foundation model development and clinically verifiable Agent workflows"
     description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with medical foundation model development and verifiable decision paths."
-    image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
-    fit: contain
+    image: /assets/images/projects/minimax-fellowship.svg
     badges:
       - "MiniMax Cowork Team"
       - "USD 4,500 compute grant"

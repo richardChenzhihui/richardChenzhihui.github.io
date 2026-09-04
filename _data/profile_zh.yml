@@ -127,8 +127,7 @@ featured_work:
     dark_art: true
     subtitle: "医疗大模型开发与临床可验证 Agent 工作流"
     description: "将长上下文、多模态与 Agent 能力连接到医疗大模型开发与可验证决策路径的算力支持项目。"
-    image: /assets/images/projects/minimax-10x-team-fellowship.jpeg
-    fit: contain
+    image: /assets/images/projects/minimax-fellowship.svg
     badges:
       - "MiniMax Cowork Team"
       - "4500 美金算力支持"

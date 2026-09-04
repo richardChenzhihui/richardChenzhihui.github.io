@@ -1,7 +1,7 @@
 {% assign item = include.item %}
 {% assign paper_link = item.links['Paper'] | default: item.links['paper'] %}
 <article class="pub-row">
-    <div class="pub-badge">{{ item.pub_date }}</div>
+    <div class="pub-badge">{{ item.pub_date | default: item.date | date: "%Y" }}</div>
     <div>
         {% if paper_link %}
         <h3 class="pub-title">
