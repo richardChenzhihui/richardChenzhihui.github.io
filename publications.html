@@ -10,14 +10,14 @@ body_attr: >-
 
 <div class="row">
     <div class="col-12 col-lg-10">
-        {% for year in pubs_by_year %}
-        <div class="pub-year" id="year-{{ year.name }}">{{ year.name }}</div>
-        <div class="pub-list">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item %}
+        <div class="pub-list pub-list--page">
+            {% for year in pubs_by_year %}
+                <span class="pub-anchor" id="year-{{ year.name }}"></span>
+                {% for item in year.items %}
+                    {% include widgets/publication_item.html item=item %}
+                {% endfor %}
             {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
     <div class="col-2 d-none d-lg-block">
