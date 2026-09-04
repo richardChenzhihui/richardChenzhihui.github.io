@@ -787,6 +787,24 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
     padding-right: 1.6rem !important;
 }
 
+/* Bootstrap buttons inside showcase cards become quiet outline links */
+.grid-item .btn,
+.grid-item .btn-sm {
+    font-family: var(--font-sans);
+    font-size: .82rem !important;
+    font-weight: 450;
+    padding: .4rem .95rem !important;
+    border-radius: 2px !important;
+    border: 1px solid var(--rule) !important;
+    background: transparent !important;
+    color: var(--ink-2) !important;
+    box-shadow: none !important;
+    margin: 0 .4rem .5rem 0;
+}
+.grid-item .btn:hover { border-color: var(--ink-4) !important; color: var(--ink) !important; background: #fff !important; }
+.grid-item .btn-primary { border-color: var(--ink) !important; background: var(--ink) !important; color: #fff !important; }
+.grid-item .btn-primary:hover { background: var(--accent) !important; border-color: var(--accent) !important; color: #fff !important; }
+
 /* Every Bootstrap badge on the site becomes a quiet hairline chip */
 .badge {
     display: inline-block;
