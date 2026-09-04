@@ -4,143 +4,58 @@
 {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
 {%- endif -%}
 
-<section class="home-hero-card">
+<section class="home-hero">
     <div class="row align-items-center">
-        <div class="col-lg-7">
-            <div class="home-hero-copy">
-                <div class="home-hero-kicker">
-                    <span class="lang-en">{{ site.data.profile.hero_kicker }}</span>
-                    <span class="lang-zh d-none">{{ site.data.profile_zh.hero_kicker }}</span>
-                </div>
-                <div class="home-hero-name">
-                    <span class="lang-en">{{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small></span>
-                    <span class="lang-zh d-none">{{ site.data.profile_zh.primary_name }} <small>{{ site.data.profile_zh.secondary_name }}</small></span>
-                </div>
-                <div class="home-hero-position">
-                    <div class="lang-en">
-                        {% for position in site.data.profile.positions %}
-                        {{ position.name }}{% unless forloop.last %}<br/>{% endunless %}
-                        {% endfor %}
-                    </div>
-                    <div class="lang-zh d-none">
-                        {% for position in site.data.profile_zh.positions %}
-                        {{ position.name }}{% unless forloop.last %}<br/>{% endunless %}
-                        {% endfor %}
-                    </div>
-                </div>
-                <p class="home-hero-summary">
-                    <span class="lang-en">{{ site.data.profile.hero_summary }}</span>
-                    <span class="lang-zh d-none">{{ site.data.profile_zh.hero_summary }}</span>
-                </p>
-                <div class="home-hero-focus">
-                    <span class="lang-en">Coding Agents · Model Self-Improvement (RSI)</span>
-                    <span class="lang-zh d-none">Coding Agent · 模型自进化（RSI）</span>
-                    <span class="home-hero-dot"></span>
-                    <span class="lang-en">Agentic Mid- & Post-Training</span>
-                    <span class="lang-zh d-none">Agentic 中期训练与后训练</span>
-                </div>
-                {% if site.data.profile.hero_proof %}
-                <div class="home-hero-proof">
-                    {% for item in site.data.profile.hero_proof %}
-                    {% assign item_zh = site.data.profile_zh.hero_proof[forloop.index0] %}
-                    <div class="home-hero-highlight">
-                        {% if item.logo %}<img class="home-hero-highlight-logo" src="{{ item.logo | relative_url }}" alt="" aria-hidden="true">{% endif %}
-                        <span class="lang-en">{{ item.text }}</span>
-                        <span class="lang-zh d-none">{{ item_zh.text }}</span>
-                    </div>
-                    {% endfor %}
-                </div>
+        <div class="col-lg-8 order-lg-1 order-2">
+            <div class="home-hero-kicker">
+                <span class="lang-en">{{ site.data.profile.hero_kicker }}</span>
+                <span class="lang-zh d-none">{{ site.data.profile_zh.hero_kicker }}</span>
+            </div>
+            <h1 class="home-hero-name">
+                <span class="lang-en">{{ site.data.profile.primary_name }}</span>
+                <span class="lang-zh d-none">{{ site.data.profile_zh.primary_name }}</span>
+            </h1>
+            <div class="home-hero-position">
+                <span class="lang-en">{% for position in site.data.profile.positions %}{{ position.name }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
+                <span class="lang-zh d-none">{% for position in site.data.profile_zh.positions %}{{ position.name }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
+            </div>
+            <p class="home-hero-statement">
+                <span class="lang-en">{{ site.data.profile.hero_statement }}</span>
+                <span class="lang-zh d-none">{{ site.data.profile_zh.hero_statement }}</span>
+            </p>
+            <div class="home-hero-actions">
+                <a class="home-primary-btn" href="{{ 'publications' | relative_url }}">
+                    <span class="lang-en">Publications</span>
+                    <span class="lang-zh d-none">论文发表</span>
+                </a>
+                <a class="home-secondary-btn" href="{{ 'showcase' | relative_url }}">
+                    <span class="lang-en">Projects</span>
+                    <span class="lang-zh d-none">项目展示</span>
+                </a>
+                {% if site.data.profile.cv_link %}
+                <a class="home-secondary-btn lang-en" href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" rel="noopener">Curriculum Vitae</a>
+                <a class="home-secondary-btn lang-zh d-none" href="{{ site.data.profile_zh.cv_link | default: site.data.profile.cv_link | relative_url }}" target="_blank" rel="noopener">个人简历</a>
                 {% endif %}
-                <div class="home-hero-actions">
-                    <a class="home-primary-btn" href="{{ 'publications' | relative_url }}">
-                        <span class="lang-en">View Publications</span>
-                        <span class="lang-zh d-none">查看论文</span>
-                    </a>
-                    <a class="home-secondary-btn" href="{{ 'showcase' | relative_url }}">
-                        <span class="lang-en">View Showcase</span>
-                        <span class="lang-zh d-none">查看项目展示</span>
-                    </a>
-                    <a class="home-secondary-btn" href="{{ gscholar_url }}" target="_blank" rel="noopener">Google Scholar</a>
-                    {% if site.data.profile.cv_link %}
-                    <a class="home-secondary-btn lang-en" href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" rel="noopener">
-                        <i class="fas fa-file-alt"></i> Download CV
-                    </a>
-                    <a class="home-secondary-btn lang-zh d-none" href="{{ site.data.profile_zh.cv_link | default: site.data.profile.cv_link | relative_url }}" target="_blank" rel="noopener">
-                        <i class="fas fa-file-alt"></i> 下载简历
-                    </a>
-                    {% endif %}
-                </div>
-                <div class="home-hero-links">
-                    <a class="no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
-                        <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
-                    </a>
-                    {% if site.data.profile.github %}
-                    <a class="no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    {% endif %}
-                    {% if site.data.profile.linkedin %}
-                    <a class="no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    {% endif %}
-                    {% if site.data.profile.orcid %}
-                    <a class="no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
-                        <i class="fab fa-orcid"></i> ORCID
-                    </a>
-                    {% endif %}
-                    {% if site.data.profile.wechat_qrcode %}
-                    <a class="no-break" data-toggle="modal" data-target="#modal-wechat">
-                        <i class="fab fa-weixin"></i> WeChat
-                    </a>
-                    {% endif %}
-                </div>
+            </div>
+            <div class="home-hero-links">
+                <a class="no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
+                    <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
+                </a>
+                <a class="no-break" target="_blank" rel="noopener" href="{{ gscholar_url }}"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                {% if site.data.profile.github %}
+                <a class="no-break" target="_blank" rel="noopener" href="https://github.com/{{ site.data.profile.github }}"><i class="fab fa-github"></i> GitHub</a>
+                {% endif %}
+                {% if site.data.profile.linkedin %}
+                <a class="no-break" target="_blank" rel="noopener" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                {% endif %}
             </div>
         </div>
-        <div class="col-lg-5">
-            <div class="home-hero-visual">
-                {% if site.data.profile.portrait_url %}
-                <img
-                    src="{{ site.data.profile.portrait_url | relative_url }}"
-                    class="home-hero-portrait"
-                    alt="Portrait"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="{{ site.data.profile.portrait_caption }}">
-                {% endif %}
-                <div class="home-hero-bio">
-                    <div class="lang-en">{{ site.data.profile.short_bio }}</div>
-                    <div class="lang-zh d-none">{{ site.data.profile_zh.short_bio }}</div>
-                    {% if site.data.profile.cv_link %}
-                    <a class="home-inline-link lang-en" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}">
-                        <i class="fas fa-file-alt"></i> Curriculum Vitae
-                    </a>
-                    <a class="home-inline-link lang-zh d-none" target="_blank" href="{{ site.data.profile_zh.cv_link | default: site.data.profile.cv_link | relative_url }}">
-                        <i class="fas fa-file-alt"></i> 个人简历
-                    </a>
-                    {% endif %}
-                </div>
+        <div class="col-lg-4 order-lg-2 order-1 mb-4 mb-lg-0">
+            {% if site.data.profile.portrait_url %}
+            <div class="home-hero-portrait-wrap">
+                <img src="{{ site.data.profile.portrait_url | relative_url }}" class="home-hero-portrait ml-lg-auto" alt="{{ site.data.profile.primary_name }}">
             </div>
+            {% endif %}
         </div>
     </div>
 </section>
-
-{% if site.data.profile.wechat_qrcode %}
-<div class="modal fade" id="modal-wechat" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-body p-0">
-                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid">
-            </div>
-            {% if site.data.profile.wechat_prompt %}
-            <div class="modal-body p-1">
-                {{ site.data.profile.wechat_prompt }}
-            </div>
-            {% endif %}
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="lang-en">Close</span><span class="lang-zh d-none">关闭</span></button>
-            </div>
-        </div>
-    </div>
-</div>
-{% endif %}

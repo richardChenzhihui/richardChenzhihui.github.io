@@ -82,10 +82,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     var v = links[k];
                     if (typeof v === 'object') {
                         if (v.url) {
-                            html += '<a target="' + (v.target || '_blank') + '" href="' + v.url + '">[' + k + ']</a> ';
+                            html += '<a target="' + (v.target || '_blank') + '" href="' + v.url + '">' + k + '</a> ';
                         }
                     } else if (typeof v === 'string') {
-                        html += '<a target="_blank" href="' + v + '">[' + k + ']</a> ';
+                        html += '<a target="_blank" href="' + v + '">' + k + '</a> ';
                     }
                 });
                 if (html) el.innerHTML = html.trim();

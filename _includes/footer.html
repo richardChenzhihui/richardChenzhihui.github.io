@@ -1,19 +1,11 @@
 <footer class="footer">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <div class="row my-3">
-            <div class="col-6">
-                <div class="text-muted">
-                    <i>
-                        <span class="lang-en">Last updated: {{ "now" | date: "%b %Y" }}</span>
-                        <span class="lang-zh d-none">最后更新：{{ "now" | date: "%Y 年 %-m 月" }}</span>
-                    </i>
-                </div>
+        <div class="d-flex flex-wrap justify-content-between">
+            <div>
+                <span class="lang-en">{{ site.data.profile.primary_name }} &nbsp;·&nbsp; Updated {{ "now" | date: "%b %Y" }}</span>
+                <span class="lang-zh d-none">{{ site.data.profile_zh.primary_name }} &nbsp;·&nbsp; 更新于 {{ "now" | date: "%Y 年 %-m 月" }}</span>
             </div>
-            <div class="col-6">
-                <div class="text-right text-muted">
-                    {{ site.data.display.footer_text }}
-                </div>
-            </div>
+            <div>{{ site.data.display.footer_text }}</div>
         </div>
     </div>
 </footer>

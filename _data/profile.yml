@@ -35,6 +35,27 @@ hero_kicker: >-
 hero_summary: >-
   Coding agents and recursive self-improvement for foundation models &mdash; agentic mid-training and post-training, reward and verifier design, RL on self-generated execution trajectories. Currently a foundation-model post-training research intern at Zhipu AI (Z.ai) on Coding Agent RSI; also selected for the Qwen foundation-model internship and Tencent's Qingyun Elite Research Talent Program.
 
+hero_statement: >-
+  I work on coding agents that improve themselves &mdash; learning from what their own
+  execution proves, rather than waiting for the next batch of human labels.
+
+standing:
+  - key: "Now"
+    value: "Zhipu AI (Z.ai) &middot; Foundation-Model Post-Training"
+    sub: "Coding Agent RSI &mdash; recursive self-improvement from execution-verified trajectories"
+  - key: "Selected"
+    value: "Qwen Foundation Model Internship, Alibaba Tongyi Lab"
+    sub: "Tencent Qingyun Elite Research Talent Program (\u9752\u4e91\u8ba1\u5212)"
+  - key: "Before"
+    value: "ByteDance &middot; Agentic Post-Training &nbsp;&nbsp;StepFun &middot; Speech Foundation Model"
+    sub: "Farsight (first-author, ICLR 2026 under review) &middot; StepAudio2.5 pre-training data"
+  - key: "Papers"
+    value: "ACL 2026 &middot; EMNLP 2026 &middot; EMNLP 2025, all Main Conference"
+    sub: "First-author ICLR 2026 submission under review"
+  - key: "Open"
+    value: "88K+ agentic trajectories released &middot; 53&#9733; office agent"
+    sub: "Datasets and code on GitHub and Hugging Face"
+
 hero_proof:
   - text: "Foundation-Model Post-Training @ Zhipu AI (Z.ai) — Coding Agent RSI self-improvement · current"
   - text: "Qwen Foundation Model Internship (Alibaba Tongyi) — selected"

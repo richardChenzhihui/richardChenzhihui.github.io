@@ -1,24 +1,18 @@
 {% assign publications = include.publications %}
-<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
-    <h6 class="border-bottom border-gray p-3 mb-0">
-        {% if include.title %}
-            {{ include.title }}
-        {% else %}
-            <span class="lang-en"><i class="fas fa-star"></i> Selected Recent Publications</span>
-            <span class="lang-zh d-none"><i class="fas fa-star"></i> 精选论文</span>
-        {% endif %}
-        <a href="{{ 'publications' | relative_url }}">
-            <span class="lang-en">(view all <i class="fas fa-angle-double-right"></i>)</span>
-            <span class="lang-zh d-none">（查看全部 <i class="fas fa-angle-double-right"></i>）</span>
+<section class="home-section">
+    <div class="home-section-heading d-flex align-items-baseline">
+        <div>
+            <span class="lang-en">Selected Publications</span>
+            <span class="lang-zh d-none">精选论文</span>
+        </div>
+        <a class="home-inline-link ml-auto" href="{{ 'publications' | relative_url }}">
+            <span class="lang-en">All publications</span>
+            <span class="lang-zh d-none">全部论文</span>
         </a>
-    </h6>
-    {% for item in publications limit:include.limit %}
-        {% include widgets/publication_item.html item=item first=false last=false compact=include.compact %}
-    {% endfor %}
-    <h6 class="d-block p-3 mt-0 text-right">
-        <a href="{{ 'publications' | relative_url }}">
-            <span class="lang-en">All publications <i class="fas fa-angle-double-right"></i></span>
-            <span class="lang-zh d-none">全部论文 <i class="fas fa-angle-double-right"></i></span>
-        </a>
-    </h6>
-</div>
+    </div>
+    <div class="pub-list">
+        {% for item in publications limit:include.limit %}
+            {% include widgets/publication_item.html item=item %}
+        {% endfor %}
+    </div>
+</section>

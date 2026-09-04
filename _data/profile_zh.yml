@@ -35,6 +35,27 @@ hero_kicker: >-
 hero_summary: >-
   Coding Agent 与基座模型自进化——Agentic 中期训练（mid-training）与后训练、奖励与验证器设计、在自生成执行轨迹上做强化学习。现于智谱（Z.ai）基础模型后训练团队实习，方向为 Coding Agent RSI 自进化；并已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
 
+hero_statement: >-
+  我的研究是让 Coding Agent 从自身执行的结果中持续进化，
+  而不是等待下一批人工标注。
+
+standing:
+  - key: "在职"
+    value: "智谱（Z.ai）&middot; 基础模型后训练"
+    sub: "Coding Agent RSI 自进化 —— 从经执行验证的自生成轨迹中学习"
+  - key: "已录取"
+    value: "阿里通义实验室 Qwen 基座模型实习"
+    sub: "腾讯「青云计划」精英科研人才入选"
+  - key: "早前"
+    value: "字节跳动 &middot; Agentic 后训练 &nbsp;&nbsp;阶跃星辰 &middot; 语音基座模型"
+    sub: "Farsight（一作，ICLR 2026 在投）&middot; StepAudio2.5 预训练数据"
+  - key: "论文"
+    value: "ACL 2026 &middot; EMNLP 2026 &middot; EMNLP 2025 均为主会议"
+    sub: "另有一作 ICLR 2026 在投"
+  - key: "开源"
+    value: "88K+ Agent 轨迹开源 &middot; 办公 Agent 53&#9733;"
+    sub: "数据集与代码发布于 GitHub 与 Hugging Face"
+
 hero_proof:
   - text: "智谱（Z.ai）· 基础模型后训练 —— Coding Agent RSI 自进化 · 在职"
   - text: "阿里通义 Qwen 基座模型实习 —— 已获录用"

@@ -1,28 +1,41 @@
-{% assign metrics_en = site.data.profile.homepage_metrics %}
-{% assign metrics_zh = site.data.profile_zh.homepage_metrics %}
-{% if metrics_en and metrics_en.size > 0 %}
+{% assign standing_en = site.data.profile.standing %}
+{% assign standing_zh = site.data.profile_zh.standing %}
 <section class="home-section">
-    <div class="home-section-heading">
-        <span class="lang-en">At a Glance</span>
-        <span class="lang-zh d-none">数据一览</span>
-    </div>
     <div class="row">
-        {% for metric in metrics_en %}
-        {% assign metric_zh = metrics_zh[forloop.index0] %}
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-            <div class="home-metric-card">
-                <div class="home-metric-value{% if metric.compact %} home-metric-value--compact{% endif %}"><span class="lang-en">{{ metric.value }}</span><span class="lang-zh d-none">{{ metric_zh.value | default: metric.value }}</span></div>
-                <div class="home-metric-label">
-                    <span class="lang-en">{{ metric.label }}</span>
-                    <span class="lang-zh d-none">{{ metric_zh.label }}</span>
-                </div>
-                <div class="home-metric-note">
-                    <span class="lang-en">{{ metric.note }}</span>
-                    <span class="lang-zh d-none">{{ metric_zh.note }}</span>
-                </div>
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="home-section-heading">
+                <span class="lang-en">About</span>
+                <span class="lang-zh d-none">简介</span>
+            </div>
+            <div class="home-bio">
+                <div class="lang-en">{{ site.data.profile.short_bio }}</div>
+                <div class="lang-zh d-none">{{ site.data.profile_zh.short_bio }}</div>
             </div>
         </div>
-        {% endfor %}
+        <div class="col-lg-6">
+            <div class="home-section-heading">
+                <span class="lang-en">Current Standing</span>
+                <span class="lang-zh d-none">当前状态</span>
+            </div>
+            <div class="home-standing" style="border-top:0;margin-top:0;">
+                {% for row in standing_en %}
+                {% assign row_zh = standing_zh[forloop.index0] %}
+                <div class="home-standing-row">
+                    <div class="home-standing-key">
+                        <span class="lang-en">{{ row.key }}</span>
+                        <span class="lang-zh d-none">{{ row_zh.key }}</span>
+                    </div>
+                    <div class="home-standing-val">
+                        <span class="lang-en">{{ row.value }}</span>
+                        <span class="lang-zh d-none">{{ row_zh.value }}</span>
+                        <span class="home-standing-sub">
+                            <span class="lang-en">{{ row.sub }}</span>
+                            <span class="lang-zh d-none">{{ row_zh.sub }}</span>
+                        </span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </section>
-{% endif %}
