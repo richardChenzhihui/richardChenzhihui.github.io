@@ -12,7 +12,7 @@
     </div>
     <div class="pub-list">
         {% for item in publications limit:include.limit %}
-            {% include widgets/publication_item.html item=item %}
+            {% include widgets/publication_item.html item=item hide_abstract=include.hide_abstract %}
         {% endfor %}
     </div>
 </section>

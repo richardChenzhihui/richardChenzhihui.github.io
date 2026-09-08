@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Publications - Zhihui Chen</title>
-    <meta name="description" content="Zhihui Chen — Coding Agents &middot; Model Self-Improvement (RSI) &middot; Agentic Mid- & Post-Training. PhD student in AI at NUS working on LLM post-training, preference alignment, and multimodal agents.">
+    <meta name="description" content="Zhihui Chen — Coding-driven recursive self-improvement (RSI) for foundation models &mdash; agentic mid-training and post-training, reward and verifier design, RL on execution-verified trajectories &mdash; and AI for healthcare: quality-controlled medical image editing and interpretable medical deepfake detection. Currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for financial coding agents; also selected for the Qwen foundation-model internship and Tencent's Qingyun Elite Research Talent Program.">
     <meta name="theme-color" content="#fbfaf7">
     <meta property="og:title" content="Publications - Zhihui Chen">
-    <meta property="og:description" content="Coding Agents &middot; Model Self-Improvement (RSI) &middot; Agentic Mid- & Post-Training — LLM post-training, preference alignment, and multimodal agent research.">
+    <meta property="og:description" content="Zhihui Chen — Coding-driven recursive self-improvement (RSI) for foundation models &mdash; agentic mid-training and post-training, reward and verifier design, RL on execution-verified trajectories &mdash; and AI for healthcare: quality-controlled medical image editing and interpretable medical deepfake detection. Currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for financial coding agents; also selected for the Qwen foundation-model internship and Tencent's Qingyun Elite Research Talent Program.">
     <meta property="og:type" content="website">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2315171b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fbfaf7' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
 
@@ -85,7 +85,7 @@
                 
                     
 
-<article class="pub-row">
+<article class="pub-row has-cover">
     <div class="pub-badge">2026</div>
     <div>
         
@@ -120,6 +120,11 @@
             
         </p>
     </div>
+    
+    <div class="pub-cover-wrap">
+        <img src="/assets/images/covers/medbanana_cover.jpg" alt="Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories" class="pub-cover" loading="lazy">
+    </div>
+    
 </article>
 
                 
@@ -137,18 +142,19 @@
             et al.</span></p>
         <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="ICLR 2026 submission" data-pub-zh="ICLR 2026 在投" data-pub-post=""><i>ICLR 2026 submission</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;Under Review&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;First Author&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;在投&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;一作&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-warning">Under Review</span> <span class="badge badge-pill badge-publication badge-info">First Author</span></span><span data-semantic-scholar-id=""></span></p>
         
-        <p class="pub-abstract" data-en="Farsight targets a core failure mode of RLVR post-training for vision-language models: token-level credit assignment that only rewards instant visual dependence, which lets models drift into ungrounded reasoning over long horizons. We extend credit assignment to future-discounted visual grounding — a token earns visual credit not only for the evidence it uses now, but for how that evidence supports discounted future reasoning steps — encouraging policies that stay anchored to the image across multi-step chains of thought. Developed during my Agentic Post-Training research internship at ByteDance (Singapore)." data-zh="Farsight 针对视觉语言模型 RLVR 后训练的一个核心失效模式：token 级信用分配只奖励「即时视觉依赖」，使模型在长推理链中逐渐脱离视觉证据。我们将信用分配扩展为「未来折扣视觉锚定」——token 获得的视觉信用不仅来自当前使用的证据，也来自该证据对折扣后未来推理步骤的支撑——从而促使策略在多步思维链中始终锚定图像。该工作完成于字节跳动（新加坡）Agentic 后训练研发实习期间。">Farsight targets a core failure mode of RLVR post-training for vision-language models: token-level credit assignment that only rewards instant visual dependence, which lets models drift into ungrounded reasoning over long horizons. We extend credit assignment to future-discounted visual grounding — a token earns visual credit not only for the evidence it uses now, but for how that evidence supports discounted future reasoning steps — encouraging policies that stay anchored to the image across multi-step chains of thought. Developed during my Agentic Post-Training research internship at ByteDance (Singapore).</p>
+        <p class="pub-abstract" data-en="Farsight targets a core failure mode of RLVR post-training for vision-language models: token-level credit assignment that only rewards instant visual dependence, which lets models drift into ungrounded reasoning over long horizons. We extend credit assignment to future-discounted visual grounding — a token earns visual credit not only for the evidence it uses now, but for how that evidence supports discounted future reasoning steps — encouraging policies that stay anchored to the image across multi-step chains of thought. Developed during my foundation-model reasoning post-training research internship at ByteDance, on a 100&amp;times;H100 cluster." data-zh="Farsight 针对视觉语言模型 RLVR 后训练的一个核心失效模式：token 级信用分配只奖励「即时视觉依赖」，使模型在长推理链中逐渐脱离视觉证据。我们将信用分配扩展为「未来折扣视觉锚定」——token 获得的视觉信用不仅来自当前使用的证据，也来自该证据对折扣后未来推理步骤的支撑——从而促使策略在多步思维链中始终锚定图像。该工作完成于字节跳动大模型推理后训练研发实习期间（百卡 H100 集群）。">Farsight targets a core failure mode of RLVR post-training for vision-language models: token-level credit assignment that only rewards instant visual dependence, which lets models drift into ungrounded reasoning over long horizons. We extend credit assignment to future-discounted visual grounding — a token earns visual credit not only for the evidence it uses now, but for how that evidence supports discounted future reasoning steps — encouraging policies that stay anchored to the image across multi-step chains of thought. Developed during my foundation-model reasoning post-training research internship at ByteDance, on a 100&times;H100 cluster.</p>
         
         <p class="abstract-links" data-links-en='null' data-links-zh='null'>
             
         </p>
     </div>
+    
 </article>
 
                 
                     
 
-<article class="pub-row">
+<article class="pub-row has-cover">
     <div class="pub-badge">2026</div>
     <div>
         
@@ -187,6 +193,11 @@
             
         </p>
     </div>
+    
+    <div class="pub-cover-wrap">
+        <img src="/assets/images/publications/medforge/fig1.png" alt="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" class="pub-cover" loading="lazy">
+    </div>
+    
 </article>
 
                 
@@ -195,7 +206,7 @@
                 
                     
 
-<article class="pub-row">
+<article class="pub-row has-cover">
     <div class="pub-badge">2025</div>
     <div>
         
@@ -225,6 +236,11 @@
             
         </p>
     </div>
+    
+    <div class="pub-cover-wrap">
+        <img src="/assets/images/publications/divscore/poster-web.jpg" alt="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" class="pub-cover" loading="lazy">
+    </div>
+    
 </article>
 
                 
@@ -249,6 +265,7 @@
             
         </p>
     </div>
+    
 </article>
 
                 
@@ -273,6 +290,7 @@
             
         </p>
     </div>
+    
 </article>
 
                 

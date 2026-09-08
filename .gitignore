@@ -10,3 +10,11 @@ vendor/
 Gemfile.lock
 
 .DS_Store
+
+# Local agent/tool artifacts
+.claude/
+.playwright-mcp/
+
+# One-off local debug artifacts
+homepage.png
+test_heading_debug.html

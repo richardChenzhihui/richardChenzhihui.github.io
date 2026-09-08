@@ -1,6 +1,6 @@
 {% assign item = include.item %}
 {% assign paper_link = item.links['Paper'] | default: item.links['paper'] %}
-<article class="pub-row">
+<article class="pub-row{% if item.cover %} has-cover{% endif %}">
     <div class="pub-badge">{% if item.pub_date and item.pub_date != "" %}{{ item.pub_date }}{% else %}{{ item.date | date: "%Y" }}{% endif %}</div>
     <div>
         {% if paper_link %}
@@ -25,4 +25,9 @@
             {% endfor %}
         </p>
     </div>
+    {% if item.cover %}
+    <div class="pub-cover-wrap">
+        <img src="{{ item.cover | relative_url }}" alt="{{ item.title | escape }}" class="pub-cover" loading="lazy">
+    </div>
+    {% endif %}
 </article>
