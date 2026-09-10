@@ -26,7 +26,7 @@ short_bio: >-
     研究聚焦 Coding 驱动的大模型自进化（RSI, recursive self-improvement）：通过 Agentic 中期训练（mid-training）与后训练的迭代流程，让 Coding Agent 从自己生成、并经真实执行验证的轨迹中持续学习，而不依赖持续的人工标注。
   </p>
   <p>
-    同时致力于 AI for Healthcare——将可验证的 Agent 后训练范式应用于医学影像：质量可控的医学图像编辑、可解释的医学伪造检测。
+    我的使命是以 RSI 推动 AI for 医疗与人类福祉，聚焦医疗 Agent 与医疗 AI 安全——从可验证的医疗工作流，到值得信任的医学影像。
   </p>
   <p>
     现于智谱（Z.ai）基础模型后训练团队实习，以 RSI 驱动金融 Coding Agent 方向的大模型后训练；同时已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
@@ -36,11 +36,10 @@ hero_kicker: >-
   Coding 驱动的自进化（RSI）· Agentic 中期训练与后训练 · AI for Healthcare
 
 hero_summary: >-
-  Coding 驱动的基座模型自进化（RSI）——Agentic 中期训练（mid-training）与后训练、奖励与验证器设计、在经执行验证的轨迹上做强化学习；并致力于 AI for Healthcare：质量可控的医学图像编辑与可解释的医学伪造检测。现于智谱（Z.ai）基础模型后训练团队实习，以 RSI 驱动金融 Coding Agent 的大模型后训练；并已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
+  以 Coding 驱动基座模型递归自进化（RSI），聚焦医疗 Agent 与医疗 AI 安全，推动医疗与人类福祉。
 
 hero_statement: >-
-  我的研究是让 Coding Agent 从自身执行的结果中持续进化，
-  并把可验证的自进化范式带进医疗 AI。
+  让智能持续进化。<br>让进步惠及生命。
 
 standing:
   - key: "在职"
@@ -82,18 +81,18 @@ homepage_metrics:
     note: "OfficeBuddy：Vision-in-the-Loop 开源 Word/Excel Agent"
 
 impact_areas:
-  - label: "Coding Agent 与自进化"
-    title: "面向 Coding Agent 的模型自进化（RSI）"
-    description: "基础模型后训练中的自进化流程：Agent 自行提出、执行并验证候选方案，经真实执行校验的轨迹成为下一轮训练信号——模型的提升不再等待新的人工标注。"
-    proof: "智谱（Z.ai）—— Coding Agent RSI · 在职"
-  - label: "Agentic 中期训练与后训练"
-    title: "从 mid-training 到轨迹上的强化学习"
-    description: "Agentic 中期训练先注入工具调用与长程执行能力，后训练再以奖励设计、偏好对齐（DPO/RLHF）与 RLVR 加以塑形。Farsight 将 RLVR 的信用分配从即时依赖扩展到未来折扣锚定。"
-    proof: "Farsight（ICLR 2026 在投）· ACL 2026 主会议 · EMNLP 2026 主会议"
-  - label: "验证器与 Agent 系统"
-    title: "自进化的上限由验证器决定"
-    description: "自进化 Agent 的质量取决于给它打分的验证器。DivScore 是带理论保证的零样本验证器；OfficeBuddy 将独立验证器嵌入执行流程：计划 → 执行 → 真实渲染 → 审查 → 定向修复。"
-    proof: "EMNLP 2025 主会议 · +14.4% AUROC · GitHub 53★"
+  - label: "自进化智能 · Self-Evolving Intelligence"
+    title: "让智能，驱动自身的下一次突破。"
+    description: "我的目标是让递归自进化（RSI）成为基座模型持续进步的引擎。让 Coding Agent 自主生成方案、真实执行、验证证据，再从结果中学习——把每一次实践转化为下一轮进化的训练信号。"
+    focus: "Coding Agent · Agentic 中期训练与后训练 · 可验证强化学习"
+    detail: "研究连接执行能力与模型进步的训练闭环、奖励机制和验证器：从长程任务的信用分配，到 Agent 行动的独立审查，让自进化建立在可检验的反馈之上。"
+    proof: "智谱 · Farsight · DivScore · OfficeBuddy"
+  - label: "医疗与人类福祉 · AI for Healthcare"
+    title: "以智能的进化，推动生命的福祉。"
+    description: "我的使命是以 RSI 推动 AI for 医疗与人类福祉：让医疗 AI 从可验证的反馈中持续学习，支持临床工作，并以证据建立信任。"
+    focus: "医疗 Agent · 医疗 AI 安全"
+    detail: "医疗 Agent：多模态推理、工具调用与可验证的医疗工作流。医疗 AI 安全：医学影像真实性、可解释的伪造检测与 Agent 输出的严格评估。以 Med-Banana 的医学图像编辑和 MedForge 的医学伪造检测为具体研究支点。"
+    proof: "Med-Banana · EMNLP 2026 主会议 / MedForge · ACL 2026 主会议"
 
 featured_work:
   - title: "MedForge"

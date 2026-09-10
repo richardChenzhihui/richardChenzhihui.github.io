@@ -5,6 +5,23 @@
 {%- endif -%}
 
 <section class="home-hero">
+    <div class="research-manifesto">
+        <div>
+            <div class="manifesto-eyebrow">RSI / HUMAN WELLBEING</div>
+            <p class="manifesto-title"><span class="lang-en">{{ site.data.profile.hero_statement }}</span><span class="lang-zh d-none">{{ site.data.profile_zh.hero_statement }}</span></p>
+        </div>
+        <div class="rsi-visual">
+            <div class="formula-mark" aria-label="Model at iteration t plus one learns from verified experience">M<sub>t+1</sub> <span>↻</span> M<sub>t</sub></div>
+            <svg viewBox="0 0 380 145" role="img" aria-label="Recursive self-improvement loop: generate, execute, verify, learn">
+                <defs><marker id="loop-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#73e7ce" stroke-width="1.5"/></marker></defs>
+                <g fill="none" stroke="#73e7ce" stroke-width="1.5" marker-end="url(#loop-arrow)"><path d="M111 35H265"/><path d="M302 53V97"/><path d="M265 113H111"/><path d="M74 97V53"/></g>
+                <g fill="#102f41" stroke="#387084"><rect x="17" y="17" width="114" height="36" rx="18"/><rect x="245" y="17" width="114" height="36" rx="18"/><rect x="245" y="95" width="114" height="36" rx="18"/><rect x="17" y="95" width="114" height="36" rx="18"/></g>
+                <g fill="#d9f6f2" font-family="monospace" font-size="14" text-anchor="middle"><text x="74" y="40">GENERATE</text><text x="302" y="40">EXECUTE</text><text x="302" y="118">VERIFY</text><text x="74" y="118">LEARN</text></g>
+                <text x="190" y="79" text-anchor="middle" fill="#90b5c7" font-family="monospace" font-size="12">VERIFIED EXPERIENCE</text>
+            </svg>
+            <div class="formula-caption"><span class="lang-en">A research vision: learn, verify, evolve.</span><span class="lang-zh d-none">研究愿景：学习、验证、持续进化。</span></div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-12 col-sm-4 col-lg-3 mb-4 mb-sm-0">
             {% if site.data.profile.portrait_url %}

@@ -26,7 +26,7 @@ short_bio: >-
     My research focuses on coding-driven recursive self-improvement (RSI) for large language models: agentic mid-training and post-training loops in which coding agents generate, verify, and learn from their own execution trajectories instead of waiting for fresh human labels.
   </p>
   <p>
-    I also work on AI for healthcare, bringing this verifiable, agentic post-training recipe to medical imaging &mdash; quality-controlled medical image editing and interpretable medical deepfake detection.
+    My mission is to harness RSI for healthcare and human wellbeing, with a focus on medical agents and medical AI safety &mdash; from verifiable medical workflows to trustworthy medical imaging.
   </p>
   <p>
     I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for financial coding agents. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
@@ -36,11 +36,10 @@ hero_kicker: >-
   Coding-Driven RSI &middot; Agentic Mid- &amp; Post-Training &middot; AI for Healthcare
 
 hero_summary: >-
-  Coding-driven recursive self-improvement (RSI) for foundation models &mdash; agentic mid-training and post-training, reward and verifier design, RL on execution-verified trajectories &mdash; and AI for healthcare: quality-controlled medical image editing and interpretable medical deepfake detection. Currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for financial coding agents; also selected for the Qwen foundation-model internship and Tencent's Qingyun Elite Research Talent Program.
+  Coding-driven recursive self-improvement for foundation models. Medical agents and medical AI safety, advancing healthcare and human wellbeing.
 
 hero_statement: >-
-  I work on coding agents that improve themselves from their own execution &mdash;
-  and on bringing verifiable self-improvement to medical AI.
+  Self-evolving intelligence.<br>In service of human wellbeing.
 
 standing:
   - key: "Now"
@@ -86,18 +85,18 @@ homepage_metrics:
     note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent"
 
 impact_areas:
-  - label: "Coding Agents & RSI"
-    title: "Recursive self-improvement for coding agents"
-    description: "Foundation-model post-training in which the coding agent improves from its own execution: it proposes, runs and verifies candidate solutions, and the resulting execution-grounded trajectories become the next round of training signal — improvement without waiting for fresh human labels."
-    proof: "Zhipu AI (Z.ai) — Coding Agent RSI · current"
-  - label: "Agentic Mid- & Post-Training"
-    title: "From mid-training to RL on agent trajectories"
-    description: "Agentic mid-training injects tool-use and long-horizon execution behavior before alignment; post-training then shapes it with reward design, preference alignment (DPO/RLHF) and RLVR. Farsight extends RLVR credit assignment from instant to future-discounted grounding."
-    proof: "Farsight (ICLR 2026 sub) · ACL 2026 Main · EMNLP 2026 Main"
-  - label: "Verifiers & Agent Systems"
-    title: "Verification is what makes self-improvement possible"
-    description: "A self-improving agent is only as good as the verifier that scores it. DivScore is a zero-shot verifier with theoretical guarantees; OfficeBuddy puts an independent verifier in the loop — plan → act → real render → audit → targeted repair."
-    proof: "EMNLP 2025 Main · +14.4% AUROC · 53★ on GitHub"
+  - label: "Self-Evolving Intelligence"
+    title: "Build intelligence that drives its own next breakthrough."
+    description: "My goal is to make recursive self-improvement (RSI) a practical engine for foundation models. Coding agents generate solutions, execute them, verify the evidence, and learn from the results — turning experience into the next training signal."
+    focus: "Coding Agents · Agentic Mid- & Post-Training · Verifiable RL"
+    detail: "I study the training loops, rewards, and verifiers that connect better execution to better models, from long-horizon credit assignment to independent audits of agent actions."
+    proof: "Zhipu AI · Farsight · DivScore · OfficeBuddy"
+  - label: "AI for Healthcare & Human Wellbeing"
+    title: "Advance intelligence. Improve human lives."
+    description: "My mission is to use RSI to advance AI for healthcare and human wellbeing: build medical AI that learns from verifiable feedback, supports clinical work, and earns trust through evidence."
+    focus: "Medical Agents · Medical AI Safety"
+    detail: "Medical Agents: multimodal reasoning, tool use, and verifiable medical workflows. Medical AI Safety: image integrity, interpretable forgery detection, and rigorous evaluation of agent outputs. Med-Banana and MedForge ground this direction in medical image editing and deepfake detection."
+    proof: "Med-Banana · EMNLP 2026 Main / MedForge · ACL 2026 Main"
 
 featured_work:
   - title: "MedForge"

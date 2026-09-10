@@ -1,7 +1,7 @@
 {% assign impact_en = site.data.profile.impact_areas %}
 {% assign impact_zh = site.data.profile_zh.impact_areas %}
 {% if impact_en and impact_en.size > 0 %}
-<section class="home-section">
+<section class="home-section research-directions" id="research">
     <div class="home-section-heading">
         <span class="lang-en">Research</span>
         <span class="lang-zh d-none">研究方向</span>
@@ -25,6 +25,8 @@
                 <span class="lang-en">{{ item.description }}</span>
                 <span class="lang-zh d-none">{{ item_zh.description }}</span>
             </p>
+            <p class="home-research-focus"><span class="lang-en">{{ item.focus }}</span><span class="lang-zh d-none">{{ item_zh.focus }}</span></p>
+            <p class="home-research-detail"><span class="lang-en">{{ item.detail }}</span><span class="lang-zh d-none">{{ item_zh.detail }}</span></p>
             <div class="home-research-proof">
                 <span class="lang-en">{{ item.proof }}</span>
                 <span class="lang-zh d-none">{{ item_zh.proof }}</span>
