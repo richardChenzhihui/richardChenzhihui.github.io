@@ -1,8 +1,6 @@
 /* ==========================================================================
    Zhihui Chen — personal site
-   Design system: warm paper, editorial serif display, hairline structure.
-   Principles: no gradients as decoration, no glow, no drop shadows,
-   one restrained accent, whitespace carries the hierarchy.
+   Design system: editorial typography, technical diagrams, deep-blue mission panel.
    ========================================================================== */
 
 :root {
@@ -900,4 +898,60 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
     margin: 0 !important;
     color: var(--marker) !important;
     background: transparent !important;
+}
+
+/* Research identity: a symbolic model update and its execution loop. */
+.home-landing { --paper: #f8fafc; --rule: #d9e2ea; --rule-soft: #e6edf2; --marker: #226577; }
+.home-landing .site-nav { background: rgba(248, 250, 252, .92); }
+.research-manifesto {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 2.8rem;
+    margin-bottom: 3rem;
+    color: #e9f6ff;
+    background-color: #091e30;
+    background-image: linear-gradient(rgba(115, 231, 206, .045) 1px, transparent 1px), linear-gradient(90deg, rgba(115, 231, 206, .045) 1px, transparent 1px);
+    background-size: 32px 32px;
+    border-top: 3px solid #73e7ce;
+    border-radius: 4px 4px 24px 4px;
+}
+.manifesto-eyebrow { font: .75rem var(--font-mono); letter-spacing: .12em; color: #73e7ce; margin-bottom: 1.5rem; }
+.manifesto-title { font: 400 clamp(1.8rem, 3.6vw, 2.8rem)/1.2 var(--font-display); letter-spacing: -.025em; margin: 0; }
+.manifesto-title .lang-zh { line-height: 1.5; letter-spacing: 0; }
+.rsi-visual { min-width: 0; text-align: center; }
+.formula-mark { font: italic clamp(2.2rem, 4vw, 3.3rem)/1.4 Georgia, serif; color: #fff; white-space: nowrap; }
+.formula-mark sub { font-size: .4em; }
+.formula-mark > span { display: inline-block; color: #73e7ce; padding: 0 .15em; }
+.rsi-visual svg { display: block; width: 100%; height: auto; margin: .6rem auto; }
+.formula-caption { font-size: .8rem; color: #b2ccdb; }
+.home-landing .home-hero-portrait { border-radius: 4px 4px 32px 4px; filter: none; border-bottom: 4px solid #226577; }
+.research-directions .home-section-heading { color: #226577; font-size: .875rem; }
+.research-directions .home-research-item {
+    grid-template-columns: 36px minmax(0, .85fr) minmax(0, 1.25fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid var(--rule);
+    border-left: 3px solid #226577;
+    background: #fff;
+}
+.research-directions .home-research-item:last-child { border-left-color: #307c64; background: #f1f8f5; }
+.research-directions .home-research-index { font-size: 1rem; color: #226577; }
+.research-directions .home-research-label { font-size: .8rem; line-height: 1.7; }
+.research-directions .home-research-title { font-size: clamp(1.5rem, 2.5vw, 1.9rem); }
+.research-directions .home-research-body { font-size: 1rem; color: #253a49; }
+.home-research-focus { font-size: .9rem; font-weight: 600; color: #185f6f; margin: 1.2rem 0 .5rem; }
+.home-research-detail { font-size: 1rem; line-height: 1.75; }
+.research-directions .home-research-proof { font-size: .8rem; color: #566878; }
+@media (max-width: 900px) {
+    .research-manifesto { padding: 2rem; gap: 1.25rem; }
+    .research-directions .home-research-item { grid-template-columns: 30px minmax(0, 1fr); }
+}
+@media (max-width: 575px) {
+    .research-manifesto { grid-template-columns: 1fr; padding: 1.5rem; }
+    .rsi-visual { max-width: 360px; width: 100%; margin: .5rem auto 0; }
+    .research-directions .home-research-item { padding: 1.25rem; gap: .75rem; }
+    .research-directions .home-research-right { grid-column: 1 / -1; }
 }
