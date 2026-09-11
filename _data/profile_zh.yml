@@ -206,6 +206,7 @@ experience:
   date: 2025年3月 - 2025年7月
 
 - name: AQUMON（香港）
+  logo: /assets/images/badges/AQUMON.png
   position: 量化交易 Agent 研发实习生
   dept: "LangChain Agent 编排 · 对接 Futu OpenAPI 实时行情与自动下单"
   date: 2025年1月 - 2025年3月
