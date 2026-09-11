@@ -39,7 +39,7 @@ hero_summary: >-
   My primary research focuses on Coding Agent recursive self-improvement (RSI) and post-training. My doctoral research also explores medical agents and medical AI safety.
 
 hero_statement: >-
-  Advancing self-evolving intelligence.<br>Expanding the frontier of capability.
+  Toward AI that builds<br>the next generation of AI.
 
 standing:
   - key: "Now"
@@ -86,8 +86,8 @@ homepage_metrics:
 
 impact_areas:
   - label: "Primary Focus · Coding Agent RSI"
-    title: "Building intelligence that continually improves itself."
-    description: "I study the training mechanisms of recursive self-improvement through coding agents: integrating trajectory generation, execution-based verification, and model updates into a unified loop, and investigating how agent experience can drive sustained, generalizable capability gains."
+    title: "Closing the loop of AI development."
+    description: "My research pursues recursive self-improvement through Coding Agent post-training: connecting stronger agents to the development of stronger models. The long-term goal is AI that can contribute to designing, training, and evaluating its successors."
     focus: "Coding Agents · Agentic Mid- & Post-Training · Verifiable RL"
     detail: "I study the training loops, rewards, and verifiers that connect better execution to better models, from long-horizon credit assignment to independent audits of agent actions."
     proof: "Zhipu AI · Farsight · DivScore · OfficeBuddy"

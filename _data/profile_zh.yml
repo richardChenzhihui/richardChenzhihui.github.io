@@ -39,7 +39,7 @@ hero_summary: >-
   主要研究 Coding Agent 的递归自进化（RSI）与后训练；博士研究同时关注 AI for Healthcare，聚焦医疗 Agent 与医疗 AI 安全。
 
 hero_statement: >-
-  探索智能自进化的机制。<br>拓展模型能力的边界。
+  让 AI 成为<br>下一代 AI 的创造者。
 
 standing:
   - key: "在职"
@@ -82,8 +82,8 @@ homepage_metrics:
 
 impact_areas:
   - label: "核心方向 · Coding Agent RSI"
-    title: "构建能够持续自我改进的智能系统。"
-    description: "以 Coding Agent 为研究载体，探索递归自进化的训练机制：将轨迹生成、执行验证与模型更新纳入统一闭环，研究智能体的实践经验如何转化为可持续、可泛化的能力增长。"
+    title: "闭合 AI 研发的自进化循环。"
+    description: "我的研究以 Coding Agent 后训练为切入点，推动递归自进化：让更强的智能体参与构建更强的模型。长期目标是让 AI 具备参与设计、训练与评估下一代 AI 的能力。"
     focus: "Coding Agent · Agentic 中期训练与后训练 · 可验证强化学习"
     detail: "研究连接执行能力与模型进步的训练闭环、奖励机制和验证器：从长程任务的信用分配，到 Agent 行动的独立审查，让自进化建立在可检验的反馈之上。"
     proof: "智谱 · Farsight · DivScore · OfficeBuddy"
