@@ -978,3 +978,27 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 .pub-conference-caption strong { font: 600 clamp(1.2rem, 2vw, 1.5rem)/1.2 var(--font-sans); letter-spacing: -.03em; }
 .pub-conference-caption span { font: .8rem/1.5 var(--font-mono); margin-top: .4rem; }
 @media (max-width: 767px) { .pub-list--selected { grid-template-columns: 1fr; } }
+
+/* Show identity and a few research keywords before the longer introduction. */
+html[lang="zh-CN"] .lang-en, html[lang="en"] .lang-zh { display: none !important; }
+.home-hero-position { font-size: 1.15rem; font-weight: 600; color: #243e52; line-height: 1.55; }
+.research-keywords { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0 1.4rem; }
+.research-keywords > span { background: #e5f1f4; color: #124d60; border: 1px solid #bdd9e2; padding: .4rem .7rem; font-size: 1rem; font-weight: 600; border-radius: 4px; }
+.profile-facts p { display: flex; flex-wrap: wrap; gap: .25rem .8rem; margin: .65rem 0; font-size: 1rem; }
+.profile-facts strong { color: #1a4a60; }
+.profile-more { margin-top: 1rem; }
+.profile-more summary { cursor: pointer; color: #315d73; font-size: .9rem; }
+.profile-more .home-bio { margin-top: 1rem; }
+.home-hero .research-manifesto { margin-top: 2.5rem; margin-bottom: 0; }
+.site-nav .navbar-collapse { order: 2; }
+.site-nav #lang-toggle { order: 3; margin: 0 0 0 1rem; padding: .45rem .85rem !important; color: white; background: #163e58; border: 1px solid #163e58; border-radius: 6px; font: 600 .95rem var(--font-sans); letter-spacing: 0; text-transform: none; display: flex; align-items: center; gap: .6rem; white-space: nowrap; }
+.site-nav #lang-toggle:hover { color: white; background: #235f7d; }
+.site-nav #lang-toggle > span:first-child { opacity: .8; font-size: .8rem; }
+@media (max-width: 767px) {
+    .site-nav .navbar-brand { margin-right: auto; }
+    .site-nav #lang-toggle { order: 1; margin-left: .4rem; }
+    .site-nav .navbar-toggler { order: 2; margin-left: .6rem; }
+    .site-nav .navbar-collapse { order: 3; }
+}
+
+@media (max-width: 575px) { .home-hero-portrait { max-width: 112px; } }
