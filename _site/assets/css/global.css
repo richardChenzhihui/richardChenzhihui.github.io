@@ -955,3 +955,13 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
     .research-directions .home-research-item { padding: 1.25rem; gap: .75rem; }
     .research-directions .home-research-right { grid-column: 1 / -1; }
 }
+
+/* Company identities reuse the logos attached to research experience. */
+.company-strip { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--rule); }
+.company-mark { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: .5rem; }
+.company-mark img { width: 112px; height: 42px; object-fit: contain; object-position: left center; margin-bottom: .4rem; }
+.company-mark > span { font-size: .875rem; color: var(--ink); line-height: 1.5; }
+.company-mark small { font-size: .75rem; color: #526675; line-height: 1.5; }
+.home-landing .cv-logo { filter: none; opacity: 1; }
+@media (max-width: 900px) { .company-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 575px) { .company-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
