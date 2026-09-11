@@ -26,7 +26,7 @@ short_bio: >-
     研究聚焦 Coding Agent 的递归自进化（RSI）与基座模型后训练：探索如何将自主探索、代码执行与可验证反馈转化为可扩展的学习信号，推动模型推理与长程任务能力的持续提升。
   </p>
   <p>
-    博士研究同时围绕 AI for Healthcare 展开，聚焦医疗 Agent 与医疗 AI 安全，以可靠的医疗智能推动医疗与人类福祉。
+    博士研究以 AI 递归自进化（RSI）为核心，同时研究医疗 Agent 与医疗 AI 安全，推动智能能力的进步与医疗、人类福祉的发展。
   </p>
   <p>
     现于智谱（Z.ai）基础模型后训练团队实习，以 RSI 驱动 Coding Agent 方向的大模型后训练；同时已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
@@ -36,7 +36,7 @@ hero_kicker: >-
   Coding Agent 自进化（RSI）· 基座模型后训练
 
 hero_summary: >-
-  主要研究 Coding Agent 的递归自进化（RSI）与后训练；博士研究同时关注 AI for Healthcare，聚焦医疗 Agent 与医疗 AI 安全。
+  博士研究聚焦 AI 递归自进化（RSI），以 Coding Agent 与后训练为核心，同时关注医疗 Agent 与医疗 AI 安全。
 
 hero_statement: >-
   让 AI 成为<br>下一代 AI 的创造者。
@@ -87,7 +87,7 @@ impact_areas:
     focus: "Coding Agent · Agentic 中期训练与后训练 · 可验证强化学习"
     detail: "研究连接执行能力与模型进步的训练闭环、奖励机制和验证器：从长程任务的信用分配，到 Agent 行动的独立审查，让自进化建立在可检验的反馈之上。"
     proof: "智谱 · Farsight · DivScore · OfficeBuddy"
-  - label: "博士研究 · AI for Healthcare"
+  - label: "研究方向 · AI for Healthcare"
     title: "以智能的进化，推动生命的福祉。"
     description: "我的博士研究围绕 AI for Healthcare 展开，以推动医疗与人类福祉为使命。聚焦医疗 Agent 与医疗 AI 安全，研究可靠推理、可验证的医疗工作流与可信医学证据，支持临床工作。"
     focus: "医疗 Agent · 医疗 AI 安全"

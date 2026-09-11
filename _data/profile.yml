@@ -26,7 +26,7 @@ short_bio: >-
     My research focuses on recursive self-improvement (RSI) for coding agents and foundation-model post-training: turning autonomous exploration, code execution, and verifiable feedback into scalable learning signals that advance reasoning and long-horizon capabilities.
   </p>
   <p>
-    My doctoral research also explores AI for healthcare, focusing on medical agents and medical AI safety to advance healthcare and human wellbeing.
+    My doctoral research centers on AI recursive self-improvement (RSI), alongside medical agents and medical AI safety, advancing both AI capabilities and human wellbeing.
   </p>
   <p>
     I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for coding agents. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
@@ -36,7 +36,7 @@ hero_kicker: >-
   Coding Agent RSI &middot; Foundation-Model Post-Training
 
 hero_summary: >-
-  My primary research focuses on Coding Agent recursive self-improvement (RSI) and post-training. My doctoral research also explores medical agents and medical AI safety.
+  My doctoral research centers on AI recursive self-improvement (RSI), with a focus on coding agents and post-training, alongside medical agents and medical AI safety.
 
 hero_statement: >-
   Toward AI that builds<br>the next generation of AI.
@@ -91,7 +91,7 @@ impact_areas:
     focus: "Coding Agents · Agentic Mid- & Post-Training · Verifiable RL"
     detail: "I study the training loops, rewards, and verifiers that connect better execution to better models, from long-horizon credit assignment to independent audits of agent actions."
     proof: "Zhipu AI · Farsight · DivScore · OfficeBuddy"
-  - label: "Doctoral Research · AI for Healthcare"
+  - label: "Research Direction · AI for Healthcare"
     title: "Advance intelligence. Improve human lives."
     description: "My doctoral research explores AI for healthcare and human wellbeing. I study medical agents and medical AI safety, aiming to support clinical work with reliable reasoning, verifiable workflows, and trustworthy medical evidence."
     focus: "Medical Agents · Medical AI Safety"
