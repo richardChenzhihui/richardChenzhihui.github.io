@@ -1,6 +1,12 @@
 {% assign item = include.item %}
 {% assign paper_link = item.links['Paper'] | default: item.links['paper'] %}
-<article class="pub-row{% if item.cover %} has-cover{% endif %}">
+<article class="pub-row{% if include.conference_visual and item.conference_banner %} has-conference-banner{% elsif item.cover %} has-cover{% endif %}">
+    {% if include.conference_visual and item.conference_banner %}
+    <div class="pub-conference-banner">
+        <img src="{{ item.conference_banner | relative_url }}" alt="{{ item.conference_name | escape }} conference banner" loading="lazy">
+        <div class="pub-conference-caption"><strong>{{ item.conference_name }}</strong>{% if item.pub contains 'submission' %}<span class="lang-en">Submission · Under review</span><span class="lang-zh d-none">投稿 · 审稿中</span>{% else %}<span class="lang-en">Main Conference</span><span class="lang-zh d-none">主会议</span>{% endif %}</div>
+    </div>
+    {% endif %}
     <div class="pub-badge">{% if item.pub_date and item.pub_date != "" %}{{ item.pub_date }}{% else %}{{ item.date | date: "%Y" }}{% endif %}</div>
     <div>
         {% if paper_link %}
@@ -25,9 +31,11 @@
             {% endfor %}
         </p>
     </div>
+    {% unless include.conference_visual %}
     {% if item.cover %}
     <div class="pub-cover-wrap">
         <img src="{{ item.cover | relative_url }}" alt="{{ item.title | escape }}" class="pub-cover" loading="lazy">
     </div>
     {% endif %}
+{% endunless %}
 </article>

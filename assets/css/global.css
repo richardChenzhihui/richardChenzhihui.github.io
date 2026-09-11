@@ -965,3 +965,16 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 .home-landing .cv-logo { filter: none; opacity: 1; }
 @media (max-width: 900px) { .company-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 575px) { .company-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Selected work leads with the conference's official website imagery. */
+.pub-list--selected { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; border: 0; }
+.pub-list--selected .pub-row { display: flex; flex-direction: column; gap: 0; min-width: 0; padding: 0 0 1.5rem; border: 1px solid var(--rule); background: var(--surface); }
+.pub-list--selected .pub-row:last-child { border-bottom: 1px solid var(--rule); }
+.pub-list--selected .pub-row > div:not(.pub-conference-banner) { padding: 0 1.4rem; }
+.pub-list--selected .pub-badge { margin: 1.2rem 0 .5rem; }
+.pub-conference-banner { position: relative; width: 100%; aspect-ratio: 2.3 / 1; overflow: hidden; background: #142f43; }
+.pub-conference-banner img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.pub-conference-caption { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 1.3rem; background: linear-gradient(transparent 15%, rgba(5, 19, 32, .85)); color: white; }
+.pub-conference-caption strong { font: 600 clamp(1.5rem, 3vw, 2rem)/1.2 var(--font-sans); letter-spacing: -.03em; }
+.pub-conference-caption span { font: .8rem/1.5 var(--font-mono); margin-top: .4rem; }
+@media (max-width: 767px) { .pub-list--selected { grid-template-columns: 1fr; } }

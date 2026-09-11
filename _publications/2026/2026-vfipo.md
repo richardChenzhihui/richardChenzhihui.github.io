@@ -3,6 +3,9 @@ title:          "Looking Ahead to Stay Grounded: Future-Discounted Visual Credit
 title_zh:       "Looking Ahead to Stay Grounded：面向视觉语言模型强化学习的未来折扣视觉信用分配"
 date:           2026-06-20 00:01:00 +0800
 selected:       true
+conference_banner: /assets/images/conferences/iclr-2026.jpg
+conference_name: "ICLR 2026"
+conference_banner_source: "https://iclr.cc/static/core/img/Brazil-Drops-Visa-USA.jpg"
 pub:            "ICLR 2026 submission"
 pub_zh:         "ICLR 2026 在投"
 pub_date:       ""

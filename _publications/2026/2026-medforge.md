@@ -3,6 +3,9 @@ title:          "MedForge: Interpretable Medical Deepfake Detection via Forgery-
 title_zh:       "MedForge：基于伪造感知推理的可解释医学深度伪造检测"
 date:           2026-04-10 00:01:00 +0800
 selected:       true
+conference_banner: /assets/images/conferences/acl-2026.jpg
+conference_name: "ACL 2026"
+conference_banner_source: "https://2026.aclweb.org/assets/images/san_diego.jpg"
 pub:            "Annual Meeting of the Association for Computational Linguistics (ACL)"
 pub_zh:         "计算语言学协会年会 (ACL)"
 pub_date:       "2026"

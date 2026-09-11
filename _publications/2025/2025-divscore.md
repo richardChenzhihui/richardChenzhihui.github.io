@@ -3,6 +3,9 @@ title:          "DivScore: Zero-Shot Detection of LLM-Generated Text in Speciali
 title_zh:       "DivScore: 专业领域中大语言模型生成文本的零样本检测"
 date:           2025-11-02 00:01:00 +0800
 selected:       true
+conference_banner: /assets/images/conferences/emnlp-2025.jpg
+conference_name: "EMNLP 2025"
+conference_banner_source: "https://2025.emnlp.org/assets/images/suzhou_city/emnlp_2025_background.jpg"
 pub:            "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
 pub_zh:         "自然语言处理实证方法会议 (EMNLP)"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Main Conference</span>'

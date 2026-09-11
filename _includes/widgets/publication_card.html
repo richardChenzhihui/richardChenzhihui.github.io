@@ -10,9 +10,9 @@
             <span class="lang-zh d-none">全部论文</span>
         </a>
     </div>
-    <div class="pub-list">
+    <div class="pub-list pub-list--selected">
         {% for item in publications limit:include.limit %}
-            {% include widgets/publication_item.html item=item hide_abstract=include.hide_abstract %}
+            {% include widgets/publication_item.html item=item conference_visual=true hide_abstract=include.hide_abstract %}
         {% endfor %}
     </div>
 </section>

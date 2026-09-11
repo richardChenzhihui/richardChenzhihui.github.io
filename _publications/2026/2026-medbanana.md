@@ -3,6 +3,9 @@ title:          "Med-Banana: Learning Agentic Quality-Controlled Medical Image E
 title_zh:       "Med-Banana：从成败轨迹学习 Agentic 质量可控的医学图像编辑"
 date:           2026-08-16 00:01:00 +0800
 selected:       true
+conference_banner: /assets/images/conferences/emnlp-2026.jpg
+conference_name: "EMNLP 2026"
+conference_banner_source: "https://2026.emnlp.org/assets/images/logos/emnlp_2026_background_v0.jpg"
 pub:            "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
 pub_zh:         "自然语言处理实证方法会议 (EMNLP)"
 pub_date:       "2026"
