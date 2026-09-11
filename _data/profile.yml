@@ -23,7 +23,7 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
   </p>
   <p>
-    My research focuses on coding-driven recursive self-improvement (RSI) for large language models: agentic mid-training and post-training loops in which coding agents generate, verify, and learn from their own execution trajectories instead of waiting for fresh human labels.
+    My research focuses on recursive self-improvement (RSI) for coding agents and foundation-model post-training: turning autonomous exploration, code execution, and verifiable feedback into scalable learning signals that advance reasoning and long-horizon capabilities.
   </p>
   <p>
     My doctoral research also explores AI for healthcare, focusing on medical agents and medical AI safety to advance healthcare and human wellbeing.
@@ -39,7 +39,7 @@ hero_summary: >-
   My primary research focuses on Coding Agent recursive self-improvement (RSI) and post-training. My doctoral research also explores medical agents and medical AI safety.
 
 hero_statement: >-
-  Build agents that code.<br>And learn to improve themselves.
+  Advancing self-evolving intelligence.<br>Expanding the frontier of capability.
 
 standing:
   - key: "Now"
@@ -86,8 +86,8 @@ homepage_metrics:
 
 impact_areas:
   - label: "Primary Focus · Coding Agent RSI"
-    title: "Build intelligence that drives its own next breakthrough."
-    description: "My goal is to make recursive self-improvement (RSI) a practical engine for foundation models. Coding agents generate solutions, execute them, verify the evidence, and learn from the results — turning experience into the next training signal."
+    title: "Building intelligence that continually improves itself."
+    description: "I study the training mechanisms of recursive self-improvement through coding agents: integrating trajectory generation, execution-based verification, and model updates into a unified loop, and investigating how agent experience can drive sustained, generalizable capability gains."
     focus: "Coding Agents · Agentic Mid- & Post-Training · Verifiable RL"
     detail: "I study the training loops, rewards, and verifiers that connect better execution to better models, from long-horizon credit assignment to independent audits of agent actions."
     proof: "Zhipu AI · Farsight · DivScore · OfficeBuddy"

@@ -23,13 +23,13 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    研究聚焦 Coding 驱动的大模型自进化（RSI, recursive self-improvement）：通过 Agentic 中期训练（mid-training）与后训练的迭代流程，让 Coding Agent 从自己生成、并经真实执行验证的轨迹中持续学习，而不依赖持续的人工标注。
+    研究聚焦 Coding Agent 的递归自进化（RSI）与基座模型后训练：探索如何将自主探索、代码执行与可验证反馈转化为可扩展的学习信号，推动模型推理与长程任务能力的持续提升。
   </p>
   <p>
     博士研究同时围绕 AI for Healthcare 展开，聚焦医疗 Agent 与医疗 AI 安全，以可靠的医疗智能推动医疗与人类福祉。
   </p>
   <p>
-    现于智谱（Z.ai）基础模型后训练团队实习，以 RSI 驱动Coding Agent 方向的大模型后训练；同时已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
+    现于智谱（Z.ai）基础模型后训练团队实习，以 RSI 驱动 Coding Agent 方向的大模型后训练；同时已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
   </p>
 
 hero_kicker: >-
@@ -39,7 +39,7 @@ hero_summary: >-
   主要研究 Coding Agent 的递归自进化（RSI）与后训练；博士研究同时关注 AI for Healthcare，聚焦医疗 Agent 与医疗 AI 安全。
 
 hero_statement: >-
-  让 Agent 编写代码。<br>更让它学会自我进化。
+  探索智能自进化的机制。<br>拓展模型能力的边界。
 
 standing:
   - key: "在职"
@@ -82,8 +82,8 @@ homepage_metrics:
 
 impact_areas:
   - label: "核心方向 · Coding Agent RSI"
-    title: "让智能，驱动自身的下一次突破。"
-    description: "我的目标是让递归自进化（RSI）成为基座模型持续进步的引擎。让 Coding Agent 自主生成方案、真实执行、验证证据，再从结果中学习——把每一次实践转化为下一轮进化的训练信号。"
+    title: "构建能够持续自我改进的智能系统。"
+    description: "以 Coding Agent 为研究载体，探索递归自进化的训练机制：将轨迹生成、执行验证与模型更新纳入统一闭环，研究智能体的实践经验如何转化为可持续、可泛化的能力增长。"
     focus: "Coding Agent · Agentic 中期训练与后训练 · 可验证强化学习"
     detail: "研究连接执行能力与模型进步的训练闭环、奖励机制和验证器：从长程任务的信用分配，到 Agent 行动的独立审查，让自进化建立在可检验的反馈之上。"
     proof: "智谱 · Farsight · DivScore · OfficeBuddy"
@@ -178,7 +178,7 @@ experience:
 - name: 智谱（Z.ai）
   logo: /assets/images/badges/Zhipu.png
   position: 基础模型后训练 研发实习生
-  dept: "以 RSI 驱动Coding Agent 的大模型后训练 —— 量化/金融编码任务提供经执行验证的训练信号，模型从自生成轨迹中持续自我改进"
+  dept: "以 RSI 驱动 Coding Agent 的大模型后训练 —— 量化/金融编码任务提供经执行验证的训练信号，模型从自生成轨迹中持续自我改进"
   date: 2026年9月 - 至今
 
 - name: 阿里通义实验室 · Qwen
