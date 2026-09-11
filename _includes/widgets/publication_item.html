@@ -4,7 +4,7 @@
     {% if include.conference_visual and item.conference_banner %}
     <div class="pub-conference-banner">
         <img src="{{ item.conference_banner | relative_url }}" alt="{{ item.conference_name | escape }} conference banner" loading="lazy">
-        <div class="pub-conference-caption"><strong>{{ item.conference_name }}</strong>{% if item.pub contains 'submission' %}<span class="lang-en">Submission · Under review</span><span class="lang-zh d-none">投稿 · 审稿中</span>{% else %}<span class="lang-en">Main Conference</span><span class="lang-zh d-none">主会议</span>{% endif %}</div>
+        <div class="pub-conference-caption"><strong>{{ item.conference_name }}</strong>{% if item.pub contains 'submission' %}<span class="lang-en">Submission · Under review</span><span class="lang-zh d-none">投稿 · 审稿中</span>{% elsif item.conference_name == 'EMNLP 2026' %}<span class="lang-en">Accepted</span><span class="lang-zh d-none">已录用</span>{% else %}<span class="lang-en">Main Conference</span><span class="lang-zh d-none">主会议</span>{% endif %}</div>
     </div>
     {% endif %}
     <div class="pub-badge">{% if item.pub_date and item.pub_date != "" %}{{ item.pub_date }}{% else %}{{ item.date | date: "%Y" }}{% endif %}</div>

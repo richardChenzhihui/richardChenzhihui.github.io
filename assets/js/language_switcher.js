@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function applyLanguage(lang) {
         var isZh = (lang === 'zh');
-        try {
-            document.documentElement.setAttribute('lang', isZh ? 'zh-CN' : 'en');
-        } catch (e) {}
+        document.documentElement.setAttribute('lang', isZh ? 'zh-CN' : 'en');
+        var button = document.getElementById('lang-toggle');
+        if (button) button.setAttribute('aria-label', isZh ? 'Switch to English' : '切换为中文');
 
         var enNodes = document.querySelectorAll('.lang-en');
         var zhNodes = document.querySelectorAll('.lang-zh');
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    var lang = localStorage.getItem(STORAGE_KEY) || 'en';
+    var lang = localStorage.getItem(STORAGE_KEY) || 'zh';
     applyLanguage(lang);
 
     var toggle = document.getElementById('lang-toggle');
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
         toggle.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
-            var current = localStorage.getItem(STORAGE_KEY) || 'en';
+            var current = localStorage.getItem(STORAGE_KEY) || 'zh';
             var next = current === 'en' ? 'zh' : 'en';
             localStorage.setItem(STORAGE_KEY, next);
             applyLanguage(next);

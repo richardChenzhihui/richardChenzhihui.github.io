@@ -9,8 +9,8 @@ conference_banner_source: "https://2026.emnlp.org/assets/images/logos/emnlp_2026
 pub:            "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
 pub_zh:         "自然语言处理实证方法会议 (EMNLP)"
 pub_date:       "2026"
-pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Accepted · Main Conference</span>'
-pub_last_zh:    ' <span class="badge badge-pill badge-publication badge-success">已录用 · 主会议</span>'
+pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Accepted</span>'
+pub_last_zh:    ' <span class="badge badge-pill badge-publication badge-success">已录用</span>'
 abstract: >-
   Text-guided medical image editing must deliver the requested pathology while preserving anatomy, modality-specific appearance, and clinical plausibility. Existing datasets supervise editors only with accepted final edits and discard the failed attempts produced during generation. We argue that failures are indispensable supervision for agentic post-training: they specify what should be rejected, why an edit is medically or visually invalid, and how the instruction should be revised. We present Med-Banana, a trajectory-supervised framework that jointly trains an editor, a verifier, and a refiner for an edit-verify-refine inference loop, together with Med-Banana-80K, a large-scale resource of success-and-failure editing trajectories comprising candidate images, verification outcomes, rejection reasons, and prompt refinements (50,635 accepted + 37,822 rejected trajectories). Experiments with MLLM judges, blind expert assessment, and separability probes show consistent gains over open medical image editors. Code and data are publicly available.
 abstract_zh: >-

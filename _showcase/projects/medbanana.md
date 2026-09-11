@@ -6,13 +6,13 @@ date: 2026-06-29 00:01:00 +0800
 ---
 
 <div class="p-4">
-    <h2 data-en="Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026 Main)" data-zh="Med-Banana-80K：面向医学图像编辑的 Agentic 后训练数据（EMNLP 2026 主会议）">Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026 Main)</h2>
+    <h2 data-en="Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026)" data-zh="Med-Banana-80K：面向医学图像编辑的 Agentic 后训练数据（EMNLP 2026）">Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026)</h2>
     <hr />
 
     <div class="row">
         <div class="col-md-8">
-            <p data-en="The dataset behind the <strong>EMNLP 2026 Main Conference</strong> paper <em>Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</em>: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face." data-zh="<strong>EMNLP 2026 主会议</strong>论文《Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories》配套数据集：覆盖三种模态和 23 种疾病类型，包含 50,635 次成功编辑与 37,822 次带完整日志的失败尝试——以失败轨迹作为 Agentic 后训练监督信号；Hugging Face 下载量已超 100K。">
-                The dataset behind the <strong>EMNLP 2026 Main Conference</strong> paper <em>Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</em>: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face.
+            <p data-en="The dataset behind the <strong>EMNLP 2026</strong> paper <em>Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</em>: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face." data-zh="<strong>EMNLP 2026</strong>论文《Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories》配套数据集：覆盖三种模态和 23 种疾病类型，包含 50,635 次成功编辑与 37,822 次带完整日志的失败尝试——以失败轨迹作为 Agentic 后训练监督信号；Hugging Face 下载量已超 100K。">
+                The dataset behind the <strong>EMNLP 2026</strong> paper <em>Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</em>: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face.
             </p>
             
             <h4 data-en="Key Features" data-zh="主要特性">Key Features</h4>
