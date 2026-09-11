@@ -7,7 +7,7 @@
 <section class="home-hero">
     <div class="research-manifesto">
         <div>
-            <div class="manifesto-eyebrow">RSI / HUMAN WELLBEING</div>
+            <div class="manifesto-eyebrow">CODING AGENT / RSI / POST-TRAINING</div>
             <p class="manifesto-title"><span class="lang-en">{{ site.data.profile.hero_statement }}</span><span class="lang-zh d-none">{{ site.data.profile_zh.hero_statement }}</span></p>
         </div>
         <div class="rsi-visual">
@@ -62,5 +62,16 @@
                 {% endif %}
             </div>
         </div>
+    </div>
+    <div class="company-strip" aria-label="Research experience and talent programs">
+        {% for item in site.data.profile.experience limit:5 %}
+        {% assign item_zh = site.data.profile_zh.experience[forloop.index0] %}
+        <div class="company-mark">
+            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" loading="lazy">
+            <span class="lang-en">{{ item.name }}</span><span class="lang-zh d-none">{{ item_zh.name }}</span>
+            <small class="lang-en">{% case forloop.index %}{% when 1 %}Coding Agent RSI · Current{% when 2 %}Foundation Models · Selected{% when 3 %}Qingyun Program · Selected{% when 4 %}Agentic Post-Training{% when 5 %}Speech Foundation Models{% endcase %}</small>
+            <small class="lang-zh d-none">{% case forloop.index %}{% when 1 %}Coding Agent RSI · 在职{% when 2 %}基座模型 · 已获录用{% when 3 %}青云计划 · 入选{% when 4 %}Agentic 后训练{% when 5 %}语音基座模型{% endcase %}</small>
+        </div>
+        {% endfor %}
     </div>
 </section>

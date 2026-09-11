@@ -26,20 +26,20 @@ short_bio: >-
     My research focuses on coding-driven recursive self-improvement (RSI) for large language models: agentic mid-training and post-training loops in which coding agents generate, verify, and learn from their own execution trajectories instead of waiting for fresh human labels.
   </p>
   <p>
-    My mission is to harness RSI for healthcare and human wellbeing, with a focus on medical agents and medical AI safety &mdash; from verifiable medical workflows to trustworthy medical imaging.
+    My doctoral research also explores AI for healthcare, focusing on medical agents and medical AI safety to advance healthcare and human wellbeing.
   </p>
   <p>
-    I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for financial coding agents. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
+    I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for coding agents. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
   </p>
 
 hero_kicker: >-
-  Coding-Driven RSI &middot; Agentic Mid- &amp; Post-Training &middot; AI for Healthcare
+  Coding Agent RSI &middot; Foundation-Model Post-Training
 
 hero_summary: >-
-  Coding-driven recursive self-improvement for foundation models. Medical agents and medical AI safety, advancing healthcare and human wellbeing.
+  My primary research focuses on Coding Agent recursive self-improvement (RSI) and post-training. My doctoral research also explores medical agents and medical AI safety.
 
 hero_statement: >-
-  Self-evolving intelligence.<br>In service of human wellbeing.
+  Build agents that code.<br>And learn to improve themselves.
 
 standing:
   - key: "Now"
@@ -85,15 +85,15 @@ homepage_metrics:
     note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent"
 
 impact_areas:
-  - label: "Self-Evolving Intelligence"
+  - label: "Primary Focus · Coding Agent RSI"
     title: "Build intelligence that drives its own next breakthrough."
     description: "My goal is to make recursive self-improvement (RSI) a practical engine for foundation models. Coding agents generate solutions, execute them, verify the evidence, and learn from the results — turning experience into the next training signal."
     focus: "Coding Agents · Agentic Mid- & Post-Training · Verifiable RL"
     detail: "I study the training loops, rewards, and verifiers that connect better execution to better models, from long-horizon credit assignment to independent audits of agent actions."
     proof: "Zhipu AI · Farsight · DivScore · OfficeBuddy"
-  - label: "AI for Healthcare & Human Wellbeing"
+  - label: "Doctoral Research · AI for Healthcare"
     title: "Advance intelligence. Improve human lives."
-    description: "My mission is to use RSI to advance AI for healthcare and human wellbeing: build medical AI that learns from verifiable feedback, supports clinical work, and earns trust through evidence."
+    description: "My doctoral research explores AI for healthcare and human wellbeing. I study medical agents and medical AI safety, aiming to support clinical work with reliable reasoning, verifiable workflows, and trustworthy medical evidence."
     focus: "Medical Agents · Medical AI Safety"
     detail: "Medical Agents: multimodal reasoning, tool use, and verifiable medical workflows. Medical AI Safety: image integrity, interpretable forgery detection, and rigorous evaluation of agent outputs. Med-Banana and MedForge ground this direction in medical image editing and deepfake detection."
     proof: "Med-Banana · EMNLP 2026 Main / MedForge · ACL 2026 Main"
@@ -182,7 +182,7 @@ experience:
 - name: Zhipu AI (Z.ai, 智谱)
   logo: /assets/images/badges/Zhipu.png
   position: Foundation Model Post-Training Research Intern
-  dept: "RSI-driven foundation-model post-training for financial coding agents — recursive self-improvement loops in which quant/financial coding tasks provide execution-verified training signal"
+  dept: "Coding Agent RSI post-training — agents generate, execute, and verify coding trajectories, then learn from execution-grounded feedback through recursive self-improvement"
   date: Sep. 2026 - present
 
 - name: Alibaba Tongyi Lab · Qwen
@@ -191,7 +191,7 @@ experience:
   dept: "Qwen foundation model team · agentic mid-training & post-training"
   date: 2026
 
-- name: Tencent · LightSpeed Studios (Photon, 光子)
+- name: Tencent · Qingyun Program
   logo: /assets/images/badges/Tencent-Qingyun.svg
   position: "Qingyun Program (青云计划) — Elite Research Talent, selected"
   dept: "Elite research talent track · game-AI × LLM agent research"
@@ -223,7 +223,7 @@ experience:
 awards:
 - name: "Qwen Foundation Model Research Internship (Alibaba Tongyi Lab) — selected"
   date: 2026
-- name: "Qingyun Program (青云计划) — Tencent LightSpeed Studios, elite research talent"
+- name: "Qingyun Program (青云计划) — Tencent, elite research talent"
   date: 2026
 - name: "Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits"
   date: 2026
