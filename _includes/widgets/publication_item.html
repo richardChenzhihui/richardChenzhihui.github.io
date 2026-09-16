@@ -16,6 +16,9 @@
         {% else %}
         <h3 class="pub-title publication-title" data-en="{{ item.title | escape }}" data-zh="{{ item.title_zh | escape }}">{{ item.title }}</h3>
         {% endif %}
+        {% if item.research_highlight %}
+        <p class="pub-venue"><strong data-en="{{ item.research_highlight | escape }}" data-zh="{{ item.research_highlight_zh | escape }}">{{ item.research_highlight }}</strong></p>
+        {% endif %}
         <p class="pub-authors">{% include widgets/author_list.html authors=item.authors %}</p>
         <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="{{ item.pub_pre | escape }}" data-pub-en="{{ item.pub | escape }}" data-pub-zh="{{ item.pub_zh | default: item.pub | escape }}" data-pub-post="{{ item.pub_post | escape }}">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }}</span><span class="pub-venue-misc" data-en="{{ item.pub_last | escape }}" data-zh="{{ item.pub_last_zh | default: item.pub_last | escape }}">{{ item.pub_last }}</span><span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
         {% unless include.hide_abstract %}

@@ -1,7 +1,7 @@
 ---
 title: >-
-    [EMNLP 2026] Med-Banana is accepted to the EMNLP 2026 — agentic post-training for quality-controlled medical image editing from success-and-failure trajectories.
+    [EMNLP 2026] Med-Banana is accepted to EMNLP 2026 — connecting RSI and medical agents through feedback-driven prompt self-improvement and trajectory-based post-training.
 title_zh: >-
-    [EMNLP 2026] Med-Banana 被 EMNLP 2026正式录用——从成败轨迹进行 Agentic 后训练的质量可控医学图像编辑。
+    [EMNLP 2026] Med-Banana 被 EMNLP 2026 正式录用——连接 RSI 与医疗 Agent，以验证反馈驱动 Prompt 自优化，以成败轨迹支持后训练。
 date: 2026-08-16 10:00:00 +0800
 ---

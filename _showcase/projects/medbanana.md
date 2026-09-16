@@ -6,39 +6,21 @@ date: 2026-06-29 00:01:00 +0800
 ---
 
 <div class="p-4">
-    <h2 data-en="Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026)" data-zh="Med-Banana-80K：面向医学图像编辑的 Agentic 后训练数据（EMNLP 2026）">Med-Banana-80K: Agentic Post-Training Data for Medical Image Editing (EMNLP 2026)</h2>
+    <h2 data-en="Med-Banana: RSI through Medical Agent Self-Improvement (EMNLP 2026)" data-zh="Med-Banana：面向医疗 Agent 自优化的 RSI 研究实践（EMNLP 2026）">Med-Banana: RSI through Medical Agent Self-Improvement (EMNLP 2026)</h2>
     <hr />
 
     <div class="row">
         <div class="col-md-8">
-            <p data-en="The dataset behind the <strong>EMNLP 2026</strong> paper <em>Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</em>: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face." data-zh="<strong>EMNLP 2026</strong>论文《Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories》配套数据集：覆盖三种模态和 23 种疾病类型，包含 50,635 次成功编辑与 37,822 次带完整日志的失败尝试——以失败轨迹作为 Agentic 后训练监督信号；Hugging Face 下载量已超 100K。">
-                The dataset behind the <strong>EMNLP 2026</strong> paper <em>Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</em>: 50,635 successful edits and 37,822 failed attempts with full logs across three modalities and 23 disease types — failure trajectories as agentic post-training supervision, with 100K+ downloads on Hugging Face.
-            </p>
-            
-            <h4 data-en="Key Features" data-zh="主要特性">Key Features</h4>
-            <ul>
-                <li data-en="<strong>50,635 successful edits</strong> across 3 medical imaging modalities" data-zh="<strong>50,635 次成功编辑</strong>，涵盖 3 种医学成像模态">
-                    <strong>50,635 successful edits</strong> across 3 medical imaging modalities
-                </li>
-                <li data-en="<strong>Chest X-ray</strong>: 12 pathology types (Pneumothorax, Pleural Effusion, etc.)" data-zh="<strong>胸部 X 光</strong>：12 种病理类型（气胸、胸腔积液等）">
-                    <strong>Chest X-ray</strong>: 12 pathology types (Pneumothorax, Pleural Effusion, etc.)
-                </li>
-                <li data-en="<strong>Brain MRI</strong>: 4 tumor types (Glioma, Meningioma, Pituitary)" data-zh="<strong>脑部 MRI</strong>：4 种肿瘤类型（胶质瘤、脑膜瘤、垂体瘤）">
-                    <strong>Brain MRI</strong>: 4 tumor types (Glioma, Meningioma, Pituitary)
-                </li>
-                <li data-en="<strong>Fundus photography</strong>: 7 disease types (Diabetic Retinopathy, Glaucoma, etc.)" data-zh="<strong>眼底摄影</strong>：7 种疾病类型（糖尿病视网膜病变、青光眼等）">
-                    <strong>Fundus photography</strong>: 7 disease types (Diabetic Retinopathy, Glaucoma, etc.)
-                </li>
-                <li data-en="<strong>Bidirectional editing</strong>: lesion addition and removal" data-zh="<strong>双向编辑</strong>：病变添加和移除">
-                    <strong>Bidirectional editing</strong>: lesion addition and removal
-                </li>
-                <li data-en="<strong>LLM-as-Judge</strong> quality control with medically grounded rubric" data-zh="<strong>LLM-as-Judge</strong> 质量控制与医学评分准则">
-                    <strong>LLM-as-Judge</strong> quality control with medically grounded rubric
-                </li>
-                <li data-en="<strong>37,822 failed attempts</strong> with full conversation logs for preference learning and alignment research" data-zh="<strong>37,822 次失败尝试</strong>，包含完整对话记录，可用于偏好学习与对齐研究">
-                    <strong>37,822 failed attempts</strong> with full conversation logs for preference learning and alignment research
-                </li>
-            </ul>
+            <p data-en="<strong>Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training</strong>" data-zh="<strong>Prompt 自优化 · 验证反馈 · Agentic 后训练</strong>"><strong>Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training</strong></p>
+            <p data-en="Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner." data-zh="Med-Banana 将我的 RSI 研究落到医疗 Agent：系统从自身失败中提取反馈，修正下一轮编辑的指令策略。递归改进发生在 Prompt 层面，由经过训练的验证器与精炼器驱动。">Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner.</p>
+            <h4 data-en="The Self-Improvement Loop" data-zh="自优化机制">The Self-Improvement Loop</h4>
+            <ol>
+            <li data-en="<strong>Edit:</strong> Generate a candidate from the source image and current prompt pair." data-zh="<strong>执行：</strong>基于原始影像与当前正负 Prompt 生成候选结果。"><strong>Edit:</strong> Generate a candidate from the source image and current prompt pair.</li>
+            <li data-en="<strong>Verify:</strong> Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity." data-zh="<strong>验证：</strong>从病理合理性、解剖结构、指令遵循与成像保真度诊断失败。"><strong>Verify:</strong> Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity.</li>
+            <li data-en="<strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image." data-zh="<strong>递归修正：</strong>结合拒绝原因与历史失败改写正负 Prompt，从原始影像重新尝试。"><strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image.</li>
+            <li data-en="<strong>Learn:</strong> Train the editor on successful edits and the verifier and refiner on trajectory-level feedback." data-zh="<strong>轨迹学习：</strong>以成功编辑训练编辑器，以成败判断与修正轨迹训练验证器和精炼器。"><strong>Learn:</strong> Train the editor on successful edits and the verifier and refiner on trajectory-level feedback.</li>
+            </ol>
+            <p data-en="<strong>Med-Banana-80K:</strong> 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 100K+ Hugging Face downloads." data-zh="<strong>Med-Banana-80K：</strong>50,635 条成功与 37,822 条失败轨迹，覆盖三种医学影像模态与 23 类疾病；Hugging Face 下载量超过 100K。"><strong>Med-Banana-80K:</strong> 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 100K+ Hugging Face downloads.</p>
 
             <h4 data-en="Dataset Statistics" data-zh="数据集统计">Dataset Statistics</h4>
             <table class="table table-sm table-bordered">

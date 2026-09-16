@@ -11,10 +11,12 @@ pub_zh:         "自然语言处理实证方法会议 (EMNLP)"
 pub_date:       "2026"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Accepted</span>'
 pub_last_zh:    ' <span class="badge badge-pill badge-publication badge-success">已录用</span>'
+research_highlight: "RSI Research · Feedback-Driven Prompt Self-Improvement"
+research_highlight_zh: "RSI 研究实践 · 反馈驱动的 Prompt 自优化"
 abstract: >-
-  Text-guided medical image editing must deliver the requested pathology while preserving anatomy, modality-specific appearance, and clinical plausibility. Existing datasets supervise editors only with accepted final edits and discard the failed attempts produced during generation. We argue that failures are indispensable supervision for agentic post-training: they specify what should be rejected, why an edit is medically or visually invalid, and how the instruction should be revised. We present Med-Banana, a trajectory-supervised framework that jointly trains an editor, a verifier, and a refiner for an edit-verify-refine inference loop, together with Med-Banana-80K, a large-scale resource of success-and-failure editing trajectories comprising candidate images, verification outcomes, rejection reasons, and prompt refinements (50,635 accepted + 37,822 rejected trajectories). Experiments with MLLM judges, blind expert assessment, and separability probes show consistent gains over open medical image editors. Code and data are publicly available.
+  Med-Banana connects my RSI research to medical agents through prompt-level self-improvement. An editor, verifier, and refiner form a recursive feedback loop: diagnose failed edits, revise positive and negative prompts using failure history, and retry from the original image. Success-and-failure trajectories supervise all three components, connecting agentic post-training with test-time refinement. Med-Banana-80K preserves 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories.
 abstract_zh: >-
-  文本引导的医学图像编辑需要在实现目标病灶的同时，保持解剖结构、模态外观与临床合理性。既有数据集仅以被接受的最终编辑作为监督，而丢弃了生成过程中的失败尝试。我们认为，失败轨迹是 Agentic 后训练不可或缺的监督信号：它指明了应当拒绝什么、一次编辑为何在医学或视觉上不成立、以及指令应如何修正。我们提出 Med-Banana——一个轨迹监督框架，联合训练编辑器、验证器与精炼器，构成「编辑-验证-精炼」推理闭环；同时发布 Med-Banana-80K 大规模成败编辑轨迹资源，包含候选图像、验证结果、拒绝原因与指令修正（50,635 条成功 + 37,822 条失败轨迹）。基于 MLLM 评审、盲法专家评估与可分性探针的实验表明，该方法一致优于开源医学图像编辑器。代码与数据均已公开。
+  Med-Banana 将我的 RSI 研究落到医疗 Agent 的 Prompt 自优化：编辑器执行、验证器诊断失败、精炼器结合历史反馈改写正负 Prompt，递归推进下一轮尝试。成败轨迹分别监督编辑、验证与修正能力，将 Agentic 后训练与推理时自优化连接起来。Med-Banana-80K 保留 50,635 条成功与 37,822 条失败轨迹，覆盖三种医学影像模态与 23 类疾病。
 cover:          /assets/images/covers/medbanana_cover.jpg
 authors:
   - Zhihui Chen
