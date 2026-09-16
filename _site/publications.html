@@ -91,12 +91,15 @@
             <a href="https://arxiv.org/abs/2511.00801" target="_blank" rel="noopener" class="publication-title-link" data-en="Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories" data-zh="Med-Banana：从成败轨迹学习 Agentic 质量可控的医学图像编辑"><span class="title-text">Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</span></a>
         </h3>
         
+        
+        <p class="pub-venue"><strong data-en="RSI Research · Feedback-Driven Prompt Self-Improvement" data-zh="RSI 研究实践 · 反馈驱动的 Prompt 自优化">RSI Research · Feedback-Driven Prompt Self-Improvement</strong></p>
+        
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><span class="text-body">
             Qingyuan Lei, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng</a></p>
         <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Accepted&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;已录用&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Accepted</span></span><span data-semantic-scholar-id=""></span></p>
         
-        <p class="pub-abstract" data-en="Text-guided medical image editing must deliver the requested pathology while preserving anatomy, modality-specific appearance, and clinical plausibility. Existing datasets supervise editors only with accepted final edits and discard the failed attempts produced during generation. We argue that failures are indispensable supervision for agentic post-training: they specify what should be rejected, why an edit is medically or visually invalid, and how the instruction should be revised. We present Med-Banana, a trajectory-supervised framework that jointly trains an editor, a verifier, and a refiner for an edit-verify-refine inference loop, together with Med-Banana-80K, a large-scale resource of success-and-failure editing trajectories comprising candidate images, verification outcomes, rejection reasons, and prompt refinements (50,635 accepted + 37,822 rejected trajectories). Experiments with MLLM judges, blind expert assessment, and separability probes show consistent gains over open medical image editors. Code and data are publicly available." data-zh="文本引导的医学图像编辑需要在实现目标病灶的同时，保持解剖结构、模态外观与临床合理性。既有数据集仅以被接受的最终编辑作为监督，而丢弃了生成过程中的失败尝试。我们认为，失败轨迹是 Agentic 后训练不可或缺的监督信号：它指明了应当拒绝什么、一次编辑为何在医学或视觉上不成立、以及指令应如何修正。我们提出 Med-Banana——一个轨迹监督框架，联合训练编辑器、验证器与精炼器，构成「编辑-验证-精炼」推理闭环；同时发布 Med-Banana-80K 大规模成败编辑轨迹资源，包含候选图像、验证结果、拒绝原因与指令修正（50,635 条成功 + 37,822 条失败轨迹）。基于 MLLM 评审、盲法专家评估与可分性探针的实验表明，该方法一致优于开源医学图像编辑器。代码与数据均已公开。">Text-guided medical image editing must deliver the requested pathology while preserving anatomy, modality-specific appearance, and clinical plausibility. Existing datasets supervise editors only with accepted final edits and discard the failed attempts produced during generation. We argue that failures are indispensable supervision for agentic post-training: they specify what should be rejected, why an edit is medically or visually invalid, and how the instruction should be revised. We present Med-Banana, a trajectory-supervised framework that jointly trains an editor, a verifier, and a refiner for an edit-verify-refine inference loop, together with Med-Banana-80K, a large-scale resource of success-and-failure editing trajectories comprising candidate images, verification outcomes, rejection reasons, and prompt refinements (50,635 accepted + 37,822 rejected trajectories). Experiments with MLLM judges, blind expert assessment, and separability probes show consistent gains over open medical image editors. Code and data are publicly available.</p>
+        <p class="pub-abstract" data-en="Med-Banana connects my RSI research to medical agents through prompt-level self-improvement. An editor, verifier, and refiner form a recursive feedback loop: diagnose failed edits, revise positive and negative prompts using failure history, and retry from the original image. Success-and-failure trajectories supervise all three components, connecting agentic post-training with test-time refinement. Med-Banana-80K preserves 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories." data-zh="Med-Banana 将我的 RSI 研究落到医疗 Agent 的 Prompt 自优化：编辑器执行、验证器诊断失败、精炼器结合历史反馈改写正负 Prompt，递归推进下一轮尝试。成败轨迹分别监督编辑、验证与修正能力，将 Agentic 后训练与推理时自优化连接起来。Med-Banana-80K 保留 50,635 条成功与 37,822 条失败轨迹，覆盖三种医学影像模态与 23 类疾病。">Med-Banana connects my RSI research to medical agents through prompt-level self-improvement. An editor, verifier, and refiner form a recursive feedback loop: diagnose failed edits, revise positive and negative prompts using failure history, and retry from the original image. Success-and-failure trajectories supervise all three components, connecting agentic post-training with test-time refinement. Med-Banana-80K preserves 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories.</p>
         
         <p class="abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2511.00801","Code":"https://github.com/richardChenzhihui/med-banana-50k/","Dataset":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","Project Page":"/showcase.html#projects"}' data-links-zh='{"论文":"https://arxiv.org/abs/2511.00801","代码":"https://github.com/richardChenzhihui/med-banana-50k/","数据集":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","项目页面":"/showcase.html#projects"}'>
             
@@ -137,6 +140,7 @@
         
         <h3 class="pub-title publication-title" data-en="Looking Ahead to Stay Grounded: Future-Discounted Visual Credit Assignment for VLM Reinforcement Learning" data-zh="Looking Ahead to Stay Grounded：面向视觉语言模型强化学习的未来折扣视觉信用分配">Looking Ahead to Stay Grounded: Future-Discounted Visual Credit Assignment for VLM Reinforcement Learning</h3>
         
+        
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><span class="text-body">
             Yike Yun, </span><span class="text-body">
@@ -165,6 +169,7 @@
         <h3 class="pub-title">
             <a href="https://arxiv.org/abs/2603.18577" target="_blank" rel="noopener" class="publication-title-link" data-en="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" data-zh="MedForge：基于伪造感知推理的可解释医学深度伪造检测"><span class="title-text">MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</span></a>
         </h3>
+        
         
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Kai He</a>, <span class="text-body">
@@ -221,6 +226,7 @@
             <a href="https://aclanthology.org/2025.emnlp-main.971/" target="_blank" rel="noopener" class="publication-title-link" data-en="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" data-zh="DivScore: 专业领域中大语言模型生成文本的零样本检测"><span class="title-text">DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains</span></a>
         </h3>
         
+        
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Kai He</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yucheng Huang</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yunxiao Zhu</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng</a></p>
         <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Main Conference&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;主会议&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span><span data-semantic-scholar-id=""></span></p>
@@ -265,6 +271,7 @@
         
         <h3 class="pub-title publication-title" data-en="Production Efficiency Analysis Based on RFID-Collected Manufacturing Big Data" data-zh="基于RFID采集制造大数据的生产效率分析">Production Efficiency Analysis Based on RFID-Collected Manufacturing Big Data</h3>
         
+        
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong></span></p>
         <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="52nd NAMRC (North American Manufacturing Research Conference)" data-pub-zh="第52届北美制造研究会议 (NAMRC)" data-pub-post=""><i>52nd NAMRC (North American Manufacturing Research Conference)</i></span><span class="pub-venue-misc" data-en="" data-zh=""></span><span data-semantic-scholar-id=""></span></p>
@@ -292,6 +299,7 @@
     <div>
         
         <h3 class="pub-title publication-title" data-en="Clustering Enabled Few-Shot Load Forecasting" data-zh="基于聚类的小样本负载预测">Clustering Enabled Few-Shot Load Forecasting</h3>
+        
         
         <p class="pub-authors"><a class="text-body" target="_blank" href="https://scholar.google.com/">Qiyuan Wang</a>, <span class="text-body">
             <strong>Zhihui Chen</strong></span></p>
