@@ -6,18 +6,18 @@ date: 2026-06-29 00:01:00 +0800
 ---
 
 <div class="p-4">
-    <h2 data-en="Med-Banana: RSI through Medical Agent Self-Improvement (EMNLP 2026)" data-zh="Med-Banana：面向医疗 Agent 自优化的 RSI 研究实践（EMNLP 2026）">Med-Banana: RSI through Medical Agent Self-Improvement (EMNLP 2026)</h2>
+    <h2 data-en="Med-Banana: Verifier-Guided Refinement for Medical Image Editing (EMNLP 2026)" data-zh="Med-Banana：验证器引导的医学影像编辑迭代修订（EMNLP 2026）">Med-Banana: Verifier-Guided Refinement for Medical Image Editing (EMNLP 2026)</h2>
     <hr />
 
     <div class="row">
         <div class="col-md-8">
-            <p data-en="<strong>Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training</strong>" data-zh="<strong>Prompt 自优化 · 验证反馈 · Agentic 后训练</strong>"><strong>Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training</strong></p>
-            <p data-en="Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner." data-zh="Med-Banana 将我的 RSI 研究落到医疗 Agent：系统从自身失败中提取反馈，修正下一轮编辑的指令策略。递归改进发生在 Prompt 层面，由经过训练的验证器与精炼器驱动。">Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner.</p>
-            <h4 data-en="The Self-Improvement Loop" data-zh="自优化机制">The Self-Improvement Loop</h4>
+            <p data-en="<strong>Iterative Prompt Refinement · Verifier Feedback · Agentic Post-Training</strong>" data-zh="<strong>Prompt 迭代修订 · 验证反馈 · Agentic 后训练</strong>"><strong>Iterative Prompt Refinement · Verifier Feedback · Agentic Post-Training</strong></p>
+            <p data-en="The system uses its own failed attempts to revise the next edit: a trained verifier rejects, a refiner rewrites the prompts, and both successful and failed trajectories are retained for post-training." data-zh="系统利用自身的失败修订下一次编辑：训练得到的验证器给出拒绝理由，精炼器据此改写 Prompt，成功与失败轨迹均保留用于后训练。">The system uses its own failed attempts to revise the next edit: a trained verifier rejects, a refiner rewrites the prompts, and both successful and failed trajectories are retained for post-training.</p>
+            <h4 data-en="The Refinement Loop" data-zh="修订回路">The Refinement Loop</h4>
             <ol>
             <li data-en="<strong>Edit:</strong> Generate a candidate from the source image and current prompt pair." data-zh="<strong>执行：</strong>基于原始影像与当前正负 Prompt 生成候选结果。"><strong>Edit:</strong> Generate a candidate from the source image and current prompt pair.</li>
             <li data-en="<strong>Verify:</strong> Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity." data-zh="<strong>验证：</strong>从病理合理性、解剖结构、指令遵循与成像保真度诊断失败。"><strong>Verify:</strong> Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity.</li>
-            <li data-en="<strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image." data-zh="<strong>递归修正：</strong>结合拒绝原因与历史失败改写正负 Prompt，从原始影像重新尝试。"><strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image.</li>
+            <li data-en="<strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image." data-zh="<strong>修订：</strong>结合拒绝原因与历史失败改写正负 Prompt，从原始影像重新尝试。"><strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image.</li>
             <li data-en="<strong>Learn:</strong> Train the editor on successful edits and the verifier and refiner on trajectory-level feedback." data-zh="<strong>轨迹学习：</strong>以成功编辑训练编辑器，以成败判断与修正轨迹训练验证器和精炼器。"><strong>Learn:</strong> Train the editor on successful edits and the verifier and refiner on trajectory-level feedback.</li>
             </ol>
             <p data-en="<strong>Med-Banana-80K:</strong> 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 100K+ Hugging Face downloads." data-zh="<strong>Med-Banana-80K：</strong>50,635 条成功与 37,822 条失败轨迹，覆盖三种医学影像模态与 23 类疾病；Hugging Face 下载量超过 100K。"><strong>Med-Banana-80K:</strong> 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 100K+ Hugging Face downloads.</p>

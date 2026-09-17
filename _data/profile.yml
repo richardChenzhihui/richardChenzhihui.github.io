@@ -23,20 +23,20 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
   </p>
   <p>
-    My research focuses on recursive self-improvement (RSI) for coding agents and foundation-model post-training: turning autonomous exploration, code execution, and verifiable feedback into scalable learning signals that advance reasoning and long-horizon capabilities.
+    I study how language-model agents improve themselves: how execution and verifiable feedback become training signal, what is retained between rounds, and what keeps the verifier honest. Coding agents are my testbed, where feedback is cheap and executable. Medicine is the counterpart, where feedback is scarce and high-stakes.
   </p>
   <p>
-    My doctoral research centers on AI recursive self-improvement (RSI), alongside medical agents and medical AI safety, advancing both AI capabilities and human wellbeing.
+    The long-term aim is recursive self-improvement (RSI): systems that take part in building their successors.
   </p>
   <p>
-    I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for coding agents. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
+    I am a post-training research intern at Zhipu AI (Z.ai), working on coding agents trained from execution-verified trajectories. I was also selected for the Qwen foundation-model internship (Alibaba Tongyi) and Tencent&rsquo;s Qingyun Program.
   </p>
 
 hero_kicker: >-
-  Coding Agent RSI &middot; Foundation-Model Post-Training
+  Self-Improving Coding Agents &middot; Post-Training
 
 hero_summary: >-
-  My doctoral research centers on AI recursive self-improvement (RSI), with a focus on coding agents and post-training, alongside medical agents and medical AI safety.
+  I study self-improving agents &mdash; verifiable feedback, what gets retained, and reliable verification &mdash; in code and in medicine.
 
 hero_statement: >-
   Toward AI that builds<br>the next generation of AI.
@@ -44,7 +44,7 @@ hero_statement: >-
 standing:
   - key: "Now"
     value: "Zhipu AI (Z.ai) &middot; Foundation-Model Post-Training"
-    sub: "Coding Agent RSI &mdash; recursive self-improvement from execution-verified trajectories"
+    sub: "Coding agents trained from execution-verified trajectories"
   - key: "Selected"
     value: "Qwen Foundation Model Internship, Alibaba Tongyi Lab"
     sub: "Tencent Qingyun Elite Research Talent Program (\u9752\u4e91\u8ba1\u5212)"
@@ -59,7 +59,7 @@ standing:
     sub: "Datasets and code on GitHub and Hugging Face"
 
 hero_proof:
-  - text: "Foundation-Model Post-Training @ Zhipu AI (Z.ai) — Coding Agent RSI self-improvement · current"
+  - text: "Foundation-Model Post-Training @ Zhipu AI (Z.ai) — coding agents, execution-verified trajectories · current"
   - text: "Qwen Foundation Model Internship (Alibaba Tongyi) — selected"
   - text: "Qingyun Elite Research Talent Program (青云计划) @ Tencent — selected"
   - logo: /assets/images/badges/ByteDance.svg
@@ -70,32 +70,32 @@ homepage_metrics:
     value_zh: "智谱 · Qwen · 字节"
     compact: true
     label: "foundation-model internships & elite talent programs"
-    note: "Coding Agent RSI @ Zhipu AI (current) · Qwen foundation-model internship (Alibaba Tongyi) · Agentic post-training @ ByteDance · Tencent Qingyun Elite Research Talent Program"
+    note: "Coding-agent post-training @ Zhipu AI (current) · Qwen foundation-model internship (Alibaba Tongyi) · Agentic post-training @ ByteDance · Tencent Qingyun Elite Research Talent Program"
   - value: "3"
     value_zh: "3"
     label: "top-tier NLP conference papers"
     note: "ACL 2026 Main · EMNLP 2026 · EMNLP 2025 Main · ICLR 2026 first-author under review"
   - value: "88K+"
     value_zh: "88K+"
-    label: "success-and-failure trajectories for agent self-improvement"
-    note: "Med-Banana (EMNLP 2026): Verifier feedback → prompt self-improvement → trajectory-based post-training · 100K+ HF downloads"
+    label: "success-and-failure agent trajectories, openly released"
+    note: "Med-Banana (EMNLP 2026): verifier-guided refinement, trajectories retained for post-training · 150K+ HF downloads"
   - value: "53★"
     value_zh: "53★"
     label: "GitHub stars — open-source office agent"
     note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent"
 
 impact_areas:
-  - label: "Primary Focus · Coding Agent RSI"
+  - label: "Primary Focus · Self-Improving Coding Agents"
     title: "Closing the loop of AI development."
-    description: "My research pursues recursive self-improvement through Coding Agent post-training: connecting stronger agents to the development of stronger models. The long-term goal is AI that can contribute to designing, training, and evaluating its successors."
+    description: "Post-training for coding agents, where every action can be executed and checked. I work on the parts of the improvement loop that decide whether a gain is real: reward and verifier design, long-horizon credit assignment, and what is retained between rounds. The long-term goal is recursive self-improvement: AI that helps design, train and evaluate its successors."
     focus: "Coding Agents · Agentic Mid- & Post-Training · Verifiable RL"
-    detail: "I study the training loops, rewards, and verifiers that connect better execution to better models, from long-horizon credit assignment to independent audits of agent actions."
-    proof: "Zhipu AI · Farsight · Med-Banana (EMNLP 2026) · DivScore"
+    detail: "Execution-grounded rewards · verifiers independent of the proposer · long-horizon credit assignment · retention without regression."
+    proof: "Zhipu AI · Farsight · Med-Banana (EMNLP 2026) · OfficeBuddy"
   - label: "Research Direction · AI for Healthcare"
     title: "Advance intelligence. Improve human lives."
-    description: "I connect RSI with medical agent research to advance healthcare and human wellbeing. I study medical agents and medical AI safety, aiming to support clinical work with reliable reasoning, verifiable workflows, and trustworthy medical evidence."
+    description: "In medicine, feedback is scarce, delayed and high-stakes, which makes it the hard case for any self-improving system. I study medical agents and medical AI safety: reliable reasoning, verifiable workflows, and the integrity of medical evidence."
     focus: "Medical Agents · Medical AI Safety"
-    detail: "Medical Agents: multimodal reasoning, tool use, and verifiable medical workflows. Medical AI Safety: image integrity, interpretable forgery detection, and rigorous evaluation of agent outputs. Med-Banana explores medical agent self-improvement through feedback-driven recursive prompt refinement; MedForge studies medical forgery detection and evidence integrity."
+    detail: "Med-Banana: verifier-guided iterative refinement for medical image editing, with success and failure trajectories retained for post-training. MedForge: interpretable detection of medical image forgery, so that corrupted evidence does not enter clinical or training pipelines."
     proof: "Med-Banana · EMNLP 2026 / MedForge · ACL 2026 Main"
 
 featured_work:
@@ -167,7 +167,7 @@ education:
 - name: National University of Singapore
   logo: /assets/images/badges/NUS.png
   position: Ph.D. in Artificial Intelligence
-  dept: "Coding-driven model self-improvement (RSI) · AI for healthcare"
+  dept: "Self-improving coding agents (RSI) · AI for healthcare"
   date: Jan. 2025 - present
 - name: The University of Hong Kong
   logo: /assets/images/badges/HKU.jpg
@@ -182,7 +182,7 @@ experience:
 - name: Zhipu AI (Z.ai, 智谱)
   logo: /assets/images/badges/Zhipu.png
   position: Foundation Model Post-Training Research Intern
-  dept: "Coding Agent RSI post-training — agents generate, execute, and verify coding trajectories, then learn from execution-grounded feedback through recursive self-improvement"
+  dept: "Post-training for coding agents: agents generate, execute and verify their own trajectories, and execution results become the training signal"
   date: Sep. 2026 - present
 
 - name: Alibaba Tongyi Lab · Qwen
@@ -254,7 +254,7 @@ skills:
   - group: "Coding Agents & Self-Improvement"
     items:
       - "Coding agent harness · sandboxed execution, unit-test & compiler feedback as reward"
-      - "Recursive self-improvement loops: propose → execute → verify → retrain"
+      - "Improvement-loop design: propose → execute → verify → retain"
       - "ReAct agent harness · LangChain orchestration & tool-calling"
       - "Vision-in-the-Loop verification, budgeted retries & failure attribution"
       - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT integration"

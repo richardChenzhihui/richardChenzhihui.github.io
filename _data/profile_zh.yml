@@ -23,20 +23,20 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    研究聚焦 Coding Agent 的递归自进化（RSI）与基座模型后训练：探索如何将自主探索、代码执行与可验证反馈转化为可扩展的学习信号，推动模型推理与长程任务能力的持续提升。
+    研究语言模型智能体如何改进自身：执行结果与可验证反馈如何成为训练信号，每一轮改进中哪些被保留，验证器如何保持可靠。Coding Agent 是主要实验场，反馈廉价且可执行；医疗是其对照，反馈稀缺且代价高。
   </p>
   <p>
-    博士研究以 AI 递归自进化（RSI）为核心，同时研究医疗 Agent 与医疗 AI 安全，推动智能能力的进步与医疗、人类福祉的发展。
+    长期目标是递归自我改进（recursive self-improvement, RSI）：让 AI 参与构建它的后继者。
   </p>
   <p>
-    现于智谱（Z.ai）基础模型后训练团队实习，以 RSI 驱动 Coding Agent 方向的大模型后训练；同时已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
+    现于智谱（Z.ai）基础模型后训练团队实习，研究基于执行验证轨迹的 Coding Agent 后训练；并入选阿里通义 Qwen 基座模型实习与腾讯「青云计划」。
   </p>
 
 hero_kicker: >-
-  Coding Agent 自进化（RSI）· 基座模型后训练
+  自我改进的 Coding Agent · 基座模型后训练
 
 hero_summary: >-
-  博士研究聚焦 AI 递归自进化（RSI），以 Coding Agent 与后训练为核心，同时关注医疗 Agent 与医疗 AI 安全。
+  研究智能体的自我改进：可验证反馈、改进的保留与可靠验证，覆盖代码与医疗两类场景。
 
 hero_statement: >-
   让 AI 成为<br>下一代 AI 的创造者。
@@ -44,7 +44,7 @@ hero_statement: >-
 standing:
   - key: "在职"
     value: "智谱（Z.ai）&middot; 基础模型后训练"
-    sub: "Coding Agent RSI 自进化 —— 从经执行验证的自生成轨迹中学习"
+    sub: "基于执行验证轨迹的 Coding Agent 后训练"
   - key: "已录取"
     value: "阿里通义实验室 Qwen 基座模型实习"
     sub: "腾讯「青云计划」精英科研人才入选"
@@ -59,7 +59,7 @@ standing:
     sub: "数据集与代码发布于 GitHub 与 Hugging Face"
 
 hero_proof:
-  - text: "智谱（Z.ai）· 基础模型后训练 —— Coding Agent RSI 自进化 · 在职"
+  - text: "智谱（Z.ai）· 基础模型后训练 —— Coding Agent，执行验证轨迹 · 在职"
   - text: "阿里通义 Qwen 基座模型实习 —— 已获录用"
   - text: "腾讯「青云计划」精英科研人才 —— 入选"
   - logo: /assets/images/badges/ByteDance.svg
@@ -69,29 +69,29 @@ homepage_metrics:
   - value: "智谱 · Qwen · 字节"
     compact: true
     label: "基座模型研发实习与顶尖人才计划"
-    note: "Coding Agent RSI 自进化（智谱，在职）· 阿里通义 Qwen 基座模型实习 · Agentic 后训练（字节）· 腾讯「青云计划」精英科研人才"
+    note: "Coding Agent 后训练（智谱，在职）· 阿里通义 Qwen 基座模型实习 · Agentic 后训练（字节）· 腾讯「青云计划」精英科研人才"
   - value: "3"
     label: "篇顶级 NLP 会议论文"
     note: "ACL 2026 主会议 · EMNLP 2026 · EMNLP 2025 主会议 · ICLR 2026 一作在投"
   - value: "88K+"
-    label: "支撑 Agent 自优化的成败轨迹"
-    note: "Med-Banana（EMNLP 2026）：验证反馈 → Prompt 自优化 → 轨迹后训练 · HF 100K+ 下载"
+    label: "条成功与失败 Agent 轨迹，已开源"
+    note: "Med-Banana（EMNLP 2026）：验证器引导的迭代修订，轨迹保留用于后训练 · HF 150K+ 下载"
   - value: "53★"
     label: "GitHub 星标 — 开源办公 Agent"
     note: "OfficeBuddy：Vision-in-the-Loop 开源 Word/Excel Agent"
 
 impact_areas:
-  - label: "核心方向 · Coding Agent RSI"
-    title: "闭合 AI 研发的自进化循环。"
-    description: "我的研究以 Coding Agent 后训练为切入点，推动递归自进化：让更强的智能体参与构建更强的模型。长期目标是让 AI 具备参与设计、训练与评估下一代 AI 的能力。"
+  - label: "核心方向 · 自我改进的 Coding Agent"
+    title: "闭合 AI 研发的改进回路。"
+    description: "以 Coding Agent 后训练为对象，因为其中每一步行动都可执行、可检验。关注改进回路中决定增益是否真实的环节：奖励与验证器设计、长程信用分配、跨轮保留。长期目标是递归自我改进，即 AI 参与设计、训练与评估其后继模型。"
     focus: "Coding Agent · Agentic 中期训练与后训练 · 可验证强化学习"
-    detail: "研究连接执行能力与模型进步的训练闭环、奖励机制和验证器：从长程任务的信用分配，到 Agent 行动的独立审查，让自进化建立在可检验的反馈之上。"
-    proof: "智谱 · Farsight · Med-Banana（EMNLP 2026）· DivScore"
+    detail: "基于执行结果的奖励 · 独立于提出者的验证器 · 长程信用分配 · 无回退的改进保留。"
+    proof: "智谱 · Farsight · Med-Banana（EMNLP 2026）· OfficeBuddy"
   - label: "研究方向 · AI for Healthcare"
-    title: "以智能的进化，推动生命的福祉。"
-    description: "我将 RSI 与医疗 Agent 研究相连接，以推动医疗与人类福祉为使命。聚焦医疗 Agent 与医疗 AI 安全，研究可靠推理、可验证的医疗工作流与可信医学证据，支持临床工作。"
+    title: "以智能的进步，增进生命的福祉。"
+    description: "医疗场景中反馈稀缺、滞后且代价高，是自我改进系统最难的情形。研究医疗 Agent 与医疗 AI 安全：可靠推理、可验证的工作流与医学证据的完整性。"
     focus: "医疗 Agent · 医疗 AI 安全"
-    detail: "医疗 Agent：多模态推理、工具调用与可验证的医疗工作流。医疗 AI 安全：医学影像真实性、可解释的伪造检测与 Agent 输出的严格评估。Med-Banana 以验证反馈驱动 Prompt 递归优化，探索医疗 Agent 的自改进机制；MedForge 研究医学伪造检测与证据可信性。"
+    detail: "Med-Banana：验证器引导的医学影像编辑迭代修订，成功与失败轨迹均保留用于后训练。MedForge：可解释的医学影像伪造检测，防止被篡改的证据进入临床与训练流程。"
     proof: "Med-Banana · EMNLP 2026 / MedForge · ACL 2026 主会议"
 
 featured_work:
@@ -163,7 +163,7 @@ education:
 - name: 新加坡国立大学
   logo: /assets/images/badges/NUS.png
   position: 人工智能博士
-  dept: "Coding 驱动的模型自进化（RSI）· AI for Healthcare"
+  dept: "自我改进的 Coding Agent（RSI）· AI for Healthcare"
   date: 2025年1月 - 至今
 - name: 香港大学
   logo: /assets/images/badges/HKU.jpg
@@ -178,7 +178,7 @@ experience:
 - name: 智谱（Z.ai）
   logo: /assets/images/badges/Zhipu.png
   position: 基础模型后训练 研发实习生
-  dept: "以 RSI 驱动 Coding Agent 的大模型后训练 —— 量化/金融编码任务提供经执行验证的训练信号，模型从自生成轨迹中持续自我改进"
+  dept: "Coding Agent 后训练：以量化/金融编码任务的执行结果为训练信号，模型从经验证的自生成轨迹中学习"
   date: 2026年9月 - 至今
 
 - name: 阿里通义实验室 · Qwen
@@ -247,10 +247,10 @@ skills:
       - "Agentic mid-training · RLHF / RLVR 流程设计 · DPO 与奖励建模"
       - "自生成轨迹数据、执行验证过滤、数据飞轮"
       - "验证器与评测流程设计 · SFT 课程"
-  - group: "Coding Agent 与自进化"
+  - group: "Coding Agent 与自我改进"
     items:
       - "Coding Agent 框架 · 沙箱执行、单元测试与编译反馈作为奖励信号"
-      - "自进化流程：提出 → 执行 → 验证 → 再训练"
+      - "改进回路设计：提出 → 执行 → 验证 → 保留"
       - "ReAct Agent 框架 · LangChain 编排与工具调用"
       - "Vision-in-the-Loop 视觉验证、预算化重试与失败归因"
       - "Kimi-K2 / MiniMax-M3 / Qwen3-VL / GPT 接入"
