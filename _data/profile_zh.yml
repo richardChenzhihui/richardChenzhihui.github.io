@@ -196,7 +196,7 @@ experience:
 - name: 字节跳动 · Data 业务基模
   logo: /assets/images/badges/ByteDance.svg
   position: 大模型推理后训练 研究实习生（百卡 H100 集群）
-  dept: "面向 Data 业务基模的多模态 Agent 强化学习——工具调用与长链路 RLVR、奖励设计与评测闭环，百卡 NVIDIA H100 集群规模化推理后训练 · Farsight（一作，ICLR 2026 在投）"
+  dept: "面向 Data 业务基模的多模态 Agent 强化学习——工具调用与长链路 RLVR、奖励设计与评测迭代，百卡 NVIDIA H100 集群规模化推理后训练 · Farsight（一作，ICLR 2026 在投）"
   date: 2026年5月 - 2026年9月
 
 - name: 阶跃星辰（StepFun）
