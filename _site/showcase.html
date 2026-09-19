@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Showcase - Zhihui Chen</title>
-    <meta name="description" content="Zhihui Chen — I study self-improving agents &mdash; verifiable feedback, what gets retained, and reliable verification &mdash; in code and in medicine.">
+    <meta name="description" content="Zhihui Chen — My doctoral research centers on AI recursive self-improvement (RSI), with a focus on coding agents and post-training, alongside medical agents and medical AI safety.">
     <meta name="theme-color" content="#fbfaf7">
     <meta property="og:title" content="Showcase - Zhihui Chen">
-    <meta property="og:description" content="Zhihui Chen — I study self-improving agents &mdash; verifiable feedback, what gets retained, and reliable verification &mdash; in code and in medicine.">
+    <meta property="og:description" content="Zhihui Chen — My doctoral research centers on AI recursive self-improvement (RSI), with a focus on coding agents and post-training, alongside medical agents and medical AI safety.">
     <meta property="og:type" content="website">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2315171b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fbfaf7' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
 
@@ -350,18 +350,18 @@
     <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
         <div class="card border-0 shadow-sm bg-white">
             <div class="p-4">
-    <h2 data-en="Med-Banana: Verifier-Guided Refinement for Medical Image Editing (EMNLP 2026)" data-zh="Med-Banana：验证器引导的医学影像编辑迭代修订（EMNLP 2026）">Med-Banana: Verifier-Guided Refinement for Medical Image Editing (EMNLP 2026)</h2>
+    <h2 data-en="Med-Banana: RSI through Medical Agent Self-Improvement (EMNLP 2026)" data-zh="Med-Banana：面向医疗 Agent 自优化的 RSI 研究实践（EMNLP 2026）">Med-Banana: RSI through Medical Agent Self-Improvement (EMNLP 2026)</h2>
     <hr />
 
     <div class="row">
         <div class="col-md-8">
-            <p data-en="&lt;strong&gt;Iterative Prompt Refinement · Verifier Feedback · Agentic Post-Training&lt;/strong&gt;" data-zh="&lt;strong&gt;Prompt 迭代修订 · 验证反馈 · Agentic 后训练&lt;/strong&gt;"><strong>Iterative Prompt Refinement · Verifier Feedback · Agentic Post-Training</strong></p>
-            <p data-en="The system uses its own failed attempts to revise the next edit: a trained verifier rejects, a refiner rewrites the prompts, and both successful and failed trajectories are retained for post-training." data-zh="系统利用自身的失败修订下一次编辑：训练得到的验证器给出拒绝理由，精炼器据此改写 Prompt，成功与失败轨迹均保留用于后训练。">The system uses its own failed attempts to revise the next edit: a trained verifier rejects, a refiner rewrites the prompts, and both successful and failed trajectories are retained for post-training.</p>
-            <h4 data-en="The Refinement Loop" data-zh="修订回路">The Refinement Loop</h4>
+            <p data-en="&lt;strong&gt;Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training&lt;/strong&gt;" data-zh="&lt;strong&gt;Prompt 自优化 · 验证反馈 · Agentic 后训练&lt;/strong&gt;"><strong>Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training</strong></p>
+            <p data-en="Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner." data-zh="Med-Banana 将我的 RSI 研究落到医疗 Agent：系统从自身失败中提取反馈，修正下一轮编辑的指令策略。递归改进发生在 Prompt 层面，由经过训练的验证器与精炼器驱动。">Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner.</p>
+            <h4 data-en="The Self-Improvement Loop" data-zh="自优化机制">The Self-Improvement Loop</h4>
             <ol>
             <li data-en="&lt;strong&gt;Edit:&lt;/strong&gt; Generate a candidate from the source image and current prompt pair." data-zh="&lt;strong&gt;执行：&lt;/strong&gt;基于原始影像与当前正负 Prompt 生成候选结果。"><strong>Edit:</strong> Generate a candidate from the source image and current prompt pair.</li>
             <li data-en="&lt;strong&gt;Verify:&lt;/strong&gt; Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity." data-zh="&lt;strong&gt;验证：&lt;/strong&gt;从病理合理性、解剖结构、指令遵循与成像保真度诊断失败。"><strong>Verify:</strong> Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity.</li>
-            <li data-en="&lt;strong&gt;Refine:&lt;/strong&gt; Use rejection reasons and failure history to revise both prompts, then retry from the original image." data-zh="&lt;strong&gt;修订：&lt;/strong&gt;结合拒绝原因与历史失败改写正负 Prompt，从原始影像重新尝试。"><strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image.</li>
+            <li data-en="&lt;strong&gt;Refine:&lt;/strong&gt; Use rejection reasons and failure history to revise both prompts, then retry from the original image." data-zh="&lt;strong&gt;递归修正：&lt;/strong&gt;结合拒绝原因与历史失败改写正负 Prompt，从原始影像重新尝试。"><strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image.</li>
             <li data-en="&lt;strong&gt;Learn:&lt;/strong&gt; Train the editor on successful edits and the verifier and refiner on trajectory-level feedback." data-zh="&lt;strong&gt;轨迹学习：&lt;/strong&gt;以成功编辑训练编辑器，以成败判断与修正轨迹训练验证器和精炼器。"><strong>Learn:</strong> Train the editor on successful edits and the verifier and refiner on trajectory-level feedback.</li>
             </ol>
             <p data-en="&lt;strong&gt;Med-Banana-80K:&lt;/strong&gt; 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 100K+ Hugging Face downloads." data-zh="&lt;strong&gt;Med-Banana-80K：&lt;/strong&gt;50,635 条成功与 37,822 条失败轨迹，覆盖三种医学影像模态与 23 类疾病；Hugging Face 下载量超过 100K。"><strong>Med-Banana-80K:</strong> 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 100K+ Hugging Face downloads.</p>
