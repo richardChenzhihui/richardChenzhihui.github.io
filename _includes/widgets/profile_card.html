@@ -12,6 +12,10 @@
             {% endif %}
         </div>
         <div class="col-12 col-sm-8 col-lg-9">
+            <div class="home-hero-kicker">
+                <span class="lang-en">{{ site.data.profile.hero_kicker }}</span>
+                <span class="lang-zh d-none">{{ site.data.profile_zh.hero_kicker }}</span>
+            </div>
             <h1 class="home-hero-name">
                 <span class="lang-en">{{ site.data.profile.primary_name }}</span>
                 <span class="lang-zh d-none">{{ site.data.profile_zh.primary_name }}</span>
@@ -20,17 +24,37 @@
                 <span class="lang-en">{% for position in site.data.profile.positions %}{{ position.name }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
                 <span class="lang-zh d-none">{% for position in site.data.profile_zh.positions %}{{ position.name }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
             </div>
-            <div class="research-keywords" aria-label="Research focus">
-                <span>Coding Agent</span><span>RSI · <span class="lang-zh d-none">递归自进化</span><span class="lang-en">Self-Improvement</span></span><span class="lang-zh d-none">基座模型后训练</span><span class="lang-en">Model Post-Training</span>
+            <p class="home-hero-statement">
+                <span class="lang-en">{{ site.data.profile.hero_statement }}</span>
+                <span class="lang-zh d-none">{{ site.data.profile_zh.hero_statement }}</span>
+            </p>
+            <div class="home-bio home-hero-bio">
+                <div class="lang-en">{{ site.data.profile.short_bio }}</div>
+                <div class="lang-zh d-none">{{ site.data.profile_zh.short_bio }}</div>
             </div>
-            <div class="profile-facts">
-                <p><strong class="lang-zh d-none">当前</strong><strong class="lang-en">Now</strong><span class="lang-zh d-none">智谱 Z.ai · Coding Agent RSI 后训练实习</span><span class="lang-en">Zhipu AI · Coding Agent RSI post-training intern</span></p>
-                <p><strong class="lang-zh d-none">博士研究</strong><strong class="lang-en">PhD research</strong><span class="lang-zh d-none"><b>AI 递归自进化（RSI）</b><br>医疗 Agent · 医疗 AI 安全</span><span class="lang-en"><b>AI Recursive Self-Improvement (RSI)</b><br>Medical Agents · Medical AI Safety</span></p>
+            {% if site.data.profile.standing %}
+            <div class="home-standing">
+                {% for item in site.data.profile.standing %}
+                {% assign item_zh = site.data.profile_zh.standing[forloop.index0] %}
+                <div class="home-standing-row">
+                    <div class="home-standing-key">
+                        <span class="lang-en">{{ item.key }}</span>
+                        <span class="lang-zh d-none">{{ item_zh.key }}</span>
+                    </div>
+                    <div class="home-standing-val">
+                        <span class="lang-en">{{ item.value }}</span>
+                        <span class="lang-zh d-none">{{ item_zh.value }}</span>
+                        {% if item.sub or item_zh.sub %}
+                        <span class="home-standing-sub">
+                            <span class="lang-en">{{ item.sub }}</span>
+                            <span class="lang-zh d-none">{{ item_zh.sub }}</span>
+                        </span>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
             </div>
-            <details class="profile-more">
-                <summary><span class="lang-zh d-none">更多介绍</span><span class="lang-en">More about my research</span></summary>
-                <div class="home-bio home-hero-bio"><div class="lang-en">{{ site.data.profile.short_bio }}</div><div class="lang-zh d-none">{{ site.data.profile_zh.short_bio }}</div></div>
-            </details>
+            {% endif %}
             <div class="home-hero-links">
                 <a class="no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
                     <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
@@ -48,33 +72,5 @@
                 {% endif %}
             </div>
         </div>
-    </div>
-    <div class="research-manifesto">
-        <div>
-            <div class="manifesto-eyebrow">CODING AGENT / RSI / POST-TRAINING</div>
-            <p class="manifesto-title"><span class="lang-en">{{ site.data.profile.hero_statement }}</span><span class="lang-zh d-none">{{ site.data.profile_zh.hero_statement }}</span></p>
-        </div>
-        <div class="rsi-visual">
-            <div class="formula-mark" aria-label="Model at iteration t plus one learns from verified experience">M<sub>t+1</sub> <span>↻</span> M<sub>t</sub></div>
-            <svg viewBox="0 0 380 145" role="img" aria-label="Recursive self-improvement loop: generate, execute, verify, learn">
-                <defs><marker id="loop-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#73e7ce" stroke-width="1.5"/></marker></defs>
-                <g fill="none" stroke="#73e7ce" stroke-width="1.5" marker-end="url(#loop-arrow)"><path d="M111 35H265"/><path d="M302 53V97"/><path d="M265 113H111"/><path d="M74 97V53"/></g>
-                <g fill="#102f41" stroke="#387084"><rect x="17" y="17" width="114" height="36" rx="18"/><rect x="245" y="17" width="114" height="36" rx="18"/><rect x="245" y="95" width="114" height="36" rx="18"/><rect x="17" y="95" width="114" height="36" rx="18"/></g>
-                <g fill="#d9f6f2" font-family="monospace" font-size="14" text-anchor="middle"><text x="74" y="40">GENERATE</text><text x="302" y="40">EXECUTE</text><text x="302" y="118">VERIFY</text><text x="74" y="118">LEARN</text></g>
-                <text x="190" y="79" text-anchor="middle" fill="#90b5c7" font-family="monospace" font-size="12">VERIFIED EXPERIENCE</text>
-            </svg>
-            <div class="formula-caption"><span class="lang-en">A research vision: learn, verify, evolve.</span><span class="lang-zh d-none">研究愿景：学习、验证、持续进化。</span></div>
-        </div>
-    </div>
-    <div class="company-strip" aria-label="Research experience and talent programs">
-        {% for item in site.data.profile.experience limit:6 %}
-        {% assign item_zh = site.data.profile_zh.experience[forloop.index0] %}
-        <div class="company-mark">
-            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" loading="lazy">
-            <span class="lang-en">{{ item.name }}</span><span class="lang-zh d-none">{{ item_zh.name }}</span>
-            <small class="lang-en">{% case forloop.index %}{% when 1 %}Coding Agent RSI · Current{% when 2 %}Foundation Models · Selected{% when 3 %}Qingyun Program · Selected{% when 4 %}Agentic Post-Training{% when 5 %}Speech Foundation Models{% when 6 %}Quant Trading Agents{% endcase %}</small>
-            <small class="lang-zh d-none">{% case forloop.index %}{% when 1 %}Coding Agent RSI · 在职{% when 2 %}基座模型 · 已获录用{% when 3 %}青云计划 · 入选{% when 4 %}Agentic 后训练{% when 5 %}语音基座模型{% when 6 %}量化交易 Agent{% endcase %}</small>
-        </div>
-        {% endfor %}
     </div>
 </section>
