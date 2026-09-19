@@ -85,7 +85,7 @@ impact_areas:
     title: "闭合 AI 研发的自进化循环。"
     description: "我的研究以 Coding Agent 后训练为切入点，推动递归自进化：让更强的智能体参与构建更强的模型。长期目标是让 AI 具备参与设计、训练与评估下一代 AI 的能力。"
     focus: "Coding Agent · Agentic 中期训练与后训练 · 可验证强化学习"
-    detail: "研究连接执行能力与模型进步的训练闭环、奖励机制和验证器：从长程任务的信用分配，到 Agent 行动的独立审查，让自进化建立在可检验的反馈之上。"
+    detail: "研究连接执行能力与模型进步的训练流程、奖励机制和验证器：从长程任务的信用分配，到 Agent 行动的独立审查，让自进化建立在可检验的反馈之上。"
     proof: "智谱 · Farsight · Med-Banana（EMNLP 2026）· DivScore"
   - label: "研究方向 · AI for Healthcare"
     title: "以智能的进化，推动生命的福祉。"
@@ -196,7 +196,7 @@ experience:
 - name: 字节跳动 · Data 业务基模
   logo: /assets/images/badges/ByteDance.svg
   position: 大模型推理后训练 研究实习生（百卡 H100 集群）
-  dept: "面向 Data 业务基模的多模态 Agent 强化学习——工具调用与长链路 RLVR、奖励设计与评测闭环，百卡 NVIDIA H100 集群规模化推理后训练 · Farsight（一作，ICLR 2026 在投）"
+  dept: "面向 Data 业务基模的多模态 Agent 强化学习——工具调用与长链路 RLVR、奖励设计与评测迭代，百卡 NVIDIA H100 集群规模化推理后训练 · Farsight（一作，ICLR 2026 在投）"
   date: 2026年5月 - 2026年9月
 
 - name: 阶跃星辰（StepFun）
