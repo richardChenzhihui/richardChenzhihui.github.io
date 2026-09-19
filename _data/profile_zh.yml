@@ -23,20 +23,17 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    研究聚焦 Coding Agent 与递归自进化（RSI），以及基座模型后训练：探索如何将自主探索、代码执行与可验证反馈转化为可扩展的学习信号，推动模型推理与长程任务能力的持续提升。
-  </p>
-  <p>
-    博士研究以 AI 递归自进化（RSI）为核心，同时研究医疗 Agent 与医疗 AI 安全，推动智能能力的进步与医疗、人类福祉的发展。
+    研究方向是 Coding Agent + RSI（递归自进化）：智能体生成、执行并验证真实编码任务，经执行验证的轨迹成为基座模型后训练的训练信号——更强的智能体帮助构建更强的模型。同一研究方向也延伸到医疗 Agent 与医疗 AI 安全。
   </p>
   <p>
     现于智谱（Z.ai）基础模型后训练团队实习，以 RSI 驱动 Coding Agent 方向的大模型后训练；同时已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
   </p>
 
 hero_kicker: >-
-  Coding Agent 自进化（RSI）· 基座模型后训练
+  Coding Agent + RSI · 基座模型后训练
 
 hero_summary: >-
-  博士研究聚焦 AI 递归自进化（RSI），以 Coding Agent 与后训练为核心，同时关注医疗 Agent 与医疗 AI 安全。
+  研究方向是 Coding Agent + RSI：构建自我进化的 Coding Agent 与基座模型后训练流程，并把同一方法应用于医疗 Agent 与医疗 AI 安全。
 
 hero_statement: >-
   让 AI 成为<br>下一代 AI 的创造者。
@@ -81,15 +78,15 @@ homepage_metrics:
     note: "OfficeBuddy：Vision-in-the-Loop 开源 Word/Excel Agent"
 
 impact_areas:
-  - label: "核心方向 · Coding Agent RSI"
+  - label: "研究方向 · Coding Agent + RSI"
     title: "闭合 AI 研发的自进化循环。"
     description: "我的研究以 Coding Agent 后训练为切入点，推动递归自进化：让更强的智能体参与构建更强的模型。长期目标是让 AI 具备参与设计、训练与评估下一代 AI 的能力。"
     focus: "Coding Agent · Agentic 中期训练与后训练 · 可验证强化学习"
     detail: "研究连接执行能力与模型进步的训练流程、奖励机制和验证器：从长程任务的信用分配，到 Agent 行动的独立审查，让自进化建立在可检验的反馈之上。"
     proof: "智谱 · Farsight · Med-Banana（EMNLP 2026）· DivScore"
-  - label: "研究方向 · AI for Healthcare"
+  - label: "应用与安全 · 医疗 AI"
     title: "以智能的进化，推动生命的福祉。"
-    description: "我将 RSI 与医疗 Agent 研究相连接，以推动医疗与人类福祉为使命。聚焦医疗 Agent 与医疗 AI 安全，研究可靠推理、可验证的医疗工作流与可信医学证据，支持临床工作。"
+    description: "我把同样的自进化方法带进反馈昂贵、必须可验证的医疗场景：研究医疗 Agent 与医疗 AI 安全，包括可靠推理、可验证的医疗工作流与可信医学证据。"
     focus: "医疗 Agent · 医疗 AI 安全"
     detail: "医疗 Agent：多模态推理、工具调用与可验证的医疗工作流。医疗 AI 安全：医学影像真实性、可解释的伪造检测与 Agent 输出的严格评估。Med-Banana 以验证反馈驱动 Prompt 递归优化，探索医疗 Agent 的自改进机制；MedForge 研究医学伪造检测与证据可信性。"
     proof: "Med-Banana · EMNLP 2026 / MedForge · ACL 2026 主会议"
@@ -163,7 +160,7 @@ education:
 - name: 新加坡国立大学
   logo: /assets/images/badges/NUS.png
   position: 人工智能博士
-  dept: "Coding 驱动的模型自进化（RSI）· AI for Healthcare"
+  dept: "Coding Agent + RSI（递归自进化）· AI for Healthcare"
   date: 2025年1月 - 至今
 - name: 香港大学
   logo: /assets/images/badges/HKU.jpg

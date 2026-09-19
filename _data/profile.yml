@@ -23,20 +23,17 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
   </p>
   <p>
-    My research focuses on Coding Agents and recursive self-improvement (RSI) for foundation-model post-training: turning autonomous exploration, code execution, and verifiable feedback into scalable learning signals that advance reasoning and long-horizon capabilities.
-  </p>
-  <p>
-    My doctoral research centers on AI recursive self-improvement (RSI), alongside medical agents and medical AI safety, advancing both AI capabilities and human wellbeing.
+    My research direction is Coding Agent + RSI (recursive self-improvement): coding agents generate, execute and verify real coding tasks, and execution-verified trajectories become training signal for foundation-model post-training &mdash; stronger agents help build stronger models. The same line of work extends to medical agents and medical AI safety.
   </p>
   <p>
     I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for coding agents. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
   </p>
 
 hero_kicker: >-
-  Coding Agent RSI &middot; Foundation-Model Post-Training
+  Coding Agent + RSI &middot; Foundation-Model Post-Training
 
 hero_summary: >-
-  My doctoral research centers on AI recursive self-improvement (RSI), with a focus on coding agents and post-training, alongside medical agents and medical AI safety.
+  My research direction is Coding Agent + RSI: building self-improving coding agents for foundation-model post-training, and applying the same methods to medical agents and medical AI safety.
 
 hero_statement: >-
   Toward AI that builds<br>the next generation of AI.
@@ -85,20 +82,35 @@ homepage_metrics:
     note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent"
 
 impact_areas:
-  - label: "Primary Focus · Coding Agent RSI"
+  - label: "Research Direction · Coding Agent + RSI"
     title: "Closing the loop of AI development."
     description: "My research pursues recursive self-improvement through Coding Agent post-training: connecting stronger agents to the development of stronger models. The long-term goal is AI that can contribute to designing, training, and evaluating its successors."
     focus: "Coding Agents · Agentic Mid- & Post-Training · Verifiable RL"
     detail: "I study the training loops, rewards, and verifiers that connect better execution to better models, from long-horizon credit assignment to independent audits of agent actions."
     proof: "Zhipu AI · Farsight · Med-Banana (EMNLP 2026) · DivScore"
-  - label: "Research Direction · AI for Healthcare"
+  - label: "Applications & Safety · Medical AI"
     title: "Advance intelligence. Improve human lives."
-    description: "I connect RSI with medical agent research to advance healthcare and human wellbeing. I study medical agents and medical AI safety, aiming to support clinical work with reliable reasoning, verifiable workflows, and trustworthy medical evidence."
+    description: "I bring the same self-improvement methods to medicine, where feedback is costly and must be verifiable. I study medical agents and medical AI safety: reliable reasoning, verifiable workflows, and trustworthy medical evidence."
     focus: "Medical Agents · Medical AI Safety"
     detail: "Medical Agents: multimodal reasoning, tool use, and verifiable medical workflows. Medical AI Safety: image integrity, interpretable forgery detection, and rigorous evaluation of agent outputs. Med-Banana explores medical agent self-improvement through feedback-driven recursive prompt refinement; MedForge studies medical forgery detection and evidence integrity."
     proof: "Med-Banana · EMNLP 2026 / MedForge · ACL 2026 Main"
 
 featured_work:
+featured_work:
+  - title: "OfficeBuddy"
+    subtitle: "Vision-in-the-Loop open-source office agent"
+    description: "Open-source Word/Excel agent (53★): every edit is re-rendered through real Microsoft Office and audited by an independent visual verifier before the loop moves on."
+    image: /assets/images/projects/officebuddy.svg
+    badges:
+      - "53★ open source · GitHub"
+      - "Vision-in-the-Loop"
+      - "Model-agnostic (Kimi-K2 / MiniMax-M3)"
+    primary:
+      label: "GitHub"
+      url: https://github.com/richardChenzhihui/OfficeBuddy
+    secondary:
+      label: "Showcase"
+      url: /showcase.html#projects
   - title: "MedForge"
     subtitle: "Interpretable medical deepfake detection"
     description: "Detects medically plausible image forgeries through localized evidence, expert-aligned reasoning, and a Localize-then-Analyze detector."
@@ -113,6 +125,21 @@ featured_work:
     secondary:
       label: "Paper"
       url: https://arxiv.org/abs/2603.18577
+  - title: "MiniMax Cowork Team Fellowship"
+    dark_art: true
+    subtitle: "Medical foundation model development and clinically verifiable Agent workflows"
+    description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with medical foundation model development and verifiable decision paths."
+    image: /assets/images/projects/minimax-fellowship.svg
+    badges:
+      - "MiniMax Cowork Team"
+      - "USD 4,500 compute grant"
+      - "Medical Foundation Models"
+    primary:
+      label: "Showcase"
+      url: /showcase.html#projects
+    secondary:
+      label: "MiniMax"
+      url: https://www.minimaxi.com/
   - title: "Tencent Cloud Quant Infrastructure Grant"
     featured_center: true
     dark_art: true
@@ -129,37 +156,6 @@ featured_work:
     secondary:
       label: "Tencent Cloud"
       url: https://www.tencentcloud.com/
-  - title: "MiniMax Cowork Team Fellowship"
-    dark_art: true
-    subtitle: "Medical foundation model development and clinically verifiable Agent workflows"
-    description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with medical foundation model development and verifiable decision paths."
-    image: /assets/images/projects/minimax-fellowship.svg
-    badges:
-      - "MiniMax Cowork Team"
-      - "USD 4,500 compute grant"
-      - "Medical Foundation Models"
-    primary:
-      label: "Showcase"
-      url: /showcase.html#projects
-    secondary:
-      label: "MiniMax"
-      url: https://www.minimaxi.com/
-  - title: "OfficeBuddy"
-    subtitle: "Vision-in-the-Loop open-source office agent"
-    description: "Open-source Word/Excel agent (53★): every edit is re-rendered through real Microsoft Office and audited by an independent visual verifier before the loop moves on."
-    image: /assets/images/projects/officebuddy.svg
-    badges:
-      - "53★ open source · GitHub"
-      - "Vision-in-the-Loop"
-      - "Model-agnostic (Kimi-K2 / MiniMax-M3)"
-    primary:
-      label: "GitHub"
-      url: https://github.com/richardChenzhihui/OfficeBuddy
-    secondary:
-      label: "Showcase"
-      url: /showcase.html#projects
-
-
 portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-
 
@@ -167,7 +163,7 @@ education:
 - name: National University of Singapore
   logo: /assets/images/badges/NUS.png
   position: Ph.D. in Artificial Intelligence
-  dept: "Coding-driven model self-improvement (RSI) · AI for healthcare"
+  dept: "Coding Agent + RSI · AI for healthcare"
   date: Jan. 2025 - present
 - name: The University of Hong Kong
   logo: /assets/images/badges/HKU.jpg
