@@ -19,39 +19,38 @@ github: richardChenzhihui
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    PhD student in Artificial Intelligence at the National University of Singapore, supervised by
+    I am a PhD student in Artificial Intelligence at the National University of Singapore, advised by
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
   </p>
   <p>
-    My research direction is Coding Agent + RSI (recursive self-improvement): coding agents generate, execute and verify real coding tasks, and execution-verified trajectories become training signal for foundation-model post-training &mdash; stronger agents help build stronger models. The same line of work extends to medical agents and medical AI safety.
+    I work on post-training for coding agents, focusing on recursive self-improvement (RSI): the agent generates coding tasks and solves them in a sandbox, trajectories that pass compilation and tests are kept, and the next model is trained on them. The questions I care about are credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent. I also apply these methods to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>), and work on detecting forged medical images and LLM-generated text (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
   </p>
   <p>
-    I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for coding agents. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
+    I am currently a research intern on the foundation-model post-training team at Zhipu AI (Z.ai), working on coding-agent post-training. Before that I interned at ByteDance (agentic RL for VLMs; Farsight) and StepFun (pre-training data for StepAudio2.5). I have received a research internship offer from the Qwen team at Alibaba Tongyi Lab, and was selected for Tencent&rsquo;s Qingyun Program.
   </p>
 
 hero_summary: >-
-  My research direction is Coding Agent + RSI: building self-improving coding agents for foundation-model post-training, and applying the same methods to medical agents and medical AI safety.
+  PhD student at NUS working on post-training for coding agents and recursive self-improvement (RSI), with applications to medical agents and medical AI safety.
 
 impact_areas:
-  - label: "Direction 01 · Coding Agents & Recursive Self-Improvement"
-    title: "Stronger coding agents should help build stronger models."
+  - label: "Direction 01 · Coding Agent + RSI"
+    title: "Post-training coding agents on execution-verified trajectories"
     summary: >-
-      I work on the training pipeline that turns agent execution into model progress:
-      coding agents propose real software tasks and execute them in sandboxes; only
-      trajectories that compile, pass tests, and reproduce are kept as post-training
-      data; the updated model then runs a stronger agent in the next round. Whether the
-      loop actually improves the model depends on three problems I study: long-horizon
-      credit assignment, reward and verifier design, and independent auditing of agent
-      actions.
+      A coding agent proposes software tasks and solves them in a sandbox. Trajectories
+      that compile, pass the tests and reproduce are kept as SFT and RL data, and the
+      updated model runs the agent in the next round. Each round only helps if the
+      filter is reliable, so most of my work is on the filter and the training signal:
+      credit assignment over long trajectories, reward and verifier design, and
+      auditing agent actions with a checker the agent does not control.
     chain_caption:
       en: "The self-improvement loop"
       zh: "自改进循环"
     loop_note:
-      en: "One verified round produces one model update; the loop works only if every step can be checked."
-      zh: "每轮通过验证后更新一次模型；循环有效的前提是每一步都可检验。"
+      en: "One round = one model update, trained only on trajectories that passed verification."
+      zh: "一轮对应一次模型更新，训练数据只取通过验证的轨迹。"
     steps:
-      - en: "Agent proposes a real coding task"
-        zh: "智能体生成真实编码任务"
+      - en: "Agent proposes a coding task"
+        zh: "Agent 生成编码任务"
       - en: "Sandbox execution"
         zh: "沙箱执行"
       - en: "Compile · test · replay"
@@ -60,8 +59,8 @@ impact_areas:
         zh: "仅保留通过验证的轨迹"
       - en: "SFT · RL post-training"
         zh: "SFT · RL 后训练"
-      - en: "Stronger model → stronger agent"
-        zh: "更强模型 → 更强智能体"
+      - en: "Updated model runs the next round"
+        zh: "更新后的模型进入下一轮"
     problems:
       - en: "Long-horizon credit assignment"
         zh: "长程任务的信用分配"
@@ -70,7 +69,7 @@ impact_areas:
       - en: "Reward & verifier design"
         zh: "奖励与验证器设计"
       - en: "Independent audit of agent actions"
-        zh: "智能体行动的独立审查"
+        zh: "Agent 行动的独立审查"
     evidence:
       - name:
           en: "Zhipu AI (Z.ai) · Foundation-Model Post-Training"
@@ -79,8 +78,8 @@ impact_areas:
           en: "current role"
           zh: "在职"
         note:
-          en: "Running the coding-agent RSI loop on a production foundation model: execution-verified trajectories → post-training."
-          zh: "在产线基座模型上运行 Coding Agent 的 RSI 流程：执行验证轨迹 → 后训练。"
+          en: "Coding-agent post-training on execution-verified trajectories."
+          zh: "基于执行验证轨迹的 Coding Agent 后训练。"
       - name:
           en: "Farsight"
           zh: "Farsight"
@@ -88,8 +87,8 @@ impact_areas:
           en: "ICLR 2026 · first author, under review"
           zh: "ICLR 2026 · 一作在投"
         note:
-          en: "Long-horizon agentic behavior for production data models — reward design and eval loops on a 100×H100 cluster (ByteDance)."
-          zh: "面向 Data 业务基模的长程智能体行为——百卡 H100 集群上的奖励设计与评测迭代（字节跳动）。"
+          en: "Future-discounted visual credit assignment for VLM reinforcement learning; trained on 100×H100 at ByteDance."
+          zh: "面向视觉语言模型强化学习的未来折扣视觉信用分配；在字节跳动百卡 H100 上训练。"
       - name:
           en: "OfficeBuddy"
           zh: "OfficeBuddy"
@@ -97,8 +96,8 @@ impact_areas:
           en: "open source · 53★"
           zh: "开源 · 53★"
         note:
-          en: "Vision-in-the-Loop: every edit is re-rendered in real Office and audited by an independent visual verifier."
-          zh: "Vision-in-the-Loop：每步编辑经真实 Office 重渲染，由独立视觉验证器审查。"
+          en: "Word/Excel agent. Each edit is re-rendered in real Office and checked by a separate visual verifier."
+          zh: "Word/Excel 编辑 Agent。每步编辑在真实 Office 中重新渲染，由独立的视觉验证器检查。"
       - name:
           en: "Med-Banana trajectories"
           zh: "Med-Banana 轨迹"
@@ -106,22 +105,23 @@ impact_areas:
           en: "88K+ released · 150K+ downloads"
           zh: "开源 88K+ · 下载 150K+"
         note:
-          en: "Success-and-failure agent trajectories as reusable post-training signal (GitHub & Hugging Face)."
-          zh: "成败智能体轨迹作为可复用的后训练信号（GitHub 与 Hugging Face）。"
+          en: "Successful and failed editing trajectories, released on GitHub and Hugging Face for post-training."
+          zh: "成功与失败的编辑轨迹，已在 GitHub 与 Hugging Face 公开，可直接用于后训练。"
   - label: "Direction 02 · Medical Agents & Medical AI Safety"
-    title: "Make self-improvement verifiable where feedback is costly: medicine."
+    title: "Medical agents and detection of forged medical content"
     summary: >-
-      Medicine is a setting where errors are costly and every check may face clinical
-      review, so self-improvement there has to be verifiable. I work on two lines:
-      medical agents — multimodal reasoning, tool use, and verifiable clinical workflows
-      — and medical AI safety — image integrity, interpretable forgery detection, and
-      rigorous evaluation of agent outputs.
+      In medicine, checking an output often needs a clinician, so feedback is scarce and
+      expensive. Med-Banana applies RSI to medical image editing: a verifier scores each
+      edit, its feedback refines the prompt over rounds, and the successful and failed
+      trajectories are used for post-training. On the safety side, MedForge detects
+      forged medical images and explains where the forgery is, and DivScore detects
+      LLM-generated medical and legal text without training a detector.
     chain_caption:
       en: "The verified-feedback loop (Med-Banana)"
       zh: "可验证反馈循环（Med-Banana）"
     loop_note:
-      en: "Verifier feedback drives recursive prompt self-improvement; success-and-failure trajectories then become post-training signal."
-      zh: "验证反馈驱动 Prompt 递归自优化；成败轨迹再成为后训练信号。"
+      en: "Verifier feedback refines the prompt over rounds; successful and failed trajectories are then used for post-training."
+      zh: "验证器反馈逐轮修正 Prompt；成功与失败的轨迹随后用于后训练。"
     steps:
       - en: "Medical task (image / workflow)"
         zh: "医疗任务（影像 / 工作流）"
@@ -133,8 +133,8 @@ impact_areas:
         zh: "反馈驱动 Prompt 递归优化"
       - en: "Trajectory-based post-training"
         zh: "成败轨迹后训练"
-      - en: "More reliable medical agent"
-        zh: "更可靠的医疗 Agent"
+      - en: "Updated medical agent"
+        zh: "更新后的医疗 Agent"
     problems:
       - en: "Verifiability of clinical feedback"
         zh: "临床反馈的可验证性"
@@ -152,8 +152,8 @@ impact_areas:
           en: "EMNLP 2026"
           zh: "EMNLP 2026"
         note:
-          en: "Agentic post-training for medical image editing, driven by verifier feedback and recursive prompt self-improvement."
-          zh: "医学图像编辑的智能体后训练；验证反馈驱动 Prompt 递归自优化。"
+          en: "RSI through medical agent self-improvement: verifier-guided prompt refinement and trajectory-based post-training for medical image editing."
+          zh: "RSI through Medical Agent Self-Improvement：医学图像编辑中由验证器引导的 Prompt 修正与基于轨迹的后训练。"
       - name:
           en: "MedForge"
           zh: "MedForge"
@@ -161,8 +161,8 @@ impact_areas:
           en: "ACL 2026 Main"
           zh: "ACL 2026 主会议"
         note:
-          en: "Interpretable medical deepfake detection: Localize-then-Analyze reasoning, 19 lesion types, 10 forgery generators."
-          zh: "可解释医学伪造检测：先定位再分析，覆盖 19 类病灶、10 种伪造模型。"
+          en: "Medical deepfake detection that first localizes the forged region, then explains it; 19 lesion types, 10 forgery generators."
+          zh: "医学伪造检测：先定位伪造区域再给出解释；覆盖 19 类病灶、10 种伪造模型。"
       - name:
           en: "DivScore"
           zh: "DivScore"
@@ -170,8 +170,8 @@ impact_areas:
           en: "EMNLP 2025"
           zh: "EMNLP 2025"
         note:
-          en: "Zero-shot detection of LLM-generated text — an auditing tool for agent outputs."
-          zh: "大模型生成文本的零样本检测——审计智能体输出的工具。"
+          en: "Zero-shot detection of LLM-generated text in medical and legal domains."
+          zh: "医疗与法律领域大模型生成文本的零样本检测。"
       - name:
           en: "MiniMax Cowork Team Fellowship"
           zh: "MiniMax Cowork Team Fellowship"
@@ -179,8 +179,8 @@ impact_areas:
           en: "USD 4,500 compute grant"
           zh: "4500 美金算力支持"
         note:
-          en: "Supporting medical foundation-model development and verifiable agent workflows."
-          zh: "支持医疗大模型开发与可验证智能体工作流。"
+          en: "Compute for medical foundation-model and agent experiments."
+          zh: "用于医疗大模型与 Agent 实验的算力。"
 
 portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-
@@ -204,7 +204,7 @@ experience:
 - name: Zhipu AI (Z.ai, 智谱)
   logo: /assets/images/badges/Zhipu.png
   position: Foundation Model Post-Training Research Intern
-  dept: "Coding Agent RSI post-training — agents generate, execute, and verify coding trajectories, then learn from execution-grounded feedback through recursive self-improvement"
+  dept: "Coding-agent post-training with RSI: the agent generates and executes coding tasks (including quant/finance code), and the model is trained on trajectories that pass execution checks"
   date: Sep. 2026 - present
 
 - name: Alibaba Tongyi Lab · Qwen
@@ -221,8 +221,8 @@ experience:
 
 - name: ByteDance · Data Foundation Model (Data 业务基模)
   logo: /assets/images/badges/ByteDance.svg
-  position: Foundation Model Research Intern — Reasoning Post-Training on a 100&times;H100 Cluster
-  dept: "Multimodal agentic RL for production Data-business foundation models: tool use & long-horizon RLVR, reward design and eval loops, reasoning post-training at scale on 100&times;NVIDIA H100 · Farsight (first-author, ICLR 2026 under review)"
+  position: Foundation Model Research Intern — Reasoning Post-Training
+  dept: "Agentic RL for multimodal models on the Data foundation-model team: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)"
   date: May 2026 - Sep 2026
 
 - name: StepFun (阶跃星辰)

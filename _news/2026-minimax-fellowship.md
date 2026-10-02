@@ -1,7 +1,7 @@
 ---
 title: >-
-    [MiniMax] Selected for the MiniMax Cowork Team Fellowship to support medical foundation model development and clinically verifiable Agent workflows.
+    [MiniMax] Received the MiniMax Cowork Team Fellowship (USD 4,500 compute) for medical foundation-model and agent experiments.
 title_zh: >-
-    [MiniMax] 入选 MiniMax Cowork Team Fellowship，围绕医疗大模型开发与临床可验证 Agent 工作流开展研究。
+    [MiniMax] 获 MiniMax Cowork Team Fellowship（4500 美金算力），用于医疗大模型与 Agent 实验。
 date: 2026-04-18 10:00:00 +0800
 ---

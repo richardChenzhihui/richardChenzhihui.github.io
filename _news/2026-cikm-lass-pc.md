@@ -1,7 +1,7 @@
 ---
 title: >-
-    [ACM CIKM 2026] Invited to the Program Committee of LASS 2026 — the 2nd International Workshop on LLM Agents for Social Simulation, co-located with ACM CIKM 2026 in Rome (Nov 8), reviewing submissions on agentic social simulation, evaluation and safety.
+    [ACM CIKM 2026] Serving on the Program Committee of LASS 2026 (Workshop on LLM Agents for Social Simulation) at ACM CIKM 2026, Rome.
 title_zh: >-
-    [ACM CIKM 2026] 受邀出任 LASS 2026 程序委员会（PC）委员——第二届 LLM Agents 社会模拟国际研讨会，与 ACM CIKM 2026 同期于罗马举办（11 月 8 日），负责评审智能体社会模拟、评测与安全方向的投稿。
+    [ACM CIKM 2026] 担任 ACM CIKM 2026 LASS 研讨会（LLM Agents for Social Simulation，罗马）程序委员会委员。
 date: 2026-08-04 10:00:00 +0800
 ---
