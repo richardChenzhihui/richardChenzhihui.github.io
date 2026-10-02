@@ -1,115 +1,103 @@
 ---
 layout: default
 title: "MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning"
-navbar_title: MedForge
-container_class: container-lg
+navbar_title: Publications
 ---
 
 <style>
-.medforge-page { max-width: 960px; margin: 0 auto; }
-.medforge-hero {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: linear-gradient(135deg, #0284c7 0%, #4f46e5 60%, #7c3aed 100%);
-    color: #fff;
-    border-radius: 12px;
-    margin-bottom: 2rem;
+.pubpage-head { padding-top: 44px; }
+.pubpage-head h1 { font-size: 21px; line-height: 1.45; margin-bottom: 8px; }
+.pubpage-venue { font-family: var(--mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); margin-bottom: 8px; }
+.pubpage-authors { font-size: 13.5px; color: var(--body); margin-bottom: 12px; }
+.pubpage-links { font-family: var(--mono); font-size: 11.5px; margin-bottom: 6px; }
+.pubpage-links a { margin-right: 1.4em; }
+.pubpage-section h2 {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--faint);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 7px;
+    margin: 40px 0 16px;
 }
-.medforge-hero h1 { font-size: 1.65rem; font-weight: 700; margin-bottom: 0.75rem; line-height: 1.35; }
-.medforge-hero .meta { font-size: 1rem; opacity: 0.95; margin-bottom: 1rem; }
-.medforge-hero .btn-light { font-weight: 600; margin: 0.25rem; }
-.medforge-section {
-    background: #fff;
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
-}
-.medforge-section h2 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #4f46e5;
-    border-bottom: 2px solid #c7d2fe;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-}
-.medforge-section p { text-align: justify; line-height: 1.75; margin-bottom: 0.85rem; }
-.medforge-section ul { padding-left: 1.25rem; line-height: 1.7; }
-.medforge-fig { text-align: center; margin: 2rem 0; }
-.medforge-fig img {
+.pubpage-section p, .pubpage-section li { font-size: 14px; line-height: 1.7; }
+.pubpage-section ul { padding-left: 1.25em; margin-bottom: .9em; }
+.pubpage-figure { margin: 22px 0; }
+.pubpage-figure img {
+    display: block;
     max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    border: 1px solid var(--rule-soft);
+    border-radius: 2px;
 }
-.medforge-fig .caption { margin-top: 0.5rem; font-size: 0.9rem; color: #555; font-style: italic; }
+.pubpage-figure .caption { font-size: 12.5px; color: var(--faint); margin-top: 7px; }
 </style>
 
-<div class="medforge-page py-3">
-    <div class="medforge-hero">
-        <h1>MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</h1>
-        <p class="meta mb-2">ACL 2026 Main Conference</p>
-        <p class="small mb-3">
-            Zhihui Chen, Kai He, Qingyuan Lei, Bin Pu, Jian Zhang, Yuling Xu, Mengling Feng<sup>#</sup>
-        </p>
-        <div>
-            <a class="btn btn-light btn-sm" href="https://arxiv.org/abs/2603.18577" target="_blank" rel="noopener">Paper (arXiv)</a>
-            <a class="btn btn-outline-light btn-sm" href="https://huggingface.co/RichardChenZH/MedForge-Reasoner" target="_blank" rel="noopener">Model</a>
-            <a class="btn btn-outline-light btn-sm" href="https://huggingface.co/datasets/RichardChenZH/MedForge-90K" target="_blank" rel="noopener">Dataset</a>
-            <a class="btn btn-outline-light btn-sm" href="https://huggingface.co/spaces/RichardChenZH/medforge-medical-deepfake-detector" target="_blank" rel="noopener">Demo</a>
-        </div>
+<div class="pubpage-head">
+    <h1>MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</h1>
+    <p class="pubpage-venue">ACL 2026 Main Conference</p>
+    <p class="pubpage-authors">
+        Zhihui Chen, Kai He, Qingyuan Lei, Bin Pu, Jian Zhang, Yuling Xu, Mengling Feng<sup>#</sup>
+    </p>
+    <p class="pubpage-links">
+        <a href="https://arxiv.org/abs/2603.18577" target="_blank" rel="noopener">Paper (arXiv)</a>
+        <a href="https://huggingface.co/RichardChenZH/MedForge-Reasoner" target="_blank" rel="noopener">Model</a>
+        <a href="https://huggingface.co/datasets/RichardChenZH/MedForge-90K" target="_blank" rel="noopener">Dataset</a>
+        <a href="https://huggingface.co/spaces/RichardChenZH/medforge-medical-deepfake-detector" target="_blank" rel="noopener">Demo</a>
+    </p>
+</div>
+
+<div class="pubpage-section">
+    <h2>Overview</h2>
+    <p>
+        Our paper has been accepted to the <strong>ACL 2026 Main Conference</strong>:
+        <em>MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</em>.
+    </p>
+    <p>
+        As generative models become more powerful, medical deepfakes are becoming increasingly realistic: lesions can be injected into or removed from medical images while remaining visually plausible. This poses new risks to clinical safety, medical AI robustness, and the integrity of medical evidence. Existing methods mostly treat the task as binary real-vs-fake classification, but provide little insight into <em>where</em> the forgery is or <em>why</em> a sample is judged as manipulated.
+    </p>
+    <p>To address this, we present <strong>MedForge</strong>, an interpretable framework for medical deepfake detection:</p>
+    <ul>
+        <li><strong>MedForge-90K:</strong> the first large-scale explainable medical deepfake dataset covering CT, MRI, and X-ray, with 19 lesion types and forgeries generated by 10 state-of-the-art deepfake models.</li>
+        <li>Each forged sample is annotated with expert-guided localization masks and clinical-grade explanations.</li>
+        <li><strong>MedForge-Reasoner:</strong> an interpretable detector built on a Localize-then-Analyze chain-of-thought reasoning paradigm, trained with a vision-language model and <strong>Forgery-aware GSPO</strong> reinforcement learning.</li>
+    </ul>
+    <p>
+        Experiments show that MedForge-Reasoner achieves state-of-the-art detection performance while producing professional, localized, and verifiable medical explanations. The model, dataset, and interactive demo are publicly available through
+        <a href="https://huggingface.co/RichardChenZH/MedForge-Reasoner" target="_blank" rel="noopener">Hugging Face</a>.
+    </p>
+    <p>
+        Many thanks to the team and to Prof. Mengling Feng for the great support.
+    </p>
+</div>
+
+<div class="pubpage-section">
+    <h2>Figures</h2>
+
+    <div class="pubpage-figure">
+        <img src="{{ '/assets/images/publications/medforge/fig1.png' | relative_url }}" alt="MedForge framework overview and comparison to prior medical deepfake detectors" loading="lazy">
+        <p class="caption">Figure 1 — Overview of MedForge and comparison to specialized detectors and generic MLLM baselines.</p>
     </div>
 
-    <div class="medforge-section">
-        <h2>Overview</h2>
-        <p>
-            Our paper has been accepted to the <strong>ACL 2026 Main Conference</strong>:
-            <em>MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</em>.
-        </p>
-        <p>
-            As generative models become more powerful, medical deepfakes are becoming increasingly realistic: lesions can be injected into or removed from medical images while remaining visually plausible. This poses new risks to clinical safety, medical AI robustness, and the integrity of medical evidence. Existing methods mostly treat the task as binary real-vs-fake classification, but provide little insight into <em>where</em> the forgery is or <em>why</em> a sample is judged as manipulated.
-        </p>
-        <p>To address this, we present <strong>MedForge</strong>, an interpretable framework for medical deepfake detection:</p>
-        <ul>
-            <li><strong>MedForge-90K:</strong> the first large-scale explainable medical deepfake dataset covering CT, MRI, and X-ray, with 19 lesion types and forgeries generated by 10 state-of-the-art deepfake models.</li>
-            <li>Each forged sample is annotated with expert-guided localization masks and clinical-grade explanations.</li>
-            <li><strong>MedForge-Reasoner:</strong> an interpretable detector built on a Localize-then-Analyze chain-of-thought reasoning paradigm, trained with a vision-language model and <strong>Forgery-aware GSPO</strong> reinforcement learning.</li>
-        </ul>
-        <p>
-            Experiments show that MedForge-Reasoner achieves state-of-the-art detection performance while producing professional, localized, and verifiable medical explanations. The model, dataset, and interactive demo are publicly available through
-            <a href="https://huggingface.co/RichardChenZH/MedForge-Reasoner" target="_blank" rel="noopener">Hugging Face</a>.
-        </p>
-        <p class="mb-0">
-            Many thanks to the team and to Prof. Mengling Feng for the great support.
-        </p>
+    <div class="pubpage-figure">
+        <img src="{{ '/assets/images/publications/medforge/fig2.png' | relative_url }}" alt="MedForge-90K dataset construction pipeline" loading="lazy">
+        <p class="caption">Figure 2 — MedForge-90K construction: real images, forgery generation, and reasoning annotation.</p>
     </div>
 
-    <div class="medforge-section">
-        <h2>Figures</h2>
+    <div class="pubpage-figure">
+        <img src="{{ '/assets/images/publications/medforge/fig3.png' | relative_url }}" alt="MedForge-Reasoner two-stage training with SFT and Forgery-aware GSPO" loading="lazy">
+        <p class="caption">Figure 3 — MedForge-Reasoner two-stage training: reasoning cold-start (SFT) and Forgery-aware GSPO.</p>
+    </div>
 
-        <div class="medforge-fig">
-            <img src="{{ '/assets/images/publications/medforge/fig1.png' | relative_url }}" alt="MedForge framework overview and comparison to prior medical deepfake detectors">
-            <p class="caption">Figure 1 — Overview of MedForge and comparison to specialized detectors and generic MLLM baselines.</p>
-        </div>
+    <div class="pubpage-figure">
+        <img src="{{ '/assets/images/publications/medforge/fig4.png' | relative_url }}" alt="Main experimental results on MedForge-90K" loading="lazy">
+        <p class="caption">Figure 4 — Main results: forgery detection on the MedForge-90K benchmark.</p>
+    </div>
 
-        <div class="medforge-fig">
-            <img src="{{ '/assets/images/publications/medforge/fig2.png' | relative_url }}" alt="MedForge-90K dataset construction pipeline">
-            <p class="caption">Figure 2 — MedForge-90K construction: real images, forgery generation, and reasoning annotation.</p>
-        </div>
-
-        <div class="medforge-fig">
-            <img src="{{ '/assets/images/publications/medforge/fig3.png' | relative_url }}" alt="MedForge-Reasoner two-stage training with SFT and Forgery-aware GSPO">
-            <p class="caption">Figure 3 — MedForge-Reasoner two-stage training: reasoning cold-start (SFT) and Forgery-aware GSPO.</p>
-        </div>
-
-        <div class="medforge-fig">
-            <img src="{{ '/assets/images/publications/medforge/fig4.png' | relative_url }}" alt="Qualitative comparison of forgery explanations across models">
-            <p class="caption">Figure 4 — Qualitative comparison of interpretable forgery judgments and rationales.</p>
-        </div>
-
-        <div class="medforge-fig">
-            <img src="{{ '/assets/images/publications/medforge/fig5.png' | relative_url }}" alt="Main experimental results on MedForge-90K">
-            <p class="caption">Figure 5 — Main results: forgery detection on the MedForge-90K benchmark.</p>
-        </div>
+    <div class="pubpage-figure">
+        <img src="{{ '/assets/images/publications/medforge/fig5.png' | relative_url }}" alt="Qualitative comparison of forgery explanations across models" loading="lazy">
+        <p class="caption">Figure 5 — Qualitative comparison of interpretable forgery judgments and rationales.</p>
     </div>
 </div>

@@ -1,13 +1,9 @@
 {% assign item = include.item %}
 {% assign paper_link = item.links['Paper'] | default: item.links['paper'] %}
-<article class="pub-row{% if include.conference_visual and item.conference_banner %} has-conference-banner{% elsif item.cover %} has-cover{% endif %}">
-    {% if include.conference_visual and item.conference_banner %}
-    <div class="pub-conference-banner">
-        <img src="{{ item.conference_banner | relative_url }}" alt="{{ item.conference_name | escape }} conference banner" loading="lazy">
-        <div class="pub-conference-caption"><strong>{{ item.conference_name }}</strong>{% if item.pub contains 'submission' %}<span class="lang-en">Submission · Under review</span><span class="lang-zh d-none">投稿 · 审稿中</span>{% elsif item.conference_name == 'EMNLP 2026' %}<span class="lang-en">Accepted</span><span class="lang-zh d-none">已录用</span>{% else %}<span class="lang-en">Main Conference</span><span class="lang-zh d-none">主会议</span>{% endif %}</div>
-    </div>
+<article class="pub-row{% if include.show_year == false %} pub-row--no-year{% endif %}">
+    {% if include.show_year != false %}
+    <div class="pub-year">{% if item.pub_date and item.pub_date != "" %}{{ item.pub_date }}{% else %}{{ item.date | date: "%Y" }}{% endif %}</div>
     {% endif %}
-    <div class="pub-badge">{% if item.pub_date and item.pub_date != "" %}{{ item.pub_date }}{% else %}{{ item.date | date: "%Y" }}{% endif %}</div>
     <div>
         {% if paper_link %}
         <h3 class="pub-title">
@@ -20,7 +16,7 @@
         <p class="pub-venue"><strong data-en="{{ item.research_highlight | escape }}" data-zh="{{ item.research_highlight_zh | escape }}">{{ item.research_highlight }}</strong></p>
         {% endif %}
         <p class="pub-authors">{% include widgets/author_list.html authors=item.authors %}</p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="{{ item.pub_pre | escape }}" data-pub-en="{{ item.pub | escape }}" data-pub-zh="{{ item.pub_zh | default: item.pub | escape }}" data-pub-post="{{ item.pub_post | escape }}">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }}</span><span class="pub-venue-misc" data-en="{{ item.pub_last | escape }}" data-zh="{{ item.pub_last_zh | default: item.pub_last | escape }}">{{ item.pub_last }}</span><span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="{{ item.pub_pre | escape }}" data-pub-en="{{ item.pub | escape }}" data-pub-zh="{{ item.pub_zh | default: item.pub | escape }}" data-pub-post="{{ item.pub_post | escape }}">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }}</span><span class="pub-venue-misc" data-en="{{ item.pub_last | escape }}" data-zh="{{ item.pub_last_zh | default: item.pub_last | escape }}">{{ item.pub_last }}</span></p>
         {% unless include.hide_abstract %}
         <p class="pub-abstract" data-en="{{ item.abstract | escape }}" data-zh="{{ item.abstract_zh | escape }}">{{ item.abstract }}</p>
         {% endunless %}
@@ -34,11 +30,4 @@
             {% endfor %}
         </p>
     </div>
-    {% unless include.conference_visual %}
-    {% if item.cover %}
-    <div class="pub-cover-wrap">
-        <img src="{{ item.cover | relative_url }}" alt="{{ item.title | escape }}" class="pub-cover" loading="lazy">
-    </div>
-    {% endif %}
-{% endunless %}
 </article>

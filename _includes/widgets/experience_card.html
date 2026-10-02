@@ -1,83 +1,82 @@
 {%- assign p_en = site.data.profile -%}
 {%- assign p_zh = site.data.profile_zh -%}
-<section class="home-section">
-    <div class="home-section-heading">
+<section class="section" id="background">
+    <h2 class="section-head">
         <span class="lang-en">Background</span>
         <span class="lang-zh d-none">教育与经历</span>
-    </div>
-    <div class="bg-columns">
+    </h2>
 
-        {% if p_en.experience %}
-        <div>
-            <div class="bg-block-title">
-                <span class="lang-en">Experience</span>
-                <span class="lang-zh d-none">工作经历</span>
-            </div>
-            <div class="lang-en">
-                {% for item in p_en.experience %}
-                <div class="cv-row">
-                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% else %}<span class="cv-logo"></span>{% endif %}
-                    <div class="cv-body">
-                        <div class="cv-org">{{ item.name }}</div>
-                        <div class="cv-role">{{ item.position }}</div>
-                        {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
-                    </div>
-                    <div class="cv-date">{{ item.date }}</div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="lang-zh d-none">
-                {% for item in p_zh.experience %}
-                <div class="cv-row">
-                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% else %}<span class="cv-logo"></span>{% endif %}
-                    <div class="cv-body">
-                        <div class="cv-org">{{ item.name }}</div>
-                        <div class="cv-role">{{ item.position }}</div>
-                        {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
-                    </div>
-                    <div class="cv-date">{{ item.date }}</div>
-                </div>
-                {% endfor %}
-            </div>
+    {% if p_en.experience %}
+    <div class="cv-block">
+        <div class="cv-subhead">
+            <span class="lang-en">Experience</span>
+            <span class="lang-zh d-none">工作经历</span>
         </div>
-        {% endif %}
-
-        <div>
-            {% if p_en.education %}
-            <div class="bg-block-title">
-                <span class="lang-en">Education</span>
-                <span class="lang-zh d-none">教育经历</span>
-            </div>
-            <div class="lang-en">
-                {% for item in p_en.education %}
-                <div class="cv-row">
-                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% else %}<span class="cv-logo"></span>{% endif %}
-                    <div class="cv-body">
-                        <div class="cv-org">{{ item.name }}</div>
-                        <div class="cv-role">{{ item.position }}</div>
-                        {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
-                    </div>
-                    <div class="cv-date">{{ item.date }}</div>
+        <div class="lang-en">
+            {% for item in p_en.experience %}
+            <div class="cv-row">
+                <div class="cv-date">{{ item.date }}</div>
+                <div>
+                    <div class="cv-org">{{ item.name }}</div>
+                    <div class="cv-role">{{ item.position }}</div>
+                    {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
                 </div>
-                {% endfor %}
             </div>
-            <div class="lang-zh d-none">
-                {% for item in p_zh.education %}
-                <div class="cv-row">
-                    {% if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="">{% else %}<span class="cv-logo"></span>{% endif %}
-                    <div class="cv-body">
-                        <div class="cv-org">{{ item.name }}</div>
-                        <div class="cv-role">{{ item.position }}</div>
-                        {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
-                    </div>
-                    <div class="cv-date">{{ item.date }}</div>
+            {% endfor %}
+        </div>
+        <div class="lang-zh d-none">
+            {% for item in p_zh.experience %}
+            <div class="cv-row">
+                <div class="cv-date">{{ item.date }}</div>
+                <div>
+                    <div class="cv-org">{{ item.name }}</div>
+                    <div class="cv-role">{{ item.position }}</div>
+                    {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
                 </div>
-                {% endfor %}
             </div>
-            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
 
-            {% if p_en.awards %}
-            <div class="bg-block-title mt-5">
+    {% if p_en.education %}
+    <div class="cv-block">
+        <div class="cv-subhead">
+            <span class="lang-en">Education</span>
+            <span class="lang-zh d-none">教育经历</span>
+        </div>
+        <div class="lang-en">
+            {% for item in p_en.education %}
+            <div class="cv-row">
+                <div class="cv-date">{{ item.date }}</div>
+                <div>
+                    <div class="cv-org">{{ item.name }}</div>
+                    <div class="cv-role">{{ item.position }}</div>
+                    {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="lang-zh d-none">
+            {% for item in p_zh.education %}
+            <div class="cv-row">
+                <div class="cv-date">{{ item.date }}</div>
+                <div>
+                    <div class="cv-org">{{ item.name }}</div>
+                    <div class="cv-role">{{ item.position }}</div>
+                    {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if p_en.awards or p_en.academic_service %}
+    <div class="cv-two-col">
+        {% if p_en.awards %}
+        <div class="cv-block">
+            <div class="cv-subhead">
                 <span class="lang-en">Honors &amp; Awards</span>
                 <span class="lang-zh d-none">荣誉与奖励</span>
             </div>
@@ -87,12 +86,11 @@
             <ul class="cv-simple lang-zh d-none">
                 {% for item in p_zh.awards %}<li><span>{{ item.name }}</span><span class="cv-date">{{ item.date }}</span></li>{% endfor %}
             </ul>
-            {% endif %}
         </div>
-
+        {% endif %}
         {% if p_en.academic_service %}
-        <div>
-            <div class="bg-block-title">
+        <div class="cv-block">
+            <div class="cv-subhead">
                 <span class="lang-en">Academic Service</span>
                 <span class="lang-zh d-none">学术服务</span>
             </div>
@@ -104,31 +102,6 @@
             </ul>
         </div>
         {% endif %}
-
-        {% if site.data.display.homepage.show_skills and p_en.skills %}
-        <div>
-            <div class="bg-block-title">
-                <span class="lang-en">Methods &amp; Stack</span>
-                <span class="lang-zh d-none">方法与技术栈</span>
-            </div>
-            <div class="lang-en">
-                {% for group in p_en.skills %}
-                <div class="skill-group">
-                    <div class="skill-group-name">{{ group.group }}</div>
-                    <div class="skill-group-items">{% for item in group.items %}{{ item }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="lang-zh d-none">
-                {% for group in p_zh.skills %}
-                <div class="skill-group">
-                    <div class="skill-group-name">{{ group.group }}</div>
-                    <div class="skill-group-items">{% for item in group.items %}{{ item }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
-
     </div>
+    {% endif %}
 </section>

@@ -1,14 +1,14 @@
 {% assign repos_en = site.data.profile.github_projects %}
 {% assign repos_zh = site.data.profile_zh.github_projects %}
 {% if repos_en and repos_en.size > 0 %}
-<section class="home-section">
-    <div class="home-section-heading d-flex align-items-baseline">
-        <div>
+<section class="section" id="open-source">
+    <h2 class="section-head">
+        <span>
             <span class="lang-en">Open Source</span>
             <span class="lang-zh d-none">开源项目</span>
-        </div>
-        <a class="home-inline-link ml-auto" href="https://github.com/{{ site.data.profile.github_username }}" target="_blank" rel="noopener">github.com/{{ site.data.profile.github_username }}</a>
-    </div>
+        </span>
+        <a href="https://github.com/{{ site.data.profile.github_username }}" target="_blank" rel="noopener">github.com/{{ site.data.profile.github_username }}</a>
+    </h2>
     <div class="repo-list">
         {% for repo in repos_en %}
         {% assign repo_zh = repos_zh[forloop.index0] %}
@@ -19,7 +19,7 @@
                 <span class="lang-zh d-none">{{ repo_zh.desc | default: repo.desc }}</span>
             </span>
             <span class="repo-stat">
-                <span class="lang-en">{{ repo.tag }}</span><span class="lang-zh d-none">{{ repo_zh.tag | default: repo.tag }}</span>{% if repo.stars and repo.stars != "—" %} &nbsp;·&nbsp; {{ repo.stars }}&#9733;{% endif %}
+                <span class="lang-en">{{ repo.tag }}</span><span class="lang-zh d-none">{{ repo_zh.tag | default: repo.tag }}</span>{% if repo.stars and repo.stars != "—" %} &middot; {{ repo.stars }}&#9733;{% endif %}
             </span>
         </a>
         {% endfor %}

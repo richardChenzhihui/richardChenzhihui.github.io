@@ -11,8 +11,6 @@ pub_zh:         "自然语言处理实证方法会议 (EMNLP)"
 pub_date:       "2026"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Accepted</span>'
 pub_last_zh:    ' <span class="badge badge-pill badge-publication badge-success">已录用</span>'
-research_highlight: "RSI Research · Feedback-Driven Prompt Self-Improvement"
-research_highlight_zh: "RSI 研究实践 · 反馈驱动的 Prompt 自优化"
 abstract: >-
   Med-Banana connects my RSI research to medical agents through prompt-level self-improvement. An editor, verifier, and refiner form a recursive feedback loop: diagnose failed edits, revise positive and negative prompts using failure history, and retry from the original image. Success-and-failure trajectories supervise all three components, connecting agentic post-training with test-time refinement. Med-Banana-80K preserves 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories.
 abstract_zh: >-

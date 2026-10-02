@@ -1,18 +1,18 @@
 {% assign publications = include.publications %}
-<section class="home-section">
-    <div class="home-section-heading d-flex align-items-baseline">
-        <div>
+<section class="section" id="publications">
+    <h2 class="section-head">
+        <span>
             <span class="lang-en">Selected Publications</span>
             <span class="lang-zh d-none">精选论文</span>
-        </div>
-        <a class="home-inline-link ml-auto" href="{{ 'publications' | relative_url }}">
-            <span class="lang-en">All publications</span>
-            <span class="lang-zh d-none">全部论文</span>
+        </span>
+        <a href="{{ 'publications' | relative_url }}">
+            <span class="lang-en">All publications &rarr;</span>
+            <span class="lang-zh d-none">全部论文 &rarr;</span>
         </a>
-    </div>
-    <div class="pub-list pub-list--selected">
+    </h2>
+    <div class="pub-list">
         {% for item in publications limit:include.limit %}
-            {% include widgets/publication_item.html item=item conference_visual=true hide_abstract=include.hide_abstract %}
+            {% include widgets/publication_item.html item=item hide_abstract=include.hide_abstract %}
         {% endfor %}
     </div>
 </section>

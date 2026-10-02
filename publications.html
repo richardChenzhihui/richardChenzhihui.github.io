@@ -2,29 +2,13 @@
 layout: default
 title : Publications
 navbar_title: Publications
-body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
 
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-<div class="row">
-    <div class="col-12 col-lg-10">
-        <div class="pub-list pub-list--page">
-            {% for year in pubs_by_year %}
-                <span class="pub-anchor" id="year-{{ year.name }}"></span>
-                {% for item in year.items %}
-                    {% include widgets/publication_item.html item=item %}
-                {% endfor %}
-            {% endfor %}
-        </div>
-    </div>
-
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav flex-column sticky-top" style="top: 96px">
-            {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
-        </div>
-    </div>
-</div>
+{% for year in pubs_by_year %}
+    <div class="pub-year-heading" id="year-{{ year.name }}">{{ year.name }}</div>
+    {% for item in year.items %}
+        {% include widgets/publication_item.html item=item show_year=false %}
+    {% endfor %}
+{% endfor %}

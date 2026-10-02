@@ -1,7 +1,7 @@
 ---
 title: >-
-    [ACL 2026] Honored to serve as a session chair—glad to help the conference run smoothly.
+    [ACL 2026] Session chair at the ACL 2026 main conference.
 title_zh: >-
-    [ACL 2026] 很荣幸担任 session chair，很高兴能为会议顺利举办尽一份力。
+    [ACL 2026] 担任 ACL 2026 主会议 session chair。
 date: 2026-06-08 10:00:00 +0800
 ---

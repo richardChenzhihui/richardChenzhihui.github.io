@@ -29,133 +29,159 @@ short_bio: >-
     I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for coding agents. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
   </p>
 
-hero_kicker: >-
-  Coding Agent + RSI &middot; Foundation-Model Post-Training
-
 hero_summary: >-
   My research direction is Coding Agent + RSI: building self-improving coding agents for foundation-model post-training, and applying the same methods to medical agents and medical AI safety.
 
-hero_statement: >-
-  Toward AI that builds<br>the next generation of AI.
-
-standing:
-  - key: "Now"
-    value: "Zhipu AI (Z.ai) &middot; Foundation-Model Post-Training"
-    sub: "Coding Agent RSI &mdash; recursive self-improvement from execution-verified trajectories"
-  - key: "Selected"
-    value: "Qwen Foundation Model Internship, Alibaba Tongyi Lab"
-    sub: "Tencent Qingyun Elite Research Talent Program (\u9752\u4e91\u8ba1\u5212)"
-  - key: "Before"
-    value: "ByteDance &middot; Agentic Post-Training &nbsp;&nbsp;StepFun &middot; Speech Foundation Model"
-    sub: "Farsight (first-author, ICLR 2026 under review) &middot; StepAudio2.5 pre-training data"
-  - key: "Papers"
-    value: "ACL 2026 &middot; EMNLP 2026 &middot; EMNLP 2025"
-    sub: "First-author ICLR 2026 submission under review"
-  - key: "Open"
-    value: "88K+ agentic trajectories released &middot; 53&#9733; office agent"
-    sub: "Datasets and code on GitHub and Hugging Face"
-
-hero_proof:
-  - text: "Foundation-Model Post-Training @ Zhipu AI (Z.ai) — Coding Agent RSI self-improvement · current"
-  - text: "Qwen Foundation Model Internship (Alibaba Tongyi) — selected"
-  - text: "Qingyun Elite Research Talent Program (青云计划) @ Tencent — selected"
-  - logo: /assets/images/badges/ByteDance.svg
-    text: "Agentic Post-Training @ ByteDance — Farsight, first-author ICLR 2026 under review"
-
-homepage_metrics:
-  - value: "Zhipu · Qwen · ByteDance"
-    value_zh: "智谱 · Qwen · 字节"
-    compact: true
-    label: "foundation-model internships & elite talent programs"
-    note: "Coding Agent RSI @ Zhipu AI (current) · Qwen foundation-model internship (Alibaba Tongyi) · Agentic post-training @ ByteDance · Tencent Qingyun Elite Research Talent Program"
-  - value: "3"
-    value_zh: "3"
-    label: "top-tier NLP conference papers"
-    note: "ACL 2026 Main · EMNLP 2026 · EMNLP 2025 Main · ICLR 2026 first-author under review"
-  - value: "88K+"
-    value_zh: "88K+"
-    label: "success-and-failure trajectories for agent self-improvement"
-    note: "Med-Banana (EMNLP 2026): Verifier feedback → prompt self-improvement → trajectory-based post-training · 150K+ HF downloads"
-  - value: "53★"
-    value_zh: "53★"
-    label: "GitHub stars — open-source office agent"
-    note: "OfficeBuddy: Vision-in-the-Loop open-source Word/Excel agent"
-
 impact_areas:
-  - label: "Research Direction · Coding Agent + RSI"
-    title: "Closing the loop of AI development."
-    description: "My research pursues recursive self-improvement through Coding Agent post-training: connecting stronger agents to the development of stronger models. The long-term goal is AI that can contribute to designing, training, and evaluating its successors."
-    focus: "Coding Agents · Agentic Mid- & Post-Training · Verifiable RL"
-    detail: "I study the training loops, rewards, and verifiers that connect better execution to better models, from long-horizon credit assignment to independent audits of agent actions."
-    proof: "Zhipu AI · Farsight · Med-Banana (EMNLP 2026) · DivScore"
-  - label: "Applications & Safety · Medical AI"
-    title: "Advance intelligence. Improve human lives."
-    description: "I bring the same self-improvement methods to medicine, where feedback is costly and must be verifiable. I study medical agents and medical AI safety: reliable reasoning, verifiable workflows, and trustworthy medical evidence."
-    focus: "Medical Agents · Medical AI Safety"
-    detail: "Medical Agents: multimodal reasoning, tool use, and verifiable medical workflows. Medical AI Safety: image integrity, interpretable forgery detection, and rigorous evaluation of agent outputs. Med-Banana explores medical agent self-improvement through feedback-driven recursive prompt refinement; MedForge studies medical forgery detection and evidence integrity."
-    proof: "Med-Banana · EMNLP 2026 / MedForge · ACL 2026 Main"
+  - label: "Direction 01 · Coding Agents & Recursive Self-Improvement"
+    title: "Stronger coding agents should help build stronger models."
+    summary: >-
+      I work on the training pipeline that turns agent execution into model progress:
+      coding agents propose real software tasks and execute them in sandboxes; only
+      trajectories that compile, pass tests, and reproduce are kept as post-training
+      data; the updated model then runs a stronger agent in the next round. Whether the
+      loop actually improves the model depends on three problems I study: long-horizon
+      credit assignment, reward and verifier design, and independent auditing of agent
+      actions.
+    chain_caption:
+      en: "The self-improvement loop"
+      zh: "自改进循环"
+    loop_note:
+      en: "One verified round produces one model update; the loop works only if every step can be checked."
+      zh: "每轮通过验证后更新一次模型；循环有效的前提是每一步都可检验。"
+    steps:
+      - en: "Agent proposes a real coding task"
+        zh: "智能体生成真实编码任务"
+      - en: "Sandbox execution"
+        zh: "沙箱执行"
+      - en: "Compile · test · replay"
+        zh: "编译 · 测试 · 复现"
+      - en: "Keep only verified trajectories"
+        zh: "仅保留通过验证的轨迹"
+      - en: "SFT · RL post-training"
+        zh: "SFT · RL 后训练"
+      - en: "Stronger model → stronger agent"
+        zh: "更强模型 → 更强智能体"
+    problems:
+      - en: "Long-horizon credit assignment"
+        zh: "长程任务的信用分配"
+      - en: "Verifiable rewards (RLVR)"
+        zh: "可验证奖励（RLVR）"
+      - en: "Reward & verifier design"
+        zh: "奖励与验证器设计"
+      - en: "Independent audit of agent actions"
+        zh: "智能体行动的独立审查"
+    evidence:
+      - name:
+          en: "Zhipu AI (Z.ai) · Foundation-Model Post-Training"
+          zh: "智谱（Z.ai）· 基础模型后训练"
+        meta:
+          en: "current role"
+          zh: "在职"
+        note:
+          en: "Running the coding-agent RSI loop on a production foundation model: execution-verified trajectories → post-training."
+          zh: "在产线基座模型上运行 Coding Agent 的 RSI 流程：执行验证轨迹 → 后训练。"
+      - name:
+          en: "Farsight"
+          zh: "Farsight"
+        meta:
+          en: "ICLR 2026 · first author, under review"
+          zh: "ICLR 2026 · 一作在投"
+        note:
+          en: "Long-horizon agentic behavior for production data models — reward design and eval loops on a 100×H100 cluster (ByteDance)."
+          zh: "面向 Data 业务基模的长程智能体行为——百卡 H100 集群上的奖励设计与评测迭代（字节跳动）。"
+      - name:
+          en: "OfficeBuddy"
+          zh: "OfficeBuddy"
+        meta:
+          en: "open source · 53★"
+          zh: "开源 · 53★"
+        note:
+          en: "Vision-in-the-Loop: every edit is re-rendered in real Office and audited by an independent visual verifier."
+          zh: "Vision-in-the-Loop：每步编辑经真实 Office 重渲染，由独立视觉验证器审查。"
+      - name:
+          en: "Med-Banana trajectories"
+          zh: "Med-Banana 轨迹"
+        meta:
+          en: "88K+ released · 150K+ downloads"
+          zh: "开源 88K+ · 下载 150K+"
+        note:
+          en: "Success-and-failure agent trajectories as reusable post-training signal (GitHub & Hugging Face)."
+          zh: "成败智能体轨迹作为可复用的后训练信号（GitHub 与 Hugging Face）。"
+  - label: "Direction 02 · Medical Agents & Medical AI Safety"
+    title: "Make self-improvement verifiable where feedback is costly: medicine."
+    summary: >-
+      Medicine is a setting where errors are costly and every check may face clinical
+      review, so self-improvement there has to be verifiable. I work on two lines:
+      medical agents — multimodal reasoning, tool use, and verifiable clinical workflows
+      — and medical AI safety — image integrity, interpretable forgery detection, and
+      rigorous evaluation of agent outputs.
+    chain_caption:
+      en: "The verified-feedback loop (Med-Banana)"
+      zh: "可验证反馈循环（Med-Banana）"
+    loop_note:
+      en: "Verifier feedback drives recursive prompt self-improvement; success-and-failure trajectories then become post-training signal."
+      zh: "验证反馈驱动 Prompt 递归自优化；成败轨迹再成为后训练信号。"
+    steps:
+      - en: "Medical task (image / workflow)"
+        zh: "医疗任务（影像 / 工作流）"
+      - en: "Agent acts: multimodal reasoning + tools"
+        zh: "Agent 执行：多模态推理 + 工具调用"
+      - en: "Verifier checks against clinical criteria"
+        zh: "验证器按临床标准检查"
+      - en: "Feedback → recursive prompt refinement"
+        zh: "反馈驱动 Prompt 递归优化"
+      - en: "Trajectory-based post-training"
+        zh: "成败轨迹后训练"
+      - en: "More reliable medical agent"
+        zh: "更可靠的医疗 Agent"
+    problems:
+      - en: "Verifiability of clinical feedback"
+        zh: "临床反馈的可验证性"
+      - en: "Multimodal medical reasoning & tool use"
+        zh: "多模态医学推理与工具调用"
+      - en: "Medical image integrity & forgery detection"
+        zh: "医学影像真实性与伪造检测"
+      - en: "Evidence integrity & rigorous output evaluation"
+        zh: "证据可信性与输出严格评估"
+    evidence:
+      - name:
+          en: "Med-Banana"
+          zh: "Med-Banana"
+        meta:
+          en: "EMNLP 2026"
+          zh: "EMNLP 2026"
+        note:
+          en: "Agentic post-training for medical image editing, driven by verifier feedback and recursive prompt self-improvement."
+          zh: "医学图像编辑的智能体后训练；验证反馈驱动 Prompt 递归自优化。"
+      - name:
+          en: "MedForge"
+          zh: "MedForge"
+        meta:
+          en: "ACL 2026 Main"
+          zh: "ACL 2026 主会议"
+        note:
+          en: "Interpretable medical deepfake detection: Localize-then-Analyze reasoning, 19 lesion types, 10 forgery generators."
+          zh: "可解释医学伪造检测：先定位再分析，覆盖 19 类病灶、10 种伪造模型。"
+      - name:
+          en: "DivScore"
+          zh: "DivScore"
+        meta:
+          en: "EMNLP 2025"
+          zh: "EMNLP 2025"
+        note:
+          en: "Zero-shot detection of LLM-generated text — an auditing tool for agent outputs."
+          zh: "大模型生成文本的零样本检测——审计智能体输出的工具。"
+      - name:
+          en: "MiniMax Cowork Team Fellowship"
+          zh: "MiniMax Cowork Team Fellowship"
+        meta:
+          en: "USD 4,500 compute grant"
+          zh: "4500 美金算力支持"
+        note:
+          en: "Supporting medical foundation-model development and verifiable agent workflows."
+          zh: "支持医疗大模型开发与可验证智能体工作流。"
 
-featured_work:
-featured_work:
-  - title: "OfficeBuddy"
-    subtitle: "Vision-in-the-Loop open-source office agent"
-    description: "Open-source Word/Excel agent (53★): every edit is re-rendered through real Microsoft Office and audited by an independent visual verifier before the loop moves on."
-    image: /assets/images/projects/officebuddy.svg
-    badges:
-      - "53★ open source · GitHub"
-      - "Vision-in-the-Loop"
-      - "Model-agnostic (Kimi-K2 / MiniMax-M3)"
-    primary:
-      label: "GitHub"
-      url: https://github.com/richardChenzhihui/OfficeBuddy
-    secondary:
-      label: "Showcase"
-      url: /showcase.html#projects
-  - title: "MedForge"
-    subtitle: "Interpretable medical deepfake detection"
-    description: "Detects medically plausible image forgeries through localized evidence, expert-aligned reasoning, and a Localize-then-Analyze detector."
-    image: /assets/images/projects/medforge.svg
-    badges:
-      - "ACL 2026 Main"
-      - "19 lesion types"
-      - "10 deepfake models"
-    primary:
-      label: "Project Page"
-      url: /publications/medforge.html
-    secondary:
-      label: "Paper"
-      url: https://arxiv.org/abs/2603.18577
-  - title: "MiniMax Cowork Team Fellowship"
-    dark_art: true
-    subtitle: "Medical foundation model development and clinically verifiable Agent workflows"
-    description: "A compute-supported project connecting long-context, multimodal, and Agent capabilities with medical foundation model development and verifiable decision paths."
-    image: /assets/images/projects/minimax-fellowship.svg
-    badges:
-      - "MiniMax Cowork Team"
-      - "USD 4,500 compute grant"
-      - "Medical Foundation Models"
-    primary:
-      label: "Showcase"
-      url: /showcase.html#projects
-    secondary:
-      label: "MiniMax"
-      url: https://www.minimaxi.com/
-  - title: "Tencent Cloud Quant Infrastructure Grant"
-    featured_center: true
-    dark_art: true
-    subtitle: "Low-latency APAC trading backbone"
-    description: "Low-latency Hong Kong / Singapore nodes interconnected over Tencent's CCN private backbone instead of the public internet — for latency-sensitive trading and agent workloads."
-    image: /assets/images/projects/tencent-cloud-quant.svg
-    badges:
-      - "Tencent Cloud International"
-      - "USD 1,000 cloud credits"
-      - "Low-Latency APAC · CCN Backbone"
-    primary:
-      label: "Showcase"
-      url: /showcase.html#projects
-    secondary:
-      label: "Tencent Cloud"
-      url: https://www.tencentcloud.com/
 portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-
 
@@ -245,7 +271,7 @@ skills:
   - group: "Agentic Mid- & Post-Training"
     items:
       - "Agentic mid-training · RLHF / RLVR pipeline design · DPO & reward modeling"
-      - "Self-generated trajectory data, execution-verified filtering, data flywheels"
+      - "Self-generated trajectory data, execution-verified filtering, feedback into training"
       - "Verifier and eval-loop design · SFT curriculum"
   - group: "Coding Agents & Self-Improvement"
     items:

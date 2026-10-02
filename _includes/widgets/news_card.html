@@ -1,9 +1,9 @@
 {% assign recent_news = site.news | sort: "date" | reverse | slice: 0, include.limit -%}
-<section class="home-section">
-    <div class="home-section-heading">
+<section class="section">
+    <h2 class="section-head">
         <span class="lang-en">News</span>
         <span class="lang-zh d-none">近期动态</span>
-    </div>
+    </h2>
     <div class="news-list">
         {% for item in recent_news %}
         <div class="news-row">

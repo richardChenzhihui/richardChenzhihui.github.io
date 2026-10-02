@@ -1,762 +1,500 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<!-- Template: https://github.com/luost26/academic-homepage -->
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Showcase - Zhihui Chen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects - Zhihui Chen</title>
     <meta name="description" content="Zhihui Chen — My research direction is Coding Agent + RSI: building self-improving coding agents for foundation-model post-training, and applying the same methods to medical agents and medical AI safety.">
-    <meta name="theme-color" content="#fbfaf7">
-    <meta property="og:title" content="Showcase - Zhihui Chen">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Projects - Zhihui Chen">
     <meta property="og:description" content="Zhihui Chen — My research direction is Coding Agent + RSI: building self-improving coding agents for foundation-model post-training, and applying the same methods to medical agents and medical AI safety.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2315171b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fbfaf7' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%231a1a1a'/%3E%3Ctext x='32' y='43' font-family='Menlo,monospace' font-size='30' fill='%23ffffff' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="/assets/css/global.css">
 </head>
-<body class="site-body" >
-    <nav class="navbar navbar-expand-md navbar-light site-nav fixed-top">
-    <div class="container-lg">
-        <a class="navbar-brand" href="/">
+<body>
+    <nav class="site-nav">
+    <div class="container nav-inner">
+        <a class="nav-brand" href="/">
             <span class="lang-en">Zhihui Chen</span>
             <span class="lang-zh d-none">陈致晖</span>
         </a>
-        <button id="lang-toggle" class="language-button" type="button" aria-label="Switch to English">
-            <span aria-hidden="true">文 / A</span><span class="lang-en">中文</span><span class="lang-zh d-none">English</span>
-        </button>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMain">
-            <ul class="navbar-nav mr-auto">
-                
-                
-                
-                <li class="nav-item ">
-                    <a class="nav-link" href="/">
-                        <span class="lang-en">Home</span>
-                        <span class="lang-zh d-none">首页</span>
-                    </a>
-                </li>
-                
-                
-                <li class="nav-item ">
-                    <a class="nav-link" href="/publications">
-                        <span class="lang-en">Publications</span>
-                        <span class="lang-zh d-none">论文发表</span>
-                    </a>
-                </li>
-                
-                
-                <li class="nav-item active">
-                    <a class="nav-link" href="/showcase">
-                        <span class="lang-en">Showcase</span>
-                        <span class="lang-zh d-none">项目展示</span>
-                    </a>
-                </li>
-                
-            </ul>
-
+        <div class="nav-links">
+            
+            
+            
+            <a class="nav-link" href="/">
+                <span class="lang-en">Home</span>
+                <span class="lang-zh d-none">首页</span>
+            </a>
+            
+            
+            <a class="nav-link" href="/publications">
+                <span class="lang-en">Publications</span>
+                <span class="lang-zh d-none">论文发表</span>
+            </a>
+            
+            
+            <a class="nav-link active" href="/showcase">
+                <span class="lang-en">Projects</span>
+                <span class="lang-zh d-none">项目展示</span>
+            </a>
+            
+            <button id="lang-toggle" type="button" aria-label="Switch to English">
+                <span aria-hidden="true">文 / A</span>
+                <span class="lang-en">中文</span>
+                <span class="lang-zh d-none">English</span>
+            </button>
         </div>
     </div>
 </nav>
 
-
-
-    <div class="container-xl">
+    <main class="container">
         
 
 
-<h1 class="showcase-heading" id="projects">
-    
-    <span class="lang-en">Projects</span>
-    <span class="lang-zh d-none">项目展示</span>
-    
-</h1>
-<div class="row grid mb-4">
-    <div class="grid-sizer col-1"></div>
-    
-    <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="p-4">
+<article class="project project-first">
     <h2 data-en="Tencent Cloud Quant Infrastructure Grant: Low-Latency APAC Trading Backbone" data-zh="腾讯云量化基础设施资助：低延迟亚太交易骨干网">
-        Tencent Cloud Quant Infrastructure Grant: Low-Latency APAC Trading Backbone
-    </h2>
-    <hr />
+    Tencent Cloud Quant Infrastructure Grant: Low-Latency APAC Trading Backbone
+</h2>
 
-    <div class="row">
-        <div class="col-md-8">
-            <p data-en="A cloud infrastructure grant from Tencent Cloud International, supporting latency-sensitive quantitative trading and agent workloads on low-latency APAC nodes interconnected over Tencent's private backbone." data-zh="来自腾讯云国际的云基础设施资助，用于在低延迟亚太节点与腾讯私有骨干网互联之上，支撑对延迟敏感的量化交易与 Agent 工作负载。">
-                A cloud infrastructure grant from Tencent Cloud International, supporting latency-sensitive quantitative trading and agent workloads on low-latency APAC nodes interconnected over Tencent's private backbone.
-            </p>
+<p data-en="A cloud infrastructure grant from Tencent Cloud International, supporting latency-sensitive quantitative trading and agent workloads on low-latency APAC nodes interconnected over Tencent's private backbone." data-zh="来自腾讯云国际的云基础设施资助，用于在低延迟亚太节点与腾讯私有骨干网互联之上，支撑对延迟敏感的量化交易与 Agent 工作负载。">
+    A cloud infrastructure grant from Tencent Cloud International, supporting latency-sensitive quantitative trading and agent workloads on low-latency APAC nodes interconnected over Tencent's private backbone.
+</p>
 
-            <h4 data-en="What the infrastructure provides" data-zh="基础设施能力">What the infrastructure provides</h4>
-            <ul>
-                <li data-en="&lt;strong&gt;Low-latency APAC nodes&lt;/strong&gt;: high-availability regions in Hong Kong and Singapore, physically close to major exchanges" data-zh="&lt;strong&gt;低延迟亚太节点&lt;/strong&gt;：香港与新加坡的高可用区域，物理上贴近主要交易所">
-                    <strong>Low-latency APAC nodes</strong>: high-availability regions in Hong Kong and Singapore, physically close to major exchanges
-                </li>
-                <li data-en="&lt;strong&gt;CCN private-backbone interconnect&lt;/strong&gt;: Cloud Connect Network links regions over a private backbone rather than the public internet, keeping cross-region latency stable and free of public-BGP jitter" data-zh="&lt;strong&gt;CCN 私有骨干网互联&lt;/strong&gt;：Cloud Connect Network 通过私有骨干网而非公网连接各区域，使跨区延迟稳定、不受公网 BGP 抖动影响">
-                    <strong>CCN private-backbone interconnect</strong>: Cloud Connect Network links regions over a private backbone rather than the public internet, keeping cross-region latency stable and free of public-BGP jitter
-                </li>
-                <li data-en="&lt;strong&gt;Financial-grade compliance&lt;/strong&gt;: SOC 2 Type II, ISO 27001 and PCI DSS, plus regional certifications (Hong Kong ICAR, Singapore MTCS)" data-zh="&lt;strong&gt;金融级合规&lt;/strong&gt;：SOC 2 Type II、ISO 27001 与 PCI DSS，以及区域认证（香港 ICAR、新加坡 MTCS）">
-                    <strong>Financial-grade compliance</strong>: SOC 2 Type II, ISO 27001 and PCI DSS, plus regional certifications (Hong Kong ICAR, Singapore MTCS)
-                </li>
-            </ul>
+<h4 data-en="What the infrastructure provides" data-zh="基础设施能力">What the infrastructure provides</h4>
+<ul>
+    <li data-en="&lt;strong&gt;Low-latency APAC nodes&lt;/strong&gt;: high-availability regions in Hong Kong and Singapore, physically close to major exchanges" data-zh="&lt;strong&gt;低延迟亚太节点&lt;/strong&gt;：香港与新加坡的高可用区域，物理上贴近主要交易所">
+        <strong>Low-latency APAC nodes</strong>: high-availability regions in Hong Kong and Singapore, physically close to major exchanges
+    </li>
+    <li data-en="&lt;strong&gt;CCN private-backbone interconnect&lt;/strong&gt;: Cloud Connect Network links regions over a private backbone rather than the public internet, keeping cross-region latency stable and free of public-BGP jitter" data-zh="&lt;strong&gt;CCN 私有骨干网互联&lt;/strong&gt;：Cloud Connect Network 通过私有骨干网而非公网连接各区域，使跨区延迟稳定、不受公网 BGP 抖动影响">
+        <strong>CCN private-backbone interconnect</strong>: Cloud Connect Network links regions over a private backbone rather than the public internet, keeping cross-region latency stable and free of public-BGP jitter
+    </li>
+    <li data-en="&lt;strong&gt;Financial-grade compliance&lt;/strong&gt;: SOC 2 Type II, ISO 27001 and PCI DSS, plus regional certifications (Hong Kong ICAR, Singapore MTCS)" data-zh="&lt;strong&gt;金融级合规&lt;/strong&gt;：SOC 2 Type II、ISO 27001 与 PCI DSS，以及区域认证（香港 ICAR、新加坡 MTCS）">
+        <strong>Financial-grade compliance</strong>: SOC 2 Type II, ISO 27001 and PCI DSS, plus regional certifications (Hong Kong ICAR, Singapore MTCS)
+    </li>
+</ul>
 
-            <h4 data-en="How I plan to use it" data-zh="使用方向">How I plan to use it</h4>
-            <ul>
-                <li data-en="Latency and jitter benchmarking of a trading loop across APAC regions, measured against a public-internet baseline" data-zh="在亚太多区域上对交易闭环做延迟与抖动基准测试，并与公网基线对比">
-                    Latency and jitter benchmarking of a trading loop across APAC regions, measured against a public-internet baseline
-                </li>
-                <li data-en="Backtesting and agent-rollout runs that extend the &lt;a href=&quot;/showcase.html#projects&quot;&gt;Quant Trading Agent&lt;/a&gt; built at AQUMON — LangChain orchestration over Futu OpenAPI real-time data and automated execution" data-zh="在 &lt;a href=&quot;/showcase.html#projects&quot;&gt;Quant Trading Agent&lt;/a&gt;（AQUMON 期间开发，基于 LangChain 编排、对接 Futu OpenAPI 实时行情与自动下单）之上开展回测与 Agent rollout">
-                    Backtesting and agent-rollout runs that extend the <a href="/showcase.html#projects">Quant Trading Agent</a> built at AQUMON — LangChain orchestration over Futu OpenAPI real-time data and automated execution
-                </li>
-                <li data-en="Serving experiments for agentic post-training workloads where decision latency, not throughput, is the binding constraint" data-zh="面向 Agentic 后训练工作负载的推理部署实验——瓶颈在决策延迟而非吞吐">
-                    Serving experiments for agentic post-training workloads where decision latency, not throughput, is the binding constraint
-                </li>
-            </ul>
+<h4 data-en="How I plan to use it" data-zh="使用方向">How I plan to use it</h4>
+<ul>
+    <li data-en="Latency and jitter benchmarking of a trading loop across APAC regions, measured against a public-internet baseline" data-zh="在亚太多区域上对交易链路做延迟与抖动基准测试，并与公网基线对比">
+        Latency and jitter benchmarking of a trading loop across APAC regions, measured against a public-internet baseline
+    </li>
+    <li data-en="Backtesting and agent-rollout runs that extend the &lt;a href=&quot;/showcase.html#projects&quot;&gt;Quant Trading Agent&lt;/a&gt; built at AQUMON — LangChain orchestration over Futu OpenAPI real-time data and automated execution" data-zh="在 &lt;a href=&quot;/showcase.html#projects&quot;&gt;Quant Trading Agent&lt;/a&gt;（AQUMON 期间开发，基于 LangChain 编排、对接 Futu OpenAPI 实时行情与自动下单）之上开展回测与 Agent rollout">
+        Backtesting and agent-rollout runs that extend the <a href="/showcase.html#projects">Quant Trading Agent</a> built at AQUMON — LangChain orchestration over Futu OpenAPI real-time data and automated execution
+    </li>
+    <li data-en="Serving experiments for agentic post-training workloads where decision latency, not throughput, is the binding constraint" data-zh="面向 Agentic 后训练工作负载的推理部署实验——瓶颈在决策延迟而非吞吐">
+        Serving experiments for agentic post-training workloads where decision latency, not throughput, is the binding constraint
+    </li>
+</ul>
 
-            <h4 data-en="Grant support" data-zh="资助支持">Grant support</h4>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td data-en="Program" data-zh="计划">Program</td>
-                        <td data-en="Tencent Cloud Quant Infrastructure Grant" data-zh="腾讯云量化基础设施资助">Tencent Cloud Quant Infrastructure Grant</td>
-                    </tr>
-                    <tr>
-                        <td data-en="Support" data-zh="支持">Support</td>
-                        <td data-en="USD 1,000 cloud credits" data-zh="1000 美金云算力额度">USD 1,000 cloud credits</td>
-                    </tr>
-                    <tr>
-                        <td data-en="Provider" data-zh="提供方">Provider</td>
-                        <td data-en="Tencent Cloud International" data-zh="腾讯云国际">Tencent Cloud International</td>
-                    </tr>
-                    <tr>
-                        <td data-en="Focus" data-zh="方向">Focus</td>
-                        <td data-en="Low-latency quantitative trading and agent workloads across APAC" data-zh="面向亚太的低延迟量化交易与 Agent 工作负载">Low-latency quantitative trading and agent workloads across APAC</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<h4 data-en="Grant support" data-zh="资助支持">Grant support</h4>
+<table>
+    <tbody>
+        <tr>
+            <td data-en="Program" data-zh="计划">Program</td>
+            <td data-en="Tencent Cloud Quant Infrastructure Grant" data-zh="腾讯云量化基础设施资助">Tencent Cloud Quant Infrastructure Grant</td>
+        </tr>
+        <tr>
+            <td data-en="Support" data-zh="支持">Support</td>
+            <td data-en="USD 1,000 cloud credits" data-zh="1000 美金云算力额度">USD 1,000 cloud credits</td>
+        </tr>
+        <tr>
+            <td data-en="Provider" data-zh="提供方">Provider</td>
+            <td data-en="Tencent Cloud International" data-zh="腾讯云国际">Tencent Cloud International</td>
+        </tr>
+        <tr>
+            <td data-en="Focus" data-zh="方向">Focus</td>
+            <td data-en="Low-latency quantitative trading and agent workloads across APAC" data-zh="面向亚太的低延迟量化交易与 Agent 工作负载">Low-latency quantitative trading and agent workloads across APAC</td>
+        </tr>
+    </tbody>
+</table>
 
-        <div class="col-md-4">
-            <img src="/assets/images/projects/tencent-cloud-quant.svg" alt="Tencent Cloud Quant Infrastructure Grant" class="img-fluid rounded shadow-sm mb-3" />
+<p class="proj-links">
+    <a href="https://www.tencentcloud.com/" target="_blank" rel="noopener"><span data-en="Tencent Cloud" data-zh="腾讯云">Tencent Cloud</span></a>
+</p>
 
-            <div class="mt-3 p-2 bg-light rounded">
-                <p class="small mb-1"><strong data-en="Highlights" data-zh="亮点">Highlights</strong></p>
-                <p class="small mb-0">
-                    <span class="badge badge-success" data-en="Tencent Cloud International" data-zh="腾讯云国际">Tencent Cloud International</span>
-                    <span class="badge badge-info" data-en="USD 1,000 cloud credits" data-zh="1000 美金云算力额度">USD 1,000 cloud credits</span>
-                    <span class="badge badge-primary" data-en="Low-Latency APAC · CCN Backbone" data-zh="低延迟亚太 · CCN 骨干网">Low-Latency APAC · CCN Backbone</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+</article>
 
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="p-4">
+<article class="project">
     <h2 data-en="OfficeBuddy: Vision-in-the-Loop Open-Source Office Agent (53★ on GitHub)" data-zh="OfficeBuddy：Vision-in-the-Loop 开源办公 Agent（GitHub 53★ 开源项目）">OfficeBuddy: Vision-in-the-Loop Open-Source Office Agent (53★ on GitHub)</h2>
-    <hr />
 
-    <div class="row">
-        <div class="col-md-8">
-            <p data-en="An open-source project on &lt;strong&gt;GitHub&lt;/strong&gt; (&lt;a href='https://github.com/richardChenzhihui/OfficeBuddy' target='_blank'&gt;richardChenzhihui/OfficeBuddy&lt;/a&gt;, &lt;strong&gt;53★ · 6 forks&lt;/strong&gt;): an agent that edits Word/Excel files from natural language and then &lt;em&gt;proves&lt;/em&gt; each edit — the real Microsoft Office application re-renders the document, and an independent multimodal verifier audits the rendered pages before the loop moves on. Vision in the loop, not blind file writes." data-zh="一个 &lt;strong&gt;GitHub 开源项目&lt;/strong&gt;（&lt;a href='https://github.com/richardChenzhihui/OfficeBuddy' target='_blank'&gt;richardChenzhihui/OfficeBuddy&lt;/a&gt;，&lt;strong&gt;53★ · 6 forks&lt;/strong&gt;）：用自然语言编辑 Word/Excel，并对每步编辑进行&lt;em&gt;验证&lt;/em&gt;——由真实 Microsoft Office 应用重新渲染文档，交给独立的多模态验证器审查渲染页面后，闭环才继续。视觉在环（Vision-in-the-Loop），而非盲目写入文件。">
-                An open-source project on <strong>GitHub</strong> (<a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank">richardChenzhihui/OfficeBuddy</a>, <strong>53★ · 6 forks</strong>): an agent that edits Word/Excel files from natural language and then <em>proves</em> each edit — the real Microsoft Office application re-renders the document, and an independent multimodal verifier audits the rendered pages before the loop moves on. Vision in the loop, not blind file writes.
-            </p>
+<p data-en="An open-source project on &lt;strong&gt;GitHub&lt;/strong&gt; (&lt;a href='https://github.com/richardChenzhihui/OfficeBuddy' target='_blank'&gt;richardChenzhihui/OfficeBuddy&lt;/a&gt;, &lt;strong&gt;53★ · 6 forks&lt;/strong&gt;): an agent that edits Word/Excel files from natural language and then &lt;em&gt;proves&lt;/em&gt; each edit — the real Microsoft Office application re-renders the document, and an independent multimodal verifier audits the rendered pages before the next step runs." data-zh="一个 &lt;strong&gt;GitHub 开源项目&lt;/strong&gt;（&lt;a href='https://github.com/richardChenzhihui/OfficeBuddy' target='_blank'&gt;richardChenzhihui/OfficeBuddy&lt;/a&gt;，&lt;strong&gt;53★ · 6 forks&lt;/strong&gt;）：用自然语言编辑 Word/Excel，并对每步编辑进行&lt;em&gt;验证&lt;/em&gt;——由真实 Microsoft Office 应用重新渲染文档，交给独立的多模态验证器审查渲染页面，通过后才执行下一步。">
+    An open-source project on <strong>GitHub</strong> (<a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank">richardChenzhihui/OfficeBuddy</a>, <strong>53★ · 6 forks</strong>): an agent that edits Word/Excel files from natural language and then <em>proves</em> each edit — the real Microsoft Office application re-renders the document, and an independent multimodal verifier audits the rendered pages before the next step runs.
+</p>
 
-            <h4 data-en="Why it maps to agentic post-training" data-zh="为什么与 Agentic 后训练同构">Why it maps to agentic post-training</h4>
-            <ul>
-                <li data-en="The harness is a &lt;strong&gt;verifier-in-the-loop system&lt;/strong&gt;: plan &rarr; act &rarr; render &rarr; independent structured verdict &rarr; targeted repair — the same shape as reward design and eval loops in agent RL post-training" data-zh="框架本质是&lt;strong&gt;验证器闭环系统&lt;/strong&gt;：计划 &rarr; 执行 &rarr; 渲染 &rarr; 独立结构化裁决 &rarr; 定向修复——与 Agent RL 后训练中的奖励设计和评测闭环同构">
-                    The harness is a <strong>verifier-in-the-loop system</strong>: plan &rarr; act &rarr; render &rarr; independent structured verdict &rarr; targeted repair — the same shape as reward design and eval loops in agent RL post-training
-                </li>
-                <li data-en="&lt;strong&gt;Failure-mode engineering&lt;/strong&gt;: normalized error signatures, forced strategy switch after repeated same-class failures, hard per-step / per-task budgets" data-zh="&lt;strong&gt;失效模式工程&lt;/strong&gt;：错误签名归一化、同类失败两次强制换策略、每步/每任务硬预算上限">
-                    <strong>Failure-mode engineering</strong>: normalized error signatures, forced strategy switch after repeated same-class failures, hard per-step / per-task budgets
-                </li>
-                <li data-en="&lt;strong&gt;Safety by construction&lt;/strong&gt;: works on isolated copies only, byte-level snapshots with undo before any write, document content treated as data (prompt-injection defense)" data-zh="&lt;strong&gt;设计即安全&lt;/strong&gt;：只在隔离副本上操作、任何写入前有字节级快照可撤销、文档内容视为数据而非指令（提示注入防御）">
-                    <strong>Safety by construction</strong>: works on isolated copies only, byte-level snapshots with undo before any write, document content treated as data (prompt-injection defense)
-                </li>
-            </ul>
+<h4 data-en="Why it maps to agentic post-training" data-zh="为什么与 Agentic 后训练同构">Why it maps to agentic post-training</h4>
+<ul>
+    <li data-en="The harness is a &lt;strong&gt;verifier-in-the-loop system&lt;/strong&gt;: plan &rarr; act &rarr; render &rarr; independent structured verdict &rarr; targeted repair — the same shape as reward design and eval loops in agent RL post-training" data-zh="框架本质是&lt;strong&gt;验证器在环系统&lt;/strong&gt;：计划 &rarr; 执行 &rarr; 渲染 &rarr; 独立结构化裁决 &rarr; 定向修复——与 Agent RL 后训练中的奖励设计和评测流程同构">
+        The harness is a <strong>verifier-in-the-loop system</strong>: plan &rarr; act &rarr; render &rarr; independent structured verdict &rarr; targeted repair — the same shape as reward design and eval loops in agent RL post-training
+    </li>
+    <li data-en="&lt;strong&gt;Failure-mode engineering&lt;/strong&gt;: normalized error signatures, forced strategy switch after repeated same-class failures, hard per-step / per-task budgets" data-zh="&lt;strong&gt;失效模式工程&lt;/strong&gt;：错误签名归一化、同类失败两次强制换策略、每步/每任务硬预算上限">
+        <strong>Failure-mode engineering</strong>: normalized error signatures, forced strategy switch after repeated same-class failures, hard per-step / per-task budgets
+    </li>
+    <li data-en="&lt;strong&gt;Safety by construction&lt;/strong&gt;: works on isolated copies only, byte-level snapshots with undo before any write, document content treated as data (prompt-injection defense)" data-zh="&lt;strong&gt;设计即安全&lt;/strong&gt;：只在隔离副本上操作、任何写入前有字节级快照可撤销、文档内容视为数据而非指令（提示注入防御）">
+        <strong>Safety by construction</strong>: works on isolated copies only, byte-level snapshots with undo before any write, document content treated as data (prompt-injection defense)
+    </li>
+</ul>
 
-            <h4 data-en="Engineering highlights" data-zh="工程亮点">Engineering highlights</h4>
-            <ul>
-                <li data-en="&lt;strong&gt;Rendered-screenshot verification&lt;/strong&gt;: AppleScript drives Word/Excel to export PDF &rarr; page images &rarr; pixel-level diff with red-box annotations marks exactly what changed &rarr; a &lt;em&gt;stateless&lt;/em&gt; visual verifier returns a structured verdict (no access to edit history, so it cannot rationalize failures)" data-zh="&lt;strong&gt;渲染截图验证&lt;/strong&gt;：AppleScript 驱动 Word/Excel 导出 PDF &rarr; 转页面图 &rarr; 像素级 diff 红框标注变更区域 &rarr; &lt;em&gt;无状态&lt;/em&gt;视觉验证器给出结构化裁决（看不到编辑历史，无法为失败自圆其说）">
-                    <strong>Rendered-screenshot verification</strong>: AppleScript drives Word/Excel to export PDF &rarr; page images &rarr; pixel-level diff with red-box annotations marks exactly what changed &rarr; a <em>stateless</em> visual verifier returns a structured verdict (no access to edit history, so it cannot rationalize failures)
-                </li>
-                <li data-en="&lt;strong&gt;Verified-baseline ratchet&lt;/strong&gt;: diffs are taken against the last &lt;em&gt;passed&lt;/em&gt; render, so regressions cannot silently become the new normal" data-zh="&lt;strong&gt;已验证基线棘轮&lt;/strong&gt;：diff 始终对照上一次&lt;em&gt;通过&lt;/em&gt;的渲染，回归无法悄悄变成新常态">
-                    <strong>Verified-baseline ratchet</strong>: diffs are taken against the last <em>passed</em> render, so regressions cannot silently become the new normal
-                </li>
-                <li data-en="&lt;strong&gt;Error-escalation ladder&lt;/strong&gt;: retry &rarr; switch strategy &rarr; ask the user, under hard budget ceilings" data-zh="&lt;strong&gt;错误升级阶梯&lt;/strong&gt;：重试 &rarr; 更换策略 &rarr; 求助用户，且受硬预算上限约束">
-                    <strong>Error-escalation ladder</strong>: retry &rarr; switch strategy &rarr; ask the user, under hard budget ceilings
-                </li>
-                <li data-en="&lt;strong&gt;Model-agnostic core&lt;/strong&gt;: hot-swappable backends (Kimi-K2, MiniMax-M3, OpenAI/OpenRouter-compatible endpoints)" data-zh="&lt;strong&gt;模型无关内核&lt;/strong&gt;：可热切换后端（Kimi-K2、MiniMax-M3、OpenAI/OpenRouter 兼容端点）">
-                    <strong>Model-agnostic core</strong>: hot-swappable backends (Kimi-K2, MiniMax-M3, OpenAI/OpenRouter-compatible endpoints)
-                </li>
-                <li data-en="&lt;strong&gt;Benchmarked&lt;/strong&gt;: a 9-task Render-Truth Bench (108 runs) shows substantially higher defect-awareness than an OfficeCLI baseline" data-zh="&lt;strong&gt;有基准评测&lt;/strong&gt;：9 任务 Render-Truth Bench（108 次运行）显示其缺陷感知能力显著高于 OfficeCLI 基线">
-                    <strong>Benchmarked</strong>: a 9-task Render-Truth Bench (108 runs) shows substantially higher defect-awareness than an OfficeCLI baseline
-                </li>
-            </ul>
+<h4 data-en="Engineering highlights" data-zh="工程亮点">Engineering highlights</h4>
+<ul>
+    <li data-en="&lt;strong&gt;Rendered-screenshot verification&lt;/strong&gt;: AppleScript drives Word/Excel to export PDF &rarr; page images &rarr; pixel-level diff with red-box annotations marks exactly what changed &rarr; a &lt;em&gt;stateless&lt;/em&gt; visual verifier returns a structured verdict (no access to edit history, so it cannot rationalize failures)" data-zh="&lt;strong&gt;渲染截图验证&lt;/strong&gt;：AppleScript 驱动 Word/Excel 导出 PDF &rarr; 转页面图 &rarr; 像素级 diff 红框标注变更区域 &rarr; &lt;em&gt;无状态&lt;/em&gt;视觉验证器给出结构化裁决（看不到编辑历史，无法为失败自圆其说）">
+        <strong>Rendered-screenshot verification</strong>: AppleScript drives Word/Excel to export PDF &rarr; page images &rarr; pixel-level diff with red-box annotations marks exactly what changed &rarr; a <em>stateless</em> visual verifier returns a structured verdict (no access to edit history, so it cannot rationalize failures)
+    </li>
+    <li data-en="&lt;strong&gt;Verified-baseline ratchet&lt;/strong&gt;: diffs are taken against the last &lt;em&gt;passed&lt;/em&gt; render, so regressions cannot silently become the new normal" data-zh="&lt;strong&gt;已验证基线棘轮&lt;/strong&gt;：diff 始终对照上一次&lt;em&gt;通过&lt;/em&gt;的渲染，回归无法悄悄变成新常态">
+        <strong>Verified-baseline ratchet</strong>: diffs are taken against the last <em>passed</em> render, so regressions cannot silently become the new normal
+    </li>
+    <li data-en="&lt;strong&gt;Error-escalation ladder&lt;/strong&gt;: retry &rarr; switch strategy &rarr; ask the user, under hard budget ceilings" data-zh="&lt;strong&gt;错误升级阶梯&lt;/strong&gt;：重试 &rarr; 更换策略 &rarr; 求助用户，且受硬预算上限约束">
+        <strong>Error-escalation ladder</strong>: retry &rarr; switch strategy &rarr; ask the user, under hard budget ceilings
+    </li>
+    <li data-en="&lt;strong&gt;Model-agnostic core&lt;/strong&gt;: hot-swappable backends (Kimi-K2, MiniMax-M3, OpenAI/OpenRouter-compatible endpoints)" data-zh="&lt;strong&gt;模型无关内核&lt;/strong&gt;：可热切换后端（Kimi-K2、MiniMax-M3、OpenAI/OpenRouter 兼容端点）">
+        <strong>Model-agnostic core</strong>: hot-swappable backends (Kimi-K2, MiniMax-M3, OpenAI/OpenRouter-compatible endpoints)
+    </li>
+    <li data-en="&lt;strong&gt;Benchmarked&lt;/strong&gt;: a 9-task Render-Truth Bench (108 runs) shows substantially higher defect-awareness than an OfficeCLI baseline" data-zh="&lt;strong&gt;有基准评测&lt;/strong&gt;：9 任务 Render-Truth Bench（108 次运行）显示其缺陷感知能力显著高于 OfficeCLI 基线">
+        <strong>Benchmarked</strong>: a 9-task Render-Truth Bench (108 runs) shows substantially higher defect-awareness than an OfficeCLI baseline
+    </li>
+</ul>
 
-            <h4 data-en="Traction" data-zh="实际反响">Traction</h4>
-            <ul>
-                <li data-en="&lt;strong&gt;53★ and 6 forks on GitHub&lt;/strong&gt; — an actively used open-source project with an active issue/feedback loop from real users" data-zh="GitHub 上 &lt;strong&gt;53★、6 forks&lt;/strong&gt;——持续被真实使用的开源项目，来自真实用户的 issue/反馈持续迭代">
-                    <strong>53★ and 6 forks on GitHub</strong> — an actively used open-source project with an active issue/feedback loop from real users
-                </li>
-            </ul>
-        </div>
+<h4 data-en="Adoption" data-zh="使用与反馈">Adoption</h4>
+<ul>
+    <li data-en="&lt;strong&gt;53★ and 6 forks on GitHub&lt;/strong&gt;; external users report issues and feedback that drive fixes" data-zh="GitHub 上 &lt;strong&gt;53★、6 forks&lt;/strong&gt;；外部用户通过 issue 与反馈推动修复迭代">
+        <strong>53★ and 6 forks on GitHub</strong>; external users report issues and feedback that drive fixes
+    </li>
+</ul>
 
-        <div class="col-md-4">
-            <img src="/assets/images/projects/officebuddy.svg" alt="OfficeBuddy" class="img-fluid rounded shadow-sm mb-3" />
+<p class="proj-links">
+    <a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank" rel="noopener"><span data-en="GitHub Repository · 53★" data-zh="GitHub 仓库 · 53★">GitHub Repository · 53★</span></a>
+</p>
 
-            <div class="d-grid gap-2">
-                <a href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank" class="btn btn-primary btn-sm">
-                    <span data-en="GitHub Repository · 53★" data-zh="GitHub 仓库 · 53★">GitHub Repository · 53★</span>
-                </a>
-            </div>
+</article>
 
-            <div class="mt-3 p-2 bg-light rounded">
-                <p class="small mb-1"><strong data-en="Highlights" data-zh="亮点">Highlights</strong></p>
-                <p class="small mb-0">
-                    <span class="badge badge-success" data-en="53★ open source · GitHub" data-zh="GitHub 53★ 开源项目">53★ open source · GitHub</span>
-                    <span class="badge badge-info" data-en="Vision-in-the-Loop" data-zh="Vision-in-the-Loop">Vision-in-the-Loop</span>
-                    <span class="badge badge-secondary" data-en="Stateless verifier" data-zh="无状态验证器">Stateless verifier</span>
-                    <span class="badge badge-primary" data-en="Snapshot / Undo Safety" data-zh="快照 / 撤销安全">Snapshot / Undo Safety</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="p-4">
+<article class="project">
     <h2 data-en="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" data-zh="MedForge：基于伪造感知推理的可解释医学深度伪造检测">MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</h2>
-    <hr />
 
-    <div class="row">
-        <div class="col-md-8">
-            <p data-en="A data-and-model framework for trustworthy medical deepfake detection, built around evidence-grounded reasoning, forgery localization, and a public demo stack." data-zh="一个面向可信医学深度伪造检测的数据与模型框架，核心是证据驱动推理、伪造区域定位，以及可公开体验的演示系统。">
-                A data-and-model framework for trustworthy medical deepfake detection, built around evidence-grounded reasoning, forgery localization, and a public demo stack.
-            </p>
+<p data-en="A data-and-model framework for trustworthy medical deepfake detection, built around evidence-grounded reasoning, forgery localization, and a public demo stack." data-zh="一个面向可信医学深度伪造检测的数据与模型框架，核心是证据驱动推理、伪造区域定位，以及可公开体验的演示系统。">
+    A data-and-model framework for trustworthy medical deepfake detection, built around evidence-grounded reasoning, forgery localization, and a public demo stack.
+</p>
 
-            <h4 data-en="What is included" data-zh="目前公开内容">What is included</h4>
-            <ul>
-                <li data-en="&lt;strong&gt;ACL 2026 main conference paper&lt;/strong&gt; on interpretable medical forgery detection" data-zh="&lt;strong&gt;ACL 2026 主会议论文&lt;/strong&gt;，聚焦可解释医学伪造检测">
-                    <strong>ACL 2026 main conference paper</strong> on interpretable medical forgery detection
-                </li>
-                <li data-en="&lt;strong&gt;MedForge-90K dataset&lt;/strong&gt;: 30K real images, 30K lesion implant forgeries, and 30K lesion removal forgeries" data-zh="&lt;strong&gt;MedForge-90K 数据集&lt;/strong&gt;：30K 真实图像、30K 病灶植入伪造、30K 病灶移除伪造">
-                    <strong>MedForge-90K dataset</strong>: 30K real images, 30K lesion implant forgeries, and 30K lesion removal forgeries
-                </li>
-                <li data-en="&lt;strong&gt;MedForge-Reasoner&lt;/strong&gt;: a Qwen3-VL based detector using a Localize-then-Analyze reasoning pipeline" data-zh="&lt;strong&gt;MedForge-Reasoner&lt;/strong&gt;：基于 Qwen3-VL 的检测模型，采用先定位再分析的推理流程">
-                    <strong>MedForge-Reasoner</strong>: a Qwen3-VL based detector using a Localize-then-Analyze reasoning pipeline
-                </li>
-                <li data-en="&lt;strong&gt;Interactive demo&lt;/strong&gt; for medical image deepfake detection and reasoning visualization" data-zh="&lt;strong&gt;交互 Demo&lt;/strong&gt;：可直接体验医学图像深度伪造检测与推理可视化">
-                    <strong>Interactive demo</strong> for medical image deepfake detection and reasoning visualization
-                </li>
-            </ul>
+<h4 data-en="What is included" data-zh="目前公开内容">What is included</h4>
+<ul>
+    <li data-en="&lt;strong&gt;ACL 2026 main conference paper&lt;/strong&gt; on interpretable medical forgery detection" data-zh="&lt;strong&gt;ACL 2026 主会议论文&lt;/strong&gt;，聚焦可解释医学伪造检测">
+        <strong>ACL 2026 main conference paper</strong> on interpretable medical forgery detection
+    </li>
+    <li data-en="&lt;strong&gt;MedForge-90K dataset&lt;/strong&gt;: 30K real images, 30K lesion implant forgeries, and 30K lesion removal forgeries" data-zh="&lt;strong&gt;MedForge-90K 数据集&lt;/strong&gt;：30K 真实图像、30K 病灶植入伪造、30K 病灶移除伪造">
+        <strong>MedForge-90K dataset</strong>: 30K real images, 30K lesion implant forgeries, and 30K lesion removal forgeries
+    </li>
+    <li data-en="&lt;strong&gt;MedForge-Reasoner&lt;/strong&gt;: a Qwen3-VL based detector using a Localize-then-Analyze reasoning pipeline" data-zh="&lt;strong&gt;MedForge-Reasoner&lt;/strong&gt;：基于 Qwen3-VL 的检测模型，采用先定位再分析的推理流程">
+        <strong>MedForge-Reasoner</strong>: a Qwen3-VL based detector using a Localize-then-Analyze reasoning pipeline
+    </li>
+    <li data-en="&lt;strong&gt;Interactive demo&lt;/strong&gt; for medical image deepfake detection and reasoning visualization" data-zh="&lt;strong&gt;交互 Demo&lt;/strong&gt;：可直接体验医学图像深度伪造检测与推理可视化">
+        <strong>Interactive demo</strong> for medical image deepfake detection and reasoning visualization
+    </li>
+</ul>
 
-            <h4 data-en="Why it matters" data-zh="为什么重要">Why it matters</h4>
-            <ul>
-                <li data-en="Moves beyond black-box real/fake prediction to localized, evidence-grounded explanations" data-zh="不再停留于黑盒真伪判断，而是给出定位明确、证据驱动的解释">
-                    Moves beyond black-box real/fake prediction to localized, evidence-grounded explanations
-                </li>
-                <li data-en="Targets realistic lesion implantation and removal risks in chest X-ray, brain MRI, and fundus images" data-zh="面向胸部 X 光、脑部 MRI、眼底图像中的真实病灶植入与移除风险">
-                    Targets realistic lesion implantation and removal risks in chest X-ray, brain MRI, and fundus images
-                </li>
-                <li data-en="Combines dataset, model, and demo into a single research artifact instead of a paper-only release" data-zh="不仅发布论文，也同步公开数据集、模型与演示系统，形成完整研究资产">
-                    Combines dataset, model, and demo into a single research artifact instead of a paper-only release
-                </li>
-            </ul>
+<h4 data-en="Motivation" data-zh="动机">Motivation</h4>
+<ul>
+    <li data-en="Moves beyond black-box real/fake prediction to localized, evidence-grounded explanations" data-zh="不再停留于黑盒真伪判断，而是给出定位明确、证据驱动的解释">
+        Moves beyond black-box real/fake prediction to localized, evidence-grounded explanations
+    </li>
+    <li data-en="Targets realistic lesion implantation and removal risks in chest X-ray, brain MRI, and fundus images" data-zh="面向胸部 X 光、脑部 MRI、眼底图像中的真实病灶植入与移除风险">
+        Targets realistic lesion implantation and removal risks in chest X-ray, brain MRI, and fundus images
+    </li>
+    <li data-en="Combines dataset, model, and demo into a single research artifact instead of a paper-only release" data-zh="不仅发布论文，也同步公开数据集、模型与演示系统，形成完整研究资产">
+        Combines dataset, model, and demo into a single research artifact instead of a paper-only release
+    </li>
+</ul>
 
-            <h4 data-en="Public resources" data-zh="公开资源">Public resources</h4>
-            <table class="table table-sm table-bordered">
-                <thead>
-                    <tr>
-                        <th data-en="Asset" data-zh="资源">Asset</th>
-                        <th data-en="Details" data-zh="说明">Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-en="Paper" data-zh="论文">Paper</td>
-                        <td data-en="ACL 2026 Main Conference" data-zh="ACL 2026 主会议">ACL 2026 Main Conference</td>
-                    </tr>
-                    <tr>
-                        <td data-en="Dataset" data-zh="数据集">Dataset</td>
-                        <td data-en="MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types (50K+ Hugging Face downloads)" data-zh="MedForge-90K，覆盖 CT、MRI、X 光，共 19 类病灶（Hugging Face 50K+ 下载）">MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types (50K+ Hugging Face downloads)</td>
-                    </tr>
-                    <tr>
-                        <td data-en="Model" data-zh="模型">Model</td>
-                        <td data-en="MedForge-Reasoner on Hugging Face" data-zh="Hugging Face 上的 MedForge-Reasoner">MedForge-Reasoner on Hugging Face</td>
-                    </tr>
-                    <tr>
-                        <td data-en="Demo" data-zh="演示">Demo</td>
-                        <td data-en="Online detector Space for interactive testing" data-zh="在线检测 Space，可直接交互体验">Online detector Space for interactive testing</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<h4 data-en="Public resources" data-zh="公开资源">Public resources</h4>
+<table>
+    <thead>
+        <tr>
+            <th data-en="Asset" data-zh="资源">Asset</th>
+            <th data-en="Details" data-zh="说明">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-en="Paper" data-zh="论文">Paper</td>
+            <td data-en="ACL 2026 Main Conference" data-zh="ACL 2026 主会议">ACL 2026 Main Conference</td>
+        </tr>
+        <tr>
+            <td data-en="Dataset" data-zh="数据集">Dataset</td>
+            <td data-en="MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types (50K+ Hugging Face downloads)" data-zh="MedForge-90K，覆盖 CT、MRI、X 光，共 19 类病灶（Hugging Face 50K+ 下载）">MedForge-90K, covering CT, MRI, and X-ray with 19 lesion types (50K+ Hugging Face downloads)</td>
+        </tr>
+        <tr>
+            <td data-en="Model" data-zh="模型">Model</td>
+            <td data-en="MedForge-Reasoner on Hugging Face" data-zh="Hugging Face 上的 MedForge-Reasoner">MedForge-Reasoner on Hugging Face</td>
+        </tr>
+        <tr>
+            <td data-en="Demo" data-zh="演示">Demo</td>
+            <td data-en="Online detector Space for interactive testing" data-zh="在线检测 Space，可直接交互体验">Online detector Space for interactive testing</td>
+        </tr>
+    </tbody>
+</table>
 
-        <div class="col-md-4">
-            <img src="/assets/images/publications/medforge/fig1.png" alt="MedForge framework" class="img-fluid rounded shadow-sm mb-3" />
+<figure>
+    <img src="/assets/images/publications/medforge/fig1.png" alt="MedForge framework" />
+    <figcaption data-en="MedForge framework" data-zh="MedForge 框架">MedForge framework</figcaption>
+</figure>
 
-            <div class="d-grid gap-2">
-                <a href="https://arxiv.org/abs/2603.18577" target="_blank" class="btn btn-primary btn-sm">
-                    <span data-en="Read Paper" data-zh="阅读论文">Read Paper</span>
-                </a>
-                <a href="https://huggingface.co/spaces/RichardChenZH/medforge-medical-deepfake-detector" target="_blank" class="btn btn-success btn-sm">
-                    <span data-en="Try Demo" data-zh="体验 Demo">Try Demo</span>
-                </a>
-                <a href="https://huggingface.co/RichardChenZH/MedForge-Reasoner" target="_blank" class="btn btn-secondary btn-sm">
-                    <span data-en="Model" data-zh="模型">Model</span>
-                </a>
-                <a href="https://huggingface.co/datasets/RichardChenZH/MedForge-90K" target="_blank" class="btn btn-info btn-sm">
-                    <span data-en="Dataset" data-zh="数据集">Dataset</span>
-                </a>
-                <a href="/publications/medforge.html" class="btn btn-outline-dark btn-sm">
-                    <span data-en="Project Page" data-zh="项目页面">Project Page</span>
-                </a>
-            </div>
+<p class="proj-links">
+    <a href="https://arxiv.org/abs/2603.18577" target="_blank" rel="noopener"><span data-en="Paper" data-zh="论文">Paper</span></a>
+    <a href="https://huggingface.co/spaces/RichardChenZH/medforge-medical-deepfake-detector" target="_blank" rel="noopener"><span data-en="Demo" data-zh="体验 Demo">Demo</span></a>
+    <a href="https://huggingface.co/RichardChenZH/MedForge-Reasoner" target="_blank" rel="noopener"><span data-en="Model" data-zh="模型">Model</span></a>
+    <a href="https://huggingface.co/datasets/RichardChenZH/MedForge-90K" target="_blank" rel="noopener"><span data-en="Dataset" data-zh="数据集">Dataset</span></a>
+    <a href="/publications/medforge.html"><span data-en="Project page" data-zh="项目页面">Project page</span></a>
+</p>
 
-            <div class="mt-3 p-2 bg-light rounded">
-                <p class="small mb-1"><strong data-en="Highlights" data-zh="亮点">Highlights</strong></p>
-                <p class="small mb-0">
-                    <span class="badge badge-success" data-en="ACL 2026" data-zh="ACL 2026">ACL 2026</span>
-                    <span class="badge badge-info" data-en="Demo + Model + Dataset" data-zh="Demo + 模型 + 数据集">Demo + Model + Dataset</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+</article>
 
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="p-4">
+<article class="project">
     <h2 data-en="Med-Banana: RSI through Medical Agent Self-Improvement (EMNLP 2026)" data-zh="Med-Banana：面向医疗 Agent 自优化的 RSI 研究实践（EMNLP 2026）">Med-Banana: RSI through Medical Agent Self-Improvement (EMNLP 2026)</h2>
-    <hr />
 
-    <div class="row">
-        <div class="col-md-8">
-            <p data-en="&lt;strong&gt;Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training&lt;/strong&gt;" data-zh="&lt;strong&gt;Prompt 自优化 · 验证反馈 · Agentic 后训练&lt;/strong&gt;"><strong>Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training</strong></p>
-            <p data-en="Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner." data-zh="Med-Banana 将我的 RSI 研究落到医疗 Agent：系统从自身失败中提取反馈，修正下一轮编辑的指令策略。递归改进发生在 Prompt 层面，由经过训练的验证器与精炼器驱动。">Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner.</p>
-            <h4 data-en="The Self-Improvement Loop" data-zh="自优化机制">The Self-Improvement Loop</h4>
-            <ol>
-            <li data-en="&lt;strong&gt;Edit:&lt;/strong&gt; Generate a candidate from the source image and current prompt pair." data-zh="&lt;strong&gt;执行：&lt;/strong&gt;基于原始影像与当前正负 Prompt 生成候选结果。"><strong>Edit:</strong> Generate a candidate from the source image and current prompt pair.</li>
-            <li data-en="&lt;strong&gt;Verify:&lt;/strong&gt; Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity." data-zh="&lt;strong&gt;验证：&lt;/strong&gt;从病理合理性、解剖结构、指令遵循与成像保真度诊断失败。"><strong>Verify:</strong> Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity.</li>
-            <li data-en="&lt;strong&gt;Refine:&lt;/strong&gt; Use rejection reasons and failure history to revise both prompts, then retry from the original image." data-zh="&lt;strong&gt;递归修正：&lt;/strong&gt;结合拒绝原因与历史失败改写正负 Prompt，从原始影像重新尝试。"><strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image.</li>
-            <li data-en="&lt;strong&gt;Learn:&lt;/strong&gt; Train the editor on successful edits and the verifier and refiner on trajectory-level feedback." data-zh="&lt;strong&gt;轨迹学习：&lt;/strong&gt;以成功编辑训练编辑器，以成败判断与修正轨迹训练验证器和精炼器。"><strong>Learn:</strong> Train the editor on successful edits and the verifier and refiner on trajectory-level feedback.</li>
-            </ol>
-            <p data-en="&lt;strong&gt;Med-Banana-80K:&lt;/strong&gt; 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 100K+ Hugging Face downloads." data-zh="&lt;strong&gt;Med-Banana-80K：&lt;/strong&gt;50,635 条成功与 37,822 条失败轨迹，覆盖三种医学影像模态与 23 类疾病；Hugging Face 下载量超过 100K。"><strong>Med-Banana-80K:</strong> 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 100K+ Hugging Face downloads.</p>
+<p data-en="&lt;strong&gt;Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training&lt;/strong&gt;" data-zh="&lt;strong&gt;Prompt 自优化 · 验证反馈 · Agentic 后训练&lt;/strong&gt;"><strong>Prompt-Level Self-Improvement · Verifier Feedback · Agentic Post-Training</strong></p>
 
-            <h4 data-en="Dataset Statistics" data-zh="数据集统计">Dataset Statistics</h4>
-            <table class="table table-sm table-bordered">
-                <thead>
-                    <tr>
-                        <th data-en="Modality" data-zh="模态">Modality</th>
-                        <th data-en="Task" data-zh="任务">Task</th>
-                        <th data-en="Diseases" data-zh="疾病数">Diseases</th>
-                        <th data-en="Success" data-zh="成功">Success</th>
-                        <th data-en="Failed" data-zh="失败">Failed</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Chest X-ray</td>
-                        <td>Add</td>
-                        <td>12</td>
-                        <td>9,854</td>
-                        <td>7,971</td>
-                    </tr>
-                    <tr>
-                        <td>Chest X-ray</td>
-                        <td>Remove</td>
-                        <td>12</td>
-                        <td>10,667</td>
-                        <td>4,750</td>
-                    </tr>
-                    <tr>
-                        <td>Brain MRI</td>
-                        <td>Add</td>
-                        <td>4</td>
-                        <td>4,536</td>
-                        <td>8,630</td>
-                    </tr>
-                    <tr>
-                        <td>Brain MRI</td>
-                        <td>Remove</td>
-                        <td>4</td>
-                        <td>4,355</td>
-                        <td>6,949</td>
-                    </tr>
-                    <tr>
-                        <td>Fundus</td>
-                        <td>Add</td>
-                        <td>7</td>
-                        <td>18,505</td>
-                        <td>3,162</td>
-                    </tr>
-                    <tr>
-                        <td>Fundus</td>
-                        <td>Remove</td>
-                        <td>7</td>
-                        <td>2,718</td>
-                        <td>6,360</td>
-                    </tr>
-                    <tr class="font-weight-bold">
-                        <td colspan="2" data-en="Total" data-zh="总计">Total</td>
-                        <td>23+</td>
-                        <td>50,635</td>
-                        <td>37,822</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="col-md-4">
-            <img src="/assets/images/covers/medbanana_cover.png" alt="Med-Banana-80K samples" class="img-fluid rounded shadow-sm mb-3" />
-            
-            <div class="d-grid gap-2">
-                <a href="https://arxiv.org/abs/2511.00801" target="_blank" class="btn btn-primary btn-sm">
-                    📄 <span data-en="Read Paper" data-zh="阅读论文">Read Paper</span>
-                </a>
-                <a href="https://github.com/richardChenzhihui/med-banana-50k/" target="_blank" class="btn btn-secondary btn-sm">
-                    💻 <span data-en="View Code" data-zh="查看代码">View Code</span>
-                </a>
-                <a href="https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K" target="_blank" class="btn btn-info btn-sm">
-                    📦 <span data-en="Dataset on Hugging Face (100K+ downloads)" data-zh="Hugging Face 数据集（100K+ 下载）">Dataset on Hugging Face (100K+ downloads)</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="mt-3">
-        <p class="small text-muted" data-en="&lt;strong&gt;Open asset:&lt;/strong&gt; Dataset, code, and paper are publicly available for medically grounded image editing research." data-zh="&lt;strong&gt;开放资产：&lt;/strong&gt;数据集、代码与论文已公开，可用于医学约束下的图像编辑研究。">
-            <strong>Open asset:</strong> Dataset, code, and paper are publicly available for medically grounded image editing research.
-        </p>
-    </div>
-</div>
+<p data-en="Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner." data-zh="Med-Banana 将我的 RSI 研究落到医疗 Agent：系统从自身失败中提取反馈，修正下一轮编辑的指令策略。递归改进发生在 Prompt 层面，由经过训练的验证器与精炼器驱动。">Med-Banana connects my RSI research to medical agents: the system uses its failed attempts to revise how it approaches the next edit. The recursive improvement happens in the prompt policy, guided by a learned verifier and refiner.</p>
 
+<h4 data-en="The Self-Improvement Loop" data-zh="自优化机制">The Self-Improvement Loop</h4>
+<ol>
+    <li data-en="&lt;strong&gt;Edit:&lt;/strong&gt; Generate a candidate from the source image and current prompt pair." data-zh="&lt;strong&gt;执行：&lt;/strong&gt;基于原始影像与当前正负 Prompt 生成候选结果。"><strong>Edit:</strong> Generate a candidate from the source image and current prompt pair.</li>
+    <li data-en="&lt;strong&gt;Verify:&lt;/strong&gt; Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity." data-zh="&lt;strong&gt;验证：&lt;/strong&gt;从病理合理性、解剖结构、指令遵循与成像保真度诊断失败。"><strong>Verify:</strong> Diagnose failures in pathology, anatomy, instruction compliance, and imaging fidelity.</li>
+    <li data-en="&lt;strong&gt;Refine:&lt;/strong&gt; Use rejection reasons and failure history to revise both prompts, then retry from the original image." data-zh="&lt;strong&gt;递归修正：&lt;/strong&gt;结合拒绝原因与历史失败改写正负 Prompt，从原始影像重新尝试。"><strong>Refine:</strong> Use rejection reasons and failure history to revise both prompts, then retry from the original image.</li>
+    <li data-en="&lt;strong&gt;Learn:&lt;/strong&gt; Train the editor on successful edits and the verifier and refiner on trajectory-level feedback." data-zh="&lt;strong&gt;轨迹学习：&lt;/strong&gt;以成功编辑训练编辑器，以成败判断与修正轨迹训练验证器和精炼器。"><strong>Learn:</strong> Train the editor on successful edits and the verifier and refiner on trajectory-level feedback.</li>
+</ol>
 
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="p-4">
+<p data-en="&lt;strong&gt;Med-Banana-80K:&lt;/strong&gt; 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 150K+ Hugging Face downloads." data-zh="&lt;strong&gt;Med-Banana-80K：&lt;/strong&gt;50,635 条成功与 37,822 条失败轨迹，覆盖三种医学影像模态与 23 类疾病；Hugging Face 下载量超过 150K。"><strong>Med-Banana-80K:</strong> 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories; 150K+ Hugging Face downloads.</p>
+
+<h4 data-en="Dataset Statistics" data-zh="数据集统计">Dataset Statistics</h4>
+<table>
+    <thead>
+        <tr>
+            <th data-en="Modality" data-zh="模态">Modality</th>
+            <th data-en="Task" data-zh="任务">Task</th>
+            <th data-en="Diseases" data-zh="疾病数">Diseases</th>
+            <th data-en="Success" data-zh="成功">Success</th>
+            <th data-en="Failed" data-zh="失败">Failed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Chest X-ray</td><td>Add</td><td>12</td><td>9,854</td><td>7,971</td></tr>
+        <tr><td>Chest X-ray</td><td>Remove</td><td>12</td><td>10,667</td><td>4,750</td></tr>
+        <tr><td>Brain MRI</td><td>Add</td><td>4</td><td>4,536</td><td>8,630</td></tr>
+        <tr><td>Brain MRI</td><td>Remove</td><td>4</td><td>4,355</td><td>6,949</td></tr>
+        <tr><td>Fundus</td><td>Add</td><td>7</td><td>18,505</td><td>3,162</td></tr>
+        <tr><td>Fundus</td><td>Remove</td><td>7</td><td>2,718</td><td>6,360</td></tr>
+        <tr>
+            <td colspan="2" data-en="Total" data-zh="总计"><strong>Total</strong></td>
+            <td><strong>23+</strong></td>
+            <td><strong>50,635</strong></td>
+            <td><strong>37,822</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<figure>
+    <img src="/assets/images/covers/medbanana_cover.png" alt="Med-Banana-80K samples" />
+    <figcaption data-en="Med-Banana-80K samples" data-zh="Med-Banana-80K 样例">Med-Banana-80K samples</figcaption>
+</figure>
+
+<p class="small text-muted" data-en="&lt;strong&gt;Open asset:&lt;/strong&gt; Dataset, code, and paper are publicly available for medically grounded image editing research." data-zh="&lt;strong&gt;开放资产：&lt;/strong&gt;数据集、代码与论文已公开，可用于医学约束下的图像编辑研究。">
+    <strong>Open asset:</strong> Dataset, code, and paper are publicly available for medically grounded image editing research.
+</p>
+
+<p class="proj-links">
+    <a href="https://arxiv.org/abs/2511.00801" target="_blank" rel="noopener"><span data-en="Paper" data-zh="论文">Paper</span></a>
+    <a href="https://github.com/richardChenzhihui/med-banana-50k/" target="_blank" rel="noopener"><span data-en="Code" data-zh="代码">Code</span></a>
+    <a href="https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K" target="_blank" rel="noopener"><span data-en="Dataset on Hugging Face (150K+ downloads)" data-zh="Hugging Face 数据集（150K+ 下载）">Dataset on Hugging Face (150K+ downloads)</span></a>
+</p>
+
+</article>
+
+<article class="project">
     <h2 data-en="MiniMax Cowork Team Fellowship: Medical Foundation Model Development and Clinically Verifiable Agent Workflows" data-zh="MiniMax Cowork Team Fellowship：医疗大模型开发与临床可验证 Agent 工作流">
-        MiniMax Cowork Team Fellowship: Medical Foundation Model Development and Clinically Verifiable Agent Workflows
-    </h2>
-    <hr />
+    MiniMax Cowork Team Fellowship: Medical Foundation Model Development and Clinically Verifiable Agent Workflows
+</h2>
 
-    <div class="row">
-        <div class="col-md-8">
-            <p data-en="A compute-supported project from MiniMax, focused on turning long-context, multimodal, and Agent capabilities into medical foundation model development and clinically verifiable workflows." data-zh="一个获得 MiniMax 算力支持的项目，聚焦将长上下文、多模态与 Agent 能力转化为医疗大模型开发与临床可验证工作流。">
-                A compute-supported project from MiniMax, focused on turning long-context, multimodal, and Agent capabilities into medical foundation model development and clinically verifiable workflows.
-            </p>
+<p data-en="A compute-supported project from MiniMax, focused on turning long-context, multimodal, and Agent capabilities into medical foundation model development and clinically verifiable workflows." data-zh="一个获得 MiniMax 算力支持的项目，聚焦将长上下文、多模态与 Agent 能力转化为医疗大模型开发与临床可验证工作流。">
+    A compute-supported project from MiniMax, focused on turning long-context, multimodal, and Agent capabilities into medical foundation model development and clinically verifiable workflows.
+</p>
 
-            <h4 data-en="Project focus" data-zh="项目重点">Project focus</h4>
-            <ul>
-                <li data-en="&lt;strong&gt;Medical foundation model development&lt;/strong&gt;: long-context, multimodal, and Agent capabilities for healthcare workflows" data-zh="&lt;strong&gt;医疗大模型开发&lt;/strong&gt;：面向医疗工作流的长上下文、多模态与 Agent 能力建设">
-                    <strong>Medical foundation model development</strong>: long-context, multimodal, and Agent capabilities for healthcare workflows
-                </li>
-                <li data-en="&lt;strong&gt;Data flywheel&lt;/strong&gt;: evaluation findings are converted into targeted cases, feedback signals, and iterative improvement loops" data-zh="&lt;strong&gt;数据飞轮&lt;/strong&gt;：将评测发现转化为定向样本、反馈信号与迭代优化闭环">
-                    <strong>Data flywheel</strong>: evaluation findings are converted into targeted cases, feedback signals, and iterative improvement loops
-                </li>
-                <li data-en="&lt;strong&gt;Clinically verifiable Agent workflows&lt;/strong&gt;: outputs are structured around traceable evidence, review checkpoints, and reproducible decision paths" data-zh="&lt;strong&gt;临床可验证 Agent 工作流&lt;/strong&gt;：围绕可追溯证据、审核节点和可复现决策路径组织输出">
-                    <strong>Clinically verifiable Agent workflows</strong>: outputs are structured around traceable evidence, review checkpoints, and reproducible decision paths
-                </li>
-            </ul>
+<h4 data-en="Project focus" data-zh="项目重点">Project focus</h4>
+<ul>
+    <li data-en="&lt;strong&gt;Medical foundation model development&lt;/strong&gt;: long-context, multimodal, and Agent capabilities for healthcare workflows" data-zh="&lt;strong&gt;医疗大模型开发&lt;/strong&gt;：面向医疗工作流的长上下文、多模态与 Agent 能力建设">
+        <strong>Medical foundation model development</strong>: long-context, multimodal, and Agent capabilities for healthcare workflows
+    </li>
+    <li data-en="&lt;strong&gt;Iterative data improvement&lt;/strong&gt;: evaluation findings are converted into targeted cases, feedback signals, and training data" data-zh="&lt;strong&gt;迭代数据改进&lt;/strong&gt;：将评测发现转化为定向样本、反馈信号与再训练数据">
+        <strong>Iterative data improvement</strong>: evaluation findings are converted into targeted cases, feedback signals, and training data
+    </li>
+    <li data-en="&lt;strong&gt;Clinically verifiable Agent workflows&lt;/strong&gt;: outputs are structured around traceable evidence, review checkpoints, and reproducible decision paths" data-zh="&lt;strong&gt;临床可验证 Agent 工作流&lt;/strong&gt;：围绕可追溯证据、审核节点和可复现决策路径组织输出">
+        <strong>Clinically verifiable Agent workflows</strong>: outputs are structured around traceable evidence, review checkpoints, and reproducible decision paths
+    </li>
+</ul>
 
-            <h4 data-en="Grant support" data-zh="资助支持">Grant support</h4>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td data-en="Program" data-zh="计划">Program</td>
-                        <td>MiniMax Cowork Team Fellowship</td>
-                    </tr>
-                    <tr>
-                        <td data-en="Support" data-zh="支持">Support</td>
-                        <td data-en="USD 4,500 compute grant" data-zh="4500 美金算力支持">USD 4,500 compute grant</td>
-                    </tr>
-                    <tr>
-                        <td data-en="Direction" data-zh="方向">Direction</td>
-                        <td data-en="Medical foundation model development and clinically verifiable Agent workflows" data-zh="医疗大模型开发与临床可验证 Agent 工作流">Medical foundation model development and clinically verifiable Agent workflows</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<h4 data-en="Grant support" data-zh="资助支持">Grant support</h4>
+<table>
+    <tbody>
+        <tr>
+            <td data-en="Program" data-zh="计划">Program</td>
+            <td>MiniMax Cowork Team Fellowship</td>
+        </tr>
+        <tr>
+            <td data-en="Support" data-zh="支持">Support</td>
+            <td data-en="USD 4,500 compute grant" data-zh="4500 美金算力支持">USD 4,500 compute grant</td>
+        </tr>
+        <tr>
+            <td data-en="Direction" data-zh="方向">Direction</td>
+            <td data-en="Medical foundation model development and clinically verifiable Agent workflows" data-zh="医疗大模型开发与临床可验证 Agent 工作流">Medical foundation model development and clinically verifiable Agent workflows</td>
+        </tr>
+    </tbody>
+</table>
 
-        <div class="col-md-4">
-            <img src="/assets/images/projects/minimax-10x-team-fellowship.jpeg" alt="MiniMax Cowork Team Fellowship" class="img-fluid rounded shadow-sm mb-3" />
+<p class="proj-links">
+    <a href="https://www.minimaxi.com/" target="_blank" rel="noopener"><span data-en="MiniMax" data-zh="MiniMax">MiniMax</span></a>
+</p>
 
-            <div class="mt-3 p-2 bg-light rounded">
-                <p class="small mb-1"><strong data-en="Highlights" data-zh="亮点">Highlights</strong></p>
-                <p class="small mb-0">
-                    <span class="badge badge-success" data-en="MiniMax Cowork Team" data-zh="MiniMax Cowork Team">MiniMax Cowork Team</span>
-                    <span class="badge badge-info" data-en="Compute Grant" data-zh="算力支持">Compute Grant</span>
-                    <span class="badge badge-primary" data-en="Medical Foundation Models" data-zh="医疗大模型开发">Medical Foundation Models</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+</article>
 
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="p-4">
-    <h2 data-en="DivScore: Zero-Shot LLM Detection in Specialized Domains" data-zh="DivScore: 专业领域中的零样本大语言模型检测">DivScore: Zero-Shot LLM Detection in Specialized Domains</h2>
-    <hr />
-    
-    <div class="row">
-        <div class="col-md-8">
-            <p data-en="A zero-shot detection framework for identifying LLM-generated text in specialized domains like medicine and law, using normalized entropy-based scoring and domain knowledge distillation." data-zh="一个零样本检测框架，用于识别医学和法律等专业领域中的大语言模型生成文本，使用归一化熵评分和领域知识蒸馏。">
-                A zero-shot detection framework for identifying LLM-generated text in specialized domains like medicine and law, using normalized entropy-based scoring and domain knowledge distillation.
-            </p>
-            
-            <h4 data-en="Key Innovations" data-zh="核心创新">Key Innovations</h4>
-            <ul>
-                <li data-en="&lt;strong&gt;Zero-shot detection&lt;/strong&gt;: No training data required for new domains" data-zh="&lt;strong&gt;零样本检测&lt;/strong&gt;：新领域无需训练数据">
-                    <strong>Zero-shot detection</strong>: No training data required for new domains
-                </li>
-                <li data-en="&lt;strong&gt;Normalized entropy scoring&lt;/strong&gt;: Robust metric for specialized text" data-zh="&lt;strong&gt;归一化熵评分&lt;/strong&gt;：专业文本的稳健指标">
-                    <strong>Normalized entropy scoring</strong>: Robust metric for specialized text
-                </li>
-                <li data-en="&lt;strong&gt;Domain knowledge distillation&lt;/strong&gt;: Leverages domain-specific patterns" data-zh="&lt;strong&gt;领域知识蒸馏&lt;/strong&gt;：利用领域特定模式">
-                    <strong>Domain knowledge distillation</strong>: Leverages domain-specific patterns
-                </li>
-                <li data-en="&lt;strong&gt;Cross-domain robustness&lt;/strong&gt;: Tested on medical, legal, and financial texts" data-zh="&lt;strong&gt;跨领域鲁棒性&lt;/strong&gt;：在医学、法律和金融文本上测试">
-                    <strong>Cross-domain robustness</strong>: Tested on medical, legal, and financial texts
-                </li>
-            </ul>
+<article class="project">
+    <h2 data-en="DivScore: Zero-Shot LLM Detection in Specialized Domains (EMNLP 2025)" data-zh="DivScore: 专业领域中的零样本大语言模型检测（EMNLP 2025）">DivScore: Zero-Shot LLM Detection in Specialized Domains (EMNLP 2025)</h2>
 
-            <h4 data-en="Performance Highlights" data-zh="性能亮点">Performance Highlights</h4>
-            <table class="table table-sm table-bordered">
-                <thead>
-                    <tr>
-                        <th data-en="Metric" data-zh="指标">Metric</th>
-                        <th data-en="Improvement" data-zh="提升">Improvement</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>AUROC</td>
-                        <td><span class="badge badge-success">+14.4%</span> <span data-en="vs. SOTA" data-zh="相比最优">vs. SOTA</span></td>
-                    </tr>
-                    <tr>
-                        <td data-en="Recall @ 0.1% FPR" data-zh="召回率 @ 0.1% 误报率">Recall @ 0.1% FPR</td>
-                        <td><span class="badge badge-success">+64.0%</span> <span data-en="vs. SOTA" data-zh="相比最优">vs. SOTA</span></td>
-                    </tr>
-                    <tr>
-                        <td data-en="Zero-shot Capability" data-zh="零样本能力">Zero-shot Capability</td>
-                        <td><span class="badge badge-primary" data-en="No training needed" data-zh="无需训练">No training needed</span></td>
-                    </tr>
-                </tbody>
-            </table>
+<p data-en="A zero-shot detection framework for identifying LLM-generated text in specialized domains like medicine and law, using normalized entropy-based scoring and domain knowledge distillation." data-zh="一个零样本检测框架，用于识别医学和法律等专业领域中的大语言模型生成文本，使用归一化熵评分和领域知识蒸馏。">
+    A zero-shot detection framework for identifying LLM-generated text in specialized domains like medicine and law, using normalized entropy-based scoring and domain knowledge distillation.
+</p>
 
-            <h4 data-en="Applications" data-zh="应用场景">Applications</h4>
-            <ul>
-                <li data-en="Detecting AI-generated medical content to combat misinformation" data-zh="检测 AI 生成的医学内容以打击错误信息">
-                    Detecting AI-generated medical content to combat misinformation
-                </li>
-                <li data-en="Verifying authenticity of legal documents and contracts" data-zh="验证法律文件和合同的真实性">
-                    Verifying authenticity of legal documents and contracts
-                </li>
-                <li data-en="Ensuring integrity in academic and scientific publishing" data-zh="确保学术和科学出版的完整性">
-                    Ensuring integrity in academic and scientific publishing
-                </li>
-                <li data-en="Quality control for financial reports and analysis" data-zh="金融报告和分析的质量控制">
-                    Quality control for financial reports and analysis
-                </li>
-            </ul>
-        </div>
-        
-        <div class="col-md-4">
-            <img src="/assets/images/publications/divscore/poster-web.jpg" alt="DivScore framework" class="img-fluid rounded shadow-sm mb-3" />
-            
-            <div class="d-grid gap-2">
-                <a href="https://arxiv.org/abs/2506.06705" target="_blank" class="btn btn-primary btn-sm">
-                    📄 <span data-en="Read Paper" data-zh="阅读论文">Read Paper</span>
-                </a>
-                <a href="https://github.com/richardChenzhihui/DivScore" target="_blank" class="btn btn-secondary btn-sm">
-                    💻 <span data-en="View Code" data-zh="查看代码">View Code</span>
-                </a>
-            </div>
-            
-            <div class="mt-3 p-2 bg-light rounded">
-                <p class="small mb-1"><strong data-en="Published at" data-zh="发表于">Published at</strong></p>
-                <p class="small mb-0">
-                    <span class="badge badge-success" data-en="EMNLP 2025" data-zh="EMNLP 2025">EMNLP 2025</span>
-                    <span class="badge badge-info" data-en="Main Conference" data-zh="主会议">Main Conference</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+<h4 data-en="Key Innovations" data-zh="核心创新">Key Innovations</h4>
+<ul>
+    <li data-en="&lt;strong&gt;Zero-shot detection&lt;/strong&gt;: No training data required for new domains" data-zh="&lt;strong&gt;零样本检测&lt;/strong&gt;：新领域无需训练数据">
+        <strong>Zero-shot detection</strong>: No training data required for new domains
+    </li>
+    <li data-en="&lt;strong&gt;Normalized entropy scoring&lt;/strong&gt;: Robust metric for specialized text" data-zh="&lt;strong&gt;归一化熵评分&lt;/strong&gt;：专业文本的稳健指标">
+        <strong>Normalized entropy scoring</strong>: Robust metric for specialized text
+    </li>
+    <li data-en="&lt;strong&gt;Domain knowledge distillation&lt;/strong&gt;: Leverages domain-specific patterns" data-zh="&lt;strong&gt;领域知识蒸馏&lt;/strong&gt;：利用领域特定模式">
+        <strong>Domain knowledge distillation</strong>: Leverages domain-specific patterns
+    </li>
+    <li data-en="&lt;strong&gt;Cross-domain robustness&lt;/strong&gt;: Tested on medical, legal, and financial texts" data-zh="&lt;strong&gt;跨领域鲁棒性&lt;/strong&gt;：在医学、法律和金融文本上测试">
+        <strong>Cross-domain robustness</strong>: Tested on medical, legal, and financial texts
+    </li>
+</ul>
 
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="p-4">
+<h4 data-en="Performance Highlights" data-zh="性能亮点">Performance Highlights</h4>
+<table>
+    <thead>
+        <tr>
+            <th data-en="Metric" data-zh="指标">Metric</th>
+            <th data-en="Improvement" data-zh="提升">Improvement</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>AUROC</td>
+            <td><strong>+14.4%</strong> <span data-en="vs. SOTA" data-zh="相比最优">vs. SOTA</span></td>
+        </tr>
+        <tr>
+            <td data-en="Recall @ 0.1% FPR" data-zh="召回率 @ 0.1% 误报率">Recall @ 0.1% FPR</td>
+            <td><strong>+64.0%</strong> <span data-en="vs. SOTA" data-zh="相比最优">vs. SOTA</span></td>
+        </tr>
+        <tr>
+            <td data-en="Zero-shot Capability" data-zh="零样本能力">Zero-shot Capability</td>
+            <td data-en="No training needed" data-zh="无需训练">No training needed</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4 data-en="Applications" data-zh="应用场景">Applications</h4>
+<ul>
+    <li data-en="Detecting AI-generated medical content to combat misinformation" data-zh="检测 AI 生成的医学内容以打击错误信息">
+        Detecting AI-generated medical content to combat misinformation
+    </li>
+    <li data-en="Verifying authenticity of legal documents and contracts" data-zh="验证法律文件和合同的真实性">
+        Verifying authenticity of legal documents and contracts
+    </li>
+    <li data-en="Ensuring integrity in academic and scientific publishing" data-zh="确保学术和科学出版的完整性">
+        Ensuring integrity in academic and scientific publishing
+    </li>
+    <li data-en="Quality control for financial reports and analysis" data-zh="金融报告和分析的质量控制">
+        Quality control for financial reports and analysis
+    </li>
+</ul>
+
+<figure>
+    <img src="/assets/images/publications/divscore/poster-web.jpg" alt="DivScore poster" />
+    <figcaption data-en="DivScore poster at EMNLP 2025" data-zh="DivScore 在 EMNLP 2025 的海报">DivScore poster at EMNLP 2025</figcaption>
+</figure>
+
+<p class="proj-links">
+    <a href="https://arxiv.org/abs/2506.06705" target="_blank" rel="noopener"><span data-en="Paper" data-zh="论文">Paper</span></a>
+    <a href="https://github.com/richardChenzhihui/DivScore" target="_blank" rel="noopener"><span data-en="Code" data-zh="代码">Code</span></a>
+</p>
+
+</article>
+
+<article class="project">
     <h2 data-en="Legal ASR Service: Whisper Large-v2 Deployment with Docker + FastAPI" data-zh="法律语音转写服务：Whisper Large-v2 + Docker + FastAPI 部署">Legal ASR Service: Whisper Large-v2 Deployment with Docker + FastAPI</h2>
-    <hr />
 
-    <div class="row">
-        <div class="col-md-8">
-            <p data-en="A GPU-accelerated legal-domain speech-to-text service delivered for Haiwen &amp; Partners LLP (HK), built on Whisper Large-v2 and packaged as a production serving stack." data-zh="为海问律师事务所（香港）交付的 GPU 加速法律领域语音转写服务，基于 Whisper Large-v2，打包为可用于生产的服务栈。">
-                A GPU-accelerated legal-domain speech-to-text service delivered for Haiwen &amp; Partners LLP (HK), built on Whisper Large-v2 and packaged as a production serving stack.
-            </p>
+<p data-en="A GPU-accelerated legal-domain speech-to-text service delivered for Haiwen &amp; Partners LLP (HK), built on Whisper Large-v2 and packaged as a production serving stack." data-zh="为海问律师事务所（香港）交付的 GPU 加速法律领域语音转写服务，基于 Whisper Large-v2，打包为可用于生产的服务栈。">
+    A GPU-accelerated legal-domain speech-to-text service delivered for Haiwen &amp; Partners LLP (HK), built on Whisper Large-v2 and packaged as a production serving stack.
+</p>
 
-            <h4 data-en="Serving stack" data-zh="服务栈">Serving stack</h4>
-            <ul>
-                <li data-en="&lt;strong&gt;Whisper Large-v2&lt;/strong&gt; with GPU acceleration for legal-domain audio" data-zh="&lt;strong&gt;Whisper Large-v2&lt;/strong&gt;，面向法律领域音频的 GPU 加速推理">
-                    <strong>Whisper Large-v2</strong> with GPU acceleration for legal-domain audio
-                </li>
-                <li data-en="&lt;strong&gt;Docker + FastAPI&lt;/strong&gt; serving pipeline for reproducible deployment" data-zh="&lt;strong&gt;Docker + FastAPI&lt;/strong&gt; 服务流水线，保证可复现部署">
-                    <strong>Docker + FastAPI</strong> serving pipeline for reproducible deployment
-                </li>
-                <li data-en="&lt;strong&gt;7.8% average WER&lt;/strong&gt; on the delivered legal transcription workload" data-zh="交付的法律转写任务上&lt;strong&gt;平均 WER 7.8%&lt;/strong&gt;">
-                    <strong>7.8% average WER</strong> on the delivered legal transcription workload
-                </li>
-            </ul>
-        </div>
+<h4 data-en="Serving stack" data-zh="服务栈">Serving stack</h4>
+<ul>
+    <li data-en="&lt;strong&gt;Whisper Large-v2&lt;/strong&gt; with GPU acceleration for legal-domain audio" data-zh="&lt;strong&gt;Whisper Large-v2&lt;/strong&gt;，面向法律领域音频的 GPU 加速推理">
+        <strong>Whisper Large-v2</strong> with GPU acceleration for legal-domain audio
+    </li>
+    <li data-en="&lt;strong&gt;Docker + FastAPI&lt;/strong&gt; serving pipeline for reproducible deployment" data-zh="&lt;strong&gt;Docker + FastAPI&lt;/strong&gt; 服务流水线，保证可复现部署">
+        <strong>Docker + FastAPI</strong> serving pipeline for reproducible deployment
+    </li>
+    <li data-en="&lt;strong&gt;7.8% average WER&lt;/strong&gt; on the delivered legal transcription workload" data-zh="交付的法律转写任务上&lt;strong&gt;平均 WER 7.8%&lt;/strong&gt;">
+        <strong>7.8% average WER</strong> on the delivered legal transcription workload
+    </li>
+</ul>
 
-        <div class="col-md-4">
-            <img src="/assets/images/projects/whisper-legal-asr.svg" alt="Legal ASR Service" class="img-fluid rounded shadow-sm mb-3" />
+</article>
 
-            <div class="mt-3 p-2 bg-light rounded">
-                <p class="small mb-1"><strong data-en="Highlights" data-zh="亮点">Highlights</strong></p>
-                <p class="small mb-0">
-                    <span class="badge badge-success" data-en="Whisper Large-v2" data-zh="Whisper Large-v2">Whisper Large-v2</span>
-                    <span class="badge badge-info" data-en="Docker + FastAPI" data-zh="Docker + FastAPI">Docker + FastAPI</span>
-                    <span class="badge badge-secondary" data-en="WER 7.8%" data-zh="WER 7.8%">WER 7.8%</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-12 col-sm-12 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="p-4">
+<article class="project">
     <h2 data-en="Quant Trading Agent: Autonomous LangChain Agent for HK Equities" data-zh="Quant Trading Agent：面向港股的自主 LangChain 交易智能体">Quant Trading Agent: Autonomous LangChain Agent for HK Equities</h2>
-    <hr />
 
-    <div class="row">
-        <div class="col-md-8">
-            <p data-en="An autonomous trading agent built at AQUMON on a LangChain architecture, orchestrating market analysis, signal generation, decision-making, and execution monitoring into a single closed loop for programmatic Hong Kong equity trading." data-zh="在 AQUMON 开发的自主交易智能体，基于 LangChain 架构，将行情分析、信号生成、策略决策与执行监控编排为单一闭环，支撑港股程序化交易。">
-                An autonomous trading agent built at AQUMON on a LangChain architecture, orchestrating market analysis, signal generation, decision-making, and execution monitoring into a single closed loop for programmatic Hong Kong equity trading.
-            </p>
+<p data-en="An autonomous trading agent built at AQUMON on a LangChain architecture, orchestrating market analysis, signal generation, decision-making, and execution monitoring into one end-to-end pipeline for programmatic Hong Kong equity trading." data-zh="在 AQUMON 开发的自主交易智能体，基于 LangChain 架构，将行情分析、信号生成、策略决策与执行监控编排为一条端到端流程，支撑港股程序化交易。">
+    An autonomous trading agent built at AQUMON on a LangChain architecture, orchestrating market analysis, signal generation, decision-making, and execution monitoring into one end-to-end pipeline for programmatic Hong Kong equity trading.
+</p>
 
-            <h4 data-en="What it does" data-zh="核心能力">What it does</h4>
-            <ul>
-                <li data-en="&lt;strong&gt;LangChain orchestration&lt;/strong&gt; connecting market understanding, signal generation, strategy decision, and execution monitoring" data-zh="&lt;strong&gt;LangChain 编排&lt;/strong&gt;，打通行情理解、信号生成、策略决策与执行监控">
-                    <strong>LangChain orchestration</strong> connecting market understanding, signal generation, strategy decision, and execution monitoring
-                </li>
-                <li data-en="&lt;strong&gt;Futu OpenAPI integration&lt;/strong&gt; for real-time market-data streaming and automated order execution" data-zh="&lt;strong&gt;对接 Futu OpenAPI&lt;/strong&gt;，实现实时行情接入与自动下单执行">
-                    <strong>Futu OpenAPI integration</strong> for real-time market-data streaming and automated order execution
-                </li>
-                <li data-en="&lt;strong&gt;Strategy validation loop&lt;/strong&gt; to speed up iteration and deployment of programmatic strategies" data-zh="&lt;strong&gt;策略验证闭环&lt;/strong&gt;，加速程序化策略的迭代与落地">
-                    <strong>Strategy validation loop</strong> to speed up iteration and deployment of programmatic strategies
-                </li>
-            </ul>
+<h4 data-en="What it does" data-zh="核心能力">What it does</h4>
+<ul>
+    <li data-en="&lt;strong&gt;LangChain orchestration&lt;/strong&gt; connecting market understanding, signal generation, strategy decision, and execution monitoring" data-zh="&lt;strong&gt;LangChain 编排&lt;/strong&gt;，打通行情理解、信号生成、策略决策与执行监控">
+        <strong>LangChain orchestration</strong> connecting market understanding, signal generation, strategy decision, and execution monitoring
+    </li>
+    <li data-en="&lt;strong&gt;Futu OpenAPI integration&lt;/strong&gt; for real-time market-data streaming and automated order execution" data-zh="&lt;strong&gt;对接 Futu OpenAPI&lt;/strong&gt;，实现实时行情接入与自动下单执行">
+        <strong>Futu OpenAPI integration</strong> for real-time market-data streaming and automated order execution
+    </li>
+    <li data-en="&lt;strong&gt;Strategy validation loop&lt;/strong&gt; to speed up iteration and deployment of programmatic strategies" data-zh="&lt;strong&gt;策略验证流程&lt;/strong&gt;，加速程序化策略的迭代与落地">
+        <strong>Strategy validation loop</strong> to speed up iteration and deployment of programmatic strategies
+    </li>
+</ul>
 
-            <h4 data-en="Why it matters" data-zh="为什么重要">Why it matters</h4>
-            <ul>
-                <li data-en="Demonstrates agent orchestration and tool-calling against a real, latency-sensitive external API" data-zh="展示面向真实、对延迟敏感的外部 API 的 Agent 编排与工具调用能力">
-                    Demonstrates agent orchestration and tool-calling against a real, latency-sensitive external API
-                </li>
-                <li data-en="End-to-end loop from perception to action, the same shape as agentic post-training environments" data-zh="从感知到执行的端到端闭环，与 agentic 后训练环境同构">
-                    End-to-end loop from perception to action, the same shape as agentic post-training environments
-                </li>
-            </ul>
-        </div>
+<h4 data-en="Motivation" data-zh="动机">Motivation</h4>
+<ul>
+    <li data-en="Demonstrates agent orchestration and tool-calling against a real, latency-sensitive external API" data-zh="展示面向真实、对延迟敏感的外部 API 的 Agent 编排与工具调用能力">
+        Demonstrates agent orchestration and tool-calling against a real, latency-sensitive external API
+    </li>
+    <li data-en="End-to-end loop from perception to action, the same shape as agentic post-training environments" data-zh="从感知到执行的端到端流程，与 agentic 后训练环境同构">
+        End-to-end loop from perception to action, the same shape as agentic post-training environments
+    </li>
+</ul>
 
-        <div class="col-md-4">
-            <img src="/assets/images/projects/quant-trading-agent.svg" alt="Quant Trading Agent" class="img-fluid rounded shadow-sm mb-3" />
-
-            <div class="mt-3 p-2 bg-light rounded">
-                <p class="small mb-1"><strong data-en="Highlights" data-zh="亮点">Highlights</strong></p>
-                <p class="small mb-0">
-                    <span class="badge badge-success" data-en="LangChain Agent" data-zh="LangChain 智能体">LangChain Agent</span>
-                    <span class="badge badge-info" data-en="Futu OpenAPI" data-zh="Futu OpenAPI">Futu OpenAPI</span>
-                    <span class="badge badge-secondary" data-en="AQUMON (HK)" data-zh="AQUMON（香港）">AQUMON (HK)</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-        </div>
-    </div>
-    
-</div>
+</article>
 
 
-    </div>
+    </main>
     <footer class="footer">
-    <div class="container-xl">
-        <div class="d-flex flex-wrap justify-content-between">
-            <div>
-                <span class="lang-en">Zhihui Chen &nbsp;·&nbsp; Updated Sep 2026</span>
-                <span class="lang-zh d-none">陈致晖 &nbsp;·&nbsp; 更新于 2026 年 9 月</span>
-            </div>
-            <div><a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a></div>
+    <div class="container">
+        <div>
+            <span class="lang-en">Zhihui Chen &nbsp;&middot;&nbsp; Updated Oct 2026</span>
+            <span class="lang-zh d-none">陈致晖 &nbsp;&middot;&nbsp; 更新于 2026 年 10 月</span>
         </div>
+        <div><a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a></div>
     </div>
 </footer>
 
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/github-buttons/2.14.2/buttons.min.js" integrity="sha512-OYwZx04hKFeFNYrWxIyo3atgGpb+cxU0ENWBZs72X7T9U+NoHPM1ftUn/Mfw7dRDXrqWA6M1wBg6z6fGE32aeA==" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            renderMathInElement(document.body, {
-              delimiters: [
-                  {left: '$$', right: '$$', display: true},
-                  {left: '$', right: '$', display: false}
-              ],
-              throwOnError : false
-            });
-        });
-    </script>
-    <script src="/assets/js/common.js"></script>
-    <script src="/assets/js/bubble_visual_hash.js"></script>
-    <script src="/assets/js/semantic_scholar_citation_count.js"></script>
     <script src="/assets/js/language_switcher.js"></script>
-    <script src="/assets/js/site_fx.js"></script>
 </body>
 </html>
