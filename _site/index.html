@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage - Zhihui Chen</title>
-    <meta name="description" content="Zhihui Chen — My research direction is Coding Agent + RSI: building self-improving coding agents for foundation-model post-training, and applying the same methods to medical agents and medical AI safety.">
+    <meta name="description" content="Zhihui Chen — PhD student at NUS working on post-training for coding agents and recursive self-improvement (RSI), with applications to medical agents and medical AI safety.">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Homepage - Zhihui Chen">
-    <meta property="og:description" content="Zhihui Chen — My research direction is Coding Agent + RSI: building self-improving coding agents for foundation-model post-training, and applying the same methods to medical agents and medical AI safety.">
+    <meta property="og:description" content="Zhihui Chen — PhD student at NUS working on post-training for coding agents and recursive self-improvement (RSI), with applications to medical agents and medical AI safety.">
     <meta property="og:type" content="website">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%231a1a1a'/%3E%3Ctext x='32' y='43' font-family='Menlo,monospace' font-size='30' fill='%23ffffff' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="/assets/css/global.css">
@@ -62,20 +62,20 @@
         </p>
         <div class="hero-bio">
             <div class="lang-en"><p>
-  PhD student in Artificial Intelligence at the National University of Singapore, supervised by
+  I am a PhD student in Artificial Intelligence at the National University of Singapore, advised by
   <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
 </p> <p>
-  My research direction is Coding Agent + RSI (recursive self-improvement): coding agents generate, execute and verify real coding tasks, and execution-verified trajectories become training signal for foundation-model post-training &mdash; stronger agents help build stronger models. The same line of work extends to medical agents and medical AI safety.
+  I work on post-training for coding agents, focusing on recursive self-improvement (RSI): the agent generates coding tasks and solves them in a sandbox, trajectories that pass compilation and tests are kept, and the next model is trained on them. The questions I care about are credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent. I also apply these methods to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>), and work on detecting forged medical images and LLM-generated text (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
 </p> <p>
-  I am currently a foundation-model post-training research intern at Zhipu AI (Z.ai), driving post-training with RSI for coding agents. I have also been selected for the Qwen foundation-model internship (Alibaba Tongyi) and for Tencent&rsquo;s Qingyun Elite Research Talent Program.
+  I am currently a research intern on the foundation-model post-training team at Zhipu AI (Z.ai), working on coding-agent post-training. Before that I interned at ByteDance (agentic RL for VLMs; Farsight) and StepFun (pre-training data for StepAudio2.5). I have received a research internship offer from the Qwen team at Alibaba Tongyi Lab, and was selected for Tencent&rsquo;s Qingyun Program.
 </p></div>
             <div class="lang-zh d-none"><p>
   新加坡国立大学人工智能博士生，导师为
   <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
 </p> <p>
-  研究方向是 Coding Agent + RSI（递归自进化）：智能体生成、执行并验证真实编码任务，经执行验证的轨迹成为基座模型后训练的训练信号——更强的智能体帮助构建更强的模型。同一研究方向也延伸到医疗 Agent 与医疗 AI 安全。
+  研究方向是 Coding Agent + RSI（递归自进化）的后训练：Agent 生成编码任务并在沙箱中求解，通过编译和测试的轨迹被保留，下一版模型在这些轨迹上训练。我关心的问题是长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
 </p> <p>
-  现于智谱（Z.ai）基础模型后训练团队实习，以 RSI 驱动 Coding Agent 方向的大模型后训练；同时已获阿里通义 Qwen 基座模型实习与腾讯「青云计划」精英科研人才计划。
+  现于智谱（Z.ai）基础模型后训练团队实习，做 Coding Agent 后训练。此前在字节跳动（视觉语言模型的 Agent 强化学习，Farsight）和阶跃星辰（StepAudio2.5 预训练数据）实习。已获阿里通义实验室 Qwen 团队研究实习录用，并入选腾讯「青云计划」。
 </p></div>
         </div>
         <p class="hero-links">
@@ -111,25 +111,25 @@
     
     <article class="rs-item">
         <div class="rs-label">
-            <span class="lang-en">Direction 01 · Coding Agents & Recursive Self-Improvement</span>
-            <span class="lang-zh d-none">方向一 · Coding Agent 与递归自进化</span>
+            <span class="lang-en">Direction 01 · Coding Agent + RSI</span>
+            <span class="lang-zh d-none">方向一 · Coding Agent + RSI</span>
         </div>
         <h3 class="rs-title">
-            <span class="lang-en">Stronger coding agents should help build stronger models.</span>
-            <span class="lang-zh d-none">更强的 Coding Agent，应当参与构建更强的模型。</span>
+            <span class="lang-en">Post-training coding agents on execution-verified trajectories</span>
+            <span class="lang-zh d-none">基于执行验证轨迹的 Coding Agent 后训练</span>
         </h3>
 
         <p class="rs-summary">
-            <span class="lang-en">I work on the training pipeline that turns agent execution into model progress: coding agents propose real software tasks and execute them in sandboxes; only trajectories that compile, pass tests, and reproduce are kept as post-training data; the updated model then runs a stronger agent in the next round. Whether the loop actually improves the model depends on three problems I study: long-horizon credit assignment, reward and verifier design, and independent auditing of agent actions.</span>
-            <span class="lang-zh d-none">我研究把智能体执行转化为模型进步的训练流程：Coding Agent 生成真实编码任务并在沙箱中执行；只有能编译、能通过测试、能复现的轨迹才保留为后训练数据；更新后的模型在下一轮运行更强的智能体。这个循环能否真正提升模型，取决于我研究的三个问题——长程任务的信用分配、奖励与验证器的设计、对智能体行动的独立审查。</span>
+            <span class="lang-en">A coding agent proposes software tasks and solves them in a sandbox. Trajectories that compile, pass the tests and reproduce are kept as SFT and RL data, and the updated model runs the agent in the next round. Each round only helps if the filter is reliable, so most of my work is on the filter and the training signal: credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker the agent does not control.</span>
+            <span class="lang-zh d-none">Coding Agent 提出软件任务并在沙箱中求解；能编译、通过测试且可复现的轨迹保留为 SFT 与 RL 数据；更新后的模型进入下一轮。每一轮是否有效取决于筛选是否可靠，因此我的工作主要在筛选与训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用 Agent 无法控制的检查器审查其行动。</span>
         </p>
 
         
         <p class="rs-chain">
             
             <span class="rd-node">
-                <span class="lang-en">Agent proposes a real coding task</span>
-                <span class="lang-zh d-none">智能体生成真实编码任务</span>
+                <span class="lang-en">Agent proposes a coding task</span>
+                <span class="lang-zh d-none">Agent 生成编码任务</span>
             </span>
             <span class="rd-arrow" aria-hidden="true">&rarr;</span>
             
@@ -158,8 +158,8 @@
             <span class="rd-arrow" aria-hidden="true">&rarr;</span>
             
             <span class="rd-node">
-                <span class="lang-en">Stronger model → stronger agent</span>
-                <span class="lang-zh d-none">更强模型 → 更强智能体</span>
+                <span class="lang-en">Updated model runs the next round</span>
+                <span class="lang-zh d-none">更新后的模型进入下一轮</span>
             </span>
             
             
@@ -167,8 +167,8 @@
         
         <p class="rs-loop">
             <span class="rd-loop-mark" aria-hidden="true">&#8634;</span>
-            <span class="lang-en">One verified round produces one model update; the loop works only if every step can be checked.</span>
-            <span class="lang-zh d-none">每轮通过验证后更新一次模型；循环有效的前提是每一步都可检验。</span>
+            <span class="lang-en">One round = one model update, trained only on trajectories that passed verification.</span>
+            <span class="lang-zh d-none">一轮对应一次模型更新，训练数据只取通过验证的轨迹。</span>
         </p>
         
         
@@ -188,7 +188,7 @@
                     
                     <li><span class="lang-en">Reward & verifier design</span><span class="lang-zh d-none">奖励与验证器设计</span></li>
                     
-                    <li><span class="lang-en">Independent audit of agent actions</span><span class="lang-zh d-none">智能体行动的独立审查</span></li>
+                    <li><span class="lang-en">Independent audit of agent actions</span><span class="lang-zh d-none">Agent 行动的独立审查</span></li>
                     
                 </ul>
             </div>
@@ -219,8 +219,8 @@
                                 <span class="lang-zh d-none">在职</span>
                             </td>
                             <td class="rd-ev-note">
-                                <span class="lang-en">Running the coding-agent RSI loop on a production foundation model: execution-verified trajectories → post-training.</span>
-                                <span class="lang-zh d-none">在产线基座模型上运行 Coding Agent 的 RSI 流程：执行验证轨迹 → 后训练。</span>
+                                <span class="lang-en">Coding-agent post-training on execution-verified trajectories.</span>
+                                <span class="lang-zh d-none">基于执行验证轨迹的 Coding Agent 后训练。</span>
                             </td>
                         </tr>
                         
@@ -234,8 +234,8 @@
                                 <span class="lang-zh d-none">ICLR 2026 · 一作在投</span>
                             </td>
                             <td class="rd-ev-note">
-                                <span class="lang-en">Long-horizon agentic behavior for production data models — reward design and eval loops on a 100×H100 cluster (ByteDance).</span>
-                                <span class="lang-zh d-none">面向 Data 业务基模的长程智能体行为——百卡 H100 集群上的奖励设计与评测迭代（字节跳动）。</span>
+                                <span class="lang-en">Future-discounted visual credit assignment for VLM reinforcement learning; trained on 100×H100 at ByteDance.</span>
+                                <span class="lang-zh d-none">面向视觉语言模型强化学习的未来折扣视觉信用分配；在字节跳动百卡 H100 上训练。</span>
                             </td>
                         </tr>
                         
@@ -249,8 +249,8 @@
                                 <span class="lang-zh d-none">开源 · 53★</span>
                             </td>
                             <td class="rd-ev-note">
-                                <span class="lang-en">Vision-in-the-Loop: every edit is re-rendered in real Office and audited by an independent visual verifier.</span>
-                                <span class="lang-zh d-none">Vision-in-the-Loop：每步编辑经真实 Office 重渲染，由独立视觉验证器审查。</span>
+                                <span class="lang-en">Word/Excel agent. Each edit is re-rendered in real Office and checked by a separate visual verifier.</span>
+                                <span class="lang-zh d-none">Word/Excel 编辑 Agent。每步编辑在真实 Office 中重新渲染，由独立的视觉验证器检查。</span>
                             </td>
                         </tr>
                         
@@ -264,8 +264,8 @@
                                 <span class="lang-zh d-none">开源 88K+ · 下载 150K+</span>
                             </td>
                             <td class="rd-ev-note">
-                                <span class="lang-en">Success-and-failure agent trajectories as reusable post-training signal (GitHub & Hugging Face).</span>
-                                <span class="lang-zh d-none">成败智能体轨迹作为可复用的后训练信号（GitHub 与 Hugging Face）。</span>
+                                <span class="lang-en">Successful and failed editing trajectories, released on GitHub and Hugging Face for post-training.</span>
+                                <span class="lang-zh d-none">成功与失败的编辑轨迹，已在 GitHub 与 Hugging Face 公开，可直接用于后训练。</span>
                             </td>
                         </tr>
                         
@@ -283,13 +283,13 @@
             <span class="lang-zh d-none">方向二 · 医疗 Agent 与医疗 AI 安全</span>
         </div>
         <h3 class="rs-title">
-            <span class="lang-en">Make self-improvement verifiable where feedback is costly: medicine.</span>
-            <span class="lang-zh d-none">把自进化带进反馈昂贵、必须可验证的医疗场景。</span>
+            <span class="lang-en">Medical agents and detection of forged medical content</span>
+            <span class="lang-zh d-none">医疗 Agent 与医疗伪造内容检测</span>
         </h3>
 
         <p class="rs-summary">
-            <span class="lang-en">Medicine is a setting where errors are costly and every check may face clinical review, so self-improvement there has to be verifiable. I work on two lines: medical agents — multimodal reasoning, tool use, and verifiable clinical workflows — and medical AI safety — image integrity, interpretable forgery detection, and rigorous evaluation of agent outputs.</span>
-            <span class="lang-zh d-none">医疗场景出错代价高，每一步都可能面对临床检验，自进化在这里必须可验证。我沿两条线推进：医疗 Agent——多模态推理、工具调用与可验证的临床工作流；医疗 AI 安全——影像真实性、可解释的伪造检测与智能体输出的严格评估。</span>
+            <span class="lang-en">In medicine, checking an output often needs a clinician, so feedback is scarce and expensive. Med-Banana applies RSI to medical image editing: a verifier scores each edit, its feedback refines the prompt over rounds, and the successful and failed trajectories are used for post-training. On the safety side, MedForge detects forged medical images and explains where the forgery is, and DivScore detects LLM-generated medical and legal text without training a detector.</span>
+            <span class="lang-zh d-none">医疗场景中检查一个输出往往需要医生，反馈少且贵。Med-Banana 把 RSI 用于医学图像编辑：验证器为每次编辑打分，反馈逐轮修正 Prompt，成功与失败的轨迹用于后训练。安全方面，MedForge 检测伪造的医学影像并指出伪造位置，DivScore 无需训练检测器即可识别医疗与法律领域的大模型生成文本。</span>
         </p>
 
         
@@ -326,8 +326,8 @@
             <span class="rd-arrow" aria-hidden="true">&rarr;</span>
             
             <span class="rd-node">
-                <span class="lang-en">More reliable medical agent</span>
-                <span class="lang-zh d-none">更可靠的医疗 Agent</span>
+                <span class="lang-en">Updated medical agent</span>
+                <span class="lang-zh d-none">更新后的医疗 Agent</span>
             </span>
             
             
@@ -335,8 +335,8 @@
         
         <p class="rs-loop">
             <span class="rd-loop-mark" aria-hidden="true">&#8634;</span>
-            <span class="lang-en">Verifier feedback drives recursive prompt self-improvement; success-and-failure trajectories then become post-training signal.</span>
-            <span class="lang-zh d-none">验证反馈驱动 Prompt 递归自优化；成败轨迹再成为后训练信号。</span>
+            <span class="lang-en">Verifier feedback refines the prompt over rounds; successful and failed trajectories are then used for post-training.</span>
+            <span class="lang-zh d-none">验证器反馈逐轮修正 Prompt；成功与失败的轨迹随后用于后训练。</span>
         </p>
         
         
@@ -387,8 +387,8 @@
                                 <span class="lang-zh d-none">EMNLP 2026</span>
                             </td>
                             <td class="rd-ev-note">
-                                <span class="lang-en">Agentic post-training for medical image editing, driven by verifier feedback and recursive prompt self-improvement.</span>
-                                <span class="lang-zh d-none">医学图像编辑的智能体后训练；验证反馈驱动 Prompt 递归自优化。</span>
+                                <span class="lang-en">RSI through medical agent self-improvement: verifier-guided prompt refinement and trajectory-based post-training for medical image editing.</span>
+                                <span class="lang-zh d-none">RSI through Medical Agent Self-Improvement：医学图像编辑中由验证器引导的 Prompt 修正与基于轨迹的后训练。</span>
                             </td>
                         </tr>
                         
@@ -402,8 +402,8 @@
                                 <span class="lang-zh d-none">ACL 2026 主会议</span>
                             </td>
                             <td class="rd-ev-note">
-                                <span class="lang-en">Interpretable medical deepfake detection: Localize-then-Analyze reasoning, 19 lesion types, 10 forgery generators.</span>
-                                <span class="lang-zh d-none">可解释医学伪造检测：先定位再分析，覆盖 19 类病灶、10 种伪造模型。</span>
+                                <span class="lang-en">Medical deepfake detection that first localizes the forged region, then explains it; 19 lesion types, 10 forgery generators.</span>
+                                <span class="lang-zh d-none">医学伪造检测：先定位伪造区域再给出解释；覆盖 19 类病灶、10 种伪造模型。</span>
                             </td>
                         </tr>
                         
@@ -417,8 +417,8 @@
                                 <span class="lang-zh d-none">EMNLP 2025</span>
                             </td>
                             <td class="rd-ev-note">
-                                <span class="lang-en">Zero-shot detection of LLM-generated text — an auditing tool for agent outputs.</span>
-                                <span class="lang-zh d-none">大模型生成文本的零样本检测——审计智能体输出的工具。</span>
+                                <span class="lang-en">Zero-shot detection of LLM-generated text in medical and legal domains.</span>
+                                <span class="lang-zh d-none">医疗与法律领域大模型生成文本的零样本检测。</span>
                             </td>
                         </tr>
                         
@@ -432,8 +432,8 @@
                                 <span class="lang-zh d-none">4500 美金算力支持</span>
                             </td>
                             <td class="rd-ev-note">
-                                <span class="lang-en">Supporting medical foundation-model development and verifiable agent workflows.</span>
-                                <span class="lang-zh d-none">支持医疗大模型开发与可验证智能体工作流。</span>
+                                <span class="lang-en">Compute for medical foundation-model and agent experiments.</span>
+                                <span class="lang-zh d-none">用于医疗大模型与 Agent 实验的算力。</span>
                             </td>
                         </tr>
                         
@@ -460,7 +460,7 @@
         
         <div class="news-row">
             <div class="news-date">Sep 2026</div>
-            <div class="news-title" data-en="[Zhipu AI] Started a foundation-model post-training research internship at Zhipu AI (Z.ai) — RSI-driven post-training for coding agents: recursive self-improvement from execution-verified trajectories." data-zh="[智谱] 加入智谱（Z.ai）基础模型后训练团队实习，方向为以 RSI 驱动Coding Agent 的大模型后训练——从经执行验证的自生成轨迹中持续改进模型。">[Zhipu AI] Started a foundation-model post-training research internship at Zhipu AI (Z.ai) — RSI-driven post-training for coding agents: recursive self-improvement from execution-verified trajectories.</div>
+            <div class="news-title" data-en="[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent post-training with RSI." data-zh="[智谱] 加入智谱（Z.ai）基础模型后训练团队实习，做基于 RSI 的 Coding Agent 后训练。">[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent post-training with RSI.</div>
         </div>
         
         <div class="news-row">
@@ -470,17 +470,17 @@
         
         <div class="news-row">
             <div class="news-date">Aug 2026</div>
-            <div class="news-title" data-en="[Tencent Cloud] Awarded the Tencent Cloud Quant Infrastructure Grant (USD 1,000 cloud credits) — low-latency APAC nodes and CCN private-backbone interconnect for quantitative trading and agent workloads." data-zh="[腾讯云] 获得腾讯云量化基础设施资助（1000 美金云算力额度）——面向量化交易与 Agent 工作负载的低延迟亚太节点与 CCN 私有骨干网互联。">[Tencent Cloud] Awarded the Tencent Cloud Quant Infrastructure Grant (USD 1,000 cloud credits) — low-latency APAC nodes and CCN private-backbone interconnect for quantitative trading and agent workloads.</div>
+            <div class="news-title" data-en="[Tencent Cloud] Received the Tencent Cloud Quant Infrastructure Grant (USD 1,000 cloud credits) for quant-trading agent experiments." data-zh="[腾讯云] 获腾讯云量化基础设施资助（1000 美金云额度），用于量化交易 Agent 实验。">[Tencent Cloud] Received the Tencent Cloud Quant Infrastructure Grant (USD 1,000 cloud credits) for quant-trading agent experiments.</div>
         </div>
         
         <div class="news-row">
             <div class="news-date">Aug 2026</div>
-            <div class="news-title" data-en="[EMNLP 2026] Med-Banana is accepted to EMNLP 2026 — connecting RSI and medical agents through feedback-driven prompt self-improvement and trajectory-based post-training." data-zh="[EMNLP 2026] Med-Banana 被 EMNLP 2026 正式录用——连接 RSI 与医疗 Agent，以验证反馈驱动 Prompt 自优化，以成败轨迹支持后训练。">[EMNLP 2026] Med-Banana is accepted to EMNLP 2026 — connecting RSI and medical agents through feedback-driven prompt self-improvement and trajectory-based post-training.</div>
+            <div class="news-title" data-en="[EMNLP 2026] Med-Banana is accepted to EMNLP 2026: RSI through medical agent self-improvement, with verifier-guided prompt refinement and trajectory-based post-training." data-zh="[EMNLP 2026] Med-Banana 被 EMNLP 2026 录用：RSI through Medical Agent Self-Improvement，由验证器引导 Prompt 修正，并基于成败轨迹做后训练。">[EMNLP 2026] Med-Banana is accepted to EMNLP 2026: RSI through medical agent self-improvement, with verifier-guided prompt refinement and trajectory-based post-training.</div>
         </div>
         
         <div class="news-row">
             <div class="news-date">Aug 2026</div>
-            <div class="news-title" data-en="[Tencent] Selected for the Qingyun Program (青云计划) — Tencent's elite research talent track, for game-AI × LLM agent research." data-zh="[腾讯] 入选腾讯「青云计划」精英科研人才计划，研究方向为游戏 AI × 大模型 Agent。">[Tencent] Selected for the Qingyun Program (青云计划) — Tencent's elite research talent track, for game-AI × LLM agent research.</div>
+            <div class="news-title" data-en="[Tencent] Selected for Tencent's Qingyun Program (青云计划), in the game AI × LLM agent track." data-zh="[腾讯] 入选腾讯「青云计划」，方向为游戏 AI × 大模型 Agent。">[Tencent] Selected for Tencent's Qingyun Program (青云计划), in the game AI × LLM agent track.</div>
         </div>
         
     </div>
@@ -676,7 +676,7 @@
                 <div>
                     <div class="cv-org">Zhipu AI (Z.ai, 智谱)</div>
                     <div class="cv-role">Foundation Model Post-Training Research Intern</div>
-                    <div class="cv-note">Coding Agent RSI post-training — agents generate, execute, and verify coding trajectories, then learn from execution-grounded feedback through recursive self-improvement</div>
+                    <div class="cv-note">Coding-agent post-training with RSI: the agent generates and executes coding tasks (including quant/finance code), and the model is trained on trajectories that pass execution checks</div>
                 </div>
             </div>
             
@@ -702,8 +702,8 @@
                 <div class="cv-date">May 2026 - Sep 2026</div>
                 <div>
                     <div class="cv-org">ByteDance · Data Foundation Model (Data 业务基模)</div>
-                    <div class="cv-role">Foundation Model Research Intern — Reasoning Post-Training on a 100&times;H100 Cluster</div>
-                    <div class="cv-note">Multimodal agentic RL for production Data-business foundation models: tool use & long-horizon RLVR, reward design and eval loops, reasoning post-training at scale on 100&times;NVIDIA H100 · Farsight (first-author, ICLR 2026 under review)</div>
+                    <div class="cv-role">Foundation Model Research Intern — Reasoning Post-Training</div>
+                    <div class="cv-note">Agentic RL for multimodal models on the Data foundation-model team: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)</div>
                 </div>
             </div>
             
@@ -742,7 +742,7 @@
                 <div>
                     <div class="cv-org">智谱（Z.ai）</div>
                     <div class="cv-role">基础模型后训练 研发实习生</div>
-                    <div class="cv-note">以 RSI 驱动 Coding Agent 的大模型后训练 —— 量化/金融编码任务提供经执行验证的训练信号，模型从自生成轨迹中持续自我改进</div>
+                    <div class="cv-note">基于 RSI 的 Coding Agent 后训练：Agent 生成并执行编码任务（含量化/金融代码），模型在通过执行检查的轨迹上训练</div>
                 </div>
             </div>
             
@@ -768,8 +768,8 @@
                 <div class="cv-date">2026年5月 - 2026年9月</div>
                 <div>
                     <div class="cv-org">字节跳动 · Data 业务基模</div>
-                    <div class="cv-role">大模型推理后训练 研究实习生（百卡 H100 集群）</div>
-                    <div class="cv-note">面向 Data 业务基模的多模态 Agent 强化学习——工具调用与长链路 RLVR、奖励设计与评测迭代，百卡 NVIDIA H100 集群规模化推理后训练 · Farsight（一作，ICLR 2026 在投）</div>
+                    <div class="cv-role">大模型推理后训练 研究实习生</div>
+                    <div class="cv-note">Data 业务基模团队的多模态 Agent 强化学习：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）</div>
                 </div>
             </div>
             
