@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage - Zhihui Chen</title>
-    <meta name="description" content="Zhihui Chen — PhD student at NUS working on post-training for coding agents and recursive self-improvement (RSI), with applications to medical agents and medical AI safety.">
+    <meta name="description" content="Zhihui Chen — PhD student at NUS working on coding-agent post-training and recursive self-improvement (RSI) for the next-generation GLM foundation model, with applications to medical agents and medical AI safety.">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Homepage - Zhihui Chen">
-    <meta property="og:description" content="Zhihui Chen — PhD student at NUS working on post-training for coding agents and recursive self-improvement (RSI), with applications to medical agents and medical AI safety.">
+    <meta property="og:description" content="Zhihui Chen — PhD student at NUS working on coding-agent post-training and recursive self-improvement (RSI) for the next-generation GLM foundation model, with applications to medical agents and medical AI safety.">
     <meta property="og:type" content="website">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%231a1a1a'/%3E%3Ctext x='32' y='43' font-family='Menlo,monospace' font-size='30' fill='%23ffffff' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="/assets/css/global.css">
@@ -67,7 +67,7 @@
 </p> <p>
   I work on post-training for coding agents, focusing on recursive self-improvement (RSI): the agent generates coding tasks and solves them in a sandbox, trajectories that pass compilation and tests are kept, and the next model is trained on them. The questions I care about are credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent. I also apply these methods to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>), and work on detecting forged medical images and LLM-generated text (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
 </p> <p>
-  I am currently a research intern on the foundation-model post-training team at Zhipu AI (Z.ai), working on coding-agent post-training. Before that I interned at ByteDance (agentic RL for VLMs; Farsight) and StepFun (pre-training data for StepAudio2.5). I have received a research internship offer from the Qwen team at Alibaba Tongyi Lab, and was selected for Tencent&rsquo;s Qingyun Program.
+  I am currently a research intern on the foundation-model post-training team at Zhipu AI (Z.ai), working on coding-agent RSI post-training for the next-generation GLM foundation model. Previously I interned at ByteDance (VLM post-training; Farsight) and StepFun (StepAudio2.5 pre-training). I have received a research internship offer from the Qwen team at Alibaba Tongyi Lab, and was selected for Tencent&rsquo;s Qingyun Program.
 </p></div>
             <div class="lang-zh d-none"><p>
   新加坡国立大学人工智能博士生，导师为
@@ -75,7 +75,7 @@
 </p> <p>
   研究方向是 Coding Agent + RSI（递归自进化）的后训练：Agent 生成编码任务并在沙箱中求解，通过编译和测试的轨迹被保留，下一版模型在这些轨迹上训练。我关心的问题是长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
 </p> <p>
-  现于智谱（Z.ai）基础模型后训练团队实习，做 Coding Agent 后训练。此前在字节跳动（视觉语言模型的 Agent 强化学习，Farsight）和阶跃星辰（StepAudio2.5 预训练数据）实习。已获阿里通义实验室 Qwen 团队研究实习录用，并入选腾讯「青云计划」。
+  现于智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。此前在字节跳动（VLM 后训练，Farsight）和阶跃星辰（StepAudio2.5 基础模型预训练）实习。已获阿里通义实验室 Qwen 团队基础模型研究实习录用，并入选腾讯「青云计划」。
 </p></div>
         </div>
         <p class="hero-links">
@@ -120,8 +120,8 @@
         </h3>
 
         <p class="rs-summary">
-            <span class="lang-en">A coding agent proposes software tasks and solves them in a sandbox. Trajectories that compile, pass the tests and reproduce are kept as SFT and RL data, and the updated model runs the agent in the next round. Each round only helps if the filter is reliable, so most of my work is on the filter and the training signal: credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker the agent does not control.</span>
-            <span class="lang-zh d-none">Coding Agent 提出软件任务并在沙箱中求解；能编译、通过测试且可复现的轨迹保留为 SFT 与 RL 数据；更新后的模型进入下一轮。每一轮是否有效取决于筛选是否可靠，因此我的工作主要在筛选与训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用 Agent 无法控制的检查器审查其行动。</span>
+            <span class="lang-en">A coding agent proposes software tasks and solves them in a sandbox. Trajectories that compile and pass the tests are kept as SFT and RL data, and the updated model runs the agent in the next round. The loop only helps if the filter is reliable, so my work centers on the training signal: credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent.</span>
+            <span class="lang-zh d-none">Coding Agent 提出软件任务并在沙箱中求解；通过编译与测试的轨迹保留为 SFT 与 RL 数据，更新后的模型进入下一轮。循环有效的前提是筛选可靠，因此我的工作集中在训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。</span>
         </p>
 
         
@@ -219,8 +219,8 @@
                                 <span class="lang-zh d-none">在职</span>
                             </td>
                             <td class="rd-ev-note">
-                                <span class="lang-en">Coding-agent post-training on execution-verified trajectories.</span>
-                                <span class="lang-zh d-none">基于执行验证轨迹的 Coding Agent 后训练。</span>
+                                <span class="lang-en">Coding-agent RSI post-training for the next-generation GLM foundation model.</span>
+                                <span class="lang-zh d-none">GLM 下一代基础模型的 Coding Agent RSI 后训练。</span>
                             </td>
                         </tr>
                         
@@ -422,21 +422,6 @@
                             </td>
                         </tr>
                         
-                        <tr>
-                            <td class="rd-ev-name">
-                                <span class="lang-en">MiniMax Cowork Team Fellowship</span>
-                                <span class="lang-zh d-none">MiniMax Cowork Team Fellowship</span>
-                            </td>
-                            <td class="rd-ev-meta">
-                                <span class="lang-en">USD 4,500 compute grant</span>
-                                <span class="lang-zh d-none">4500 美金算力支持</span>
-                            </td>
-                            <td class="rd-ev-note">
-                                <span class="lang-en">Compute for medical foundation-model and agent experiments.</span>
-                                <span class="lang-zh d-none">用于医疗大模型与 Agent 实验的算力。</span>
-                            </td>
-                        </tr>
-                        
                     </tbody>
                 </table>
             </div>
@@ -460,12 +445,12 @@
         
         <div class="news-row">
             <div class="news-date">Sep 2026</div>
-            <div class="news-title" data-en="[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent post-training with RSI." data-zh="[智谱] 加入智谱（Z.ai）基础模型后训练团队实习，做基于 RSI 的 Coding Agent 后训练。">[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent post-training with RSI.</div>
+            <div class="news-title" data-en="[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent RSI post-training for the next-generation GLM foundation model." data-zh="[智谱] 加入智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。">[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent RSI post-training for the next-generation GLM foundation model.</div>
         </div>
         
         <div class="news-row">
             <div class="news-date">Aug 2026</div>
-            <div class="news-title" data-en="[Qwen · Tencent] Selected for the Qwen foundation-model research internship at Alibaba Tongyi Lab, and for Tencent's Qingyun (青云计划) Elite Research Talent Program." data-zh="[Qwen · 腾讯] 获阿里通义实验室 Qwen 基座模型研发实习录用，并入选腾讯「青云计划」精英科研人才计划。">[Qwen · Tencent] Selected for the Qwen foundation-model research internship at Alibaba Tongyi Lab, and for Tencent's Qingyun (青云计划) Elite Research Talent Program.</div>
+            <div class="news-title" data-en="[Qwen] Received a research internship offer from the Qwen foundation model team at Alibaba Tongyi Lab." data-zh="[Qwen] 获阿里通义实验室 Qwen 基础模型团队研究实习录用。">[Qwen] Received a research internship offer from the Qwen foundation model team at Alibaba Tongyi Lab.</div>
         </div>
         
         <div class="news-row">
@@ -676,7 +661,7 @@
                 <div>
                     <div class="cv-org">Zhipu AI (Z.ai, 智谱)</div>
                     <div class="cv-role">Foundation Model Post-Training Research Intern</div>
-                    <div class="cv-note">Coding-agent post-training with RSI: the agent generates and executes coding tasks (including quant/finance code), and the model is trained on trajectories that pass execution checks</div>
+                    <div class="cv-note">Next-generation GLM foundation model · coding-agent RSI post-training: the agent generates and executes coding tasks, and the model is trained on trajectories that pass execution checks</div>
                 </div>
             </div>
             
@@ -684,8 +669,8 @@
                 <div class="cv-date">2026</div>
                 <div>
                     <div class="cv-org">Alibaba Tongyi Lab · Qwen</div>
-                    <div class="cv-role">Qwen Foundation Model Research Intern — selected</div>
-                    <div class="cv-note">Qwen foundation model team · agentic mid-training & post-training</div>
+                    <div class="cv-role">Qwen Foundation Model Research Intern — offer received</div>
+                    <div class="cv-note">Qwen foundation model team · mid-training & post-training</div>
                 </div>
             </div>
             
@@ -702,8 +687,8 @@
                 <div class="cv-date">May 2026 - Sep 2026</div>
                 <div>
                     <div class="cv-org">ByteDance · Data Foundation Model (Data 业务基模)</div>
-                    <div class="cv-role">Foundation Model Research Intern — Reasoning Post-Training</div>
-                    <div class="cv-note">Agentic RL for multimodal models on the Data foundation-model team: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)</div>
+                    <div class="cv-role">VLM Post-Training Research Intern</div>
+                    <div class="cv-note">VLM post-training: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)</div>
                 </div>
             </div>
             
@@ -711,8 +696,8 @@
                 <div class="cv-date">Mar. 2025 - Jul. 2025</div>
                 <div>
                     <div class="cv-org">StepFun (阶跃星辰)</div>
-                    <div class="cv-role">Speech Foundation Model Research Intern — StepAudio2.5 Pre-Training Data</div>
-                    <div class="cv-note">Pre-training data governance for the StepAudio2.5 speech foundation model — audio segmentation &amp; transcription alignment, dialect cleanup (Hakka / Teochew / Cantonese), emotion &amp; scene tagging schemas, and speech&ndash;text corpus construction for ASR / TTS / real-time voice</div>
+                    <div class="cv-role">Speech Foundation Model Research Intern</div>
+                    <div class="cv-note">StepAudio2.5 foundation-model pre-training — audio segmentation &amp; transcription alignment, dialect cleanup (Hakka / Teochew / Cantonese), emotion &amp; scene tagging schemas, and speech&ndash;text corpus construction</div>
                 </div>
             </div>
             
@@ -742,7 +727,7 @@
                 <div>
                     <div class="cv-org">智谱（Z.ai）</div>
                     <div class="cv-role">基础模型后训练 研发实习生</div>
-                    <div class="cv-note">基于 RSI 的 Coding Agent 后训练：Agent 生成并执行编码任务（含量化/金融代码），模型在通过执行检查的轨迹上训练</div>
+                    <div class="cv-note">GLM 下一代基础模型 · Coding Agent RSI 后训练：Agent 生成并执行编码任务，模型在通过执行验证的轨迹上训练</div>
                 </div>
             </div>
             
@@ -750,8 +735,8 @@
                 <div class="cv-date">2026</div>
                 <div>
                     <div class="cv-org">阿里通义实验室 · Qwen</div>
-                    <div class="cv-role">Qwen 基座模型 研发实习生 —— 已获录用</div>
-                    <div class="cv-note">Qwen 基座模型团队 · Agentic 中期训练与后训练</div>
+                    <div class="cv-role">Qwen 基础模型 研究实习生 —— 已获录用</div>
+                    <div class="cv-note">Qwen 基础模型团队 · 中期训练与后训练</div>
                 </div>
             </div>
             
@@ -768,8 +753,8 @@
                 <div class="cv-date">2026年5月 - 2026年9月</div>
                 <div>
                     <div class="cv-org">字节跳动 · Data 业务基模</div>
-                    <div class="cv-role">大模型推理后训练 研究实习生</div>
-                    <div class="cv-note">Data 业务基模团队的多模态 Agent 强化学习：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）</div>
+                    <div class="cv-role">VLM 后训练 研究实习生</div>
+                    <div class="cv-note">VLM 后训练：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）</div>
                 </div>
             </div>
             
@@ -777,8 +762,8 @@
                 <div class="cv-date">2025年3月 - 2025年7月</div>
                 <div>
                     <div class="cv-org">阶跃星辰（StepFun）</div>
-                    <div class="cv-role">语音基础模型 研发实习生（StepAudio2.5 预训练数据）</div>
-                    <div class="cv-note">StepAudio2.5 语音基模预训练数据治理——音频切分与转写对齐、方言清洗（客家 / 潮汕 / 粤语）、情绪与场景标签体系、面向 ASR / TTS / 实时语音交互的语音-文本配对语料建设</div>
+                    <div class="cv-role">语音基础模型 研发实习生</div>
+                    <div class="cv-note">StepAudio2.5 基础模型预训练：音频切分与转写对齐、方言清洗（客家 / 潮汕 / 粤语）、情绪与场景标签体系、语音-文本配对语料建设</div>
                 </div>
             </div>
             
@@ -882,10 +867,10 @@
                 <span class="lang-zh d-none">荣誉与奖励</span>
             </div>
             <ul class="cv-simple lang-en">
-                <li><span>Qwen Foundation Model Research Internship (Alibaba Tongyi Lab) — selected</span><span class="cv-date">2026</span></li><li><span>Qingyun Program (青云计划) — Tencent, elite research talent</span><span class="cv-date">2026</span></li><li><span>Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship, USD 4,500 compute grant</span><span class="cv-date">2026</span></li><li><span>Full Ph.D. Scholarship, National University of Singapore</span><span class="cv-date">2025</span></li><li><span>Outstanding College Graduate (Top 5%), CUHK-Shenzhen</span><span class="cv-date">2022</span></li><li><span>Undergraduate Research Excellence Award, CUHK-Shenzhen</span><span class="cv-date">2021</span></li>
+                <li><span>Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship, USD 4,500 compute grant</span><span class="cv-date">2026</span></li><li><span>Full Ph.D. Scholarship, National University of Singapore</span><span class="cv-date">2025</span></li><li><span>Outstanding College Graduate (Top 5%), CUHK-Shenzhen</span><span class="cv-date">2022</span></li><li><span>Undergraduate Research Excellence Award, CUHK-Shenzhen</span><span class="cv-date">2021</span></li>
             </ul>
             <ul class="cv-simple lang-zh d-none">
-                <li><span>阿里通义实验室 Qwen 基座模型研发实习 已获录用</span><span class="cv-date">2026</span></li><li><span>腾讯「青云计划」精英科研人才 入选</span><span class="cv-date">2026</span></li><li><span>腾讯云量化基础设施资助 —— 1000 美金云算力额度</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship，4500 美金算力支持</span><span class="cv-date">2026</span></li><li><span>新加坡国立大学全额博士奖学金</span><span class="cv-date">2025</span></li><li><span>香港中文大学（深圳）优秀毕业生（前 5%）</span><span class="cv-date">2022</span></li><li><span>香港中文大学（深圳）本科生科研卓越奖</span><span class="cv-date">2021</span></li>
+                <li><span>腾讯云量化基础设施资助 —— 1000 美金云算力额度</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship，4500 美金算力支持</span><span class="cv-date">2026</span></li><li><span>新加坡国立大学全额博士奖学金</span><span class="cv-date">2025</span></li><li><span>香港中文大学（深圳）优秀毕业生（前 5%）</span><span class="cv-date">2022</span></li><li><span>香港中文大学（深圳）本科生科研卓越奖</span><span class="cv-date">2021</span></li>
             </ul>
         </div>
         
