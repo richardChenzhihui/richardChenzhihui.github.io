@@ -26,17 +26,17 @@ short_bio: >-
     研究方向是 Coding Agent + RSI（递归自进化）的后训练：Agent 生成编码任务并在沙箱中求解，通过编译和测试的轨迹被保留，下一版模型在这些轨迹上训练。我关心的问题是长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
   </p>
   <p>
-    现于智谱（Z.ai）基础模型后训练团队实习，做 Coding Agent 后训练。此前在字节跳动（视觉语言模型的 Agent 强化学习，Farsight）和阶跃星辰（StepAudio2.5 预训练数据）实习。已获阿里通义实验室 Qwen 团队研究实习录用，并入选腾讯「青云计划」。
+    现于智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。此前在字节跳动（VLM 后训练，Farsight）和阶跃星辰（StepAudio2.5 基础模型预训练）实习。已获阿里通义实验室 Qwen 团队基础模型研究实习录用，并入选腾讯「青云计划」。
   </p>
 
 hero_summary: >-
-  新加坡国立大学博士生，研究 Coding Agent 后训练与递归自进化（RSI），应用于医疗 Agent 与医疗 AI 安全。
+  新加坡国立大学博士生，研究 Coding Agent 后训练与递归自进化（RSI），现参与 GLM 下一代基础模型研发，并将同类方法应用于医疗 Agent 与医疗 AI 安全。
 
 impact_areas:
   - label: "方向一 · Coding Agent + RSI"
     title: "基于执行验证轨迹的 Coding Agent 后训练"
     summary: >-
-      Coding Agent 提出软件任务并在沙箱中求解；能编译、通过测试且可复现的轨迹保留为 SFT 与 RL 数据；更新后的模型进入下一轮。每一轮是否有效取决于筛选是否可靠，因此我的工作主要在筛选与训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用 Agent 无法控制的检查器审查其行动。
+      Coding Agent 提出软件任务并在沙箱中求解；通过编译与测试的轨迹保留为 SFT 与 RL 数据，更新后的模型进入下一轮。循环有效的前提是筛选可靠，因此我的工作集中在训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。
   - label: "方向二 · 医疗 Agent 与医疗 AI 安全"
     title: "医疗 Agent 与医疗伪造内容检测"
     summary: >-
@@ -64,13 +64,13 @@ experience:
 - name: 智谱（Z.ai）
   logo: /assets/images/badges/Zhipu.png
   position: 基础模型后训练 研发实习生
-  dept: "基于 RSI 的 Coding Agent 后训练：Agent 生成并执行编码任务（含量化/金融代码），模型在通过执行检查的轨迹上训练"
+  dept: "GLM 下一代基础模型 · Coding Agent RSI 后训练：Agent 生成并执行编码任务，模型在通过执行验证的轨迹上训练"
   date: 2026年9月 - 至今
 
 - name: 阿里通义实验室 · Qwen
   logo: /assets/images/badges/Qwen.png
-  position: "Qwen 基座模型 研发实习生 —— 已获录用"
-  dept: "Qwen 基座模型团队 · Agentic 中期训练与后训练"
+  position: "Qwen 基础模型 研究实习生 —— 已获录用"
+  dept: "Qwen 基础模型团队 · 中期训练与后训练"
   date: 2026
 
 - name: 腾讯 · 青云计划
@@ -81,14 +81,14 @@ experience:
 
 - name: 字节跳动 · Data 业务基模
   logo: /assets/images/badges/ByteDance.svg
-  position: 大模型推理后训练 研究实习生
-  dept: "Data 业务基模团队的多模态 Agent 强化学习：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）"
+  position: VLM 后训练 研究实习生
+  dept: "VLM 后训练：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）"
   date: 2026年5月 - 2026年9月
 
 - name: 阶跃星辰（StepFun）
   logo: /assets/images/badges/StepFun.png
-  position: 语音基础模型 研发实习生（StepAudio2.5 预训练数据）
-  dept: "StepAudio2.5 语音基模预训练数据治理——音频切分与转写对齐、方言清洗（客家 / 潮汕 / 粤语）、情绪与场景标签体系、面向 ASR / TTS / 实时语音交互的语音-文本配对语料建设"
+  position: 语音基础模型 研发实习生
+  dept: "StepAudio2.5 基础模型预训练：音频切分与转写对齐、方言清洗（客家 / 潮汕 / 粤语）、情绪与场景标签体系、语音-文本配对语料建设"
   date: 2025年3月 - 2025年7月
 
 - name: AQUMON（香港）
@@ -104,10 +104,6 @@ experience:
   date: 2024年2月 - 2024年4月
 
 awards:
-- name: "阿里通义实验室 Qwen 基座模型研发实习 已获录用"
-  date: 2026
-- name: "腾讯「青云计划」精英科研人才 入选"
-  date: 2026
 - name: "腾讯云量化基础设施资助 —— 1000 美金云算力额度"
   date: 2026
 - name: MiniMax Cowork Team Fellowship，4500 美金算力支持

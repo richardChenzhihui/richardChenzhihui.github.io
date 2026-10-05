@@ -26,22 +26,22 @@ short_bio: >-
     I work on post-training for coding agents, focusing on recursive self-improvement (RSI): the agent generates coding tasks and solves them in a sandbox, trajectories that pass compilation and tests are kept, and the next model is trained on them. The questions I care about are credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent. I also apply these methods to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>), and work on detecting forged medical images and LLM-generated text (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
   </p>
   <p>
-    I am currently a research intern on the foundation-model post-training team at Zhipu AI (Z.ai), working on coding-agent post-training. Before that I interned at ByteDance (agentic RL for VLMs; Farsight) and StepFun (pre-training data for StepAudio2.5). I have received a research internship offer from the Qwen team at Alibaba Tongyi Lab, and was selected for Tencent&rsquo;s Qingyun Program.
+    I am currently a research intern on the foundation-model post-training team at Zhipu AI (Z.ai), working on coding-agent RSI post-training for the next-generation GLM foundation model. Previously I interned at ByteDance (VLM post-training; Farsight) and StepFun (StepAudio2.5 pre-training). I have received a research internship offer from the Qwen team at Alibaba Tongyi Lab, and was selected for Tencent&rsquo;s Qingyun Program.
   </p>
 
 hero_summary: >-
-  PhD student at NUS working on post-training for coding agents and recursive self-improvement (RSI), with applications to medical agents and medical AI safety.
+  PhD student at NUS working on coding-agent post-training and recursive self-improvement (RSI) for the next-generation GLM foundation model, with applications to medical agents and medical AI safety.
 
 impact_areas:
   - label: "Direction 01 · Coding Agent + RSI"
     title: "Post-training coding agents on execution-verified trajectories"
     summary: >-
       A coding agent proposes software tasks and solves them in a sandbox. Trajectories
-      that compile, pass the tests and reproduce are kept as SFT and RL data, and the
-      updated model runs the agent in the next round. Each round only helps if the
-      filter is reliable, so most of my work is on the filter and the training signal:
-      credit assignment over long trajectories, reward and verifier design, and
-      auditing agent actions with a checker the agent does not control.
+      that compile and pass the tests are kept as SFT and RL data, and the updated model
+      runs the agent in the next round. The loop only helps if the filter is reliable, so
+      my work centers on the training signal: credit assignment over long trajectories,
+      reward and verifier design, and auditing agent actions with a checker independent
+      of the agent.
     chain_caption:
       en: "The self-improvement loop"
       zh: "自改进循环"
@@ -78,8 +78,8 @@ impact_areas:
           en: "current role"
           zh: "在职"
         note:
-          en: "Coding-agent post-training on execution-verified trajectories."
-          zh: "基于执行验证轨迹的 Coding Agent 后训练。"
+          en: "Coding-agent RSI post-training for the next-generation GLM foundation model."
+          zh: "GLM 下一代基础模型的 Coding Agent RSI 后训练。"
       - name:
           en: "Farsight"
           zh: "Farsight"
@@ -172,15 +172,6 @@ impact_areas:
         note:
           en: "Zero-shot detection of LLM-generated text in medical and legal domains."
           zh: "医疗与法律领域大模型生成文本的零样本检测。"
-      - name:
-          en: "MiniMax Cowork Team Fellowship"
-          zh: "MiniMax Cowork Team Fellowship"
-        meta:
-          en: "USD 4,500 compute grant"
-          zh: "4500 美金算力支持"
-        note:
-          en: "Compute for medical foundation-model and agent experiments."
-          zh: "用于医疗大模型与 Agent 实验的算力。"
 
 portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-
@@ -204,13 +195,13 @@ experience:
 - name: Zhipu AI (Z.ai, 智谱)
   logo: /assets/images/badges/Zhipu.png
   position: Foundation Model Post-Training Research Intern
-  dept: "Coding-agent post-training with RSI: the agent generates and executes coding tasks (including quant/finance code), and the model is trained on trajectories that pass execution checks"
+  dept: "Next-generation GLM foundation model · coding-agent RSI post-training: the agent generates and executes coding tasks, and the model is trained on trajectories that pass execution checks"
   date: Sep. 2026 - present
 
 - name: Alibaba Tongyi Lab · Qwen
   logo: /assets/images/badges/Qwen.png
-  position: "Qwen Foundation Model Research Intern — selected"
-  dept: "Qwen foundation model team · agentic mid-training & post-training"
+  position: "Qwen Foundation Model Research Intern — offer received"
+  dept: "Qwen foundation model team · mid-training & post-training"
   date: 2026
 
 - name: Tencent · Qingyun Program
@@ -221,14 +212,14 @@ experience:
 
 - name: ByteDance · Data Foundation Model (Data 业务基模)
   logo: /assets/images/badges/ByteDance.svg
-  position: Foundation Model Research Intern — Reasoning Post-Training
-  dept: "Agentic RL for multimodal models on the Data foundation-model team: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)"
+  position: VLM Post-Training Research Intern
+  dept: "VLM post-training: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)"
   date: May 2026 - Sep 2026
 
 - name: StepFun (阶跃星辰)
   logo: /assets/images/badges/StepFun.png
-  position: Speech Foundation Model Research Intern — StepAudio2.5 Pre-Training Data
-  dept: "Pre-training data governance for the StepAudio2.5 speech foundation model — audio segmentation &amp; transcription alignment, dialect cleanup (Hakka / Teochew / Cantonese), emotion &amp; scene tagging schemas, and speech&ndash;text corpus construction for ASR / TTS / real-time voice"
+  position: Speech Foundation Model Research Intern
+  dept: "StepAudio2.5 foundation-model pre-training — audio segmentation &amp; transcription alignment, dialect cleanup (Hakka / Teochew / Cantonese), emotion &amp; scene tagging schemas, and speech&ndash;text corpus construction"
   date: Mar. 2025 - Jul. 2025
 
 - name: AQUMON (Hong Kong)
@@ -244,10 +235,6 @@ experience:
   date: Feb. 2024 - Apr. 2024
 
 awards:
-- name: "Qwen Foundation Model Research Internship (Alibaba Tongyi Lab) — selected"
-  date: 2026
-- name: "Qingyun Program (青云计划) — Tencent, elite research talent"
-  date: 2026
 - name: "Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits"
   date: 2026
 - name: MiniMax Cowork Team Fellowship, USD 4,500 compute grant
