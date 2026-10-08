@@ -23,7 +23,7 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    研究工作是 Coding Agent 的后训练与递归自进化（RSI），同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
+    研究方向是 Coding Agent + RSI（递归自进化）的后训练：Agent 生成编码任务并在沙箱中求解，通过编译和测试的轨迹被保留，下一版模型在这些轨迹上训练。我关心的问题是长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
   </p>
   <p>
     现于智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。此前在字节跳动（VLM 后训练，Farsight）和阶跃星辰（StepAudio2.5 基础模型预训练）实习。已获阿里通义实验室 Qwen 团队基础模型研究实习录用，并入选腾讯「青云计划」。
@@ -34,70 +34,74 @@ hero_summary: >-
 
 impact_areas:
   - label: "方向一 · Coding Agent + RSI"
-    title: "Coding Agent 的递归自进化"
+    title: "基于执行验证轨迹的 Coding Agent 后训练"
     summary: >-
-      让 Coding Agent 在自己生成并验证的轨迹上训练，不断改进自身。
+      Coding Agent 提出软件任务并在沙箱中求解；通过编译与测试的轨迹保留为 SFT 与 RL 数据，更新后的模型进入下一轮。循环有效的前提是筛选可靠，因此我的工作集中在训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。
   - label: "方向二 · 医疗 Agent 与医疗 AI 安全"
     title: "医疗 Agent 与医疗伪造内容检测"
     summary: >-
-      把同类自进化方法用于医疗 Agent，并检测伪造医学影像与大模型生成文本。
-
-portrait_url: /assets/images/photos/portrait-crop.jpg
+      医疗场景中检查一个输出往往需要医生，反馈少且贵。Med-Banana 把 RSI 用于医学图像编辑：验证器为每次编辑打分，反馈逐轮修正 Prompt，成功与失败的轨迹用于后训练。安全方面，MedForge 检测伪造的医学影像并指出伪造位置，DivScore 无需训练检测器即可识别医疗与法律领域的大模型生成文本。
 
 portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-
 
 education:
 - name: 新加坡国立大学
+  logo: /assets/images/badges/NUS.png
   position: 人工智能博士
   dept: "Coding Agent + RSI（递归自进化）· AI for Healthcare"
   date: 2025年1月 - 至今
-  current: true
 - name: 香港大学
+  logo: /assets/images/badges/HKU.jpg
   position: 人工智能理学硕士
   date: 2022年9月 - 2024年7月
-  compact: true
 - name: 香港中文大学（深圳）
+  logo: /assets/images/badges/CU.png
   position: 统计学理学学士（数据科学方向）
   date: 2018年9月 - 2022年5月
-  compact: true
 
 experience:
 - name: 智谱（Z.ai）
+  logo: /assets/images/badges/Zhipu.png
   position: 基础模型后训练 研发实习生
   dept: "GLM 下一代基础模型 · Coding Agent RSI 后训练：Agent 生成并执行编码任务，模型在通过执行验证的轨迹上训练"
   date: 2026年9月 - 至今
-  current: true
 
 - name: 阿里通义实验室 · Qwen
+  logo: /assets/images/badges/Qwen.png
   position: "Qwen 基础模型 研究实习生 —— 已获录用"
   dept: "Qwen 基础模型团队 · 中期训练与后训练"
   date: 2026
 
 - name: 腾讯 · 青云计划
+  logo: /assets/images/badges/Tencent-Qingyun.svg
   position: "「青云计划」精英科研人才 入选"
   dept: "精英科研人才计划 · 游戏 AI × 大模型 Agent 方向"
   date: 2026
 
 - name: 字节跳动 · Data 业务基模
+  logo: /assets/images/badges/ByteDance.svg
   position: VLM 后训练 研究实习生
   dept: "VLM 后训练：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）"
   date: 2026年5月 - 2026年9月
 
 - name: 阶跃星辰（StepFun）
+  logo: /assets/images/badges/StepFun.png
   position: 语音基础模型 研发实习生
   dept: "StepAudio2.5 基础模型预训练：音频切分与转写对齐、方言清洗（客家 / 潮汕 / 粤语）、情绪与场景标签体系、语音-文本配对语料建设"
   date: 2025年3月 - 2025年7月
 
 - name: AQUMON（香港）
+  logo: /assets/images/badges/AQUMON.png
   position: 量化交易 Agent 研发实习生
+  dept: "LangChain Agent 编排 · 对接 Futu OpenAPI 实时行情与自动下单"
   date: 2025年1月 - 2025年3月
-  compact: true
 
 - name: NUS 商学院
+  logo: /assets/images/badges/NUS.png
   position: 教学助理 —《Generative AI and LLM》
+  dept: "课程设计 · 预训练、SFT 与 RLHF 教学"
   date: 2024年2月 - 2024年4月
-  compact: true
 
 awards:
 - name: "腾讯云量化基础设施资助 —— 1000 美金云算力额度"
