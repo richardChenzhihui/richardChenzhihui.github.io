@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Publications - Zhihui Chen</title>
-    <meta name="description" content="Zhihui Chen — PhD student at NUS working on coding-agent post-training and recursive self-improvement (RSI) for the next-generation GLM foundation model, with applications to medical agents and medical AI safety.">
+    <meta name="description" content="Zhihui Chen — PhD student at NUS working on recursive self-improvement (RSI) — models that generate and verify their own training data — for coding and medical agents, currently post-training the next-generation GLM foundation model.">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Publications - Zhihui Chen">
-    <meta property="og:description" content="Zhihui Chen — PhD student at NUS working on coding-agent post-training and recursive self-improvement (RSI) for the next-generation GLM foundation model, with applications to medical agents and medical AI safety.">
+    <meta property="og:description" content="Zhihui Chen — PhD student at NUS working on recursive self-improvement (RSI) — models that generate and verify their own training data — for coding and medical agents, currently post-training the next-generation GLM foundation model.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%231a1a1a'/%3E%3Ctext x='32' y='43' font-family='Menlo,monospace' font-size='30' fill='%23ffffff' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c2024'/%3E%3Ctext x='32' y='44' font-family='-apple-system,Helvetica,sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="/assets/css/global.css">
 </head>
 <body>
@@ -23,16 +23,14 @@
             
             
             
+            
             <a class="nav-link" href="/">
                 <span class="lang-en">Home</span>
                 <span class="lang-zh d-none">首页</span>
             </a>
             
             
-            <a class="nav-link active" href="/publications">
-                <span class="lang-en">Publications</span>
-                <span class="lang-zh d-none">论文发表</span>
-            </a>
+            
             
             
             <a class="nav-link" href="/showcase">
@@ -50,30 +48,41 @@
 </nav>
 
     <main class="container">
-        
+        <h1 class="page-title">
+    <span class="lang-en">Publications</span>
+    <span class="lang-zh d-none">论文发表</span>
+</h1>
 
 
-    <div class="pub-year-heading" id="year-2026">2026</div>
+
+
     
-        
 
-<article class="pub-row pub-row--no-year">
+<article class="pub">
     
-    <div>
+    <a class="pub-thumb" href="https://arxiv.org/abs/2511.00801" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="/assets/images/covers/medbanana_cover.png" alt="Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories" loading="lazy">
+    </a>
+    
+    <div class="pub-body">
         
         <h3 class="pub-title">
             <a href="https://arxiv.org/abs/2511.00801" target="_blank" rel="noopener" class="publication-title-link" data-en="Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories" data-zh="Med-Banana：从成败轨迹学习 Agentic 质量可控的医学图像编辑"><span class="title-text">Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</span></a>
         </h3>
         
-        
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><span class="text-body">
             Qingyuan Lei, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng</a></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Accepted&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;已录用&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Accepted</span></span></p>
+        <p class="pub-venue">
+            <span class="chip-venue">EMNLP 2026</span>
+            <span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span>
+            <span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Accepted&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;已录用&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Accepted</span></span>
+        </p>
         
         <p class="pub-abstract" data-en="Med-Banana connects my RSI research to medical agents through prompt-level self-improvement. An editor, verifier, and refiner form a recursive feedback loop: diagnose failed edits, revise positive and negative prompts using failure history, and retry from the original image. Success-and-failure trajectories supervise all three components, connecting agentic post-training with test-time refinement. Med-Banana-80K preserves 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories." data-zh="Med-Banana 将我的 RSI 研究落到医疗 Agent 的 Prompt 自优化：编辑器执行、验证器诊断失败、精炼器结合历史反馈改写正负 Prompt，递归推进下一轮尝试。成败轨迹分别监督编辑、验证与修正能力，将 Agentic 后训练与推理时自优化连接起来。Med-Banana-80K 保留 50,635 条成功与 37,822 条失败轨迹，覆盖三种医学影像模态与 23 类疾病。">Med-Banana connects my RSI research to medical agents through prompt-level self-improvement. An editor, verifier, and refiner form a recursive feedback loop: diagnose failed edits, revise positive and negative prompts using failure history, and retry from the original image. Success-and-failure trajectories supervise all three components, connecting agentic post-training with test-time refinement. Med-Banana-80K preserves 50,635 successful and 37,822 failed attempts across three imaging modalities and 23 disease categories.</p>
         
-        <p class="abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2511.00801","Code":"https://github.com/richardChenzhihui/med-banana-50k/","Dataset":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","Project Page":"/showcase.html#projects"}' data-links-zh='{"论文":"https://arxiv.org/abs/2511.00801","代码":"https://github.com/richardChenzhihui/med-banana-50k/","数据集":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","项目页面":"/showcase.html#projects"}'>
+        
+        <p class="pub-links abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2511.00801","Code":"https://github.com/richardChenzhihui/med-banana-50k/","Dataset":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","Project Page":"/showcase.html#projects"}' data-links-zh='{"论文":"https://arxiv.org/abs/2511.00801","代码":"https://github.com/richardChenzhihui/med-banana-50k/","数据集":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","项目页面":"/showcase.html#projects"}'>
             
             
             <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2511.00801">Paper</a>
@@ -92,44 +101,53 @@
             
             
         </p>
+        
     </div>
 </article>
 
-    
-        
 
-<article class="pub-row pub-row--no-year">
     
-    <div>
+
+<article class="pub">
+    
+    <a class="pub-thumb" href="#" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="/assets/images/publications/vfipo/thumb.svg" alt="Looking Ahead to Stay Grounded: Future-Discounted Visual Credit Assignment for VLM Reinforcement Learning" loading="lazy">
+    </a>
+    
+    <div class="pub-body">
         
         <h3 class="pub-title publication-title" data-en="Looking Ahead to Stay Grounded: Future-Discounted Visual Credit Assignment for VLM Reinforcement Learning" data-zh="Looking Ahead to Stay Grounded：面向视觉语言模型强化学习的未来折扣视觉信用分配">Looking Ahead to Stay Grounded: Future-Discounted Visual Credit Assignment for VLM Reinforcement Learning</h3>
-        
         
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><span class="text-body">
             Yike Yun, </span><span class="text-body">
             et al.</span></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="ICLR 2026 submission" data-pub-zh="ICLR 2026" data-pub-post=""><i>ICLR 2026 submission</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;Under Review&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;First Author&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;在投&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;一作&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-warning">Under Review</span> <span class="badge badge-pill badge-publication badge-info">First Author</span></span></p>
+        <p class="pub-venue">
+            
+            <span class="pub-venue-text" data-pub-pre="" data-pub-en="ICLR 2026 submission" data-pub-zh="ICLR 2026" data-pub-post=""><i>ICLR 2026 submission</i></span>
+            <span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;Under Review&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;First Author&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;在投&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;一作&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-warning">Under Review</span> <span class="badge badge-pill badge-publication badge-info">First Author</span></span>
+        </p>
         
         <p class="pub-abstract" data-en="Farsight targets a core failure mode of RLVR post-training for vision-language models: token-level credit assignment that only rewards instant visual dependence, which lets models drift into ungrounded reasoning over long horizons. We extend credit assignment to future-discounted visual grounding — a token earns visual credit not only for the evidence it uses now, but for how that evidence supports discounted future reasoning steps — encouraging policies that stay anchored to the image across multi-step chains of thought. Developed during my foundation-model reasoning post-training research internship at ByteDance, on a 100×H100 cluster." data-zh="Farsight 针对视觉语言模型 RLVR 后训练的一个核心失效模式：token 级信用分配只奖励「即时视觉依赖」，使模型在长推理链中逐渐脱离视觉证据。我们将信用分配扩展为「未来折扣视觉锚定」——token 获得的视觉信用不仅来自当前使用的证据，也来自该证据对折扣后未来推理步骤的支撑——从而促使策略在多步思维链中始终锚定图像。该工作完成于字节跳动大模型推理后训练研发实习期间（百卡 H100 集群）。">Farsight targets a core failure mode of RLVR post-training for vision-language models: token-level credit assignment that only rewards instant visual dependence, which lets models drift into ungrounded reasoning over long horizons. We extend credit assignment to future-discounted visual grounding — a token earns visual credit not only for the evidence it uses now, but for how that evidence supports discounted future reasoning steps — encouraging policies that stay anchored to the image across multi-step chains of thought. Developed during my foundation-model reasoning post-training research internship at ByteDance, on a 100×H100 cluster.</p>
         
-        <p class="abstract-links" data-links-en='null' data-links-zh='null'>
-            
-        </p>
+        
     </div>
 </article>
 
-    
-        
 
-<article class="pub-row pub-row--no-year">
     
-    <div>
+
+<article class="pub">
+    
+    <a class="pub-thumb" href="https://arxiv.org/abs/2603.18577" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="/assets/images/publications/medforge/thumb.png" alt="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" loading="lazy">
+    </a>
+    
+    <div class="pub-body">
         
         <h3 class="pub-title">
             <a href="https://arxiv.org/abs/2603.18577" target="_blank" rel="noopener" class="publication-title-link" data-en="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" data-zh="MedForge：基于伪造感知推理的可解释医学深度伪造检测"><span class="title-text">MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</span></a>
         </h3>
-        
         
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Kai He</a>, <span class="text-body">
@@ -138,11 +156,16 @@
             Jian Zhang, </span><span class="text-body">
             Yuling Xu, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng<sup>#</sup></a>
 <mark>(<sup>#</sup> <i><span class="lang-en"> corresponding author</span><span class="lang-zh d-none"> 通讯作者</span></i>)</mark></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="Annual Meeting of the Association for Computational Linguistics (ACL)" data-pub-zh="计算语言学协会年会 (ACL)" data-pub-post=""><i>Annual Meeting of the Association for Computational Linguistics (ACL)</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Main Conference&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;主会议&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span></p>
+        <p class="pub-venue">
+            <span class="chip-venue">ACL 2026</span>
+            <span class="pub-venue-text" data-pub-pre="" data-pub-en="Annual Meeting of the Association for Computational Linguistics (ACL)" data-pub-zh="计算语言学协会年会 (ACL)" data-pub-post=""><i>Annual Meeting of the Association for Computational Linguistics (ACL)</i></span>
+            <span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Main Conference&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;主会议&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span>
+        </p>
         
         <p class="pub-abstract" data-en="As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales." data-zh="随着生成模型能力提升，可在影像中植入或移除病灶且仍看似合理的医学深度伪造，对临床安全与医学证据可信性带来新风险。既有方法多将任务简化为真伪二分类，却难以说明伪造位置与判据。本文提出 MedForge：推出 MedForge-90K——首个大规模可解释医学深度伪造数据集，覆盖 CT、MRI 与 X 线，含 19 类病灶、由 10 种前沿深度伪造模型生成伪造样本，并提供专家引导的定位与临床级解释；以及 MedForge-Reasoner，采用「先定位再分析」思维链与 Forgery-aware GSPO 强化学习训练。实验表明该检测器达到领先检测性能，并能给出可对照影像验证的本地化医学解释。">As generative models improve, medical deepfakes that implant or remove lesions while staying visually plausible pose growing risks to clinical safety and the integrity of medical evidence. Most prior work reduces detection to binary real-vs-fake scoring with little insight into where manipulation occurs or why. We present MedForge, an interpretable framework that introduces MedForge-90K—the first large-scale explainable medical deepfake dataset spanning CT, MRI, and X-ray, covering 19 lesion types with forgeries from 10 state-of-the-art deepfake models, each paired with expert-guided localization and clinical-grade explanations—and MedForge-Reasoner, a detector trained with a Localize-then-Analyze chain-of-thought paradigm and Forgery-aware GSPO reinforcement learning. MedForge-Reasoner achieves state-of-the-art detection while producing localized, verifiable medical rationales.</p>
         
-        <p class="abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2603.18577","Project Page":"/publications/medforge.html","Model":"https://huggingface.co/RichardChenZH/MedForge-Reasoner","Dataset":"https://huggingface.co/datasets/RichardChenZH/MedForge-90K"}' data-links-zh='{"论文":"https://arxiv.org/abs/2603.18577","项目页面":"/publications/medforge.html","模型":"https://huggingface.co/RichardChenZH/MedForge-Reasoner","数据集":"https://huggingface.co/datasets/RichardChenZH/MedForge-90K"}'>
+        
+        <p class="pub-links abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2603.18577","Project Page":"/publications/medforge.html","Model":"https://huggingface.co/RichardChenZH/MedForge-Reasoner","Dataset":"https://huggingface.co/datasets/RichardChenZH/MedForge-90K"}' data-links-zh='{"论文":"https://arxiv.org/abs/2603.18577","项目页面":"/publications/medforge.html","模型":"https://huggingface.co/RichardChenZH/MedForge-Reasoner","数据集":"https://huggingface.co/datasets/RichardChenZH/MedForge-90K"}'>
             
             
             <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2603.18577">Paper</a>
@@ -161,31 +184,37 @@
             
             
         </p>
+        
     </div>
 </article>
 
+
     
 
-    <div class="pub-year-heading" id="year-2025">2025</div>
+<article class="pub">
     
-        
-
-<article class="pub-row pub-row--no-year">
+    <a class="pub-thumb" href="https://aclanthology.org/2025.emnlp-main.971/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="/assets/images/publications/divscore/thumb.jpg" alt="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" loading="lazy">
+    </a>
     
-    <div>
+    <div class="pub-body">
         
         <h3 class="pub-title">
             <a href="https://aclanthology.org/2025.emnlp-main.971/" target="_blank" rel="noopener" class="publication-title-link" data-en="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" data-zh="DivScore: 专业领域中大语言模型生成文本的零样本检测"><span class="title-text">DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains</span></a>
         </h3>
         
-        
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Kai He</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yucheng Huang</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yunxiao Zhu</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng</a></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Main Conference&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;主会议&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span></p>
+        <p class="pub-venue">
+            <span class="chip-venue">EMNLP 2025</span>
+            <span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span>
+            <span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Main Conference&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;主会议&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span>
+        </p>
         
         <p class="pub-abstract" data-en="Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold." data-zh="在医学和法律等专业高风险领域检测大语言模型生成的文本对于打击错误信息和确保真实性至关重要。我们提出了DivScore，一个使用归一化熵评分和领域知识蒸馏的零样本检测框架，能够稳健地识别专业领域中的大语言模型生成文本。实验表明，DivScore始终优于最先进的检测器，AUROC提高14.4%，在0.1%误报率阈值下召回率提高64.0%。">Detecting LLM-generated text in specialized and high-stakes domains like medicine and law is crucial for combating misinformation and ensuring authenticity. We propose DivScore, a zero-shot detection framework using normalized entropy-based scoring and domain knowledge distillation to robustly identify LLM-generated text in specialized domains. Experiments show that DivScore consistently outperforms state-of-the-art detectors, with 14.4% higher AUROC and 64.0% higher recall at 0.1% false positive rate threshold.</p>
         
-        <p class="abstract-links" data-links-en='{"Paper":"https://aclanthology.org/2025.emnlp-main.971/","Code":"https://github.com/richardChenzhihui/DivScore","Project Page":"/publications/divscore.html"}' data-links-zh='{"论文":"https://aclanthology.org/2025.emnlp-main.971/","代码":"https://github.com/richardChenzhihui/DivScore","项目页面":"/publications/divscore.html"}'>
+        
+        <p class="pub-links abstract-links" data-links-en='{"Paper":"https://aclanthology.org/2025.emnlp-main.971/","Code":"https://github.com/richardChenzhihui/DivScore","Project Page":"/publications/divscore.html"}' data-links-zh='{"论文":"https://aclanthology.org/2025.emnlp-main.971/","代码":"https://github.com/richardChenzhihui/DivScore","项目页面":"/publications/divscore.html"}'>
             
             
             <a target="_blank" rel="noopener" href="https://aclanthology.org/2025.emnlp-main.971/">Paper</a>
@@ -200,70 +229,44 @@
             
             
         </p>
+        
     </div>
 </article>
 
-    
 
-    <div class="pub-year-heading" id="year-2024">2024</div>
-    
-        
 
-<article class="pub-row pub-row--no-year">
-    
-    <div>
-        
-        <h3 class="pub-title publication-title" data-en="Production Efficiency Analysis Based on RFID-Collected Manufacturing Big Data" data-zh="基于RFID采集制造大数据的生产效率分析">Production Efficiency Analysis Based on RFID-Collected Manufacturing Big Data</h3>
-        
-        
-        <p class="pub-authors"><span class="text-body">
-            <strong>Zhihui Chen</strong></span></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="52nd NAMRC (North American Manufacturing Research Conference)" data-pub-zh="第52届北美制造研究会议 (NAMRC)" data-pub-post=""><i>52nd NAMRC (North American Manufacturing Research Conference)</i></span><span class="pub-venue-misc" data-en="" data-zh=""></span></p>
-        
-        <p class="pub-abstract" data-en="This paper presents a production efficiency analysis framework based on RFID-collected manufacturing big data, enabling real-time monitoring and optimization of manufacturing processes." data-zh="本文提出了一个基于RFID采集的制造大数据的生产效率分析框架，实现了制造过程的实时监控和优化。">This paper presents a production efficiency analysis framework based on RFID-collected manufacturing big data, enabling real-time monitoring and optimization of manufacturing processes.</p>
-        
-        <p class="abstract-links" data-links-en='null' data-links-zh='null'>
-            
-        </p>
-    </div>
-</article>
 
-    
 
-    <div class="pub-year-heading" id="year-2021">2021</div>
+<h2 class="subhead">
+    <span class="lang-en">Other Publications</span>
+    <span class="lang-zh d-none">其他论文</span>
+</h2>
+<ul class="pub-misc">
     
-        
-
-<article class="pub-row pub-row--no-year">
+    <li>
+        <span class="pub-misc-title">Production Efficiency Analysis Based on RFID-Collected Manufacturing Big Data</span>
+        <span class="pub-misc-venue"> &middot; <i>52nd NAMRC (North American Manufacturing Research Conference)</i>, 2024</span>
+    </li>
     
-    <div>
-        
-        <h3 class="pub-title publication-title" data-en="Clustering Enabled Few-Shot Load Forecasting" data-zh="基于聚类的小样本负载预测">Clustering Enabled Few-Shot Load Forecasting</h3>
-        
-        
-        <p class="pub-authors"><a class="text-body" target="_blank" href="https://scholar.google.com/">Qiyuan Wang</a>, <span class="text-body">
-            <strong>Zhihui Chen</strong></span></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="IEEE iSPEC (International Smart Power and Energy Conference)" data-pub-zh="IEEE国际智能电力与能源会议 (iSPEC)" data-pub-post=""><i>IEEE iSPEC (International Smart Power and Energy Conference)</i></span><span class="pub-venue-misc" data-en="" data-zh=""></span></p>
-        
-        <p class="pub-abstract" data-en="We propose a clustering-enabled few-shot learning approach for load forecasting, which significantly improves prediction accuracy with limited training data. This work also led to a patent (CN113887812B)." data-zh="我们提出了一种基于聚类的小样本学习方法用于负载预测，在有限训练数据的情况下显著提高了预测精度。该工作还获得了专利授权（CN113887812B）。">We propose a clustering-enabled few-shot learning approach for load forecasting, which significantly improves prediction accuracy with limited training data. This work also led to a patent (CN113887812B).</p>
-        
-        <p class="abstract-links" data-links-en='null' data-links-zh='null'>
-            
-        </p>
-    </div>
-</article>
-
+    <li>
+        <span class="pub-misc-title">Clustering Enabled Few-Shot Load Forecasting</span>
+        <span class="pub-misc-venue"> &middot; <i>IEEE iSPEC (International Smart Power and Energy Conference)</i>, 2021</span>
+    </li>
     
+</ul>
 
 
     </main>
     <footer class="footer">
     <div class="container">
         <div>
-            <span class="lang-en">Zhihui Chen &nbsp;&middot;&nbsp; Updated Oct 2026</span>
-            <span class="lang-zh d-none">陈致晖 &nbsp;&middot;&nbsp; 更新于 2026 年 10 月</span>
+            <span class="lang-en">&copy; 2026 Zhihui Chen &middot; Updated Oct 2026</span>
+            <span class="lang-zh d-none">&copy; 2026 陈致晖 &middot; 更新于 2026 年 10 月</span>
         </div>
-        <div><a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a></div>
+        <div>
+            <span class="lang-en">Template: <a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noopener">academic-homepage</a></span>
+            <span class="lang-zh d-none">模板：<a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noopener">academic-homepage</a></span>
+        </div>
     </div>
 </footer>
 

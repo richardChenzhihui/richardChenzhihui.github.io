@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage - Zhihui Chen</title>
-    <meta name="description" content="Zhihui Chen — PhD student at NUS working on coding-agent post-training and recursive self-improvement (RSI) for the next-generation GLM foundation model, with applications to medical agents and medical AI safety.">
+    <meta name="description" content="Zhihui Chen — PhD student at NUS working on recursive self-improvement (RSI) — models that generate and verify their own training data — for coding and medical agents, currently post-training the next-generation GLM foundation model.">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Homepage - Zhihui Chen">
-    <meta property="og:description" content="Zhihui Chen — PhD student at NUS working on coding-agent post-training and recursive self-improvement (RSI) for the next-generation GLM foundation model, with applications to medical agents and medical AI safety.">
+    <meta property="og:description" content="Zhihui Chen — PhD student at NUS working on recursive self-improvement (RSI) — models that generate and verify their own training data — for coding and medical agents, currently post-training the next-generation GLM foundation model.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%231a1a1a'/%3E%3Ctext x='32' y='43' font-family='Menlo,monospace' font-size='30' fill='%23ffffff' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c2024'/%3E%3Ctext x='32' y='44' font-family='-apple-system,Helvetica,sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="/assets/css/global.css">
 </head>
 <body>
@@ -23,16 +23,14 @@
             
             
             
+            
             <a class="nav-link active" href="/">
                 <span class="lang-en">Home</span>
                 <span class="lang-zh d-none">首页</span>
             </a>
             
             
-            <a class="nav-link" href="/publications">
-                <span class="lang-en">Publications</span>
-                <span class="lang-zh d-none">论文发表</span>
-            </a>
+            
             
             
             <a class="nav-link" href="/showcase">
@@ -56,7 +54,7 @@
             <span class="lang-en">Zhihui Chen</span>
             <span class="lang-zh d-none">陈致晖</span>
         </h1>
-        <p class="hero-position">
+        <p class="hero-role">
             <span class="lang-en">Ph.D. Student in Artificial Intelligence, National University of Singapore</span>
             <span class="lang-zh d-none">新加坡国立大学人工智能博士生</span>
         </p>
@@ -65,7 +63,7 @@
   I am a PhD student in Artificial Intelligence at the National University of Singapore, advised by
   <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
 </p> <p>
-  I work on post-training for coding agents, focusing on recursive self-improvement (RSI): the agent generates coding tasks and solves them in a sandbox, trajectories that pass compilation and tests are kept, and the next model is trained on them. The questions I care about are credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent. I also apply these methods to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>), and work on detecting forged medical images and LLM-generated text (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
+  My research centers on recursive self-improvement (RSI): letting the model set its own tasks, solve them, and grade itself, so that verified experience becomes training data for the next model — each version helps build its successor. The loop runs on coding agents first, where sandboxed execution provides a verifiable signal, and is now extending to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>). A second line of my work detects AI-generated medical images and text (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
 </p> <p>
   I am currently a research intern on the foundation-model post-training team at Zhipu AI (Z.ai), working on coding-agent RSI post-training for the next-generation GLM foundation model. Previously I interned at ByteDance (VLM post-training; Farsight) and StepFun (StepAudio2.5 pre-training). I have received a research internship offer from the Qwen team at Alibaba Tongyi Lab, and was selected for Tencent&rsquo;s Qingyun Program.
 </p></div>
@@ -73,25 +71,37 @@
   新加坡国立大学人工智能博士生，导师为
   <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
 </p> <p>
-  研究方向是 Coding Agent + RSI（递归自进化）的后训练：Agent 生成编码任务并在沙箱中求解，通过编译和测试的轨迹被保留，下一版模型在这些轨迹上训练。我关心的问题是长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
+  研究围绕 RSI（递归自进化）展开：让模型自己出题、自己求解、自己批改，通过验证的经验直接成为下一版模型的训练数据——每一版模型都参与打造下一版。这条循环先在 Coding Agent 上跑通，沙箱执行给出可检验的成功信号；同样的方法正推进到医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）。另一条线研究如何识别 AI 生成的医学影像与文本（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
 </p> <p>
   现于智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。此前在字节跳动（VLM 后训练，Farsight）和阶跃星辰（StepAudio2.5 基础模型预训练）实习。已获阿里通义实验室 Qwen 团队基础模型研究实习录用，并入选腾讯「青云计划」。
 </p></div>
         </div>
-        <p class="hero-links">
-            <a class="no-break" href="mailto:%7A%68%69%68%75%69.%63%68%65%6E@%75.%6E%75%73.%65%64%75">zhihui.chen(at)u.nus.edu</a>
-            <span class="sep" aria-hidden="true">&middot;</span>
-            <a class="no-break" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=G_JnDUgAAAAJ"><span class="lang-en">scholar</span><span class="lang-zh d-none">scholar</span></a>
+        <div class="hero-links">
+            <a href="mailto:%7A%68%69%68%75%69.%63%68%65%6E@%75.%6E%75%73.%65%64%75">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z"/></svg>
+                <span>Email</span>
+            </a>
+            <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=G_JnDUgAAAAJ">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+                <span>Google Scholar</span>
+            </a>
             
-            <span class="sep" aria-hidden="true">&middot;</span>
-            <a class="no-break" target="_blank" rel="noopener" href="https://github.com/richardChenzhihui">github</a>
+            <a target="_blank" rel="noopener" href="https://github.com/richardChenzhihui">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                <span>GitHub</span>
+            </a>
             
             
-            <span class="sep" aria-hidden="true">&middot;</span>
-            <a class="no-break lang-en" href="/assets/files/Zhihui-Chen-CV-EN.pdf" target="_blank" rel="noopener">cv</a>
-            <a class="no-break lang-zh d-none" href="/assets/files/Zhihui-Chen-CV-ZH.pdf" target="_blank" rel="noopener">cv</a>
+            <a class="lang-en" href="/assets/files/Zhihui-Chen-CV-EN.pdf" target="_blank" rel="noopener">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/></svg>
+                <span>Curriculum Vitae</span>
+            </a>
+            <a class="lang-zh d-none" href="/assets/files/Zhihui-Chen-CV-ZH.pdf" target="_blank" rel="noopener">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/></svg>
+                <span>个人简历</span>
+            </a>
             
-        </p>
+        </div>
     </div>
     
     <img src="/assets/images/photos/portrait-crop.jpg" class="hero-portrait" alt="Zhihui Chen">
@@ -100,333 +110,128 @@
 
 
 
+    
+    
+        <section class="section" id="news">
+    <h2 class="section-title">
+        <span class="lang-en">News</span>
+        <span class="lang-zh d-none">近期动态</span>
+        <a class="anchor" href="#news" aria-hidden="true">#</a>
+    </h2>
+    <ul class="news-list">
+        
+        <li class="news-item">
+            <span class="news-date">
+                <span class="lang-en">Sep 2026</span>
+                <span class="lang-zh d-none">2026 年 9 月</span>
+            </span>
+            <span class="news-title" data-en="[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent RSI post-training for the next-generation GLM foundation model." data-zh="[智谱] 加入智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。">[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent RSI post-training for the next-generation GLM foundation model.</span>
+        </li>
+        
+        <li class="news-item">
+            <span class="news-date">
+                <span class="lang-en">Aug 2026</span>
+                <span class="lang-zh d-none">2026 年 8 月</span>
+            </span>
+            <span class="news-title" data-en="[Qwen] Received a research internship offer from the Qwen foundation model team at Alibaba Tongyi Lab." data-zh="[Qwen] 获阿里通义实验室 Qwen 基础模型团队研究实习录用。">[Qwen] Received a research internship offer from the Qwen foundation model team at Alibaba Tongyi Lab.</span>
+        </li>
+        
+        <li class="news-item">
+            <span class="news-date">
+                <span class="lang-en">Aug 2026</span>
+                <span class="lang-zh d-none">2026 年 8 月</span>
+            </span>
+            <span class="news-title" data-en="[Tencent Cloud] Received the Tencent Cloud Quant Infrastructure Grant (USD 1,000 cloud credits) for quant-trading agent experiments." data-zh="[腾讯云] 获腾讯云量化基础设施资助（1000 美金云额度），用于量化交易 Agent 实验。">[Tencent Cloud] Received the Tencent Cloud Quant Infrastructure Grant (USD 1,000 cloud credits) for quant-trading agent experiments.</span>
+        </li>
+        
+        <li class="news-item">
+            <span class="news-date">
+                <span class="lang-en">Aug 2026</span>
+                <span class="lang-zh d-none">2026 年 8 月</span>
+            </span>
+            <span class="news-title" data-en="[EMNLP 2026] Med-Banana is accepted to EMNLP 2026: RSI through medical agent self-improvement, with verifier-guided prompt refinement and trajectory-based post-training." data-zh="[EMNLP 2026] Med-Banana 被 EMNLP 2026 录用：RSI through Medical Agent Self-Improvement，由验证器引导 Prompt 修正，并基于成败轨迹做后训练。">[EMNLP 2026] Med-Banana is accepted to EMNLP 2026: RSI through medical agent self-improvement, with verifier-guided prompt refinement and trajectory-based post-training.</span>
+        </li>
+        
+        <li class="news-item">
+            <span class="news-date">
+                <span class="lang-en">Aug 2026</span>
+                <span class="lang-zh d-none">2026 年 8 月</span>
+            </span>
+            <span class="news-title" data-en="[Tencent] Selected for Tencent&#39;s Qingyun Program (青云计划), in the game AI × LLM agent track." data-zh="[腾讯] 入选腾讯「青云计划」，方向为游戏 AI × 大模型 Agent。">[Tencent] Selected for Tencent's Qingyun Program (青云计划), in the game AI × LLM agent track.</span>
+        </li>
+        
+        <li class="news-item">
+            <span class="news-date">
+                <span class="lang-en">Aug 2026</span>
+                <span class="lang-zh d-none">2026 年 8 月</span>
+            </span>
+            <span class="news-title" data-en="[ACM CIKM 2026] Serving on the Program Committee of LASS 2026 (Workshop on LLM Agents for Social Simulation) at ACM CIKM 2026, Rome." data-zh="[ACM CIKM 2026] 担任 ACM CIKM 2026 LASS 研讨会（LLM Agents for Social Simulation，罗马）程序委员会委员。">[ACM CIKM 2026] Serving on the Program Committee of LASS 2026 (Workshop on LLM Agents for Social Simulation) at ACM CIKM 2026, Rome.</span>
+        </li>
+        
+        <li class="news-item">
+            <span class="news-date">
+                <span class="lang-en">Jul 2026</span>
+                <span class="lang-zh d-none">2026 年 7 月</span>
+            </span>
+            <span class="news-title" data-en="[ICLR 2026] Submitted Farsight as first author — future-discounted visual credit assignment for VLM reinforcement learning, developed during my ByteDance internship." data-zh="[ICLR 2026] 以一作提交 Farsight——面向视觉语言模型强化学习的未来折扣视觉信用分配，完成于字节跳动实习期间。">[ICLR 2026] Submitted Farsight as first author — future-discounted visual credit assignment for VLM reinforcement learning, developed during my ByteDance internship.</span>
+        </li>
+        
+        <li class="news-item">
+            <span class="news-date">
+                <span class="lang-en">Jun 2026</span>
+                <span class="lang-zh d-none">2026 年 6 月</span>
+            </span>
+            <span class="news-title" data-en="[ACL 2026] Session chair at the ACL 2026 main conference." data-zh="[ACL 2026] 担任 ACL 2026 主会议 session chair。">[ACL 2026] Session chair at the ACL 2026 main conference.</span>
+        </li>
+        
+    </ul>
+</section>
+
+    
+
+
+
+    
+
 
 <section class="section" id="research">
-    <h2 class="section-head">
+    <h2 class="section-title">
         <span class="lang-en">Research</span>
         <span class="lang-zh d-none">研究方向</span>
+        <a class="anchor" href="#research" aria-hidden="true">#</a>
     </h2>
 
     
     
-    <article class="rs-item">
-        <div class="rs-label">
+    <article class="research-item">
+        <div class="research-label">
             <span class="lang-en">Direction 01 · Coding Agent + RSI</span>
             <span class="lang-zh d-none">方向一 · Coding Agent + RSI</span>
         </div>
-        <h3 class="rs-title">
-            <span class="lang-en">Post-training coding agents on execution-verified trajectories</span>
-            <span class="lang-zh d-none">基于执行验证轨迹的 Coding Agent 后训练</span>
+        <h3 class="research-title">
+            <span class="lang-en">Coding agents that generate their own training data</span>
+            <span class="lang-zh d-none">让模型自己制造训练数据</span>
         </h3>
-
-        <p class="rs-summary">
-            <span class="lang-en">A coding agent proposes software tasks and solves them in a sandbox. Trajectories that compile and pass the tests are kept as SFT and RL data, and the updated model runs the agent in the next round. The loop only helps if the filter is reliable, so my work centers on the training signal: credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent.</span>
-            <span class="lang-zh d-none">Coding Agent 提出软件任务并在沙箱中求解；通过编译与测试的轨迹保留为 SFT 与 RL 数据，更新后的模型进入下一轮。循环有效的前提是筛选可靠，因此我的工作集中在训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。</span>
+        <p class="research-summary">
+            <span class="lang-en">Let the model set its own exam, sit it, and grade it: the agent proposes coding tasks and solves them in a sandbox, and verified experience becomes training data for the next model — capability compounds around this loop. Because execution is the grader, every step of self-improvement is checked against real results, making this the most direct and most measurable path toward models that improve themselves.</span>
+            <span class="lang-zh d-none">让模型自己出题、自己求解、自己批改：Coding Agent 生成编码任务并在沙箱中执行，通过验证的经验直接变成下一版模型的训练数据，能力沿这个循环逐轮累积。执行就是判卷——每一步自我改进都被真实结果检验，这是通往自我改进智能最直接、最可度量的路径。</span>
         </p>
-
-        
-        <p class="rs-chain">
-            
-            <span class="rd-node">
-                <span class="lang-en">Agent proposes a coding task</span>
-                <span class="lang-zh d-none">Agent 生成编码任务</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">Sandbox execution</span>
-                <span class="lang-zh d-none">沙箱执行</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">Compile · test · replay</span>
-                <span class="lang-zh d-none">编译 · 测试 · 复现</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">Keep only verified trajectories</span>
-                <span class="lang-zh d-none">仅保留通过验证的轨迹</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">SFT · RL post-training</span>
-                <span class="lang-zh d-none">SFT · RL 后训练</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">Updated model runs the next round</span>
-                <span class="lang-zh d-none">更新后的模型进入下一轮</span>
-            </span>
-            
-            
-        </p>
-        
-        <p class="rs-loop">
-            <span class="rd-loop-mark" aria-hidden="true">&#8634;</span>
-            <span class="lang-en">One round = one model update, trained only on trajectories that passed verification.</span>
-            <span class="lang-zh d-none">一轮对应一次模型更新，训练数据只取通过验证的轨迹。</span>
-        </p>
-        
-        
-
-        <div class="rs-lower">
-            
-            <div class="rs-problems">
-                <div class="rs-subhead">
-                    <span class="lang-en">Open problems</span>
-                    <span class="lang-zh d-none">研究问题</span>
-                </div>
-                <ul>
-                    
-                    <li><span class="lang-en">Long-horizon credit assignment</span><span class="lang-zh d-none">长程任务的信用分配</span></li>
-                    
-                    <li><span class="lang-en">Verifiable rewards (RLVR)</span><span class="lang-zh d-none">可验证奖励（RLVR）</span></li>
-                    
-                    <li><span class="lang-en">Reward & verifier design</span><span class="lang-zh d-none">奖励与验证器设计</span></li>
-                    
-                    <li><span class="lang-en">Independent audit of agent actions</span><span class="lang-zh d-none">Agent 行动的独立审查</span></li>
-                    
-                </ul>
-            </div>
-            
-            
-            <div class="rs-evidence">
-                <div class="rs-subhead">
-                    <span class="lang-en">Evidence</span>
-                    <span class="lang-zh d-none">证据与代表工作</span>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th><span class="lang-en">Work</span><span class="lang-zh d-none">工作</span></th>
-                            <th><span class="lang-en">Status</span><span class="lang-zh d-none">状态</span></th>
-                            <th><span class="lang-en">What it shows</span><span class="lang-zh d-none">说明</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                        <tr>
-                            <td class="rd-ev-name">
-                                <span class="lang-en">Zhipu AI (Z.ai) · Foundation-Model Post-Training</span>
-                                <span class="lang-zh d-none">智谱（Z.ai）· 基础模型后训练</span>
-                            </td>
-                            <td class="rd-ev-meta">
-                                <span class="lang-en">current role</span>
-                                <span class="lang-zh d-none">在职</span>
-                            </td>
-                            <td class="rd-ev-note">
-                                <span class="lang-en">Coding-agent RSI post-training for the next-generation GLM foundation model.</span>
-                                <span class="lang-zh d-none">GLM 下一代基础模型的 Coding Agent RSI 后训练。</span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="rd-ev-name">
-                                <span class="lang-en">Farsight</span>
-                                <span class="lang-zh d-none">Farsight</span>
-                            </td>
-                            <td class="rd-ev-meta">
-                                <span class="lang-en">ICLR 2026 · first author, under review</span>
-                                <span class="lang-zh d-none">ICLR 2026 · 一作在投</span>
-                            </td>
-                            <td class="rd-ev-note">
-                                <span class="lang-en">Future-discounted visual credit assignment for VLM reinforcement learning; trained on 100×H100 at ByteDance.</span>
-                                <span class="lang-zh d-none">面向视觉语言模型强化学习的未来折扣视觉信用分配；在字节跳动百卡 H100 上训练。</span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="rd-ev-name">
-                                <span class="lang-en">OfficeBuddy</span>
-                                <span class="lang-zh d-none">OfficeBuddy</span>
-                            </td>
-                            <td class="rd-ev-meta">
-                                <span class="lang-en">open source · 53★</span>
-                                <span class="lang-zh d-none">开源 · 53★</span>
-                            </td>
-                            <td class="rd-ev-note">
-                                <span class="lang-en">Word/Excel agent. Each edit is re-rendered in real Office and checked by a separate visual verifier.</span>
-                                <span class="lang-zh d-none">Word/Excel 编辑 Agent。每步编辑在真实 Office 中重新渲染，由独立的视觉验证器检查。</span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="rd-ev-name">
-                                <span class="lang-en">Med-Banana trajectories</span>
-                                <span class="lang-zh d-none">Med-Banana 轨迹</span>
-                            </td>
-                            <td class="rd-ev-meta">
-                                <span class="lang-en">88K+ released · 150K+ downloads</span>
-                                <span class="lang-zh d-none">开源 88K+ · 下载 150K+</span>
-                            </td>
-                            <td class="rd-ev-note">
-                                <span class="lang-en">Successful and failed editing trajectories, released on GitHub and Hugging Face for post-training.</span>
-                                <span class="lang-zh d-none">成功与失败的编辑轨迹，已在 GitHub 与 Hugging Face 公开，可直接用于后训练。</span>
-                            </td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-            
-        </div>
     </article>
     
     
-    <article class="rs-item">
-        <div class="rs-label">
+    <article class="research-item">
+        <div class="research-label">
             <span class="lang-en">Direction 02 · Medical Agents & Medical AI Safety</span>
             <span class="lang-zh d-none">方向二 · 医疗 Agent 与医疗 AI 安全</span>
         </div>
-        <h3 class="rs-title">
-            <span class="lang-en">Medical agents and detection of forged medical content</span>
-            <span class="lang-zh d-none">医疗 Agent 与医疗伪造内容检测</span>
+        <h3 class="research-title">
+            <span class="lang-en">Self-improving medical agents and medical content safety</span>
+            <span class="lang-zh d-none">自我改进的医疗 Agent 与医疗内容安全</span>
         </h3>
-
-        <p class="rs-summary">
-            <span class="lang-en">In medicine, checking an output often needs a clinician, so feedback is scarce and expensive. Med-Banana applies RSI to medical image editing: a verifier scores each edit, its feedback refines the prompt over rounds, and the successful and failed trajectories are used for post-training. On the safety side, MedForge detects forged medical images and explains where the forgery is, and DivScore detects LLM-generated medical and legal text without training a detector.</span>
-            <span class="lang-zh d-none">医疗场景中检查一个输出往往需要医生，反馈少且贵。Med-Banana 把 RSI 用于医学图像编辑：验证器为每次编辑打分，反馈逐轮修正 Prompt，成功与失败的轨迹用于后训练。安全方面，MedForge 检测伪造的医学影像并指出伪造位置，DivScore 无需训练检测器即可识别医疗与法律领域的大模型生成文本。</span>
+        <p class="research-summary">
+            <span class="lang-en">Medicine is the hardest and most worthwhile arena for RSI: feedback depends on clinicians, and errors carry real cost. Med-Banana lets a medical image editing agent improve itself against verifier feedback — successful and failed trajectories alike are recycled into training data, so editing capability compounds round by round. Safety completes the line: as models learn to generate realistic medical images and text, MedForge and DivScore are built to catch them.</span>
+            <span class="lang-zh d-none">医疗是 RSI 最难也最值得推进的考场：反馈依赖医生，错误的代价极高。Med-Banana 让医学图像编辑 Agent 在验证器反馈中自我改进，成功与失败的轨迹都被回收为训练数据，编辑能力逐轮提升。安全侧与这条主线互补：当模型能生成逼真的医学影像与文本，MedForge 与 DivScore 负责把它们识别出来。</span>
         </p>
-
-        
-        <p class="rs-chain">
-            
-            <span class="rd-node">
-                <span class="lang-en">Medical task (image / workflow)</span>
-                <span class="lang-zh d-none">医疗任务（影像 / 工作流）</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">Agent acts: multimodal reasoning + tools</span>
-                <span class="lang-zh d-none">Agent 执行：多模态推理 + 工具调用</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">Verifier checks against clinical criteria</span>
-                <span class="lang-zh d-none">验证器按临床标准检查</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">Feedback → recursive prompt refinement</span>
-                <span class="lang-zh d-none">反馈驱动 Prompt 递归优化</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">Trajectory-based post-training</span>
-                <span class="lang-zh d-none">成败轨迹后训练</span>
-            </span>
-            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
-            
-            <span class="rd-node">
-                <span class="lang-en">Updated medical agent</span>
-                <span class="lang-zh d-none">更新后的医疗 Agent</span>
-            </span>
-            
-            
-        </p>
-        
-        <p class="rs-loop">
-            <span class="rd-loop-mark" aria-hidden="true">&#8634;</span>
-            <span class="lang-en">Verifier feedback refines the prompt over rounds; successful and failed trajectories are then used for post-training.</span>
-            <span class="lang-zh d-none">验证器反馈逐轮修正 Prompt；成功与失败的轨迹随后用于后训练。</span>
-        </p>
-        
-        
-
-        <div class="rs-lower">
-            
-            <div class="rs-problems">
-                <div class="rs-subhead">
-                    <span class="lang-en">Open problems</span>
-                    <span class="lang-zh d-none">研究问题</span>
-                </div>
-                <ul>
-                    
-                    <li><span class="lang-en">Verifiability of clinical feedback</span><span class="lang-zh d-none">临床反馈的可验证性</span></li>
-                    
-                    <li><span class="lang-en">Multimodal medical reasoning & tool use</span><span class="lang-zh d-none">多模态医学推理与工具调用</span></li>
-                    
-                    <li><span class="lang-en">Medical image integrity & forgery detection</span><span class="lang-zh d-none">医学影像真实性与伪造检测</span></li>
-                    
-                    <li><span class="lang-en">Evidence integrity & rigorous output evaluation</span><span class="lang-zh d-none">证据可信性与输出严格评估</span></li>
-                    
-                </ul>
-            </div>
-            
-            
-            <div class="rs-evidence">
-                <div class="rs-subhead">
-                    <span class="lang-en">Evidence</span>
-                    <span class="lang-zh d-none">证据与代表工作</span>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th><span class="lang-en">Work</span><span class="lang-zh d-none">工作</span></th>
-                            <th><span class="lang-en">Status</span><span class="lang-zh d-none">状态</span></th>
-                            <th><span class="lang-en">What it shows</span><span class="lang-zh d-none">说明</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                        <tr>
-                            <td class="rd-ev-name">
-                                <span class="lang-en">Med-Banana</span>
-                                <span class="lang-zh d-none">Med-Banana</span>
-                            </td>
-                            <td class="rd-ev-meta">
-                                <span class="lang-en">EMNLP 2026</span>
-                                <span class="lang-zh d-none">EMNLP 2026</span>
-                            </td>
-                            <td class="rd-ev-note">
-                                <span class="lang-en">RSI through medical agent self-improvement: verifier-guided prompt refinement and trajectory-based post-training for medical image editing.</span>
-                                <span class="lang-zh d-none">RSI through Medical Agent Self-Improvement：医学图像编辑中由验证器引导的 Prompt 修正与基于轨迹的后训练。</span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="rd-ev-name">
-                                <span class="lang-en">MedForge</span>
-                                <span class="lang-zh d-none">MedForge</span>
-                            </td>
-                            <td class="rd-ev-meta">
-                                <span class="lang-en">ACL 2026 Main</span>
-                                <span class="lang-zh d-none">ACL 2026 主会议</span>
-                            </td>
-                            <td class="rd-ev-note">
-                                <span class="lang-en">Medical deepfake detection that first localizes the forged region, then explains it; 19 lesion types, 10 forgery generators.</span>
-                                <span class="lang-zh d-none">医学伪造检测：先定位伪造区域再给出解释；覆盖 19 类病灶、10 种伪造模型。</span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="rd-ev-name">
-                                <span class="lang-en">DivScore</span>
-                                <span class="lang-zh d-none">DivScore</span>
-                            </td>
-                            <td class="rd-ev-meta">
-                                <span class="lang-en">EMNLP 2025</span>
-                                <span class="lang-zh d-none">EMNLP 2025</span>
-                            </td>
-                            <td class="rd-ev-note">
-                                <span class="lang-en">Zero-shot detection of LLM-generated text in medical and legal domains.</span>
-                                <span class="lang-zh d-none">医疗与法律领域大模型生成文本的零样本检测。</span>
-                            </td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-            
-        </div>
     </article>
     
 </section>
@@ -434,81 +239,274 @@
 
 
 
-    
-    
-        <section class="section">
-    <h2 class="section-head">
-        <span class="lang-en">News</span>
-        <span class="lang-zh d-none">近期动态</span>
+
+    <section class="section" id="experience">
+    <h2 class="section-title">
+        <span class="lang-en">Experience</span>
+        <span class="lang-zh d-none">实习与工作</span>
+        <a class="anchor" href="#experience" aria-hidden="true">#</a>
     </h2>
-    <div class="news-list">
+    <div class="lang-en">
         
-        <div class="news-row">
-            <div class="news-date">Sep 2026</div>
-            <div class="news-title" data-en="[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent RSI post-training for the next-generation GLM foundation model." data-zh="[智谱] 加入智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。">[Zhipu AI] Joined the foundation-model post-training team at Zhipu AI (Z.ai) as a research intern, working on coding-agent RSI post-training for the next-generation GLM foundation model.</div>
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/Zhipu.png" alt="Zhipu AI (Z.ai, 智谱)">
+            <div>
+                <div class="xp-org">Zhipu AI (Z.ai, 智谱)</div>
+                <div class="xp-role">Foundation Model Post-Training Research Intern</div>
+                <div class="xp-note">Next-generation GLM foundation model · coding-agent RSI post-training: the agent generates and executes coding tasks, and the model is trained on trajectories that pass execution checks</div>
+            </div>
+            <div class="xp-date">Sep. 2026 - present</div>
         </div>
         
-        <div class="news-row">
-            <div class="news-date">Aug 2026</div>
-            <div class="news-title" data-en="[Qwen] Received a research internship offer from the Qwen foundation model team at Alibaba Tongyi Lab." data-zh="[Qwen] 获阿里通义实验室 Qwen 基础模型团队研究实习录用。">[Qwen] Received a research internship offer from the Qwen foundation model team at Alibaba Tongyi Lab.</div>
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/Qwen.png" alt="Alibaba Tongyi Lab · Qwen">
+            <div>
+                <div class="xp-org">Alibaba Tongyi Lab · Qwen</div>
+                <div class="xp-role">Qwen Foundation Model Research Intern — offer received</div>
+                <div class="xp-note">Qwen foundation model team · mid-training & post-training</div>
+            </div>
+            <div class="xp-date">2026</div>
         </div>
         
-        <div class="news-row">
-            <div class="news-date">Aug 2026</div>
-            <div class="news-title" data-en="[Tencent Cloud] Received the Tencent Cloud Quant Infrastructure Grant (USD 1,000 cloud credits) for quant-trading agent experiments." data-zh="[腾讯云] 获腾讯云量化基础设施资助（1000 美金云额度），用于量化交易 Agent 实验。">[Tencent Cloud] Received the Tencent Cloud Quant Infrastructure Grant (USD 1,000 cloud credits) for quant-trading agent experiments.</div>
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/Tencent-Qingyun.svg" alt="Tencent · Qingyun Program">
+            <div>
+                <div class="xp-org">Tencent · Qingyun Program</div>
+                <div class="xp-role">Qingyun Program (青云计划) — Elite Research Talent, selected</div>
+                <div class="xp-note">Elite research talent track · game-AI × LLM agent research</div>
+            </div>
+            <div class="xp-date">2026</div>
         </div>
         
-        <div class="news-row">
-            <div class="news-date">Aug 2026</div>
-            <div class="news-title" data-en="[EMNLP 2026] Med-Banana is accepted to EMNLP 2026: RSI through medical agent self-improvement, with verifier-guided prompt refinement and trajectory-based post-training." data-zh="[EMNLP 2026] Med-Banana 被 EMNLP 2026 录用：RSI through Medical Agent Self-Improvement，由验证器引导 Prompt 修正，并基于成败轨迹做后训练。">[EMNLP 2026] Med-Banana is accepted to EMNLP 2026: RSI through medical agent self-improvement, with verifier-guided prompt refinement and trajectory-based post-training.</div>
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/ByteDance.svg" alt="ByteDance · Data Foundation Model (Data 业务基模)">
+            <div>
+                <div class="xp-org">ByteDance · Data Foundation Model (Data 业务基模)</div>
+                <div class="xp-role">VLM Post-Training Research Intern</div>
+                <div class="xp-note">VLM post-training: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)</div>
+            </div>
+            <div class="xp-date">May 2026 - Sep 2026</div>
         </div>
         
-        <div class="news-row">
-            <div class="news-date">Aug 2026</div>
-            <div class="news-title" data-en="[Tencent] Selected for Tencent's Qingyun Program (青云计划), in the game AI × LLM agent track." data-zh="[腾讯] 入选腾讯「青云计划」，方向为游戏 AI × 大模型 Agent。">[Tencent] Selected for Tencent's Qingyun Program (青云计划), in the game AI × LLM agent track.</div>
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/StepFun.png" alt="StepFun (阶跃星辰)">
+            <div>
+                <div class="xp-org">StepFun (阶跃星辰)</div>
+                <div class="xp-role">Speech Foundation Model Research Intern</div>
+                <div class="xp-note">StepAudio2.5 foundation-model pre-training — audio segmentation &amp; transcription alignment, dialect cleanup (Hakka / Teochew / Cantonese), emotion &amp; scene tagging schemas, and speech&ndash;text corpus construction</div>
+            </div>
+            <div class="xp-date">Mar. 2025 - Jul. 2025</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/AQUMON.png" alt="AQUMON (Hong Kong)">
+            <div>
+                <div class="xp-org">AQUMON (Hong Kong)</div>
+                <div class="xp-role">Quant Trading Agent Intern</div>
+                <div class="xp-note">LangChain orchestration over Futu OpenAPI real-time data & execution</div>
+            </div>
+            <div class="xp-date">Jan. 2025 - Mar. 2025</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/NUS.png" alt="NUS Business School">
+            <div>
+                <div class="xp-org">NUS Business School</div>
+                <div class="xp-role">Teaching Assistant — "Generative AI and LLM"</div>
+                <div class="xp-note">Curriculum design · tutorials on pre-training, SFT and RLHF</div>
+            </div>
+            <div class="xp-date">Feb. 2024 - Apr. 2024</div>
+        </div>
+        
+    </div>
+    <div class="lang-zh d-none">
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/Zhipu.png" alt="智谱（Z.ai）">
+            <div>
+                <div class="xp-org">智谱（Z.ai）</div>
+                <div class="xp-role">基础模型后训练 研发实习生</div>
+                <div class="xp-note">GLM 下一代基础模型 · Coding Agent RSI 后训练：Agent 生成并执行编码任务，模型在通过执行验证的轨迹上训练</div>
+            </div>
+            <div class="xp-date">2026年9月 - 至今</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/Qwen.png" alt="阿里通义实验室 · Qwen">
+            <div>
+                <div class="xp-org">阿里通义实验室 · Qwen</div>
+                <div class="xp-role">Qwen 基础模型 研究实习生 —— 已获录用</div>
+                <div class="xp-note">Qwen 基础模型团队 · 中期训练与后训练</div>
+            </div>
+            <div class="xp-date">2026</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/Tencent-Qingyun.svg" alt="腾讯 · 青云计划">
+            <div>
+                <div class="xp-org">腾讯 · 青云计划</div>
+                <div class="xp-role">「青云计划」精英科研人才 入选</div>
+                <div class="xp-note">精英科研人才计划 · 游戏 AI × 大模型 Agent 方向</div>
+            </div>
+            <div class="xp-date">2026</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/ByteDance.svg" alt="字节跳动 · Data 业务基模">
+            <div>
+                <div class="xp-org">字节跳动 · Data 业务基模</div>
+                <div class="xp-role">VLM 后训练 研究实习生</div>
+                <div class="xp-note">VLM 后训练：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）</div>
+            </div>
+            <div class="xp-date">2026年5月 - 2026年9月</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/StepFun.png" alt="阶跃星辰（StepFun）">
+            <div>
+                <div class="xp-org">阶跃星辰（StepFun）</div>
+                <div class="xp-role">语音基础模型 研发实习生</div>
+                <div class="xp-note">StepAudio2.5 基础模型预训练：音频切分与转写对齐、方言清洗（客家 / 潮汕 / 粤语）、情绪与场景标签体系、语音-文本配对语料建设</div>
+            </div>
+            <div class="xp-date">2025年3月 - 2025年7月</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/AQUMON.png" alt="AQUMON（香港）">
+            <div>
+                <div class="xp-org">AQUMON（香港）</div>
+                <div class="xp-role">量化交易 Agent 研发实习生</div>
+                <div class="xp-note">LangChain Agent 编排 · 对接 Futu OpenAPI 实时行情与自动下单</div>
+            </div>
+            <div class="xp-date">2025年1月 - 2025年3月</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/NUS.png" alt="NUS 商学院">
+            <div>
+                <div class="xp-org">NUS 商学院</div>
+                <div class="xp-role">教学助理 —《Generative AI and LLM》</div>
+                <div class="xp-note">课程设计 · 预训练、SFT 与 RLHF 教学</div>
+            </div>
+            <div class="xp-date">2024年2月 - 2024年4月</div>
         </div>
         
     </div>
 </section>
 
-    
+<section class="section" id="education">
+    <h2 class="section-title">
+        <span class="lang-en">Education</span>
+        <span class="lang-zh d-none">教育经历</span>
+        <a class="anchor" href="#education" aria-hidden="true">#</a>
+    </h2>
+    <div class="lang-en">
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/NUS.png" alt="National University of Singapore">
+            <div>
+                <div class="xp-org">National University of Singapore</div>
+                <div class="xp-role">Ph.D. in Artificial Intelligence</div>
+                <div class="xp-note">Coding Agent + RSI · AI for healthcare</div>
+            </div>
+            <div class="xp-date">Jan. 2025 - present</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/HKU.jpg" alt="The University of Hong Kong">
+            <div>
+                <div class="xp-org">The University of Hong Kong</div>
+                <div class="xp-role">M.Sc. in Artificial Intelligence</div>
+                
+            </div>
+            <div class="xp-date">Sep. 2022 - Jul. 2024</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/CU.png" alt="The Chinese University of Hong Kong, Shenzhen">
+            <div>
+                <div class="xp-org">The Chinese University of Hong Kong, Shenzhen</div>
+                <div class="xp-role">B.Sc. in Statistics, Data Science Stream</div>
+                
+            </div>
+            <div class="xp-date">Sep. 2018 - May. 2022</div>
+        </div>
+        
+    </div>
+    <div class="lang-zh d-none">
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/NUS.png" alt="新加坡国立大学">
+            <div>
+                <div class="xp-org">新加坡国立大学</div>
+                <div class="xp-role">人工智能博士</div>
+                <div class="xp-note">Coding Agent + RSI（递归自进化）· AI for Healthcare</div>
+            </div>
+            <div class="xp-date">2025年1月 - 至今</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/HKU.jpg" alt="香港大学">
+            <div>
+                <div class="xp-org">香港大学</div>
+                <div class="xp-role">人工智能理学硕士</div>
+                
+            </div>
+            <div class="xp-date">2022年9月 - 2024年7月</div>
+        </div>
+        
+        <div class="xp-row">
+            <img class="xp-logo" src="/assets/images/badges/CU.png" alt="香港中文大学（深圳）">
+            <div>
+                <div class="xp-org">香港中文大学（深圳）</div>
+                <div class="xp-role">统计学理学学士（数据科学方向）</div>
+                
+            </div>
+            <div class="xp-date">2018年9月 - 2022年5月</div>
+        </div>
+        
+    </div>
+</section>
+
 
 
 
     
     
 <section class="section" id="publications">
-    <h2 class="section-head">
-        <span>
-            <span class="lang-en">Selected Publications</span>
-            <span class="lang-zh d-none">精选论文</span>
-        </span>
-        <a href="/publications">
-            <span class="lang-en">All publications &rarr;</span>
-            <span class="lang-zh d-none">全部论文 &rarr;</span>
-        </a>
+    <h2 class="section-title">
+        <span class="lang-en">Publications</span>
+        <span class="lang-zh d-none">论文发表</span>
+        <a class="anchor" href="#publications" aria-hidden="true">#</a>
     </h2>
-    <div class="pub-list">
-        
-            
 
-<article class="pub-row">
     
-    <div class="pub-year">2026</div>
     
-    <div>
+        
+
+<article class="pub">
+    
+    <a class="pub-thumb" href="https://arxiv.org/abs/2511.00801" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="/assets/images/covers/medbanana_cover.png" alt="Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories" loading="lazy">
+    </a>
+    
+    <div class="pub-body">
         
         <h3 class="pub-title">
             <a href="https://arxiv.org/abs/2511.00801" target="_blank" rel="noopener" class="publication-title-link" data-en="Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories" data-zh="Med-Banana：从成败轨迹学习 Agentic 质量可控的医学图像编辑"><span class="title-text">Med-Banana: Learning Agentic Quality-Controlled Medical Image Editing from Success-and-Failure Trajectories</span></a>
         </h3>
         
-        
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><span class="text-body">
             Qingyuan Lei, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng</a></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Accepted&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;已录用&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Accepted</span></span></p>
+        <p class="pub-venue">
+            <span class="chip-venue">EMNLP 2026</span>
+            <span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span>
+            <span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Accepted&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;已录用&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Accepted</span></span>
+        </p>
         
-        <p class="abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2511.00801","Code":"https://github.com/richardChenzhihui/med-banana-50k/","Dataset":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","Project Page":"/showcase.html#projects"}' data-links-zh='{"论文":"https://arxiv.org/abs/2511.00801","代码":"https://github.com/richardChenzhihui/med-banana-50k/","数据集":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","项目页面":"/showcase.html#projects"}'>
+        
+        <p class="pub-links abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2511.00801","Code":"https://github.com/richardChenzhihui/med-banana-50k/","Dataset":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","Project Page":"/showcase.html#projects"}' data-links-zh='{"论文":"https://arxiv.org/abs/2511.00801","代码":"https://github.com/richardChenzhihui/med-banana-50k/","数据集":"https://huggingface.co/datasets/RichardChenZH/Med-Banana-80K","项目页面":"/showcase.html#projects"}'>
             
             
             <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2511.00801">Paper</a>
@@ -527,46 +525,51 @@
             
             
         </p>
+        
     </div>
 </article>
 
+    
         
-            
 
-<article class="pub-row">
+<article class="pub">
     
-    <div class="pub-year">2026</div>
+    <a class="pub-thumb" href="#" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="/assets/images/publications/vfipo/thumb.svg" alt="Looking Ahead to Stay Grounded: Future-Discounted Visual Credit Assignment for VLM Reinforcement Learning" loading="lazy">
+    </a>
     
-    <div>
+    <div class="pub-body">
         
         <h3 class="pub-title publication-title" data-en="Looking Ahead to Stay Grounded: Future-Discounted Visual Credit Assignment for VLM Reinforcement Learning" data-zh="Looking Ahead to Stay Grounded：面向视觉语言模型强化学习的未来折扣视觉信用分配">Looking Ahead to Stay Grounded: Future-Discounted Visual Credit Assignment for VLM Reinforcement Learning</h3>
-        
         
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><span class="text-body">
             Yike Yun, </span><span class="text-body">
             et al.</span></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="ICLR 2026 submission" data-pub-zh="ICLR 2026" data-pub-post=""><i>ICLR 2026 submission</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;Under Review&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;First Author&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;在投&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;一作&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-warning">Under Review</span> <span class="badge badge-pill badge-publication badge-info">First Author</span></span></p>
-        
-        <p class="abstract-links" data-links-en='null' data-links-zh='null'>
+        <p class="pub-venue">
             
+            <span class="pub-venue-text" data-pub-pre="" data-pub-en="ICLR 2026 submission" data-pub-zh="ICLR 2026" data-pub-post=""><i>ICLR 2026 submission</i></span>
+            <span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;Under Review&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;First Author&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-warning&quot;&gt;在投&lt;/span&gt; &lt;span class=&quot;badge badge-pill badge-publication badge-info&quot;&gt;一作&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-warning">Under Review</span> <span class="badge badge-pill badge-publication badge-info">First Author</span></span>
         </p>
+        
+        
     </div>
 </article>
 
+    
         
-            
 
-<article class="pub-row">
+<article class="pub">
     
-    <div class="pub-year">2026</div>
+    <a class="pub-thumb" href="https://arxiv.org/abs/2603.18577" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="/assets/images/publications/medforge/thumb.png" alt="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" loading="lazy">
+    </a>
     
-    <div>
+    <div class="pub-body">
         
         <h3 class="pub-title">
             <a href="https://arxiv.org/abs/2603.18577" target="_blank" rel="noopener" class="publication-title-link" data-en="MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning" data-zh="MedForge：基于伪造感知推理的可解释医学深度伪造检测"><span class="title-text">MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</span></a>
         </h3>
-        
         
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Kai He</a>, <span class="text-body">
@@ -575,9 +578,14 @@
             Jian Zhang, </span><span class="text-body">
             Yuling Xu, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng<sup>#</sup></a>
 <mark>(<sup>#</sup> <i><span class="lang-en"> corresponding author</span><span class="lang-zh d-none"> 通讯作者</span></i>)</mark></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="Annual Meeting of the Association for Computational Linguistics (ACL)" data-pub-zh="计算语言学协会年会 (ACL)" data-pub-post=""><i>Annual Meeting of the Association for Computational Linguistics (ACL)</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Main Conference&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;主会议&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span></p>
+        <p class="pub-venue">
+            <span class="chip-venue">ACL 2026</span>
+            <span class="pub-venue-text" data-pub-pre="" data-pub-en="Annual Meeting of the Association for Computational Linguistics (ACL)" data-pub-zh="计算语言学协会年会 (ACL)" data-pub-post=""><i>Annual Meeting of the Association for Computational Linguistics (ACL)</i></span>
+            <span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Main Conference&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;主会议&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span>
+        </p>
         
-        <p class="abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2603.18577","Project Page":"/publications/medforge.html","Model":"https://huggingface.co/RichardChenZH/MedForge-Reasoner","Dataset":"https://huggingface.co/datasets/RichardChenZH/MedForge-90K"}' data-links-zh='{"论文":"https://arxiv.org/abs/2603.18577","项目页面":"/publications/medforge.html","模型":"https://huggingface.co/RichardChenZH/MedForge-Reasoner","数据集":"https://huggingface.co/datasets/RichardChenZH/MedForge-90K"}'>
+        
+        <p class="pub-links abstract-links" data-links-en='{"Paper":"https://arxiv.org/abs/2603.18577","Project Page":"/publications/medforge.html","Model":"https://huggingface.co/RichardChenZH/MedForge-Reasoner","Dataset":"https://huggingface.co/datasets/RichardChenZH/MedForge-90K"}' data-links-zh='{"论文":"https://arxiv.org/abs/2603.18577","项目页面":"/publications/medforge.html","模型":"https://huggingface.co/RichardChenZH/MedForge-Reasoner","数据集":"https://huggingface.co/datasets/RichardChenZH/MedForge-90K"}'>
             
             
             <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2603.18577">Paper</a>
@@ -596,28 +604,35 @@
             
             
         </p>
+        
     </div>
 </article>
 
+    
         
-            
 
-<article class="pub-row">
+<article class="pub">
     
-    <div class="pub-year">2025</div>
+    <a class="pub-thumb" href="https://aclanthology.org/2025.emnlp-main.971/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="/assets/images/publications/divscore/thumb.jpg" alt="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" loading="lazy">
+    </a>
     
-    <div>
+    <div class="pub-body">
         
         <h3 class="pub-title">
             <a href="https://aclanthology.org/2025.emnlp-main.971/" target="_blank" rel="noopener" class="publication-title-link" data-en="DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains" data-zh="DivScore: 专业领域中大语言模型生成文本的零样本检测"><span class="title-text">DivScore: Zero-Shot Detection of LLM-Generated Text in Specialized Domains</span></a>
         </h3>
         
-        
         <p class="pub-authors"><span class="text-body">
             <strong>Zhihui Chen</strong>, </span><a class="text-body" target="_blank" href="https://scholar.google.com/">Kai He</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yucheng Huang</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Yunxiao Zhu</a>, <a class="text-body" target="_blank" href="https://scholar.google.com/">Mengling Feng</a></p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span><span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Main Conference&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;主会议&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span></p>
+        <p class="pub-venue">
+            <span class="chip-venue">EMNLP 2025</span>
+            <span class="pub-venue-text" data-pub-pre="" data-pub-en="Conference on Empirical Methods in Natural Language Processing (EMNLP)" data-pub-zh="自然语言处理实证方法会议 (EMNLP)" data-pub-post=""><i>Conference on Empirical Methods in Natural Language Processing (EMNLP)</i></span>
+            <span class="pub-venue-misc" data-en=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;Main Conference&lt;/span&gt;" data-zh=" &lt;span class=&quot;badge badge-pill badge-publication badge-success&quot;&gt;主会议&lt;/span&gt;"> <span class="badge badge-pill badge-publication badge-success">Main Conference</span></span>
+        </p>
         
-        <p class="abstract-links" data-links-en='{"Paper":"https://aclanthology.org/2025.emnlp-main.971/","Code":"https://github.com/richardChenzhihui/DivScore","Project Page":"/publications/divscore.html"}' data-links-zh='{"论文":"https://aclanthology.org/2025.emnlp-main.971/","代码":"https://github.com/richardChenzhihui/DivScore","项目页面":"/publications/divscore.html"}'>
+        
+        <p class="pub-links abstract-links" data-links-en='{"Paper":"https://aclanthology.org/2025.emnlp-main.971/","Code":"https://github.com/richardChenzhihui/DivScore","Project Page":"/publications/divscore.html"}' data-links-zh='{"论文":"https://aclanthology.org/2025.emnlp-main.971/","代码":"https://github.com/richardChenzhihui/DivScore","项目页面":"/publications/divscore.html"}'>
             
             
             <a target="_blank" rel="noopener" href="https://aclanthology.org/2025.emnlp-main.971/">Paper</a>
@@ -632,264 +647,73 @@
             
             
         </p>
+        
     </div>
 </article>
 
+    
+
+    
+    
+    <h3 class="subhead">
+        <span class="lang-en">Other Publications</span>
+        <span class="lang-zh d-none">其他论文</span>
+    </h3>
+    <ul class="pub-misc">
         
-    </div>
+        <li>
+            <span class="pub-misc-title">Production Efficiency Analysis Based on RFID-Collected Manufacturing Big Data</span>
+            <span class="pub-misc-venue"> &middot; <i>52nd NAMRC (North American Manufacturing Research Conference)</i>, 2024</span>
+        </li>
+        
+        <li>
+            <span class="pub-misc-title">Clustering Enabled Few-Shot Load Forecasting</span>
+            <span class="pub-misc-venue"> &middot; <i>IEEE iSPEC (International Smart Power and Energy Conference)</i>, 2021</span>
+        </li>
+        
+    </ul>
+    
 </section>
 
 
 
 
-    <section class="section" id="background">
-    <h2 class="section-head">
-        <span class="lang-en">Background</span>
-        <span class="lang-zh d-none">教育与经历</span>
+<section class="section" id="honors">
+    <h2 class="section-title">
+        <span class="lang-en">Honors &amp; Service</span>
+        <span class="lang-zh d-none">荣誉与学术服务</span>
+        <a class="anchor" href="#honors" aria-hidden="true">#</a>
     </h2>
-
-    
-    <div class="cv-block">
-        <div class="cv-subhead">
-            <span class="lang-en">Experience</span>
-            <span class="lang-zh d-none">工作经历</span>
-        </div>
-        <div class="lang-en">
-            
-            <div class="cv-row">
-                <div class="cv-date">Sep. 2026 - present</div>
-                <div>
-                    <div class="cv-org">Zhipu AI (Z.ai, 智谱)</div>
-                    <div class="cv-role">Foundation Model Post-Training Research Intern</div>
-                    <div class="cv-note">Next-generation GLM foundation model · coding-agent RSI post-training: the agent generates and executes coding tasks, and the model is trained on trajectories that pass execution checks</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2026</div>
-                <div>
-                    <div class="cv-org">Alibaba Tongyi Lab · Qwen</div>
-                    <div class="cv-role">Qwen Foundation Model Research Intern — offer received</div>
-                    <div class="cv-note">Qwen foundation model team · mid-training & post-training</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2026</div>
-                <div>
-                    <div class="cv-org">Tencent · Qingyun Program</div>
-                    <div class="cv-role">Qingyun Program (青云计划) — Elite Research Talent, selected</div>
-                    <div class="cv-note">Elite research talent track · game-AI × LLM agent research</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">May 2026 - Sep 2026</div>
-                <div>
-                    <div class="cv-org">ByteDance · Data Foundation Model (Data 业务基模)</div>
-                    <div class="cv-role">VLM Post-Training Research Intern</div>
-                    <div class="cv-note">VLM post-training: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">Mar. 2025 - Jul. 2025</div>
-                <div>
-                    <div class="cv-org">StepFun (阶跃星辰)</div>
-                    <div class="cv-role">Speech Foundation Model Research Intern</div>
-                    <div class="cv-note">StepAudio2.5 foundation-model pre-training — audio segmentation &amp; transcription alignment, dialect cleanup (Hakka / Teochew / Cantonese), emotion &amp; scene tagging schemas, and speech&ndash;text corpus construction</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">Jan. 2025 - Mar. 2025</div>
-                <div>
-                    <div class="cv-org">AQUMON (Hong Kong)</div>
-                    <div class="cv-role">Quant Trading Agent Intern</div>
-                    <div class="cv-note">LangChain orchestration over Futu OpenAPI real-time data & execution</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">Feb. 2024 - Apr. 2024</div>
-                <div>
-                    <div class="cv-org">NUS Business School</div>
-                    <div class="cv-role">Teaching Assistant — "Generative AI and LLM"</div>
-                    <div class="cv-note">Curriculum design · tutorials on pre-training, SFT and RLHF</div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="lang-zh d-none">
-            
-            <div class="cv-row">
-                <div class="cv-date">2026年9月 - 至今</div>
-                <div>
-                    <div class="cv-org">智谱（Z.ai）</div>
-                    <div class="cv-role">基础模型后训练 研发实习生</div>
-                    <div class="cv-note">GLM 下一代基础模型 · Coding Agent RSI 后训练：Agent 生成并执行编码任务，模型在通过执行验证的轨迹上训练</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2026</div>
-                <div>
-                    <div class="cv-org">阿里通义实验室 · Qwen</div>
-                    <div class="cv-role">Qwen 基础模型 研究实习生 —— 已获录用</div>
-                    <div class="cv-note">Qwen 基础模型团队 · 中期训练与后训练</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2026</div>
-                <div>
-                    <div class="cv-org">腾讯 · 青云计划</div>
-                    <div class="cv-role">「青云计划」精英科研人才 入选</div>
-                    <div class="cv-note">精英科研人才计划 · 游戏 AI × 大模型 Agent 方向</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2026年5月 - 2026年9月</div>
-                <div>
-                    <div class="cv-org">字节跳动 · Data 业务基模</div>
-                    <div class="cv-role">VLM 后训练 研究实习生</div>
-                    <div class="cv-note">VLM 后训练：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2025年3月 - 2025年7月</div>
-                <div>
-                    <div class="cv-org">阶跃星辰（StepFun）</div>
-                    <div class="cv-role">语音基础模型 研发实习生</div>
-                    <div class="cv-note">StepAudio2.5 基础模型预训练：音频切分与转写对齐、方言清洗（客家 / 潮汕 / 粤语）、情绪与场景标签体系、语音-文本配对语料建设</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2025年1月 - 2025年3月</div>
-                <div>
-                    <div class="cv-org">AQUMON（香港）</div>
-                    <div class="cv-role">量化交易 Agent 研发实习生</div>
-                    <div class="cv-note">LangChain Agent 编排 · 对接 Futu OpenAPI 实时行情与自动下单</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2024年2月 - 2024年4月</div>
-                <div>
-                    <div class="cv-org">NUS 商学院</div>
-                    <div class="cv-role">教学助理 —《Generative AI and LLM》</div>
-                    <div class="cv-note">课程设计 · 预训练、SFT 与 RLHF 教学</div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    
-
-    
-    <div class="cv-block">
-        <div class="cv-subhead">
-            <span class="lang-en">Education</span>
-            <span class="lang-zh d-none">教育经历</span>
-        </div>
-        <div class="lang-en">
-            
-            <div class="cv-row">
-                <div class="cv-date">Jan. 2025 - present</div>
-                <div>
-                    <div class="cv-org">National University of Singapore</div>
-                    <div class="cv-role">Ph.D. in Artificial Intelligence</div>
-                    <div class="cv-note">Coding Agent + RSI · AI for healthcare</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">Sep. 2022 - Jul. 2024</div>
-                <div>
-                    <div class="cv-org">The University of Hong Kong</div>
-                    <div class="cv-role">M.Sc. in Artificial Intelligence</div>
-                    
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">Sep. 2018 - May. 2022</div>
-                <div>
-                    <div class="cv-org">The Chinese University of Hong Kong, Shenzhen</div>
-                    <div class="cv-role">B.Sc. in Statistics, Data Science Stream</div>
-                    
-                </div>
-            </div>
-            
-        </div>
-        <div class="lang-zh d-none">
-            
-            <div class="cv-row">
-                <div class="cv-date">2025年1月 - 至今</div>
-                <div>
-                    <div class="cv-org">新加坡国立大学</div>
-                    <div class="cv-role">人工智能博士</div>
-                    <div class="cv-note">Coding Agent + RSI（递归自进化）· AI for Healthcare</div>
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2022年9月 - 2024年7月</div>
-                <div>
-                    <div class="cv-org">香港大学</div>
-                    <div class="cv-role">人工智能理学硕士</div>
-                    
-                </div>
-            </div>
-            
-            <div class="cv-row">
-                <div class="cv-date">2018年9月 - 2022年5月</div>
-                <div>
-                    <div class="cv-org">香港中文大学（深圳）</div>
-                    <div class="cv-role">统计学理学学士（数据科学方向）</div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    
-
-    
-    <div class="cv-two-col">
+    <div class="honor-cols">
         
-        <div class="cv-block">
-            <div class="cv-subhead">
+        <div>
+            <h3 class="subhead" style="margin-top:0;">
                 <span class="lang-en">Honors &amp; Awards</span>
-                <span class="lang-zh d-none">荣誉与奖励</span>
-            </div>
-            <ul class="cv-simple lang-en">
-                <li><span>Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship, USD 4,500 compute grant</span><span class="cv-date">2026</span></li><li><span>Full Ph.D. Scholarship, National University of Singapore</span><span class="cv-date">2025</span></li><li><span>Outstanding College Graduate (Top 5%), CUHK-Shenzhen</span><span class="cv-date">2022</span></li><li><span>Undergraduate Research Excellence Award, CUHK-Shenzhen</span><span class="cv-date">2021</span></li>
+                <span class="lang-zh d-none">荣誉奖项</span>
+            </h3>
+            <ul class="honor-list lang-en">
+                <li><span>Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits</span><span class="honor-year">2026</span></li><li><span>MiniMax Cowork Team Fellowship, USD 4,500 compute grant</span><span class="honor-year">2026</span></li><li><span>Full Ph.D. Scholarship, National University of Singapore</span><span class="honor-year">2025</span></li><li><span>Outstanding College Graduate (Top 5%), CUHK-Shenzhen</span><span class="honor-year">2022</span></li><li><span>Undergraduate Research Excellence Award, CUHK-Shenzhen</span><span class="honor-year">2021</span></li>
             </ul>
-            <ul class="cv-simple lang-zh d-none">
-                <li><span>腾讯云量化基础设施资助 —— 1000 美金云算力额度</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship，4500 美金算力支持</span><span class="cv-date">2026</span></li><li><span>新加坡国立大学全额博士奖学金</span><span class="cv-date">2025</span></li><li><span>香港中文大学（深圳）优秀毕业生（前 5%）</span><span class="cv-date">2022</span></li><li><span>香港中文大学（深圳）本科生科研卓越奖</span><span class="cv-date">2021</span></li>
+            <ul class="honor-list lang-zh d-none">
+                <li><span>腾讯云量化基础设施资助 —— 1000 美金云算力额度</span><span class="honor-year">2026</span></li><li><span>MiniMax Cowork Team Fellowship，4500 美金算力支持</span><span class="honor-year">2026</span></li><li><span>新加坡国立大学全额博士奖学金</span><span class="honor-year">2025</span></li><li><span>香港中文大学（深圳）优秀毕业生（前 5%）</span><span class="honor-year">2022</span></li><li><span>香港中文大学（深圳）本科生科研卓越奖</span><span class="honor-year">2021</span></li>
             </ul>
         </div>
         
         
-        <div class="cv-block">
-            <div class="cv-subhead">
+        <div>
+            <h3 class="subhead" style="margin-top:0;">
                 <span class="lang-en">Academic Service</span>
                 <span class="lang-zh d-none">学术服务</span>
-            </div>
-            <ul class="cv-simple lang-en">
-                <li><span>40+ reviews — ACL · NeurIPS · IJCAI · IEEE TAFFC · ACM TIST</span><span class="cv-date">2024 - 2026</span></li><li><span>Program Committee, LASS 2026 Workshop @ ACM CIKM 2026 (Rome)</span><span class="cv-date">2026</span></li><li><span>Session Chair, ACL 2026 Main</span><span class="cv-date">2026</span></li>
+            </h3>
+            <ul class="honor-list lang-en">
+                <li><span>40+ reviews — ACL · NeurIPS · IJCAI · IEEE TAFFC · ACM TIST</span><span class="honor-year">2024 - 2026</span></li><li><span>Program Committee, LASS 2026 Workshop @ ACM CIKM 2026 (Rome)</span><span class="honor-year">2026</span></li><li><span>Session Chair, ACL 2026 Main</span><span class="honor-year">2026</span></li>
             </ul>
-            <ul class="cv-simple lang-zh d-none">
-                <li><span>累计 40+ 篇审稿 —— ACL · NeurIPS · IJCAI · IEEE TAFFC · ACM TIST</span><span class="cv-date">2024 - 2026</span></li><li><span>ACM CIKM 2026 · LASS 2026 研讨会 程序委员会（PC）委员（罗马）</span><span class="cv-date">2026</span></li><li><span>ACL 2026 主会议 Session Chair</span><span class="cv-date">2026</span></li>
+            <ul class="honor-list lang-zh d-none">
+                <li><span>累计 40+ 篇审稿 —— ACL · NeurIPS · IJCAI · IEEE TAFFC · ACM TIST</span><span class="honor-year">2024 - 2026</span></li><li><span>ACM CIKM 2026 · LASS 2026 研讨会 程序委员会（PC）委员（罗马）</span><span class="honor-year">2026</span></li><li><span>ACL 2026 主会议 Session Chair</span><span class="honor-year">2026</span></li>
             </ul>
         </div>
         
     </div>
-    
 </section>
 
 
@@ -898,85 +722,119 @@
 
 
 <section class="section" id="open-source">
-    <h2 class="section-head">
-        <span>
-            <span class="lang-en">Open Source</span>
-            <span class="lang-zh d-none">开源项目</span>
-        </span>
-        <a href="https://github.com/richardChenzhihui" target="_blank" rel="noopener">github.com/richardChenzhihui</a>
+    <h2 class="section-title">
+        <span class="lang-en">Open Source</span>
+        <span class="lang-zh d-none">开源项目</span>
+        <a class="anchor" href="#open-source" aria-hidden="true">#</a>
     </h2>
-    <div class="repo-list">
+    <div class="repo-grid">
         
         
-        <a class="repo-row" href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank" rel="noopener">
-            <span class="repo-name">OfficeBuddy</span>
-            <span class="repo-desc">
+        <a class="repo-card" href="https://github.com/richardChenzhihui/OfficeBuddy" target="_blank" rel="noopener">
+            <div class="repo-card-head">
+                <span class="repo-card-name">OfficeBuddy</span>
+                <span class="repo-card-stars">53&#9733;</span>
+            </div>
+            <p class="repo-card-desc">
                 <span class="lang-en">Edits Word/Excel from natural language, then audits every real-Office render with an independent visual verifier.</span>
                 <span class="lang-zh d-none">自然语言编辑 Word/Excel，每步真实 Office 渲染均由独立视觉验证器审查。</span>
-            </span>
-            <span class="repo-stat">
-                <span class="lang-en">Vision-in-the-Loop</span><span class="lang-zh d-none">Vision-in-the-Loop</span> &middot; 53&#9733;
-            </span>
+            </p>
+            <div class="repo-card-meta">
+                <span class="repo-tag">
+                    <span class="lang-en">Vision-in-the-Loop</span><span class="lang-zh d-none">Vision-in-the-Loop</span>
+                </span>
+                <span class="repo-tag">Python</span>
+            </div>
         </a>
         
         
-        <a class="repo-row" href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank" rel="noopener">
-            <span class="repo-name">ACL2026-MedForge</span>
-            <span class="repo-desc">
+        <a class="repo-card" href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank" rel="noopener">
+            <div class="repo-card-head">
+                <span class="repo-card-name">ACL2026-MedForge</span>
+                <span class="repo-card-stars">10&#9733;</span>
+            </div>
+            <p class="repo-card-desc">
                 <span class="lang-en">Interpretable medical deepfake detection — Localize-then-Analyze reasoning + Forgery-aware GSPO.</span>
                 <span class="lang-zh d-none">可解释医学深度伪造检测 —— 先定位再分析推理 + Forgery-aware GSPO。</span>
-            </span>
-            <span class="repo-stat">
-                <span class="lang-en">ACL 2026</span><span class="lang-zh d-none">ACL 2026</span> &middot; 10&#9733;
-            </span>
+            </p>
+            <div class="repo-card-meta">
+                <span class="repo-tag">
+                    <span class="lang-en">ACL 2026</span><span class="lang-zh d-none">ACL 2026</span>
+                </span>
+                <span class="repo-tag">Python</span>
+            </div>
         </a>
         
         
-        <a class="repo-row" href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank" rel="noopener">
-            <span class="repo-name">med-banana-50k</span>
-            <span class="repo-desc">
+        <a class="repo-card" href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank" rel="noopener">
+            <div class="repo-card-head">
+                <span class="repo-card-name">med-banana-50k</span>
+                <span class="repo-card-stars">71&#9733;</span>
+            </div>
+            <p class="repo-card-desc">
                 <span class="lang-en">Agentic post-training for medical image editing from success-and-failure trajectories.</span>
                 <span class="lang-zh d-none">从成败轨迹进行 Agentic 后训练的医学图像编辑。</span>
-            </span>
-            <span class="repo-stat">
-                <span class="lang-en">EMNLP 2026</span><span class="lang-zh d-none">EMNLP 2026</span> &middot; 71&#9733;
-            </span>
+            </p>
+            <div class="repo-card-meta">
+                <span class="repo-tag">
+                    <span class="lang-en">EMNLP 2026</span><span class="lang-zh d-none">EMNLP 2026</span>
+                </span>
+                <span class="repo-tag">Python</span>
+            </div>
         </a>
         
         
-        <a class="repo-row" href="https://github.com/richardChenzhihui/DivScore" target="_blank" rel="noopener">
-            <span class="repo-name">DivScore</span>
-            <span class="repo-desc">
+        <a class="repo-card" href="https://github.com/richardChenzhihui/DivScore" target="_blank" rel="noopener">
+            <div class="repo-card-head">
+                <span class="repo-card-name">DivScore</span>
+                <span class="repo-card-stars">9&#9733;</span>
+            </div>
+            <p class="repo-card-desc">
                 <span class="lang-en">Zero-shot LLM-text detection via normalized entropy scoring and knowledge distillation.</span>
                 <span class="lang-zh d-none">基于归一化熵评分与知识蒸馏的大模型生成文本零样本检测。</span>
-            </span>
-            <span class="repo-stat">
-                <span class="lang-en">EMNLP 2025</span><span class="lang-zh d-none">EMNLP 2025</span> &middot; 9&#9733;
-            </span>
+            </p>
+            <div class="repo-card-meta">
+                <span class="repo-tag">
+                    <span class="lang-en">EMNLP 2025</span><span class="lang-zh d-none">EMNLP 2025</span>
+                </span>
+                <span class="repo-tag">Python</span>
+            </div>
         </a>
         
         
-        <a class="repo-row" href="https://github.com/richardChenzhihui/ai-top-conf-2026-survey" target="_blank" rel="noopener">
-            <span class="repo-name">ai-top-conf-2026-survey</span>
-            <span class="repo-desc">
+        <a class="repo-card" href="https://github.com/richardChenzhihui/ai-top-conf-2026-survey" target="_blank" rel="noopener">
+            <div class="repo-card-head">
+                <span class="repo-card-name">ai-top-conf-2026-survey</span>
+                <span class="repo-card-stars"></span>
+            </div>
+            <p class="repo-card-desc">
                 <span class="lang-en">15,800 CVPR / ICLR / NeurIPS papers auto-classified by topic, with survey tables.</span>
                 <span class="lang-zh d-none">15,800 篇 CVPR / ICLR / NeurIPS 论文自动主题分类与综述表格。</span>
-            </span>
-            <span class="repo-stat">
-                <span class="lang-en">Research Tooling</span><span class="lang-zh d-none">科研工具</span>
-            </span>
+            </p>
+            <div class="repo-card-meta">
+                <span class="repo-tag">
+                    <span class="lang-en">Research Tooling</span><span class="lang-zh d-none">科研工具</span>
+                </span>
+                <span class="repo-tag">Python</span>
+            </div>
         </a>
         
         
-        <a class="repo-row" href="https://github.com/richardChenzhihui/ShieldDocs" target="_blank" rel="noopener">
-            <span class="repo-name">ShieldDocs</span>
-            <span class="repo-desc">
+        <a class="repo-card" href="https://github.com/richardChenzhihui/ShieldDocs" target="_blank" rel="noopener">
+            <div class="repo-card-head">
+                <span class="repo-card-name">ShieldDocs</span>
+                <span class="repo-card-stars">1&#9733;</span>
+            </div>
+            <p class="repo-card-desc">
                 <span class="lang-en">Localized LLM-driven document anonymization for privacy-sensitive legal workflows.</span>
                 <span class="lang-zh d-none">本地化 LLM 驱动的文档匿名化，面向隐私敏感的法律工作流。</span>
-            </span>
-            <span class="repo-stat">
-                <span class="lang-en">Legal AI</span><span class="lang-zh d-none">法律 AI</span> &middot; 1&#9733;
-            </span>
+            </p>
+            <div class="repo-card-meta">
+                <span class="repo-tag">
+                    <span class="lang-en">Legal AI</span><span class="lang-zh d-none">法律 AI</span>
+                </span>
+                <span class="repo-tag">Python</span>
+            </div>
         </a>
         
     </div>
@@ -988,10 +846,13 @@
     <footer class="footer">
     <div class="container">
         <div>
-            <span class="lang-en">Zhihui Chen &nbsp;&middot;&nbsp; Updated Oct 2026</span>
-            <span class="lang-zh d-none">陈致晖 &nbsp;&middot;&nbsp; 更新于 2026 年 10 月</span>
+            <span class="lang-en">&copy; 2026 Zhihui Chen &middot; Updated Oct 2026</span>
+            <span class="lang-zh d-none">&copy; 2026 陈致晖 &middot; 更新于 2026 年 10 月</span>
         </div>
-        <div><a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a></div>
+        <div>
+            <span class="lang-en">Template: <a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noopener">academic-homepage</a></span>
+            <span class="lang-zh d-none">模板：<a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noopener">academic-homepage</a></span>
+        </div>
     </div>
 </footer>
 
