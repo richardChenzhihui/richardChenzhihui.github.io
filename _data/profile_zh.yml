@@ -23,7 +23,7 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    研究方向是 Coding Agent + RSI（递归自进化）的后训练：Agent 生成编码任务并在沙箱中求解，通过编译和测试的轨迹被保留，下一版模型在这些轨迹上训练。我关心的问题是长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
+    研究工作是 Coding Agent 的后训练与递归自进化（RSI），同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
   </p>
   <p>
     现于智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。此前在字节跳动（VLM 后训练，Farsight）和阶跃星辰（StepAudio2.5 基础模型预训练）实习。已获阿里通义实验室 Qwen 团队基础模型研究实习录用，并入选腾讯「青云计划」。
@@ -34,13 +34,57 @@ hero_summary: >-
 
 impact_areas:
   - label: "方向一 · Coding Agent + RSI"
-    title: "基于执行验证轨迹的 Coding Agent 后训练"
+    title: "Coding Agent 的递归自进化"
     summary: >-
-      Coding Agent 提出软件任务并在沙箱中求解；通过编译与测试的轨迹保留为 SFT 与 RL 数据，更新后的模型进入下一轮。循环有效的前提是筛选可靠，因此我的工作集中在训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。
+      让 Coding Agent 在自己生成并验证的轨迹上训练，不断改进自身。
   - label: "方向二 · 医疗 Agent 与医疗 AI 安全"
     title: "医疗 Agent 与医疗伪造内容检测"
     summary: >-
-      医疗场景中检查一个输出往往需要医生，反馈少且贵。Med-Banana 把 RSI 用于医学图像编辑：验证器为每次编辑打分，反馈逐轮修正 Prompt，成功与失败的轨迹用于后训练。安全方面，MedForge 检测伪造的医学影像并指出伪造位置，DivScore 无需训练检测器即可识别医疗与法律领域的大模型生成文本。
+      把同类自进化方法用于医疗 Agent，并检测伪造医学影像与大模型生成文本。
+
+# 首页横向时间线图表。t_start / t_end 为小数年份；无 t_start 的条目不进图。
+# kind: edu（教育）| work（实习）| teach（教学）
+timeline:
+- short: "智谱 Z.ai"
+  kind: work
+  t_start: 2026.67
+  t_now: true
+  date: "2026年9月 -"
+- short: "字节跳动"
+  kind: work
+  t_start: 2026.33
+  t_end: 2026.67
+  date: "2026年5-9月"
+- short: "阶跃星辰"
+  kind: work
+  t_start: 2025.17
+  t_end: 2025.5
+  date: "2025年3-7月"
+- short: "AQUMON"
+  kind: work
+  t_start: 2025.0
+  t_end: 2025.17
+  date: "2025年1-3月"
+- short: "NUS 博士"
+  kind: edu
+  t_start: 2025.0
+  t_now: true
+  date: "2025年1月 -"
+- short: "NUS 助教"
+  kind: teach
+  t_start: 2024.08
+  t_end: 2024.25
+  date: "2024年2-4月"
+- short: "港大硕士"
+  kind: edu
+  t_start: 2022.67
+  t_end: 2024.54
+  date: "2022 - 2024"
+- short: "港中深本科"
+  kind: edu
+  t_start: 2018.67
+  t_end: 2022.37
+  date: "2018 - 2022"
 
 portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-

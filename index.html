@@ -4,6 +4,11 @@ title : Homepage
 navbar_title: Home
 ---
 {% include widgets/profile_card.html %}
+
+{% if site.data.display.homepage.show_experience %}
+    {% include widgets/experience_card.html %}
+{% endif %}
+
 {% include widgets/home_impact_areas.html %}
 
 {% if site.data.display.homepage.show_news %}
@@ -16,10 +21,6 @@ navbar_title: Home
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
     {% include widgets/publication_card.html publications=pubs limit=4 hide_abstract=true %}
-{% endif %}
-
-{% if site.data.display.homepage.show_experience %}
-    {% include widgets/experience_card.html %}
 {% endif %}
 
 {% include widgets/home_github_projects.html %}

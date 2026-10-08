@@ -1,16 +1,65 @@
 {%- assign p_en = site.data.profile -%}
 {%- assign p_zh = site.data.profile_zh -%}
-<section class="section" id="background">
+<section class="section" id="timeline">
     <h2 class="section-head">
-        <span class="lang-en">Background</span>
-        <span class="lang-zh d-none">教育与经历</span>
+        <span class="lang-en">Timeline</span>
+        <span class="lang-zh d-none">履历时间线</span>
     </h2>
+
+    {%- comment -%} ---- Horizontal span chart: one bar per entry, pure CSS ---- {%- endcomment -%}
+    {%- if p_en.timeline and p_en.timeline.size > 0 -%}
+    {%- assign tl_en = p_en.timeline -%}
+    {%- assign tl_zh = p_zh.timeline -%}
+    {%- assign now_y = site.time | date: '%Y' | plus: 0 -%}
+    {%- assign now_m = site.time | date: '%-m' | plus: 0 -%}
+    {%- assign now_frac = now_m | minus: 0.5 | divided_by: 12.0 | plus: now_y -%}
+    {%- assign axis_start = 2018.5 -%}
+    {%- assign axis_end = 2027.0 -%}
+    {%- assign axis_span = axis_end | minus: axis_start -%}
+
+    <div class="tl-chart">
+        {%- for y in (2019..2026) -%}
+        {%- assign gl = y | minus: axis_start | divided_by: axis_span | times: 100.0 -%}
+        <div class="tl-grid" style="left: {{ gl }}%"><span>{{ y }}</span></div>
+        {%- endfor -%}
+        {%- assign now_left = now_frac | minus: axis_start | divided_by: axis_span | times: 100.0 -%}
+        <div class="tl-now" style="left: {{ now_left }}%"><span><span class="lang-en">now</span><span class="lang-zh d-none">现在</span></span></div>
+
+        {%- for row in tl_en -%}
+        {%- assign row_zh = tl_zh[forloop.index0] -%}
+        {%- assign left = row.t_start | minus: axis_start | divided_by: axis_span | times: 100.0 -%}
+        <div class="tl-row">
+            <div class="tl-label">
+                <span class="lang-en">{{ row.short }}</span><span class="lang-zh d-none">{{ row_zh.short }}</span>
+            </div>
+            <div class="tl-track">
+                {%- if row.t_now -%}
+                {%- assign width = now_frac | minus: row.t_start | divided_by: axis_span | times: 100.0 -%}
+                <div class="tl-bar tl-{{ row.kind }} tl-bar-current" style="left: {{ left }}%; width: {{ width }}%"></div>
+                {%- else -%}
+                {%- assign width = row.t_end | minus: row.t_start | divided_by: axis_span | times: 100.0 -%}
+                <div class="tl-bar tl-{{ row.kind }}" style="left: {{ left }}%; width: {{ width }}%"></div>
+                {%- endif -%}
+            </div>
+            <div class="tl-dates">
+                <span class="lang-en">{{ row.date }}</span><span class="lang-zh d-none">{{ row_zh.date }}</span>
+            </div>
+        </div>
+        {%- endfor -%}
+    </div>
+
+    <div class="tl-legend">
+        <span><i class="tl-sw tl-edu"></i><span class="lang-en">Education</span><span class="lang-zh d-none">教育</span></span>
+        <span><i class="tl-sw tl-work"></i><span class="lang-en">Internship</span><span class="lang-zh d-none">实习</span></span>
+        <span><i class="tl-sw tl-teach"></i><span class="lang-en">Teaching</span><span class="lang-zh d-none">教学</span></span>
+    </div>
+    {%- endif -%}
 
     {% if p_en.experience %}
     <div class="cv-block">
         <div class="cv-subhead">
             <span class="lang-en">Experience</span>
-            <span class="lang-zh d-none">工作经历</span>
+            <span class="lang-zh d-none">实习与工作经历</span>
         </div>
         <div class="lang-en">
             {% for item in p_en.experience %}

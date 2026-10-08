@@ -23,7 +23,7 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
   </p>
   <p>
-    I work on post-training for coding agents, focusing on recursive self-improvement (RSI): the agent generates coding tasks and solves them in a sandbox, trajectories that pass compilation and tests are kept, and the next model is trained on them. The questions I care about are credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent. I also apply these methods to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>), and work on detecting forged medical images and LLM-generated text (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
+    I work on post-training for coding agents with recursive self-improvement (RSI), and apply the same methods to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>) and medical AI safety (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
   </p>
   <p>
     I am currently a research intern on the foundation-model post-training team at Zhipu AI (Z.ai), working on coding-agent RSI post-training for the next-generation GLM foundation model. Previously I interned at ByteDance (VLM post-training; Farsight) and StepFun (StepAudio2.5 pre-training). I have received a research internship offer from the Qwen team at Alibaba Tongyi Lab, and was selected for Tencent&rsquo;s Qingyun Program.
@@ -34,144 +34,58 @@ hero_summary: >-
 
 impact_areas:
   - label: "Direction 01 · Coding Agent + RSI"
-    title: "Post-training coding agents on execution-verified trajectories"
+    title: "Recursive self-improvement for coding agents"
     summary: >-
-      A coding agent proposes software tasks and solves them in a sandbox. Trajectories
-      that compile and pass the tests are kept as SFT and RL data, and the updated model
-      runs the agent in the next round. The loop only helps if the filter is reliable, so
-      my work centers on the training signal: credit assignment over long trajectories,
-      reward and verifier design, and auditing agent actions with a checker independent
-      of the agent.
-    chain_caption:
-      en: "The self-improvement loop"
-      zh: "自改进循环"
-    loop_note:
-      en: "One round = one model update, trained only on trajectories that passed verification."
-      zh: "一轮对应一次模型更新，训练数据只取通过验证的轨迹。"
-    steps:
-      - en: "Agent proposes a coding task"
-        zh: "Agent 生成编码任务"
-      - en: "Sandbox execution"
-        zh: "沙箱执行"
-      - en: "Compile · test · replay"
-        zh: "编译 · 测试 · 复现"
-      - en: "Keep only verified trajectories"
-        zh: "仅保留通过验证的轨迹"
-      - en: "SFT · RL post-training"
-        zh: "SFT · RL 后训练"
-      - en: "Updated model runs the next round"
-        zh: "更新后的模型进入下一轮"
-    problems:
-      - en: "Long-horizon credit assignment"
-        zh: "长程任务的信用分配"
-      - en: "Verifiable rewards (RLVR)"
-        zh: "可验证奖励（RLVR）"
-      - en: "Reward & verifier design"
-        zh: "奖励与验证器设计"
-      - en: "Independent audit of agent actions"
-        zh: "Agent 行动的独立审查"
-    evidence:
-      - name:
-          en: "Zhipu AI (Z.ai) · Foundation-Model Post-Training"
-          zh: "智谱（Z.ai）· 基础模型后训练"
-        meta:
-          en: "current role"
-          zh: "在职"
-        note:
-          en: "Coding-agent RSI post-training for the next-generation GLM foundation model."
-          zh: "GLM 下一代基础模型的 Coding Agent RSI 后训练。"
-      - name:
-          en: "Farsight"
-          zh: "Farsight"
-        meta:
-          en: "ICLR 2026 · first author, under review"
-          zh: "ICLR 2026 · 一作在投"
-        note:
-          en: "Future-discounted visual credit assignment for VLM reinforcement learning; trained on 100×H100 at ByteDance."
-          zh: "面向视觉语言模型强化学习的未来折扣视觉信用分配；在字节跳动百卡 H100 上训练。"
-      - name:
-          en: "OfficeBuddy"
-          zh: "OfficeBuddy"
-        meta:
-          en: "open source · 53★"
-          zh: "开源 · 53★"
-        note:
-          en: "Word/Excel agent. Each edit is re-rendered in real Office and checked by a separate visual verifier."
-          zh: "Word/Excel 编辑 Agent。每步编辑在真实 Office 中重新渲染，由独立的视觉验证器检查。"
-      - name:
-          en: "Med-Banana trajectories"
-          zh: "Med-Banana 轨迹"
-        meta:
-          en: "88K+ released · 150K+ downloads"
-          zh: "开源 88K+ · 下载 150K+"
-        note:
-          en: "Successful and failed editing trajectories, released on GitHub and Hugging Face for post-training."
-          zh: "成功与失败的编辑轨迹，已在 GitHub 与 Hugging Face 公开，可直接用于后训练。"
+      Training coding agents on trajectories they generate and verify themselves.
   - label: "Direction 02 · Medical Agents & Medical AI Safety"
     title: "Medical agents and detection of forged medical content"
     summary: >-
-      In medicine, checking an output often needs a clinician, so feedback is scarce and
-      expensive. Med-Banana applies RSI to medical image editing: a verifier scores each
-      edit, its feedback refines the prompt over rounds, and the successful and failed
-      trajectories are used for post-training. On the safety side, MedForge detects
-      forged medical images and explains where the forgery is, and DivScore detects
-      LLM-generated medical and legal text without training a detector.
-    chain_caption:
-      en: "The verified-feedback loop (Med-Banana)"
-      zh: "可验证反馈循环（Med-Banana）"
-    loop_note:
-      en: "Verifier feedback refines the prompt over rounds; successful and failed trajectories are then used for post-training."
-      zh: "验证器反馈逐轮修正 Prompt；成功与失败的轨迹随后用于后训练。"
-    steps:
-      - en: "Medical task (image / workflow)"
-        zh: "医疗任务（影像 / 工作流）"
-      - en: "Agent acts: multimodal reasoning + tools"
-        zh: "Agent 执行：多模态推理 + 工具调用"
-      - en: "Verifier checks against clinical criteria"
-        zh: "验证器按临床标准检查"
-      - en: "Feedback → recursive prompt refinement"
-        zh: "反馈驱动 Prompt 递归优化"
-      - en: "Trajectory-based post-training"
-        zh: "成败轨迹后训练"
-      - en: "Updated medical agent"
-        zh: "更新后的医疗 Agent"
-    problems:
-      - en: "Verifiability of clinical feedback"
-        zh: "临床反馈的可验证性"
-      - en: "Multimodal medical reasoning & tool use"
-        zh: "多模态医学推理与工具调用"
-      - en: "Medical image integrity & forgery detection"
-        zh: "医学影像真实性与伪造检测"
-      - en: "Evidence integrity & rigorous output evaluation"
-        zh: "证据可信性与输出严格评估"
-    evidence:
-      - name:
-          en: "Med-Banana"
-          zh: "Med-Banana"
-        meta:
-          en: "EMNLP 2026"
-          zh: "EMNLP 2026"
-        note:
-          en: "RSI through medical agent self-improvement: verifier-guided prompt refinement and trajectory-based post-training for medical image editing."
-          zh: "RSI through Medical Agent Self-Improvement：医学图像编辑中由验证器引导的 Prompt 修正与基于轨迹的后训练。"
-      - name:
-          en: "MedForge"
-          zh: "MedForge"
-        meta:
-          en: "ACL 2026 Main"
-          zh: "ACL 2026 主会议"
-        note:
-          en: "Medical deepfake detection that first localizes the forged region, then explains it; 19 lesion types, 10 forgery generators."
-          zh: "医学伪造检测：先定位伪造区域再给出解释；覆盖 19 类病灶、10 种伪造模型。"
-      - name:
-          en: "DivScore"
-          zh: "DivScore"
-        meta:
-          en: "EMNLP 2025"
-          zh: "EMNLP 2025"
-        note:
-          en: "Zero-shot detection of LLM-generated text in medical and legal domains."
-          zh: "医疗与法律领域大模型生成文本的零样本检测。"
+      Applying the same self-improvement loop to medical agents, and detecting
+      forged medical images and LLM-generated text.
+
+# Horizontal timeline chart on the homepage. t_start / t_end are decimal years;
+# entries without t_start are not charted. kind: edu | work | teach
+timeline:
+- short: "Zhipu AI (Z.ai)"
+  kind: work
+  t_start: 2026.67
+  t_now: true
+  date: "Sep 2026 -"
+- short: "ByteDance"
+  kind: work
+  t_start: 2026.33
+  t_end: 2026.67
+  date: "May - Sep 2026"
+- short: "StepFun"
+  kind: work
+  t_start: 2025.17
+  t_end: 2025.5
+  date: "Mar - Jul 2025"
+- short: "AQUMON"
+  kind: work
+  t_start: 2025.0
+  t_end: 2025.17
+  date: "Jan - Mar 2025"
+- short: "NUS Ph.D."
+  kind: edu
+  t_start: 2025.0
+  t_now: true
+  date: "Jan 2025 -"
+- short: "NUS TA"
+  kind: teach
+  t_start: 2024.08
+  t_end: 2024.25
+  date: "Feb - Apr 2024"
+- short: "HKU M.Sc."
+  kind: edu
+  t_start: 2022.67
+  t_end: 2024.54
+  date: "2022 - 2024"
+- short: "CUHK-Shenzhen"
+  kind: edu
+  t_start: 2018.67
+  t_end: 2022.37
+  date: "2018 - 2022"
 
 portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-
