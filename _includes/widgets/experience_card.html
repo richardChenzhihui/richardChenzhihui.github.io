@@ -6,120 +6,111 @@
         <span class="lang-zh d-none">履历时间线</span>
     </h2>
 
-    {%- comment -%} ---- Horizontal span chart: one bar per entry, pure CSS ---- {%- endcomment -%}
-    {%- if p_en.timeline and p_en.timeline.size > 0 -%}
-    {%- assign tl_en = p_en.timeline -%}
-    {%- assign tl_zh = p_zh.timeline -%}
-    {%- assign now_y = site.time | date: '%Y' | plus: 0 -%}
-    {%- assign now_m = site.time | date: '%-m' | plus: 0 -%}
-    {%- assign now_frac = now_m | minus: 0.5 | divided_by: 12.0 | plus: now_y -%}
-    {%- assign axis_start = 2018.5 -%}
-    {%- assign axis_end = 2027.0 -%}
-    {%- assign axis_span = axis_end | minus: axis_start -%}
+    {%- comment -%} Vertical timeline: one rail, role-first entries. Recent
+        entries render in full; entries flagged `compact: true` in the data
+        collapse to a single line. {%- endcomment -%}
 
-    <div class="tl-chart">
-        {%- for y in (2019..2026) -%}
-        {%- assign gl = y | minus: axis_start | divided_by: axis_span | times: 100.0 -%}
-        <div class="tl-grid" style="left: {{ gl }}%"><span>{{ y }}</span></div>
-        {%- endfor -%}
-        {%- assign now_left = now_frac | minus: axis_start | divided_by: axis_span | times: 100.0 -%}
-        <div class="tl-now" style="left: {{ now_left }}%"><span><span class="lang-en">now</span><span class="lang-zh d-none">现在</span></span></div>
-
-        {%- for row in tl_en -%}
-        {%- assign row_zh = tl_zh[forloop.index0] -%}
-        {%- assign left = row.t_start | minus: axis_start | divided_by: axis_span | times: 100.0 -%}
-        <div class="tl-row">
-            <div class="tl-label">
-                <span class="lang-en">{{ row.short }}</span><span class="lang-zh d-none">{{ row_zh.short }}</span>
+    {%- if p_en.experience -%}
+    <div class="cv-subhead">
+        <span class="lang-en">Experience</span>
+        <span class="lang-zh d-none">实习与工作经历</span>
+    </div>
+    <div class="tlv lang-en">
+        {%- for item in p_en.experience -%}
+        <div class="tlv-item{% if item.compact %} tlv-compact{% endif %}">
+            <span class="tlv-dot{% if item.current %} tlv-dot-now{% endif %}"></span>
+            {%- if item.compact -%}
+            <div class="tlv-oneline">
+                <span class="tlv-o-org">{{ item.name }}</span>
+                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
+                <span class="tlv-o-role">{{ item.position }}</span>
+                <span class="tlv-o-date">{{ item.date }}</span>
             </div>
-            <div class="tl-track">
-                {%- if row.t_now -%}
-                {%- assign width = now_frac | minus: row.t_start | divided_by: axis_span | times: 100.0 -%}
-                <div class="tl-bar tl-{{ row.kind }} tl-bar-current" style="left: {{ left }}%; width: {{ width }}%"></div>
-                {%- else -%}
-                {%- assign width = row.t_end | minus: row.t_start | divided_by: axis_span | times: 100.0 -%}
-                <div class="tl-bar tl-{{ row.kind }}" style="left: {{ left }}%; width: {{ width }}%"></div>
-                {%- endif -%}
+            {%- else -%}
+            <div class="tlv-head">
+                <span class="tlv-role">{{ item.position }}</span>
+                <span class="tlv-date">{{ item.date }}</span>
             </div>
-            <div class="tl-dates">
-                <span class="lang-en">{{ row.date }}</span><span class="lang-zh d-none">{{ row_zh.date }}</span>
-            </div>
+            <div class="tlv-org">{{ item.name }}</div>
+            {%- if item.dept -%}<div class="tlv-note">{{ item.dept }}</div>{%- endif -%}
+            {%- endif -%}
         </div>
         {%- endfor -%}
     </div>
-
-    <div class="tl-legend">
-        <span><i class="tl-sw tl-edu"></i><span class="lang-en">Education</span><span class="lang-zh d-none">教育</span></span>
-        <span><i class="tl-sw tl-work"></i><span class="lang-en">Internship</span><span class="lang-zh d-none">实习</span></span>
-        <span><i class="tl-sw tl-teach"></i><span class="lang-en">Teaching</span><span class="lang-zh d-none">教学</span></span>
+    <div class="tlv lang-zh d-none">
+        {%- for item in p_zh.experience -%}
+        <div class="tlv-item{% if item.compact %} tlv-compact{% endif %}">
+            <span class="tlv-dot{% if item.current %} tlv-dot-now{% endif %}"></span>
+            {%- if item.compact -%}
+            <div class="tlv-oneline">
+                <span class="tlv-o-org">{{ item.name }}</span>
+                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
+                <span class="tlv-o-role">{{ item.position }}</span>
+                <span class="tlv-o-date">{{ item.date }}</span>
+            </div>
+            {%- else -%}
+            <div class="tlv-head">
+                <span class="tlv-role">{{ item.position }}</span>
+                <span class="tlv-date">{{ item.date }}</span>
+            </div>
+            <div class="tlv-org">{{ item.name }}</div>
+            {%- if item.dept -%}<div class="tlv-note">{{ item.dept }}</div>{%- endif -%}
+            {%- endif -%}
+        </div>
+        {%- endfor -%}
     </div>
     {%- endif -%}
 
-    {% if p_en.experience %}
-    <div class="cv-block">
-        <div class="cv-subhead">
-            <span class="lang-en">Experience</span>
-            <span class="lang-zh d-none">实习与工作经历</span>
-        </div>
-        <div class="lang-en">
-            {% for item in p_en.experience %}
-            <div class="cv-row">
-                <div class="cv-date">{{ item.date }}</div>
-                <div>
-                    <div class="cv-org">{{ item.name }}</div>
-                    <div class="cv-role">{{ item.position }}</div>
-                    {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        <div class="lang-zh d-none">
-            {% for item in p_zh.experience %}
-            <div class="cv-row">
-                <div class="cv-date">{{ item.date }}</div>
-                <div>
-                    <div class="cv-org">{{ item.name }}</div>
-                    <div class="cv-role">{{ item.position }}</div>
-                    {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+    {%- if p_en.education -%}
+    <div class="cv-subhead tlv-edu-head">
+        <span class="lang-en">Education</span>
+        <span class="lang-zh d-none">教育经历</span>
     </div>
-    {% endif %}
-
-    {% if p_en.education %}
-    <div class="cv-block">
-        <div class="cv-subhead">
-            <span class="lang-en">Education</span>
-            <span class="lang-zh d-none">教育经历</span>
-        </div>
-        <div class="lang-en">
-            {% for item in p_en.education %}
-            <div class="cv-row">
-                <div class="cv-date">{{ item.date }}</div>
-                <div>
-                    <div class="cv-org">{{ item.name }}</div>
-                    <div class="cv-role">{{ item.position }}</div>
-                    {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
-                </div>
+    <div class="tlv lang-en">
+        {%- for item in p_en.education -%}
+        <div class="tlv-item{% if item.compact %} tlv-compact{% endif %}">
+            <span class="tlv-dot{% if item.current %} tlv-dot-now{% endif %}"></span>
+            {%- if item.compact -%}
+            <div class="tlv-oneline">
+                <span class="tlv-o-org">{{ item.name }}</span>
+                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
+                <span class="tlv-o-role">{{ item.position }}</span>
+                <span class="tlv-o-date">{{ item.date }}</span>
             </div>
-            {% endfor %}
-        </div>
-        <div class="lang-zh d-none">
-            {% for item in p_zh.education %}
-            <div class="cv-row">
-                <div class="cv-date">{{ item.date }}</div>
-                <div>
-                    <div class="cv-org">{{ item.name }}</div>
-                    <div class="cv-role">{{ item.position }}</div>
-                    {% if item.dept %}<div class="cv-note">{{ item.dept }}</div>{% endif %}
-                </div>
+            {%- else -%}
+            <div class="tlv-head">
+                <span class="tlv-role">{{ item.position }}</span>
+                <span class="tlv-date">{{ item.date }}</span>
             </div>
-            {% endfor %}
+            <div class="tlv-org">{{ item.name }}</div>
+            {%- if item.dept -%}<div class="tlv-note">{{ item.dept }}</div>{%- endif -%}
+            {%- endif -%}
         </div>
+        {%- endfor -%}
     </div>
-    {% endif %}
+    <div class="tlv lang-zh d-none">
+        {%- for item in p_zh.education -%}
+        <div class="tlv-item{% if item.compact %} tlv-compact{% endif %}">
+            <span class="tlv-dot{% if item.current %} tlv-dot-now{% endif %}"></span>
+            {%- if item.compact -%}
+            <div class="tlv-oneline">
+                <span class="tlv-o-org">{{ item.name }}</span>
+                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
+                <span class="tlv-o-role">{{ item.position }}</span>
+                <span class="tlv-o-date">{{ item.date }}</span>
+            </div>
+            {%- else -%}
+            <div class="tlv-head">
+                <span class="tlv-role">{{ item.position }}</span>
+                <span class="tlv-date">{{ item.date }}</span>
+            </div>
+            <div class="tlv-org">{{ item.name }}</div>
+            {%- if item.dept -%}<div class="tlv-note">{{ item.dept }}</div>{%- endif -%}
+            {%- endif -%}
+        </div>
+        {%- endfor -%}
+    </div>
+    {%- endif -%}
 
     {% if p_en.awards or p_en.academic_service %}
     <div class="cv-two-col">

@@ -43,50 +43,6 @@ impact_areas:
       Applying the same self-improvement loop to medical agents, and detecting
       forged medical images and LLM-generated text.
 
-# Horizontal timeline chart on the homepage. t_start / t_end are decimal years;
-# entries without t_start are not charted. kind: edu | work | teach
-timeline:
-- short: "Zhipu AI (Z.ai)"
-  kind: work
-  t_start: 2026.67
-  t_now: true
-  date: "Sep 2026 -"
-- short: "ByteDance"
-  kind: work
-  t_start: 2026.33
-  t_end: 2026.67
-  date: "May - Sep 2026"
-- short: "StepFun"
-  kind: work
-  t_start: 2025.17
-  t_end: 2025.5
-  date: "Mar - Jul 2025"
-- short: "AQUMON"
-  kind: work
-  t_start: 2025.0
-  t_end: 2025.17
-  date: "Jan - Mar 2025"
-- short: "NUS Ph.D."
-  kind: edu
-  t_start: 2025.0
-  t_now: true
-  date: "Jan 2025 -"
-- short: "NUS TA"
-  kind: teach
-  t_start: 2024.08
-  t_end: 2024.25
-  date: "Feb - Apr 2024"
-- short: "HKU M.Sc."
-  kind: edu
-  t_start: 2022.67
-  t_end: 2024.54
-  date: "2022 - 2024"
-- short: "CUHK-Shenzhen"
-  kind: edu
-  t_start: 2018.67
-  t_end: 2022.37
-  date: "2018 - 2022"
-
 portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-
 
@@ -96,57 +52,52 @@ education:
   position: Ph.D. in Artificial Intelligence
   dept: "Coding Agent + RSI · AI for healthcare"
   date: Jan. 2025 - present
+  current: true
 - name: The University of Hong Kong
-  logo: /assets/images/badges/HKU.jpg
   position: M.Sc. in Artificial Intelligence
   date: Sep. 2022 - Jul. 2024
+  compact: true
 - name: The Chinese University of Hong Kong, Shenzhen
-  logo: /assets/images/badges/CU.png
   position: B.Sc. in Statistics, Data Science Stream
   date: Sep. 2018 - May. 2022
+  compact: true
 
 experience:
 - name: Zhipu AI (Z.ai, 智谱)
-  logo: /assets/images/badges/Zhipu.png
   position: Foundation Model Post-Training Research Intern
   dept: "Next-generation GLM foundation model · coding-agent RSI post-training: the agent generates and executes coding tasks, and the model is trained on trajectories that pass execution checks"
   date: Sep. 2026 - present
+  current: true
 
 - name: Alibaba Tongyi Lab · Qwen
-  logo: /assets/images/badges/Qwen.png
   position: "Qwen Foundation Model Research Intern — offer received"
   dept: "Qwen foundation model team · mid-training & post-training"
   date: 2026
 
 - name: Tencent · Qingyun Program
-  logo: /assets/images/badges/Tencent-Qingyun.svg
   position: "Qingyun Program (青云计划) — Elite Research Talent, selected"
   dept: "Elite research talent track · game-AI × LLM agent research"
   date: 2026
 
 - name: ByteDance · Data Foundation Model (Data 业务基模)
-  logo: /assets/images/badges/ByteDance.svg
   position: VLM Post-Training Research Intern
   dept: "VLM post-training: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)"
   date: May 2026 - Sep 2026
 
 - name: StepFun (阶跃星辰)
-  logo: /assets/images/badges/StepFun.png
   position: Speech Foundation Model Research Intern
   dept: "StepAudio2.5 foundation-model pre-training — audio segmentation &amp; transcription alignment, dialect cleanup (Hakka / Teochew / Cantonese), emotion &amp; scene tagging schemas, and speech&ndash;text corpus construction"
   date: Mar. 2025 - Jul. 2025
 
 - name: AQUMON (Hong Kong)
-  logo: /assets/images/badges/AQUMON.png
   position: Quant Trading Agent Intern
-  dept: "LangChain orchestration over Futu OpenAPI real-time data & execution"
   date: Jan. 2025 - Mar. 2025
+  compact: true
 
 - name: NUS Business School
-  logo: /assets/images/badges/NUS.png
   position: Teaching Assistant — "Generative AI and LLM"
-  dept: "Curriculum design · tutorials on pre-training, SFT and RLHF"
   date: Feb. 2024 - Apr. 2024
+  compact: true
 
 awards:
 - name: "Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits"
