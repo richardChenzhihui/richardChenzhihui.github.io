@@ -65,7 +65,7 @@
   I am a PhD student in Artificial Intelligence at the National University of Singapore, advised by
   <a href="https://www.mornin-feng.com/" target="_blank">Prof. Mengling Feng</a>.
 </p> <p>
-  I work on post-training for coding agents with recursive self-improvement (RSI), and apply the same methods to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>) and medical AI safety (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
+  I work on post-training for coding agents, focusing on recursive self-improvement (RSI): the agent generates coding tasks and solves them in a sandbox, trajectories that pass compilation and tests are kept, and the next model is trained on them. The questions I care about are credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent. I also apply these methods to medical agents (<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>), and work on detecting forged medical images and LLM-generated text (<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>, <a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>).
 </p> <p>
   I am currently a research intern on the foundation-model post-training team at Zhipu AI (Z.ai), working on coding-agent RSI post-training for the next-generation GLM foundation model. Previously I interned at ByteDance (VLM post-training; Farsight) and StepFun (StepAudio2.5 pre-training). I have received a research internship offer from the Qwen team at Alibaba Tongyi Lab, and was selected for Tencent&rsquo;s Qingyun Program.
 </p></div>
@@ -73,7 +73,7 @@
   新加坡国立大学人工智能博士生，导师为
   <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
 </p> <p>
-  研究工作是 Coding Agent 的后训练与递归自进化（RSI），同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
+  研究方向是 Coding Agent + RSI（递归自进化）的后训练：Agent 生成编码任务并在沙箱中求解，通过编译和测试的轨迹被保留，下一版模型在这些轨迹上训练。我关心的问题是长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
 </p> <p>
   现于智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。此前在字节跳动（VLM 后训练，Farsight）和阶跃星辰（StepAudio2.5 基础模型预训练）实习。已获阿里通义实验室 Qwen 团队基础模型研究实习录用，并入选腾讯「青云计划」。
 </p></div>
@@ -100,166 +100,6 @@
 
 
 
-    <section class="section" id="timeline">
-    <h2 class="section-head">
-        <span class="lang-en">Timeline</span>
-        <span class="lang-zh d-none">履历时间线</span>
-    </h2><div class="cv-subhead">
-        <span class="lang-en">Experience</span>
-        <span class="lang-zh d-none">实习与工作经历</span>
-    </div>
-    <div class="tlv lang-en"><div class="tlv-item">
-            <span class="tlv-dot tlv-dot-now"></span><div class="tlv-head">
-                <span class="tlv-role">Foundation Model Post-Training Research Intern</span>
-                <span class="tlv-date">Sep. 2026 - present</span>
-            </div>
-            <div class="tlv-org">Zhipu AI (Z.ai, 智谱)</div><div class="tlv-note">Next-generation GLM foundation model · coding-agent RSI post-training: the agent generates and executes coding tasks, and the model is trained on trajectories that pass execution checks</div></div><div class="tlv-item">
-            <span class="tlv-dot"></span><div class="tlv-head">
-                <span class="tlv-role">Qwen Foundation Model Research Intern — offer received</span>
-                <span class="tlv-date">2026</span>
-            </div>
-            <div class="tlv-org">Alibaba Tongyi Lab · Qwen</div><div class="tlv-note">Qwen foundation model team · mid-training & post-training</div></div><div class="tlv-item">
-            <span class="tlv-dot"></span><div class="tlv-head">
-                <span class="tlv-role">Qingyun Program (青云计划) — Elite Research Talent, selected</span>
-                <span class="tlv-date">2026</span>
-            </div>
-            <div class="tlv-org">Tencent · Qingyun Program</div><div class="tlv-note">Elite research talent track · game-AI × LLM agent research</div></div><div class="tlv-item">
-            <span class="tlv-dot"></span><div class="tlv-head">
-                <span class="tlv-role">VLM Post-Training Research Intern</span>
-                <span class="tlv-date">May 2026 - Sep 2026</span>
-            </div>
-            <div class="tlv-org">ByteDance · Data Foundation Model (Data 业务基模)</div><div class="tlv-note">VLM post-training: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)</div></div><div class="tlv-item">
-            <span class="tlv-dot"></span><div class="tlv-head">
-                <span class="tlv-role">Speech Foundation Model Research Intern</span>
-                <span class="tlv-date">Mar. 2025 - Jul. 2025</span>
-            </div>
-            <div class="tlv-org">StepFun (阶跃星辰)</div><div class="tlv-note">StepAudio2.5 foundation-model pre-training — audio segmentation &amp; transcription alignment, dialect cleanup (Hakka / Teochew / Cantonese), emotion &amp; scene tagging schemas, and speech&ndash;text corpus construction</div></div><div class="tlv-item tlv-compact">
-            <span class="tlv-dot"></span><div class="tlv-oneline">
-                <span class="tlv-o-org">AQUMON (Hong Kong)</span>
-                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
-                <span class="tlv-o-role">Quant Trading Agent Intern</span>
-                <span class="tlv-o-date">Jan. 2025 - Mar. 2025</span>
-            </div></div><div class="tlv-item tlv-compact">
-            <span class="tlv-dot"></span><div class="tlv-oneline">
-                <span class="tlv-o-org">NUS Business School</span>
-                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
-                <span class="tlv-o-role">Teaching Assistant — "Generative AI and LLM"</span>
-                <span class="tlv-o-date">Feb. 2024 - Apr. 2024</span>
-            </div></div></div>
-    <div class="tlv lang-zh d-none"><div class="tlv-item">
-            <span class="tlv-dot tlv-dot-now"></span><div class="tlv-head">
-                <span class="tlv-role">基础模型后训练 研发实习生</span>
-                <span class="tlv-date">2026年9月 - 至今</span>
-            </div>
-            <div class="tlv-org">智谱（Z.ai）</div><div class="tlv-note">GLM 下一代基础模型 · Coding Agent RSI 后训练：Agent 生成并执行编码任务，模型在通过执行验证的轨迹上训练</div></div><div class="tlv-item">
-            <span class="tlv-dot"></span><div class="tlv-head">
-                <span class="tlv-role">Qwen 基础模型 研究实习生 —— 已获录用</span>
-                <span class="tlv-date">2026</span>
-            </div>
-            <div class="tlv-org">阿里通义实验室 · Qwen</div><div class="tlv-note">Qwen 基础模型团队 · 中期训练与后训练</div></div><div class="tlv-item">
-            <span class="tlv-dot"></span><div class="tlv-head">
-                <span class="tlv-role">「青云计划」精英科研人才 入选</span>
-                <span class="tlv-date">2026</span>
-            </div>
-            <div class="tlv-org">腾讯 · 青云计划</div><div class="tlv-note">精英科研人才计划 · 游戏 AI × 大模型 Agent 方向</div></div><div class="tlv-item">
-            <span class="tlv-dot"></span><div class="tlv-head">
-                <span class="tlv-role">VLM 后训练 研究实习生</span>
-                <span class="tlv-date">2026年5月 - 2026年9月</span>
-            </div>
-            <div class="tlv-org">字节跳动 · Data 业务基模</div><div class="tlv-note">VLM 后训练：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）</div></div><div class="tlv-item">
-            <span class="tlv-dot"></span><div class="tlv-head">
-                <span class="tlv-role">语音基础模型 研发实习生</span>
-                <span class="tlv-date">2025年3月 - 2025年7月</span>
-            </div>
-            <div class="tlv-org">阶跃星辰（StepFun）</div><div class="tlv-note">StepAudio2.5 基础模型预训练：音频切分与转写对齐、方言清洗（客家 / 潮汕 / 粤语）、情绪与场景标签体系、语音-文本配对语料建设</div></div><div class="tlv-item tlv-compact">
-            <span class="tlv-dot"></span><div class="tlv-oneline">
-                <span class="tlv-o-org">AQUMON（香港）</span>
-                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
-                <span class="tlv-o-role">量化交易 Agent 研发实习生</span>
-                <span class="tlv-o-date">2025年1月 - 2025年3月</span>
-            </div></div><div class="tlv-item tlv-compact">
-            <span class="tlv-dot"></span><div class="tlv-oneline">
-                <span class="tlv-o-org">NUS 商学院</span>
-                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
-                <span class="tlv-o-role">教学助理 —《Generative AI and LLM》</span>
-                <span class="tlv-o-date">2024年2月 - 2024年4月</span>
-            </div></div></div><div class="cv-subhead tlv-edu-head">
-        <span class="lang-en">Education</span>
-        <span class="lang-zh d-none">教育经历</span>
-    </div>
-    <div class="tlv lang-en"><div class="tlv-item">
-            <span class="tlv-dot tlv-dot-now"></span><div class="tlv-head">
-                <span class="tlv-role">Ph.D. in Artificial Intelligence</span>
-                <span class="tlv-date">Jan. 2025 - present</span>
-            </div>
-            <div class="tlv-org">National University of Singapore</div><div class="tlv-note">Coding Agent + RSI · AI for healthcare</div></div><div class="tlv-item tlv-compact">
-            <span class="tlv-dot"></span><div class="tlv-oneline">
-                <span class="tlv-o-org">The University of Hong Kong</span>
-                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
-                <span class="tlv-o-role">M.Sc. in Artificial Intelligence</span>
-                <span class="tlv-o-date">Sep. 2022 - Jul. 2024</span>
-            </div></div><div class="tlv-item tlv-compact">
-            <span class="tlv-dot"></span><div class="tlv-oneline">
-                <span class="tlv-o-org">The Chinese University of Hong Kong, Shenzhen</span>
-                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
-                <span class="tlv-o-role">B.Sc. in Statistics, Data Science Stream</span>
-                <span class="tlv-o-date">Sep. 2018 - May. 2022</span>
-            </div></div></div>
-    <div class="tlv lang-zh d-none"><div class="tlv-item">
-            <span class="tlv-dot tlv-dot-now"></span><div class="tlv-head">
-                <span class="tlv-role">人工智能博士</span>
-                <span class="tlv-date">2025年1月 - 至今</span>
-            </div>
-            <div class="tlv-org">新加坡国立大学</div><div class="tlv-note">Coding Agent + RSI（递归自进化）· AI for Healthcare</div></div><div class="tlv-item tlv-compact">
-            <span class="tlv-dot"></span><div class="tlv-oneline">
-                <span class="tlv-o-org">香港大学</span>
-                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
-                <span class="tlv-o-role">人工智能理学硕士</span>
-                <span class="tlv-o-date">2022年9月 - 2024年7月</span>
-            </div></div><div class="tlv-item tlv-compact">
-            <span class="tlv-dot"></span><div class="tlv-oneline">
-                <span class="tlv-o-org">香港中文大学（深圳）</span>
-                <span class="tlv-o-sep" aria-hidden="true">&middot;</span>
-                <span class="tlv-o-role">统计学理学学士（数据科学方向）</span>
-                <span class="tlv-o-date">2018年9月 - 2022年5月</span>
-            </div></div></div>
-    <div class="cv-two-col">
-        
-        <div class="cv-block">
-            <div class="cv-subhead">
-                <span class="lang-en">Honors &amp; Awards</span>
-                <span class="lang-zh d-none">荣誉与奖励</span>
-            </div>
-            <ul class="cv-simple lang-en">
-                <li><span>Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship, USD 4,500 compute grant</span><span class="cv-date">2026</span></li><li><span>Full Ph.D. Scholarship, National University of Singapore</span><span class="cv-date">2025</span></li><li><span>Outstanding College Graduate (Top 5%), CUHK-Shenzhen</span><span class="cv-date">2022</span></li><li><span>Undergraduate Research Excellence Award, CUHK-Shenzhen</span><span class="cv-date">2021</span></li>
-            </ul>
-            <ul class="cv-simple lang-zh d-none">
-                <li><span>腾讯云量化基础设施资助 —— 1000 美金云算力额度</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship，4500 美金算力支持</span><span class="cv-date">2026</span></li><li><span>新加坡国立大学全额博士奖学金</span><span class="cv-date">2025</span></li><li><span>香港中文大学（深圳）优秀毕业生（前 5%）</span><span class="cv-date">2022</span></li><li><span>香港中文大学（深圳）本科生科研卓越奖</span><span class="cv-date">2021</span></li>
-            </ul>
-        </div>
-        
-        
-        <div class="cv-block">
-            <div class="cv-subhead">
-                <span class="lang-en">Academic Service</span>
-                <span class="lang-zh d-none">学术服务</span>
-            </div>
-            <ul class="cv-simple lang-en">
-                <li><span>40+ reviews — ACL · NeurIPS · IJCAI · IEEE TAFFC · ACM TIST</span><span class="cv-date">2024 - 2026</span></li><li><span>Program Committee, LASS 2026 Workshop @ ACM CIKM 2026 (Rome)</span><span class="cv-date">2026</span></li><li><span>Session Chair, ACL 2026 Main</span><span class="cv-date">2026</span></li>
-            </ul>
-            <ul class="cv-simple lang-zh d-none">
-                <li><span>累计 40+ 篇审稿 —— ACL · NeurIPS · IJCAI · IEEE TAFFC · ACM TIST</span><span class="cv-date">2024 - 2026</span></li><li><span>ACM CIKM 2026 · LASS 2026 研讨会 程序委员会（PC）委员（罗马）</span><span class="cv-date">2026</span></li><li><span>ACL 2026 主会议 Session Chair</span><span class="cv-date">2026</span></li>
-            </ul>
-        </div>
-        
-    </div>
-    
-</section>
-
-
-
-
-
 
 <section class="section" id="research">
     <h2 class="section-head">
@@ -275,14 +115,165 @@
             <span class="lang-zh d-none">方向一 · Coding Agent + RSI</span>
         </div>
         <h3 class="rs-title">
-            <span class="lang-en">Recursive self-improvement for coding agents</span>
-            <span class="lang-zh d-none">Coding Agent 的递归自进化</span>
+            <span class="lang-en">Post-training coding agents on execution-verified trajectories</span>
+            <span class="lang-zh d-none">基于执行验证轨迹的 Coding Agent 后训练</span>
         </h3>
 
         <p class="rs-summary">
-            <span class="lang-en">Training coding agents on trajectories they generate and verify themselves.</span>
-            <span class="lang-zh d-none">让 Coding Agent 在自己生成并验证的轨迹上训练，不断改进自身。</span>
+            <span class="lang-en">A coding agent proposes software tasks and solves them in a sandbox. Trajectories that compile and pass the tests are kept as SFT and RL data, and the updated model runs the agent in the next round. The loop only helps if the filter is reliable, so my work centers on the training signal: credit assignment over long trajectories, reward and verifier design, and auditing agent actions with a checker independent of the agent.</span>
+            <span class="lang-zh d-none">Coding Agent 提出软件任务并在沙箱中求解；通过编译与测试的轨迹保留为 SFT 与 RL 数据，更新后的模型进入下一轮。循环有效的前提是筛选可靠，因此我的工作集中在训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。</span>
         </p>
+
+        
+        <p class="rs-chain">
+            
+            <span class="rd-node">
+                <span class="lang-en">Agent proposes a coding task</span>
+                <span class="lang-zh d-none">Agent 生成编码任务</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">Sandbox execution</span>
+                <span class="lang-zh d-none">沙箱执行</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">Compile · test · replay</span>
+                <span class="lang-zh d-none">编译 · 测试 · 复现</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">Keep only verified trajectories</span>
+                <span class="lang-zh d-none">仅保留通过验证的轨迹</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">SFT · RL post-training</span>
+                <span class="lang-zh d-none">SFT · RL 后训练</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">Updated model runs the next round</span>
+                <span class="lang-zh d-none">更新后的模型进入下一轮</span>
+            </span>
+            
+            
+        </p>
+        
+        <p class="rs-loop">
+            <span class="rd-loop-mark" aria-hidden="true">&#8634;</span>
+            <span class="lang-en">One round = one model update, trained only on trajectories that passed verification.</span>
+            <span class="lang-zh d-none">一轮对应一次模型更新，训练数据只取通过验证的轨迹。</span>
+        </p>
+        
+        
+
+        <div class="rs-lower">
+            
+            <div class="rs-problems">
+                <div class="rs-subhead">
+                    <span class="lang-en">Open problems</span>
+                    <span class="lang-zh d-none">研究问题</span>
+                </div>
+                <ul>
+                    
+                    <li><span class="lang-en">Long-horizon credit assignment</span><span class="lang-zh d-none">长程任务的信用分配</span></li>
+                    
+                    <li><span class="lang-en">Verifiable rewards (RLVR)</span><span class="lang-zh d-none">可验证奖励（RLVR）</span></li>
+                    
+                    <li><span class="lang-en">Reward & verifier design</span><span class="lang-zh d-none">奖励与验证器设计</span></li>
+                    
+                    <li><span class="lang-en">Independent audit of agent actions</span><span class="lang-zh d-none">Agent 行动的独立审查</span></li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="rs-evidence">
+                <div class="rs-subhead">
+                    <span class="lang-en">Evidence</span>
+                    <span class="lang-zh d-none">证据与代表工作</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><span class="lang-en">Work</span><span class="lang-zh d-none">工作</span></th>
+                            <th><span class="lang-en">Status</span><span class="lang-zh d-none">状态</span></th>
+                            <th><span class="lang-en">What it shows</span><span class="lang-zh d-none">说明</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td class="rd-ev-name">
+                                <span class="lang-en">Zhipu AI (Z.ai) · Foundation-Model Post-Training</span>
+                                <span class="lang-zh d-none">智谱（Z.ai）· 基础模型后训练</span>
+                            </td>
+                            <td class="rd-ev-meta">
+                                <span class="lang-en">current role</span>
+                                <span class="lang-zh d-none">在职</span>
+                            </td>
+                            <td class="rd-ev-note">
+                                <span class="lang-en">Coding-agent RSI post-training for the next-generation GLM foundation model.</span>
+                                <span class="lang-zh d-none">GLM 下一代基础模型的 Coding Agent RSI 后训练。</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="rd-ev-name">
+                                <span class="lang-en">Farsight</span>
+                                <span class="lang-zh d-none">Farsight</span>
+                            </td>
+                            <td class="rd-ev-meta">
+                                <span class="lang-en">ICLR 2026 · first author, under review</span>
+                                <span class="lang-zh d-none">ICLR 2026 · 一作在投</span>
+                            </td>
+                            <td class="rd-ev-note">
+                                <span class="lang-en">Future-discounted visual credit assignment for VLM reinforcement learning; trained on 100×H100 at ByteDance.</span>
+                                <span class="lang-zh d-none">面向视觉语言模型强化学习的未来折扣视觉信用分配；在字节跳动百卡 H100 上训练。</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="rd-ev-name">
+                                <span class="lang-en">OfficeBuddy</span>
+                                <span class="lang-zh d-none">OfficeBuddy</span>
+                            </td>
+                            <td class="rd-ev-meta">
+                                <span class="lang-en">open source · 53★</span>
+                                <span class="lang-zh d-none">开源 · 53★</span>
+                            </td>
+                            <td class="rd-ev-note">
+                                <span class="lang-en">Word/Excel agent. Each edit is re-rendered in real Office and checked by a separate visual verifier.</span>
+                                <span class="lang-zh d-none">Word/Excel 编辑 Agent。每步编辑在真实 Office 中重新渲染，由独立的视觉验证器检查。</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="rd-ev-name">
+                                <span class="lang-en">Med-Banana trajectories</span>
+                                <span class="lang-zh d-none">Med-Banana 轨迹</span>
+                            </td>
+                            <td class="rd-ev-meta">
+                                <span class="lang-en">88K+ released · 150K+ downloads</span>
+                                <span class="lang-zh d-none">开源 88K+ · 下载 150K+</span>
+                            </td>
+                            <td class="rd-ev-note">
+                                <span class="lang-en">Successful and failed editing trajectories, released on GitHub and Hugging Face for post-training.</span>
+                                <span class="lang-zh d-none">成功与失败的编辑轨迹，已在 GitHub 与 Hugging Face 公开，可直接用于后训练。</span>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
     </article>
     
     
@@ -297,9 +288,145 @@
         </h3>
 
         <p class="rs-summary">
-            <span class="lang-en">Applying the same self-improvement loop to medical agents, and detecting forged medical images and LLM-generated text.</span>
-            <span class="lang-zh d-none">把同类自进化方法用于医疗 Agent，并检测伪造医学影像与大模型生成文本。</span>
+            <span class="lang-en">In medicine, checking an output often needs a clinician, so feedback is scarce and expensive. Med-Banana applies RSI to medical image editing: a verifier scores each edit, its feedback refines the prompt over rounds, and the successful and failed trajectories are used for post-training. On the safety side, MedForge detects forged medical images and explains where the forgery is, and DivScore detects LLM-generated medical and legal text without training a detector.</span>
+            <span class="lang-zh d-none">医疗场景中检查一个输出往往需要医生，反馈少且贵。Med-Banana 把 RSI 用于医学图像编辑：验证器为每次编辑打分，反馈逐轮修正 Prompt，成功与失败的轨迹用于后训练。安全方面，MedForge 检测伪造的医学影像并指出伪造位置，DivScore 无需训练检测器即可识别医疗与法律领域的大模型生成文本。</span>
         </p>
+
+        
+        <p class="rs-chain">
+            
+            <span class="rd-node">
+                <span class="lang-en">Medical task (image / workflow)</span>
+                <span class="lang-zh d-none">医疗任务（影像 / 工作流）</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">Agent acts: multimodal reasoning + tools</span>
+                <span class="lang-zh d-none">Agent 执行：多模态推理 + 工具调用</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">Verifier checks against clinical criteria</span>
+                <span class="lang-zh d-none">验证器按临床标准检查</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">Feedback → recursive prompt refinement</span>
+                <span class="lang-zh d-none">反馈驱动 Prompt 递归优化</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">Trajectory-based post-training</span>
+                <span class="lang-zh d-none">成败轨迹后训练</span>
+            </span>
+            <span class="rd-arrow" aria-hidden="true">&rarr;</span>
+            
+            <span class="rd-node">
+                <span class="lang-en">Updated medical agent</span>
+                <span class="lang-zh d-none">更新后的医疗 Agent</span>
+            </span>
+            
+            
+        </p>
+        
+        <p class="rs-loop">
+            <span class="rd-loop-mark" aria-hidden="true">&#8634;</span>
+            <span class="lang-en">Verifier feedback refines the prompt over rounds; successful and failed trajectories are then used for post-training.</span>
+            <span class="lang-zh d-none">验证器反馈逐轮修正 Prompt；成功与失败的轨迹随后用于后训练。</span>
+        </p>
+        
+        
+
+        <div class="rs-lower">
+            
+            <div class="rs-problems">
+                <div class="rs-subhead">
+                    <span class="lang-en">Open problems</span>
+                    <span class="lang-zh d-none">研究问题</span>
+                </div>
+                <ul>
+                    
+                    <li><span class="lang-en">Verifiability of clinical feedback</span><span class="lang-zh d-none">临床反馈的可验证性</span></li>
+                    
+                    <li><span class="lang-en">Multimodal medical reasoning & tool use</span><span class="lang-zh d-none">多模态医学推理与工具调用</span></li>
+                    
+                    <li><span class="lang-en">Medical image integrity & forgery detection</span><span class="lang-zh d-none">医学影像真实性与伪造检测</span></li>
+                    
+                    <li><span class="lang-en">Evidence integrity & rigorous output evaluation</span><span class="lang-zh d-none">证据可信性与输出严格评估</span></li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="rs-evidence">
+                <div class="rs-subhead">
+                    <span class="lang-en">Evidence</span>
+                    <span class="lang-zh d-none">证据与代表工作</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><span class="lang-en">Work</span><span class="lang-zh d-none">工作</span></th>
+                            <th><span class="lang-en">Status</span><span class="lang-zh d-none">状态</span></th>
+                            <th><span class="lang-en">What it shows</span><span class="lang-zh d-none">说明</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td class="rd-ev-name">
+                                <span class="lang-en">Med-Banana</span>
+                                <span class="lang-zh d-none">Med-Banana</span>
+                            </td>
+                            <td class="rd-ev-meta">
+                                <span class="lang-en">EMNLP 2026</span>
+                                <span class="lang-zh d-none">EMNLP 2026</span>
+                            </td>
+                            <td class="rd-ev-note">
+                                <span class="lang-en">RSI through medical agent self-improvement: verifier-guided prompt refinement and trajectory-based post-training for medical image editing.</span>
+                                <span class="lang-zh d-none">RSI through Medical Agent Self-Improvement：医学图像编辑中由验证器引导的 Prompt 修正与基于轨迹的后训练。</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="rd-ev-name">
+                                <span class="lang-en">MedForge</span>
+                                <span class="lang-zh d-none">MedForge</span>
+                            </td>
+                            <td class="rd-ev-meta">
+                                <span class="lang-en">ACL 2026 Main</span>
+                                <span class="lang-zh d-none">ACL 2026 主会议</span>
+                            </td>
+                            <td class="rd-ev-note">
+                                <span class="lang-en">Medical deepfake detection that first localizes the forged region, then explains it; 19 lesion types, 10 forgery generators.</span>
+                                <span class="lang-zh d-none">医学伪造检测：先定位伪造区域再给出解释；覆盖 19 类病灶、10 种伪造模型。</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="rd-ev-name">
+                                <span class="lang-en">DivScore</span>
+                                <span class="lang-zh d-none">DivScore</span>
+                            </td>
+                            <td class="rd-ev-meta">
+                                <span class="lang-en">EMNLP 2025</span>
+                                <span class="lang-zh d-none">EMNLP 2025</span>
+                            </td>
+                            <td class="rd-ev-note">
+                                <span class="lang-en">Zero-shot detection of LLM-generated text in medical and legal domains.</span>
+                                <span class="lang-zh d-none">医疗与法律领域大模型生成文本的零样本检测。</span>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
     </article>
     
 </section>
@@ -510,6 +637,259 @@
 
         
     </div>
+</section>
+
+
+
+
+    <section class="section" id="background">
+    <h2 class="section-head">
+        <span class="lang-en">Background</span>
+        <span class="lang-zh d-none">教育与经历</span>
+    </h2>
+
+    
+    <div class="cv-block">
+        <div class="cv-subhead">
+            <span class="lang-en">Experience</span>
+            <span class="lang-zh d-none">工作经历</span>
+        </div>
+        <div class="lang-en">
+            
+            <div class="cv-row">
+                <div class="cv-date">Sep. 2026 - present</div>
+                <div>
+                    <div class="cv-org">Zhipu AI (Z.ai, 智谱)</div>
+                    <div class="cv-role">Foundation Model Post-Training Research Intern</div>
+                    <div class="cv-note">Next-generation GLM foundation model · coding-agent RSI post-training: the agent generates and executes coding tasks, and the model is trained on trajectories that pass execution checks</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2026</div>
+                <div>
+                    <div class="cv-org">Alibaba Tongyi Lab · Qwen</div>
+                    <div class="cv-role">Qwen Foundation Model Research Intern — offer received</div>
+                    <div class="cv-note">Qwen foundation model team · mid-training & post-training</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2026</div>
+                <div>
+                    <div class="cv-org">Tencent · Qingyun Program</div>
+                    <div class="cv-role">Qingyun Program (青云计划) — Elite Research Talent, selected</div>
+                    <div class="cv-note">Elite research talent track · game-AI × LLM agent research</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">May 2026 - Sep 2026</div>
+                <div>
+                    <div class="cv-org">ByteDance · Data Foundation Model (Data 业务基模)</div>
+                    <div class="cv-role">VLM Post-Training Research Intern</div>
+                    <div class="cv-note">VLM post-training: tool use, long-horizon RLVR, reward design and evaluation, on 100&times;H100 · Farsight (first author, ICLR 2026 submission)</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">Mar. 2025 - Jul. 2025</div>
+                <div>
+                    <div class="cv-org">StepFun (阶跃星辰)</div>
+                    <div class="cv-role">Speech Foundation Model Research Intern</div>
+                    <div class="cv-note">StepAudio2.5 foundation-model pre-training — audio segmentation &amp; transcription alignment, dialect cleanup (Hakka / Teochew / Cantonese), emotion &amp; scene tagging schemas, and speech&ndash;text corpus construction</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">Jan. 2025 - Mar. 2025</div>
+                <div>
+                    <div class="cv-org">AQUMON (Hong Kong)</div>
+                    <div class="cv-role">Quant Trading Agent Intern</div>
+                    <div class="cv-note">LangChain orchestration over Futu OpenAPI real-time data & execution</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">Feb. 2024 - Apr. 2024</div>
+                <div>
+                    <div class="cv-org">NUS Business School</div>
+                    <div class="cv-role">Teaching Assistant — "Generative AI and LLM"</div>
+                    <div class="cv-note">Curriculum design · tutorials on pre-training, SFT and RLHF</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="lang-zh d-none">
+            
+            <div class="cv-row">
+                <div class="cv-date">2026年9月 - 至今</div>
+                <div>
+                    <div class="cv-org">智谱（Z.ai）</div>
+                    <div class="cv-role">基础模型后训练 研发实习生</div>
+                    <div class="cv-note">GLM 下一代基础模型 · Coding Agent RSI 后训练：Agent 生成并执行编码任务，模型在通过执行验证的轨迹上训练</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2026</div>
+                <div>
+                    <div class="cv-org">阿里通义实验室 · Qwen</div>
+                    <div class="cv-role">Qwen 基础模型 研究实习生 —— 已获录用</div>
+                    <div class="cv-note">Qwen 基础模型团队 · 中期训练与后训练</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2026</div>
+                <div>
+                    <div class="cv-org">腾讯 · 青云计划</div>
+                    <div class="cv-role">「青云计划」精英科研人才 入选</div>
+                    <div class="cv-note">精英科研人才计划 · 游戏 AI × 大模型 Agent 方向</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2026年5月 - 2026年9月</div>
+                <div>
+                    <div class="cv-org">字节跳动 · Data 业务基模</div>
+                    <div class="cv-role">VLM 后训练 研究实习生</div>
+                    <div class="cv-note">VLM 后训练：工具调用、长链路 RLVR、奖励设计与评测，百卡 H100 · Farsight（一作，ICLR 2026 在投）</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2025年3月 - 2025年7月</div>
+                <div>
+                    <div class="cv-org">阶跃星辰（StepFun）</div>
+                    <div class="cv-role">语音基础模型 研发实习生</div>
+                    <div class="cv-note">StepAudio2.5 基础模型预训练：音频切分与转写对齐、方言清洗（客家 / 潮汕 / 粤语）、情绪与场景标签体系、语音-文本配对语料建设</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2025年1月 - 2025年3月</div>
+                <div>
+                    <div class="cv-org">AQUMON（香港）</div>
+                    <div class="cv-role">量化交易 Agent 研发实习生</div>
+                    <div class="cv-note">LangChain Agent 编排 · 对接 Futu OpenAPI 实时行情与自动下单</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2024年2月 - 2024年4月</div>
+                <div>
+                    <div class="cv-org">NUS 商学院</div>
+                    <div class="cv-role">教学助理 —《Generative AI and LLM》</div>
+                    <div class="cv-note">课程设计 · 预训练、SFT 与 RLHF 教学</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    
+    <div class="cv-block">
+        <div class="cv-subhead">
+            <span class="lang-en">Education</span>
+            <span class="lang-zh d-none">教育经历</span>
+        </div>
+        <div class="lang-en">
+            
+            <div class="cv-row">
+                <div class="cv-date">Jan. 2025 - present</div>
+                <div>
+                    <div class="cv-org">National University of Singapore</div>
+                    <div class="cv-role">Ph.D. in Artificial Intelligence</div>
+                    <div class="cv-note">Coding Agent + RSI · AI for healthcare</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">Sep. 2022 - Jul. 2024</div>
+                <div>
+                    <div class="cv-org">The University of Hong Kong</div>
+                    <div class="cv-role">M.Sc. in Artificial Intelligence</div>
+                    
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">Sep. 2018 - May. 2022</div>
+                <div>
+                    <div class="cv-org">The Chinese University of Hong Kong, Shenzhen</div>
+                    <div class="cv-role">B.Sc. in Statistics, Data Science Stream</div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="lang-zh d-none">
+            
+            <div class="cv-row">
+                <div class="cv-date">2025年1月 - 至今</div>
+                <div>
+                    <div class="cv-org">新加坡国立大学</div>
+                    <div class="cv-role">人工智能博士</div>
+                    <div class="cv-note">Coding Agent + RSI（递归自进化）· AI for Healthcare</div>
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2022年9月 - 2024年7月</div>
+                <div>
+                    <div class="cv-org">香港大学</div>
+                    <div class="cv-role">人工智能理学硕士</div>
+                    
+                </div>
+            </div>
+            
+            <div class="cv-row">
+                <div class="cv-date">2018年9月 - 2022年5月</div>
+                <div>
+                    <div class="cv-org">香港中文大学（深圳）</div>
+                    <div class="cv-role">统计学理学学士（数据科学方向）</div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    
+    <div class="cv-two-col">
+        
+        <div class="cv-block">
+            <div class="cv-subhead">
+                <span class="lang-en">Honors &amp; Awards</span>
+                <span class="lang-zh d-none">荣誉与奖励</span>
+            </div>
+            <ul class="cv-simple lang-en">
+                <li><span>Tencent Cloud Quant Infrastructure Grant — USD 1,000 cloud credits</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship, USD 4,500 compute grant</span><span class="cv-date">2026</span></li><li><span>Full Ph.D. Scholarship, National University of Singapore</span><span class="cv-date">2025</span></li><li><span>Outstanding College Graduate (Top 5%), CUHK-Shenzhen</span><span class="cv-date">2022</span></li><li><span>Undergraduate Research Excellence Award, CUHK-Shenzhen</span><span class="cv-date">2021</span></li>
+            </ul>
+            <ul class="cv-simple lang-zh d-none">
+                <li><span>腾讯云量化基础设施资助 —— 1000 美金云算力额度</span><span class="cv-date">2026</span></li><li><span>MiniMax Cowork Team Fellowship，4500 美金算力支持</span><span class="cv-date">2026</span></li><li><span>新加坡国立大学全额博士奖学金</span><span class="cv-date">2025</span></li><li><span>香港中文大学（深圳）优秀毕业生（前 5%）</span><span class="cv-date">2022</span></li><li><span>香港中文大学（深圳）本科生科研卓越奖</span><span class="cv-date">2021</span></li>
+            </ul>
+        </div>
+        
+        
+        <div class="cv-block">
+            <div class="cv-subhead">
+                <span class="lang-en">Academic Service</span>
+                <span class="lang-zh d-none">学术服务</span>
+            </div>
+            <ul class="cv-simple lang-en">
+                <li><span>40+ reviews — ACL · NeurIPS · IJCAI · IEEE TAFFC · ACM TIST</span><span class="cv-date">2024 - 2026</span></li><li><span>Program Committee, LASS 2026 Workshop @ ACM CIKM 2026 (Rome)</span><span class="cv-date">2026</span></li><li><span>Session Chair, ACL 2026 Main</span><span class="cv-date">2026</span></li>
+            </ul>
+            <ul class="cv-simple lang-zh d-none">
+                <li><span>累计 40+ 篇审稿 —— ACL · NeurIPS · IJCAI · IEEE TAFFC · ACM TIST</span><span class="cv-date">2024 - 2026</span></li><li><span>ACM CIKM 2026 · LASS 2026 研讨会 程序委员会（PC）委员（罗马）</span><span class="cv-date">2026</span></li><li><span>ACL 2026 主会议 Session Chair</span><span class="cv-date">2026</span></li>
+            </ul>
+        </div>
+        
+    </div>
+    
 </section>
 
 
