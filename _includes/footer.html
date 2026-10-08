@@ -1,9 +1,12 @@
 <footer class="footer">
     <div class="container">
         <div>
-            <span class="lang-en">{{ site.data.profile.primary_name }} &nbsp;&middot;&nbsp; Updated {{ "now" | date: "%b %Y" }}</span>
-            <span class="lang-zh d-none">{{ site.data.profile_zh.primary_name }} &nbsp;&middot;&nbsp; 更新于 {{ "now" | date: "%Y 年 %-m 月" }}</span>
+            <span class="lang-en">&copy; {{ "now" | date: "%Y" }} {{ site.data.profile.primary_name }} &middot; Updated {{ "now" | date: "%b %Y" }}</span>
+            <span class="lang-zh d-none">&copy; {{ "now" | date: "%Y" }} {{ site.data.profile_zh.primary_name }} &middot; 更新于 {{ "now" | date: "%Y 年 %-m 月" }}</span>
         </div>
-        <div>{{ site.data.display.footer_text }}</div>
+        <div>
+            <span class="lang-en">Template: <a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noopener">academic-homepage</a></span>
+            <span class="lang-zh d-none">模板：<a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noopener">academic-homepage</a></span>
+        </div>
     </div>
 </footer>

@@ -4,11 +4,29 @@ title : Publications
 navbar_title: Publications
 ---
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+<h1 class="page-title">
+    <span class="lang-en">Publications</span>
+    <span class="lang-zh d-none">论文发表</span>
+</h1>
 
-{% for year in pubs_by_year %}
-    <div class="pub-year-heading" id="year-{{ year.name }}">{{ year.name }}</div>
-    {% for item in year.items %}
-        {% include widgets/publication_item.html item=item show_year=false %}
-    {% endfor %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
+{% assign featured = pubs | where: "selected", true %}
+{% for item in featured %}
+    {% include widgets/pub_entry.html item=item %}
 {% endfor %}
+
+{% assign misc = pubs | where: "selected", false %}
+{% if misc.size > 0 %}
+<h2 class="subhead">
+    <span class="lang-en">Other Publications</span>
+    <span class="lang-zh d-none">其他论文</span>
+</h2>
+<ul class="pub-misc">
+    {% for item in misc %}
+    <li>
+        <span class="pub-misc-title">{% if item.links['Paper'] %}<a href="{{ item.links['Paper'] }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</span>
+        <span class="pub-misc-venue"> &middot; <i>{{ item.pub }}</i>{% if item.pub_date %}, {{ item.pub_date }}{% endif %}</span>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}

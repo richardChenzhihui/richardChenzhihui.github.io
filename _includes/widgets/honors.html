@@ -1,0 +1,41 @@
+{%- assign p_en = site.data.profile -%}
+{%- assign p_zh = site.data.profile_zh -%}
+{% if p_en.awards or p_en.academic_service %}
+<section class="section" id="honors">
+    <h2 class="section-title">
+        <span class="lang-en">Honors &amp; Service</span>
+        <span class="lang-zh d-none">荣誉与学术服务</span>
+        <a class="anchor" href="#honors" aria-hidden="true">#</a>
+    </h2>
+    <div class="honor-cols">
+        {% if p_en.awards %}
+        <div>
+            <h3 class="subhead" style="margin-top:0;">
+                <span class="lang-en">Honors &amp; Awards</span>
+                <span class="lang-zh d-none">荣誉奖项</span>
+            </h3>
+            <ul class="honor-list lang-en">
+                {% for item in p_en.awards %}<li><span>{{ item.name }}</span><span class="honor-year">{{ item.date }}</span></li>{% endfor %}
+            </ul>
+            <ul class="honor-list lang-zh d-none">
+                {% for item in p_zh.awards %}<li><span>{{ item.name }}</span><span class="honor-year">{{ item.date }}</span></li>{% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% if p_en.academic_service %}
+        <div>
+            <h3 class="subhead" style="margin-top:0;">
+                <span class="lang-en">Academic Service</span>
+                <span class="lang-zh d-none">学术服务</span>
+            </h3>
+            <ul class="honor-list lang-en">
+                {% for item in p_en.academic_service %}<li><span>{{ item.name }}</span><span class="honor-year">{{ item.date }}</span></li>{% endfor %}
+            </ul>
+            <ul class="honor-list lang-zh d-none">
+                {% for item in p_zh.academic_service %}<li><span>{{ item.name }}</span><span class="honor-year">{{ item.date }}</span></li>{% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}

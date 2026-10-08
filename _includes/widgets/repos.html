@@ -1,0 +1,32 @@
+{% assign repos_en = site.data.profile.github_projects %}
+{% assign repos_zh = site.data.profile_zh.github_projects %}
+{% if repos_en and repos_en.size > 0 %}
+<section class="section" id="open-source">
+    <h2 class="section-title">
+        <span class="lang-en">Open Source</span>
+        <span class="lang-zh d-none">开源项目</span>
+        <a class="anchor" href="#open-source" aria-hidden="true">#</a>
+    </h2>
+    <div class="repo-grid">
+        {% for repo in repos_en %}
+        {% assign repo_zh = repos_zh[forloop.index0] %}
+        <a class="repo-card" href="{{ repo.url }}" target="_blank" rel="noopener">
+            <div class="repo-card-head">
+                <span class="repo-card-name">{{ repo.name }}</span>
+                <span class="repo-card-stars">{% if repo.stars and repo.stars != "—" %}{{ repo.stars }}&#9733;{% endif %}</span>
+            </div>
+            <p class="repo-card-desc">
+                <span class="lang-en">{{ repo.desc }}</span>
+                <span class="lang-zh d-none">{{ repo_zh.desc | default: repo.desc }}</span>
+            </p>
+            <div class="repo-card-meta">
+                <span class="repo-tag">
+                    <span class="lang-en">{{ repo.tag }}</span><span class="lang-zh d-none">{{ repo_zh.tag | default: repo.tag }}</span>
+                </span>
+                {% if repo.lang %}<span class="repo-tag">{{ repo.lang }}</span>{% endif %}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

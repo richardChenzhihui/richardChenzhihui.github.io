@@ -47,6 +47,10 @@ exclude:
   - 网站编辑指南.md
   - homepage.png
   - test_heading_debug.html
+  - screenshot.py
+  - make_thumbs.py
+  - shots_current
+  - shots_new
 
 collections:
   - publications

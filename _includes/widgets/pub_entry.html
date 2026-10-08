@@ -1,10 +1,12 @@
 {% assign item = include.item %}
 {% assign paper_link = item.links['Paper'] | default: item.links['paper'] %}
-<article class="pub-row{% if include.show_year == false %} pub-row--no-year{% endif %}">
-    {% if include.show_year != false %}
-    <div class="pub-year">{% if item.pub_date and item.pub_date != "" %}{{ item.pub_date }}{% else %}{{ item.date | date: "%Y" }}{% endif %}</div>
+<article class="pub">
+    {% if item.thumbnail %}
+    <a class="pub-thumb" href="{{ paper_link | default: item.links.first[1] | default: '#' }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title | escape }}" loading="lazy">
+    </a>
     {% endif %}
-    <div>
+    <div class="pub-body">
         {% if paper_link %}
         <h3 class="pub-title">
             <a href="{{ paper_link }}" target="_blank" rel="noopener" class="publication-title-link" data-en="{{ item.title | escape }}" data-zh="{{ item.title_zh | escape }}"><span class="title-text">{{ item.title }}</span></a>
@@ -12,15 +14,17 @@
         {% else %}
         <h3 class="pub-title publication-title" data-en="{{ item.title | escape }}" data-zh="{{ item.title_zh | escape }}">{{ item.title }}</h3>
         {% endif %}
-        {% if item.research_highlight %}
-        <p class="pub-venue"><strong data-en="{{ item.research_highlight | escape }}" data-zh="{{ item.research_highlight_zh | escape }}">{{ item.research_highlight }}</strong></p>
-        {% endif %}
         <p class="pub-authors">{% include widgets/author_list.html authors=item.authors %}</p>
-        <p class="pub-venue"><span class="pub-venue-text" data-pub-pre="{{ item.pub_pre | escape }}" data-pub-en="{{ item.pub | escape }}" data-pub-zh="{{ item.pub_zh | default: item.pub | escape }}" data-pub-post="{{ item.pub_post | escape }}">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }}</span><span class="pub-venue-misc" data-en="{{ item.pub_last | escape }}" data-zh="{{ item.pub_last_zh | default: item.pub_last | escape }}">{{ item.pub_last }}</span></p>
+        <p class="pub-venue">
+            {% if item.conference_name %}<span class="chip-venue">{{ item.conference_name }}</span>{% endif %}
+            <span class="pub-venue-text" data-pub-pre="{{ item.pub_pre | escape }}" data-pub-en="{{ item.pub | escape }}" data-pub-zh="{{ item.pub_zh | default: item.pub | escape }}" data-pub-post="{{ item.pub_post | escape }}">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }}</span>
+            <span class="pub-venue-misc" data-en="{{ item.pub_last | escape }}" data-zh="{{ item.pub_last_zh | default: item.pub_last | escape }}">{{ item.pub_last }}</span>
+        </p>
         {% unless include.hide_abstract %}
         <p class="pub-abstract" data-en="{{ item.abstract | escape }}" data-zh="{{ item.abstract_zh | escape }}">{{ item.abstract }}</p>
         {% endunless %}
-        <p class="abstract-links" data-links-en='{{ item.links | jsonify }}' data-links-zh='{{ item.links_zh | jsonify }}'>
+        {% if item.links and item.links.size > 0 %}
+        <p class="pub-links abstract-links" data-links-en='{{ item.links | jsonify }}' data-links-zh='{{ item.links_zh | jsonify }}'>
             {% for link in item.links %}
             {% if link[1].url %}
             <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">{{ link[0] }}</a>
@@ -29,5 +33,6 @@
             {% endif %}
             {% endfor %}
         </p>
+        {% endif %}
     </div>
 </article>

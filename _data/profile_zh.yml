@@ -23,24 +23,24 @@ short_bio: >-
     <a href="https://www.mornin-feng.com/" target="_blank">冯梦凌教授</a>。
   </p>
   <p>
-    研究方向是 Coding Agent + RSI（递归自进化）的后训练：Agent 生成编码任务并在沙箱中求解，通过编译和测试的轨迹被保留，下一版模型在这些轨迹上训练。我关心的问题是长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。同样的方法也用于医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）；另一部分工作是医学伪造图像与大模型生成文本的检测（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
+    研究围绕 RSI（递归自进化）展开：让模型自己出题、自己求解、自己批改，通过验证的经验直接成为下一版模型的训练数据——每一版模型都参与打造下一版。这条循环先在 Coding Agent 上跑通，沙箱执行给出可检验的成功信号；同样的方法正推进到医疗 Agent（<a href="https://github.com/richardChenzhihui/med-banana-50k" target="_blank">Med-Banana</a>）。另一条线研究如何识别 AI 生成的医学影像与文本（<a href="https://github.com/richardChenzhihui/ACL2026-MedForge" target="_blank">MedForge</a>、<a href="https://github.com/richardChenzhihui/DivScore" target="_blank">DivScore</a>）。
   </p>
   <p>
     现于智谱（Z.ai）基础模型后训练团队实习，参与 GLM 下一代基础模型的 Coding Agent RSI 后训练。此前在字节跳动（VLM 后训练，Farsight）和阶跃星辰（StepAudio2.5 基础模型预训练）实习。已获阿里通义实验室 Qwen 团队基础模型研究实习录用，并入选腾讯「青云计划」。
   </p>
 
 hero_summary: >-
-  新加坡国立大学博士生，研究 Coding Agent 后训练与递归自进化（RSI），现参与 GLM 下一代基础模型研发，并将同类方法应用于医疗 Agent 与医疗 AI 安全。
+  新加坡国立大学博士生，研究递归自进化（RSI）：让模型自己生成并验证训练数据，应用于 Coding Agent 与医疗 Agent，现参与 GLM 下一代基础模型研发。
 
 impact_areas:
   - label: "方向一 · Coding Agent + RSI"
-    title: "基于执行验证轨迹的 Coding Agent 后训练"
+    title: "让模型自己制造训练数据"
     summary: >-
-      Coding Agent 提出软件任务并在沙箱中求解；通过编译与测试的轨迹保留为 SFT 与 RL 数据，更新后的模型进入下一轮。循环有效的前提是筛选可靠，因此我的工作集中在训练信号上：长轨迹的信用分配、奖励与验证器设计，以及用独立于 Agent 的检查器审查其行动。
+      让模型自己出题、自己求解、自己批改：Coding Agent 生成编码任务并在沙箱中执行，通过验证的经验直接变成下一版模型的训练数据，能力沿这个循环逐轮累积。执行就是判卷——每一步自我改进都被真实结果检验，这是通往自我改进智能最直接、最可度量的路径。
   - label: "方向二 · 医疗 Agent 与医疗 AI 安全"
-    title: "医疗 Agent 与医疗伪造内容检测"
+    title: "自我改进的医疗 Agent 与医疗内容安全"
     summary: >-
-      医疗场景中检查一个输出往往需要医生，反馈少且贵。Med-Banana 把 RSI 用于医学图像编辑：验证器为每次编辑打分，反馈逐轮修正 Prompt，成功与失败的轨迹用于后训练。安全方面，MedForge 检测伪造的医学影像并指出伪造位置，DivScore 无需训练检测器即可识别医疗与法律领域的大模型生成文本。
+      医疗是 RSI 最难也最值得推进的考场：反馈依赖医生，错误的代价极高。Med-Banana 让医学图像编辑 Agent 在验证器反馈中自我改进，成功与失败的轨迹都被回收为训练数据，编辑能力逐轮提升。安全侧与这条主线互补：当模型能生成逼真的医学影像与文本，MedForge 与 DivScore 负责把它们识别出来。
 
 portrait_url: /assets/images/photos/portrait-crop.jpg
 portrait_caption: >-

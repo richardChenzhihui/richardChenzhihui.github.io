@@ -4,7 +4,7 @@ title_zh:       "Looking Ahead to Stay Grounded：面向视觉语言模型强化
 date:           2026-06-20 00:01:00 +0800
 selected:       true
 conference_banner: /assets/images/conferences/iclr-2026.jpg
-conference_name: "ICLR 2026"
+thumbnail:      /assets/images/publications/vfipo/thumb.svg
 conference_banner_source: "https://iclr.cc/static/core/img/Brazil-Drops-Visa-USA.jpg"
 pub:            "ICLR 2026 submission"
 pub_zh:         "ICLR 2026"

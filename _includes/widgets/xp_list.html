@@ -1,0 +1,70 @@
+{%- assign p_en = site.data.profile -%}
+{%- assign p_zh = site.data.profile_zh -%}
+
+<section class="section" id="experience">
+    <h2 class="section-title">
+        <span class="lang-en">Experience</span>
+        <span class="lang-zh d-none">实习与工作</span>
+        <a class="anchor" href="#experience" aria-hidden="true">#</a>
+    </h2>
+    <div class="lang-en">
+        {% for item in p_en.experience %}
+        <div class="xp-row">
+            {% if item.logo %}<img class="xp-logo" src="{{ item.logo | relative_url }}" alt="{{ item.name }}">{% else %}<span></span>{% endif %}
+            <div>
+                <div class="xp-org">{{ item.name }}</div>
+                <div class="xp-role">{{ item.position }}</div>
+                {% if item.dept %}<div class="xp-note">{{ item.dept }}</div>{% endif %}
+            </div>
+            <div class="xp-date">{{ item.date }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="lang-zh d-none">
+        {% for item in p_zh.experience %}
+        <div class="xp-row">
+            {% if item.logo %}<img class="xp-logo" src="{{ item.logo | relative_url }}" alt="{{ item.name }}">{% else %}<span></span>{% endif %}
+            <div>
+                <div class="xp-org">{{ item.name }}</div>
+                <div class="xp-role">{{ item.position }}</div>
+                {% if item.dept %}<div class="xp-note">{{ item.dept }}</div>{% endif %}
+            </div>
+            <div class="xp-date">{{ item.date }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section" id="education">
+    <h2 class="section-title">
+        <span class="lang-en">Education</span>
+        <span class="lang-zh d-none">教育经历</span>
+        <a class="anchor" href="#education" aria-hidden="true">#</a>
+    </h2>
+    <div class="lang-en">
+        {% for item in p_en.education %}
+        <div class="xp-row">
+            {% if item.logo %}<img class="xp-logo" src="{{ item.logo | relative_url }}" alt="{{ item.name }}">{% else %}<span></span>{% endif %}
+            <div>
+                <div class="xp-org">{{ item.name }}</div>
+                <div class="xp-role">{{ item.position }}</div>
+                {% if item.dept %}<div class="xp-note">{{ item.dept }}</div>{% endif %}
+            </div>
+            <div class="xp-date">{{ item.date }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="lang-zh d-none">
+        {% for item in p_zh.education %}
+        <div class="xp-row">
+            {% if item.logo %}<img class="xp-logo" src="{{ item.logo | relative_url }}" alt="{{ item.name }}">{% else %}<span></span>{% endif %}
+            <div>
+                <div class="xp-org">{{ item.name }}</div>
+                <div class="xp-role">{{ item.position }}</div>
+                {% if item.dept %}<div class="xp-note">{{ item.dept }}</div>{% endif %}
+            </div>
+            <div class="xp-date">{{ item.date }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

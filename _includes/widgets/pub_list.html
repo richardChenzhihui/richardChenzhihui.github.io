@@ -1,0 +1,29 @@
+{% assign pubs = include.pubs %}
+<section class="section" id="publications">
+    <h2 class="section-title">
+        <span class="lang-en">Publications</span>
+        <span class="lang-zh d-none">论文发表</span>
+        <a class="anchor" href="#publications" aria-hidden="true">#</a>
+    </h2>
+
+    {% assign featured = pubs | where: "selected", true %}
+    {% for item in featured %}
+        {% include widgets/pub_entry.html item=item hide_abstract=include.hide_abstract %}
+    {% endfor %}
+
+    {% assign misc = pubs | where: "selected", false %}
+    {% if misc.size > 0 %}
+    <h3 class="subhead">
+        <span class="lang-en">Other Publications</span>
+        <span class="lang-zh d-none">其他论文</span>
+    </h3>
+    <ul class="pub-misc">
+        {% for item in misc %}
+        <li>
+            <span class="pub-misc-title">{% if item.links['Paper'] %}<a href="{{ item.links['Paper'] }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</span>
+            <span class="pub-misc-venue"> &middot; <i>{{ item.pub }}</i>{% if item.pub_date %}, {{ item.pub_date }}{% endif %}</span>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</section>

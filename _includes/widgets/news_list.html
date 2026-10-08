@@ -1,0 +1,19 @@
+{% assign recent_news = site.news | sort: "date" | reverse | slice: 0, include.limit -%}
+<section class="section" id="news">
+    <h2 class="section-title">
+        <span class="lang-en">News</span>
+        <span class="lang-zh d-none">近期动态</span>
+        <a class="anchor" href="#news" aria-hidden="true">#</a>
+    </h2>
+    <ul class="news-list">
+        {% for item in recent_news %}
+        <li class="news-item">
+            <span class="news-date">
+                <span class="lang-en">{{ item.date | date: "%b %Y" }}</span>
+                <span class="lang-zh d-none">{{ item.date | date: "%Y 年 %-m 月" }}</span>
+            </span>
+            <span class="news-title" data-en="{{ item.title | escape }}" data-zh="{{ item.title_zh | default: item.title | escape }}">{{ item.title }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

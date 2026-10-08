@@ -18,3 +18,9 @@ Gemfile.lock
 # One-off local debug artifacts
 homepage.png
 test_heading_debug.html
+
+# Template preview/screenshot helpers (also excluded from the Jekyll build)
+screenshot.py
+make_thumbs.py
+shots_current/
+shots_new/

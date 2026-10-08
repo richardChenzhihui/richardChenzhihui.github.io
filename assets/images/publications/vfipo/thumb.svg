@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Farsight">
+  <rect width="1200" height="800" fill="#f6f7f8"/>
+  <rect x="0" y="0" width="1200" height="6" fill="#24292f"/>
+  <text x="600" y="392" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'PingFang SC', sans-serif" font-size="88" font-weight="700" fill="#1c2024">Farsight</text>
+  <text x="600" y="462" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'PingFang SC', sans-serif" font-size="30" fill="#676f78">Future-Discounted Visual Credit Assignment for VLM RL</text>
+</svg>
