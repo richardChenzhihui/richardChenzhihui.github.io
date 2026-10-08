@@ -16,7 +16,7 @@ abstract: >-
 abstract_zh: >-
   Med-Banana 将我的 RSI 研究落到医疗 Agent 的 Prompt 自优化：编辑器执行、验证器诊断失败、精炼器结合历史反馈改写正负 Prompt，递归推进下一轮尝试。成败轨迹分别监督编辑、验证与修正能力，将 Agentic 后训练与推理时自优化连接起来。Med-Banana-80K 保留 50,635 条成功与 37,822 条失败轨迹，覆盖三种医学影像模态与 23 类疾病。
 cover:          /assets/images/covers/medbanana_cover.jpg
-thumbnail:      /assets/images/covers/medbanana_cover.png
+thumbnail:      /assets/images/publications/med-banana/page1.png
 authors:
   - Zhihui Chen
   - Qingyuan Lei

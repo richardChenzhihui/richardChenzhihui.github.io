@@ -16,7 +16,7 @@ abstract: >-
 abstract_zh: >-
   随着生成模型能力提升，可在影像中植入或移除病灶且仍看似合理的医学深度伪造，对临床安全与医学证据可信性带来新风险。既有方法多将任务简化为真伪二分类，却难以说明伪造位置与判据。本文提出 MedForge：推出 MedForge-90K——首个大规模可解释医学深度伪造数据集，覆盖 CT、MRI 与 X 线，含 19 类病灶、由 10 种前沿深度伪造模型生成伪造样本，并提供专家引导的定位与临床级解释；以及 MedForge-Reasoner，采用「先定位再分析」思维链与 Forgery-aware GSPO 强化学习训练。实验表明该检测器达到领先检测性能，并能给出可对照影像验证的本地化医学解释。
 cover:          /assets/images/publications/medforge/fig1.png
-thumbnail:      /assets/images/publications/medforge/thumb.png
+thumbnail:      /assets/images/publications/medforge/page1.png
 authors:
   - Zhihui Chen
   - Kai He

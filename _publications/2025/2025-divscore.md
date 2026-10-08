@@ -17,7 +17,7 @@ abstract: >-
 abstract_zh: >-
   在医学和法律等专业高风险领域检测大语言模型生成的文本对于打击错误信息和确保真实性至关重要。我们提出了DivScore，一个使用归一化熵评分和领域知识蒸馏的零样本检测框架，能够稳健地识别专业领域中的大语言模型生成文本。实验表明，DivScore始终优于最先进的检测器，AUROC提高14.4%，在0.1%误报率阈值下召回率提高64.0%。
 cover:          /assets/images/publications/divscore/poster-web.jpg
-thumbnail:      /assets/images/publications/divscore/thumb.jpg
+thumbnail:      /assets/images/publications/divscore/page1.png
 authors:
   - Zhihui Chen
   - Kai He
