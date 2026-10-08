@@ -51,6 +51,7 @@ exclude:
   - make_thumbs.py
   - shots_current
   - shots_new
+  - shots_rsi
 
 collections:
   - publications
